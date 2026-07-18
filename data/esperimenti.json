@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-17T05:26:39.390530+00:00",
+  "lastUpdate": "2026-07-18T05:09:17.698839+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2795,14 +2795,47 @@
       "data_proposta": "2026-07-17",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate CBDV-dipendenti",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV nelle piante di pianta femminizzate. Questo avviene perché i microrganismi migliorano l'assorbimento dei nutrienti e stimolano il metabolismo secondario delle piante, portando a una maggiore sintesi di cannabinoidi secondari come la CBDV. L'ipotesi si basa sulla sinergia tra la biodiversità microbica del Living Soil e le proprietà genetiche delle piante CBDV, che sono note per produrre quantità significative di questo cannabinoide.",
+      "protocollo": [
+        "Preparare due parcelle identiche di Living Soil in serra outdoor, ciascuna di 1 m², con substrato a base di compost, humus di lombrico, biochar e micorrize (es. Glomus spp.).",
+        "Inoculare la Parcell A con un inoculo microbico commerciale (es. micorrize + batteri della rizosfera) e la Parcell B con solo substrato senza inoculo. Entrambe le parcelle riceveranno solo acqua (water-only) per evitare interferenze di fertilizzanti chimici.",
+        "Pianta 10 semi di pianta femminizzati CBDV-dipendenti (es. varietà 'CBDV Auto' da seedbank affidabile) in ciascuna parcella, mantenendo distanza e densità uniformi. Utilizzare semi della stessa genetica e lotto per minimizzare variabilità genetica.",
+        "Monitorare settimanalmente lo sviluppo delle piante: altezza, numero di foglie, vigore. Dopo 30 giorni, raccogliere campioni di foglie apicali da 5 piante per parcella (selezionate casualmente) per analisi di laboratorio del contenuto di CBDV."
+      ],
+      "materiali": [
+        "Semi di pianta femminizzati CBDV-dipendenti (es. 'CBDV Auto' da seedbank come Dutch Passion o CBD Crew)",
+        "Substrato Living Soil (compost, humus di lombrico, biochar, micorrize)",
+        "Inoculo microbico commerciale (es. micorrize + batteri rizosferici)",
+        "Kit per analisi cannabinoidi (es. test HPLC o spettrofotometro portatile per CBDV)",
+        "Strumenti per misurazione: righello, bilancia di precisione, termometro/igrometro"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV nelle foglie apicali (mg/g di peso secco) tramite analisi di laboratorio o kit affidabile",
+        "Confronto statistico (test t di Student) tra i livelli medi di CBDV nelle due parcelle",
+        "Osservazione qualitativa: vigore delle piante, colore delle foglie, resistenza a patogeni"
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (luce, temperatura, umidità), tipo di substrato, metodo di irrigazione (solo acqua), distanza tra le piante, età delle piante al momento del campionamento.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento non è presente né nel Manuale A né nel Manuale B perché combina in modo originale: (1) l'approccio Living Soil del Manuale A con (2) la selezione di semi CBDV-dipendenti del Manuale B, testando una sinergia specifica tra microbioma del suolo e produzione di cannabinoidi secondari. Nessuno dei due manuali suggerisce di testare l'effetto della concimazione organica sulla produzione di CBDV in piante femminizzate, rendendo questo esperimento una novità nel campo della pianta terapeutica e della agricoltura rigenerativa.",
+      "id": "esp_conn_2026-07-18_001",
+      "data_proposta": "2026-07-18",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-17",
-    "nuove_proposte": 2,
-    "pdf_analizzati": 258,
-    "connessioni_usate": 251
+    "data": "2026-07-18",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 284,
+    "connessioni_usate": 279
   }
 }
