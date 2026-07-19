@@ -219,23 +219,7 @@ Microcontrollore, XV-64
 - codice oggetto, XV-71
 - compilatore, XV-71
 - controllore di posizione a microcontrollore, XV-66
-- controllore di temperatura a microcontrollore, XV-71
-- coprocessore matematico, XV-64
-- digital signal processor (DSP), XV-66
-- comando di motori a corrente continua, XV-66
-- comando di motori brushless, XV-66
-- linguaggio ad alto livello, XV-71
-- linguaggio assembly, XV-70
-- linguaggio C, XV-71, 72
-Modello, XV-4
-- matematico di un sistema, XV-4
-Modi aperiodici, XV-11
-- coefficiente di smorzamento, XV-13
-- pulsazione naturale, XV-13
-Nichols, carta di, XV-31
-- cerchi M, XV-31
-- cerchi N, XV-32
-- diagramma ampiezza-fase, XV-31, 32
+- controllore di temperatura a microcontrollore,
 - margine di fase, XV-36
 - margine di guadagno, XV-36
 - picco di risonanza, XV-31
@@ -489,16 +473,7 @@ Amplificatori operazionali, XVII-73
 - amplificatore sommatore, XVII-78
 - caratteristica di trasferimento, XVII-74
 - circuiti lineari, XVII-76
-- circuiti non lineari, XVII-79
-- circuito derivatore,
-Analisi nel dominio del tempo, amplificatori, XVII-30
-Porte AND, XVII-98
-Angolo di circolazione, XVII-162
-Codice ASCII, XVII-88
-Attuatori, circuiti di comando a ponte, XVII-177
-- comando di motore passo-passo, XVII-179
-- sovratensioni, XVII-178
-- tempi di risposta, XVII-179
+- circuiti non lineari,
 Banda passante, XVII-29
 Criterio di Barkhausen, XVII-135
 Sistemi numerici in base, XVII-82
@@ -1072,41 +1047,37 @@ Interruttore, XIX-52
 - di prossimità (connessioni), XIX-91
 - finecorsa, XIX-91
 Interruttore automatico magnetotermico, XIX-49, 93
-Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
-
----
-
-- caratteristiche di intervento, XIX-94
-- sequenze cinematiche di funzionamento, XIX-95
+- Caratteristiche di intervento, XIX-94
+- Sequenze cinematiche di funzionamento, XIX-95
 Interruttore differenziale, XIX-50, 96
-- tipi di, XIX-97
-- selettività, XIX-101
-- sensibilità, XIX-98
-- sequenze cinematiche di funzionamento, XIX-100
+- Tipi di, XIX-97
+- Selettività, XIX-101
+- Sensibilità, XIX-98
+- Sequenze cinematiche di funzionamento, XIX-100
 Invertitore, XIX-53
 Isolanti gassosi, XIX-18
-- liquidi, XIX-18
+- Liquidi, XIX-18
 Lacuna, XIX-26
 Lampade di segnalazione, XIX-89
-- codice colori, XIX-90
+- Codice colori, XIX-90
 Leghe, XIX-5
 Magnetismo residuo, XIX-17
 Magnetoresistenze, XIX-125
 Malleabilità, XIX-10
 Massa volumetrica, XIX-7
 Materiali, XIX-3
-- ceramici, XIX-4, 6
-- conduttori, XIX-18
-- isolanti, XIX-18, 24
-- magnetici, XIX-24
-- metallici, XIX-4, 6, 25
-- piezoelettrici, XIX-24, 25
-- plastici, XIX-4, 6, 20, 22
-- semiconduttori, XIX-22, 23, 25, 28
+- Ceramici, XIX-4, 6
+- Conduttori, XIX-18
+- Isolanti, XIX-18, 24
+- Magnetici, XIX-24
+- Metallici, XIX-4, 6, 25
+- Piezoelettrici, XIX-24, 25
+- Plastici, XIX-4, 6, 20, 22
+- Semiconduttori, XIX-22, 23, 25, 28
 Metalli, XIX-3, 6, 25
 Modelli a legame di valenza, XIX-27
 Modulo di, compressibilità, XIX-9
-- elasticità, XIX-9
+- Elasticità, XIX-9
 - Poisson, XIX-9
 Montante, sezione del, XIX-31
 Orologio programmatore, XIX-67
@@ -1118,60 +1089,60 @@ Piezoelettricità, XIX-16
 Potenziometri, XIX-115, 120
 Potere risolutore, XIX-117
 Presa e spina di corrente, XIX-54
-- ad uso industriale (CEE), XIX-60
-- apparecchi speciali, XIX-59
-- a ricettività multipla del, XIX-58
-- tipi di, XIX-57, 58
+- Ad uso industriale (CEE), XIX-60
+- Apparecchi speciali, XIX-59
+- A ricettività multipla del, XIX-58
+- Tipi di, XIX-57, 58
 Pressoresistori, XIX-126
 Proprietà, fisico-chimiche dei materiali, XIX-6, 17
-- chimiche, XIX-12
-- elettriche, XIX-12, 16
-- fisiche, XIX-7, 8
-- magnetiche, XIX-16, 18
-- meccaniche, XIX-8, 10
-- tecnologiche, XIX-10, 11
+- Chimiche, XIX-12
+- Elettriche, XIX-12, 16
+- Fisiche, XIX-7, 8
+- Magnetiche, XIX-16, 18
+- Meccaniche, XIX-8, 10
+- Tecnologiche, XIX-10, 11
 Protettore termico, XIX-104
 Prove di fatica, XIX-10
 Pulsante, XIX-54, 87
-- codice colori, XIX-89
+- Codice colori, XIX-89
 Relè, XIX-69, 85
-- magnetotermico, XIX-102
-- passo-passo, XIX-70
-- statico, XIX-82
-- termico, XIX-103
+- Magnetotermico, XIX-102
+- Passo-passo, XIX-70
+- Statico, XIX-82
+- Termico, XIX-103
 Regolatore di livello, XIX-90
 Resilienza, XIX-10
 Resine, XIX-20
 Resistenza, XIX-107
-- di isolamento, XIX-128
-- termica, XIX-111
+- Di isolamento, XIX-128
+- Termica, XIX-111
 Resistività, XIX-13, 14, 108
 Resistori, XIX-107
-- a filo, XIX-113, 115
-- a impasto, XIX-113, 114
-- a strato, XIX-113, 115
-- variabili, XIX-115
+- A filo, XIX-113, 115
+- A impasto, XIX-113, 114
+- A strato, XIX-113, 115
+- Variabili, XIX-115
 Reticolo cristallino, XIX-4, 5
 Rigidità dielettrica, XIX-15, 19
 Ritiro di fusione, XIX-11
 Rotture per fatica, XIX-10
 Rivelatore, di fughe d’acqua, XIX-74
-- di fumo, XIX-72
-- di gas e ossido di carbonio, XIX-72
+- Di fumo, XIX-72
+- Di gas e ossido di carbonio, XIX-72
 Saldabilità, XIX-11
 Saturazione, XIX-17
 Segnalazioni, quadro indicatore a cartellini, XIX-65
-- quadro indicatore luminoso, XIX-65
-- ronzatore, XIX-62
-- suoneria, XIX-62
+- Quadro indicatore luminoso, XIX-65
+- Ronzatore, XIX-62
+- Suoneria, XIX-62
 Semiconduttori, XIX-22, 23, 25, 28
 Serie normalizzate delle resistenze, XIX-112
 Simboli grafici del, condensatore, XIX-131
-- induttore, XIX-139
-- potenziometro, XIX-116
-- resistore, XIX-111
+- Induttore, XIX-139
+- Potenziometro, XIX-116
+- Resistore, XIX-111
 Sostanze, diamagnetiche, XIX-16
-- paramagnetiche, XIX-16
+- Paramagnetiche, XIX-16
 Stabilità, XIX-111
 
 [PAG 2289]
@@ -1180,9 +1151,9 @@ SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
 Suscettibilità magnetica, XIX-17
 Tecnologie di fabbricazione dei, condensatori, XIX-131, 134
 Tecnologie di fabbricazione dei, condensatori elettrolitici, XIX-132, 133
-- induttori, XIX-140
-- resistori, XIX-113, 115
-- varistori, XIX-126
+- Induttori, XIX-140
+- Resistori, XIX-113, 115
+- Varistori, XIX-126
 Temperatura di Curie, XIX-16
 Temprabilità, XIX-11
 Temporizzatore, XIX-86
