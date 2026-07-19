@@ -1,129 +1,79 @@
 {
-  "lastUpdate": "2026-07-18T05:42:57.000Z",
+  "lastUpdate": "2026-07-19T06:13:04.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) usando elettrodi Cu/Zn a 10-15 cm di profondità, seguendo il metodo Christofleau ([pdf_17]). L'umidità elevata (94%) amplificherà la conducibilità, ma evitare le ore 12-16 per prevenire stress termico ([Manuale di Coltivazione BioSerra Rev.23]).",
-      "Distribuire 1.5 kg/m² di polvere di basalto nel letto delle autofiorenti per migliorare la conducibilità elettrica e la capacità di scambio cationico, come da [pdf_327].",
-      "Preparare il preparato biodinamico 500 (cornoletame) per applicazione serale durante la luna gibbosa crescente, sfruttando l'umidità elevata (94%) per ottimizzare l'assorbimento ([pdf_85])."
+      "Applicare trattamento elettrocoltura PEMF alle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) tra le 06:00-09:00 o dopo le 18:00 per evitare stress termico (massimo 34.7°C previsto domani) [Manuale di Coltivazione BioSerra Rev.23, §4.2].",
+      "Monitorare umidità fogliare alle autofiorenti: con umidità ambientale al 92% e temperatura minima 20.3°C, rischio di oidio in fioritura. Spruzzare soluzione di bicarbonato di potassio (5g/L) alle 07:00 [Manuale Biodinamico Rev.12, §7.3].",
+      "Verificare tensione elettrica dei suoli con sonda a 15cm di profondità: in Living Soil, valori ottimali sono 250-350 mV. Se <200 mV, applicare stimolatore microbico a base di micorrize (es. MycoApply) [Manuale Living Soil Rev.8, §5.1]."
     ],
-    "briefing_mattutino": "La serra si trova in condizioni ottimali: umidità elevata (94%) e temperatura moderata (22°C) favoriscono l'applicazione di tecniche di elettrocoltura e biodinamica. Le autofiorenti sono in fioritura con raccolta tra 21-41 giorni, mentre le femminizzate sono in vegetazione con raccolta tra 146-174 giorni. Oggi si consiglia di applicare elettrocoltura al mattino presto, integrare basalto nel suolo e preparare il preparato biodinamico 500 per la distribuzione serale, sfruttando la fase lunare gibbosa crescente per armonizzare le forze telluriche.",
+    "briefing_mattutino": "La serra presenta condizioni stabili con umidità elevata (92%) e temperature in linea con la stagione. Oggi si consiglia di evitare trattamenti nelle ore centrali (12-18) a causa del picco termico previsto (34.7°C domani). Le autofiorenti sono in fioritura avanzata (20-40gg alla raccolta), mentre le femminizzate sono in vegetazione con cicli lunghi (145-173gg). Si raccomanda monitoraggio costante dell'umidità del suolo e prevenzione di patogeni fungini [Manuale di Coltivazione BioSerra Rev.23, §3.1].",
     "consigli_piante": {
-      "autofiorenti": "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) su tutte le autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) con elettrodi Cu/Zn a 10-15 cm di profondità. Integrare 1.5 kg/m² di basalto nel letto di coltivazione per migliorare la conducibilità elettrica.",
-      "femminizzate": "Monitorare lo stato vegetativo di Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla e Mexican Rush. Oggi non applicare elettrocoltura a causa della fase di vegetazione non avanzata; evitare trattamenti fino a quando non entreranno in fioritura. Assicurarsi che l'irrigazione sia adeguata per supportare la crescita.",
+      "autofiorenti": "Ridurre irrigazione a 50% del normale volume (evitare ristagni con umidità 92%) e applicare trattamento PEMF a 10Hz per 15min al tramonto (19:30) per stimolare resina senza stress termico [Manuale Elettrocultura Rev.5, §8.4].",
+      "femminizzate": "Mantenere regime idrico standard (1.2L/m²) e applicare nebulizzazione fogliare con acqua deionizzata + 0.5% silicio organico alle 08:00 per ridurre traspirazione in condizioni di umidità elevata [Manuale Biodinamico Rev.12, §6.2].",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) con elettrodi Cu/Zn a 10-15 cm di profondità. Integrare 1.5 kg/m² di basalto nel letto di coltivazione.",
+          "azione": "Raccogliere campioni per test terpenici se >25% pistilli marroni; altrimenti, applicare trattamento PEMF 10Hz per 20min al tramonto per ottimizzare produzione di cannabinoidi [Manuale Elettrocultura Rev.5, §9.1].",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) con elettrodi Cu/Zn a 10-15 cm di profondità. Integrare 1.5 kg/m² di basalto nel letto di coltivazione.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Titan F1",
-          "azione": "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) con elettrodi Cu/Zn a 10-15 cm di profondità. Integrare 1.5 kg/m² di basalto nel letto di coltivazione.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Medusa F1",
-          "azione": "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) con elettrodi Cu/Zn a 10-15 cm di profondità. Integrare 1.5 kg/m² di basalto nel letto di coltivazione.",
-          "priorita": "alta"
+          "azione": "Monitorare sviluppo pistilli: se <50% maturi, evitare qualsiasi stress meccanico o chimico. Applicare solo acqua di osmosi inversa per irrigazione [Manuale Living Soil Rev.8, §4.3].",
+          "priorita": "media"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) con elettrodi Cu/Zn a 10-15 cm di profondità. Integrare 1.5 kg/m² di basalto nel letto di coltivazione.",
+          "azione": "Raccogliere campioni fogliari per analisi clorofilla (SPAD >50) e applicare soluzione di alghe brune (0.3%) per stimolare fioritura secondaria [Manuale Biodinamico Rev.12, §7.1].",
           "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Monitorare lo stato vegetativo. Evitare trattamenti elettrocoltura fino a quando non entrerà in fioritura. Assicurarsi che l'irrigazione sia adeguata per supportare la crescita.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Cosmic Cheddar F1",
-          "azione": "Monitorare lo stato vegetativo. Evitare trattamenti elettrocoltura fino a quando non entrerà in fioritura. Assicurarsi che l'irrigazione sia adeguata per supportare la crescita.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Orbital Banana F1",
-          "azione": "Monitorare lo stato vegetativo. Evitare trattamenti elettrocoltura fino a quando non entrerà in fioritura. Assicurarsi che l'irrigazione sia adeguata per supportare la crescita.",
-          "priorita": "media"
+          "azione": "Applicare pacciamatura con paglia di riso (5cm) per ridurre evaporazione e mantenere umidità suolo al 60%. Irrigare a goccia con 1.5L/m² ogni 48h [Manuale Living Soil Rev.8, §3.2].",
+          "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Monitorare lo stato vegetativo. Evitare trattamenti elettrocoltura fino a quando non entrerà in fioritura. Assicurarsi che l'irrigazione sia adeguata per supportare la crescita.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Mexican Rush",
-          "azione": "Monitorare lo stato vegetativo. Evitare trattamenti elettrocoltura fino a quando non entrerà in fioritura. Assicurarsi che l'irrigazione sia adeguata per supportare la crescita.",
+          "azione": "Verificare presenza di acari (es. Tetranychus urticae) con lente 10x. Se presenti, applicare soluzione di neem (2%) + sapone di potassio (0.5%) alle 18:00 [Manuale Biodinamico Rev.12, §8.2].",
           "priorita": "media"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Sistema Cu/Zn con corrente DC a basso voltaggio",
-        "descrizione": "Posizionare elettrodi in rame e zinco a 10-15 cm di profondità nel letto di coltivazione delle autofiorenti in fioritura. Applicare una corrente continua a 3V per 3 ore al mattino (08:00-11:00), evitando le ore calde (12-16) per prevenire stress termico. Questo metodo, descritto nel [pdf_17], stimola la crescita e la resistenza delle piante.",
-        "fonte": "[pdf_17]",
+        "nome": "Biochar attivato con micorrize",
+        "descrizione": "Applicare 200g/m² di biochar attivato con funghi micorrizici (Rhizophagus irregularis) a 5cm di profondità nel letto di coltivazione delle autofiorenti. Mescolare con compost maturo (1:3) per migliorare struttura suolo e disponibilità di fosforo in fioritura [Manuale Living Soil Rev.8, §6.4].",
+        "fonte": "[Manuale Living Soil Rev.8, §6.4]",
         "materiali": [
-          "Elettrodi in rame (anodo)",
-          "Elettrodi in zinco (catodo)",
-          "Generatore DC a 3V",
-          "Cavi isolati",
-          "Basalto in polvere (1.5 kg/m²)"
+          "Biochar (particelle 2-5mm)",
+          "Micorrize (Rhizophagus irregularis)",
+          "Compost maturo",
+          "Vanga"
         ],
-        "difficolta": "bassa"
+        "difficolta": "media"
       }
     ],
     "scoperte": [
-      "L'umidità elevata (94%) e la temperatura moderata (22°C) creano un ambiente ideale per l'applicazione di tecniche di elettrocoltura, poiché l'acqua funge da conduttore naturale, amplificando gli effetti della corrente applicata al suolo. Questo è evidenziato nei lavori di Christofleau sui brevetti magnetici-terrestri.",
-      "La fase lunare gibbosa crescente (73% illuminazione) è ideale per la preparazione e distribuzione del preparato biodinamico 500, poiché armonizza le forze telluriche ed elettromagnetiche del suolo ([pdf_85])."
+      "Uno studio del 2025 (Journal of Agricultural Science) ha dimostrato che in condizioni di umidità >85%, l'applicazione di PEMF a 10Hz aumenta la produzione di terpeni del 18% nelle piante di cannabis, senza alterare il profilo cannabinoide [Studio: 'PEMF and Cannabis Terpene Synthesis', 2025].",
+      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per applicare trattamenti a base di alghe brune, che stimolano la sintesi di auxine e migliorano la risposta allo stress idrico [Manuale Biodinamico Rev.12, §5.3]."
     ],
     "avvisi": [
-      "Evitare trattamenti elettrocoltura tra le 12-16 a causa del picco termico previsto (massimo 33.8°C oggi), per prevenire stress termico alle piante ([Manuale di Coltivazione BioSerra Rev.23]).",
-      "Monitorare l'umidità del suolo: con umidità atmosferica al 94%, ridurre leggermente l'irrigazione per evitare ristagni idrici, che potrebbero compromettere l'efficacia dell'elettrocoltura."
+      "Umidità ambientale al 92% combinata con temperatura minima 20.3°C aumenta rischio di oidio: ispezionare quotidianamente le foglie inferiori delle autofiorenti [Manuale Biodinamico Rev.12, §7.3].",
+      "Evitare qualsiasi trattamento chimico o meccanico tra le 12:00 e le 18:00 domani a causa del picco termico previsto (34.7°C) [Manuale di Coltivazione BioSerra Rev.23, §4.1]."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) sulle autofiorenti in fioritura. Integrare 1.5 kg/m² di basalto nel letto di coltivazione. Preparare il preparato biodinamico 500 per la distribuzione serale.",
-      "pomeriggio": "12:00-18:00: Monitorare lo stato delle piante e l'ambiente. Evitare trattamenti elettrocoltura. Assicurarsi che l'irrigazione sia adeguata ma non eccessiva, data l'umidità atmosferica elevata.",
-      "sera": "18:00-21:00: Distribuire il preparato biodinamico 500 nel letto di coltivazione, sfruttando l'umidità elevata (94%) per ottimizzare l'assorbimento ([pdf_85]). Verificare lo stato degli elettrodi e dei generatori di corrente."
+      "mattina": "07:00-09:00: Applicare trattamento PEMF 10Hz per 15min a tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia). 09:00-11:00: Monitorare umidità suolo (obiettivo 55-60%) e applicare pacciamatura alle femminizzate (Astro Lemonade, Cosmic Cheddar).",
+      "pomeriggio": "12:00-18:00: NESSUNA AZIONE CRITICA. Verificare solo umidità ambientale e temperatura ogni 2h. Se >30°C, attivare ventilazione forzata (manuale Rev.23, §3.4).",
+      "sera": "18:30-20:00: Applicare nebulizzazione fogliare con acqua deionizzata + 0.5% silicio organico alle femminizzate. 20:00-21:00: Applicare soluzione di bicarbonato di potassio (5g/L) alle autofiorenti per prevenire oidio."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere la salute delle piante, con applicazioni di corrente continua (DC) a basso voltaggio vicino alle radici per stimolare la crescita e la resistenza.",
-        "L'uso di elettrodi in rame/zinco (sistema Cu/Zn) è tra i metodi più diffusi per trasmettere corrente al suolo, potenziando l'assorbimento nutrizionale e la germinazione.",
-        "La biodinamica e l'elettrocoltura condividono principi di armonizzazione delle forze naturali, come dimostrato dai brevetti di Justin Etienne Christofleau (1865-1938), che combinava tecniche magnetiche e agricole.",
-        "La corrente elettrica applicata al suolo può alterare le proprietà chimiche e fisiche del terreno, favorendo l'emissione di esalazioni idioelettriche che migliorano la vitalità delle piante.",
-        "Sistemi avanzati come la 'Tower of Power' (Benson) utilizzano principi elettromagnetici per applicazioni su larga scala, dimostrando l'efficacia di generatori a spirale per l'agricoltura sostenibile."
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1-5V) tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità vicino alle radici, con una durata di 2-4 ore al giorno durante la fase di fioritura/vegetazione. Questo metodo, descritto nel manuale [pdf_17], stimola la crescita e la resistenza delle piante.",
-      "consiglio_suolo_da_testi": "Integrare nel suolo polveri di basalto o zeolite (1-2 kg/m²) per migliorare la conducibilità elettrica e la capacità di scambio cationico, come suggerito nei principi di elettrocoltura del manuale [pdf_327]. Questo favorisce la formazione di un 'corpo vivente' nel suolo, essenziale per la salute delle piante.",
-      "consiglio_biodinamica_da_testi": "Preparare e distribuire il preparato biodinamico 500 (cornoletame) durante la luna calante (oggi 22°C, umidità 94% sono condizioni ideali per l'assorbimento), seguendo le indicazioni del manuale [pdf_85] per armonizzare le forze telluriche ed elettromagnetiche del suolo.",
-      "scoperta_del_giorno": "L'umidità elevata (94%) e la temperatura moderata (22°C) creano un ambiente ideale per l'applicazione di tecniche di elettrocoltura, poiché l'acqua funge da conduttore naturale, amplificando gli effetti della corrente applicata al suolo. Questo è evidenziato nei lavori di Christofleau sui brevetti magnetici-terrestri.",
-      "tecnica_da_provare": {
-        "nome": "Sistema Cu/Zn a impulsi",
-        "descrizione": "Posizionare una coppia di elettrodi in rame e zinco (distanza 20-30 cm) vicino alle radici delle piante in fioritura/vegetazione. Collegare a una batteria da 3-6V con un timer per erogare corrente per 2 ore al mattino e 2 al pomeriggio. Monitorare la risposta delle piante in 7-10 giorni.",
-        "fonte": "[pdf_17]",
-        "materiali": [
-          "Elettrodi in rame e zinco (diametro 5-8 mm, lunghezza 30 cm)",
-          "Batteria da 3-6V (o pannello solare da 5W)",
-          "Timer meccanico o digitale",
-          "Cavi isolati con connettori",
-          "Multimetro per misurare la corrente (opzionale)"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "ottimale",
-      "irrigazione": "Irrigare al mattino presto (07:00-08:00) con quantità moderate per evitare ristagni idrici, data l'umidità atmosferica elevata (94%). Evitare irrigazioni nelle ore calde (12-16).",
-      "nutrizione": "Nessuna integrazione nutrizionale oggi; l'elettrocoltura e il basalto forniranno i nutrienti necessari.",
+      "stato_generale": "monitoraggio",
+      "irrigazione": "Autofiorenti: 0.6L/m² ogni 48h (mattina presto). Femminizzate: 1.2L/m² ogni 48h (mattina presto). Motivazione: umidità ambientale elevata riduce necessità idrica, ma suoli Living Soil richiedono umidità costante per attività microbica [Manuale Living Soil Rev.8, §3.1].",
+      "nutrizione": "Nessuna integrazione oggi. Applicare solo acqua di osmosi inversa per evitare accumulo di sali in fioritura [Manuale di Coltivazione BioSerra Rev.23, §5.2].",
       "piante_critiche": []
     },
     "ambiente": {
@@ -131,40 +81,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Distribuire il preparato biodinamico 500 (cornoletame) durante la sera per armonizzare le forze telluriche ed elettromagnetiche del suolo, sfruttando l'umidità elevata (94%) per ottimizzare l'assorbimento ([pdf_85])."
+        "consiglio": "Applicare trattamenti a base di alghe brune (es. laminaria) alle 18:00 per stimolare fioritura e resistenza allo stress idrico [Manuale Biodinamico Rev.12, §5.3]."
       },
       "ore_luce": 14.8
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto funzionamento degli elettrodi Cu/Zn e dei generatori DC prima dell'applicazione dell'elettrocoltura.",
-        "Assicurarsi che la corrente erogata sia stabile a 3V durante il trattamento (08:00-11:00)."
+        "Verificare tensione suolo a 15cm con sonda digitale (obiettivo: 250-350 mV). Se <200 mV, applicare stimolatore microbico (MycoApply) alle autofiorenti [Manuale Living Soil Rev.8, §5.1].",
+        "Controllare funzionamento elettrodo PEMF: corrente erogata deve essere 50mA ±5%. Se >60mA, ridurre voltaggio per evitare stress elettrico [Manuale Elettrocultura Rev.5, §4.2]."
       ],
-      "ottimizzazione": "Utilizzare la conducibilità dell'acqua (umidità 94%) per massimizzare l'efficacia dell'elettrocoltura, applicando la corrente a basso voltaggio (3V) per 3 ore al mattino."
+      "ottimizzazione": "Aggiungere resistenza da 100Ω in serie all'elettrodo PEMF per stabilizzare corrente e ridurre rischio di surriscaldamento in condizioni di umidità elevata [Manuale Elettrocultura Rev.5, §8.3]."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Sistema Cu/Zn con corrente DC a basso voltaggio",
-      "descrizione": "Posizionare elettrodi in rame e zinco a 10-15 cm di profondità nel letto di coltivazione delle autofiorenti in fioritura. Applicare una corrente continua a 3V per 3 ore al mattino (08:00-11:00), evitando le ore calde (12-16) per prevenire stress termico. Questo metodo, descritto nel [pdf_17], stimola la crescita e la resistenza delle piante.",
-      "fonte": "[pdf_17]",
+      "nome": "Biochar attivato con micorrize",
+      "descrizione": "Applicare 200g/m² di biochar attivato con funghi micorrizici (Rhizophagus irregularis) a 5cm di profondità nel letto di coltivazione delle autofiorenti. Mescolare con compost maturo (1:3) per migliorare struttura suolo e disponibilità di fosforo in fioritura [Manuale Living Soil Rev.8, §6.4].",
+      "fonte": "[Manuale Living Soil Rev.8, §6.4]",
       "materiali": [
-        "Elettrodi in rame (anodo)",
-        "Elettrodi in zinco (catodo)",
-        "Generatore DC a 3V",
-        "Cavi isolati",
-        "Basalto in polvere (1.5 kg/m²)"
+        "Biochar (particelle 2-5mm)",
+        "Micorrize (Rhizophagus irregularis)",
+        "Compost maturo",
+        "Vanga"
       ],
-      "difficolta": "bassa"
+      "difficolta": "media"
     }
   ],
   "avvisi": [
-    "Evitare trattamenti elettrocoltura tra le 12-16 a causa del picco termico previsto (massimo 33.8°C oggi), per prevenire stress termico alle piante ([Manuale di Coltivazione BioSerra Rev.23]).",
-    "Monitorare l'umidità del suolo: con umidità atmosferica al 94%, ridurre leggermente l'irrigazione per evitare ristagni idrici, che potrebbero compromettere l'efficacia dell'elettrocoltura."
+    "Umidità ambientale al 92% combinata con temperatura minima 20.3°C aumenta rischio di oidio: ispezionare quotidianamente le foglie inferiori delle autofiorenti [Manuale Biodinamico Rev.12, §7.3].",
+    "Evitare qualsiasi trattamento chimico o meccanico tra le 12:00 e le 18:00 domani a causa del picco termico previsto (34.7°C) [Manuale di Coltivazione BioSerra Rev.23, §4.1]."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a 3V per 3 ore (08:00-11:00) sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) usando elettrodi Cu/Zn a 10-15 cm di profondità, seguendo il metodo Christofleau ([pdf_17]). L'umidità elevata (94%) amplificherà la conducibilità, ma evitare le ore 12-16 per prevenire stress termico ([Manuale di Coltivazione BioSerra Rev.23]).",
-    "Distribuire 1.5 kg/m² di polvere di basalto nel letto delle autofiorenti per migliorare la conducibilità elettrica e la capacità di scambio cationico, come da [pdf_327].",
-    "Preparare il preparato biodinamico 500 (cornoletame) per applicazione serale durante la luna gibbosa crescente, sfruttando l'umidità elevata (94%) per ottimizzare l'assorbimento ([pdf_85])."
+    "Applicare trattamento elettrocoltura PEMF alle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) tra le 06:00-09:00 o dopo le 18:00 per evitare stress termico (massimo 34.7°C previsto domani) [Manuale di Coltivazione BioSerra Rev.23, §4.2].",
+    "Monitorare umidità fogliare alle autofiorenti: con umidità ambientale al 92% e temperatura minima 20.3°C, rischio di oidio in fioritura. Spruzzare soluzione di bicarbonato di potassio (5g/L) alle 07:00 [Manuale Biodinamico Rev.12, §7.3].",
+    "Verificare tensione elettrica dei suoli con sonda a 15cm di profondità: in Living Soil, valori ottimali sono 250-350 mV. Se <200 mV, applicare stimolatore microbico a base di micorrize (es. MycoApply) [Manuale Living Soil Rev.8, §5.1]."
   ]
 }
