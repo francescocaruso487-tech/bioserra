@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-18T05:09:17.698839+00:00",
+  "lastUpdate": "2026-07-19T05:36:37.177744+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2828,14 +2828,82 @@
       "data_proposta": "2026-07-18",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate coltivate in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV grazie a un metabolismo radicale più efficiente. Questo effetto è misurabile come aumento della concentrazione di CBDV nelle infiorescenze rispetto a un controllo con concimazione minerale, in piante femminizzate coltivate in Living Soil outdoor.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (Living Soil) con terreno prelevato dalla stessa fonte, suddiviso in due lotti: Lotto A (Living Soil con concimazione organica) e Lotto B (controllo con concimazione minerale).",
+        "Seminare semi CBDV femminizzati (varietà con <1% THC, alto CBDV) in entrambi i lotti, con 10 piante per parcella, disposte in modo casuale. Mantenere distanza e condizioni ambientali identiche.",
+        "Applicare concimazione organica (es. compost maturo + micorrize + vermicompost) al Lotto A ogni 10 giorni, seguendo protocollo Living Soil. Al Lotto B applicare concimazione minerale bilanciata (NPK 5-5-5) con stessa frequenza.",
+        "Dopo 30 giorni, raccogliere le infiorescenze apicali di 5 piante per parcella (selezionate casualmente), essiccarle in modo uniforme e analizzare il contenuto di CBDV tramite cromatografia (o kit ELISA se disponibile)."
+      ],
+      "materiali": [
+        "Semi CBDV femminizzati (varietà con profilo CBDV >1%, <1% THC)",
+        "Terreno Living Soil prelevato da zona non coltivata (per omogeneità)",
+        "Concime organico (compost + micorrize + vermicompost)",
+        "Concime minerale bilanciato (NPK 5-5-5)",
+        "Kit di analisi CBDV (cromatografo o kit ELISA) o accesso a laboratorio",
+        "Serra outdoor con controllo microclimatico (umidità, temperatura)",
+        "Strumenti per campionamento e essiccazione (forbici, essiccatore, bilancia)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Concentrazione di CBDV nelle infiorescenze (mg/g) tramite analisi chimica",
+        "Peso secco delle infiorescenze per pianta (g)",
+        "Confronto statistico (test t di Student) tra Lotto A e Lotto B per verificare differenza significativa"
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (luce, temperatura, umidità), metodo di essiccazione, metodo di analisi, frequenza di concimazione.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica (Living Soil) con semi CBDV, un approccio non trattato nei due manuali singolarmente. Mentre il Manuale A si focalizza su CBD/CBG e il Manuale B su semi CBD in generale, qui si indaga l'effetto sinergico su un cannabinoide secondario specifico (CBDV) in condizioni Living Soil outdoor, con misurazione diretta del composto target.",
+      "id": "esp_conn_2026-07-19_001",
+      "data_proposta": "2026-07-19",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra vasi biologici e semi femminizzati in Living Soil: ottimizzazione radicale e resa cannabinoide in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi in terracotta biologica (Manuale A) e semi femminizzati (Manuale B) in un sistema Living Soil water-only aumenterà la biomassa radicale e la concentrazione di CBD/THC rispetto a controlli con vasi standard e semi regolari. La sinergia si basa su: 1) vasi biologici che favoriscono l'ossigenazione e la simbiosi micorrizica (Manuale A), 2) semi femminizzati che eliminano sprechi di risorse su piante maschio (Manuale B).",
+      "protocollo": [
+        "Preparare 4 parcelle identiche in serra outdoor con Living Soil certificato (compost, biochar, micorrize). Ogni parcella avrà 10 piante: 5 in vasi di terracotta biologica (diametro 30cm, senza smalti tossici) e 5 in vasi standard in plastica nera (controllo).",
+        "Seminare semi femminizzati CBD-dominant (varietà USA, <1% THC) in metà delle piante di ogni parcella e semi regolari della stessa genetica come controllo. Mantenere distanza di 50cm tra piante per evitare competizione.",
+        "Applicare protocollo water-only: irrigazione con sola acqua osmotica + 5% di estratto di alghe (ricco in flavonoidi) ogni 3 giorni. Misurare settimanalmente: lunghezza radici (tramite sonda a ultrasuoni), pH del suolo (5.5-6.5), e umidità (60-70%).",
+        "A 30 giorni dalla semina, raccogliere le piante, separare radici e fiori, essiccare a 20°C per 7 giorni. Misurare peso secco di radici e fiori, e analizzare concentrazione di CBD/THC tramite HPLC (estrazione con etanolo 96%)."
+      ],
+      "materiali": [
+        "Vasi in terracotta biologica (senza piombo/ceramica smaltata), vasi in plastica nera standard",
+        "Semi femminizzati CBD-dominant (es. 'ACDC'), semi regolari della stessa genetica",
+        "Living Soil pre-miscelato (compost di lombrico, biochar, micorrize), sonda pH/umidità",
+        "Estratto di alghe (ricco in flavonoidi), HPLC per analisi cannabinoidi"
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "Peso secco radici (g) e fiori (g) per pianta",
+        "Concentrazione CBD/THC (% peso secco) tramite HPLC",
+        "Rapporto radici/parte aerea (indice di salute radicale)",
+        "Verifica: confronto tra gruppi (terracotta vs plastica, femminizzati vs regolari) con test t di Student (p<0.05)"
+      ],
+      "variabili_controllo": "Genetica delle piante, volume del suolo, esposizione solare, temperatura, umidità, metodo di essiccazione, protocollo di irrigazione (water-only).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina due concetti chiave dei manuali (vasi biologici + semi femminizzati) in un protocollo Living Soil water-only, misurando un output quantificabile (CBD/THC) che non è trattato in nessuno dei due manuali singolarmente. Inoltre, introduce l'uso di flavonoidi (da alghe) come booster sinergico, non menzionato nei manuali originali.",
+      "id": "esp_conn_2026-07-19_002",
+      "data_proposta": "2026-07-19",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-18",
-    "nuove_proposte": 1,
-    "pdf_analizzati": 284,
-    "connessioni_usate": 279
+    "data": "2026-07-19",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 290,
+    "connessioni_usate": 293
   }
 }
