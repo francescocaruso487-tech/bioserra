@@ -2,7 +2,7 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-07-18
+aggiornato: 2026-07-19
 pdf_count: 3
 ---
 
@@ -12,37 +12,33 @@ pdf_count: 3
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta un approccio olistico alla nutrizione delle piante, basato sull’apporto di sostanze nutritive attraverso ammendanti naturali di origine vegetale, animale o microbica. A differenza dei fertilizzanti sintetici, questi materiali si decompongono lentamente nel suolo, alimentando la rete trofica del *Living Soil* e promuovendo la formazione di humus stabile. Il meccanismo d’azione si fonda sulla mineralizzazione graduale dei nutrienti (azoto, fosforo, potassio, microelementi) ad opera di batteri, funghi e attinomiceti, che li rendono disponibili alle radici in forma assimilabile. Questo processo non solo nutre le piante, ma rafforza anche la resilienza del suolo, migliorando la struttura, la capacità di ritenzione idrica e la biodiversità microbica.
+La **fertilizzazione organica** rappresenta un approccio olistico alla nutrizione delle piante, basato sull’utilizzo di ammendanti naturali che migliorano la struttura del suolo e la biodiversità microbica. A differenza dei fertilizzanti sintetici, questi materiali (come farine di sangue, osso o pesce) si decompongono gradualmente, rilasciando nutrienti in modo sincronizzato con i bisogni fisiologici delle colture. Il meccanismo d’azione si fonda sulla **simbiosi tra piante e microrganismi**: batteri e funghi del *Living Soil* mineralizzano la materia organica, trasformandola in forme assimilabili (es. azoto nitrico, fosforo solubile). Questo processo non solo nutre le piante ma **rigenera il suolo**, contrastando l’impoverimento e la compattazione tipici dell’agricoltura intensiva.
 
-In un contesto di serra outdoor a Caserta (41°N), dove il clima mediterraneo può stressare i microrganismi del suolo, la fertilizzazione organica assume un ruolo chiave per mantenere l’equilibrio biologico. L’uso di farine organiche (sangue, osso, pesce) fornisce un apporto bilanciato di macro e micronutrienti, mentre i loro composti azotati (es. proteine) stimolano l’attività microbica, favorendo la simbiosi radicale. Inoltre, la presenza di carbonio organico attiva il ciclo dei nutrienti, riducendo la necessità di interventi correttivi e prevenendo l’accumulo di sali nel substrato.
+In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce una decomposizione rapida dei nutrienti, la fertilizzazione organica assume un ruolo chiave per mantenere l’equilibrio tra **vegetazione** (fase di crescita) e **fioritura** (fase riproduttiva). L’uso di farine animali, ad esempio, fornisce azoto prontamente disponibile per la sintesi proteica nelle foglie, mentre il fosforo delle farine d’osso supporta lo sviluppo radicale e la fioritura. La chiave del successo risiede nella **dose ridotta e frequente**: applicazioni troppo concentrate possono causare squilibri osmotici o attirare parassiti, mentre dosi troppo basse non soddisfano i fabbisogni delle piante.
 
 ---
 
 ## Come si applica in serra
 
-1. **Preparazione del substrato**:
-   - Prima della semina o del trapianto, incorporare nel suolo (a 10–15 cm di profondità) una miscela di farine organiche a lenta cessione, dosando:
-     - **Farine di sangue** (100–150 g/m²): per apporto di azoto (N) in fase vegetativa.
-     - **Farine di osso** (50–80 g/m²): ricca di fosforo (P) per radici e fioritura.
-     - **Farine di pesce** (30–50 g/m²): apporto bilanciato di N, P, K e microelementi.
-   - Mescolare con compost maturo (2–3 kg/m²) per favorire la colonizzazione microbica.
+1. **Preparazione del suolo**
+   - Prima della semina o trapianto, incorporare nel terreno (10-15 cm di profondità) una miscela di farine organiche:
+     - **Farine di sangue** (100-150 g/m²): per azoto rapido (12-13% N).
+     - **Farine d’osso** (50-80 g/m²): per fosforo (15-20% P₂O₅) e calcio.
+     - **Farine di pesce** (30-50 g/m²): per azoto organico e micronutrienti.
+   - *Nota*: Evitare il contatto diretto con i semi per prevenire ustioni.
 
-2. **Applicazione in copertura**:
-   - **Dose ridotta** (1/3 della dose iniziale) ogni 2 settimane, distribuendo uniformemente sulla superficie del suolo.
-   - Evitare il contatto diretto con le foglie per prevenire ustioni.
-   - **Metodo**: Spargere manualmente o con un distributore a spinta, seguendo le file di coltivazione.
+2. **Applicazione in vegetazione**
+   - Ogni **2 settimane**, distribuire una dose ridotta (50% della dose iniziale) di farine organiche sulla superficie del suolo, seguita da una leggera irrigazione per attivare i microrganismi.
+   - *Esempio pratico*: Per pomodori in serra, usare 50 g/m² di farina di sangue + 30 g/m² di farina d’osso ogni 15 giorni.
 
-3. **Monitoraggio e adattamento**:
-   - **Colore delle foglie**: Foglie gialle (carenza di azoto) → aumentare farina di sangue. Foglie viola (fosforo) → aggiungere farina di osso.
-   - **pH del suolo**: Mantenere tra 6.0 e 7.0 (aggiustare con cenere di legna o zolfo se necessario).
-   - **Umidità**: Assicurare un’irrigazione costante per attivare la mineralizzazione.
+3. **Monitoraggio e aggiustamenti**
+   - **Colore delle foglie**: Foglie gialle (clorosi) indicano carenza di azoto; foglie viola possono segnalare fosforo insufficiente.
+   - **pH del suolo**: Mantenere tra 6.0 e 7.0 (aggiustare con calcare o zolfo se necessario).
+   - *Strumenti*: Usare un kit di analisi del suolo o test con reagenti (es. nitrato di potassio per l’azoto).
 
-4. **Fasi critiche**:
-   - **Vegetazione**: Priorità a farine di sangue e pesce (alto N).
-   - **Fioritura**: Ridurre azoto, aumentare farina di osso e potassio (es. cenere di legna).
+4. **Fase di fioritura**
+   - Ridurre le farine di sangue (ricche di azoto) e aumentare quelle d’osso o alghe (per potassio e micronutrienti).
+   - *Esempio*: 30 g/m² di farina d’osso + 20 g/m² di farina di alghe ogni 3 settimane.
 
 ---
-## Sinergie con altri elementi
-
-- **Elettrocultura (Lakhovsky/Fe-Cu)**:
-  - Le spirali di rame (diametro 30–50 cm) posizionate sopra le piante possono
+## Sinergie con altri
