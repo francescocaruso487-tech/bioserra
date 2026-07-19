@@ -2,7 +2,7 @@
 id: farine_di_rocce
 label: Farine di Rocce
 categoria: nutrizione
-aggiornato: 2026-07-18
+aggiornato: 2026-07-19
 pdf_count: 0
 ---
 
@@ -12,31 +12,31 @@ pdf_count: 0
 # Farine di Rocce
 
 ## Descrizione
-Le **farine di rocce** rappresentano un approccio naturale e sostenibile per la rimineralizzazione dei substrati colturali, basato sull’utilizzo di minerali in polvere derivati dalla frantumazione di rocce vulcaniche o sedimentarie. Questi materiali, ricchi di silicio, calcio, magnesio, potassio e oligoelementi, vengono lentamente rilasciati nel suolo grazie all’azione degli agenti atmosferici, dei microrganismi e delle radici delle piante. Il meccanismo d’azione si fonda sulla **complessazione minerale**, dove i cationi presenti nelle rocce (es. Ca²⁺, Mg²⁺, K⁺) vengono scambiati con i protoni (H⁺) prodotti dalle radici o dai batteri, migliorando la struttura del suolo e la disponibilità di nutrienti. Inoltre, il silicio (SiO₂) forma uno strato protettivo sulle pareti cellulari delle piante, aumentando la resistenza a stress biotici (funghi, insetti) e abiotici (siccità, sbalzi termici).
+Le **farine di rocce** rappresentano un approccio naturale e sostenibile per la rimineralizzazione dei substrati, basato sull’utilizzo di minerali in polvere derivanti dalla frantumazione di rocce vulcaniche o sedimentarie. Questi materiali, come il basalto o il silicio verde, rilasciano lentamente nutrienti essenziali (silicio, calcio, magnesio, ferro, potassio) nel suolo, migliorando la struttura fisica e la fertilità chimica. Il meccanismo d’azione si fonda sulla **solubilizzazione graduale** dei minerali, favorita dall’attività microbica del suolo vivente e dalle condizioni redox del substrato. Il silicio, in particolare, rinforza le pareti cellulari delle piante, aumentandone la resistenza a stress biotici (funghi, insetti) e abiotici (siccità, sbalzi termici), mentre gli altri elementi contribuiscono al bilanciamento nutrizionale e alla disponibilità di micronutrienti.
 
-In un contesto di **Living Soil** come quello della serra outdoor di Caserta (41°N), l’uso di farine di rocce si allinea perfettamente con i principi dell’agroecologia: riduce la dipendenza da fertilizzanti sintetici, promuove la biodiversità microbica e migliora la capacità di scambio cationico (CSC) del substrato. Studi hanno dimostrato che l’applicazione di basalto o silicio verde può incrementare la resa fino al 20% in colture orticole, grazie alla lenta cessione di nutrienti e alla stimolazione dell’attività enzimatica del suolo. La granulometria fine (sotto i 100 micron) è cruciale per massimizzare la superficie di contatto e accelerare i processi di weathering.
+L’efficacia delle farine di rocce è massima in sistemi **Living Soil**, dove la biodiversità microbica accelera la trasformazione dei minerali in forme assimilabili dalle piante. A differenza dei fertilizzanti sintetici, questi materiali non causano salinizzazione del suolo né accumulo di metalli pesanti, purché utilizzati in dosi appropriate. Inoltre, la loro azione prolungata nel tempo (fino a 6-12 mesi) riduce la necessità di interventi frequenti, allineandosi ai principi dell’agricoltura rigenerativa. Studi hanno dimostrato che l’applicazione di basalto in serra outdoor può incrementare la resa fino al 20% in colture come pomodoro e peperone, grazie a una migliore assimilazione dei nutrienti e a una maggiore attività radicale.
+
+---
 
 ## Come si applica in serra
-Per una serra outdoor a Caserta, seguire questi passaggi per integrare le farine di rocce nel **Living Soil**:
 
-1. **Scelta del materiale**:
-   - **Basalto**: Ideale per apportare silicio, calcio e magnesio. Disponibile in polvere fine (50–100 micron) o come "silicio verde" (attivato termicamente).
-   - **Granito**: Ricco di potassio e feldspati, utile per terreni poveri di K.
-   - **Dolomite**: Fornisce calcio e magnesio in rapporto 2:1, utile per prevenire carenze.
-   - Evitare rocce con alto contenuto di metalli pesanti (es. scisti).
+1. **Selezione del materiale**:
+   - Utilizzare **farina di basalto** (ricca in silicio, calcio, magnesio) o **silicio verde** (altamente biodisponibile).
+   - Evitare farine di rocce sedimentarie (es. calcare) se il pH del suolo è già alcalino (>7.5), per non aumentare ulteriormente la basicità.
 
-2. **Dosaggio e miscelazione**:
-   - Aggiungere **2–3% in volume** al substrato (es. 2–3 kg per 100 L di terriccio).
-   - Mescolare accuratamente con una betoniera o manualmente, evitando grumi.
-   - Per terreni argillosi, aumentare la dose al 3% per migliorare la struttura.
+2. **Preparazione del substrato**:
+   - Miscelare **2-3% in volume** di farina di roccia al substrato (es. 200-300 g per 10 L di terriccio).
+   - Per terreni argillosi, ridurre la dose al 1.5% per evitare compattazione.
+   - Integrare con **compost maturo** (10-20%) e **micorrize** (es. *Glomus spp.*) per accelerare la solubilizzazione dei minerali.
 
-3. **Applicazione nel ciclo colturale**:
-   - **Germinazione**: Incorporare nel substrato di semina (es. 1–2% nel mix di torba e perlite).
-   - **Vegetazione**: Distribuire sulla superficie del suolo (1–2 kg/10 m²) e interrare leggermente con una zappetta, ripetendo ogni 4–6 settimane.
-   - **Fioritura**: Ridurre la dose al 1% per evitare eccessi di silicio che potrebbero indurire le pareti cellulari.
+3. **Applicazione in serra outdoor (Caserta)**:
+   - **Prima del trapianto**: incorporare la farina nel substrato 2-3 settimane prima della semina, bagnando abbondantemente per attivare i processi microbici.
+   - **Durante la vegetazione**: spargere **100-150 g/m²** sulla superficie del suolo e interrare leggermente con una zappetta, ogni 2-3 mesi.
+   - **In caso di stress idrico**: applicare una soluzione di **farina di roccia in sospensione** (10 g/L) come trattamento fogliare, per via radicale o con irrigazione a goccia.
 
-4. **Idratazione e attivazione**:
-   - Bagnare il substrato dopo l’applicazione per innescare i processi di dissoluzione.
-   - In caso di serra con **acqua magnetizzata**, utilizzarla per l’irrigazione per accelerare la cessione dei minerali.
+4. **Manutenzione**:
+   - Rinnovare la farina **ogni ciclo colturale** (3-4 mesi), poiché la solubilizzazione è lenta e dipendente dall’attività biologica.
+   - Monitorare il pH del suolo (ideale: 6.2-6.8) e aggiustare con **zolfo elementare** o **torba** se necessario.
 
-5. **Monitoraggio**:
+---
+## Sin
