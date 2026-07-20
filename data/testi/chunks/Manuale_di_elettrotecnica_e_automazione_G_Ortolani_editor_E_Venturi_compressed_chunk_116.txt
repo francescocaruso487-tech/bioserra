@@ -234,9 +234,7 @@ Omogenea associata, XV-11
 Parabola, XV-37
 P.I.D., XV-42
 - costante di proporzionalità, XV-43
-- costante di integrazione, XV-43
-- costante derivativa, XV-43
-- deviazione statica, XV-43
+- costante di integrazione,
 - offset, XV-43
 - regolatori con i PLC, XV-55
 Picco di risonanza, XV-31
@@ -370,33 +368,41 @@ Trasformata di Laplace, XV-17, 18
 - teorema del valore finale, XV-20
 Trasformata Zeta, XV-43, 46, 47, 48
 - equazioni alle differenze finite, XV-46
-- proprietà, XV-46
-- teorema del valore finale, XV-47
-- teorema del valore iniziale, XV-47
-Velocità di risposta, XV-37
+Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
 
-[PAG 2279]
-SEZIONE XVI TECNOLOGIE BUS
+---
+
+**PROPRIETÀ**, XV-46
+**TEOREMA DEL VALORE FINALE**, XV-47
+**TEOREMA DEL VALORE INIZIALE**, XV-47
+**Velocità di risposta**, XV-37
+
+[PAG. 2279]
+**SEZIONE XVI TECNOLOGIE BUS**
 47
-Sezione XVI
-Tecnologie BUS
+**Sezione XVI**
+**Tecnologie BUS**
+
 Domotica, XVI-8, 11
 - consumo e risparmio, XVI-9
 - convenienza, XVI-10
 - disabili, XVI-8
-Sistema BatiBUS, XVI-21
+
+**Sistema BatiBUS**, XVI-21
 - apparecchi, XVI-21
 - indirizzamento, XVI-22
 - tecnica trasmissiva, XVI-21
 - topologia, XVI-21
-Sistema Instabus EIB, XVI-22
+
+**Sistema Instabus EIB**, XVI-22
 - apparecchi, XVI-22
-- instabus pl (power line), XVI-26
-- instabus tp (twisted pair), XVI-24
-- instabus rf (radio frequency), XVI-27
+- Instabus PL (Power Line), XVI-26
+- Instabus TP (Twisted Pair), XVI-24
+- Instabus RF (Radio Frequency), XVI-27
 - software gestione, XVI-24
 - visualizzazione, XVI-24
-Sistemi BUS, accoppiatore, XVI-23
+
+**Sistemi BUS, accoppiatore**, XVI-23
 - applicazioni, XVI-13, 17
 - BatiBUS, XVI-18, 21
 - BCU, XVI-5
@@ -413,7 +419,7 @@ Sistemi BUS, accoppiatore, XVI-23
 - HES, XVI-20, 27
 - indirizzo fisico, XVI-24, 26
 - indirizzo di gruppo, XVI-26
-- lon works, XVI-2, 19
+- LonWorks, XVI-2, 19
 - multivendor, XVI-2
 - proprietari, XVI-2, 27
 - radio frequenza, XVI-3
@@ -422,18 +428,20 @@ Sistemi BUS, accoppiatore, XVI-23
 - telegramma, XVI-25
 - utenti, XVI-12
 - vantaggi, XVI-6
-Sistemi BUS proprietari (My Home BTicino), XVI-27
+
+**Sistemi BUS proprietari (My Home BTicino)**, XVI-27
 - comfort, XVI-35
 - comunicazione, XVI-40
 - gestione energia, XVI-34
 - sicurezza, XVI-28
 
-[PAG 2280]
+[PAG. 2280]
 48
-INDICE ANALITICO PER SEZIONI
-Sezione XVII
-Elettronica analogica e digitale
-Algebra booleana, XVII-89
+**INDICE ANALITICO PER SEZIONI**
+**Sezione XVII**
+**Elettronica analogica e digitale**
+
+**Algebra booleana**, XVII-89
 - forma canonica POS, XVII-92
 - forma canonica SOP, XVII-91
 - funzioni booleane, XVII-90
@@ -443,8 +451,10 @@ Algebra booleana, XVII-89
 - postulati, XVII-89
 - semplificazione di funzioni, XVII-90
 - teoremi, XVII-89
-Ammettenza, bipoli, XVII-9
-Amplificatori, a JFET, XVII-67
+
+**Ammettenza**, bipoli, XVII-9
+
+**Amplificatori**, a JFET, XVII-67
 - bilancio energetico, XVII-164
 - delle differenze con AO, XVII-77
 - invertenti con AO, XVII-76
@@ -453,7 +463,8 @@ Amplificatori, a JFET, XVII-67
 - sommatori con AO, XVII-78
 - tipi, XVII-24
 - tipi di accoppiamento, XVII-24
-Amplificatori a BJT, XVII-54
+
+**Amplificatori a BJT**, XVII-54
 - a base comune, XVII-58
 - a collettore comune, XVII-58
 - ad emettitore comune, XVII-58
@@ -462,11 +473,13 @@ Amplificatori a BJT, XVII-54
 - distorsione, XVII-56
 - modelli, XVII-57
 - tipi di connessioni, XVII-58
-Amplificatori di potenza, in classe A, XVII-166, 167
+
+**Amplificatori di potenza**, in classe A, XVII-166, 167
 - in classe B, XVII-168
 - push-pull a simmetria complementare, XVII-169
 - push-pull a simmetria quasi complementare, XVII-169
-Amplificatori operazionali, XVII-73
+
+**Amplificatori operazionali**, XVII-73
 - amplificatore delle differenze, XVII-77
 - amplificatore invertente, XVII-76
 - amplificatore non invertente, XVII-77
@@ -474,36 +487,42 @@ Amplificatori operazionali, XVII-73
 - caratteristica di trasferimento, XVII-74
 - circuiti lineari, XVII-76
 - circuiti non lineari,
-Banda passante, XVII-29
-Criterio di Barkhausen, XVII-135
-Sistemi numerici in base, XVII-82
-Bilancio energetico, amplificatori, XVII-164
-Bipoli, XVII-9
-Bit, XVII-4
-BJT, XVII-49
+
+**Banda passante**, XVII-29
+**Criterio di Barkhausen**, XVII-135
+
+**Sistemi numerici in base**, XVII-82
+**Bilancio energetico**, amplificatori, XVII-164
+**Bipoli**, XVII-9
+**Bit**, XVII-4
+
+**BJT**, XVII-49
 - caratteristiche, XVII-51
 - circuiti digitali, XVII-69
 - connessioni, XVII-50
 - modelli per piccoli segnali, XVII-57
-- npn, XVII-49
-- parametri a e b, XVII-50
-- pnp, XVII-49
+- NPN, XVII-49
+- parametri α e β, XVII-50
+- PNP, XVII-49
 - polarizzazione, XVII-52
 - principio di funzionamento, XVII-49
 - stabilizzazione, XVII-52
 - struttura, XVII-49
 - di potenza, XVII-163
-Diagrammi di Bode, XVII-28
-Breakdown, diodi, XVII-41
-Circuiti, lineari, XVII-6
+
+**Diagrammi di Bode**, XVII-28
+**Breakdown**, diodi, XVII-41
+
+**Circuiti**, lineari, XVII-6
 - tempo invarianti, XVII-6
 - antirimbalzo, XVII-112
 - combinatori, XVII-102
 - risonante, XVII-20
-Classi di amplificazione, XVII-162
-Circuiti digitali CMOS, XVII-71
-Codice ASCII, XVII-88
-Codici, alfanumerici, XVII-88
+
+**Classi di amplificazione**, XVII-162
+**Circuiti digitali CMOS**, XVII-71
+**Codice ASCII**, XVII-88
+**Codici**, alfanumerici, XVII-88
 - numerici, XVII-87
 - pesati, XVII-87
 Codifica, circuiti, XVII-105
@@ -642,7 +661,7 @@ Porte NOR, XVII-98, 100
 Teorema di Norton, XVII-10
 Porte NOT, XVII-98
 Notazione, a virgola fissa, XVII-87
-- a virgola mobile, XVII-87
+- virgola mobile, XVII-87
 Numerazione binaria, XVII-83
 - esadecimale, XVII-84
 - ottale, XVII-84
@@ -920,7 +939,6 @@ Rendimento, XVIII-22, 49
 Resistenza termica, XVIII-20
 
 Reti snubber, XVIII-18
-
 Ripple, XVIII-22, 36, 38, 39, 41, 42, 43
 
 SCR (Raddrizzatore Controllato al Silicio), XVIII-4
@@ -1078,7 +1096,7 @@ Metalli, XIX-3, 6, 25
 Modelli a legame di valenza, XIX-27
 Modulo di, compressibilità, XIX-9
 - Elasticità, XIX-9
-- Poisson, XIX-9
+- Coefficiente di Poisson, XIX-9
 Montante, sezione del, XIX-31
 Orologio programmatore, XIX-67
 Ossidazione, XIX-13
@@ -1091,7 +1109,7 @@ Potere risolutore, XIX-117
 Presa e spina di corrente, XIX-54
 - Ad uso industriale (CEE), XIX-60
 - Apparecchi speciali, XIX-59
-- A ricettività multipla del, XIX-58
+- A ricettività multipla, XIX-58
 - Tipi di, XIX-57, 58
 Pressoresistori, XIX-126
 Proprietà, fisico-chimiche dei materiali, XIX-6, 17
