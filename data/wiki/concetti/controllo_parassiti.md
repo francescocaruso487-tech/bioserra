@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-19
+aggiornato: 2026-07-20
 pdf_count: 10
 ---
 
@@ -12,33 +12,39 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio ecosistemico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo approccio sfrutta i meccanismi naturali di regolazione delle popolazioni di insetti, promuovendo la biodiversità e la resilienza delle piante. Il principio fondamentale si fonda sulla **teoria della piramide trofica**: un suolo sano e una comunità vegetale diversificata attirano insetti utili (predatori e parassitoidi) che mantengono sotto controllo le specie dannose. L'olio di neem, ad esempio, agisce come **regolatore della crescita degli insetti** (IGR), interferendo con la muta e la riproduzione degli organismi nocivi senza uccidere direttamente gli insetti utili. Inoltre, la **Living Soil** (suolo vivo) favorisce microrganismi antagonisti (come *Trichoderma* o *Bacillus thuringiensis*) che competono con i patogeni per risorse e spazio, riducendo la pressione parassitaria.
+Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’equilibrio ecologico, dove la prevenzione e la gestione delle infestazioni avvengono attraverso metodi biologici e non tossici. Questo approccio si fonda sulla comprensione che un suolo sano e un ecosistema vivente (Living Soil) sono in grado di autoregolarsi, riducendo la necessità di interventi chimici. I meccanismi d’azione includono l’uso di organismi utili (predatori naturali), repellenti botanici e pratiche agronomiche che favoriscono la biodiversità. Ad esempio, l’olio di neem agisce come insetticida sistemico e repellente per afidi e cocciniglie, mentre gli acari predatori (come *Phytoseiulus persimilis*) controllano le infestazioni di acari dannosi senza danneggiare le piante.
 
-Questa metodologia si allinea con i principi dell'**elettrocultura**, che ipotizza come campi elettromagnetici a bassa frequenza (ad esempio quelli generati da spirali di rame secondo il metodo Lakhovsky) possano **stimolare la risposta immunitaria delle piante** e alterare il comportamento degli insetti. Studi empirici in serra suggeriscono che tali campi possano aumentare l'attività microbica del suolo, rendendo le piante più resistenti agli attacchi. La combinazione di questi metodi con pratiche tradizionali (come il compostaggio Indore di Howard) crea un sistema chiuso e autosufficiente, dove la salute del suolo e delle piante si autoalimentano.
+Questa metodologia è particolarmente efficace in serra outdoor, dove le condizioni microclimatiche possono favorire la proliferazione di parassiti. La chiave del successo risiede nella **prevenzione attiva**: ispezioni regolari, monitoraggio delle dinamiche predatorie e applicazione di soluzioni a basso impatto ambientale. Inoltre, l’integrazione con tecniche di elettrocultura (come le spirali di rame di Lakhovsky) può stimolare la resistenza naturale delle piante, rendendole meno suscettibili agli attacchi.
 
 ---
 
 ## Come si applica in serra
 
-**Protocollo per serra outdoor Living Soil a Caserta (41°N):**
-
-1. **Monitoraggio quotidiano**
-   - Ispeziona **foglie giovani, gemme e steli** al mattino presto (orario di massima attività degli insetti).
-   - Usa una **lente di ingrandimento** per identificare uova, larve o ragnetti rossi (es. *Tetranychus urticae*).
-   - Segna le piante infestate con un nastro colorato per interventi mirati.
+1. **Ispezione quotidiana**
+   - Controlla foglie (soprattutto sotto il lato inferiore) e steli per segni di infestazione (es. ragnatele, puntini gialli, melata).
+   - Usa una lente d’ingrandimento per identificare parassiti come tripidi o acari.
 
 2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d'acqua.
-   - **Applicazione**: Spruzza **ogni 7 giorni** al tramonto (evita l'esposizione solare diretta per prevenire ustioni fogliari).
-   - **Copertura**: Assicurati che la soluzione raggiunga anche la pagina inferiore delle foglie.
-   - **Frequenza**: Aumenta a **ogni 5 giorni** durante i picchi di umidità (primavera/autunno a Caserta).
+   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) per litro d’acqua.
+   - **Applicazione**: Spruzza sulle piante ogni 7 giorni, preferibilmente al tramonto per evitare ustioni fogliari.
+   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione in atto.
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilasciali quando si rilevano **più di 2-3 ragnetti rossi per foglia**.
-     - Quantità: 2-5 individui/m² (distribuiti in punti strategici).
-     - Condizioni: Umidità >60%, temperatura 20-28°C.
-   - **Coccinelle** (*Coccinella septempunctata*): Rilasciale in **fioritura** per controllare afidi.
-     - Quantità: 10-15 individui per 100 m² (preferibilmente al crepuscolo).
+3. **Insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui per m² in caso di attacco di *Tetranychus urticae* (acaro rosso).
+   - **Coccinelle** (*Coccinella septempunctata*): Efficaci contro afidi; posiziona piante trappola (es. calendula) per attirarle.
+   - **Crisopidi** (*Chrysoperla carnea*): Larve predatrici di afidi e cocciniglie; distribuisci uova o larve ogni 2 settimane.
 
-4. **Barriere fisiche e trappole**
-   - **T
+4. **Barriere fisiche**
+   - **Reti anti-insetto**: Installa reti a maglia fine (0.6 mm) sulle aperture della serra per bloccare tripidi e moscerini.
+   - **Trappole cromotropiche**: Usa piastre gialle o blu (adesive) per monitorare e catturare insetti volanti.
+
+5. **Supporto elettroculturale**
+   - Posiziona una **spirale di rame di Lakhovsky** (diametro 20–30 cm) a 30 cm sopra le piante durante la vegetazione.
+   - Collega un’**antenna di terra in rame** (profondità 50 cm) per armonizzare le frequenze telluriche, riducendo lo stress delle piante.
+
+---
+
+## Sinergie con altri elementi
+
+- **Elettrocultura (Lakhovsky/Fe-Cu)**
+  Le spirali di rame e i circuiti
