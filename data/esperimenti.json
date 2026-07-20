@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-19T05:36:37.177744+00:00",
+  "lastUpdate": "2026-07-20T05:53:09.458841+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2896,14 +2896,118 @@
       "data_proposta": "2026-07-19",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH dell'acqua di risciacquo sul sapore e qualità dei fiori in Living Soil (Water-Only) con elettrocultura",
+      "ipotesi": "Un pH bilanciato dell'acqua di risciacquo (6.0-7.0 per substrato) migliorerà l'assorbimento dei nutrienti residui e l'attività microbica del Living Soil, riducendo l'amarezza dei fiori e migliorando la qualità aromatica, come suggerito dai manuali A (pH 6.0-7.0 per assorbimento ottimale) e B (pH 6.0-7.0 per risciacquo efficace). L'elettrocultura potenzierebbe questo effetto stimolando l'attività radicale e microbica.",
+      "protocollo": [
+        "Preparare 3 gruppi di piante identiche (stessa genetica, stesso Living Soil, stessa esposizione solare) in vasi da 10L. Ogni gruppo avrà 5 piante.",
+        "Prima del risciacquo (10 giorni prima del raccolto), misurare il pH dell'acqua di risciacquo per ogni gruppo: Gruppo 1 (pH 5.5), Gruppo 2 (pH 6.5), Gruppo 3 (pH 7.5). Utilizzare acqua distillata e aggiustare il pH con acido citrico o bicarbonato di sodio.",
+        "Applicare il risciacquo con elettrocultura: per ogni gruppo, immergere gli elettrodi (fili di rame e zinco collegati a una batteria da 9V) nell'acqua di risciacquo per 1 ora prima dell'irrigazione. Irrigare ogni gruppo con 1L di acqua a pH specifico, ripetendo per 3 giorni consecutivi.",
+        "Dopo il risciacquo, raccogliere i fiori e sottoporli a un test di degustazione cieco con 10 persone per valutare amarezza, dolcezza e qualità aromatica (scala 1-10). Misurare anche il peso secco dei fiori e il contenuto di clorofilla con un misuratore portatile."
+      ],
+      "materiali": [
+        "3 gruppi di piante di pianta (stessa genetica e età)",
+        "Acqua distillata, pHmetro, acido citrico, bicarbonato di sodio",
+        "Elettrodi per elettrocultura (fili di rame e zinco, batteria 9V)",
+        "Vasi da 10L con Living Soil",
+        "Bilancia di precisione, misuratore di clorofilla, scheda di valutazione sensoriale"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Punteggio medio di amarezza, dolcezza e qualità aromatica (test sensoriale)",
+        "Peso secco dei fiori per gruppo",
+        "Contenuto di clorofilla nei fiori",
+        "pH del suolo prima e dopo il risciacquo"
+      ],
+      "variabili_controllo": "Genetica delle piante, tipo di Living Soil, esposizione solare, quantità di acqua di risciacquo, durata dell'elettrocultura, temperatura ambientale",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il « risciacquo » delle marihuana",
+      "originalità": "L'esperimento combina il principio del pH bilanciato per l'assorbimento dei nutrienti (Manuale A) con la tecnica del risciacquo (Manuale B) in un sistema Living Soil water-only, integrando l'elettrocultura per potenziare l'effetto. Nessuno dei due manuali suggerisce di testare l'interazione tra pH dell'acqua di risciacquo, elettrocultura e qualità dei fiori in Living Soil.",
+      "id": "esp_conn_2026-07-20_001",
+      "data_proposta": "2026-07-20",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e del Water Curing sulla qualità delle cime in serra outdoor",
+      "ipotesi": "Coltivando piante di pianta in Living Soil (Manuale A) si riduce la necessità di trattamenti post-raccolta aggressivi, mentre l'applicazione di Water Curing con acqua filtrata (Manuale B) preserva e potenzia la qualità delle cime già coltivate in condizioni ottimali. L'ipotesi è che la combinazione di questi due approcci riduca residui di sali, clorofilla e impurità, migliorando il sapore, l'aroma e la purezza delle cime senza l'uso di solventi o trattamenti chimici aggiuntivi.",
+      "protocollo": [
+        "Preparare due lotti identici di piante di pianta (stessa genetica, stessa fase di crescita) in serra outdoor con Living Soil certificato. Utilizzare vasi in terracotta o tessuto per garantire aerazione e drenaggio ottimali (Manuale A).",
+        "Durante la fase di fioritura, monitorare i parametri del suolo (pH, EC, umidità) per assicurare condizioni ottimali e evitare stress idrico o nutrizionale. Non utilizzare fertilizzanti sintetici o pesticidi (Manuale A).",
+        "Al momento della raccolta, dividere le cime in due gruppi: Gruppo A (controllo) e Gruppo B (trattato). Il Gruppo A viene essiccato e manicured come di consueto. Il Gruppo B viene sottoposto a Water Curing: immersione in acqua filtrata (0.5 micron) a temperatura ambiente per 24 ore, seguito da risciacquo finale con acqua pulita e asciugatura in condizioni controllate (Manuale B).",
+        "Dopo l'essiccazione (10 giorni), analizzare entrambe le cime per residui di sali (EC), clorofilla, terpeni e sapore. Utilizzare un kit di analisi dell'acqua per misurare EC e pH delle cime, e un test organolettico (panel di assaggiatori) per valutare sapore e aroma."
+      ],
+      "materiali": [
+        "Terreno Living Soil certificato (senza fertilizzanti sintetici)",
+        "Vasi in terracotta o tessuto (diametro 10-15L)",
+        "Sistema di filtraggio dell'acqua (filtro a 0.5 micron o carbone attivo)",
+        "Kit di analisi EC/pH per cime",
+        "Termometro e igrometro per serra",
+        "Bilancia di precisione (0.1g)"
+      ],
+      "durata_giorni": 40,
+      "misure": [
+        "Residui di sali (EC) nelle cime: misurare con kit EC prima e dopo il Water Curing",
+        "Concentrazione di clorofilla: valutazione visiva e spettrofotometro (se disponibile)",
+        "Sapore e aroma: test organolettico con panel di 5-10 persone (scala 1-10 per erbaceo, amaro, dolce, terpenico)",
+        "Peso secco delle cime: confronto tra Gruppo A e Gruppo B per valutare perdite di peso durante il Water Curing"
+      ],
+      "variabili_controllo": "Stessa genetica, stessa fase di crescita, stesso substrato (Living Soil), stesso ambiente di serra (temperatura, umidità, luce), stesso metodo di essiccazione. L'unico fattore variabile è l'applicazione del Water Curing.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento non è presente in nessuno dei due manuali singolarmente. Il Manuale A si concentra sulla coltivazione in Living Soil, mentre il Manuale B tratta il Water Curing come metodo post-raccolta indipendente. La sinergia tra i due approcci (prevenzione tramite Living Soil + trattamento delicato con acqua filtrata) rappresenta un'innovazione nel campo della coltivazione biologica e sostenibile.",
+      "id": "esp_conn_2026-07-20_002",
+      "data_proposta": "2026-07-20",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate coltivate outdoor in serra",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV nelle piante di pianta femminizzate. Questo avviene grazie a un metabolismo radicale più efficiente, che ottimizza l'assorbimento dei nutrienti e stimola la sintesi di cannabinoidi secondari come il CBDV. L'ipotesi si basa sulla sinergia tra la biodiversità microbica del Living Soil e le proprietà genetiche delle piante CBDV, che potrebbero esprimere meglio il loro potenziale in un ambiente microbicamente ricco.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (BioSerra Caserta) con Living Soil: una con concimazione organica (letame maturo, compost, micorrize) e una con concimazione minerale di controllo (concime NPK bilanciato).",
+        "Seminare in entrambe le parcelle semi di pianta femminizzati ad alto contenuto di CBDV (es. varietà 'CBDV Auto White Widow') in numero uguale (es. 10 piante per parcella) e in posizione simmetrica.",
+        "Mantenere le condizioni di coltivazione identiche per entrambe le parcelle: irrigazione con sola acqua (water-only), esposizione solare, umidità e temperatura. Effettuare prelievi di suolo per analisi microbiologica (conta di batteri e funghi simbionti) a inizio e fine esperimento.",
+        "A 30 giorni dalla semina, raccogliere i fiori delle piante di entrambe le parcelle e analizzare il contenuto di CBDV tramite cromatografia (HPLC o test ELISA). Confrontare i risultati tra le due parcelle per valutare l'effetto della concimazione organica."
+      ],
+      "materiali": [
+        "Semi di pianta femminizzati ad alto contenuto di CBDV (es. 'CBDV Auto White Widow')",
+        "Living Soil (compost, letame maturo, micorrize, biochar)",
+        "Concime minerale di controllo (NPK bilanciato)",
+        "Strumenti per analisi del suolo (pHmetro, conta microbiologica)",
+        "Strumenti per analisi dei cannabinoidi (HPLC o test ELISA)",
+        "Vasi o aiuole identiche in serra outdoor"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV nei fiori (% sul peso secco) tramite HPLC/test ELISA",
+        "Conteggio dei microrganismi simbionti nel suolo (batteri e funghi micorrizici)",
+        "Peso fresco e secco dei fiori per valutare la resa",
+        "Analisi statistica dei dati (test t di Student) per verificare la significatività delle differenze"
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (luce, acqua, temperatura), metodo di coltivazione (water-only), numero di piante per parcella, metodo di analisi dei cannabinoidi.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento non si trova nei manuali originali perché combina specificamente la concimazione organica (Manuale A) con l'uso di semi CBDV (Manuale B) in un contesto di Living Soil outdoor, misurando un cannabinoide secondario specifico (CBDV) come risultato della sinergia tra suolo e genetica. Nessuno dei due manuali suggerisce un esperimento che leghi direttamente questi due aspetti in modo quantitativo.",
+      "id": "esp_conn_2026-07-20_003",
+      "data_proposta": "2026-07-20",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-19",
-    "nuove_proposte": 2,
-    "pdf_analizzati": 290,
-    "connessioni_usate": 293
+    "data": "2026-07-20",
+    "nuove_proposte": 3,
+    "pdf_analizzati": 306,
+    "connessioni_usate": 313
   }
 }
