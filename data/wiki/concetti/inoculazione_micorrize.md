@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-19
+aggiornato: 2026-07-20
 pdf_count: 1
 ---
 
@@ -12,28 +12,24 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono la portata dell’apparato radicale della pianta fino a **100 volte**, migliorando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto). In cambio, la pianta fornisce ai funghi **carboidrati** (zuccheri prodotti tramite fotosintesi), essenziali per la loro crescita e riproduzione. Questo meccanismo è cruciale in condizioni di stress idrico o carenza nutrizionale, tipiche delle coltivazioni outdoor italiane, dove le micorrize agiscono come un "secondo sistema radicale" ad alta efficienza.
+Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti sottili), estendono la rete radicale della pianta, aumentando la capacità di assorbimento di acqua e nutrienti (in particolare fosforo e azoto) fino al **300%**. In cambio, la pianta fornisce al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in suoli poveri o stressati, poiché le micorrize migliorano la resilienza delle piante a siccità, patogeni e sbalzi termici, oltre a promuovere una maggiore stabilità strutturale del suolo grazie alla produzione di **glomalina**, una glicoproteina che aggrega le particelle terrose.
 
-La simbiosi micorrizica non è universale: alcune piante (come le Brassicaceae) non formano questo legame, mentre altre (tra cui la cannabis) ne traggono **benefici significativi** in termini di resistenza a patogeni, tolleranza alla siccità e vigore vegetativo. Studi dimostrano che piante inoculate con micorrize possono ridurre l’uso di fertilizzanti chimici fino al **30%**, grazie a una maggiore efficienza nell’assimilazione dei nutrienti. Inoltre, le micorrize migliorano la struttura del suolo, favorendo l’aggregazione delle particelle e la formazione di **humus stabile**, elementi chiave per un ecosistema radicale sano.
+L’efficacia delle micorrize dipende dalla compatibilità tra specie fungine e piante ospiti. In serra outdoor, dove il clima mediterraneo (estati calde e secche) può stressare le radici, l’inoculazione anticipata (ad esempio al trapianto) permette ai funghi di colonizzare rapidamente il substrato, creando una rete **mycorrhizal network** che connette più piante tra loro. Questo non solo ottimizza l’uso delle risorse, ma riduce anche la necessità di fertilizzanti chimici, allineandosi ai principi del **suolo vivente**. Studi hanno dimostrato che piante inoculate con micorrize sviluppano radici più robuste e producono biomassa superiore, con effetti tangibili già nella fase di vegetazione.
 
 ---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con precisione per massimizzare l’efficacia. Segui questi passaggi:
+Per una serra **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize va eseguita con attenzione al **trapianto**, quando le radici sono ancora giovani e ricettive. Segui questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurati che il terreno sia **umido ma non zuppo** (evita ristagni d’acqua, come indicato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
-   - Lavora il suolo con compost maturo o micelio di funghi saprofiti (es. *Trichoderma*) per creare un ambiente favorevole alle micorrize.
+   - Assicurati che il suolo sia umido ma non zuppo (evita ristagni, come indicato in [web_zamn_301](web_zamn_301-come-irrigare-le-piante-di-cannabis)).
+   - Mescola l’inoculo micorrizico (5–10 g per pianta) direttamente nel foro di trapianto o nel substrato circostante le radici. Puoi usare formulazioni in polvere, granuli o liquidi (es. *Mycorrhizal Inoculant* di **BioBizz** o **Plant Success**).
 
-2. **Inoculazione al trapianto**:
-   - **Quando**: Applica l’inoculo **al momento del trapianto**, quando le radici sono esposte ma non danneggiate.
-   - **Come**: Mescola **5-10g di inoculo micorrizico** (es. *Glomus intraradices* o *Rhizophagus irregularis*) direttamente nel substrato o in una "buchetta" vicino alle radici. Per piante in vaso, spargi l’inoculo sul fondo del contenitore.
-   - **Quantità**: 5g per pianta giovane (es. talee), 10g per piante adulte o in fioritura.
+2. **Applicazione al trapianto**:
+   - Dopo aver posizionato la pianta nel terreno, distribuisci l’inoculo a **5–10 cm di profondità**, a contatto con le radici. Evita di mescolare l’inoculo direttamente con fertilizzanti chimici o compost fresco, che potrebbero alterare il pH o la disponibilità di nutrienti.
 
-3. **Post-inoculazione**:
-   - **Irrigazione**: Usa acqua **non clorata** (lascia riposare l’acqua 24h in un contenitore aperto) o acqua magnetizzata per evitare di uccidere i funghi.
-   - **Protezione**: Evita **fungicidi chimici** (inclusi rame e zolfo) per **almeno 30 giorni** dopo l’inoculazione, come raccomandato in [web_zamn_335-conservare-cannabis]. Opta per trattamenti biologici (es. *Bacillus subtilis*).
-   - **Monitoraggio**: Controlla l’umidità del suolo (1-2 cm di profondità asciutti prima di irrigare) per prevenire asfissia radicale.
+3. **Irrigazione post-applicazione**:
+   - Innaffia leggermente per attivare i funghi, ma senza esagerare (come consigliato in [web_zamn_301](web_zamn_301-come-irrigare-le-piante-di-cannabis)). L’acqua deve penetrare solo lo strato superficiale per non dilavare l’inoculo.
 
-4. **Fasi critiche**:
-   - **Germ
+4. **Protezione post-inoculo**:
+   - **Evita fungicidi** (inclusi quelli a base di rame o zolfo) per almeno **30 giorni** dopo l’applicazione, poiché uccidono anche i funghi benefici. Se necessario, usa biostimolanti come **Trichoderma** o batteri *Pseudomonas* per contrastare patogeni
