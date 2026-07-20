@@ -1,6 +1,6 @@
 ---
 tipo: overview
-aggiornato: 2026-07-19
+aggiornato: 2026-07-20
 ---
 
 # BioSerra — Knowledge Base Overview
@@ -12,65 +12,54 @@ aggiornato: 2026-07-19
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra opera secondo un **paradigma olistico** che unisce:
-- **Living Soil (Suolo Vivente)**: Ecosistema microbico autosufficiente, water-only, senza input chimici.
-- **Biodinamica**: Preparati dinamizzati, ritmi cosmici e connessione con i cicli terrestri.
-- **Elettrocultura**: Tecniche di stimolazione bioelettrica (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame, antenna terra) per ottimizzare crescita e resilienza.
-- **Water-Only**: Irrigazione con acqua strutturata e mineralizzata, senza fertilizzanti liquidi.
+BioSerra è una **serra outdoor a suolo vivente** che fonde:
+- **Living Soil**: Ecosistema microbico autosostenibile con materia organica, micorrize e biodiversità.
+- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, biodinamica) per attivare nutrienti senza fertilizzanti chimici.
+- **Biodinamica**: Ritmi cosmici, preparati (500-501) e calendario lunare per sincronizzare crescita e fioritura.
+- **Elettrocultura**: Campi elettromagnetici controllati (Lakhovsky, Fe-Cu, spirali in rame) per stimolare la vitalità cellulare.
 
-*Visione*: Coltivare piante in **armonia con la natura**, potenziando i processi naturali tramite tecnologie low-impact.
+*Visione*: Coltivare piante in **armonia con i cicli naturali**, massimizzando resilienza, qualità e produttività senza input sintetici.
 
 ---
 
 ## **📚 Sistema di Conoscenza**
-Il wiki si basa su:
-- **341 manuali analizzati** (PDF strutturati per fasi colturali, problemi e soluzioni).
-- **18 concetti attivi** (categorie tematiche interconnesse).
-- **Guida integrata**: Ogni tecnica o principio è collegato a PDF di riferimento e concetti correlati tramite [[id]] e [id].
+BioSerra si basa su:
+- **341 PDF** (manuali tecnici, studi scientifici, guide pratiche).
+- **20 concetti attivi** (categorie integrate come elettrocultura, biodinamica, nutrizione).
+- **Rete di collegamenti**:
+  - **Concetti**: [[elettrocultura-lakhovsky]], [[preparati-biodinamici]], [[suolo-vivente]].
+  - **PDF**: [web_zamn_287-fase-plantula-cannabis], [web_zamn_293-suolo-cannabis-terricci].
 
-*Esempio di integrazione*:
-- **Germinazione** → [[web_zamn_284-germinare-semi-con-lo-smart-start]] + [[web_zamn_286-problemi-germinazione]] + **Elettrocultura Fe-Cu** (stimolazione pre-germinazione).
-- **Fioritura** → [[web_zamn_290-fase-fioritura-cannabis]] + **Biodinamica (calendario lunare)** + **Controllo parassiti (bicarbonato di potassio)**.
+*Approccio*: Ogni tecnica (es. elettrocultura) si sovrappone a principi biodinamici e Living Soil, creando un sistema **olistico e adattivo**.
+
+---
+
+## **⚡ Tecniche Elettrocultura Attive**
+| **Tecnica**               | **Descrizione**                                                                 | **Riferimenti**                     |
+|---------------------------|---------------------------------------------------------------------------------|-------------------------------------|
+| **Elettrocultura Lakhovsky** | Campi elettromagnetici a bassa frequenza per stimolare la divisione cellulare. | [[elettrocultura-lakhovsky]]        |
+| **Spirale in Rame**       | Geometria sacra che amplifica la conducibilità del suolo.                      | [[geometria-sacra]]                 |
+| **Antenna di Terra**      | Connessione a terra per bilanciare cariche elettromagnetiche delle piante.     | [[antenna-terra]]                   |
+| **Lega Ferro-Rame (Fe-Cu)**| Elettrodi interrati per correggere squilibri minerali nel suolo.               | [[lega-fe-cu]]                      |
+| **Acqua Magnetizzata**    | Irrigazione con acqua strutturata per migliorare assorbimento nutrienti.       | [[acqua-magnetizzata]]              |
+
+*Applicazione attuale*:
+- **3-5V DC** in fioritura (autofiorenti come *Epsilon F1*).
+- **Evitare ore 12-16** per prevenire stress termico ([Manuale di Coltivazione BioSerra Rev.23]).
 
 ---
 
-## **⚡ Tecniche di Elettrocultura Attive**
-Le 5 tecniche principali applicate in BioSerra:
-
-1. **Elettrocultura Lakhovsky**
-   - *Principio*: Stimolazione cellulare tramite campi elettromagnetici a bassa frequenza.
-   - *Applicazione*: Antenne a spirale in rame posizionate intorno alle piante.
-   - [[elettrocultura-lakhovsky]]
-
-2. **Elettrocultura Fe-Cu**
-   - *Principio*: Sinergia tra ferro e rame per attivare enzimi e fotosintesi.
-   - *Applicazione*: Elettrodi interrati o soluzioni di solfato di rame/ferro diluito.
-   - [[elettrocultura-fe-cu]]
-
-3. **Spirale in Rame**
-   - *Principio*: Creazione di campi elettromagnetici locali per resilienza.
-   - *Applicazione*: Spirali posizionate sopra il suolo o intorno alle piante.
-   - [[spirale-rame]]
-
-4. **Antenna Terra**
-   - *Principio*: Connessione diretta con il campo geomagnetico terrestre.
-   - *Applicazione*: Aste metalliche interrate collegate a strutture in rame.
-   - [[antenna-terra]]
-
-5. **Acqua Magnetizzata**
-   - *Principio*: Strutturazione dell'acqua tramite campi magnetici per migliorare assorbimento.
-   - *Applicazione*: Filtri magnetici su tubature o contenitori.
-   - [[acqua-magnetizzata]]
-
----
 ## **🌍 Principi Living Soil**
-Fondamenti per un suolo autosufficiente e fertile:
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: Simbiosi con radici per assorbimento nutrienti (es. *Trichoderma*).
+- **Batteri benefici**: *Pseudomonas*, *Bacillus* per decomposizione e resistenza a patogeni.
+- **Protozoi e nematodi**: Regolano la popolazione microbica.
 
-- **Microbioma**
-  - *Ruolo*: Decomposizione, fissazione azoto, soppressione patogeni.
-  - *Azioni*: Inoculazione micorrize ([[inoculazione-micorrize]]), compostaggio ([[compostaggio-organico]]), tè di compost ([[te-di-compost]]).
-  - *Monitoraggio*: Tensione elettrica del suolo (250–350 mV a 15 cm) [[manuale-living-soil]].
+### **2. Minerali e Biostimolanti**
+- **Farine di rocce**: Silicio, calcio, magnesio (es. basalto, dolomite).
+- **Compost e tè di compost**: Nutrienti liquidi ricchi di microrganismi.
+- **Preparati biodinamici**: 500 (cornoletame) per struttura suolo, 501 (corna silice) per luce.
 
-- **Minerali**
-  - *Fonti*: Farine di rocce ([[farine-di-roccia]]), argilla, cenere di legno.
-  - *Equilibrio*: pH
+### **3. Acqua e Struttura**
+- **Acqua strutturata**: Magnetizzata, ionizzata o esposta a geometrie sacre.
+- **Aerazione**: Fibra di cocco o
