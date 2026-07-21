@@ -247,6 +247,7 @@ PLC, XV-53
 - sintonizzazione del filtro, XV-58
 - subroutine, XV-54
 - tempo di ciclo, XV-54
+
 Pulsazione naturale, XV-13
 Proprietà di screening, XV-15
 Punto di diramazione, XV-8
@@ -257,12 +258,14 @@ Rappresentazione delle funzioni, di Bode, XV-22, 25, 26
 - luogo delle radici, XV-32
 - Nichols, XV-22
 - Nyquist, XV-22, 25
+
 Regolatore ON-OFF, XV-50
 - banda, XV-50
 - isteresi, XV-50
 - set-point, XV-50
 - soglia inferiore, XV-50
 - soglia superiore, XV-50
+
 Regolatori, XV-3, 42, 49
 - controllo adattativo, XV-42
 - controllore P.I.D., XV-42, 55, 57
@@ -270,15 +273,18 @@ Regolatori, XV-3, 42, 49
 - sintonizzazione del filtro, XV-58
 - tecniche di compensazione, XV-42
 - tuning costant, XV-42
+
 Reti correttrici, XV-40
 Reti di compensazione, XV-40
 - a sella, XV-40, 41
 - anticipatrice, XV-40
 - ritardatrice, XV-40, 41
+
 Risposta, a regime, XV-14, 15
 - alla rampa, XV-15
 - canonica, XV-15
 - forzata, XV-11
+
 Risposta, impulsiva, XV-15
 - indiciale, XV-15, 39
 - libera, XV-10
@@ -290,6 +296,7 @@ Risposta, impulsiva, XV-15
 - totale del sistema, XV-14
 - transitoria, XV-14, 15
 - velocità di risposta, XV-37
+
 Sample and Hold, XV-45
 Scalino unitario, XV-14
 Schemi, XV-7
@@ -299,9 +306,11 @@ Schemi, XV-7
 - nodo sommatore, XV-7
 - punto di diramazione, XV-8
 - strutturale, XV-7
+
 Segnale Campionato, XV-43
 Servosistemi, XV-3, 49
 Sintonizzazione del filtro, XV-58
+
 Sistema/i, XV-2
 - a catena aperta, XV-2
 - a catena chiusa, XV-2
@@ -331,6 +340,7 @@ Sistema/i, XV-2
 - stabilità, XV-14, 22
 - stazionari, XV-3, 10
 - tipo di sistema, XV-37
+
 Sistemi, a tempo discreto, XV-43
 - a logica programmabile (PLC), XV-43
 - algoritmi di controllo, XV-49
@@ -339,11 +349,14 @@ Sistemi, a tempo discreto, XV-43
 - circuiti di campionamento Sample and Hold, XV-44
 - convertitori ADC, XV-44
 - equazioni alle differenze finite, XV-43, 45, 46
+
 Sovraelongazione massima, XV-16
 Sovrapposizione degli effetti, XV-10
 - di un sistema lineare, XV-10
+
 Spirule, XV-34
 - tracciamento del Luogo delle Radici, XV-34
+
 Stabilità e criteri di stabilità, XV-22
 - criterio di Hurwitz, XV-23
 - criterio di Routh, XV-23
@@ -352,26 +365,27 @@ Stabilità e criteri di stabilità, XV-22
 - margine di guadagno, XV-35
 - metodi numerici, XV-24
 - relativa, XV-35
+
 Stazionarietà, XV-10
 Subroutine, XV-54
+
 Tecniche Digitali, XV-52
 Tempo di assestamento, XV-15
 Tempo di ciclo, XV-54, 55
 Tempo di ritardo, XV-15
 Tempo di salita, XV-15
+
 Teorema di Cauchy, XV-26
 - di Shannon, XV-45
+
 Trasformata di Fourier, XV-45
 Trasformata di Laplace, XV-17, 18
 - proprietà, XV-18
 - teorema del valore iniziale, XV-20
 - teorema del valore finale, XV-20
+
 Trasformata Zeta, XV-43, 46, 47, 48
 - equazioni alle differenze finite, XV-46
-Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
-
----
-
 **PROPRIETÀ**, XV-46
 **TEOREMA DEL VALORE FINALE**, XV-47
 **TEOREMA DEL VALORE INIZIALE**, XV-47
@@ -518,7 +532,6 @@ Domotica, XVI-8, 11
 - antirimbalzo, XVII-112
 - combinatori, XVII-102
 - risonante, XVII-20
-
 **Classi di amplificazione**, XVII-162
 **Circuiti digitali CMOS**, XVII-71
 **Codice ASCII**, XVII-88
@@ -1092,134 +1105,134 @@ Materiali, XIX-3
 - Piezoelettrici, XIX-24, 25
 - Plastici, XIX-4, 6, 20, 22
 - Semiconduttori, XIX-22, 23, 25, 28
-Metalli, XIX-3, 6, 25
-Modelli a legame di valenza, XIX-27
-Modulo di, compressibilità, XIX-9
+- Metalli, XIX-3, 6, 25
+- Modelli a legame di valenza, XIX-27
+- Modulo di compressibilità, XIX-9
 - Elasticità, XIX-9
 - Coefficiente di Poisson, XIX-9
-Montante, sezione del, XIX-31
-Orologio programmatore, XIX-67
-Ossidazione, XIX-13
-Permeabilità magnetica, XIX-17, 18, 143
-Peso specifico, XIX-7
-Piegabilità, XIX-11
-Piezoelettricità, XIX-16
-Potenziometri, XIX-115, 120
-Potere risolutore, XIX-117
-Presa e spina di corrente, XIX-54
-- Ad uso industriale (CEE), XIX-60
-- Apparecchi speciali, XIX-59
-- A ricettività multipla, XIX-58
-- Tipi di, XIX-57, 58
-Pressoresistori, XIX-126
-Proprietà, fisico-chimiche dei materiali, XIX-6, 17
-- Chimiche, XIX-12
-- Elettriche, XIX-12, 16
-- Fisiche, XIX-7, 8
-- Magnetiche, XIX-16, 18
-- Meccaniche, XIX-8, 10
-- Tecnologiche, XIX-10, 11
-Protettore termico, XIX-104
-Prove di fatica, XIX-10
-Pulsante, XIX-54, 87
-- Codice colori, XIX-89
-Relè, XIX-69, 85
-- Magnetotermico, XIX-102
-- Passo-passo, XIX-70
-- Statico, XIX-82
-- Termico, XIX-103
-Regolatore di livello, XIX-90
-Resilienza, XIX-10
-Resine, XIX-20
-Resistenza, XIX-107
-- Di isolamento, XIX-128
-- Termica, XIX-111
-Resistività, XIX-13, 14, 108
-Resistori, XIX-107
-- A filo, XIX-113, 115
-- A impasto, XIX-113, 114
-- A strato, XIX-113, 115
-- Variabili, XIX-115
-Reticolo cristallino, XIX-4, 5
-Rigidità dielettrica, XIX-15, 19
-Ritiro di fusione, XIX-11
-Rotture per fatica, XIX-10
-Rivelatore, di fughe d’acqua, XIX-74
-- Di fumo, XIX-72
-- Di gas e ossido di carbonio, XIX-72
-Saldabilità, XIX-11
-Saturazione, XIX-17
-Segnalazioni, quadro indicatore a cartellini, XIX-65
-- Quadro indicatore luminoso, XIX-65
-- Ronzatore, XIX-62
-- Suoneria, XIX-62
-Semiconduttori, XIX-22, 23, 25, 28
-Serie normalizzate delle resistenze, XIX-112
-Simboli grafici del, condensatore, XIX-131
-- Induttore, XIX-139
-- Potenziometro, XIX-116
-- Resistore, XIX-111
-Sostanze, diamagnetiche, XIX-16
-- Paramagnetiche, XIX-16
-Stabilità, XIX-111
+- Montante, sezione del, XIX-31
+- Orologio programmatore, XIX-67
+- Ossidazione, XIX-13
+- Permeabilità magnetica, XIX-17, 18, 143
+- Peso specifico, XIX-7
+- Piegabilità, XIX-11
+- Piezoelettricità, XIX-16
+- Potenziometri, XIX-115, 120
+- Potere risolutore, XIX-117
+- Presa e spina di corrente, XIX-54
+  - Ad uso industriale (CEE), XIX-60
+  - Apparecchi speciali, XIX-59
+  - A ricettività multipla, XIX-58
+  - Tipi di, XIX-57, 58
+- Pressoresistori, XIX-126
+- Proprietà, fisico-chimiche dei materiali, XIX-6, 17
+  - Chimiche, XIX-12
+  - Elettriche, XIX-12, 16
+  - Fisiche, XIX-7, 8
+  - Magnetiche, XIX-16, 18
+  - Meccaniche, XIX-8, 10
+  - Tecnologiche, XIX-10, 11
+- Protettore termico, XIX-104
+- Prove di fatica, XIX-10
+- Pulsante, XIX-54, 87
+  - Codice colori, XIX-89
+- Relè, XIX-69, 85
+  - Magnetotermico, XIX-102
+  - Passo-passo, XIX-70
+  - Statico, XIX-82
+  - Termico, XIX-103
+- Regolatore di livello, XIX-90
+- Resilienza, XIX-10
+- Resine, XIX-20
+- Resistenza, XIX-107
+  - Di isolamento, XIX-128
+  - Termica, XIX-111
+- Resistività, XIX-13, 14, 108
+- Resistori, XIX-107
+  - A filo, XIX-113, 115
+  - A impasto, XIX-113, 114
+  - A strato, XIX-113, 115
+  - Variabili, XIX-115
+- Reticolo cristallino, XIX-4, 5
+- Rigidità dielettrica, XIX-15, 19
+- Ritiro di fusione, XIX-11
+- Rotture per fatica, XIX-10
+- Rivelatore, di fughe d’acqua, XIX-74
+  - Di fumo, XIX-72
+  - Di gas e ossido di carbonio, XIX-72
+- Saldabilità, XIX-11
+- Saturazione, XIX-17
+- Segnalazioni, quadro indicatore a cartellini, XIX-65
+  - Quadro indicatore luminoso, XIX-65
+  - Ronzatore, XIX-62
+  - Suoneria, XIX-62
+- Semiconduttori, XIX-22, 23, 25, 28
+- Serie normalizzate delle resistenze, XIX-112
+- Simboli grafici del, condensatore, XIX-131
+  - Induttore, XIX-139
+  - Potenziometro, XIX-116
+  - Resistore, XIX-111
+- Sostanze, diamagnetiche, XIX-16
+  - Paramagnetiche, XIX-16
+- Stabilità, XIX-111
 
 [PAG 2289]
 SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
 57
-Suscettibilità magnetica, XIX-17
-Tecnologie di fabbricazione dei, condensatori, XIX-131, 134
-Tecnologie di fabbricazione dei, condensatori elettrolitici, XIX-132, 133
-- Induttori, XIX-140
-- Resistori, XIX-113, 115
-- Varistori, XIX-126
-Temperatura di Curie, XIX-16
-Temprabilità, XIX-11
-Temporizzatore, XIX-86
-- Luci scale, XIX-66
-Termistori, XIX-122, 124
-Termoresistenze, XIX-120, 122
-Termorivelatore, XIX-105
-Termostato ambiente, XIX-67
-Trasformatore, tipi di, XIX-75
-Trimmer, XIX-120
-Tubi e canali, XIX-40
-- Dimensioni dei, XIX-42
-- Marcatura dei, XIX-44
-- Tipi di, XIX-41
-Variatore di luminosità, XIX-65
-Varistori, XIX-126, 128
-Vernici, XIX-20
-Viscosità, XIX-19
+- Suscettibilità magnetica, XIX-17
+- Tecnologie di fabbricazione dei, condensatori, XIX-131, 134
+- Tecnologie di fabbricazione dei, condensatori elettrolitici, XIX-132, 133
+  - Induttori, XIX-140
+  - Resistori, XIX-113, 115
+  - Varistori, XIX-126
+- Temperatura di Curie, XIX-16
+- Temprabilità, XIX-11
+- Temporizzatore, XIX-86
+  - Luci scale, XIX-66
+- Termistori, XIX-122, 124
+- Termoresistenze, XIX-120, 122
+- Termorivelatore, XIX-105
+- Termostato ambiente, XIX-67
+- Trasformatore, tipi di, XIX-75
+- Trimmer, XIX-120
+- Tubi e canali, XIX-40
+  - Dimensioni dei, XIX-42
+  - Marcatura dei, XIX-44
+  - Tipi di, XIX-41
+- Variatore di luminosità, XIX-65
+- Varistori, XIX-126, 128
+- Vernici, XIX-20
+- Viscosità, XIX-19
 
 [PAG 2290]
 58
 INDICE ANALITICO PER SEZIONI
 Sezione XX
 Progettazione elettrica ed elettronica
-Affidabilità, XX-114
-Alimentatore, XX-147-182
-- In corrente continua, XX-147
-Angolo di conduzione, XX-146
-Bagnabilità, XX-131
-Bread-boarding, XX-121
-Cablaggio delle apparecchiature elettriche, XX-120
-Calcoli, esecutivi, XX-8, 68, 86
-- Preliminari, XX-7
-Capacità termica, XX-146
-Capitolato speciale d’appalto, XX-8, 44, 72, 96
-Categorie di rischio, XX-124÷126
-Certificazione, conformità impianto alla regola dell’arte, XX-44
-- Relazione materiali, XX-44
-- Requisiti tecnico-professionali, XX-44
-Circuito, di autozero, XX-205
-- Elettro-termico, XX-142, 147
-Circuiti stampati, XX-110, 120, 135÷137
-- A due facce, XX-136
-- Flessibili, XX-140, 141
-- Materiali per i, XX-140
-- Metodi per l’assemblaggio dei, XX-128÷130
-- Monofaccia, XX-136
-- Multistrato, XX-136, 137
+- Affidabilità, XX-114
+- Alimentatore, XX-147-182
+  - In corrente continua, XX-147
+- Angolo di conduzione, XX-146
+- Bagnabilità, XX-131
+- Bread-boarding, XX-121
+- Cablaggio delle apparecchiature elettriche, XX-120
+- Calcoli, esecutivi, XX-8, 68, 86
+  - Preliminari, XX-7
+- Capacità termica, XX-146
+- Capitolato speciale d’appalto, XX-8, 44, 72, 96
+- Categorie di rischio, XX-124÷126
+- Certificazione, conformità impianto alla regola dell’arte, XX-44
+  - Relazione materiali, XX-44
+  - Requisiti tecnico-professionali, XX-44
+- Circuito, di autozero, XX-205
+  - Elettro-termico, XX-142, 147
+- Circuiti stampati, XX-110, 120, 135÷137
+  - A due facce, XX-136
+  - Flessibili, XX-140, 141
+  - Materiali per i, XX-140
+  - Metodi per l’assemblaggio dei, XX-128÷130
+  - Monofaccia, XX-136
+  - Multistrato, XX-136, 137
 - Processi di fabbricazione dei, XX-133÷140
 Coefficiente di sicurezza, XX-115
 Collaudi e verifiche a termine lavori, esami a vista, XX-43
