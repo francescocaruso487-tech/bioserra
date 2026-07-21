@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-20
+aggiornato: 2026-07-21
 pdf_count: 10
 ---
 
@@ -12,21 +12,24 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la concentrazione di ioni idrogeno (H⁺) e determina l’acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un pH ottimale tra **6.0 e 7.0** (neutro-lieve acido) garantisce l’assorbimento equilibrato di macro e micronutrienti, come azoto (N), fosforo (P), potassio (K), calcio (Ca), magnesio (Mg) e ferro (Fe). Al di fuori di questo range, alcuni elementi diventano insolubili (es. fosforo in suoli acidi o ferro in suoli alcalini), portando a carenze nutrizionali anche in presenza di suolo fertile. La gestione del pH non è statica: variazioni stagionali, attività microbica, irrigazione e pratiche colturali (es. uso di compost o fertilizzanti) possono alterarlo rapidamente. In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce evaporazione e lisciviazione, il monitoraggio costante è cruciale per prevenire squilibri.
+Il pH del suolo rappresenta la concentrazione di ioni idrogeno (H⁺) in soluzione acquosa e determina la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil** come quello della serra outdoor di Caserta (41°N), un pH compreso tra **6.0 e 7.0** è ottimale perché favorisce l’attività microbica, la solubilizzazione dei macro e micronutrienti (azoto, fosforo, potassio, ferro, zinco) e la stabilità della struttura del suolo. Al di fuori di questo range, si verificano fenomeni di **fissazione dei nutrienti** (es. fosforo a pH < 5.5 o > 8.0) o tossicità (es. alluminio solubile in suoli acidi). La gestione del pH non è statica: variazioni stagionali, apporti di materia organica (compost, letame) e pratiche colturali (irrigazione, elettrocultura) richiedono monitoraggi costanti.
 
-Il meccanismo di regolazione del pH si basa su reazioni chimiche e biologiche. In suoli acidi (pH < 5.8), l’eccesso di H⁺ compete con i cationi nutritivi (Ca²⁺, Mg²⁺, K⁺) per i siti di scambio delle argille e della materia organica, riducendo la loro disponibilità. La correzione con **calce agricola** (CaCO₃) neutralizza gli acidi tramite idrolisi, rilasciando calcio e innalzando il pH. Viceversa, in suoli alcalini (pH > 7.2), l’eccesso di carbonati (CO₃²⁻) precipita ferro e fosforo, rendendoli inaccessibili. Qui, l’applicazione di **zolfo elementare** (S) o solfati acidificanti (es. solfato di ferro) abbassa il pH tramite ossidazione batterica (Thiobacillus), che converte S in acido solforico (H₂SO₄). La scelta del correttivo deve considerare anche la **capacità tampone** del suolo (contenuto di argilla e materia organica), che rallenta gli effetti delle modifiche.
+Il meccanismo di azione si basa su reazioni chimiche reversibili tra il suolo e la soluzione circolante. Ad esempio, in suoli acidi (pH < 5.8), l’eccesso di H⁺ sposta cationi nutritivi (Ca²⁺, Mg²⁺, K⁺) verso forme non disponibili per le radici, mentre in suoli alcalini (pH > 7.2) si formano precipitati insolubili di fosfati e carbonati. La correzione deve essere **graduale** per evitare shock alle comunità microbiche e alle piante, privilegiando ammendanti naturali come **calce agricola** (CaCO₃) per l’acidificazione o **zolfo elementare** (S) per l’alcalinizzazione, entrambi a lenta cessione.
 
 ---
 
 ## Come si applica in serra
 1. **Monitoraggio settimanale**:
-   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagente (es. Lamotte) su campioni di suolo prelevati a **10-15 cm di profondità** (zona radicale attiva).
-   - Effettuare le misurazioni **al mattino**, prima dell’irrigazione, per evitare diluizioni temporanee.
+   - Prelevare campioni di suolo a **10-15 cm di profondità** (zona rizosferica) in 3-4 punti della serra.
+   - Misurare il pH con un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. metodo del bicchiere con acqua distillata e cartina tornasole).
+   - Registrare i valori in un **registro colturale** per identificare tendenze (es. acidificazione progressiva da irrigazione con acqua piovana acida).
 
-2. **Interventi correttivi**:
-   - **pH < 5.8 (acido)**:
-     - Applicare **calce agricola dolomitica** (CaCO₃ + MgCO₃) a **1-2 kg/10 m²**, distribuendola uniformemente e incorporandola leggermente con una zappetta.
-     - Evitare sovradosaggi: in suoli argillosi, la calce può innalzare troppo il pH (>7.5) in 2-3 settimane.
-   - **pH > 7.2 (alcalino)**:
-     - Spargere **zolfo elementare in polvere** (100-200 g/10 m²) o **solfato di ferro** (FeSO₄, 50-100 g/10 m²) per un effetto rapido.
-     - In alternativa, usare **torba acida** o **compost di aghi di pino** (pH ~4.5) come
+2. **Correzione per pH < 5.8**:
+   - **Calce agricola** (CaCO₃ o CaO): dosaggio **50-100 g/m²** per aumenti di 0.5 pH. Spargere uniformemente sulla superficie e incorporare con una **forca a mano** o **motocoltivatore** (profondità 10 cm).
+   - **Cenere di legna** (opzione rapida): 20-30 g/m², ricca in Ca e K, ma da usare con cautela per evitare eccessi di sali.
+   - **Attendere 2-3 settimane** prima di ri-misurare e ripetere se necessario.
+
+3. **Correzione per pH > 7.2**:
+   - **Zolfo elementare in polvere**: dosaggio **20-40 g/m²** per ridurre il pH di 0.5 unità. Spargere e irrigare abbondantemente per attivare l’ossidazione batterica (S → SO₄²⁻).
+   - **Torba acida o aghi di pino**: 1-2 kg/m² come ammendante a lenta cessione, ideale per serre con substrati sabbiosi.
+   - **Evitar** correzioni drastiche: in serra, il pH può variare rapidamente a causa dell’ev
