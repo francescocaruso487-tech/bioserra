@@ -1,10 +1,6 @@
 === Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 91/116 ===
-Chars: 43,626 | Offset: 3,975,820
-
-
-
-[PAG 1819]
-INDICE
+Tradotto in italiano da: ALTRO | Script: traduci_testi.py
+**INDICE**
 pag.
 1    GENERALITÀ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  2
@@ -13,14 +9,14 @@ pag.
 1.2    SCR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 4
 1.3    DIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-7
+ 7
 1.4    TRIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  9
 1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  10
 1.5.1    GTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  10
-1.5.2    IGBT. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.5.2    IGBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  14
 1.6    Semiconduttori nei convertitori a commutazione . . . . . . . . . . . . . . . . . . . .
  15
@@ -30,9 +26,9 @@ pag.
  18
 1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  19
-1.10    Considerazioni termiche. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  20
-2    CONVERSIONE DELLA CORRENTE ELETTRICA . . . . . . . . . . . . . . . . . . . .
+2    CONVERSIONE DELLA CORRENTE ELETTRICA . . . . . . . . . . . . . .
  22
 2.1    Utilizzo dei raddrizzatori normali e controllati per la conversione c.a.-c.c.
  22
@@ -44,32 +40,7 @@ pag.
  23
 3.2    Circuito monofase ad onda intera con presa centrale . . . . . . . . . . . . . . . . .
  24
-3.3    Circuito monofase a ponte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 24
-4    ALIMENTAZIONE TRIFASE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 25
-4.1    Circuito trifase a semionda. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 25
-4.2    Circuito a ponte trifase. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 26
-4.3    Circuito a ponte trifase a doppia stella . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 27
-5    CONTROLLO DELLA POTENZA NELLA CONVERSIONE C.A.-C.C. . . . . .
- 30
-5.1    Circuiti monofase. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 30
-5.1.1    Circuito monofase a semionda . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 30
-5.1.2    Circuito monofase ad onda intera . . . . . . . . . . . . . . . . . . . . . . . . . .
- 31
-5.2    Circuiti trifase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 31
-5.2.1    Ponte trifase semicontrollato. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 32
-5.2.2    Ponte trifase totalmente controllato . . . . . . . . . . . . . . . . . . . . . . . .
- 33
-6    ALIMENTATORI A COMMUTAZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 35
+3.3    Circuito monofase a ponte . . . . . . . . . . . . . . . . . . . .
 7    CONVERTITORI NON ISOLATI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -78,99 +49,86 @@ pag.
  38
 7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  39
+
 Sezione XVIII
 Elettronica di potenza
 
 [PAG 1820]
 XVIII-2
 ELETTRONICA DI POTENZA
-8    CONVERTITORI CON TRASFORMATORI . . . . . . . . . . . . . . . . . . . . . . . . . . 
+8    CONVERTITORI CON TRASFORMATORI . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  39
-8.1    Convertitore Flyback. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  40
-8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  42
-8.3    Convertitore Push-pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+8.3    Convertitore Push-pull . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  44
-9    CONVERSIONE C.C.-C.C. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+9    CONVERSIONE C.C.-C.C. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  45
-10    REGOLAZIONE IN CORRENTE ALTERNATA . . . . . . . . . . . . . . . . . . . . . . 
+10    REGOLAZIONE IN CORRENTE ALTERNATA . . . . . . . . . . . . . . . . . . . . . . .
  47
-10.1    Regolazione a controllo continuo (a parzializzazione di fase) . . . . . . . . . 
+10.1    Regolazione a controllo continuo (a parzializzazione di fase) . . . . . . . . . .
  47
-10.2    Regolazione con numero intero di cicli . . . . . . . . . . . . . . . . . . . . . . . . . . 
+10.2    Regolazione con numero intero di cicli . . . . . . . . . . . . . . . . . . . . . . . . . .
  48
-11    INVERTER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+11    INVERTER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  48
-11.1    Inverter a transistor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+11.1    Inverter a transistor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  50
-11.2    Inverter a tiristori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+11.2    Inverter a tiristori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  50
-11.3    Invertitore parallelo. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+11.3    Invertitore parallelo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  51
-11.4    Inverter serie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+11.4    Inverter serie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  52
-11.5    Inverter trifase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+11.5    Inverter trifase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  52
-12    CONVERSIONE FREQUENZA-FREQUENZA . . . . . . . . . . . . . . . . . . . . . . . 
+12    CONVERSIONE FREQUENZA-FREQUENZA . . . . . . . . . . . . . . . . . . . . . . .
  53
-BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  54
+
 1  GENERALITÀ
-Col termine elettronica di potenza si fa riferimento a quella branchia dell’elettronica 
-che si occupa della conversione e del controllo dell’energia elettrica, in tutti quei sistemi 
-dove la potenza assume ruoli importanti, ovvero dove i valori di quest’ultima risultano 
-elevati: 
-–  circuiti e dispositivi che consentono di convertire la tensione da alternata in continua;
-–  circuiti e dispositivi che operano in maniera inversa consentendo la trasformazione 
-della tensione da continua ad alternata;
-–  dispositivi che permettono di controllare il livello della tensione continua;
-–  circuiti che consentono di variare la frequenza della tensione;
-–  circuiti che permettono di variare la potenza in alternata. 
-Le applicazioni di questi dispositivi e circuiti sono molteplici: dalla semplice alimen-
-tazione di motori a corrente continua tramite tensioni alternate convertite in continua, al 
-controllo della velocità di un motore a corrente alternata, al controllo della coppia di un 
-motore a corrente continua, al controllo dell’intensità luminosa di un sistema di illumina-
-zione realizzato con lampade ad incandescenza. I dispositivi impiegati per realizzare tali 
-circuiti sono:
-–  Diodi raddrizzatori;
-–  SCR (tiristore), DIAC e TRIAC;
-–  Transistor di potenza;
-–  Filtri.
- Prima di procedere nell’analisi dei circuiti di conversione e controllo è necessario 
-effettuare una rapida disamina dei dispositivi base che intervengono nei circuiti stessi. 
-1.1  Diodi raddrizzatori
-Il diodo, dispositivo a giunzione di tipo p-n, forte della sua prerogativa di conduzione 
-fortemente disimmetrica, nei circuiti alimentati a tensione alternata, consente il passaggio 
-della corrente dall’anodo verso il catodo con una caduta di tensione esigua, mentre blocca 
-il passaggio della corrente in senso inverso. Si può quindi paragonare il diodo ad un cir-
-cuito chiuso nel caso delle correnti dirette, e ad un circuito aperto per le correnti inverse.
+Con il termine elettronica di potenza si intende quel ramo dell’elettronica che si occupa della conversione e del controllo dell’energia elettrica, in tutti quei sistemi in cui la potenza riveste un ruolo fondamentale, ovvero in cui i valori di quest’ultima risultano elevati:
+– circuiti e dispositivi che consentono di convertire la tensione da alternata in continua;
+– circuiti e dispositivi che operano in maniera inversa, consentendo la trasformazione della tensione da continua ad alternata;
+– dispositivi che permettono di controllare il livello della tensione continua;
+– circuiti che consentono di variare la frequenza della tensione;
+– circuiti che permettono di variare la potenza in alternata.
+Le applicazioni di questi dispositivi e circuiti sono molteplici: dall’alimentazione di motori a corrente continua tramite tensioni alternate convertite in continua, al controllo della velocità di un motore a corrente alternata, al controllo della coppia di un motore a corrente continua, al controllo dell’intensità luminosa di un sistema di illuminazione realizzato con lampade ad incandescenza. I dispositivi impiegati per realizzare tali circuiti sono:
+– Diodi raddrizzatori;
+– SCR (tiristore), DIAC e TRIAC;
+– Transistor di potenza;
+– Filtri.
+
+Prima di procedere nell’analisi dei circuiti di conversione e controllo è necessario effettuare una rapida disamina dei dispositivi base che intervengono nei circuiti stessi.
+
+1.1 Diodi raddrizzatori
+
+Il diodo, dispositivo a giunzione di tipo p-n, forte della sua prerogativa di conduzione fortemente disimmetrica, nei circuiti alimentati a tensione alternata, consente il passaggio della corrente dall’anodo verso il catodo con una caduta di tensione esigua, mentre blocca il passaggio della corrente in senso inverso. Si può quindi paragonare il diodo ad un circuito chiuso nel caso delle correnti dirette, e ad un circuito aperto per le correnti inverse.
 
 [PAG 1821]
 ELETTRONICA DI POTENZA
 XVIII-3
-Questo è il fondamento sul quale si basa l’impiego dei diodi raddrizzatori per realizzare 
-sistemi di conversione estremamente semplici che permettono di trasformare una tensione 
-alternata in una tensione continua. Il circuito di Fig. XVIII.1.1 con i relativi diagrammi 
-associati rappresentano il funzionamento del dispositivo.
-Fig. XVIII.1.1  Circuito di raddrizzamento a una semionda.
-L’interpretazione del funzionamento è il seguente: in corrispondenza della semionda 
-positiva della tensione applicata il diodo funziona come un circuito chiuso, ovvero la 
-polarizzazione è diretta e la caduta di tensione ai suoi capi risulta trascurabile e pratica-
-mente indipendente dalla corrente che lo percorre uAK = 0. La tensione ai capi del carico 
-risulta pertanto di valore pari a quello della tensione applicata.
+
+Questo è il fondamento sul quale si basa l’impiego dei diodi raddrizzatori per realizzare sistemi di conversione estremamente semplici che permettono di trasformare una tensione alternata in una tensione continua. Il circuito di Fig. XVIII.1.1 con i relativi diagrammi associati rappresentano il funzionamento del dispositivo.
+
+Fig. XVIII.1.1 Circuito di raddrizzamento a una semionda.
+
+L’interpretazione del funzionamento è la seguente: in corrispondenza della semionda positiva della tensione applicata il diodo funziona come un circuito chiuso, ovvero la polarizzazione è diretta e la caduta di tensione ai suoi capi risulta trascurabile e praticamente indipendente dalla corrente che lo percorre uAK = 0. La tensione ai capi del carico risulta pertanto di valore pari a quello della tensione applicata.
+
 (XVIII.1.1)
-ma essendo uAK = 0, si avrà pertanto uu = ui. La resistenza viene interessata da una cor-
-rente variabile, legata alla forma della tensione, di valore:
+
+ma essendo uAK = 0, si avrà pertanto uu = ui. La resistenza viene interessata da una corrente variabile, legata alla forma della tensione, di valore:
+
 (XVIII.1.2)
-In corrispondenza della semionda negativa il diodo si comporta come un circuito aperto 
-in quanto risulta essere polarizzato inversamente. Si comporta quindi come una resistenza 
-di valore praticamente infinito, pertanto la corrente che percorre il carico risulta nulla i = 
-0. Essendo pertanto nulla la caduta di tensione ai capi del carico uu = R  i, la tensione in 
-ingresso risulta completamente applicata ai capi del diodo. Il valor medio della tensione ai 
-capi della resistenza per questo circuito, indicato anche come raddrizzatore ad una 
-semionda, vale:
+
+In corrispondenza della semionda negativa il diodo si comporta come un circuito aperto in quanto risulta essere polarizzato inversamente. Si comporta quindi come una resistenza di valore praticamente infinito, pertanto la corrente che percorre il carico risulta nulla i = 0. Essendo pertanto nulla la caduta di tensione ai capi del carico uu = R · i, la tensione in ingresso risulta completamente applicata ai capi del diodo. Il valor medio della tensione ai capi della resistenza per questo circuito, indicato anche come raddrizzatore ad una semionda, vale:
+
 (XVIII.1.3)
+
 Circuito di raddrizzamento
 Andamento della tensione in ingresso
 Tensione ai capi del diodo
@@ -181,20 +139,21 @@ ui
 D
 R
 0
-
-
++
+–
 t
 ui
 uu
 0
-
++
+–
 t
-
+–
 0
 t
 uAK
 uu
-uiuAK
+ui–uAK
 =
 i
 ui
@@ -202,482 +161,204 @@ R---
 =
 Uum
 UuM
-
+π
 ----------
+
 =
 
 [PAG 1822]
 XVIII-4
 ELETTRONICA DI POTENZA
-Un caso particolare e di estrema importanza è quello di un carico di tipo ohmico-
-induttivo; in questo caso la variazione della corrente viene ritardata per effetto della forza 
-elettromotrice indotta nel carico:
+
+Un caso particolare e di estrema importanza è quello di un carico di tipo ohmico-induttivo; in questo caso la variazione della corrente viene ritardata per effetto della forza elettromotrice indotta nel carico:
+
 (XVIII.1.4)
-che si somma algebricamente alla tensione 
-applicata ui. L’andamento della corrente è 
-quello della Fig. XVIII.1.2, nella quale si evi-
-denzia che l’annullamento dell’intensità di cor-
-rente avviene sempre con un certo ritardo t: in 
-particolare, pur essendo già cambiata la polarità 
-della tensione applicata, il diodo si trova ancora 
-in stato di conduzione. Questo è dovuto al fatto 
-che la corrente sta diminuendo, presenta cioè 
-pendenza e quindi derivata negativa con conse-
-guente forza elettromotrice indotta di valore 
-positivo, cioè in grado di polarizzare diretta-
-mente il diodo nonostante la tensione di 
-ingresso abbia già modificato la sua polarità. In 
-particolare la tensione applicata in ingresso e la 
-tensione di autoinduzione si equilibrano durante 
-l’intervallo di tempo t. 
-Fig. XVIII.1.2  Raddrizzatore a una semionda.
-Una conseguenza di questo è che il valore medio della tensione raddrizzata risulta 
-diminuito, inoltre la corrente che percorre il carico presenta una forma non proprio sinu-
-soidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della 
-f.e.m. di autoinduzione.
-Una particolare attenzione deve essere posta affinché la tensione inversa applicata al 
-dispositivo non superi un valore indicato come tensione di breakdown: quest’ultimo rap-
-presenta quel valore di tensione, proprio di ogni dispositivo a semiconduttore, superato il 
-quale avviene il passaggio di corrente anche con polarizzazione inversa.
-1.2  SCR
-Fig. XVIII.1.3  Struttura e simbolo grafico del tiristore.
-Il tiristore, comunemente indicato come SCR (Silicon Controlled Rectifier), è un 
-dispositivo a giunzione di tipo p-n-p-n la cui struttura e schema simbolico sono rappresen-
-tati in Fig. XVIII.1.3. 
-Questo dispositivo viene inoltre designato come diodo controllato al silicio perché 
-tramite l’elettrodo di controllo G è possibile governare il passaggio della corrente che lo 
-e
-Ldi t
-dt
------------
-=
-t
-t
-ui
-i
-K
-K
-K
-G
-A
-G
-G
-A
-A
-p
-n
-p
-n
-p
-n
-p
-n
 
-[PAG 1823]
-ELETTRONICA DI POTENZA
-XVIII-5
-attraversa. L’elettrodo di controllo è indicato col termine inglese di Gate, cioè di porta, 
-proprio per la sua specifica funzione di consentire il flusso della corrente nella direzione 
-da anodo a catodo: il passaggio inverso della corrente, ad eccezione di debolissime cor-
-renti indicate come correnti di fuga, è sempre negato, comportandosi cioè come un nor-
-male diodo. Si può pertanto affermare che il passaggio della corrente attraverso il tiristore 
-è sempre interdetto, salvo un flusso di corrente da anodo verso il catodo qualora venga 
-applicato un opportuno segnale di controllo sul Gate. Pertanto nella condizione di funzio-
-namento normale, ovvero per tensioni ai suoi capi minori della tensione di breakdown, il 
-tiristore presenta una resistenza praticamente infinita in entrambi i sensi di polarizza-
-zione. È possibile però portare il dispositivo nella situazione di conduzione (con polariz-
-zazioni dirette), in maniera istantanea, applicando un impulso positivo di tensione, anche 
-di breve durata, tra il Gate ed il catodo; la corrente applicata sull’elettrodo di controllo 
-interviene diminuendo il valore della tensione di breakdown. In questa condizione la 
-caduta di tensione tra anodo e catodo risulta simile a quella di un diodo tradizionale.
-Fig. XVIII.1.4  Caratteristica corrente-tensione di un SCR.
-È indispensabile notare che, una volta innescata la conduzione, anche se il comando di 
-Gate viene tolto, il dispositivo permane nel suo stato di conduzione fino a che la corrente 
-che lo attraversa non scende al di sotto di un determinato valore: questa corrente viene 
-indicata con Ih e prende il nome di corrente di automantenimento (Fig. XVIII.1.4). Non 
-appena la corrente scende sotto il valore di automantenimento il tiristore torna nel suo 
-stato di interdizione, cioè di blocco totale del passaggio della corrente fino al prossimo 
-impulso di Gate. Pertanto l’innesco del dispositivo, cioè il passaggio alla conduzione, 
-avviene tramite l’impulso di comando sul Gate, mentre la sua interdizione avviene auto-
-nomamente non appena la corrente scende al di sotto di un ben preciso valore.
-L’impulso di corrente necessario ad attivare il diodo controllato ha intensità che varia-
-no da frazioni di milliampere a qualche centinaio di milliampere, in funzione della cor-
-rente che va a controllare e del dispositivo, mentre la durata dell’impulso può limitarsi a 
-qualche decina di microsecondi. È evidente che la possibilità di variare l’istante di inne-
-sco del dispositivo consente di ottenere in uscita una tensione raddrizzata il cui valore 
-Caratteristica diretta
-(in conduzione)
-Caratteristica diretta
-(di blocco)
-Impulso di innesco
-Corrente di
-automantenimento Ih
-Caratteristica inversa
-(di blocco)
-i
-u
+che si somma algebricamente alla tensione applicata ui. L’andamento della corrente è quello della Fig. XVIII.1.2, nella quale si evidenzia che l’annullamento dell’intensità di corrente avviene sempre con un certo ritardo Δt: in particolare, pur essendo già cambiata la polarità della tensione applicata, il diodo si trova ancora in stato di conduzione. Questo è dovuto al fatto che la corrente sta diminuendo, presenta cioè pendenza e quindi derivata negativa con conseguente forza elettromotrice indotta di valore positivo, cioè in grado di polarizzare direttamente il diodo nonostante la tensione di ingresso abbia già modificato la sua polarità.
+particolare la tensione applicata in ingresso e la tensione di autoinduzione si equilibrano durante l’intervallo di tempo Δt.
 
-[PAG 1824]
-XVIII-6
-ELETTRONICA DI POTENZA
-medio varia da zero a quello di un diodo rettificatore tradizionale, il tutto con l’impiego di 
-potenze di comando estremamente contenute.
-La Fig. XVIII.1.5 evidenzia l’andamento della tensione ai capi di un carico costituito 
-da una resistenza alimentata da una tensione alternata sinusoidale controllata da un SCR. 
-Lo spostamento della fase dell’impulso di accensione implica una modifica sulla forma 
-d’onda della tensione applicata al carico e, conseguentemente, sul valor medio della ten-
-sione applicata al medesimo. La possibilità di intervenire sullo sfasamento dell’impulso di 
-accensione del dispositivo, rispetto la fase della tensione di alimentazione, consente di 
-ottenere una regolazione continua della tensione applicata al carico e, quindi, della cor-
-rente che lo attraversa. 
-Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) 
-per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene 
-ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di 
-Fig. XVIII.1.5 in funzione dell’angolo di sfasamento è espresso da:
+Fig. XVIII.1.2 Raddrizzatore a una semionda.
+Una conseguenza di questo è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che percorre il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
+
+Una particolare attenzione deve essere posta affinché la tensione inversa applicata al dispositivo non superi un valore indicato come tensione di breakdown: quest’ultimo rappresenta quel valore di tensione, proprio di ogni dispositivo a semiconduttore, superato il quale avviene il passaggio di corrente anche con polarizzazione inversa.
+
+1.2 SCR
+
+Fig. XVIII.1.3 Struttura e simbolo grafico del tiristore.
+Il tiristore, comunemente indicato come SCR (Silicon Controlled Rectifier), è un dispositivo a giunzione di tipo p-n-p-n la cui struttura e schema simbolico sono rappresentati in Fig. XVIII.1.3.
+
+Questo dispositivo viene inoltre designato come diodo controllato al silicio perché, tramite l’elettrodo di controllo G, è possibile governare il passaggio della corrente che lo attraversa. L’elettrodo di controllo è indicato col termine inglese di Gate, cioè di porta, proprio per la sua specifica funzione di consentire il flusso della corrente nella direzione da anodo a catodo: il passaggio inverso della corrente, ad eccezione di debolissime correnti indicate come correnti di fuga, è sempre negato, comportandosi cioè come un normale diodo. Si può pertanto affermare che il passaggio della corrente attraverso il tiristore è sempre interdetto, salvo un flusso di corrente da anodo verso catodo qualora venga applicato un opportuno segnale di controllo sul Gate.
+
+Pertanto, nella condizione di funzionamento normale, ovvero per tensioni ai suoi capi minori della tensione di breakdown, il tiristore presenta una resistenza praticamente infinita in entrambi i sensi di polarizzazione. È possibile però portare il dispositivo nella situazione di conduzione (con polarizzazioni dirette), in maniera istantanea, applicando un impulso positivo di tensione, anche di breve durata, tra il Gate e il catodo; la corrente applicata sull’elettrodo di controllo interviene diminuendo il valore della tensione di breakdown. In questa condizione, la caduta di tensione tra anodo e catodo risulta simile a quella di un diodo tradizionale.
+
+Fig. XVIII.1.4 Caratteristica corrente-tensione di un SCR.
+È indispensabile notare che, una volta innescata la conduzione, anche se il comando di Gate viene tolto, il dispositivo permane nel suo stato di conduzione fino a che la corrente che lo attraversa non scende al di sotto di un determinato valore: questa corrente viene indicata con Ih e prende il nome di corrente di automantenimento (Fig. XVIII.1.4). Non appena la corrente scende sotto il valore di automantenimento, il tiristore torna nel suo stato di interdizione, cioè di blocco totale del passaggio della corrente fino al prossimo impulso di Gate. Pertanto, l’innesco del dispositivo, cioè il passaggio alla conduzione, avviene tramite l’impulso di comando sul Gate, mentre la sua interdizione avviene autonomamente non appena la corrente scende al di
+no da frazioni di milliampere a qualche centinaio di milliampere, in funzione della corrente che va a controllare e del dispositivo, mentre la durata dell’impulso può limitarsi a qualche decina di microsecondi. È evidente che la possibilità di variare l’istante di innesco del dispositivo consente di ottenere in uscita una tensione raddrizzata il cui valore medio varia da zero a quello di un diodo rettificatore tradizionale, il tutto con l’impiego di potenze di comando estremamente contenute.
+
+La Fig. XVIII.1.5 evidenzia l’andamento della tensione ai capi di un carico costituito da una resistenza alimentata da una tensione alternata sinusoidale controllata da un SCR. Lo spostamento della fase dell’impulso di accensione implica una modifica sulla forma d’onda della tensione applicata al carico e, conseguentemente, sul valor medio della tensione applicata al medesimo. La possibilità di intervenire sullo sfasamento dell’impulso di accensione del dispositivo, rispetto la fase della tensione di alimentazione, consente di ottenere una regolazione continua della tensione applicata al carico e, quindi, della corrente che lo attraversa.
+
+Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di Fig. XVIII.1.5 in funzione dell’angolo di sfasamento è espresso da:
+
 (XVIII.1.5)
-Naturalmente anche per gli SCR 
-la presenza di un carico ohmico-
-induttivo comporta delle variazio-
-ni sul loro funzionamento alte-
-rando quello che sono le forme 
-d’onda delle tensioni risultanti 
-applicate ai carichi. Tipicamente, 
-a causa della forza elettromotrice 
-indotta, la corrente nel carico 
-risulta ritardata in partenza 
-rispetto l’impulso applicato, ma 
-prolungata durante la fase di 
-estinzione. L’annullamento della 
-corrente avviene quando la ten-
-sione applicata, peraltro già di 
-valore negativo, equilibra il va-
-lore della tensione di autoinduzio-
-ne del carico: in quell’istante, 
-annullandosi il valore della cor-
-rente, il dispositivo passa allo 
-stato di interdizione. È necessario 
-limitare, magari tramite diodi di 
-ricircolo, questo inconveniente, 
-perché si potrebbe arrivare alla 
-condizione limite per la quale con 
-carichi fortemente induttivi risul-
-terebbe impossibile effettuare una 
-buona regolazione della tensione 
-in uscita. 
-Fig. XVIII.1.5  Tensione sul carico funzione di 
-Um
-UiM
-2
---------- 1+ cos
-
-
-=
-Sistema
-di
-comando
-SCR
-R
-ui
-
-Tensione di
-alimentazione
-Impulsi di
-comando
-Tensione
-sul carico
+
+Um = UiM (1 + cos α) / 2π
+
+Naturalmente anche per gli SCR la presenza di un carico ohmico-induttivo comporta delle variazioni sul loro funzionamento alterando quello che sono le forme d’onda delle tensioni risultanti applicate ai carichi. Tipicamente, a causa della forza elettromotrice indotta, la corrente nel carico risulta ritardata in partenza rispetto l’impulso applicato, ma prolungata durante la fase di estinzione. L’annullamento della corrente avviene quando la tensione applicata, peraltro già di valore negativo, equilibra il valore della tensione di autoinduzione del carico: in quell’istante, annullandosi il valore della corrente, il dispositivo passa allo stato di interdizione. È necessario limitare, magari tramite diodi di ricircolo, questo inconveniente, perché si potrebbe arrivare alla condizione limite per la quale con carichi fortemente induttivi risulterebbe impossibile effettuare una buona regolazione della tensione in uscita.
+
+Fig. XVIII.1.5 Tensione sul carico funzione di α.
 
 [PAG 1825]
 ELETTRONICA DI POTENZA
 XVIII-7
-Nella Fig. XVIII.1.6 si evidenzia l’andamento 
-della corrente su un carico induttivo dove la ten-
-sione in ingresso ui viene applicata all’istante ti;
-si noti che la corrente cessa di scorrere quando 
-la tensione applicata è pari alla forza elettromo-
-trice uL di autoinduzione presente sull’utilizza-
-tore (una di segno opposto all’altra). Gli angoli 
- e  dipendono anch’essi dal valore di indut-
-tanza del carico. Si ricorda infine che, come per 
-tutti i dispositivi p-n-p-n, è necessario porre par-
-ticolare attenzione al cosiddetto effetto
-, 
-cioè alla velocità di variazione nel tempo della 
-tensione applicata: la tensione di innesco di que-
-sti dispositivi è infatti legata a tale effetto; una 
-rapida variazione della tensione applicata può 
-portare il dispositivo in conduzione anche senza 
-impulso di comando.
-Fig. XVIII.1.6  Raddrizzatore controllato con carico induttivo.
-Le principali caratteristiche elettriche di questi componenti sono le seguenti:
-–  tensione di picco e di breakdown inversa;
-–  valore massimo della corrente diretta;
-–  tensione e corrente di Gate;
-–  valore minimo della corrente di automantenimento Ih;
-–  massima potenza dissipabile;
-–  valore massimo di 
-.
-Si riportano nella Tab. XVIII.1.1, a titolo di esempio, i valori forniti per un dispositivo 
-di questo tipo, in grado di comandare una corrente di valore medio pari a 3,5 A realizzato 
-da SGS-THOMSON.
-1.3  DIAC
-Il DIAC altro non è che un dispositivo a semiconduttore bidirezionale che basa il suo 
-funzionamento sul superamento della tensione di breakover. Dal punto di vista funzionale 
-è assimilabile ad un SCR privo, però, di terminale di controllo e che consente il passaggio 
-della corrente in entrambi i sensi non appena la tensione ai suoi capi supera la soglia di 
-tensione di breakover; in quel momento si ha l’effetto valanga e il dispositivo presenta 
-una caratteristica a resistenza negativa. 
-Tab. XVIII.1.1  Caratteristiche elettriche di un SCR
-Caratteristiche elettriche T = 25 °C
-Dispositivo
-Tensione
-ripetitiva 
-diretta e 
-inversa
-Corrente 
-di trigger 
-al Gate
-Tensione 
-di trigger 
-al Gate
-Corrente
-di picco 
-non 
-ripetitiva
-[V]
-[mA]
-[V]
-[V/s]
-[A]
-TYN 1006
-1000
-15
-1,5
-200
-70
-
-
-uL
-ui
-ti
-tc
-t
-dU dt
-
-dU dt
-
-dU dt
-
 
-[PAG 1826]
-XVIII-8
-ELETTRONICA DI POTENZA
-Fig. XVIII.1.7  Simbolo e caratteristica del DIAC.
-Dalla Fig. XVIII.1.7 si evince che, tipicamente, la caratteristica corrente-tensione per 
-il DIAC è di tipo simmetrico, anche se sono disponibili dispositivi aventi caratteristica 
-asimmetrica.
+Nella Fig. XVIII.1.6 si evidenzia l’andamento della corrente su un carico induttivo dove la tensione in ingresso ui viene applicata all’istante ti; si noti che la corrente cessa di scorrere quando la tensione applicata è pari alla forza elettromotrice uL di autoinduzione presente sull’utilizzatore (una di segno opposto all’altra). Gli angoli α e β dipendono anch’essi dal valore di induttanza del carico. Si ricorda infine che, come per tutti i dispositivi p-n-p-n, è necessario porre particolare attenzione al cosiddetto effetto
+Tensione applicata: la tensione di innesco di questi dispositivi è infatti legata a tale effetto; una rapida variazione della tensione applicata può portare il dispositivo in conduzione anche senza impulso di comando.
+
+**Fig. XVIII.1.6** Raddrizzatore controllato con carico induttivo.
+
+Le principali caratteristiche elettriche di questi componenti sono le seguenti:
+– tensione di picco e di breakdown inversa;
+– valore massimo della corrente diretta;
+– tensione e corrente di Gate;
+– valore minimo della corrente di automantenimento *I<sub>h</sub>*;
+– massima potenza dissipabile;
+– valore massimo di *dU/dt*.
+
+Si riportano nella **Tab. XVIII.1.1**, a titolo di esempio, i valori forniti per un dispositivo di questo tipo, in grado di comandare una corrente di valore medio pari a 3,5 A realizzato da SGS-THOMSON.
+
+---
+
+### 1.3 DIAC
+
+Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che basa il suo funzionamento sul superamento della tensione di *breakover*. Dal punto di vista funzionale è assimilabile a un SCR privo, però, di terminale di controllo e che consente il passaggio della corrente in entrambi i sensi non appena la tensione ai suoi capi supera la soglia di tensione di *breakover*; in quel momento si ha l’effetto valanga e il dispositivo presenta una caratteristica a resistenza negativa.
+
+**Tab. XVIII.1.1** Caratteristiche elettriche di un SCR
+**Caratteristiche elettriche T = 25 °C**
+
+| Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
+|-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
+| TYN 1006    | 1000                                     | 15                               | 1,5                            | 70                                   |
+
+*α*
+*β*
+*u<sub>L</sub>*
+*u<sub>i</sub>*
+*t<sub>i</sub>*
+*t<sub>c</sub>*
+*t*
+*dU/dt*
+*dU/dt*
+*dU/dt*
+
+---
+
+**[PAG 1826]**
+**XVIII-8**
+**ELETTRONICA DI POTENZA**
+
+**Fig. XVIII.1.7** Simbolo e caratteristica del DIAC.
+
+Dalla **Fig. XVIII.1.7** si evince che, tipicamente, la caratteristica corrente-tensione per il DIAC è di tipo simmetrico, anche se sono disponibili dispositivi aventi caratteristica asimmetrica.
+
 Le principali caratteristiche elettriche di questi dispositivi sono le seguenti:
-–  tensione di breakover;
-–  simmetria della tensione di breakover;
-–  tensione di breakback;
-–  corrente di breakover;
-–  potenza dissipabile.
-A titolo di esempio si riportano nella Tab. XVIII.1.2 le caratteristiche elettriche di 
-alcuni DIAC prodotti da American Semiconductor.
-Tab. XVIII.1.2  Caratteristiche elettriche di un DIAC
-Caratteristiche elettriche T = 25 °C
-Dispositivo
-Tensione
-di Breakover
-Simmetria 
-della 
-tensione di 
-Breakover
-Tensione di 
-Breakover 
-dinamica
-Corrente 
-di 
-Breakover
-Corrente
-di picco
-[V]
-[V]
-[V]
-[mA]
-[A]
-Min Typ Max
-Max
-Min
-Max
-Max
-D30
-28   32    36
-3
-5
-100
-2,0
-D40
-35   40   45
-3
-5
-100
-2,0
-ST2
-28   32   36
-3,8
--
-200
--
-HT32
-27    -     37
-3
-5
-50
-2,0
-DB3
-28   32   36
-3
-5
--
-1,0
-IA
-IA
-U
+– tensione di *breakover*;
+– simmetria della tensione di *breakover*;
+– tensione di *breakback*;
+– corrente di *breakover*;
+– potenza dissipabile.
+
+A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche elettriche di alcuni DIAC prodotti da American Semiconductor.
+
+**Tab. XVIII.1.2** Caratteristiche elettriche di un DIAC
+**Caratteristiche elettriche T = 25 °C**
+
+| Dispositivo | Tensione di Breakover [V] | Simmetria della tensione di Breakover [V] | Tensione di Breakover dinamica [V] | Corrente di Breakover [mA] | Corrente di picco [A] |
+|-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
+|             | Min | Typ | Max | Min | Typ | Max | Min | Max | Max | Min | Max |
+| D30         | 28  | 32  | 36  | 3   | 5   | 100 | 2,0 |       |     |       |       |
+| D40         | 35  | 40  | 45  | 3   | 5   | 100 | 2,0 |       |     |       |       |
+| ST2         | 28  | 32  | 36  | 3,8 | -   | 200 | -   |       |     |       |       |
+| HT32        | 27  | -   | 37  | 3   | 5   | 50  | 2,0 |       |     |       |       |
+| DB3         | 28  | 32  | 36  | 3   | 5   | -   | 1,0 |       |     |       |       |
+
+*+I<sub>A</sub>*
+*-I<sub>A</sub>*
+*U*
 Anodo 1
 Anodo 2
-IA
-U
-Tensione di
-breakover
-Corrente di
-breakover
-Tensione di
-breakover
-Corrente di
-breakover
+*I<sub>A</sub>*
+*U*
+Tensione di *breakover*
+Corrente di *breakover*
+Tensione di *breakover*
+Corrente di *breakover*
 
-[PAG 1827]
-ELETTRONICA DI POTENZA
-XVIII-9
-1.4  TRIAC
-Il TRIAC è un dispositivo a giun-
-zione di tipo p-n-p-n, la cui strut-
-tura e schema simbolico sono rap-
-presentati in Fig. XVIII.1.8, che 
-possiede anch’esso tre terminali 
-ma riesce a controllare il flusso 
-della corrente in entrambe le dire-
-zioni. Si noti che lo schema simbo-
-lico evidenzia il fatto che esso è 
-costituito da due SCR collegati tra 
-loro in antiparallelo aventi un uni-
-co terminale di controllo indicato 
-come Gate. Gli altri terminali sono 
-indicati con MT1 ed MT2. 
-Fig. XVIII.1.8  Simbolo elettrico e struttura del TRIAC.
-Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è 
-positivo rispetto MT1 e un impulso positivo di tensione viene applicato sul terminale di 
-Gate rispetto MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il poten-
-ziale del terminale MT1 è positivo rispetto il terminale MT2 e viene applicato un impulso 
-negativo rispetto MT1 sul terminale di Gate. Anche in questo caso, affinché il dispositivo 
-rimanga nello stato di conduzione è necessario che la corrente abbia un valore superiore 
-alla corrente di automantenimento Ih. 
-La Fig. XVIII.1.9 evidenzia la caratteristica corrente-tensione di questi particolari 
-semiconduttori.
-Fig. XVIII.1.9   Caratteristica corrente-tensione di un TRIAC.
-Dall’analisi della Fig. XVIII.1.9 si evidenzia che il TRIAC opera in maniera simile al 
-MT1
-MT2
-G
-G
-MT1
-MT2
-p1n2p2n3
-n1p1n2p2
-n
-n1
-p1
-p1
-p2
-p2
-n2
-n2
-n3
-Caratteristica diretta
-(in conduzione)
-Caratteristica diretta
-(di blocco)
-Impulso di innesco
-Corrente di
-automantenimento Ih
-i
-u
+---
 
-[PAG 1828]
-XVIII-10
-ELETTRONICA DI POTENZA
-dispositivo SCR, però consente alla corrente di scorrere in entrambe le direzioni, pertanto, 
-per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi 
-estremi supera il valore della tensione di breakover anche se quest’ultima è in realtà la 
-tensione limite di funzionamento e, pertanto, non viene considerata nelle normali opera-
-zioni di funzionamento.
-Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare atten-
-zione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comune-
-mente indicato come effetto
-; ampi valori di questa grandezza comportano 
-l’innesco, ovvero la conduzione, del dispositivo. 
-Il problema appena accennato viene solitamente risolto tramite un circuito costituito 
-dalla serie composta da una resistenza ed una capacità, indicato come circuito snubber, 
-collegato in parallelo tra MT1 ed MT2. 
-In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore massimo di 
-40A e tensioni massime di 2,5 kV in grado di funzionare privi di circuito snubber; ven-
-gono comunemente indicati come snubberless TRIACS.
+**[PAG 1827]**
+**ELETTRONICA DI POTENZA**
+**XVIII-9**
+
+### 1.4 TRIAC
+
+Il **TRIAC** è un dispositivo a giunzione di tipo p-n-p-n, la cui struttura e schema simbolico sono rappresentati in **Fig. XVIII.1.8**, che possiede anch’esso tre terminali ma riesce a controllare il flusso della corrente in entrambe le direzioni. Si noti che lo schema simbolico evidenzia il fatto che esso è costituito da due SCR collegati tra loro in antiparallelo aventi un unico terminale di controllo indicato come Gate. Gli altri terminali sono indicati con MT1 ed MT2.
+
+**Fig. XVIII.1.8** Simbolo elettrico e struttura del TRIAC.
+
+Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è
+Il dispositivo SCR di sinistra conduce se il potenziale del terminale MT2 è positivo rispetto MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto il terminale MT2 e viene applicato un impulso negativo rispetto MT1 sul terminale di Gate. Anche in questo caso, affinché il dispositivo rimanga nello stato di conduzione è necessario che la corrente abbia un valore superiore alla corrente di automantenimento Ih.
+
+La Fig. XVIII.1.9 evidenzia la caratteristica corrente-tensione di questi particolari semiconduttori.
+
+**Fig. XVIII.1.9**   Caratteristica corrente-tensione di un TRIAC.
+
+Dall’analisi della Fig. XVIII.1.9 si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, però consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di breakover, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
+
+Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare attenzione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comunemente indicato come **effetto di dv/dt**; ampi valori di questa grandezza comportano l’innesco, ovvero la conduzione, del dispositivo.
+
+Il problema appena accennato viene usualmente risolto tramite un circuito costituito dalla serie composta da una resistenza e una capacità, indicato come **circuito snubber**, collegato in parallelo tra MT1 e MT2.
+
+In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore massimo di 40 A e tensioni massime di 2,5 kV in grado di funzionare privi di circuito snubber; vengono comunemente indicati come **snubberless TRIAC**.
+
 Le caratteristiche elettriche principali di questi semiconduttori sono le seguenti:
-–  tensione diretta e inversa di breakdown;
-–  valore massimo della corrente;
-–  valore minimo della corrente di mantenimento;
-–  valore della tensione e della corrente di trigger (Gate);
-–  velocità di commutazione;
-–  valore massimo ammissibile di 
-.
-La Tab. XVIII.1.3 evidenzia, a titolo d’esempio, i valori forniti per un snubberless 
-TRIAC in grado di comandare una corrente di valore medio pari a 40A realizzato da SGS-
-THOMSON.
-Si noti l’elevato valore del parametro 
- che consente l’impiego del dispositivo 
-senza l’ausilio del circuito snubber.
-1.5  Transistor di Potenza
-La necessità di poter effettuare commutazioni ON-OFF a frequenze molto elevate, 
-condizione necessaria per limitare la potenza dissipata nei circuiti inerenti l’elettronica di 
-potenza, implica di avere a disposizione elementi semiconduttori aventi valore di slew 
-rate, cioè di 
-, superiori a quelli normalmente posseduti da SCR e TRIACS.
- Sono nati per questo due ulteriori tipi di interruttori allo stato solido i quali, tra l’altro 
-possiedono anche ulteriori caratteristiche che li fanno preferire: i GTO (Gate Turn Off) e 
-gli IGBT (Insulated Gate Bipolar Transistor).
-1.5.1  GTO
-Nonostante siano conosciuti fin dalla fine degli anni ’60, questi dispositivi vengono uti-
-Tab. XVIII.1.3  Caratteristiche elettriche di un TRIAC
+– tensione diretta e inversa di breakdown;
+– valore massimo della corrente;
+– valore minimo della corrente di mantenimento;
+– valore della tensione e della corrente di trigger (Gate);
+– velocità di commutazione;
+– valore massimo ammissibile di **dv/dt**.
+
+La **Tab. XVIII.1.3** evidenzia, a titolo d’esempio, i valori forniti per un **snubberless TRIAC** in grado di comandare una corrente di valore medio pari a 40 A realizzato da SGS-THOMSON.
+
+Si noti l’elevato valore del parametro **dv/dt** che consente l’impiego del dispositivo senza l’ausilio del circuito snubber.
+
+### 1.5  Transistor di Potenza
+
+La necessità di poter effettuare commutazioni ON-OFF a frequenze molto elevate, condizione necessaria per limitare la potenza dissipata nei circuiti inerenti l’elettronica di potenza, implica di avere a disposizione elementi semiconduttori aventi valore di **slew rate**, cioè di **dv/dt**, superiori a quelli normalmente posseduti da SCR e TRIAC.
+
+Sono nati per questo due ulteriori tipi di interruttori allo stato solido i quali, tra l’altro, possiedono anche ulteriori caratteristiche che li fanno preferire: i **GTO** (*Gate Turn Off*) e gli **IGBT** (*Insulated Gate Bipolar Transistor*).
+
+### 1.5.1  GTO
 Caratteristiche elettriche T = 25 °C
 Dispositivo
 Tensione
-ripetitiva 
-diretta e 
+ripetitiva
+diretta e
 inversa
-Corrente 
-di trigger 
+Corrente
+di trigger
 al Gate
-Tensione 
-di trigger 
+Tensione
+di trigger
 al Gate
 Corrente
-di picco 
-non 
+di picco
+non
 ripetitiva
 [V]
 [mA]
 [V]
-[V/s]
+[V/µs]
 [A]
 T4016NKS
 800
@@ -685,138 +366,66 @@ T4016NKS
 1,5
 750
 300
-dU dt
-
-dU dt
-
-dU dt
-
-dU dt
-
-dU dt
-
+dU/dt
+⌀
+dU/dt
+⌀
+dU/dt
+⌀
+dU/dt
+⌀
+dU/dt
+⌀
 
 [PAG 1829]
 ELETTRONICA DI POTENZA
 XVIII-11
-lizzati per il controllo di grosse potenze solo 20 anni più tardi, infatti risultavano, ai tempi 
-della loro nascita, particolarmente difficili da realizzare con la tecnologia del tempo.
-Dal punto di vista funzionale sono assimila-
-bili a dispositivi tradizionali quali SCR, 
-TRIAC e MOSFET, ma inglobano le carat-
-teristiche funzionali di tutti questi disposi-
-tivi. La Fig. XVIII.1.10 evidenzia lo schema 
-elettrico e funzionale del dispositivo: è un 
-dispositivo che, similmente agli SCR, lascia 
-transitare la corrente in un solo verso. Si 
-noti, in particolare, che il terminale di 
-comando, il Gate, mette in risalto il doppio 
-senso della corrente che lo può percorrere. 
-Al variare del verso di percorrenza della 
-corrente di Gate, si è in grado di modificare 
-lo stato di funzionamento del dispositivo da 
-OFF a ON e viceversa.
-Fig. XVIII.1.10  Simbolo elettrico e struttura del GTO.
- Per comprendere il funzionamento di questo 
-dispositivo a tre giunzioni, consideriamo il suo 
-circuito equivalente, rappresentato da due transi-
-stor, riportato nella Fig. XVIII.1.11. 
-Un impulso positivo applicato sul terminale di 
-comando G rispetto il catodo K crea una corrente 
-entrante in base del transistor NPN, cioè nella 
-zona P, e mette in conduzione il transistor stesso 
-provocando di conseguenza la diminuzione della 
-sua tensione di collettore. Il collettore del transi-
-stor NPN, essendo collegato alla base del transi-
-stor PNP, costringe alla conduzione anche il 
-dispositivo PNP in quanto obbliga la base di 
-quest’ultimo ad avere un potenziale minore. Il 
-transistor PNP, a sua volta, essendo entrato in 
-conduzione, costringe la base del dispositivo 
-NPN ad aumentare il suo potenziale concorrendo 
-in questo modo al passaggio di corrente attra-
-verso i due dispositivi. 
-Fig. XVIII.1.11  Circuito equivalente del GTO.
-Entrambi i transistor, con la loro configurazione, realizzano un anello di intensa rea-
-zione positiva, cioè il fenomeno indicato col termine loop rigenerativo. In questa situa-
-zione i transistor risultano in saturazione forzata e presentano un piccolo valore di 
-resistenza tra il terminale A ed il terminale K.
-Se l’intensità di corrente IAK è tale per cui la somma dei guadagni 
-dei 
-due dispositivi (funzione della corrente Ic di ciascuno) è maggiore dell’unità, anche se 
-viene a mancare l’impulso di Gate, il dispositivo persevera nel suo stato di conduzione.
-La Fig. XVIII.1.12 illustra l’andamento delle correnti per un dispositivo in condu-
-zione. La differenza sostanziale dai normali SCR risiede nel valore dei guadagni. 
-A
-K
-G
-A
-G
-K
-n
-n
-p
-p
-p
-p
-G
-A
-K
-PNP
-NPN
-R
-NPN
-PNP
-+
+utilizzati per il controllo di grosse potenze solo 20 anni più tardi, infatti risultavano, ai tempi della loro nascita, particolarmente difficili da realizzare con la tecnologia del tempo.
+Dal punto di vista funzionale sono assimilabili a dispositivi tradizionali quali SCR, TRIAC e MOSFET, ma inglobano le caratteristiche funzionali di tutti questi dispositivi. La Fig. XVIII.1.10 evidenzia lo schema elettrico e funzionale del dispositivo: è un dispositivo che, similmente agli SCR, lascia transitare la corrente in un solo verso. Si noti, in particolare, che il terminale di comando, il Gate, mette in risalto il doppio senso della corrente che lo può percorrere. Al variare del verso di percorrenza della corrente di Gate, si è in grado di modificare lo stato di funzionamento del dispositivo da OFF a ON e viceversa.
+
+Fig. XVIII.1.10 Simbolo elettrico e struttura del GTO.
+
+Per comprendere il funzionamento di questo dispositivo a tre giunzioni, consideriamo il suo circuito equivalente, rappresentato da due transistor, riportato nella Fig. XVIII.1.11. Un impulso positivo applicato sul terminale di comando G rispetto al catodo K crea una corrente entrante in base del transistor NPN, cioè nella zona P, e mette in conduzione il transistor stesso provocando di conseguenza la diminuzione della sua tensione di collettore. Il collettore del transistor NPN, essendo collegato alla base del transistor PNP, costringe alla conduzione anche il dispositivo PNP in quanto obbliga la base di quest’ultimo ad avere un potenziale minore. Il transistor PNP, a sua volta, essendo entrato in conduzione, costringe la base del dispositivo NPN ad aumentare il suo potenziale concorrendo in questo modo al passaggio di corrente attraverso i due dispositivi.
+
+Fig. XVIII.1.11 Circuito equivalente del GTO.
+
+Entrambi i transistor, con la loro configurazione, realizzano un anello di intensa reazione positiva, cioè il fenomeno indicato col termine loop rigenerativo. In questa situazione i transistor risultano in saturazione forzata e presentano un piccolo valore di resistenza tra il terminale A ed il terminale K.
+
+Se l’intensità di corrente IAK è tale per cui la somma dei guadagni dei due dispositivi (funzione della corrente Ic di ciascuno) è maggiore dell’unità, anche se viene a mancare l’impulso di Gate, il dispositivo persevera nel suo stato di conduzione.
+
+La Fig. XVIII.1.12 illustra l’andamento delle correnti per un dispositivo in conduzione. La differenza sostanziale dai normali SCR risiede nel valore dei guadagni.
 
 [PAG 1830]
 XVIII-12
 ELETTRONICA DI POTENZA
-Un elevato valore dei guadagni comporta un piccolo 
-valore di resistenza in fase di conduzione e quindi una 
-piccola caduta di tensione durante la conduzione, ed 
-inoltre implica anche piccoli valori di corrente necessari 
-al pilotaggio del Gate. Gli SCR vengono realizzati con il 
-più alto valore possibile dei guadagni, per cui quando i 
-dispositivi sono attraversati dalla corrente il valore della 
-loro somma supera l’unità, quindi si mantengono in con-
-duzione ed è impossibile bloccare la loro conduzione. 
-Il minimo valore di corrente che mantiene la somma dei 
-guadagni superiore all’unità è indicato come valore della 
-corrente di automantenimento Ih. 
-Fig. XVIII.1.12  Correnti durante
-la fase di conduzione del GTO.
-La Fig. XVIII.1.13 riporta l’andamento del guadagno di una giunzione in funzione 
-della corrente di collettore e della tensione tra collettore ed emettitore.
-Fig. XVIII.1.13  Variazione del guadagno  in funzione di IC e UCE. 
-Il GTO viene realizzato ponendo particolare attenzione al 
-drogaggio e alla struttura costruttiva in modo tale da 
-avere la somma dei guadagni appena superiore all’unità 
-in fase di conduzione; questo consente di bloccare la 
-conduzione del dispositivo polarizzando il Gate in modo 
-inverso. Si ricorda che un valore più contenuto dei gua-
-dagni implica però correnti più intense di pilotaggio. La 
-transizione da ON ad OFF è dovuta alla polarizzazione 
-inversa del terminale di pilotaggio G che obbliga la cor-
-rente del transistor PNP ad uscire dal Gate anziché 
-entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
-La conseguenza risulta ovvia: il dispositivo NPN passa 
-allo stato di interdizione e di conseguenza anche quello 
-PNP. 
-Fig. XVIII.1.14  Correnti durante
-la fase di interdizione del GTO.
-È necessario che, in questa fase, la durata dell’impulso negativo applicato al Gate sia 
-sufficiente a garantire lo spegnimento del sistema. 
+
+Un elevato valore dei guadagni comporta un piccolo valore di resistenza in fase di conduzione e quindi una piccola caduta di tensione durante la conduzione, ed inoltre implica anche piccoli valori di corrente necessari al pilotaggio del Gate. Gli SCR vengono realizzati con il più alto valore possibile dei guadagni, per cui quando i dispositivi sono attraversati dalla corrente il valore della loro somma supera l’unità, quindi si mantengono in conduzione ed è impossibile bloccare la loro conduzione.
+Il minimo valore di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come valore della corrente di automantenimento I<sub>h</sub>.
+
+Fig. XVIII.1.12 Correnti durante la fase di conduzione del GTO.
+
+La Fig. XVIII.1.13 riporta l’andamento del guadagno di una giunzione in funzione della corrente di collettore e della tensione tra collettore ed emettitore.
+
+Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
+
+Il GTO viene realizzato ponendo particolare attenzione al drogaggio e alla struttura costruttiva in modo tale da avere la somma dei guadagni appena superiore all’unità in fase di conduzione; questo consente di bloccare la conduzione del dispositivo polarizzando il Gate in modo inverso. Si ricorda che un valore più contenuto dei guadagni implica però correnti più intense di pilotaggio. La transizione da ON ad OFF è dovuta alla polarizzazione inversa del terminale di pilotaggio G che obbliga la corrente del transistor PNP ad uscire dal Gate anziché entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
+
+La conseguenza risulta ovvia: il dispositivo NPN passa allo stato di interdizione e di conseguenza anche quello PNP.
+
+Fig. XVIII.1.14 Correnti durante la fase di interdizione del GTO.
+
+È necessario che, in questa fase, la durata dell’impulso negativo applicato al Gate sia sufficiente a garantire lo spegnimento del sistema.
+
 Le principali caratteristiche elettriche di questi componenti sono le seguenti:
 G
 K
 NPN
 PNP
 A
-IC
-UCE
-
-
+I<sub>C</sub>
+U<sub>CE</sub>
+α
+α
 1
 1
 G
@@ -828,38 +437,27 @@ A
 [PAG 1831]
 ELETTRONICA DI POTENZA
 XVIII-13
-–  tensione di picco e di breakdown inversa;
-–  valore massimo della corrente diretta;
-–  corrente e tensione di Gate per il turn-on ed il turn-off;
-–  massima potenza dissipabile;
-–  valore massimo di 
-.
-Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 
-2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla 
-corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie 
-del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 
-ai 5 s per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 s per 
-la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per 
-costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di 
-interdizione. Per questi dispositivi lo slew rate ha valori di vari kV/s. Nella Fig. 
-XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione 
-anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore 
-alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della cor-
-rente di Gate superiori alla soglia il comportamento è quello caratteristico di un SCR. 
-Fig. XVIII.1.15  Caratteristica corrente-tensione di un GTO.
-Il GTO è un ottimo dispositivo allo stato solido in grado di assolvere a funzioni di 
-interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa 
-di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni 
-artifici; a tale proposito si veda la Fig. XVIII.1.16.
-La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di inter-
-dizione e viceversa con estrema facilità ed alta velocità, fanno sì che questo componente sia 
-particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze 
-con elevato rendimento dovuto a perdite di commutazione estremamente contenute. 
-Un elemento di particolare rilievo sta nella loro possibilità di interrompere la corrente 
+
+– tensione di picco e di breakdown inversa;
+– valore massimo della corrente diretta;
+– corrente e tensione di Gate per il turn-on ed il turn-off;
+– massima potenza dissipabile;
+– valore massimo di .
+
+Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo slew rate ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della corrente di Gate superiori alla soglia il comportamento è quello caratteristico di un SCR.
+
+Fig. XVIII.1.15 Caratteristica corrente-tensione di un GTO.
+
+Il GTO è un ottimo dispositivo allo stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la Fig. XVIII.1.16.
+
+La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità, fanno sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze
+con elevato rendimento dovuto a perdite di commutazione estremamente contenute.
+Un elemento di particolare rilievo sta nella loro possibilità di interrompere la corrente
 in qualsiasi istante (Fig. XVIII.1.17), fatto questo che si concretizza nella facoltà di par-
-zializzare un’onda sinusoidale in modo perfettamente simmetrico e ridurre in questo 
+zializzare un’onda sinusoidale in modo perfettamente simmetrico e ridurre in questo
 modo il contenuto delle armoniche ad elevata frequenza.
-dU dt
+
+dU/dt
 
 IA
 UAK
@@ -871,42 +469,51 @@ XVIII-14
 ELETTRONICA DI POTENZA
 Fig. XVIII.1.16   Impiego di un GTO in cir-
 cuito a c.a.
-Fig. XVIII.1.17  Parzializzazione 
+Fig. XVIII.1.17  Parzializzazione
 simmetrica di un GTO.
+
 1.5.2  IGBT
-Sono dispositivi destinati a circuiti per commutazione di media-alta potenza, ovvero 
-da 1kW ad oltre 1 MW, in grado, attualmente, di sopportare correnti nominali fino a 2000 
+Sono dispositivi destinati a circuiti per commutazione di media-alta potenza, ovvero
+da 1 kW ad oltre 1 MW, in grado, attualmente, di sopportare correnti nominali fino a 2000
 A con tensioni fino a 4500 V.
- Il loro funzionamento è praticamente uguale, a parte alcune differenze che si 
-vedranno successivamente, a quello dei transistor Mosfet; sono in grado di modificare il 
-loro stato dalla condizione di ON a quella di OFF in tempi brevi consentendo il passaggio 
+Il loro funzionamento è praticamente uguale, a parte alcune differenze che si
+vedranno successivamente, a quello dei transistor Mosfet; sono in grado di modificare il
+loro stato dalla condizione di ON a quella di OFF in tempi brevi consentendo il passaggio
 unidirezionale della corrente.
- I transistor Mosfet e quelli MosIgbt hanno struttura similare; un Mosfet di potenza a 
-canale n viene fabbricato su uno strato epitassiale. Gli IGBT ed i Mosfet sono realizzati 
-con la medesima struttura da tale strato in poi; è la differente realizzazione dello strato 
-base che crea la distinzione tra i due dispositivi. La composizione e lo spessore dello stato 
+
+I transistor Mosfet e quelli MosIgbt hanno struttura similare; un Mosfet di potenza a
+canale n viene fabbricato su uno strato epitassiale. Gli IGBT ed i Mosfet sono realizzati
+con la medesima struttura da tale strato in poi; è la differente realizzazione dello strato
+base che crea la distinzione tra i due dispositivi. La composizione e lo spessore dello strato
 epitassiale sono le caratteristiche che intervengono a determinare la tensione di bre-
-akdown del transistor. In particolare la tensione di breakdown risulta più elevata quanto 
-maggiore è lo spessore del substrato e quanto meno risulta drogato quest’ultimo. 
+akdown del transistor. In particolare la tensione di breakdown risulta più elevata quanto
+maggiore è lo spessore del substrato e quanto meno risulta drogato quest’ultimo.
 Queste caratteristiche comportano però anche un incremento della resistenza di con-
-duzione del canale RDS(on) e, quindi, l’impossibilità di controllare elevate correnti con 
-conseguenti elevate dissipazioni di potenza. La resistenza di canale RDS(on) modifica il 
+duzione del canale RDS(on) e, quindi, l’impossibilità di controllare elevate correnti con
+conseguenti elevate dissipazioni di potenza. La resistenza di canale RDS(on) modifica il
 suo valore raddoppiando per una variazione di temperatura da 25 a 125 °C, ed è propor-
-zionale alla tensione di breakdown elevata alla 2,5. 
-Il transistor IGBT si differenzia dal normale Mosfet in quanto il substrato epitassiale 
-di partenza è drogato p invece che n. Si sfrutta il fenomeno indicato come modulazione di 
+zionale alla tensione di breakdown elevata alla 2,5.
+
+Il transistor IGBT si differenzia dal normale Mosfet in quanto il substrato epitassiale
+di partenza è drogato p invece che n. Si sfrutta il fenomeno indicato come modulazione di
 conduttività consistente nel fatto che la giunzione p-n che si forma (non presente nei nor-
-mali Mosfet), inietta lacune nello strato epitassiale diminuendo così la resistenza del 
-dispositivo in conduzione migliorando di conseguenza le sue caratteristiche nel controllo 
-delle correnti. 
+mali Mosfet), inietta lacune nello strato epitassiale diminuendo così la resistenza del
+dispositivo in conduzione migliorando di conseguenza le sue caratteristiche nel controllo
+delle correnti.
+
 La Fig. XVIII.1.18 mostra chiaramente la caduta di tensione diretta ai capi dei Mosfet
-e degli IGBT evidenziando, nel caso dei Mosfet, una relazione diretta tra la corrente che 
+e degli IGBT evidenziando, nel caso dei Mosfet, una relazione diretta tra la corrente che
 percorre il dispositivo e la tensione ai suoi capi.
+
 Un confronto diretto tra un Mosfet ed un IGBT consente di riportare i seguenti risultati:
 –  Diminuzione del coefficiente di temperatura della tensione di saturazione di un IGBT
 rispetto un Mosfet avente pari dimensioni di chip.
-–  A parità di dimensioni del chip, il transistor IGBT presenta, rispetto il Mosfet, una 
-carica elettrica di Gate necessaria per la commutazione minore di circa il 20%. 
+–  A parità di dimensioni del chip, il transistor IGBT presenta, rispetto il Mosfet, una
+carica elettrica di Gate necessaria per la commutazione minore di circa il 20%.
+–  Tempi di commutazione maggiori per un IGBT rispetto quelli di un Mosfet.
+
+Il transistor IGBT viene largamente impiegato nella realizzazione di convertitori di tutti i tipi,
+
 Utilizzatore
 A.C.
 U
@@ -915,51 +522,52 @@ t
 [PAG 1833]
 ELETTRONICA DI POTENZA
 XVIII-15
-–  Tempi di commutazione mag-
-giori per un IGBT rispetto quelli di 
-un Mosfet.
-Il transistor IGBT viene larga-
-mente impiegato nella realizza-
-zione di convertitori di tutti i tipi, 
-molto spesso presente in moduli di 
-potenza che contengono i circuiti 
-di protezione del transistor stesso 
+molto spesso presente in moduli di
+potenza che contengono i circuiti
+di protezione del transistor stesso
 dalle sovracorrenti.
-Fig. XVIII.1.18  Caduta di tensione su Mosfet e su IGBT.
-1.6  Semiconduttori nei convertitori a commutazione
-I semiconduttori utilizzati più comunemente sono i transistor bipolari ed i Mosfet di 
-potenza. Il transistor bipolare viene utilizzato nei casi dove la frequenza di commutazione 
-non supera i 30 kHz; questo è dovuto principalmente alle perdite di potenza durante la 
-commutazione, in quanto le sue perdite nello stato di ON sono estremamente contenute. 
+
+Fig. XVIII.1.18 Caduta di tensione su Mosfet e su IGBT.
+
+1.6 Semiconduttori nei convertitori a commutazione
+I semiconduttori utilizzati più comunemente sono i transistor bipolari e i Mosfet di
+potenza. Il transistor bipolare viene utilizzato nei casi in cui la frequenza di commutazione
+non supera i 30 kHz; questo è dovuto principalmente alle perdite di potenza durante la
+commutazione, in quanto le sue perdite nello stato di ON sono estremamente contenute.
 Quando la frequenza di commutazione è più elevata, si ricorre al Mosfet di potenza; que-
-sto presenta perdite di commutazione estremamente ridotte in quanto ha tempi di commu-
-tazione decisamente piccoli, anche se le perdite di potenza nello stato ON risultano più 
-elevate (queste ultime dipendono infatti dalla sua resistenza nello stato ON). Il circuito di 
-comando del Mosfet è decisamente più semplice e meno costoso ma il costo dei transistor 
-Mosfet è più elevato; la scelta di un dispositivo o dell’altro risulterà da un compromesso 
+sto presenta perdite di commutazione estremamente ridotte in quanto ha tempi di com-
+mutazione decisamente piccoli, anche se le perdite di potenza nello stato ON risultano più
+elevate (queste ultime dipendono infatti dalla sua resistenza nello stato ON). Il circuito di
+comando del Mosfet è decisamente più semplice e meno costoso, ma il costo dei transistor
+Mosfet è più elevato; la scelta di un dispositivo o dell’altro risulterà da un compromesso
 tra velocità, costi e facilità di impiego.
-1.7  Criteri di scelta dei dispositivi
-La Fig. XVIII.1.19 riporta il 
-grafico tensione-frequenza 
-nell’ambito delle aree di 
+
+1.7 Criteri di scelta dei dispositivi
+La Fig. XVIII.1.19 riporta il
+grafico tensione-frequenza
+nell’ambito delle aree di
 possibile impiego dei dispo-
-sitivi a commutazione; da 
-tale figura si evince come il 
-GTO sia un dispositivo in 
-grado di operare a frequenze 
+sitivi a commutazione; da
+tale figura si evince come il
+GTO sia un dispositivo in
+grado di operare a frequenze
 di commutazione più ele-
-vate, inoltre è in grado di 
-sostenere tensioni e correnti 
-più elevate. 
-Fig. XVIII.1.19  Impiego dei dispositivi di commutazione.
-Il suo più diretto avversario è il Mosfet in quanto è in grado di operare a frequenze 
+vate, inoltre è in grado di
+sostenere tensioni e correnti
+più elevate.
+
+Fig. XVIII.1.19 Impiego dei dispositivi di commutazione.
+
+Il suo più diretto avversario è il Mosfet in quanto è in grado di operare a frequenze
 decisamente più elevate, avere una maggiore facilità di parallelizzazione, avere un coeffi-
-ciente di temperatura positivo della resistenza di canale, di non temere sovratensioni. Per 
+ciente di temperatura positivo della resistenza di canale, di non temere sovratensioni. Per
 contro la resistenza di canale elevata comporta nei Mosfet una elevata tensione di satura-
-zione che li costringono ad operare a tensioni inferiori ai 500 Volt.
-Onde consentire una valutazione in merito al loro impiego, vengono riportati nella 
-tabella seguente i parametri maggiormente significativi dei dispositivi che possono essere 
+zione che li costringe ad operare a tensioni inferiori ai 500 Volt.
+
+Onde consentire una valutazione in merito al loro impiego, vengono riportati nella
+tabella seguente i parametri maggiormente significativi dei dispositivi che possono essere
 impiegati come elementi ON-OFF in applicazioni di potenza.
+
 5
 10
 20
@@ -998,11 +606,15 @@ MOSFET
 [PAG 1834]
 XVIII-16
 ELETTRONICA DI POTENZA
-Nelle figure successive vengono presentati alcuni esempi di dispositivi in commercio, 
+
+Nelle figure successive vengono presentati alcuni esempi di dispositivi in commercio,
 impiegati nei circuiti di regolazione di potenza.
-Fig. XVIII.1.20  Dispositivi a semiconduttore.
-Tab. XVIII.1.4  Comparazione tra parametri essenziali dei dispositivi impiegati come 
+
+Fig. XVIII.1.20 Dispositivi a semiconduttore.
+
+Tab. XVIII.1.4 Comparazione tra parametri essenziali dei dispositivi impiegati come
 elementi ON-OFF
+
 GTO
 SCR
 Triacs
@@ -1012,61 +624,64 @@ Darlington
 Bipolare
 Mosfet
 IGBT
+
 Dissipazione in ON state
 bassa
 bassa
 bassa
 bassa
 media
+
 Facilità di comando ON
 media
 media
 media
 buona
 ottima
+
 Facilità di comando OFF
 buona
 no
 media
 media
 ottima
+
 Resistenza alle sovratensioni
 ottima
 ottima
 scarsa
 scarsa
 buona
+
 Resistenza alle sovracorrenti
 buona
 buona
 media
 media
 media
+
 Corrente MAX sopportabile
 elevata
 elevata
 media
 media
 bassa
-elevato
-buono
-medio
-medio
-ottimo
+
 Facilità di parallelizzazione
 scarsa
 scarsa
 scarsa
 scarsa
 buona
+
 Coeff. di temper. in ON state
 negativo
 negativo
 negativo
 negativo
 positivo
-dU dt
-
+
+dU/dt
 SEMIKRON
 SKKT 106/16 E
 SEMIKRON
@@ -1075,124 +690,40 @@ SKDT 145
 [PAG 1835]
 ELETTRONICA DI POTENZA
 XVIII-17
-Fig. XVIII.1.21  Dispositivi a semiconduttore.
+
+Fig. XVIII.1.21 Dispositivi a semiconduttore.
+
 SEMIKRON
 SKM 200 GB 128D
 SEMIKRON
 SKM 151 A4R
 SEMIKRON
 SKKT 55
-
 [PAG 1836]
 XVIII-18
 ELETTRONICA DI POTENZA
 Fig. XVIII.1.22   Dispositivi a semiconduttore.
 1.8  Reti snubber
-Uno dei parametri messi in evidenza nei succitati dispositivi è il
-, cioè il valore 
-limite di variazione della tensione nel tempo, indicato sovente come transitorio di ten-
-sione. Variazioni di tensione superiori a questo indice possono comportare la commuta-
-zione del dispositivo dallo stato di OFF a quello di ON. Le reti RC, cioè composte dalla 
-serie di un resistore ed una capacità, indicate comunemente come snubber, vengono colle-
-gate agli estremi del dispositivo di controllo e consentono di limitare il transitorio di ten-
-sione. Si precisa che il problema del transitorio può verificarsi sia durante la fase di 
-accensione del dispositivo che quella di spegnimento e che i valori del circuito realizzante 
-lo snubber dipendono dal dispositivo e dal circuito controllato. Nei sistemi di controllo 
-dove il valore
-è insufficiente è possibile perdere il controllo di fase del dispositivo, 
-quindi quest’ultimo può trovarsi nello stato di ON oppure nello stato di OFF con possibile 
-conseguente distruzione del medesimo se inserito con utilizzatori di tipo ohmico-induttivo 
-(qui la corrente assume valori eccessivi in quanto la tensione passa alla semionda di segno 
-opposto e il dispositivo non è ancora nello stato di OFF), oppure per i dispositivi destinati 
-al controllo dei motori. Costruttivamente i dispositivi meno sensibili ai transitori sono 
-quelli che necessitano di valori più grandi della corrente di controllo sul Gate, e quei 
-dispositivi destinati al controllo di correnti ad elevata intensità. In alternativa o in sinergia 
-MSS 40
-SGS THOMPSON
-dU dt
-
-dU dt
-
-SEMIKRON
-SKT 1000
+Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, cioè il valore limite di variazione della tensione nel tempo, indicato sovente come transitorio di tensione. Variazioni di tensione superiori a questo indice possono comportare la commutazione del dispositivo dallo stato di OFF a quello di ON. Le reti RC, cioè composte dalla serie di un resistore e una capacità, indicate comunemente come *snubber*, vengono collegate agli estremi del dispositivo di controllo e consentono di limitare il transitorio di tensione. Si precisa che il problema del transitorio può verificarsi sia durante la fase di accensione del dispositivo che quella di spegnimento e che i valori del circuito realizzante lo *snubber* dipendono dal dispositivo e dal circuito controllato. Nei sistemi di controllo dove il valore **dU/dt** è insufficiente è possibile perdere il controllo di fase del dispositivo, quindi quest’ultimo può trovarsi nello stato di ON oppure nello stato di OFF con possibile conseguente distruzione del medesimo se inserito con utilizzatori di tipo ohmico-induttivo (qui la corrente assume valori eccessivi in quanto la tensione passa alla semionda di segno opposto e il dispositivo non è ancora nello stato di OFF), oppure per i dispositivi destinati al controllo dei motori. Costruttivamente i dispositivi meno sensibili ai transitori sono quelli che necessitano di valori più grandi della corrente di controllo sul Gate, e quei dispositivi destinati al controllo di correnti ad elevata intensità. In alternativa o in sinergia con gli *snubber*, talvolta, vengono utilizzati induttori realizzati su nuclei in ferrite ad alta permeabilità collegati in serie all’utilizzatore; questi ultimi introducono un ritardo, rallentando la variazione della corrente e consentendo una migliore commutazione allo stato di OFF nella fase di spegnimento.
 
 [PAG 1837]
 ELETTRONICA DI POTENZA
 XVIII-19
-con gli snubber, talvolta, vengono utilizzati induttori realizzati su nuclei in ferrite ad alta 
-permeabilità collegati in serie all’utilizzatore; questi ultimi introducono un ritardo, rallen-
-tando la variazione della corrente e consentendo una migliore commutazione allo stato di 
-OFF nella fase di spegnimento.
-1.9  Filtri 
-Non è possibile esimersi dal trattare, almeno brevemente, i filtri: la necessità di questi 
-ultimi deriva sia da problemi inerenti la normativa EMC, sia da problemi legati al buon 
-funzionamento delle apparecchiature, siano esse convertitori o utilizzatori.
-L’uso dei semiconduttori a tecnologia più avanzata quali, per esempio, gli IGBT, 
-nell’impiego come convertitori di tensione-frequenza, consente commutazioni estrema-
-mente veloci dei semiconduttori con conseguenti perdite di potenza estremamente conte-
-nute nel dispositivo stesso, tant’è che, oggigiorno, apparecchiature quali gli inverters
-vengono costruiti con dissipatori di calore aventi superficie decisamente contenuta 
-rispetto le precedenti realizzazioni.
-Anche se ciò risulta vantaggioso in termini di rendimento e di compattezza dell’appa-
-recchiatura, è fonte di molti altri problemi: le rapide commutazioni dei semiconduttori 
-comportano valori elevati del parametro 
-. L’importanza di quanto appena affer-
-mato risulta maggiormente chiara tramite l’esempio seguente (Fig. XVIII.1.23). 
-Si consideri un motore collegato 
-ad un inverter tramite una linea 
-elettrica avente lunghezza di 
-qualche metro; l’inverter rileva 
-come utilizzatore un dispositivo 
-(il motore) avente una sua pro-
-pria capacità elettrica ed una sua 
-induttanza. I valori di capacità e 
-induttanza sono in relazione alla 
-potenza del motore e legati al 
-tipo di avvolgimento; anche 
-motori di piccola potenza pos-
-sono presentare valori di capaci-
-tà dell’ordine del nF.
-Fig. XVIII.1.23  Connessione inverter-motore.
-Se si considera un inverter avente 
-kV/s collegato ad un motore che pre-
-senta una capacità degli avvolgimenti di 2 nF, si può immediatamente determinare il picco 
-di corrente al quale sarà sottoposto ad ogni commutazione
-. Questa 
-corrente scorre negli avvolgimenti del motore provocandogli perdite addizionali che, tra 
-le altre, incrementano la sua temperatura. Inoltre le possibili irregolarità nella distribu-
-zione della capacità degli avvolgimenti stessi può portare a sovratensioni locali all’interno 
-del motore con la conseguente possibile scarica elettrica tra i conduttori degli avvolgi-
-menti. Risulta quindi evidente la necessità di limitare l’ampiezza del parametro 
-tramite l’impiego di filtri adeguati; a tal riguardo si ricorda che la normativa VDE 
-0530, Parte 1, limita tale valore a 500 V/s.
-È necessario, inoltre, ricordare che un altro degli aspetti legati al tipo di funziona-
-mento è la generazione di segnali elettromagnetici con frequenze e conseguenti armoni-
-che che possono raggiungere il valore di oltre 100 MHz. La soluzione a queste 
-problematiche deve essere determinata caso per caso, pur tuttavia si può affermare che 
-l’uso di filtri passa basso di tipo LCR posti all’uscita di apparecchiature quali l’inverter, 
-dU dt
-
-INVERTER
-C
-R
-L
-L
-R
-R
-C
-C
-L
-dU dt
-8
-=
-
-I
-C d
-
-=
-U dt
-16A
-=
-
-dU dt
-
+1.9  Filtri
+Non è possibile esimersi dal trattare, almeno brevemente, i filtri: la necessità di questi ultimi deriva sia da problemi inerenti la normativa EMC, sia da problemi legati al buon funzionamento delle apparecchiature, siano esse convertitori o utilizzatori.
+L’uso dei semiconduttori a tecnologia più avanzata quali, per esempio, gli IGBT, nell’impiego come convertitori di tensione-frequenza, consente commutazioni estremamente veloci dei semiconduttori con conseguenti perdite di potenza estremamente contenute nel dispositivo stesso, tant’è che, oggigiorno, apparecchiature quali gli *inverters* vengono costruiti con dissipatori di calore aventi superficie decisamente contenuta rispetto le precedenti realizzazioni.
+Anche se ciò risulta vantaggioso in termini di rendimento e di compattezza dell’apparecchiatura, è fonte di molti altri problemi: le rapide commutazioni dei semiconduttori comportano valori elevati del parametro **dU/dt**. L’importanza di quanto appena affermato risulta maggiormente chiara tramite l’esempio seguente (Fig. XVIII.1.23).
+Si consideri un motore collegato ad un *inverter* tramite una linea elettrica avente lunghezza di qualche metro; l’*inverter* rileva come utilizzatore un dispositivo (il motore) avente una sua propria capacità elettrica ed una sua induttanza. I valori di capacità e induttanza sono in relazione alla potenza del motore e legati al tipo di avvolgimento; anche
+Motori di piccola potenza possono presentare valori di capacità dell’ordine del nF.
+
+Fig. XVIII.1.23 Connessione inverter-motore.
+Se si considera un inverter avente kV/µs collegato ad un motore che presenta una capacità degli avvolgimenti di 2 nF, si può immediatamente determinare il picco di corrente al quale sarà sottoposto ad ogni commutazione. Questa corrente scorre negli avvolgimenti del motore provocandogli perdite addizionali che, tra le altre, incrementano la sua temperatura. Inoltre le possibili irregolarità nella distribuzione della capacità degli avvolgimenti stessi può portare a sovratensioni locali all’interno del motore con la conseguente possibile scarica elettrica tra i conduttori degli avvolgimenti. Risulta quindi evidente la necessità di limitare l’ampiezza del parametro tramite l’impiego di filtri adeguati; a tal riguardo si ricorda che la normativa VDE 0530, Parte 1, limita tale valore a 500 V/µs.
+
+È necessario, inoltre, ricordare che un altro degli aspetti legati al tipo di funzionamento è la generazione di segnali elettromagnetici con frequenze e conseguenti armoniche che possono raggiungere il valore di oltre 100 MHz. La soluzione a queste problematiche deve essere determinata caso per caso, pur tuttavia si può affermare che l’uso di filtri passa basso di tipo LCR posti all’uscita di apparecchiature quali l’inverter,
+
+dU/dt =
+I_C = C · dU/dt
+
+dU/dt = 16 A
+
+dU/dt
