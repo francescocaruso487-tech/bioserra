@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-20T05:53:09.458841+00:00",
+  "lastUpdate": "2026-07-21T05:34:34.937611+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -3000,14 +3000,158 @@
       "data_proposta": "2026-07-20",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH dell'acqua di risciacquo sul sapore e qualità dei fiori in Living Soil (Water-Only)",
+      "ipotesi": "Un pH dell'acqua di risciacquo bilanciato (6.0-7.0) migliorerà l'assorbimento dei nutrienti residui e ridurrà l'amarezza dei fiori, come suggerito dai manuali A (pH 6.0-7.0 per substrato) e B (pH 6.0-7.0 per substrato, 5.5-6.5 per idroponica). Nel Living Soil, un pH ottimale favorisce l'attività microbica e la disponibilità dei nutrienti, potenziando la qualità finale dei fiori. L'esperimento si basa sulla sinergia tra prevenzione delle carenze nutrizionali (Manuale A) e risciacquo per eliminare eccessi (Manuale B).",
+      "protocollo": [
+        "Preparare 3 gruppi di piante (es. 3 piante per gruppo) in Living Soil con substrato identico e piante della stessa genetica e età (es. 8 settimane di fioritura).",
+        "Per ogni gruppo, eseguire un risciacquo con acqua a pH diverso: Gruppo 1 (pH 5.0), Gruppo 2 (pH 6.5), Gruppo 3 (pH 7.5). Utilizzare acqua distillata e aggiustare il pH con soluzioni naturali (es. aceto per abbassare, bicarbonato per alzare).",
+        "Risciacquare ogni gruppo con 2 litri di acqua per pianta, distribuita uniformemente sul substrato. Ripetere il risciacquo per 3 giorni consecutivi (come suggerito dal Manuale B per il periodo pre-raccolto).",
+        "Dopo 7 giorni dal primo risciacquo, raccogliere i fiori e valutare sapore, aroma e qualità visiva. Confrontare i risultati tra i gruppi."
+      ],
+      "materiali": [
+        "Acqua distillata",
+        "pHmetro digitale",
+        "Soluzioni per regolare il pH (aceto, bicarbonato)",
+        "Contenitori per misurare l'acqua",
+        "Piante di pianta in Living Soil (stessa genetica e età)",
+        "Bilancia di precisione (per pesare i fiori)",
+        "Test di sapore/aroma (panel di assaggiatori o strumenti di analisi sensoriale)"
+      ],
+      "durata_giorni": 14,
+      "misure": [
+        "Peso secco dei fiori (g)",
+        "Valutazione sensoriale del sapore e aroma (scala 1-10)",
+        "Analisi visiva della qualità dei fiori (colore, resina, struttura)",
+        "Confrontare i dati tra i gruppi per identificare differenze significative"
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil, stessa genetica delle piante, stessa quantità di acqua per risciacquo, stesso periodo di fioritura, stessa esposizione alla luce e temperatura.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il « risciacquo » delle marihuana",
+      "originalità": "Questo esperimento combina i principi del Manuale A (pH bilanciato per l'assorbimento dei nutrienti) e del Manuale B (risciacquo per eliminare eccessi e migliorare il sapore) in un contesto Living Soil (Water-Only), dove il pH influisce sia sulla disponibilità dei nutrienti che sull'attività microbica. Non è presente in nessuno dei due manuali singolarmente, poiché nessuno dei due affronta l'interazione tra risciacquo e pH in un sistema Living Soil.",
+      "id": "esp_conn_2026-07-21_001",
+      "data_proposta": "2026-07-21",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e dell'acqua filtrata sulla qualità delle cime senza trattamento post-raccolta",
+      "ipotesi": "Coltivando piante in vasi con Living Soil (Manuale A) e utilizzando esclusivamente acqua filtrata per l'irrigazione e la raccolta, si otterranno cime con livelli ridotti di clorofilla, sali e impurità residue, tali da eliminare la necessità di trattamenti post-raccolta come il Water Curing (Manuale B). L'ipotesi si basa sul fatto che il terreno biologico riduce l'accumulo di sali e metalli pesanti nelle piante, mentre l'acqua filtrata evita contaminazioni esterne durante la coltivazione e la raccolta.",
+      "protocollo": [
+        "Preparare due lotti identici di piante della stessa varietà (es. Pianta sativa 'Early Skunk') in vasi da 10L con Living Soil (compost maturo, micorrize, lombrichi). Mantenere le condizioni di coltivazione identiche (luce, temperatura, umidità) secondo le linee guida del Manuale A.",
+        "Irrigare entrambi i lotti esclusivamente con acqua filtrata (filtro a carbone attivo o osmosi inversa) per tutta la durata della coltivazione. Un lotto (controllo) verrà irrigato con acqua del rubinetto non filtrata per simulare condizioni standard.",
+        "Al momento della raccolta, dividere ogni lotto in due sottogruppi: uno subirà il tradizionale Water Curing (immersione in acqua a temperatura ambiente per 24-48h, Manuale B), l'altro verrà essiccato direttamente senza trattamento.",
+        "Misurare dopo 7 giorni di essiccazione: peso secco delle cime, contenuto di clorofilla (spettrofotometro portatile), residui di sali (EC meter), e analisi sensoriale (sapore erbaceo/amaro) tramite panel di 5 persone non addestrate."
+      ],
+      "materiali": [
+        "Vasi in terracotta 10L",
+        "Living Soil pre-miscelato (compost, perlite, micorrize, lombrichi)",
+        "Filtro ad osmosi inversa o carbone attivo",
+        "Spettrofotometro portatile per clorofilla (es. CCM-200)",
+        "EC meter per residui di sali",
+        "Bilancia di precisione (0.01g)",
+        "Pannello sensoriale (5 persone)"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso secco delle cime (g) per pianta",
+        "Contenuto di clorofilla (unità CCM)",
+        "Residui di sali (EC in mS/cm)",
+        "Sapore erbaceo/amaro (scala 1-10)",
+        "Presenza di metalli pesanti (test rapido con strisce reattive)"
+      ],
+      "variabili_controllo": "Varietà della pianta, dimensione dei vasi, tipo di Living Soil, condizioni ambientali (luce, temperatura, umidità), metodo di essiccazione, durata del Water Curing (se applicato).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento combina due approcci solitamente trattati separatamente: la coltivazione in Living Soil (Manuale A) e il trattamento con acqua filtrata (Manuale B). Nessuno dei due manuali suggerisce di integrare l'acqua filtrata direttamente nella fase di coltivazione per ridurre i trattamenti post-raccolta, né di valutare l'effetto sinergico su parametri quantificabili come clorofilla, sali e sapore.",
+      "id": "esp_conn_2026-07-21_002",
+      "data_proposta": "2026-07-21",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate CBDV-dipendenti",
+      "ipotesi": "L'applicazione di concimazione organica (Manuale A) in un sistema Living Soil outdoor arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV-dipendenti (Manuale B), aumentano la produzione di CBDV e altri cannabinoidi secondari (CBG, CBD) grazie a un metabolismo radicale potenziato. Questo effetto è misurabile in termini di concentrazione di CBDV nelle infiorescenze e biomassa radicale rispetto a un controllo con concimazione minerale.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (BioSerra Caserta) con Living Soil prelevato dalla stessa fonte, suddiviso in modo omogeneo. Una parcella riceverà concimazione organica (compost maturo + micorrize + vermicompost), l'altra concimazione minerale bilanciata (NPK 5-5-5).",
+        "Seminare 10 semi femminizzati CBDV-dipendenti (varietà con >1% CBDV, <1% THC) in ciascuna parcella, disposti in modo casuale e con distanza standardizzata (30 cm). Mantenere condizioni identiche di irrigazione (solo acqua) e protezione.",
+        "Dopo 30 giorni (fase vegetativa avanzata), prelevare campioni di radici e suolo da entrambe le parcelle per analisi microbiologica (conteggio micorrize, batteri azotofissatori) e biomassa radicale. Eseguire analisi del suolo per pH, materia organica e disponibilità di nutrienti.",
+        "Raccogliere le infiorescenze mature (60 giorni dalla semina) e sottoporle a test HPLC per quantificare CBDV, CBG e CBD. Confrontare i risultati tra le due parcelle, normalizzando per biomassa secca."
+      ],
+      "materiali": [
+        "Semi femminizzati CBDV-dipendenti (es. varietà 'CBDV Dream' da seedbank certificata)",
+        "Living Soil prelevato da zona non coltivata da almeno 2 anni, compost maturo, vermicompost, inoculo di micorrize (Rhizophagus irregularis)",
+        "Sistema di irrigazione a goccia (solo acqua), pHmetro, HPLC per analisi cannabinoidi, microscopio per conteggio microrganismi"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Concentrazione di CBDV, CBG e CBD nelle infiorescenze (HPLC, mg/g)",
+        "Biomassa radicale secca (g/pianta)",
+        "Densità di micorrize e batteri simbionti nel suolo (conteggio/mg di suolo)",
+        "pH e materia organica del suolo (metodi standard)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (luce, temperatura, umidità), metodo di raccolta, analisi di laboratorio (stesso laboratorio e protocollo HPLC).",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica Living Soil (Manuale A) con l'uso di semi CBDV-dipendenti (Manuale B), un approccio non documentato nei due manuali singolarmente. Mentre il Manuale A si concentra su CBD/CBG in coltivazione indoor e il Manuale B su selezione di semi, questa sinergia mira a quantificare l'effetto della biodiversità microbica sul profilo cannabinoide in condizioni outdoor Living Soil, con un focus su CBDV (cannabinoide secondario meno studiato).",
+      "id": "esp_conn_2026-07-21_003",
+      "data_proposta": "2026-07-21",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil in vasi biologici e semi femminizzati su resa in CBD e THC in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici con Living Soil (Manuale A: favorisce sviluppo radicale e salute delle piante) e semi femminizzati (Manuale B: garantiscono piante produttive al 100%) porterà a una resa superiore in CBD/THC rispetto a coltivazioni con terreno standard e semi regolari. La sinergia tra questi due elementi massimizzerà l'assorbimento dei nutrienti e l'espressione genetica, riducendo sprechi di risorse e aumentando la concentrazione di cannabinoidi.",
+      "protocollo": [
+        "Preparare 20 vasi identici (10L) con Living Soil (compost biologico, micorrize, humus di lombrico) e 20 vasi con terreno standard (torba + perlite + concime minerale). Sterilizzare i vasi con acqua bollente per eliminare patogeni.",
+        "Piantare 10 semi femminizzati (varietà CBD alto, <1% THC) in vasi con Living Soil e 10 semi regolari della stessa varietà in vasi con terreno standard. Mantenere le stesse condizioni di irrigazione (solo acqua, no nutrienti aggiuntivi) e esposizione solare.",
+        "Monitorare settimanalmente lo sviluppo radicale (tramite osservazione visiva delle radici al trapianto) e la salute delle piante (assenza di stress idrico, crescita uniforme). Registrare dati su altezza, numero di rami e foglie.",
+        "A fine ciclo (30 giorni), raccogliere le piante, essiccare le infiorescenze in modo identico (2 settimane a 18°C, 60% umidità). Misurare peso secco delle infiorescenze, concentrazione di CBD/THC tramite test HPLC (o kit colorimetrico affidabile) e conteggio dei fiori per pianta."
+      ],
+      "materiali": [
+        "20 vasi da 10L (identici per forma e materiale)",
+        "Living Soil pre-preparato (compost biologico, micorrize, humus di lombrico)",
+        "Terreno standard (torba + perlite + concime minerale)",
+        "10 semi femminizzati (varietà CBD alto, <1% THC)",
+        "10 semi regolari della stessa varietà",
+        "Sistema di irrigazione a goccia (per uniformità)",
+        "Bilancia di precisione (0.01g)",
+        "Test per cannabinoidi (HPLC o kit colorimetrico)",
+        "Termometro/igrometro per controllo ambientale"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso secco delle infiorescenze (g/pianta): per valutare la resa",
+        "Concentrazione di CBD e THC (%): tramite test HPLC o kit colorimetrico",
+        "Numero di fiori per pianta: per valutare la produttività",
+        "Rapporto CBD/THC: per valutare la qualità del prodotto",
+        "Osservazione visiva delle radici: per confermare lo sviluppo radicale"
+      ],
+      "variabili_controllo": "Stessa varietà di pianta, stesso volume di vaso, stessa esposizione solare, stessa irrigazione (solo acqua), stessa tecnica di essiccazione, stesso metodo di misurazione dei cannabinoidi.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina due concetti chiave di manuali diversi (vasi biologici + semi femminizzati) per testare una sinergia non esplorata nei singoli manuali. Nessuno dei due manuali suggerisce di testare l'effetto combinato di questi elementi su resa e qualità dei cannabinoidi in condizioni di Living Soil e coltivazione outdoor.",
+      "id": "esp_conn_2026-07-21_004",
+      "data_proposta": "2026-07-21",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-20",
-    "nuove_proposte": 3,
-    "pdf_analizzati": 306,
-    "connessioni_usate": 313
+    "data": "2026-07-21",
+    "nuove_proposte": 4,
+    "pdf_analizzati": 322,
+    "connessioni_usate": 334
   }
 }
