@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-21
+aggiornato: 2026-07-22
 pdf_count: 10
 ---
 
@@ -12,28 +12,30 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in agricoltura biologica, basato sull'equilibrio ecosistemico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo metodo sfrutta i meccanismi naturali di regolazione biologica, dove predatori, antagonisti e sostanze repellenti agiscono in sinergia per mantenere le popolazioni di parassiti sotto soglie dannose. Il principio fondamentale si fonda sulla **teoria della piramide trofica**: un suolo vivo e diversificato favorisce la presenza di insetti utili (come acari predatori, coccinelle o crisopidi) che predano i parassiti, mentre piante sane e resilienti sviluppano meccanismi di difesa chimica (es. produzione di terpeni o alcaloidi) grazie a un microbioma equilibrato. L'elettrocultura, in particolare, può potenziare questi processi stimolando la crescita microbica e la risposta immunitaria delle piante tramite campi elettromagnetici a bassa frequenza (es. circuiti Lakhovsky o spirali di rame).
+Il **Controllo Parassiti Naturale** è un approccio fitosanitario basato sull’equilibrio ecologico, che sfrutta meccanismi biologici, fisici e chimici presenti in natura per prevenire e gestire infestazioni senza ricorrere a sintetiche. Questo metodo si fonda sulla **teoria della trofobiosi** (Chaboussou), secondo cui le piante sane sono meno suscettibili agli attacchi parassitari grazie a un metabolismo bilanciato e a un suolo ricco di microrganismi benefici. In un sistema **Living Soil**, la salute delle piante dipende dalla biodiversità microbica, che compete con patogeni e parassiti per risorse e spazio, riducendo la loro proliferazione. L’uso di **insetti utili** (es. acari predatori come *Phytoseiulus persimilis*) e **barriere fisiche** (es. oli essenziali) crea un ambiente ostile ai fitofagi, mentre la **prevenzione** (es. olio di neem) interrompe il ciclo vitale dei parassiti prima che diventino problematici.
 
-Questo approccio è particolarmente efficace in **Living Soil**, dove la biodiversità del suolo e la salute delle piante sono prioritarie. A differenza dei pesticidi convenzionali, che spesso creano resistenze e danneggiano gli organismi non target, il controllo naturale promuove la **resilienza a lungo termine** del sistema. Inoltre, metodi come l'olio di neem o gli insetti utili agiscono in modo selettivo, preservando gli impollinatori e altri organismi benefici. In serra outdoor, dove le condizioni microclimatiche possono favorire la proliferazione di parassiti (es. afidi in primavera o ragnetto rosso in estate), questo metodo diventa essenziale per evitare collassi produttivi senza compromettere la qualità del raccolto.
+In serra outdoor a Caserta (41°N), il clima mediterraneo favorisce la proliferazione di afidi, acari e funghi, ma un **sistema Living Soil** ben gestito può ridurre la necessità di interventi drastic. La chiave è **osservazione costante** (ispezioni quotidiane) e **interventi mirati**, che rispettano i tempi di vita dei parassiti e dei loro predatori naturali. Questo approccio si allinea con i principi dell’**elettrocultura** (Lakhovsky), dove campi elettromagnetici a bassa frequenza possono stimolare la resistenza delle piante e la decomposizione microbica, rafforzando indirettamente la difesa biologica.
 
 ---
 
 ## Come si applica in serra
 
+### **Protocollo base per serra outdoor Living Soil (Caserta)**
 1. **Ispezione quotidiana**
-   - Controlla **foglie (soprattutto sotto il lato inferiore), steli e germogli** con una lente d'ingrandimento (10x). Presta attenzione a:
-     - **Afidi** (piccoli, verdi/neri, spesso in colonie).
-     - **Ragnetto rosso** (macchie gialle sulle foglie, ragnatele sottili).
-     - **Tripidi** (piccoli insetti scuri con ali frangiate).
-     - **Mosca bianca** (piccoli insetti bianchi che volano quando si scuote la pianta).
-   - *Strumento consigliato*: Lampada frontale con luce fredda per evitare stress termico alle piante.
+   - Controlla **foglie giovani, steli e pagina inferiore** delle foglie con una lente d’ingrandimento (10x).
+   - Segna su un quaderno le piante infestate e il tipo di parassita (es. afidi neri, ragnetti rossi, tripidi).
+   - *Strumento utile*: Trappole cromotropiche gialle/blu per monitorare insetti volanti.
 
 2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) per 1 litro d'acqua.
-   - **Applicazione**: Spruzza **preventivamente ogni 7 giorni** (o dopo piogge intense) sulle foglie, bagnando bene entrambe le pagine. Evita di applicare nelle ore più calde (10:00–16:00) per prevenire ustioni.
-   - *Effetto*: L'azadiractina (principio attivo) agisce come repellente e interferisce con la crescita degli insetti, oltre a stimolare le difese delle piante.
+   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1L d’acqua.
+   - **Applicazione**: Nebulizza sulle piante **ogni 7 giorni** (mattina presto o sera), evitando i fiori durante la fioritura per non disturbare gli impollinatori.
+   - *Effetto*: Interferisce con la crescita e la riproduzione dei parassiti (es. afidi, cocciniglie) e stimola le difese delle piante.
 
 3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis* per ragnetto rosso, *Amblyseius andersoni* per trips e mosca bianca):
-     - **Quando**: A infestazione iniziale (1–2 individui per pianta).
-     - **Come**: Distribuisci gli acari sulle foglie infestate o in prossimità delle piante (usando un erog
+   - **Acari predatori** (*Phytoseiulus persimilis* per ragnetti rossi, *Amblyseius andersoni* per trips):
+     - **Dose**: 1–2 individui per pianta infestata.
+     - **Momento**: Introduci quando la popolazione di parassiti è ancora bassa (soglia: 1–2 parassiti per foglia).
+     - *Consiglio*: Acquista da fornitori specializzati (es. **Biobest**, **Koppert**) e rilascia in serra **al tramonto** per evitare predazione da parte di uccelli.
+
+4. **Barriere fisiche e repellenti naturali**
+   - **Piante trappola**: Coltiva **calendula**, **tagete** o **basilico** ai
