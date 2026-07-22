@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-21T05:34:34.937611+00:00",
+  "lastUpdate": "2026-07-22T05:33:25.256306+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -3144,14 +3144,82 @@
       "data_proposta": "2026-07-21",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e Water Curing sulla qualità delle cime senza trattamenti post-raccolta aggressivi",
+      "ipotesi": "Coltivando piante in Living Soil (Manuale A) e applicando un Water Curing post-raccolta con acqua filtrata/distillata (Manuale B), si otterranno cime con residui minimi di clorofilla, sali e impurità, senza necessità di risciacqui aggressivi o freezing curing. L'ipotesi si basa sul fatto che il Living Soil riduce l'accumulo di sali e metalli pesanti nelle piante (Manuale A), mentre l'acqua filtrata evita contaminazioni residue durante il trattamento (Manuale B), potenziando l'effetto purificante naturale.",
+      "protocollo": [
+        "Preparare 20 vasi da 10L con Living Soil (compost biologico maturo, micorrize, lombrichi) in serra outdoor BioSerra Caserta. Seminare la stessa varietà (es. CBD-dominant, fioritura rapida) in tutti i vasi, mantenendo densità e condizioni identiche (Manuale A).",
+        "Durante la coltivazione, monitorare pH e EC del suolo (obiettivo: pH 6.5-7.0, EC < 1.5 mS/cm) e evitare fertilizzanti sintetici. A fioritura avanzata (70% dei pistilli bianchi), dividere le piante in due gruppi: Gruppo A (10 piante) e Gruppo B (10 piante).",
+        "Al momento del raccolto (fioritura completa), raccogliere le cime del Gruppo A e applicare un Water Curing standard (immersione in acqua a temperatura ambiente per 24 ore, seguita da asciugatura all'aria per 48 ore). Per il Gruppo B, applicare un Water Curing con acqua distillata/filtrata (stesso protocollo), ma senza risciacquo finale con acqua del rubinetto.",
+        "Confrontare i risultati tramite analisi di laboratorio (residui di sali, metalli pesanti, clorofilla) e valutazione sensoriale (sapore, aspetto, aroma) dopo 7 giorni di essiccazione in condizioni identiche."
+      ],
+      "materiali": [
+        "20 vasi da 10L con Living Soil (compost, micorrize, lombrichi)",
+        "Acqua distillata/filtrata (per Gruppo B), acqua del rubinetto (per Gruppo A)",
+        "pHmetro, ECmetro, bilancia di precisione",
+        "Contenitori per immersione (es. secchi puliti)",
+        "Laboratorio di analisi per residui (opzionale)"
+      ],
+      "durata_giorni": 35,
+      "misure": [
+        "Residui di sali (EC delle cime dopo essiccazione), metalli pesanti (analisi ICP-MS), clorofilla (spettrofotometro), peso secco delle cime, valutazione sensoriale (pannello di 5 persone per sapore, aroma, aspetto).",
+        "Confrontare i dati tra Gruppo A e Gruppo B per verificare la riduzione di residui e la qualità delle cime."
+      ],
+      "variabili_controllo": "Varietà della pianta, condizioni di coltivazione (luce, temperatura, umidità), metodo di essiccazione, durata del Water Curing, quantità di acqua utilizzata.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento combina due approcci normalmente trattati separatamente: il Living Soil come metodo preventivo di contaminazione (Manuale A) e il Water Curing come tecnica di purificazione (Manuale B). Nessuno dei due manuali suggerisce di integrare i due metodi per ridurre i trattamenti post-raccolta, rendendo l'esperimento una sinergia innovativa tra coltivazione e post-raccolta.",
+      "id": "esp_conn_2026-07-22_001",
+      "data_proposta": "2026-07-22",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil in vasi biologici e semi femminizzati su resa in CBD e sviluppo radicale in serra outdoor",
+      "ipotesi": "L'utilizzo combinato di vasi in materiale biodegradabile riempiti con Living Soil (Manuale A) e semi femminizzati (Manuale B) aumenterà la resa in CBD/THC e lo sviluppo radicale del 30-40% rispetto a controlli con semi regolari o terreno non biologico. La sinergia tra radici sane (favorite dal Living Soil) e piante produttive al 100% (semi femminizzati) ottimizzerà l'assorbimento di nutrienti e l'espressione dei cannabinoidi, come suggerito rispettivamente dai due manuali.",
+      "protocollo": [
+        "Preparare 10 vasi biodegradabili (es. fibra di cocco) da 10L ciascuno, riempiti con Living Soil pre-attivato (compost maturo + micorrize + lombrichi). Suddividere in due gruppi: Gruppo A (5 vasi) con semi femminizzati CBD-dominant (es. varietà USA con <1% THC) e Gruppo B (5 vasi) con semi regolari della stessa varietà come controllo.",
+        "Posizionare i vasi in serra outdoor BioSerra Caserta, esposti alla stessa luce solare e irrigati solo con acqua (water-only). Marcare ogni pianta con etichette identificative e registrare data di semina.",
+        "Dopo 21 giorni (fase vegetativa), misurare settimanalmente: diametro del fusto, numero di nodi, lunghezza delle radici (tramite estrazione delicata di una pianta per gruppo ogni 7 giorni). Registrare anche il peso fresco delle radici.",
+        "A 30 giorni, raccogliere tutte le piante, separare fiori e radici. Essiccare i fiori a 20°C per 7 giorni, poi analizzare il contenuto di CBD/THC tramite kit di test rapidi (es. HPLC portatile) o laboratorio esterno. Confrontare i risultati tra Gruppo A e Gruppo B."
+      ],
+      "materiali": [
+        "10 vasi biodegradabili da 10L",
+        "Living Soil pre-attivato (compost + micorrize + lombrichi)",
+        "Semi femminizzati CBD-dominant (<1% THC) e semi regolari della stessa varietà",
+        "Kit di test CBD/THC (o accesso a laboratorio)",
+        "Bilancia di precisione (0.1g)",
+        "Fogli di registrazione dati"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso fresco delle radici (g)",
+        "Diametro del fusto (mm)",
+        "Numero di nodi",
+        "Contenuto di CBD/THC nei fiori (% secco)",
+        "Rapporto radici/parte aerea"
+      ],
+      "variabili_controllo": "Stessa varietà di pianta, stesso volume di terreno, stessa esposizione solare, stessa irrigazione (solo acqua), stessa temperatura e umidità in serra.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "Questo esperimento non è presente in nessuno dei due manuali singolarmente perché combina specificamente: (1) l'approccio del Living Soil in vasi biodegradabili (Manuale A) con (2) l'uso di semi femminizzati (Manuale B), creando una sinergia unica tra salute radicale e produttività genetica. Nessun manuale suggerisce di testare questa combinazione in un protocollo controllato per massimizzare CBD/THC in serra outdoor.",
+      "id": "esp_conn_2026-07-22_002",
+      "data_proposta": "2026-07-22",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-21",
-    "nuove_proposte": 4,
-    "pdf_analizzati": 322,
-    "connessioni_usate": 334
+    "data": "2026-07-22",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 338,
+    "connessioni_usate": 353
   }
 }
