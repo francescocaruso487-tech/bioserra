@@ -1,54 +1,61 @@
 ---
 tipo: overview
-aggiornato: 2026-07-21
+aggiornato: 2026-07-22
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
 # **BioSerra Wiki**
-*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
+*Serra Living Soil outdoor a Caserta (41°N) – Integrazione di biodinamica, elettrocultura e suolo attivo*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è un **ecosistema agricolo integrato** che unisce:
-- **Living Soil (suolo vivente water-only)**: Terreno autosufficiente, ricco di microrganismi, materia organica e minerali biodisponibili, senza input chimici.
-- **Biodinamica**: Coltivazione in armonia con i ritmi cosmici (luna, stelle, pianeti) e l’uso di preparati dinamizzati.
-- **Elettrocultura**: Applicazione di campi elettromagnetici (Lakhovsky, Fe-Cu, acqua magnetizzata) per stimolare la crescita, la fioritura e la resistenza delle piante.
-- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, EM) e nutrienti esclusivamente organici.
+BioSerra è una **serra outdoor Living Soil** che fonde:
+- **Suolo vivente water-only**: nessun fertilizzante sintetico, solo materia organica, microrganismi e acqua come vettore nutritivo.
+- **Biodinamica**: preparati vegetali/minerali, ritmi cosmici e calendario lunare per sincronizzare la crescita con le forze terrestri e celesti.
+- **Elettrocultura**: applicazione di campi elettromagnetici (Lakhovsky, Fe-Cu, rame, acqua magnetizzata) per stimolare la vitalità delle piante e la resilienza del suolo.
+- **Water-only**: irrigazione con acqua vibrazionale e strutturata per massimizzare l’assorbimento radicale senza stress idrico.
 
-**Visione**: Coltivare piante in **sinergia con la natura**, potenziando i processi naturali tramite tecnologie low-impact e conoscenza profonda del suolo e dei cicli terrestri.
+*Visione*: Coltivare piante in **armonia con la Terra e il Cosmo**, dove ogni elemento (suolo, acqua, aria, luce) è un attore attivo nel processo produttivo.
 
 ---
 
 ## **📚 Sistema di Conoscenza**
 BioSerra si basa su:
-- **341 PDF** (guide, studi, manuali tecnici) collegati a:
-  - [web_zamn_287-fase-plantula-cannabis]
-  - [web_zamn_284-germinare-semi-con-lo-smart-start]
-  - [web_zamn_286-come-risolvere-problemi-di-germinazione-di-cannabis]
-  - [web_zamn_288-fase-vegetativa-cannabis]
-  - [web_zamn_290-fase-fioritura-cannabis]
-  - [web_zamn_293-suolo-cannabis-terricci]
-  - [web_zamn_295-cocco]
-  - [web_zamn_297-guida-coltivazione-cannabis-lana-di-roccia]
-- **20 concetti attivi** (es. [[elettrocultura-lakhovsky]], [[preparati-biodinamici]], [[suolo-vivente]]) che si interconnettono per creare un **modello olistico**.
-- **PDF prioritari**: I documenti più citati sono indicati con `[id]` (es. [pdf_17] per l’elettrocoltura DC).
+- **341 manuali analizzati** (PDF strutturati per fasi colturali, tecniche e problematiche).
+- **20 concetti attivi** (categorie tematiche interconnesse).
+- **Guida integrata**: ogni tecnica o principio è collegato a risorse specifiche tramite:
+  - **Concetti**: [[id]] (es. `[[elettrocultura-lakhovsky]]`).
+  - **PDF**: [id] (es. `[web_zamn_287-fase-plantula-cannabis]`).
 
-**Flusso di lavoro**:
-1. **Ricerca** → PDF → Estrazione dati.
-2. **Sintesi** → Concetti → Wiki.
-3. **Applicazione** → Protocolli operativi → Coltivazione.
+*Esempio di flusso di lavoro*:
+1. **Germinazione**: `[web_zamn_284-germinare-semi-con-lo-smart-start]` + [[suolo-attivo]].
+2. **Vegetazione**: [[elettrocultura-fe-cu]] + [[ritmi-cosmici]] (Luna crescente).
+3. **Fioritura**: [[controllo-parassiti-naturale]] (bicarbonato) + [[calendario-lunare]] (Luna calante).
 
 ---
 
-## **⚡ Tecniche di Elettrocultura Attive**
-| Tecnica | Descrizione | Applicazione | Riferimento |
-|---------|------------|--------------|-------------|
-| **Elettrocultura DC (Lakhovsky)** | Applicazione di corrente continua (6-8V) tramite elettrodi di rame/zinco nel suolo. | Stimola fioritura (+5-7 giorni anticipo) e resistenza patogeni. | [[elettrocultura-lakhovsky]], [pdf_17] |
-| **Spirale in Rame** | Spirale di rame posizionata intorno alla pianta per generare campi EM. | Armonizza frequenze naturali delle piante. | [[spirale-rame]] |
-| **Antenna di Terra** | Sistema di messa a terra con elettrodo in rame per dissipare cariche statiche. | Protegge da sovratensioni e migliora assorbimento nutrienti. | [[antenna-terra]] |
-| **Lega Ferro-Rame** | Elettrodi in Fe-Cu per generare correnti galvaniche nel suolo. | Aumenta biodisponibilità di ferro e rame per le piante. | [[lega-fe-cu]] |
-| **Acqua Magnetizzata** | Irrigazione con acqua sottoposta a campi magnetici. | Migliora struttura dell’acqua, assorbimento nutrienti e resistenza allo stress. | [[acqua-magnetizzata]] |
-| **Trattamento EM Combinato** | Combinazione di più tecniche (es. spirale rame + antenna terra). | Sinergia per massimizzare
+## **⚡ Tecniche Elettrocultura Attive**
+| Tecnica | Descrizione | Protocollo | Pagina Wiki |
+|---------|------------|------------|-------------|
+| **Lakhovsky** | Campo elettromagnetico ad alta frequenza per stimolare la divisione cellulare. | Manuale Elettrocultura Rev.5 §3.1 | [[elettrocultura-lakhovsky]] |
+| **Fe-Cu** | Elettrodi in ferro/rame per generare corrente galvanica nel suolo. | Manuale Elettrocultura Rev.5 §4.1 | [[elettrocultura-fe-cu]] |
+| **Spirale Rame** | Spirale di rame intorno al fusto per armonizzare il campo bioelettrico. | Protocollo Geomanzia Colturale §2.3 | [[spirale-rame]] |
+| **Antenna Terra** | Sistema di messa a terra per scaricare tensioni statiche e armonizzare il suolo. | Manuale Elettrocultura Rev.5 §5.2 | [[antenna-terra]] |
+| **Acqua Magnetizzata** | Acqua trattata con magneti per migliorare l’assorbimento radicale. | Protocollo Acqua Vibrazionale §1.4 | [[acqua-magnetizzata]] |
+
+*Nota*: Le tecniche sono applicate in **fasi specifiche** (es. elettrocultura Fe-Cu in vegetazione, spirale rame in fioritura).
+
+---
+
+## **🌍 Principi Living Soil**
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: simbiosi con le radici per aumentare l’assorbimento di fosforo e acqua.
+- **Batteri benefici**: *Pseudomonas*, *Bacillus* per la solubilizzazione dei minerali.
+- **Protozoi e nematodi**: regolano la popolazione microbica.
+*→ Inoculazione*: [[inoculazione-micorrize]], [[te-di-compost]].
+
+### **2. Minerali e Biostimolanti**
+- **Farine di rocce**: apporto lento di silicio, calcio,
