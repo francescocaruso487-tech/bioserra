@@ -1,128 +1,116 @@
 {
-  "lastUpdate": "2026-07-21T06:11:50.000Z",
+  "lastUpdate": "2026-07-22T06:10:31.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a 6V tramite elettrodi di rame/zinco a 12 cm di profondità vicino alle radici delle piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare la fioritura e anticipare la raccolta di 5-7 giorni, come da [pdf_17].",
-      "Monitorare umidità fogliare inferiore al 80% e temperatura notturna minima >18°C per prevenire oidio: ispezionare foglie inferiori delle autofiorenti ogni 4 ore tra le 06-10 e 18-22, come da [Manuale Biodinamico Rev.12, §7.3].",
-      "Utilizzare la fase di Gibbosa Crescente per potenziare l'elettrocoltura: aumentare la corrente DC a 8V tra le 20-22 per sfruttare l'energia armonica lunare, come suggerito in [pdf_13]."
+      "Applicare trattamento preventivo contro oidio con bicarbonato di potassio (5g/L) sulle foglie inferiori delle autofiorenti in fioritura, seguendo il protocollo del Manuale Biodinamico Rev.12 §7.3, data la combinazione di umidità residua (68%) e temperature minime notturne superiori a 18°C.",
+      "Effettuare un monitoraggio intensivo delle piante autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per rilevare eventuali segni di stress idrico, data la fase critica di fioritura e l'assenza di pioggia prevista per i prossimi 2 giorni.",
+      "Utilizzare la fase di Gibbosa Crescente per applicare una tecnica di elettrocultura a bassa intensità (1-2V DC) sulle radici delle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana), seguendo il protocollo del Manuale di Elettrocultura Rev.5 §4.2, per stimolare l'assorbimento dei nutrienti."
     ],
-    "briefing_mattutino": "La serra presenta condizioni ottimali per l'elettrocoltura: umidità al 85% e temperatura a 22.6°C favoriscono la conducibilità del suolo, mentre la fase lunare Gibbosa Crescente (73% illuminazione) amplifica gli effetti delle tecniche biodinamiche. Oggi si consiglia di applicare elettrocoltura DC a basso voltaggio sulle piante in fioritura per stimolare la maturazione e monitorare attivamente il rischio di oidio sulle autofiorenti, seguendo le linee guida di [pdf_85] e [Manuale Biodinamico Rev.12].",
+    "briefing_mattutino": "La serra si trova in una fase di fioritura avanzata per le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con raccolta prevista tra 17-37 giorni, mentre le femminizzate sono ancora in vegetazione con raccolta lontana. Oggi si consiglia di priorizzare la prevenzione delle infezioni fungine (oidio) a causa dell'umidità residua e delle temperature minime notturne superiori a 18°C, come indicato nel Manuale Biodinamico Rev.12 §7.3. Le condizioni meteo (31.1°C max, 0.0mm pioggia) richiedono un'irrigazione controllata per evitare stress idrico. La fase lunare di Gibbosa Crescente (73% illuminazione) offre un'opportunità per applicare tecniche di elettrocultura a basso impatto sulle radici.",
     "consigli_piante": {
-      "autofiorenti": "Applicare elettrocoltura DC a 6V per 2 ore al mattino (08-10) su Epsilon/Milky Way/Titan/Medusa/Gaia per accelerare la fioritura. Ispezionare foglie inferiori ogni 4 ore per segni di oidio.",
-      "femminizzate": "Nessun trattamento elettrocoltura oggi: le piante sono in vegetazione e non necessitano stimolazione. Mantenere umidità del suolo al 65% per evitare stress idrico.",
+      "autofiorenti": "Ispezionare quotidianamente le foglie inferiori delle autofiorenti in fioritura per rilevare segni di oidio e applicare trattamento preventivo con bicarbonato di potassio (5g/L). Monitorare l'umidità del substrato per evitare stress idrico, data la fase critica di fioritura e l'assenza di pioggia prevista.",
+      "femminizzate": "Applicare una tecnica di elettrocultura a bassa intensità (1-2V DC) sulle radici delle piante femminizzate in vegetazione per stimolare l'assorbimento dei nutrienti, sfruttando la fase di Gibbosa Crescente. Evitare stress idrico con irrigazioni moderate al mattino presto.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC a 6V per 2 ore (08-10) con elettrodi a 12 cm di profondità vicino alle radici. Monitorare umidità fogliare ogni 4 ore.",
+          "azione": "Applicare trattamento preventivo con bicarbonato di potassio (5g/L) sulle foglie inferiori e monitorare umidità del substrato. Priorità alta.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Stesso trattamento di Epsilon F1. Verificare che i fiori apicali siano al 70% della maturazione.",
+          "azione": "Ispezionare foglie inferiori per oidio e mantenere umidità controllata. Priorità alta.",
           "priorita": "alta"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare elettrocoltura DC a 6V per 2 ore (08-10). Controllare che non ci siano segni di stress idrico (foglie avvizzite).",
+          "azione": "Monitorare umidità del substrato e applicare trattamento preventivo con bicarbonato di potassio. Priorità alta.",
           "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Stesso trattamento. Ispezionare foglie inferiori per oidio ogni 4 ore.",
+          "azione": "Ispezionare foglie inferiori e mantenere umidità controllata. Priorità alta.",
           "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC a 6V per 2 ore (08-10). Monitorare avanzamento fioritura (raccolta tra 27gg).",
+          "azione": "Applicare trattamento preventivo con bicarbonato di potassio e monitorare umidità del substrato. Priorità alta.",
           "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Nessun trattamento elettrocoltura. Mantenere umidità del suolo al 65% e verificare che non ci siano carenze di azoto.",
-          "priorita": "bassa"
+          "azione": "Applicare elettrocultura a bassa intensità (1-2V DC) sulle radici e irrigare moderatamente al mattino. Priorità media.",
+          "priorita": "media"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Nessun trattamento. Monitorare avanzamento vegetazione (raccolta tra 143gg).",
-          "priorita": "bassa"
+          "azione": "Applicare elettrocultura a bassa intensità (1-2V DC) sulle radici e monitorare umidità del substrato. Priorità media.",
+          "priorita": "media"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Nessun trattamento. Verificare che la temperatura del suolo non superi i 24°C.",
-          "priorita": "bassa"
+          "azione": "Applicare elettrocultura a bassa intensità (1-2V DC) sulle radici e irrigare moderatamente al mattino. Priorità media.",
+          "priorita": "media"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Nessun trattamento. Controllare che l'umidità ambientale non superi l'85% nelle ore notturne.",
-          "priorita": "bassa"
+          "azione": "Applicare elettrocultura a bassa intensità (1-2V DC) sulle radici e mantenere umidità controllata. Priorità media.",
+          "priorita": "media"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Nessun trattamento. Monitorare avanzamento vegetazione (raccolta tra 171gg).",
-          "priorita": "bassa"
+          "azione": "Applicare elettrocultura a bassa intensità (1-2V DC) sulle radici e monitorare umidità del substrato. Priorità media.",
+          "priorita": "media"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura notturna potenziata",
-        "descrizione": "Applicare corrente DC a 8V tra le 20-22 durante la fase di Gibbosa Crescente per sfruttare l'energia armonica lunare. Utilizzare elettrodi di rame/zinco a 12 cm di profondità e verificare che l'umidità del suolo sia al 70%.",
-        "fonte": "[pdf_13, pdf_17]",
+        "nome": "Elettrocultura a bassa intensità su radici",
+        "descrizione": "Applicare una tensione continua di 1-2V DC sulle radici delle piante femminizzate in vegetazione utilizzando elettrodi in rame o acciaio inox, collegati a una batteria da 9V. Mantenere la tensione per 2-3 ore al giorno, preferibilmente durante le ore centrali della giornata, per stimolare l'assorbimento dei nutrienti e la crescita radicale.",
+        "fonte": "[Manuale di Elettrocultura Rev.5, §4.2]",
         "materiali": [
-          "Elettrodi di rame/zinco",
-          "Alimentatore DC 8V",
-          "Cavi isolati",
-          "Multimetro per misurare corrente"
+          "batteria 9V",
+          "elettrodi in rame/acciaio inox",
+          "cavi elettrici isolati",
+          "timer meccanico"
         ],
-        "difficolta": "media"
+        "difficolta": "bassa"
+      },
+      {
+        "nome": "Trattamento preventivo con bicarbonato di potassio",
+        "descrizione": "Preparare una soluzione di 5g di bicarbonato di potassio per litro d'acqua e applicarla con uno spruzzatore sulle foglie inferiori delle piante autofiorenti in fioritura, evitando le ore più calde della giornata. Ripetere il trattamento ogni 3-4 giorni come prevenzione contro l'oidio, seguendo il protocollo del Manuale Biodinamico Rev.12 §7.3.",
+        "fonte": "[Manuale Biodinamico Rev.12, §7.3]",
+        "materiali": [
+          "bicarbonato di potassio",
+          "acqua",
+          "spruzzatore",
+          "guanti protettivi"
+        ],
+        "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "L'umidità ambientale al 85% combinata con la temperatura di 22.6°C crea un ambiente ideale per la conducibilità elettrica del suolo, amplificando gli effetti dell'elettrocoltura come descritto in [pdf_85].",
-      "La fase di Gibbosa Crescente (73% illuminazione) è ottimale per applicare tecniche di elettrocoltura notturna, poiché l'energia lunare armonizza gli effetti della corrente DC applicata al suolo."
+      "La combinazione di umidità residua (68%) e temperature minime notturne superiori a 18°C crea un ambiente favorevole allo sviluppo di oidio, come confermato dal Manuale Biodinamico Rev.12 §7.3. Questo suggerisce che anche in condizioni di serra outdoor, la prevenzione attiva è cruciale durante la fase di fioritura delle autofiorenti.",
+      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per applicare tecniche di elettrocultura a bassa intensità, poiché la luna crescente favorisce la crescita radicale e l'assorbimento dei nutrienti, come indicato nel Manuale di Elettrocultura Rev.5 §4.2."
     ],
     "avvisi": [
-      "Rischio oidio: umidità ambientale al 85% combinata con temperatura minima notturna >18°C aumenta la probabilità di infezioni fungine sulle foglie inferiori delle autofiorenti. Ispezionare ogni 4 ore tra le 06-10 e 18-22.",
-      "Evitare trattamenti elettrocoltura tra le 12-16 a causa del picco termico previsto (massimo 34.7°C oggi), per prevenire stress termico alle piante come da [Manuale di Coltivazione BioSerra Rev.23]."
+      "Rischio oidio: umidità ambientale al 68% combinata con temperatura minima notturna >18°C aumenta la probabilità di infezioni fungine sulle foglie inferiori delle autofiorenti. Ispezionare quotidianamente e applicare trattamento preventivo con bicarbonato di potassio.",
+      "Nessun alert critico, ma monitorare attentamente l'umidità del substrato per le autofiorenti in fioritura, data l'assenza di pioggia prevista per i prossimi 2 giorni."
     ],
     "piano_giornata": {
-      "mattina": "07-12: Applicare elettrocoltura DC a 6V su piante in fioritura (08-10). Ispezionare foglie inferiori per oidio ogni 4 ore. Irrigare con 1.5L/mq alle 10 per mantenere umidità del suolo al 70%.",
-      "pomeriggio": "12-18: Evitare trattamenti elettrocoltura tra le 12-16. Monitorare temperatura e umidità ambientale. Alle 16, verificare che l'umidità fogliare non superi l'80%.",
-      "sera": "18-21: Applicare elettrocoltura notturna potenziata a 8V tra le 20-22. Verificare che l'umidità del suolo sia al 70%. Ispezionare foglie inferiori per oidio."
+      "mattina": "07:00-12:00: Applicare trattamento preventivo con bicarbonato di potassio (5g/L) sulle foglie inferiori delle autofiorenti in fioritura. Irrigare moderatamente tutte le piante al mattino presto (07:30-08:30) per evitare stress idrico. Applicare elettrocultura a bassa intensità (1-2V DC) sulle radici delle piante femminizzate in vegetazione.",
+      "pomeriggio": "12:00-18:00: Evitare ore calde (>30°C). Monitorare umidità del substrato e stato delle piante. Ispezionare foglie inferiori delle autofiorenti per rilevare segni di oidio. Effettuare un secondo ciclo di elettrocultura sulle radici delle piante femminizzate (se necessario).",
+      "sera": "18:00-21:00: Verificare l'efficacia dei trattamenti applicati al mattino. Registrare dati di umidità, temperatura e stato delle piante. Pianificare eventuali interventi per domani."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, agendo come catalizzatore biologico senza alterare l'equilibrio naturale.",
-        "L'applicazione di corrente continua (DC) a basso voltaggio vicino alle radici delle piante stimola la crescita e la salute delle colture, migliorando l'assorbimento dei nutrienti.",
-        "L'uso di elettrodi posizionati strategicamente nel suolo consente di trasmettere energia elettrica controllata, potenziando la germinazione e la vitalità delle piante.",
-        "La combinazione di tecniche elettromagnetiche e pre-trattamenti elettrici dei semi può rivitalizzare piante deboli e aumentare la resa delle colture.",
-        "L'elettrocoltura si basa su principi di fisica terrestre e celeste, utilizzando apparecchi magnetici per armonizzare le energie del suolo e dell'atmosfera."
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (tra 1 e 12V) tramite elettrodi di rame o zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura e vegetazione. Questo metodo, descritto nel manuale [pdf_17], stimola la crescita e la salute delle piante senza alterare l'equilibrio naturale.",
-      "consiglio_suolo_da_testi": "Mantenere un suolo ben strutturato e ricco di materia organica per favorire la conducibilità elettrica naturale. Il manuale [pdf_85] sottolinea che i corpi elettrizzati emettono esalazioni idioelettriche che possono asportare il fluido elettrico dai corpi isolanti, quindi è fondamentale garantire un ambiente umido e ben drenato per facilitare il flusso di energia.",
-      "consiglio_biodinamica_da_testi": "Seguire il calendario biodinamico per le operazioni di semina e raccolta, prestando attenzione alle fasi lunari. Il manuale [pdf_13] suggerisce di armonizzare le operazioni agricole con le energie celesti, utilizzando l'elettrocoltura come strumento per potenziare gli effetti delle pratiche biodinamiche.",
-      "scoperta_del_giorno": "L'umidità elevata (85%) e la temperatura moderata (22.6°C) sono condizioni ideali per sperimentare tecniche di elettrocoltura, poiché l'acqua nel suolo facilita la conduzione dell'energia elettrica e amplifica gli effetti delle pratiche elettromagnetiche.",
-      "tecnica_da_provare": {
-        "nome": "Elettrocoltura con elettrodi a corrente continua",
-        "descrizione": "Posizionare elettrodi di rame e zinco a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura e vegetazione. Collegare gli elettrodi a una fonte di corrente continua (DC) a basso voltaggio (1-12V) per 4-6 ore al giorno, preferibilmente durante le ore più fresche della giornata. Monitorare la risposta delle piante e regolare il voltaggio in base alla loro reazione.",
-        "fonte": "[pdf_17]",
-        "materiali": [
-          "Elettrodi di rame e zinco (diametro 3-5 mm, lunghezza 30 cm)",
-          "Fonte di corrente continua (DC) a basso voltaggio (1-12V)",
-          "Cavi elettrici isolati",
-          "Timer o sistema di controllo automatico",
-          "Strumenti per misurare umidità e conducibilità del suolo"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
       "stato_generale": "monitoraggio",
-      "irrigazione": "1.5L/mq alle 10 per mantenere umidità del suolo al 70%, evitando stress idrico. Motivazione: umidità ambientale al 85% e temperatura moderata favoriscono l'assorbimento.",
-      "nutrizione": "water-only oggi. Motivazione: le piante in fioritura non necessitano integrazioni aggiuntive; l'elettrocoltura fornirà i nutrienti necessari.",
+      "irrigazione": "Irrigare moderatamente al mattino presto (07:30-08:30) con 1-1.5L per pianta autofiorente e 2-2.5L per pianta femminizzata, evitando ristagni. Motivazione: fase critica di fioritura per le autofiorenti e assenza di pioggia prevista.",
+      "nutrizione": "Nessuna integrazione oggi. Motivazione: le piante sono in fase di fioritura (autofiorenti) o vegetazione avanzata (femminizzate), e l'irrigazione con sola acqua è sufficiente per evitare stress.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -130,39 +118,51 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Applicare elettrocoltura notturna potenziata a 8V tra le 20-22 per sfruttare l'energia armonica lunare."
+        "consiglio": "Applicare tecniche di elettrocultura a bassa intensità (1-2V DC) sulle radici delle piante femminizzate in vegetazione per stimolare l'assorbimento dei nutrienti, sfruttando la fase lunare favorevole alla crescita radicale."
       },
       "ore_luce": 14.7
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare che gli elettrodi di rame/zinco siano a 12 cm di profondità e non danneggiati.",
-        "Misurare la corrente erogata (6V per piante in fioritura, 8V per elettrocoltura notturna) con multimetro."
+        "Verificare il corretto funzionamento degli elettrodi in rame/acciaio inox per l'elettrocultura sulle radici delle piante femminizzate.",
+        "Controllare la tensione applicata (1-2V DC) e il timer meccanico per garantire un'applicazione costante."
       ],
-      "ottimizzazione": "Aumentare la corrente a 8V durante la fase di Gibbosa Crescente per potenziare gli effetti dell'elettrocoltura, come suggerito in [pdf_13]."
+      "ottimizzazione": "Utilizzare la fase di Gibbosa Crescente per applicare l'elettrocultura a bassa intensità sulle radici, poiché la luna crescente favorisce la crescita radicale e l'assorbimento dei nutrienti, come indicato nel Manuale di Elettrocultura Rev.5 §4.2."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura notturna potenziata",
-      "descrizione": "Applicare corrente DC a 8V tra le 20-22 durante la fase di Gibbosa Crescente per sfruttare l'energia armonica lunare. Utilizzare elettrodi di rame/zinco a 12 cm di profondità e verificare che l'umidità del suolo sia al 70%.",
-      "fonte": "[pdf_13, pdf_17]",
+      "nome": "Elettrocultura a bassa intensità su radici",
+      "descrizione": "Applicare una tensione continua di 1-2V DC sulle radici delle piante femminizzate in vegetazione utilizzando elettrodi in rame o acciaio inox, collegati a una batteria da 9V. Mantenere la tensione per 2-3 ore al giorno, preferibilmente durante le ore centrali della giornata, per stimolare l'assorbimento dei nutrienti e la crescita radicale.",
+      "fonte": "[Manuale di Elettrocultura Rev.5, §4.2]",
       "materiali": [
-        "Elettrodi di rame/zinco",
-        "Alimentatore DC 8V",
-        "Cavi isolati",
-        "Multimetro per misurare corrente"
+        "batteria 9V",
+        "elettrodi in rame/acciaio inox",
+        "cavi elettrici isolati",
+        "timer meccanico"
       ],
-      "difficolta": "media"
+      "difficolta": "bassa"
+    },
+    {
+      "nome": "Trattamento preventivo con bicarbonato di potassio",
+      "descrizione": "Preparare una soluzione di 5g di bicarbonato di potassio per litro d'acqua e applicarla con uno spruzzatore sulle foglie inferiori delle piante autofiorenti in fioritura, evitando le ore più calde della giornata. Ripetere il trattamento ogni 3-4 giorni come prevenzione contro l'oidio, seguendo il protocollo del Manuale Biodinamico Rev.12 §7.3.",
+      "fonte": "[Manuale Biodinamico Rev.12, §7.3]",
+      "materiali": [
+        "bicarbonato di potassio",
+        "acqua",
+        "spruzzatore",
+        "guanti protettivi"
+      ],
+      "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Rischio oidio: umidità ambientale al 85% combinata con temperatura minima notturna >18°C aumenta la probabilità di infezioni fungine sulle foglie inferiori delle autofiorenti. Ispezionare ogni 4 ore tra le 06-10 e 18-22.",
-    "Evitare trattamenti elettrocoltura tra le 12-16 a causa del picco termico previsto (massimo 34.7°C oggi), per prevenire stress termico alle piante come da [Manuale di Coltivazione BioSerra Rev.23]."
+    "Rischio oidio: umidità ambientale al 68% combinata con temperatura minima notturna >18°C aumenta la probabilità di infezioni fungine sulle foglie inferiori delle autofiorenti. Ispezionare quotidianamente e applicare trattamento preventivo con bicarbonato di potassio.",
+    "Nessun alert critico, ma monitorare attentamente l'umidità del substrato per le autofiorenti in fioritura, data l'assenza di pioggia prevista per i prossimi 2 giorni."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a 6V tramite elettrodi di rame/zinco a 12 cm di profondità vicino alle radici delle piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare la fioritura e anticipare la raccolta di 5-7 giorni, come da [pdf_17].",
-    "Monitorare umidità fogliare inferiore al 80% e temperatura notturna minima >18°C per prevenire oidio: ispezionare foglie inferiori delle autofiorenti ogni 4 ore tra le 06-10 e 18-22, come da [Manuale Biodinamico Rev.12, §7.3].",
-    "Utilizzare la fase di Gibbosa Crescente per potenziare l'elettrocoltura: aumentare la corrente DC a 8V tra le 20-22 per sfruttare l'energia armonica lunare, come suggerito in [pdf_13]."
+    "Applicare trattamento preventivo contro oidio con bicarbonato di potassio (5g/L) sulle foglie inferiori delle autofiorenti in fioritura, seguendo il protocollo del Manuale Biodinamico Rev.12 §7.3, data la combinazione di umidità residua (68%) e temperature minime notturne superiori a 18°C.",
+    "Effettuare un monitoraggio intensivo delle piante autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per rilevare eventuali segni di stress idrico, data la fase critica di fioritura e l'assenza di pioggia prevista per i prossimi 2 giorni.",
+    "Utilizzare la fase di Gibbosa Crescente per applicare una tecnica di elettrocultura a bassa intensità (1-2V DC) sulle radici delle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana), seguendo il protocollo del Manuale di Elettrocultura Rev.5 §4.2, per stimolare l'assorbimento dei nutrienti."
   ]
 }
