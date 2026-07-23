@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-22T05:28:51.417168+00:00",
+  "lastUpdate": "2026-07-23T05:34:00.292118+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -155,27 +155,27 @@
       "it": 79
     },
     "chunk_progresso_doc_con_dato": 18,
-    "chunk_progresso_totale_tradotti": 129,
+    "chunk_progresso_totale_tradotti": 140,
     "chunk_progresso_totale_chunk": 335,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_5",
         "chunk_progresso": {
-          "tradotti": 12,
+          "tradotti": 13,
           "totale": 8
         }
       },
       {
         "id": "pdf_323",
         "chunk_progresso": {
-          "tradotti": 7,
+          "tradotti": 8,
           "totale": 4
         }
       },
       {
         "id": "pdf_331",
         "chunk_progresso": {
-          "tradotti": 16,
+          "tradotti": 17,
           "totale": 4
         }
       }
@@ -187,12 +187,12 @@
       "it": 79
     },
     "chunk_progresso_doc_con_dato": 18,
-    "chunk_progresso_totale_tradotti": 129,
+    "chunk_progresso_totale_tradotti": 140,
     "chunk_progresso_totale_chunk": 335
   },
   "connessioni": {
     "nodi_totali": 399,
-    "edges_totali": 79777,
+    "edges_totali": 79783,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
@@ -201,11 +201,11 @@
       "media": 0.844
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 64,
-      "sinergia": 161,
-      "potenziamento": 43,
-      "contraddizione": 174,
-      "(nessuno)": 79335
+      "principio_condiviso": 66,
+      "sinergia": 174,
+      "potenziamento": 45,
+      "contraddizione": 183,
+      "(nessuno)": 79315
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.5
