@@ -943,6 +943,7 @@ function initAmbiente() {
   _doRenderBio();
   // GDD richiede fetch asincrono
   setTimeout(function(){ try { loadGDD(); } catch(e) {} }, 200);
+  setTimeout(function(){ try { _loadPianteStatoReale(); } catch(e) {} }, 200);
   // Consiglio AI del giorno
   setTimeout(function(){ try { loadCalOggiAI(); } catch(e) {} }, 300);
 }
@@ -2550,6 +2551,38 @@ ${lav.lavori.map(l=>`<div style="display:flex;gap:8px;padding:6px 0;border-botto
 ══════════════════════════════════════════════════════════════ */
 let _gddData = null;
 
+/* ── Dati reali stato piante (data_raccolta calcolata col modello cap 1.8x/1.4x) ──
+   Usati per correggere le date di raccolta mostrate nel tab GDD, che prima
+   usavano un calcolo locale naive (germ + giorni produttore, senza moltiplicatore
+   ore-sole) e restavano permanentemente sui valori teorici del CALENDARIO. */
+let _pianteStatoReale = null;
+async function _loadPianteStatoReale() {
+  try {
+    const d = await fetchGHJson('data/piante_stato.json');
+    const arr = (d && d.data && d.data.stato_piante) || [];
+    const map = {};
+    arr.forEach(function(s){ map[s.id] = s; });
+    _pianteStatoReale = map;
+  } catch(e) { _pianteStatoReale = _pianteStatoReale || {}; }
+  try { _renderGDDContent(); } catch(e) {}
+  try { if (document.getElementById('cal-gdd-piante')) renderCalGDD(); } catch(e) {}
+}
+function _statoRealeFor(p) {
+  return (_pianteStatoReale && _pianteStatoReale[p.id]) || null;
+}
+function _raccoltaFor(p) {
+  const reale = _statoRealeFor(p);
+  if (reale && reale.data_raccolta) return new Date(reale.data_raccolta + 'T00:00:00');
+  const germ = new Date(p.germ);
+  return p.tipo === 'auto' ? new Date(germ.getTime() + p.giorni*86400000)
+       : (p.raccolta ? new Date(p.raccolta) : null);
+}
+function _totGiorniFor(p, gg) {
+  const reale = _statoRealeFor(p);
+  if (reale && reale.giorni_a_raccolta != null) return gg + reale.giorni_a_raccolta;
+  return p.giorni;
+}
+
 function renderCalGDD() {
   const lista = document.getElementById('cal-gdd-piante');
   if (_gddData) {
@@ -2557,21 +2590,21 @@ function renderCalGDD() {
     return;
   }
   loadGDD();
-  // Mostra stime locali intanto
+  if (!_pianteStatoReale) _loadPianteStatoReale();
+  // Mostra stime intanto (reali se già disponibili, altrimenti stima locale)
   if (lista) {
     const today = new Date();
     lista.innerHTML = CAL_PIANTE.map(p => {
       const germ = new Date(p.germ);
       const gg = Math.floor((today-germ)/86400000);
-      const raccoItaStr = p.tipo==='auto' ? (() => {
-        const r = new Date(germ.getTime() + p.giorni*86400000);
-        return fmtIT(r);
-      })() : (p.raccolta ? fmtIT(new Date(p.raccolta)) : 'Ott–Nov 2026');
-      const avanzamento = p.tipo==='auto' ? Math.min(100, Math.round(gg/p.giorni*100)) : null;
+      const racco = _raccoltaFor(p);
+      const raccoItaStr = racco ? fmtIT(racco) : 'Ott–Nov 2026';
+      const totGiorni = _totGiorniFor(p, gg);
+      const avanzamento = p.tipo==='auto' ? Math.min(100, Math.round(gg/totGiorni*100)) : null;
       return `<div class="cal-gdd-row" onclick="openCalGDDPopup('${p.id}')">
         <div>
           <div style="font-size:12px;font-weight:700;">${p.nome}</div>
-          <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Auto · Gg '+gg+'/'+p.giorni:'🌸 Femm.'}</div>
+          <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Auto · Gg '+gg+'/'+totGiorni:'🌸 Femm.'}</div>
         </div>
         <div style="text-align:right;">
           ${avanzamento!==null?`<div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;width:80px;margin-bottom:3px;"><div style="height:100%;background:var(--green);border-radius:2px;width:${avanzamento}%;"></div></div>`:''}
@@ -2594,7 +2627,7 @@ async function loadGDD() {
     const today = new Date();
     const startDate = '2026-01-01';
     const endDate = today.toISOString().slice(0,10);
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${CAL_LAT}&longitude=${CAL_LON}` +
+    const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${CAL_LAT}&longitude=${CAL_LON}` +
       `&daily=temperature_2m_max,temperature_2m_min&timezone=Europe%2FRome` +
       `&start_date=${startDate}&end_date=${endDate}`;
     const res = await fetch(url);
@@ -2654,9 +2687,10 @@ function _renderGDDContent() {
   lista.innerHTML = CAL_PIANTE.map(p => {
     const germ = new Date(p.germ);
     const gg = Math.floor((today-germ)/86400000);
-    const avanzamento = p.tipo==='auto' ? Math.min(100, Math.round(gg/p.giorni*100)) : null;
-    const raccoItaStr = p.tipo==='auto' ? fmtIT(new Date(germ.getTime()+p.giorni*86400000)) :
-      (p.raccolta ? fmtIT(new Date(p.raccolta)) : 'Ott–Nov 2026');
+    const totGiorni = _totGiorniFor(p, gg);
+    const avanzamento = p.tipo==='auto' ? Math.min(100, Math.round(gg/totGiorni*100)) : null;
+    const racco = _raccoltaFor(p);
+    const raccoItaStr = racco ? fmtIT(racco) : 'Ott–Nov 2026';
     const gddNeeded = p.fiorGG * 12; // Stima GDD necessari (12 GDD/gg medio)
     const gddHave = Math.min(_gddData.total, gddNeeded);
     const gddPct = Math.min(100, Math.round(gddHave/gddNeeded*100));
@@ -2664,7 +2698,7 @@ function _renderGDDContent() {
     return `<div class="cal-gdd-row" onclick="openCalGDDPopup('${p.id}')">
       <div style="flex:1;">
         <div style="font-size:12px;font-weight:700;">${p.nome}</div>
-        <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Gg '+gg+'/'+p.giorni:'🌸 Femm. → '+raccoItaStr}</div>
+        <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Gg '+gg+'/'+totGiorni:'🌸 Femm. → '+raccoItaStr}</div>
         <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;width:100%;margin-top:4px;">
           <div style="height:100%;background:${gddPct>=80?'#4caf76':gddPct>=50?'#ffd54f':'#ef5350'};border-radius:2px;width:${gddPct}%;"></div>
         </div>
@@ -2686,18 +2720,19 @@ function openCalGDDPopup(id) {
   const content=document.getElementById('amb-popup-content');
   if(!overlay||!content) return;
   const gddTotal = _gddData ? _gddData.total : '?';
-  const racD = p.tipo==='auto' ? new Date(germ.getTime()+p.giorni*86400000) : new Date(p.raccolta);
+  const racD = _raccoltaFor(p) || today;
+  const totGiorni = _totGiorniFor(p, gg);
   const daysLeft = Math.max(0, Math.floor((racD-today)/86400000));
   content.innerHTML = `<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">GDD — ${p.tipo==='auto'?'Autofiorente':'Femminizzata'}</div>
 <div style="font-size:18px;font-weight:700;margin:6px 0;">${p.nome} (ID:${p.id})</div>
 <div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:12px;font-size:13px;color:var(--text2);line-height:1.9;">
   📅 Germinazione: <strong>${fmtIT(germ)}</strong><br>
-  🌿 Giorno: <strong>${gg}</strong> su ${p.tipo==='auto'?p.giorni:'~'} giorni totali<br>
+  🌿 Giorno: <strong>${gg}</strong> su ${p.tipo==='auto'?totGiorni:'~'} giorni totali<br>
   📈 GDD accumulati 2026: <strong>${gddTotal}</strong><br>
   🍊 Raccolta prevista: <strong>${fmtIT(racD)}</strong> (${daysLeft>0?daysLeft+' giorni':'⚠️ Data passata!'})
 </div>
 <div style="font-size:13px;color:var(--text2);line-height:1.7;">
-  ${p.tipo==='auto'?`Autofiorente: ciclo fisso di ${p.giorni} giorni dalla germinazione. I GDD influenzano la resa ma non la data esatta. Con ${_gddData?_gddData.total:'molti'} GDD la resa sarà ${_gddData&&_gddData.total>300?'ottimale ✅':'buona 🟡'}.`
+  ${p.tipo==='auto'?`Autofiorente: ciclo di ${totGiorni} giorni dalla germinazione (già corretto per ore di sole). I GDD influenzano la resa ma non la data esatta. Con ${_gddData?_gddData.total:'molti'} GDD la resa sarà ${_gddData&&_gddData.total>300?'ottimale ✅':'buona 🟡'}.`
   :`Femminizzata fotoperiodica. Innesco fioritura previsto inizio ottobre (ore luce < 12h). Poi ${p.fiorGG} giorni di fioritura. GDD disponibili accelerano leggermente la maturazione.`}
 </div>`;
   overlay.style.display='flex'; document.body.style.overflow='hidden';
