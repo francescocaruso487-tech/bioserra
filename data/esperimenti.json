@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-22T05:33:25.256306+00:00",
+  "lastUpdate": "2026-07-23T05:38:58.427590+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -3212,14 +3212,46 @@
       "data_proposta": "2026-07-22",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla biosintesi di CBG e CBDV in piante di pianta CBDV-dipendenti",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV (Manuale B), aumentano la produzione di cannabinoidi secondari (CBG e CBDV) grazie a un metabolismo radicale più efficiente. Questo effetto è misurabile in termini di aumento percentuale di CBG e CBDV nelle infiorescenze mature, rispetto a piante coltivate con concimazione minerale convenzionale.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (Living Soil) con substrato omogeneo: una con concimazione organica (compost, humus di lombrico, micorrize) e una con concimazione minerale bilanciata (NPK 5-5-5).",
+        "Seminare 10 semi di una varietà CBDV-dipendente (es. 'CBDV Auto' da seedbank certificata) in ciascuna parcella, mantenendo distanza e densità di semina identiche. Utilizzare semi femminizzati autofiorenti per standardizzare la crescita.",
+        "Monitorare settimanalmente lo sviluppo radicale (tramite osservazione visiva e misurazione della biomassa radicale a fine esperimento) e la salute delle piante (altezza, numero di nodi, colore delle foglie).",
+        "A fine fioritura (30 giorni dall’inizio della fioritura), raccogliere le infiorescenze mature da 5 piante per parcella, essiccare e analizzare il contenuto di CBG e CBDV tramite test HPLC (o kit di analisi quantitativa accessibile)."
+      ],
+      "materiali": [
+        "Semi di pianta CBDV-dipendente (es. 'CBDV Auto' da seedbank come Dutch Passion o CBD Crew)",
+        "Compost maturo, humus di lombrico, micorrize (Rhizophagus irregularis), concime minerale NPK 5-5-5",
+        "Vasi da 10L (20 unità), substrato Living Soil pre-preparato, acqua distillata",
+        "Strumenti di misura: righello, bilancia di precisione, kit di analisi cannabinoidi (es. Green Scientific Labs o simili), essiccatore"
+      ],
+      "durata_giorni": 90,
+      "misure": [
+        "Contenuto di CBG e CBDV nelle infiorescenze (% sul peso secco) tramite analisi HPLC o kit quantitativo",
+        "Biomassa radicale (peso secco delle radici) e rapporto radici/parte aerea",
+        "Conferma dell’ipotesi: aumento ≥20% di CBG e CBDV nelle piante con Living Soil vs minerale, con p<0.05"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), condizioni ambientali (luce, temperatura, umidità), metodo di raccolta ed essiccazione, tipo di substrato base (solo differenziazione nella concimazione)",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L’esperimento combina due concetti chiave dei manuali (concimazione organica e semi CBDV) in un protocollo originale che testa la sinergia tra Living Soil e produzione di cannabinoidi secondari, non presente nei manuali singolarmente. La misurazione diretta di CBG/CBDV in risposta alla biodiversità microbica è un approccio innovativo per la serra BioSerra Caserta.",
+      "id": "esp_conn_2026-07-23_001",
+      "data_proposta": "2026-07-23",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-22",
-    "nuove_proposte": 2,
-    "pdf_analizzati": 338,
-    "connessioni_usate": 353
+    "data": "2026-07-23",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 350,
+    "connessioni_usate": 378
   }
 }
