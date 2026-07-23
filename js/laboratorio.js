@@ -1085,7 +1085,11 @@ function labPopupPdf(idx) {
   if (pdf.connessioni && pdf.connessioni.length) {
     h += '<div style="margin-top:4px">';
     h += '<div style="font-size:10px;font-weight:700;color:rgba(179,156,217,0.6);margin-bottom:6px">CONNESSIONI (' + pdf.connessioni.length + ')</div>';
-    pdf.connessioni.slice(0,5).forEach(function(c) { h += '<div style="font-size:11px;color:rgba(179,156,217,0.55);padding:2px 0">🔗 ' + labEsc(c+'') + '</div>'; });
+    pdf.connessioni.slice(0,5).forEach(function(c) {
+      var lbl = (typeof c === 'string') ? c : ((c && (c.titolo || c.nome || c.id)) || '');
+      if (!lbl) return;
+      h += '<div style="font-size:11px;color:rgba(179,156,217,0.55);padding:2px 0">🔗 ' + labEsc(lbl) + '</div>';
+    });
     h += '</div>';
   }
   labPopupOpen(h);
