@@ -150,15 +150,21 @@
         "tipo": "femminizzata",
         "germoglio": "2026-04-22",
         "giorni_vita": 92,
-        "fase": "Vegetazione",
+        "fase": "Fioritura",
         "giorni_a_fioritura": 84,
         "giorni_a_raccolta": 161,
         "giorni_a_essiccazione": 176,
         "giorni_a_concia": 196,
         "data_fioritura": "2026-10-15",
-        "data_raccolta": "2026-12-31",
+        "data_raccolta": "2026-08-30",
         "data_essiccazione": "2027-01-15",
-        "data_concia": "2027-02-04"
+        "data_concia": "2027-02-04",
+        "override": {
+          "currentPhase": "fioritura",
+          "savedAt": "2026-07-23T10:32:21.994Z",
+          "florStart": "2026-07-06",
+          "harvestDate": "2026-08-30"
+        }
       },
       {
         "id": 9,
