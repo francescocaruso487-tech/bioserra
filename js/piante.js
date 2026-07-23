@@ -1025,6 +1025,126 @@ function renderSteps(steps, today) {
   return html;
 }
 
+/* ── Selezione multipla piante (per cambio fase in blocco) ── */
+let _bulkMode = false;
+let _bulkSelected = new Set();
+
+function toggleBulkMode() {
+  _bulkMode = !_bulkMode;
+  if (!_bulkMode) _bulkSelected.clear();
+  renderActivePlants();
+}
+
+function toggleBulkSelect(id, checked) {
+  if (checked) _bulkSelected.add(id); else _bulkSelected.delete(id);
+  const card = document.getElementById('plant-' + id);
+  if (card) card.style.outline = checked ? '2px solid #4caf76' : 'none';
+  _renderBulkBar();
+}
+
+function _renderBulkBar() {
+  let bar = document.getElementById('bulk-action-bar');
+  if (!_bulkMode) { if (bar) bar.remove(); return; }
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'bulk-action-bar';
+    bar.style.cssText = 'position:fixed;left:0;right:0;bottom:64px;z-index:500;background:#16241a;border-top:1px solid rgba(255,255,255,0.12);padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 -4px 12px rgba(0,0,0,0.35);';
+    document.body.appendChild(bar);
+  }
+  const n = _bulkSelected.size;
+  bar.innerHTML = `
+    <span style="font-size:13px;color:var(--text2);font-weight:600;">${n} selezionat${n===1?'a':'e'}</span>
+    <div style="display:flex;gap:8px;">
+      <button onclick="toggleBulkMode()" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:8px 14px;color:var(--text2);font-size:12px;cursor:pointer;">Annulla</button>
+      <button ${n===0?'disabled':''} onclick="openBulkPhaseModal()" style="background:${n===0?'rgba(76,175,118,0.3)':'#4caf76'};border:none;border-radius:20px;padding:8px 16px;color:#0d1a0d;font-size:12px;font-weight:700;cursor:${n===0?'default':'pointer'};">✏️ Cambia fase (${n})</button>
+    </div>`;
+}
+
+/* ── Modale cambio fase in blocco ── */
+function openBulkPhaseModal() {
+  if (_bulkSelected.size === 0) return;
+  let modal = document.getElementById('bulk-phase-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'bulk-phase-modal';
+    modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000;display:flex;align-items:flex-end;justify-content:center;';
+    document.body.appendChild(modal);
+  }
+  const ids = Array.from(_bulkSelected);
+  const plants = loadActivePlants().filter(p => ids.includes(p.id));
+  const nomi = plants.map(p => p.name).join(', ');
+  const soloFemm = plants.length && plants.every(p => p.type === 'femm');
+  const soloAuto = plants.length && plants.every(p => p.type === 'auto');
+  const dateLabel = soloFemm
+    ? 'Data fioritura (opzionale, applicata a tutte come inizio fioritura)'
+    : soloAuto
+      ? 'Data taglio previsto (opzionale, applicata a tutte)'
+      : 'Data (opzionale — fioritura per le femminizzate, taglio per le autofiorenti selezionate)';
+  modal.innerHTML = `
+    <div style="background:#16241a;border-radius:16px 16px 0 0;padding:18px;width:100%;max-width:480px;max-height:80vh;overflow:auto;">
+      <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:6px;">✏️ Cambia fase — ${ids.length} piante</div>
+      <div style="font-size:12px;color:var(--text3);margin-bottom:14px;">${nomi}</div>
+      <label style="font-size:12px;color:var(--text2);display:block;margin-bottom:6px;">Nuova fase</label>
+      <select id="bulk-phase-select" style="width:100%;padding:10px;border-radius:10px;background:var(--card2);border:1px solid var(--border);color:var(--text);font-size:14px;margin-bottom:14px;">
+        <option value="germinazione">🌱 Germinazione</option>
+        <option value="vegetazione">🌿 Vegetazione</option>
+        <option value="fioritura" selected>🌸 Fioritura</option>
+        <option value="taglio">✂️ Taglio (evento)</option>
+        <option value="essiccazione">🌬️ Essiccazione</option>
+        <option value="concia">🫙 Concia</option>
+        <option value="fine">✅ Fine ciclo</option>
+      </select>
+      <label style="font-size:12px;color:var(--text2);display:block;margin-bottom:6px;">${dateLabel}</label>
+      <input type="date" id="bulk-phase-date" style="width:100%;padding:10px;border-radius:10px;background:var(--card2);border:1px solid var(--border);color:var(--text);font-size:14px;margin-bottom:16px;">
+      <div style="display:flex;gap:8px;">
+        <button onclick="closeBulkPhaseModal()" style="flex:1;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:10px;color:var(--text2);font-size:13px;cursor:pointer;">Annulla</button>
+        <button id="bulk-phase-save" onclick="saveBulkPhaseEdit()" style="flex:1;background:#4caf76;border:none;border-radius:10px;padding:10px;color:#0d1a0d;font-weight:700;font-size:13px;cursor:pointer;">Applica a tutte</button>
+      </div>
+    </div>`;
+  modal.style.display = 'flex';
+}
+
+function closeBulkPhaseModal() {
+  const modal = document.getElementById('bulk-phase-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+/* Applica la stessa fase (e opzionalmente data) a tutte le piante selezionate.
+   Sync GitHub ESEGUITO IN SEQUENZA (await in loop, non Promise.all): ogni
+   _syncPhaseGitHub fa fetch SHA fresco + PUT sullo stesso file piante_stato.json,
+   chiamate in parallelo causerebbero 409 per SHA stale. */
+async function saveBulkPhaseEdit() {
+  const phase = document.getElementById('bulk-phase-select').value;
+  const dateVal = (document.getElementById('bulk-phase-date').value || '').trim();
+  const btn = document.getElementById('bulk-phase-save');
+  const ids = Array.from(_bulkSelected);
+  const plants = loadActivePlants();
+  if (btn) { btn.disabled = true; btn.textContent = `⏳ Applico 1/${ids.length}…`; }
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    const p = plants.find(x => x.id === id);
+    if (btn) btn.textContent = `⏳ Applico ${i+1}/${ids.length}…`;
+    const ovrData = { currentPhase: phase, savedAt: new Date().toISOString() };
+    if (dateVal && p) {
+      if (p.type === 'femm') {
+        ovrData.florStart = dateVal;
+        saveFlorConfirm(id, dateVal);
+        ovrData.harvestDate = addDays(new Date(dateVal), p.harvestMin).toISOString().slice(0,10);
+      } else {
+        ovrData.harvestDate = dateVal;
+      }
+    }
+    savePlantPhaseOverride(id, ovrData);
+    try { await _syncPhaseGitHub(id, ovrData); } catch(e) { console.warn('[BioSerra] Bulk sync fallito per', id, e); }
+  }
+  if (btn) { btn.disabled = false; btn.textContent = '✅ Fatto'; }
+  closeBulkPhaseModal();
+  _bulkSelected.clear();
+  _bulkMode = false;
+  renderActivePlants();
+  checkHarvestAlerts();
+}
+
 /* ── Render active plants list ── */
 function renderActivePlants() {
   const plants = loadActivePlants();
@@ -1056,6 +1176,9 @@ function renderActivePlants() {
     </div>`;
 
   let html = sunSliderHTML;
+  html += `<div style="display:flex;justify-content:flex-end;margin-bottom:10px;">
+    <button onclick="toggleBulkMode()" style="background:${_bulkMode?'#4caf76':'rgba(255,255,255,0.06)'};border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:6px 14px;color:${_bulkMode?'#0d1a0d':'var(--text2)'};font-size:12px;font-weight:600;cursor:pointer;">${_bulkMode?'✅ Selezione attiva — tocca per uscire':'☑️ Seleziona più piante'}</button>
+  </div>`;
 
   function buildPlantCard(p) {
     const today = new Date(); today.setHours(0,0,0,0);
@@ -1215,8 +1338,8 @@ function renderActivePlants() {
     const heightLabel = HEIGHT_MAP[p.id] || (p.type === 'auto' ? '50–70 cm' : '80–170 cm');
 
     return `
-      <div id="plant-${p.id}" style="margin-bottom:10px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
-        <!-- Header card -->
+      <div id="plant-${p.id}" style="margin-bottom:10px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);position:relative;${_bulkMode && _bulkSelected.has(p.id) ? 'outline:2px solid #4caf76;' : ''}">
+        ${_bulkMode ? `<div style="position:absolute;top:10px;right:10px;z-index:2;"><input type="checkbox" onchange="toggleBulkSelect(${p.id}, this.checked)" ${_bulkSelected.has(p.id)?'checked':''} style="width:22px;height:22px;accent-color:#4caf76;cursor:pointer;"></div>` : ''}
         <div style="background:#1a2e1a;padding:12px 14px 10px;">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
             <span style="font-size:11px;color:rgba(255,255,255,0.45);">#${p.id} · ${typeLabel} · ${heightLabel}</span>
@@ -1270,7 +1393,7 @@ function renderActivePlants() {
   html += renderGroup('Femminizzate', femmPlants);
   if (!plants.length) html = '<div class="empty-state">Nessuna pianta attiva. Aggiungine una!</div>';
   container.innerHTML = html;
-
+  _renderBulkBar();
   plants.forEach(p => renderTimelineInBox(p.id));
   checkHarvestAlerts();
 
@@ -1896,7 +2019,7 @@ async function loadAIJSON() {
   if (!el) return;
   el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
   try {
-    const data = await fetchGHJson('ai_consigli.json');
+    const data = await fetchGHJson('data/ai_consigli.json');
     if (!data) { renderPending(el, meta); return; }
 
     // Data può essere una stringa di testo o un array di oggetti
@@ -1946,7 +2069,7 @@ async function loadAIJSON() {
 async function loadLunaJSON() {
   const meta = document.getElementById('luna-json-meta');
   try {
-    const data = await fetchGHJson('luna_consigli.json');
+    const data = await fetchGHJson('data/luna_consigli.json');
     if (!data) return;
     // Aggiorna meta
     const d = data.data || {};
@@ -1992,7 +2115,7 @@ async function loadPianteJSON() {
   if (!el) return;
   el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
   try {
-    const data = await fetchGHJson('piante_stato.json');
+    const data = await fetchGHJson('data/piante_stato.json');
     if (!data) { renderPending(el, meta); return; }
     meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
     // Render alerts-oggi card (usa data.data.alerts_oggi)
