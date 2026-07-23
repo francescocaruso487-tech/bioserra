@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-22
+aggiornato: 2026-07-23
 pdf_count: 10
 ---
 
@@ -12,30 +12,29 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è un approccio fitosanitario basato sull’equilibrio ecologico, che sfrutta meccanismi biologici, fisici e chimici presenti in natura per prevenire e gestire infestazioni senza ricorrere a sintetiche. Questo metodo si fonda sulla **teoria della trofobiosi** (Chaboussou), secondo cui le piante sane sono meno suscettibili agli attacchi parassitari grazie a un metabolismo bilanciato e a un suolo ricco di microrganismi benefici. In un sistema **Living Soil**, la salute delle piante dipende dalla biodiversità microbica, che compete con patogeni e parassiti per risorse e spazio, riducendo la loro proliferazione. L’uso di **insetti utili** (es. acari predatori come *Phytoseiulus persimilis*) e **barriere fisiche** (es. oli essenziali) crea un ambiente ostile ai fitofagi, mentre la **prevenzione** (es. olio di neem) interrompe il ciclo vitale dei parassiti prima che diventino problematici.
+Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’equilibrio ecosistemico, dove la prevenzione e la gestione delle infestazioni avvengono senza l’uso di sintetiche chimiche. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo), dove la biodiversità microbica e faunistica agisce come regolatore naturale delle popolazioni di parassiti. Il meccanismo d’azione si fonda sulla **resilienza ecologica**: piante sane, coltivate in suoli ricchi di humus e microrganismi benefici, sviluppano meccanismi di difesa intrinseci (es. produzione di terpeni repellenti). Inoltre, l’introduzione di **predatori naturali** (acari, coccinelle, nematodi entomopatogeni) o l’uso di repellenti botanici (olio di neem, piretro) interrompe il ciclo vitale dei parassiti senza alterare l’equilibrio dell’agroecosistema.
 
-In serra outdoor a Caserta (41°N), il clima mediterraneo favorisce la proliferazione di afidi, acari e funghi, ma un **sistema Living Soil** ben gestito può ridurre la necessità di interventi drastic. La chiave è **osservazione costante** (ispezioni quotidiane) e **interventi mirati**, che rispettano i tempi di vita dei parassiti e dei loro predatori naturali. Questo approccio si allinea con i principi dell’**elettrocultura** (Lakhovsky), dove campi elettromagnetici a bassa frequenza possono stimolare la resistenza delle piante e la decomposizione microbica, rafforzando indirettamente la difesa biologica.
+Questa metodologia è particolarmente efficace in serra outdoor, dove l’ambiente controllato consente di ottimizzare le condizioni per la proliferazione di organismi utili. La chiave del successo risiede nella **prevenzione attiva**: monitoraggi costanti, applicazione di principi attivi naturali a basso impatto e creazione di habitat favorevoli per i nemici naturali dei parassiti. L’elettrocultura, con l’uso di spirali di rame o circuiti Lakhovsky, può ulteriormente potenziare questo sistema, stimolando la crescita microbica e la resistenza delle piante tramite campi elettromagnetici a bassa frequenza.
 
 ---
 
 ## Come si applica in serra
 
-### **Protocollo base per serra outdoor Living Soil (Caserta)**
 1. **Ispezione quotidiana**
-   - Controlla **foglie giovani, steli e pagina inferiore** delle foglie con una lente d’ingrandimento (10x).
-   - Segna su un quaderno le piante infestate e il tipo di parassita (es. afidi neri, ragnetti rossi, tripidi).
-   - *Strumento utile*: Trappole cromotropiche gialle/blu per monitorare insetti volanti.
+   - Controllare **foglie (soprattutto sottofronte)**, steli e substrato per individuare uova, larve o adulti di parassiti (afidi, acari, tripidi).
+   - Utilizzare una **lente d’ingrandimento** e una **trappola gialla adesiva** per monitorare gli insetti volanti.
 
 2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1L d’acqua.
-   - **Applicazione**: Nebulizza sulle piante **ogni 7 giorni** (mattina presto o sera), evitando i fiori durante la fioritura per non disturbare gli impollinatori.
-   - *Effetto*: Interferisce con la crescita e la riproduzione dei parassiti (es. afidi, cocciniglie) e stimola le difese delle piante.
+   - Diluire **5–10 ml di olio di neem puro** in 1 litro d’acqua con un tensioattivo (es. sapone di potassio al 2%).
+   - Applicare con **irroratore a pressione** ogni **7 giorni** (o dopo pioggia), nebulizzando uniformemente su tutta la chioma.
+   - *Nota*: Evitare l’uso in fioritura per non alterare il profilo aromatico delle piante.
 
 3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis* per ragnetti rossi, *Amblyseius andersoni* per trips):
-     - **Dose**: 1–2 individui per pianta infestata.
-     - **Momento**: Introduci quando la popolazione di parassiti è ancora bassa (soglia: 1–2 parassiti per foglia).
-     - *Consiglio*: Acquista da fornitori specializzati (es. **Biobest**, **Koppert**) e rilascia in serra **al tramonto** per evitare predazione da parte di uccelli.
+   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari, *Amblyseius andersoni* per tripidi): rilasciare alla dose di **2–5 individui/mq** in caso di infestazione iniziale.
+   - **Coccinelle** (*Coccinella septempunctata*): posizionare **5–10 adulti/pianta** in serra, preferibilmente al tramonto.
+   - **Nematodi entomopatogeni** (*Steinernema feltiae*): applicare in soluzione acquosa al suolo (1 milione di nematodi/100 mq) per combattere larve di lepidotteri.
 
-4. **Barriere fisiche e repellenti naturali**
-   - **Piante trappola**: Coltiva **calendula**, **tagete** o **basilico** ai
+4. **Barriere fisiche e repellenti**
+   - **Reti anti-insetto** (maglia 0.6 mm) su aperture della serra per impedire l’ingresso di afidi e moscerini.
+   - **Piante trappola**: coltivare **tagete** o **basilico** ai bordi della serra per attirare parassiti lontano dalle colture principali.
+   - **Spruzzature di ortica o equiseto**: preparare un macerato (1 kg di pianta fres
