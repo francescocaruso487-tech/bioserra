@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-22
+aggiornato: 2026-07-23
 pdf_count: 6
 ---
 
@@ -12,32 +12,29 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico controllato che trasforma materiali organici di scarto (come scarti di cucina, sfalci, letame e residui vegetali) in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, artropodi) che decompongono la materia organica in condizioni aerobiche. Il risultato è un substrato umificato, con un equilibrio ottimale tra macro e micronutrienti, che migliora la struttura del suolo, la capacità di ritenzione idrica e la biodiversità microbica.
+Il compostaggio organico è un processo biologico di decomposizione controllata della materia organica, che trasforma scarti vegetali e animali in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi macro come lombrichi e artropodi, che scompongono la materia in composti umificati. Il compost di qualità si distingue per il suo equilibrio tra macro e micronutrienti, la struttura porosa che migliora l’aerazione del suolo e la capacità di trattenere acqua e nutrienti, fondamentali per la fase vegetativa delle piante in **Living Soil**.
 
-In un contesto di **Living Soil** outdoor, il compost di qualità è fondamentale per sostenere la fase vegetativa delle piante, poiché fornisce nutrienti a lenta cessione e favorisce lo sviluppo di una rete trofica complessa. Il compost ben maturo agisce come un "polmone" per il suolo, migliorando l’aerazione e la porosità, essenziale per radici sane e piante robuste. Inoltre, riduce la necessità di fertilizzanti sintetici, allineandosi ai principi dell’agricoltura rigenerativa e della permacultura.
+In un contesto di serra outdoor a Caserta (41°N), il compostaggio assume un ruolo chiave per mantenere la fertilità del suolo senza ricorrere a fertilizzanti sintetici. La decomposizione termofila (55-65°C) favorisce l’eliminazione di patogeni e semi di infestanti, mentre la presenza di microrganismi benefici (come *Trichoderma* e batteri azotofissatori) arricchisce il substrato di enzimi e ormoni naturali che stimolano la crescita radicale e la resistenza delle piante. Inoltre, il compost maturo agisce come un "polmone" per il suolo, migliorando la struttura e la capacità di scambio cationico (CEC), essenziale per l’assorbimento dei nutrienti durante la fase vegetativa.
 
 ---
 
 ## Come si applica in serra
 
-Per produrre compost di qualità in una **serra outdoor Living Soil** a Caserta (41°N), segui questi passaggi pratici:
+### **1. Selezione e bilanciamento dei materiali**
+- **Materiali verdi (ricchi di azoto, umidi)**: scarti di frutta/verdura, erba fresca, fondi di caffè, letame fresco (es. cavallo o pollo).
+- **Materiali marroni (ricchi di carbonio, secchi)**: foglie secche, paglia, cartone non stampato, rametti triturati, segatura non trattata.
+- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Evitare materiali con pesticidi, metalli o plastiche.
 
-1. **Selezione dei materiali**:
-   - **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, letame (es. cavallo o pollo ben decomposto), fondi di caffè.
-   - **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, ramaglie triturate, trucioli di legno.
-   - **Bilanciamento**: rapporto ideale **2:1** (marroni:verdi) per evitare acidità o putrefazione. Esempio: 2 kg di foglie secche + 1 kg di scarti di cucina.
+### **2. Preparazione del cumulo**
+- **Ubicazione**: scegliere un’area ombreggiata e ben drenata in serra, lontano da fonti di calore eccessivo.
+- **Struttura**: creare un cumulo di 1-1.5 m di altezza e larghezza, con base larga per favorire l’aerazione.
+- **Umidità**: il cumulo deve essere umido come una spugna strizzata (60-70% di umidità). Aggiungere acqua se necessario, soprattutto in estate a Caserta.
 
-2. **Preparazione della compostiera**:
-   - Usa una **compostiera a cumulo** (1-1.5 m di altezza) o un **sistema a cassetta** con fondo drenante.
-   - Posiziona la compostiera in **ombra parziale** (evita il sole diretto a Caserta per prevenire essiccazione).
-   - Aggiungi uno strato di **ramaglie grossolane** sul fondo per favorire l’aerazione.
+### **3. Gestione della temperatura e rivoltamenti**
+- **Monitoraggio**: utilizzare un termometro da compost per verificare che la temperatura raggiunga 55-65°C (fase termofila). Se supera i 70°C, aggiungere materiali marroni per raffreddare.
+- **Rivoltamenti**: ogni 2-3 giorni con una forca o pala, per ossigenare il cumulo e uniformare la decomposizione. In estate, ridurre la frequenza a 4-5 giorni per evitare eccessiva perdita di umidità.
+- **Durata**: il compost è pronto quando la temperatura si stabilizza a 30-40°C e il materiale assume un aspetto scuro, friabile e odora di terra umida (3-6 mesi, a seconda delle condizioni).
 
-3. **Gestione del processo**:
-   - **Umidità**: mantieni il cumulo umido come una spugna strizzata (50-60% di umidità). In estate, copri con un telo per evitare evaporazione eccessiva.
-   - **Temperatura**: monitora con un **termometro da compost** (obiettivo: **55-65°C** per 3-5 giorni). Se supera i 70°C, aggiungi materiali marroni e rivolta.
-   - **Rivoltamento**: ogni **2-3 giorni** con una forca, mescolando i materiali per ossigenare e uniformare la decomposizione.
-   - **Tempo di maturazione**: **3-6 mesi** (fino a quando il compost non odora di terra umida e non si distingue più la materia originale).
-
-4. **Test di maturità**:
-   - **Test del sacchetto**: se dopo 7 giorni in un sacchetto chiuso non si formano muffe o odori sgradevoli, il compost è pronto.
-   - **Test delle piantine**: semina crescione o ravanello in una miscela 50% compost/50% terra. Se le piantine crescono vigorose senza bruciature
+### **4. Utilizzo in serra**
+- **Ammendamento**: mescolare il compost maturo (20-30% del volume) al substrato di coltivazione prima della semina o del trapianto.
+- **Pacciamatura**: applicare uno strato di 2-5 cm intorno alle piante per mantenere l’umidità e
