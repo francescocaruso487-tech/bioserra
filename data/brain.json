@@ -1,130 +1,128 @@
 {
-  "lastUpdate": "2026-07-23T06:16:12.000Z",
+  "lastUpdate": "2026-07-24T06:09:41.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a basso voltaggio (3-6V) tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici delle piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare fotosintesi e assorbimento nutritivo, monitorando la risposta entro 48-72 ore [pdf_17, PAG 28].",
-      "Integrare nel Living Soil elementi conduttivi naturali (cenere di legno setacciata e carbone vegetale attivato) per migliorare la conducibilità elettrica del substrato, sfruttando l'umidità ambientale del 57% per ottimizzare la trasmissione delle energie armoniche [Christofleau, brevetto n.529202].",
-      "Effettuare un'ispezione mirata delle foglie inferiori delle autofiorenti per prevenire rischi di oidio, nonostante l'umidità attuale (57%) sia inferiore alla soglia critica (>68%) segnalata nei manuali biodinamici [Manuale Biodinamico Rev.12, §]."
+      "Applicare trattamento elettrocoltura DC a 3V tramite elettrodi di rame/zinco posizionati a 10cm dalle radici di Epsilon F1 (raccolta tra 15gg) per stimolare fotosintesi e assorbimento nutritivo in fioritura [pdf_17, pag. 28].",
+      "Effettuare trattamento biodinamico serale con preparato 501 (silice) su tutte le autofiorenti in fioritura, in prossimità della luna gibbosa crescente, per concentrare zuccheri nei fiori [pdf_13, pag. 2].",
+      "Monitorare umidità fogliare inferiore delle autofiorenti (soglia critica >68%) nonostante l'umidità ambientale attuale sia 59%, per prevenire oidio [Manuale Biodinamico Rev.12, §]."
     ],
-    "briefing_mattutino": "La serra si trova in condizioni termiche e igrometriche ottimali (23.4°C, 57% umidità) per applicare tecniche di elettrocoltura senza stress idrico o termico. Oggi è fondamentale applicare trattamenti elettrici a basso voltaggio sulle piante in fioritura per accelerare la maturazione, mentre le femminizzate in vegetazione richiedono solo monitoraggio. La fase lunare gibbosa crescente (73% illuminazione) è favorevole per operazioni che coinvolgono energie sottili e crescita radicale, come indicato nei principi biodinamici [pdf_85, PAG 39].",
+    "briefing_mattutino": "La serra si trova in fase di fioritura avanzata con tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) a 91-93 giorni e raccolta tra 15-35gg. Le femminizzate sono in fioritura precoce con raccolta tra 140-168gg. Oggi si consiglia di applicare elettrocoltura DC e trattamenti biodinamici serali per ottimizzare la fase di fioritura e prevenire patogeni fungini, sfruttando la luna gibbosa crescente per massimizzare la concentrazione di zuccheri [pdf_17, pdf_13].",
     "consigli_piante": {
-      "autofiorenti": "Applicare elettrocoltura DC (3-6V) con elettrodi di rame/zinco a 10-15 cm dalle radici di Epsilon F1, Milky Way F1, Titan F1, Medusa F1 e Gaia F1 per stimolare la fioritura e ridurre i giorni di raccolta. Monitorare la risposta entro 72 ore.",
-      "femminizzate": "Nessun trattamento specifico oggi per Astro Lemonade F1, Cosmic Cheddar F1, Orbital Banana F1, Royal Gorilla e Mexican Rush. Mantenere solo irrigazione e monitoraggio della crescita vegetativa.",
+      "autofiorenti": "Applicare elettrocoltura DC a 3V su Epsilon F1 (priorità alta per raccolta imminente) e trattamento biodinamico serale con preparato 501 su tutte le autofiorenti. Monitorare umidità fogliare per oidio.",
+      "femminizzate": "Nessuna azione urgente oggi; continuare monitoraggio visivo per patogeni e applicare trattamento biodinamico serale con preparato 501 su tutte le piante.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC (4V) con elettrodi di rame/zinco a 12 cm dalle radici. Irrigare con 500ml di soluzione nutritiva bilanciata (NPK 2-1-3) a pH 6.2. Priorità: alta.",
+          "azione": "Applicare elettrocoltura DC a 3V con elettrodi rame/zinco a 10cm dalle radici, trattamento biodinamico serale con preparato 501, e monitorare umidità fogliare per oidio.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare elettrocoltura DC (5V) con elettrodi di rame/zinco a 10 cm dalle radici. Monitorare la risposta fogliare entro 48 ore. Priorità: media.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio umidità fogliare.",
           "priorita": "media"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare elettrocoltura DC (3V) con elettrodi di rame/zinco a 15 cm dalle radici. Evitare stress idrico. Priorità: media.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio umidità fogliare.",
           "priorita": "media"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Applicare elettrocoltura DC (6V) con elettrodi di rame/zinco a 10 cm dalle radici. Integrare nel suolo 20g di carbone vegetale attivato per migliorare conducibilità. Priorità: alta.",
-          "priorita": "alta"
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio umidità fogliare.",
+          "priorita": "media"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC (4V) con elettrodi di rame/zinco a 12 cm dalle radici. Irrigare con 400ml di acqua a pH 6.5. Priorità: media.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio umidità fogliare.",
           "priorita": "media"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Nessun trattamento specifico. Mantenere irrigazione con 600ml di soluzione leggera (NPK 1-1-2) a pH 6.3. Monitorare crescita vegetativa. Priorità: bassa.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio visivo per patogeni.",
           "priorita": "bassa"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Nessun trattamento specifico. Irrigare con 550ml di acqua a pH 6.4. Priorità: bassa.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio visivo per patogeni.",
           "priorita": "bassa"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Nessun trattamento specifico. Mantenere umidità del suolo al 60%. Priorità: bassa.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio visivo per patogeni.",
           "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Nessun trattamento specifico. Irrigare con 700ml di soluzione nutritiva (NPK 3-1-2) a pH 6.2. Priorità: bassa.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio visivo per patogeni.",
           "priorita": "bassa"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Nessun trattamento specifico. Monitorare crescita e umidità del suolo. Priorità: bassa.",
+          "azione": "Trattamento biodinamico serale con preparato 501 e monitoraggio visivo per patogeni.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Tower of Power Miniaturizzata",
-        "descrizione": "Applicare un campo elettromagnetico a bassa frequenza (1-10Hz) tramite una bobina di rame avvolta intorno al vaso delle piante in fioritura (Epsilon, Medusa) per 2 ore al giorno (10:00-12:00), utilizzando una batteria da 9V come fonte. Questo metodo, ispirato ai principi della 'Tower of Power', può accelerare la maturazione dei fiori senza stress termico.",
-        "fonte": "[pdf_17, PAG 45]",
+        "nome": "Elettrocoltura DC a basso voltaggio",
+        "descrizione": "Applicare una corrente continua a 3V tramite elettrodi di rame (anodo) e zinco (catodo) posizionati a 10cm dalle radici delle piante in fioritura. Durata: 2 ore al mattino (08-10) per stimolare fotosintesi e assorbimento nutritivo. Verificare che gli elettrodi non tocchino le radici per evitare danni.",
+        "fonte": "[pdf_17, pag. 28]",
         "materiali": [
-          "bobina di rame (100 spire, diametro 15cm)",
-          "batteria 9V",
-          "cavi isolati",
-          "timer meccanico"
+          "Elettrodi rame/zinco",
+          "Cavo elettrico isolato",
+          "Alimentatore DC 3V",
+          "Timer"
         ],
-        "difficolta": "media"
+        "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "La temperatura di 23.4°C e umidità del 57% rappresentano condizioni ideali per l'elettrocoltura, come dimostrato da Christofleau (1920), poiché l'equilibrio tra conducibilità del suolo e attività metabolica delle piante massimizza la risposta ai trattamenti elettrici.",
-      "La fase lunare gibbosa crescente (73% illuminazione) è favorevole per operazioni che coinvolgono energie sottili nei vegetali, come indicato nei principi biodinamici [pdf_85, PAG 39]."
+      "L'elettrocoltura naturale può aumentare la produzione di terpeni e cannabinoidi nelle piante in fioritura, come dimostrato da studi su correnti a basso voltaggio [pdf_85, pag. 69].",
+      "La luna gibbosa crescente (73% illuminazione) è ideale per trattamenti biodinamici che mirano a concentrare zuccheri nei fiori, migliorando la qualità e il peso secco delle infiorescenze [pdf_13, pag. 2]."
     ],
     "avvisi": [
-      "Nessun alert critico attuale, ma monitorare umidità fogliare inferiore per prevenire oidio nonostante le condizioni attuali siano sotto la soglia critica (>68%) [Manuale Biodinamico Rev.12, §].",
-      "Le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) richiedono attenzione prioritaria per l'applicazione di elettrocoltura, con raccolta imminente in 16-36 giorni."
+      "Monitorare umidità fogliare delle autofiorenti nonostante l'umidità ambientale sia 59%, per prevenire oidio [Manuale Biodinamico Rev.12, §].",
+      "Epsilon F1 ha raccolta tra 15gg: priorità assoluta per trattamenti elettrocoltura e monitoraggio patogeni."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare elettrocoltura DC (3-6V) sulle autofiorenti in fioritura (Epsilon, Medusa priorità alta; Milky Way, Titan, Gaia priorità media). Integrare carbone vegetale attivato nel suolo di Medusa. Irrigare tutte le piante con soluzioni nutritive bilanciate (pH 6.2-6.5). Ispezione visiva per oidio sulle foglie inferiori.",
-      "pomeriggio": "12:00-18:00: Evitare ore calde (>30°C non previste oggi). Applicare la tecnica 'Tower of Power Miniaturizzata' su Epsilon e Medusa per 2 ore (10:00-12:00 già completato). Monitorare risposta delle piante ai trattamenti elettrici. Mantenere umidità del suolo al 60-70%.",
-      "sera": "18:00-21:00: Verifica finale dei trattamenti elettrici applicati. Registrare dati di risposta (cambiamenti fogliari, crescita radicale). Pianificare domani: possibile applicazione di elettrocoltura sulle femminizzate in vegetazione se risposta positiva sulle autofiorenti."
+      "mattina": "07-08: Verifica umidità suolo e foglie delle autofiorenti. 08-10: Applicazione elettrocoltura DC a 3V su Epsilon F1. 10-12: Trattamento fogliare preventivo con bicarbonato di potassio (0.5%) su tutte le autofiorenti per oidio.",
+      "pomeriggio": "12-15: Monitoraggio visivo delle piante, raccolta dati umidità fogliare. 15-18: Applicazione trattamenti biodinamici serali (preparato 501) su tutte le piante, evitando ore calde (>30.5°C max domani).",
+      "sera": "18-21: Applicazione finale trattamento biodinamico serale, verifica elettrocoltura su Epsilon F1, e registrazione dati serra."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, con radici storiche nel lavoro di Justin Etienne Christofleau (brevetti dal 1920).",
-        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici accelera la crescita e migliora la salute delle colture.",
-        "Le proprietà dell'elettricità nei vegetali sono distinte da quelle tradizionali, con effetti misurabili sulla fisiologia delle piante.",
-        "La pre-germinazione dei semi con trattamenti elettrici rivitalizza materiali deboli e potenzia la germinazione.",
-        "Sistemi avanzati come la 'Tower of Power' utilizzano principi elettromagnetici per applicazioni su larga scala in agricoltura."
+        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, con applicazioni basate su principi magnetici e correnti elettriche a basso voltaggio.",
+        "L'uso di elettrodi nel suolo vicino alle radici, con corrente continua (DC) a basso voltaggio, stimola la crescita e la salute delle colture, come dimostrato da esperimenti scientifici.",
+        "La pre-trattamento elettrico dei semi (rivitalizzazione) potenzia la germinazione e rinforza le piante sin dalle fasi iniziali.",
+        "L'elettricità nei vegetali non si limita alle proprietà note, ma include fenomeni come esalazioni idioelettriche che influenzano la fisiologia delle piante.",
+        "Sistemi avanzati come la 'Tower of Power' possono essere utilizzati per applicare principi elettromagnetici su larga scala, anche in serra."
       ],
-      "consiglio_elettro_da_testi": "Applicare corrente continua (DC) a basso voltaggio (1.5-9V) tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici delle piante in fioritura/vegetazione. Questo metodo, descritto nel manuale [pdf_17] (PAG 28), stimola l'assorbimento nutritivo e la fotosintesi. Monitorare la risposta delle piante entro 48-72 ore.",
-      "consiglio_suolo_da_testi": "Integrare nel suolo Living Soil elementi conduttivi naturali (cenere di legno, carbone vegetale) per migliorare la conducibilità elettrica del substrato. Questo approccio, suggerito indirettamente da Christofleau (brevetto n.529202), facilita la trasmissione delle energie armoniche tra suolo e radici, soprattutto in condizioni di umidità del 57% come oggi.",
-      "consiglio_biodinamica_da_testi": "Sincronizzare le operazioni di elettrocoltura con le fasi lunari favorevoli alla crescita radicale (luna crescente o piena), come indicato nei principi biodinamici. Il manuale [pdf_85] (PAG 39) sottolinea l'importanza delle energie sottili nei vegetali, che possono essere amplificate da trattamenti elettrici durante questi periodi.",
-      "scoperta_del_giorno": "La temperatura di 23.4°C e umidità del 57% rappresentano condizioni ideali per applicare elettrocoltura senza rischio di stress idrico o termico. Christofleau (1920) dimostrò che a queste condizioni termiche e igrometriche, l'elettrocoltura massimizza la risposta delle piante grazie all'equilibrio tra conducibilità del suolo e attività metabolica.",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (es. 1.5-9V) tramite elettrodi di rame/zinco posizionati vicino alle radici delle piante in fioritura, per stimolare l'assorbimento nutritivo e la fotosintesi. [pdf_17, pag. 28]",
+      "consiglio_suolo_da_testi": "Integrare nel suolo Living Soil microrganismi benefici (funghi micorrizici, batteri azotofissatori) e sostanza organica decomposta per migliorare la conducibilità elettrica naturale e la struttura del terreno. [pdf_85, pag. 39]",
+      "consiglio_biodinamica_da_testi": "Effettuare trattamenti biodinamici (es. preparati 500 e 501) nelle ore serali o notturne, in prossimità della luna calante, per favorire la fioritura e la concentrazione di zuccheri nei fiori. [pdf_13, pag. 2]",
+      "scoperta_del_giorno": "L'elettricità nei vegetali non è solo un fenomeno passivo, ma può essere attivamente modulata per influenzare la fisiologia delle piante, come dimostrato dagli studi di Cyril William Legg e dagli esperimenti con correnti a basso voltaggio. [pdf_85, pag. 69]",
       "tecnica_da_provare": {
-        "nome": "Trattamento di pre-germinazione elettrica",
-        "descrizione": "Immergere i semi delle colture in fioritura/vegetazione in una soluzione acquosa con elettrodi di rame e zinco collegati a una batteria da 3V per 12-24 ore prima della semina. Questo processo, descritto nel manuale [pdf_327], rivitalizza semi deboli e accelera la germinazione. Applicare oggi su semi di pomodoro o basilico in serra.",
-        "fonte": "[pdf_327]",
+        "nome": "Elettrocoltura con elettrodi a corrente continua (DC) per piante in fioritura",
+        "descrizione": "Posizionare due elettrodi (rame e zinco) nel suolo vicino alle radici delle piante in fioritura, collegandoli a una batteria da 3-6V. Mantenere la corrente per 2-4 ore al giorno, preferibilmente nelle ore più fresche (mattina presto o sera). Monitorare la risposta delle piante in termini di vigore e qualità dei fiori.",
+        "fonte": "[pdf_17, pag. 51]",
         "materiali": [
-          "Semi da trattare",
-          "Contenitore non metallico",
-          "Acqua demineralizzata (500ml)",
-          "Elettrodi in rame e zinco (2x2cm)",
-          "Batteria da 3V (tipo CR2032)",
-          "Fili elettrici con pinze a coccodrillo",
-          "Timer"
+          "Elettrodi in rame e zinco (dimensione 10-15 cm)",
+          "Batteria da 3-6V (o pannello solare miniaturizzato)",
+          "Cavi elettrici isolati",
+          "Timer o interruttore manuale",
+          "Multimetro per monitorare la corrente"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "ottimale",
-      "irrigazione": "Irrigare oggi con 400-700ml di soluzione nutritiva (a seconda della dimensione della pianta) a pH 6.2-6.5. Mantenere umidità del suolo al 60-70% per evitare stress idrico. Le autofiorenti in fioritura richiedono leggermente più acqua per supportare la crescita dei fiori.",
-      "nutrizione": "Applicare soluzioni nutritive bilanciate (NPK 2-1-3 per autofiorenti in fioritura; NPK 1-1-2 per femminizzate in vegetazione). Nessuna integrazione di micronutrienti oggi.",
+      "stato_generale": "fioritura avanzata, monitoraggio patogeni",
+      "irrigazione": "Oggi irrigare al mattino presto (06-07) con 1.2L/mq per autofiorenti e 1.5L/mq per femminizzate, riducendo del 20% rispetto al giorno precedente per evitare stress idrico in fioritura avanzata.",
+      "nutrizione": "Water-only oggi; evitare nutrienti aggiuntivi per non interferire con la concentrazione di zuccheri indotta dai trattamenti biodinamici.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -132,39 +130,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Sfruttare la fase lunare per applicare trattamenti elettrici sulle piante in fioritura, poiché l'energia sotterranea è amplificata durante la luna crescente [pdf_85, PAG 39]."
+        "consiglio": "Effettuare trattamenti biodinamici serali per massimizzare l'assorbimento dei preparati e la concentrazione di zuccheri nei fiori [pdf_13, pag. 2]."
       },
-      "ore_luce": 14.7
+      "ore_luce": 14.6
     },
     "elettro": {
       "verifica_oggi": [
-        "Controllare il corretto posizionamento degli elettrodi di rame/zinco (10-15 cm dalle radici) e la stabilità della connessione elettrica.",
-        "Monitorare la temperatura degli elettrodi per evitare surriscaldamento (massimo 30°C)."
+        "Verificare integrità degli elettrodi rame/zinco su Epsilon F1 e assenza di corrosione.",
+        "Controllare che la corrente DC a 3V sia stabile durante l'applicazione mattutina."
       ],
-      "ottimizzazione": "Utilizzare voltaggi differenziati (3-6V) in base alla risposta delle piante: voltaggi più bassi per piante sensibili (Titan, Gaia), più alti per piante vigorose (Medusa, Epsilon) [pdf_17, PAG 28]."
+      "ottimizzazione": "Posizionare gli elettrodi a 10cm dalle radici per ottimizzare la stimolazione elettromagnetica senza danneggiare il sistema radicale [pdf_17, pag. 28]."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Tower of Power Miniaturizzata",
-      "descrizione": "Applicare un campo elettromagnetico a bassa frequenza (1-10Hz) tramite una bobina di rame avvolta intorno al vaso delle piante in fioritura (Epsilon, Medusa) per 2 ore al giorno (10:00-12:00), utilizzando una batteria da 9V come fonte. Questo metodo, ispirato ai principi della 'Tower of Power', può accelerare la maturazione dei fiori senza stress termico.",
-      "fonte": "[pdf_17, PAG 45]",
+      "nome": "Elettrocoltura DC a basso voltaggio",
+      "descrizione": "Applicare una corrente continua a 3V tramite elettrodi di rame (anodo) e zinco (catodo) posizionati a 10cm dalle radici delle piante in fioritura. Durata: 2 ore al mattino (08-10) per stimolare fotosintesi e assorbimento nutritivo. Verificare che gli elettrodi non tocchino le radici per evitare danni.",
+      "fonte": "[pdf_17, pag. 28]",
       "materiali": [
-        "bobina di rame (100 spire, diametro 15cm)",
-        "batteria 9V",
-        "cavi isolati",
-        "timer meccanico"
+        "Elettrodi rame/zinco",
+        "Cavo elettrico isolato",
+        "Alimentatore DC 3V",
+        "Timer"
       ],
-      "difficolta": "media"
+      "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Nessun alert critico attuale, ma monitorare umidità fogliare inferiore per prevenire oidio nonostante le condizioni attuali siano sotto la soglia critica (>68%) [Manuale Biodinamico Rev.12, §].",
-    "Le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) richiedono attenzione prioritaria per l'applicazione di elettrocoltura, con raccolta imminente in 16-36 giorni."
+    "Monitorare umidità fogliare delle autofiorenti nonostante l'umidità ambientale sia 59%, per prevenire oidio [Manuale Biodinamico Rev.12, §].",
+    "Epsilon F1 ha raccolta tra 15gg: priorità assoluta per trattamenti elettrocoltura e monitoraggio patogeni."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a basso voltaggio (3-6V) tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici delle piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare fotosintesi e assorbimento nutritivo, monitorando la risposta entro 48-72 ore [pdf_17, PAG 28].",
-    "Integrare nel Living Soil elementi conduttivi naturali (cenere di legno setacciata e carbone vegetale attivato) per migliorare la conducibilità elettrica del substrato, sfruttando l'umidità ambientale del 57% per ottimizzare la trasmissione delle energie armoniche [Christofleau, brevetto n.529202].",
-    "Effettuare un'ispezione mirata delle foglie inferiori delle autofiorenti per prevenire rischi di oidio, nonostante l'umidità attuale (57%) sia inferiore alla soglia critica (>68%) segnalata nei manuali biodinamici [Manuale Biodinamico Rev.12, §]."
+    "Applicare trattamento elettrocoltura DC a 3V tramite elettrodi di rame/zinco posizionati a 10cm dalle radici di Epsilon F1 (raccolta tra 15gg) per stimolare fotosintesi e assorbimento nutritivo in fioritura [pdf_17, pag. 28].",
+    "Effettuare trattamento biodinamico serale con preparato 501 (silice) su tutte le autofiorenti in fioritura, in prossimità della luna gibbosa crescente, per concentrare zuccheri nei fiori [pdf_13, pag. 2].",
+    "Monitorare umidità fogliare inferiore delle autofiorenti (soglia critica >68%) nonostante l'umidità ambientale attuale sia 59%, per prevenire oidio [Manuale Biodinamico Rev.12, §]."
   ]
 }
