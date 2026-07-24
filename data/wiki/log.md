@@ -176,3 +176,9 @@
 - PDF nella knowledge base: 341
 - Concetti: 20
 
+## [2026-07-24 07:36 UTC] aggiornamento
+- Pagine aggiornate: 16
+- Errori: 0 (nessuno)
+- PDF nella knowledge base: 341
+- Concetti: 15
+
