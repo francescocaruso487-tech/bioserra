@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-23
+aggiornato: 2026-07-24
 pdf_count: 10
 ---
 
@@ -12,29 +12,29 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’equilibrio ecosistemico, dove la prevenzione e la gestione delle infestazioni avvengono senza l’uso di sintetiche chimiche. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo), dove la biodiversità microbica e faunistica agisce come regolatore naturale delle popolazioni di parassiti. Il meccanismo d’azione si fonda sulla **resilienza ecologica**: piante sane, coltivate in suoli ricchi di humus e microrganismi benefici, sviluppano meccanismi di difesa intrinseci (es. produzione di terpeni repellenti). Inoltre, l’introduzione di **predatori naturali** (acari, coccinelle, nematodi entomopatogeni) o l’uso di repellenti botanici (olio di neem, piretro) interrompe il ciclo vitale dei parassiti senza alterare l’equilibrio dell’agroecosistema.
+Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’equilibrio ecologico, dove la prevenzione e la gestione delle infestazioni avvengono senza l’uso di sostanze chimiche sintetiche. Questo approccio si fonda sulla comprensione che un agroecosistema sano, come il **Living Soil** (suolo vivente), ospita una biodiversità microbica e faunistica in grado di autoregolarsi. I parassiti, infatti, tendono a proliferare in condizioni di squilibrio, ad esempio quando il suolo è impoverito di microrganismi benefici o quando le piante sono stressate da carenze nutrizionali. L’obiettivo è quindi **rafforzare la resilienza delle colture** attraverso pratiche che favoriscono la salute del suolo e la presenza di **insetti utili** (es. acari predatori, coccinelle, lacewings), i quali agiscono come agenti di controllo biologico naturale.
 
-Questa metodologia è particolarmente efficace in serra outdoor, dove l’ambiente controllato consente di ottimizzare le condizioni per la proliferazione di organismi utili. La chiave del successo risiede nella **prevenzione attiva**: monitoraggi costanti, applicazione di principi attivi naturali a basso impatto e creazione di habitat favorevoli per i nemici naturali dei parassiti. L’elettrocultura, con l’uso di spirali di rame o circuiti Lakhovsky, può ulteriormente potenziare questo sistema, stimolando la crescita microbica e la resistenza delle piante tramite campi elettromagnetici a bassa frequenza.
+Il meccanismo d’azione si basa su tre pilastri:
+1. **Prevenzione**: Mantenere un suolo ricco di humus e microrganismi antagonisti (es. *Trichoderma*, *Bacillus*) riduce la suscettibilità delle piante agli attacchi.
+2. **Intervento mirato**: L’uso di repellenti naturali (es. olio di neem, piretro vegetale) o l’introduzione di predatori specifici (es. *Phytoseiulus persimilis* contro gli acari) agisce solo quando necessario, senza alterare l’equilibrio.
+3. **Monitoraggio costante**: L’ispezione quotidiana delle piante consente di intervenire tempestivamente, prima che un’infestazione diventi critica. Questo approccio è in linea con i principi dell’**elettrocultura**, che sfrutta campi elettromagnetici a bassa frequenza per stimolare la risposta immunitaria delle piante e la decomposizione microbica del suolo ([pdf_7]).
 
 ---
 
 ## Come si applica in serra
 
-1. **Ispezione quotidiana**
-   - Controllare **foglie (soprattutto sottofronte)**, steli e substrato per individuare uova, larve o adulti di parassiti (afidi, acari, tripidi).
-   - Utilizzare una **lente d’ingrandimento** e una **trappola gialla adesiva** per monitorare gli insetti volanti.
+### **Fase di Vegetazione**
+1. **Ispezione quotidiana**:
+   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** (dove si annidano afidi, acari o cocciniglie).
+   - Usa una **lente di ingrandimento** per identificare uova o larve di parassiti.
+   - *Strumento utile*: Applica un **tappeto adesivo giallo** (trappola cromotropica) per monitorare moscerini e afidi.
 
-2. **Prevenzione con olio di neem**
-   - Diluire **5–10 ml di olio di neem puro** in 1 litro d’acqua con un tensioattivo (es. sapone di potassio al 2%).
-   - Applicare con **irroratore a pressione** ogni **7 giorni** (o dopo pioggia), nebulizzando uniformemente su tutta la chioma.
-   - *Nota*: Evitare l’uso in fioritura per non alterare il profilo aromatico delle piante.
+2. **Prevenzione con olio di neem**:
+   - Diluizione: **5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) per 1 litro d’acqua**.
+   - Applicazione: **Ogni 7 giorni** (o dopo pioggia) con nebulizzatore a bassa pressione, preferibilmente al tramonto per evitare ustioni fogliari.
+   - *Effetto*: L’azadiractina (principio attivo) agisce come **repellente, antifeedant e regolatore della crescita** degli insetti, senza uccidere gli insetti utili.
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari, *Amblyseius andersoni* per tripidi): rilasciare alla dose di **2–5 individui/mq** in caso di infestazione iniziale.
-   - **Coccinelle** (*Coccinella septempunctata*): posizionare **5–10 adulti/pianta** in serra, preferibilmente al tramonto.
-   - **Nematodi entomopatogeni** (*Steinernema feltiae*): applicare in soluzione acquosa al suolo (1 milione di nematodi/100 mq) per combattere larve di lepidotteri.
-
-4. **Barriere fisiche e repellenti**
-   - **Reti anti-insetto** (maglia 0.6 mm) su aperture della serra per impedire l’ingresso di afidi e moscerini.
-   - **Piante trappola**: coltivare **tagete** o **basilico** ai bordi della serra per attirare parassiti lontano dalle colture principali.
-   - **Spruzzature di ortica o equiseto**: preparare un macerato (1 kg di pianta fres
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari rossi, *Amblyseius andersoni* per i tripidi): Rilascia **2–5 individui per m²** in caso di infestazione iniziale.
+   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **nidi artificiali** o pianta **fieno greco** (*Trigonella foenum-graecum*) come attrattivo.
+   - *Consiglio*: Evita di applicare insetticidi chimici 15 giorni prima del rilascio
