@@ -1,276 +1,99 @@
 === Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 44/116 ===
-Chars: 43,783 | Offset: 1,899,774
-
-
-
-[PAG 974]
+Tradotto in italiano da: ALTRO | Script: traduci_testi.py
+**[PAG 974]**
 X-124
-  IMPIANTI ELETTRICI 
-Tab. X.7.16   Correnti e tensioni d'impiego di contattori BT per c.a. 50-60 Hz (produzione
-ABB)
-Serie del
-contattore
-Correnti d'impiego (A) in AC3,
-per a  55 °C e tensioni d'impiego di:
-Correnti d'impiego (A) in AC1, per tem-
-peratura ambiente a pari a:
-220-230 V
-380-400 V
-500 V
-a  40 °C
-a  55 °C
-a  70 °C
-A 9
-A 12
-A 16
-A 26
-A 30
-A 40
-A 50
-A 63
-A 75
-A 95
-A 110
-A 145
-A 185
-A 210
-A 260
-A 300
-9
-12
-17
-26
-33
-40
-53
-65
-75
-96
-110
-145
-185
-210
-260
-305
-9
-12
-17
-26
-32
-37
-50
-65
-75
-96
-110
-145
-185
-210
-260
-305
-9
-12
-14
-22
-28
-33
-45
-55
-65
-80
-100
-145
-170
-210
-240
-280
-25
-27
-30
-45
-55
-60
-100
-115
-125
-145
-160
-250
-275
-350
-400
-500
-22
-25
-27
-40
-55
-60
-85
-95
-105
-135
-145
-230
-250
-300
-350
-400
-18
-20
-23
-32
-39
-42
-70
-80
-85
-115
-130
-180
-180
-240
-290
-325
-Tab. X.7.17   Caratteristiche tecniche di contattori sotto vuoto per sistemi in c.a. con
-tensioni 7,2 kV e 12 kV (produzione ABB)
-Serie
-V7
-V12
-Tensione nominale e di isolamento (kV)
-7,2
-12
-Tensione di tenuta a 50 Hz
-20
-28
-Frequenza nominale
-50-60
-50-60
-Corrente nominale d'impiego in categoria AC 4 (A)
-400
-400
-Corrente di breve durata per 1 s/30 s (A)
-60002500
-60002500
-Massima sovracorrente ammissibile nominale per 1/2 periodo
-(valore di cresta) (kA)
-55
-55
-Potere d'interruzione nominale (A)
-4000
-4000
-Potere di chiusura (A)
-4000
-4000
-Prestazione limite alla tensione di (kV):
-3,6
-7,2
-12
-1200 manovre orarie
-motori (kW)
-1500
-3000
-5000
-trasformatori (kVA)
-2000
-4000
-5000
-condensatori (kvar)
-1500
-3000
-4800
+IMPIANTI ELETTRICI
 
-[PAG 975]
-IMPIANTI  ELETTRICI                                               X-125
-7.7  Fusibili
-Sono dispositivi per la protezione dalle sovracorrenti, adatti sia per il sovraccarico che
-per il corto circuito, anche se sono più usati per quest'ultimo guasto. Le loro caratteristi-
-che sono stabilite dalle norme CEI emanate dal CT 32.
+Tab. X.7.16 Correnti e tensioni d'impiego di contattori BT per c.a. 50-60 Hz (produzione ABB)
+
+Serie del contattore | Correnti d'impiego (A) in AC3, per θa ≤ 55 °C e tensioni d'impiego di: | Correnti d'impiego (A) in AC1, per temperatura ambiente θa pari a:
+---|---|---
+ | 220-230 V | 380-400 V | 500 V | θa ≤ 40 °C | θa ≤ 55 °C | θa ≤ 70 °C
+A 9 | 9 | 9 | 9 | 9 | 9 | 25
+A 12 | 12 | 12 | 12 | 12 | 12 | 27
+A 16 | 17 | 17 | 14 | 17 | 17 | 30
+A 26 | 26 | 26 | 22 | 26 | 26 | 45
+A 30 | 33 | 32 | 28 | 32 | 33 | 55
+A 40 | 40 | 37 | 33 | 37 | 40 | 60
+A 50 | 53 | 50 | 45 | 50 | 53 | 100
+A 63 | 65 | 65 | 55 | 65 | 65 | 115
+A 75 | 75 | 75 | 65 | 75 | 75 | 125
+A 95 | 96 | 96 | 80 | 96 | 96 | 145
+A 110 | 110 | 110 | 100 | 110 | 110 | 160
+A 145 | 145 | 145 | 145 | 145 | 145 | 250
+A 185 | 185 | 185 | 170 | 185 | 185 | 275
+A 210 | 210 | 210 | 210 | 210 | 210 | 350
+A 260 | 260 | 260 | 240 | 260 | 260 | 400
+A 300 | 305 | 305 | 280 | 305 | 305 | 500
+
+Tab. X.7.17 Caratteristiche tecniche di contattori sotto vuoto per sistemi in c.a. con tensioni 7,2 kV e 12 kV (produzione ABB)
+
+Serie | V7 | V12
+---|---|---
+Tensione nominale e di isolamento (kV) | 7,2 | 12
+Tensione di tenuta a 50 Hz (kV) | 20 | 28
+Frequenza nominale (Hz) | 50-60 | 50-60
+Corrente nominale d'impiego in categoria AC 4 (A) | 400 | 400
+Corrente di breve durata per 1 s/30 s (A) | 6000/2500 | 6000/2500
+Massima sovracorrente ammissibile nominale per 1/2 periodo (valore di cresta) (kA) | 55 | 55
+Potere d'interruzione nominale (A) | 4000 | 4000
+Potere di chiusura (A) | 4000 | 4000
+Prestazione limite alla tensione di (kV):
+3,6 | 1200 manovre orarie
+7,2 | 1500
+12 | 3000
+motori (kW) | 2000 | 3000 | 5000
+trasformatori (kVA) | 1500 | 3000 | 4800
+condensatori (kvar) | 1500 | 3000 | 4800
+
+**[PAG 975]**
+IMPIANTI ELETTRICI X-125
+7.7 Fusibili
+
+Sono dispositivi per la protezione dalle sovracorrenti, adatti sia per il sovraccarico che per il corto circuito, anche se sono più usati per quest'ultimo guasto. Le loro caratteristiche sono stabilite dalle norme CEI emanate dal CT 32.
+
 Si citano per esempio:
-–  la norma CEI EN 60269-1 (CEI 32-1) Fusibili a tensione non superiore a 1000 V
-per corrente alternata e a 1500 V per corrente continua Parte 1: Prescrizioni generali;
-–  la norma CEI EN 60282-1 (CEI 32-3) Fusibili a tensione superiore a 1000 V Parte
-1: Fusibili limitatori di corrente;
-–  la norma CEI EN 60269-4 (CEI 32-7) Fusibili a tensione non superiore a 1000 V
-per corrente alternata e a 1500 V per corrente continua Parte 4: Prescrizioni supplementari
-per le cartucce per la protezione di dispositivi a semiconduttori;
-–  la norma CEI EN 60691 (CEI 32-9) Protettori termici Prescrizioni e guida applica-
-tiva;
-–  la norma CEI EN 60644 (CEI 32-11) Specifica per i fusibili ad alta tensione utiliz-
-zati nei circuiti di motori;
-–  la norma CEI 32-15 Fusibili a tensione non superiore a 1000 V per corrente alter-
-nata e a 1500 V per corrente continua Coordinamento tra fusibili e contattori/avviatori
-Guida di applicazione.
-I fusibili vengono collegati in serie al conduttore che devono proteggere e il loro inter-
-vento si ha quando la corrente, superando il valore nominale, provoca la fusione dell'ele-
-mento fusibile, interrompendo il circuito.
+- la norma CEI EN 60269-1 (CEI 32-1) *Fusibili a tensione non superiore a 1000 V per corrente alternata e a 1500 V per corrente continua Parte 1: Prescrizioni generali*;
+- la norma CEI EN 60282-1 (CEI 32-3) *Fusibili a tensione superiore a 1000 V Parte 1: Fusibili limitatori di corrente*;
+- la norma CEI EN 60269-4 (CEI 32-7) *Fusibili a tensione non superiore a 1000 V per corrente alternata e a 1500 V per corrente continua Parte 4: Prescrizioni supplementari per le cartucce per la protezione di dispositivi a semiconduttori*;
+- la norma CEI EN 60691 (CEI 32-9) *Protettori termici Prescrizioni e guida applicativa*;
+- la norma CEI EN 60644 (CEI 32-11) *Specifica per i fusibili ad alta tensione utilizzati nei circuiti di motori*;
+- la norma CEI 32-15 *Fusibili a tensione non superiore a 1000 V per corrente alternata e a 1500 V per corrente continua Coordinamento tra fusibili e contattori/avviatori Guida di applicazione*.
+
+I fusibili vengono collegati in serie al conduttore che devono proteggere e il loro intervento si ha quando la corrente, superando il valore nominale, provoca la fusione dell'elemento fusibile, interrompendo il circuito.
+
 Caratteristica d'intervento
-I fusibili hanno una caratteristica d'intervento tipicamente a tempo inverso, con il tempo
-di intervento che diminuisce all'aumentare della corrente (Fig. X.7.13).
-Fig. X.7.13   Curve d'intervento medie di fusibili tipo gG (o gI) e aM (Legrand).
-1
-2
-4
-6 8 12 20
-40
-32
-50
-125
-100
-(A) aM
-104
-2
-3
-5
-10
-50
-100
-1000
-t (s)
-I (A)
-4
-2
-103
-4
-2
-102
-4
-2
-101
-4
-2
-100
-4
-2
-101
-4
-2
-102
-4
-4
-2
-3 4
-500
-2
-3 4
-5000
-2
-3 4
-16
-10
-25
-62
-1
-2
-4
-6
-8
-12
-32
-10
-16
-25
-125
+
+I fusibili hanno una caratteristica d'intervento tipicamente a tempo inverso, con il tempo di intervento che diminuisce all'aumentare della corrente (Fig. X.7.13).
+
+Fig. X.7.13 Curve d'intervento medie di fusibili tipo gG (o gI) e aM (Legrand).
+
+I (A) | t (s)
+---|---
+1 | 10⁻²
+2 | 10⁻¹
+3 | 10⁰
+4 | 10¹
+5 | 10²
+6 | 10³
+8 | 10⁴
+12 | 10⁵
+16 | 10⁶
+20 | 10⁷
+25 | 10⁸
+32 | 10⁹
+40 | 10¹⁰
+50 | 10¹¹
+62 | 10¹²
+100 | 10¹³
+125 | 10¹⁴
+160 | 10¹⁵
+200 | 10¹⁶
+250 | 10¹⁷
+320 | 10¹⁸
+400 | 10¹⁹
+500 | 10²⁰
+630 |
 100
 80
 20
@@ -279,21 +102,17 @@ I (A)
 40
 (A) gI
 
-[PAG 976]
+[PAG. 976]
 X-126
-  IMPIANTI ELETTRICI 
-Categoria d'uso e campo d'interruzione
-In base alla categoria d'uso e al campo d'interruzione i fusibili vengono classificati
-come indicato nella Tab. X.7.18.
-La differenza tra un fusibile a pieno campo e uno a campo ridotto è mostrata nella Fig.
-X.7.14. Il fusibile di tipo g è costruito per interrompere correnti di corto circuito presunte
-Ip a partire dal valore nominale In, mentre i fusibili a campo ridotto sono costruiti in modo
-da intervenire solo per correnti superiori a In, ossia per IpIn = k2   1. Sono adatti alla pro-
-tezione dei motori elettrici in quanto, non intervenendo per un campo di correnti da In a
-k2 In, non interrompono la corrente di spunto che si ha durante l’avviamento del motore.
+  IMPIANTI ELETTRICI
+Categoria d’uso e campo d’interruzione
+In base alla categoria d’uso e al campo d’interruzione i fusibili vengono classificati come indicato nella Tab. X.7.18.
+La differenza tra un fusibile a pieno campo e uno a campo ridotto è mostrata nella Fig. X.7.14. Il fusibile di tipo g è costruito per interrompere correnti di corto circuito presunte Ip a partire dal valore nominale In, mentre i fusibili a campo ridotto sono costruiti in modo da intervenire solo per correnti superiori a In, ossia per Ip/In = k2 > 1. Sono adatti alla protezione dei motori elettrici in quanto, non intervenendo per un campo di correnti da In a k2 In, non interrompono la corrente di spunto che si ha durante l’avviamento del motore.
 Fig. X.7.14   Confronto tra le caratteristiche di fusibili tipo g e a.
+
 Correnti convenzionali di intervento e di non intervento
 Per i fusibili valgono i valori della Tab. X.7.19.
+
 Tab. X.7.18   Classificazione dei fusibili BT (norma CEI 32-1)
 Categoria d’uso
 Campo di interruzione
@@ -305,29 +124,30 @@ gM
 a (campo ridotto)
 /
 aM
-Tab. X.7.19   Valori dei rapporti InfIn e IfIn e del tempo convenzionale tc per fusibili gG
-e aM
+
+Tab. X.7.19   Valori dei rapporti Inf/In e If/In e del tempo convenzionale tc per fusibili gG e aM
 Corrente nominale In (A)
 Corrente convenzionale
 Tempo convenzionale tc (h)
-Inf In
-If In
-In  63
+Inf/In
+If/In
+In ≤ 63
 1,25
 1,6
 1
-63 < In  160
+63 < In ≤ 160
 1,25
 1,6
 2
-160 < In  400
+160 < In ≤ 400
 1,25
 1,6
 3
-400 < In 
+In > 400
 1,25
 1,6
 4
+
 1
 10
 100
@@ -336,43 +156,31 @@ a
 0,1
 1
 10
-102
-103
+10²
+10³
 t(s)
-IpIn
+Ip/In
 
-[PAG 977]
-IMPIANTI  ELETTRICI                                               X-127
+[PAG. 977]
+IMPIANTI ELETTRICI                                               X-127
 Energia specifica passante
-Per i fusibili l'energia termica specifica che fluisce prima della interruzione della
-sovracorrente (integrale di Joule) parte da un valore massimo (detto impulso termico mas-
-simo) e diminuisce all'aumentare della corrente di corto circuito, tendendo a un valore
-pressoché costante (Fig. X.7.15).
+Per i fusibili l’energia termica specifica che fluisce prima dell’interruzione della sovracorrente (integrale di Joule) parte da un valore massimo (detto impulso termico massimo) e diminuisce all’aumentare della corrente di corto circuito, tendendo a un valore pressoché costante (Fig. X.7.15).
 Fig. X.7.15   Energia specifica passante in funzione del valore efficace della Icc simmetrica.
+
 Caratteristica di limitazione
-I fusibili hanno la particolarità di limitare la corrente di corto circuito in quanto
-durante il loro intervento la corrente varia secondo il grafico indicativo di Fig. X.7.16.
-Fig. X.7.16   Andamento qualitativo della corrente durante l'intervento di un fusibile.
-Dopo il tempo di prearco tp durante il quale vi è la fase di riscaldamento fino alla tem-
-peratura di fusione, si sviluppa l'arco elettrico che si estingue dopo il tempo d'arco ta; in
-questo intervallo, a causa del notevole aumento della resistenza elettrica del mezzo in cui
-si sviluppa l'arco, la corrente diminuisce dal valore Il (corrente limitata) a zero, secondo
-l'andamento della curva tratteggiata, e non raggiunge mai il valore di cresta Icr della cor-
-rente di corto circuito presunta. Si definisce fattore di limitazione il rapporto Kl = IlIcr; il
-suo valore è compreso tra 0,15 e 0,30. Per effetto della limitazione, il valore di picco non
-è più legato a quello efficace della componente simmetrica dalla relazione Ip = KcrIs, ma
-assume valori inferiori. Si definisce caratteristica di limitazione il grafico che lega il
-valore di picco Ip della corrente limitata al valore efficace Is della componente simmetrica
-della corrente presunta di corto circuito (Fig. X.7.17).
+I fusibili hanno la particolarità di limitare la corrente di corto circuito in quanto durante il loro intervento la corrente varia secondo il grafico indicativo di Fig. X.7.16.
+Fig. X.7.16   Andamento qualitativo della corrente durante l’intervento di un fusibile.
+
+Dopo il tempo di prearco tp durante il quale vi è la fase di riscaldamento fino alla temperatura di fusione, si sviluppa l’arco elettrico che si estingue dopo il tempo d’arco ta; in questo intervallo, a causa del notevole aumento della resistenza elettrica del mezzo in cui si sviluppa l’arco, la corrente diminuisce dal valore Il (corrente limitata) a zero, secondo l’andamento della curva tratteggiata, e non raggiunge mai il valore di cresta Icr della corrente di corto circuito presunta. Si definisce fattore di limitazione il rapporto Kl = Il/Icr; il suo valore è compreso tra 0,15 e 0,30. Per effetto della limitazione, il valore di picco non è più legato a quello efficace della componente simmetrica dalla relazione Ip = KcrIs, ma assume valori inferiori. Si definisce caratteristica di limitazione il grafico che lega il valore di picco Ip della corrente limitata al valore efficace Is della componente simmetrica della corrente presunta di corto circuito (Fig. X.7.17).
+
 10
-102
-103
+10²
+10³
 Icc (A)
-103
-102
-(kA2 s)
-i2 td
-
+10³
+10²
+(kA²s)
+∫i²dt
 Icc
 Icr
 Il
@@ -382,13 +190,14 @@ ti
 0
 t
 
-[PAG 978]
+[PAG. 978]
 X-128
-  IMPIANTI ELETTRICI 
-Fig. X.7.17   Caratteristiche di limitazione di fusibili a coltello classe gG per coscc = 0,1
-(Kcr = 2,5).
+  IMPIANTI ELETTRICI
+Fig. X.7.17   Caratteristiche di limitazione di fusibili a coltello classe gG per cosφcc = 0,1 (Kcr = 2,5).
+
 Fig. X.7.18   Caratteristica di limitazione di interruttori automatici magnetotermici della
 serie Isomax S, per un fattore di cresta pari a 2 (coscc = 0,3) (produzione ABB).
+
 0,1
 0,5
 1
@@ -407,6 +216,7 @@ serie Isomax S, per un fattore di cresta pari a 2 (coscc = 0,3) (produzione A
 3
 4
 6789
+
 corrente di corto circuito presunta in kA eff.
 0,1
 0,5
@@ -432,6 +242,7 @@ corrente di corto circuito presunta in kA eff.
 50
 2
 2,5 I eff
+
 correnti limitate in kA cresta
 1200
 1000
@@ -453,12 +264,14 @@ correnti limitate in kA cresta
 25
 20
 3
+
 S4 250
 S5
 S6 630
 S6 800
 S7
 S8
+
 5
 10
 50
@@ -473,6 +286,7 @@ S8
 200
 500
 1000
+
 S4 160
 Ip (kA)
 Is (kA)
@@ -481,16 +295,20 @@ Is (kA)
 300
 
 [PAG 979]
-IMPIANTI  ELETTRICI                                               X-129
+IMPIANTI ELETTRICI                                               X-129
+
 Dal grafico si vede, per esempio, che un fusibile con In = 20 A per Is = 2 kA ha una
 Ip = 1,5 kA circa e non di 5 kA di cresta, valore che avrebbe se la corrente non fosse limitata.
 L'effetto di limitazione della corrente di corto circuito può essere ottenuto anche, con
 particolari accorgimenti costruttivi, negli interruttori automatici, con fattore di limitazione
-0,3  0,4; si ottiene anche una riduzione dell'energia specifica passante (interruttori auto-
+0,3 ÷ 0,4; si ottiene anche una riduzione dell'energia specifica passante (interruttori auto-
 matici limitatori). Nella Fig. X.7.18 è riportato un esempio di caratteristica di limitazione.
+
 Caratteristiche tecniche di fusibili BT e MT
+
 Nelle Tabb. X.7.20, X.7.21, X.7.22 e X.7.23 sono riportate le caratteristiche tecniche di
 fusibili per sistemi BT ed MT.
+
 Tab. X.7.20   Fusibili cilindrici tipo gG per applicazioni domestiche e similari (Legrand)
 Corrente nominale
 (A)
@@ -504,456 +322,135 @@ Potere di interruzione
 1-2-4-6-8-10-12-16-20-25-32
 400
 20
+
 Tab. X.7.21   Fusibili cilindrici tipo gG e aM per applicazioni industriali, tensione
 nominale 500 V, potere d'interruzione 100 kA (Legrand)
 Tipo gG
 Tipo aM
 Corrente nominale
 (A)
-Impulso termico massimo 
-per cos cc = 0,1 (kA2 s)
+Impulso termico massimo
+per cos cc = 0,1 (kA² s)
 Corrente nominale
 (A)
-Impulso termico massimo 
-per cos cc = 0,1 (kA2 s)
+Impulso termico massimo
+per cos cc = 0,1 (kA² s)
 2
 4
 6
 8
 10
-12
-16
-20
-25
-32
-40
-50
-63
-80
-100
-125
-0,03
-0,11
-0,20
-0,33
-0,40
-0,70
-1,50
-2,70
-4,50
-7,00
-11 
-17
-27
-65
-100
-160
-0,16
-0,25
-0,50
-0,60
-1
-2
-4
-6
-8
-10
-12
-16
-20
-25
-32
-40
-45
-50
-63
-80
-100
-125
-0,010
-0,012
-0,018
-0,018
-0,020
-0,060
-0,27
-0,60
-1,1
-2,0
-2,8
-4,5
-7,0
-11
-19
-28
-37
-45
-70
-110
-170
-185
-
-[PAG 980]
-X-130
-  IMPIANTI ELETTRICI 
-8  PROTEZIONE DALLE SOVRACORRENTI
-8.1  Protezione delle condutture contro il sovraccarico
-La protezione contro il sovraccarico delle condutture elettriche può essere effettuata
-con interruttori automatici, fusibili e relè termici accoppiati a teleruttori.
-Lo scopo generale della protezione è quello di interrompere le correnti di sovracca-
-rico dei conduttori del circuito prima che tali correnti possano provocare un riscaldamento
-Tab. X.7.22   Fusibili a coltello tipo gG e aM per applicazioni industriali, tensione
-nominale 500 V, potere d'interruzione 100 kA (Legrand)
-Tipo gG
-Tipo aM
-Corrente nominale
-(A)
-Impulso termico massimo 
-per cos cc = 0,1 (kA2 s)
-Corrente nominale
-(A)
-Impulso termico massimo 
-per cos cc = 0,1 (kA2 s)
-16
-20
-25
-32
-36
-40
-50
-63
-80
-100
-125
-160
-200
-250
-315
-400
-500
-630
-800
-1000
-1250
-
-
-5
-7,5
-8,5
-10
-17
-25
-45
-80
-120
-240
-350
-450
-800
-1300
-3200
-5000
-7000
-11000
-18000
-16
-20
-25
-32
-36
-40
-50
-63
-80
-100
-125
-160
-200
-250
-315
-400
-500
-630
-800
-1000
-1250
-4,5
-6,5
-9
-18
-20
-26
-41
-60
-95
-150
-220
-320
-500
-1000
-1700
-2500
-4000
-6000
-9000
-17000
-27000
-Tab. X.7.23   Caratteristiche elettriche di fusibili MT (SIF)
-Tensione 
-nominale 
-(kV)
-Corrente nominale
-(A)
-Potere d'interruzione
-(kA eff.)
-(MVA)
-12
-2-4-6,3-10-16-20-25-30-40
-63-80
-100-125-160
-50
-40
-31,5
-1000
-800
-600
-17,5
-2-4-6,3-10-16-20-25
-30-40-63-80-100
-31,5
-25
-1000
-800
-24
-36
-2-4-6,3-10-16-20-25-30-40-63-80-100
-2-4-6,3-10-16-20-25-30-40
 25
 12,5
 1000
 750
-Nota.  Il valore in MVA è la potenza di corto circuito trifase corrispondente alla tensione nominale
-e al potere d'interruzione espresso come corrente di corto circuito
+
+Nota. Il valore in MVA è la potenza di corto circuito trifase corrispondente alla tensione nominale e al potere d'interruzione espresso come corrente di corto circuito
 
 [PAG 981]
-IMPIANTI  ELETTRICI                                               X-131
-nocivo all'isolante, ai collegamenti, ai terminali o all'ambiente esterno, permettendo però
-la conduzione dei sovraccarichi di breve durata che si producono nel normale esercizio.
-Per gli impianti utilizzatori con tensione nominale fino a 1000 V c.a. e 1500 V c.c. la
-scelta del dispositivo va fatta rispettando le due condizioni seguenti, stabilite dalla norma
-CEI 64-8/4:
+IMPIANTI ELETTRICI                                               X-131
+
+nocivo all'isolante, ai collegamenti, ai terminali o all'ambiente esterno, permettendo però la conduzione dei sovraccarichi di breve durata che si producono nel normale esercizio.
+
+Per gli impianti utilizzatori con tensione nominale fino a 1000 V c.a. e 1500 V c.c. la scelta del dispositivo va fatta rispettando le due condizioni seguenti, stabilite dalla norma CEI 64-8/4:
+
 (X.8.1)
 (X.8.2)
-dove Ib è la corrente d'impiego del circuito in condizioni ordinarie, Iz è la portata della
-conduttura, In è la corrente nominale del dispositivo di protezione oppure, nel caso di
-apparecchi regolabili, la corrente di regolazione, If è la corrente convenzionale d'inter-
-vento del dispositivo di protezione.
-Le relazioni X.8.1 e X.8.2 sono rappresentate in forma grafica nella Fig. X.8.1. Poiché
-l'intervento del dispositivo entro il tempo convenzionale avviene certamente per correnti
-non inferiori a If, l'intervallo tra Iz e If corrisponde ai valori di sovraccarico per i quali il
-dispositivo potrebbe non intervenire. Nella condizione limite If = 1,45 Iz il massimo
-sovraccarico ammesso dalla normativa è del 45%, con durata convenzionale tc.
+
+dove:
+Ib è la corrente d'impiego del circuito in condizioni ordinarie,
+Iz è la portata della conduttura,
+In è la corrente nominale del dispositivo di protezione oppure, nel caso di apparecchi regolabili, la corrente di regolazione,
+If è la corrente convenzionale d'intervento del dispositivo di protezione.
+
+Le relazioni X.8.1 e X.8.2 sono rappresentate in forma grafica nella Fig. X.8.1. Poiché l'intervento del dispositivo entro il tempo convenzionale avviene certamente per correnti non inferiori a If, l'intervallo tra Iz e If corrisponde ai valori di sovraccarico per i quali il dispositivo potrebbe non intervenire. Nella condizione limite If = 1,45 Iz il massimo sovraccarico ammesso dalla normativa è del 45%, con durata convenzionale tc.
+
 Fig. X.8.1   Schematizzazione grafica delle condizioni stabilite dalla norma CEI 64-8.
-Introducendo il rapporto kf = If In le relazioni di coordinamento diventano:
+
+Introducendo il rapporto kf = If/In le relazioni di coordinamento diventano:
+
 (X.8.3)
 (X.8.4)
-A seconda del tipo di apparecchio usato per la protezione varia il valore del rapporto
-kf; in particolare si hanno due casi:
-1.  per i dispositivi aventi kf  1,45 la relazione X.8.4 è certamente soddisfatta se è rispet-
-tata la X.8.3; quest'ultima diventa l'unica condizione da considerare per la scelta della pro-
-tezione;
-2.  per i dispositivi aventi kf  1,45 le relazioni X.8.3 e X.8.4 si possono sintetizzare nella
-seguente:
-(X.8.5)
-Ib
-In
-Iz
-
-
-If
-1,45 Iz
-
-sovraccarico
-ammissibile
-dispositivo
-di protezione
-circuito
-I
-Ib
-If
-In
-Iz
-1,45 If
-Ib
-In
-Iz
-
-
-If
-1,45
-kf
---------- Iz
-
-Ib
-In
-1,45
-kf
---------- Iz
-
-
 
-[PAG 982]
-X-132
-  IMPIANTI ELETTRICI 
-Nella Tab. X.8.1 sono riportate le condizioni da soddisfare per la scelta del dispositivo
-di protezione dal sovraccarico, per i vari apparecchi utilizzabili.
-Esempio 1
-Per un circuito avente Ib = 21 A, Iz = 27 A si può scegliere per la protezione dal
-sovraccarico un interruttore automatico non regolabile con In = 25 A, in modo da avere
-21 < 25 < 27.
-Esempio 2
-Per un circuito avente Ib = 84 A, realizzato con cavi aventi portata Iz = 98 A non è pos-
-sibile usare un interruttore fisso, non essendoci nessun valore di In compreso nell'inter-
-vallo 84  98; si può usare un interruttore regolabile da 125 A con taratura termica
-Ir = 0,7  125 = 87,5 A.
-Esempio 3
-Per una conduttura con Ib  36 A, volendo usare fusibili da 40 A per la protezione dal
-sovraccarico la portata deve essere almeno pari a 45 A, per rispettare la condizione
-36  40  0,906  45 ossia 36  40  40,8. Si noti la maggiore differenza, in questo caso,
-tra Ib e Iz: l'uso dei fusibili non consente il pieno sfruttamento della portata del cavo.
-Punto di installazione del dispositivo di protezione contro il sovraccarico
-In generale il dispositivo di protezione contro il sovraccarico deve essere installato
-all'inizio del circuito da proteggere. Tale disposizione è obbligatoria per la protezione dei
+A seconda del tipo di apparecchio usato per la protezione varia il valore del rapporto kf; in particolare si hanno due casi:
+
+1. per i dispositivi aventi kf ≤ 1,45 la relazione X.8.4 è certamente soddisfatta se è rispettata la X.8.3; quest'ultima diventa l'unica condizione da considerare per la scelta della protezione;
+
+2. per i dispositivi aventi kf > 1,45 le relazioni X.8.3 e X.8.4 si possono sintetizzare nella seguente:
+
+(X.8
 circuiti che entrano o attraversano gli ambienti a maggior rischio in caso di incendio.
-Negli ambienti ordinari il dispositivo di protezione può essere posto anche lungo il
-percorso della conduttura, a patto che nel tratto a monte non vi siano derivazioni né prese
-a spina. Escludendo questi casi, infatti, lungo tutto il percorso della conduttura la corrente
-rimane costante e, quindi, un eventuale sovraccarico viene avvertito anche dalla prote-
-zione, dovunque essa sia posta.
+Negli ambienti ordinari il dispositivo di protezione può essere posto anche lungo il percorso della conduttura, a patto che nel tratto a monte non vi siano derivazioni né prese a spina. Escludendo questi casi, infatti, lungo tutto il percorso della conduttura la corrente rimane costante e, quindi, un eventuale sovraccarico viene avvertito anche dalla protezione, dovunque essa sia posta.
+
 Obbligatorietà e omissione della protezione dal sovraccarico
 La protezione dal sovraccarico è obbligatoria per tutti i circuiti nei casi seguenti:
-–  luoghi a maggior rischio in caso di incendio e con pericolo di esplosione;
-–  ambienti e applicazioni particolari (locali da bagno, piscine ecc.);
-–  condutture che alimentano derivazioni o carichi per i quali, in sede di progetto, sia
-stato assunto un coefficiente di utilizzazione o di contemporaneità inferiore a uno;
-–  condutture che alimentano prese a spina.
-Escludendo i casi precedenti, la protezione contro il sovraccarico può essere omessa
-nei casi indicati nella Tab. X.8.2.
-Tab. X.8.1   Scelta del dispositivo di protezione contro il sovraccarico per le condutture di
-bassa tensione
-Dispositivo 
+– luoghi a maggior rischio in caso di incendio e con pericolo di esplosione;
+– ambienti e applicazioni particolari (locali da bagno, piscine ecc.);
+– condutture che alimentano derivazioni o carichi per i quali, in sede di progetto, sia stato assunto un coefficiente di utilizzazione o di contemporaneità inferiore a uno;
+– condutture che alimentano prese a spina.
+
+Escludendo i casi precedenti, la protezione contro il sovraccarico può essere omessa nei casi indicati nella Tab. X.8.2.
+
+Tab. X.8.1   Scelta del dispositivo di protezione contro il sovraccarico per le condutture di bassa tensione
+Dispositivo
 kf = If / In
-Condizione 
+Condizione
 Relè termici
 1,2
-Caso 1:     Ib  In  Iz
+Caso 1:     Ib ≤ In ≤ Iz
 Interruttori automatici a norma CEI 17-5
 1,25
-Caso 1:     Ib  In  Iz
+Caso 1:     Ib ≤ In ≤ Iz
 Interruttori automatici a norma CEI 23-3
 1,45
-Caso 1:     Ib  In  Iz
+Caso 1:     Ib ≤ In ≤ Iz
 Fusibili
 1,6
-Caso 2:     Ib  In  0,906 Iz
+Caso 2:     Ib ≤ In ≤ 0,906 Iz
 
 [PAG 983]
-IMPIANTI  ELETTRICI                                               X-133
-Fig. X.8.2   Conduttura derivata da una linea principale protetta contro il sovraccarico. La
-protezione della linea AB può essere omessa se il dispositivo P protegge anche il tratto di
-sezione S2.
-Fig. X.8.3   Linea che si divide in più derivazioni. La protezione contro il sovraccarico
-può essere omessa per le linee efficacemente protette dal dispositivo P.
+IMPIANTI ELETTRICI                                               X-133
+Fig. X.8.2   Conduttura derivata da una linea principale protetta contro il sovraccarico. La protezione della linea AB può essere omessa se il dispositivo P protegge anche il tratto di sezione S2.
+Fig. X.8.3   Linea che si divide in più derivazioni. La protezione contro il sovraccarico può essere omessa per le linee efficacemente protette dal dispositivo P.
+
 Tab. X.8.2   Casi in cui si può omettere la protezione contro il sovraccarico
 Casi
 Esempi
-Condutture poste a valle di
-punti in cui ci sono variazioni di
-sezione, di natura, di modo di
-posa o di costituzione, a patto
-che siano protetti da dispositivi
-posti a monte
-Condutture derivate da una linea principale già protetta dal
-sovraccarico e aventi portate inferiori rispetto alla linea principale
-(Fig. X.8.2), se il dispositivo a monte protegge efficacemente
-anche la derivazione
-Linea che si dirama in più linee secondarie di portate inferiori
-(Fig. X.8.3), se il dispositivo a monte protegge efficacemente
-anche tutte le derivazioni
-Condutture alimentanti apparec-
-chi utilizzatori che non possono
-dar luogo a sovraccarico, a patto
-che siano protette contro il
-corto circuito e che non abbiano
-né derivazioni né prese a spina
+Condutture poste a valle di punti in cui ci sono variazioni di sezione, di natura, di modo di posa o di costituzione, a patto che siano protetti da dispositivi posti a monte
+Condutture derivate da una linea principale già protetta dal sovraccarico e aventi portate inferiori rispetto alla linea principale (Fig. X.8.2), se il dispositivo a monte protegge efficacemente anche la derivazione
+Linea che si dirama in più linee secondarie di portate inferiori (Fig. X.8.3), se il dispositivo a monte protegge efficacemente anche tutte le derivazioni
+Condutture alimentanti apparecchi utilizzatori che non possono dar luogo a sovraccarico, a patto che siano protette contro il corto circuito e che non abbiano né derivazioni né prese a spina
 Condutture che alimentano apparecchi d'illuminazione
-Condutture che alimentano utilizzatori termici (stufe, forni a resi-
-stenza ecc.)
-Condutture che alimentano motori elettrici con corrente a rotore
-bloccato (massimo valore della corrente assorbita) inferiore alla
-portata della linea 
-Condutture che alimentano apparecchi utilizzatori già dotati del
-proprio dispositivo di protezione, purché idoneo anche alla prote-
-zione della linea
-Conduttura che alimenta più derivazioni ognuna protetta da un
-proprio dispositivo, a patto che la somma delle correnti nominali
-delle protezioni sia non superiore alla portata della linea a monte
-(Fig. X.8.4)
+Condutture che alimentano utilizzatori termici (stufe, forni a resistenza ecc.)
+Condutture che alimentano motori elettrici con corrente a rotore bloccato (massimo valore della corrente assorbita) inferiore alla portata della linea
+Condutture che alimentano apparecchi utilizzatori già dotati del proprio dispositivo di protezione, purché idoneo anche alla protezione della linea
+Conduttura che alimenta più derivazioni ognuna protetta da un proprio dispositivo, a patto che la somma delle correnti nominali delle protezioni sia non superiore alla portata della linea a monte (Fig. X.8.4)
 Impianti di telecomunicazioni, comando, segnalazione e simili
-P
-B
-A
-S1
-S1
-S2
-S1
-S2
-S3
-S
-P
+**IMPIANTI ELETTRICI**
 
-[PAG 984]
-X-134
-  IMPIANTI ELETTRICI 
-Fig. X.8.4   Linea con derivazioni protette contro il sovraccarico. La protezione del tratto
-AB può essere omessa se è verificata la condizione In1 + In2 + In3  Iz.
-La norma CEI 64-8 raccomanda di omettere la protezione contro il sovraccarico per
-ragioni di sicurezza nei casi in cui l'apertura intempestiva del circuito potrebbe essere
-causa di pericolo. Esempi significativi sono:
-–  i circuiti di eccitazione delle macchine rotanti;
-–  i circuiti di alimentazione degli elettromagneti di sollevamento;
-–  i circuiti secondari dei trasformatori di corrente (TA);
-–  i circuiti che alimentano dispositivi di estinzione dell'incendio.
+Fig. X.8.4   Linea con derivazioni protette contro il sovraccarico. La protezione del tratto AB può essere omessa se è verificata la condizione In1 + In2 + In3 ≤ Iz.
+La norma CEI 64-8 raccomanda di omettere la protezione contro il sovraccarico per ragioni di sicurezza nei casi in cui l'apertura intempestiva del circuito potrebbe essere causa di pericolo. Esempi significativi sono:
+– i circuiti di eccitazione delle macchine rotanti;
+– i circuiti di alimentazione degli elettromagneti di sollevamento;
+– i circuiti secondari dei trasformatori di corrente (TA);
+– i circuiti che alimentano dispositivi di estinzione dell'incendio.
+
 8.2  Protezione delle condutture contro il corto circuito
-La protezione contro il corto circuito delle condutture elettriche può essere effettuata
-con interruttori automatici o con fusibili. Il dispositivo di protezione deve interrompere la
-corrente di cortocircuito prima che essa diventi pericolosa per gli effetti termici e mecca-
-nici provocati nei conduttori e nelle relative connessioni. Per gli impianti utilizzatori BT i
-requisiti richiesti alla protezione sono stabiliti dalla norma CEI 64-8.
-Omissione della protezione
-Vanno protetti tutti i circuiti a eccezione dei seguenti, per i quali la protezione può
-essere omessa:
-–  condutture di collegamento tra talune apparecchiature, come batterie di accumula-
-tori, generatori, trasformatori, raddrizzatori, e i rispettivi quadri elettrici, nel caso in cui i
-quadri contengano i dispositivi di protezione;
-–  circuiti la cui interruzione improvvisa può dar luogo a situazioni di pericolo, come
-quelli di alimentazione degli elettromagneti di sollevamento;
-–  alcuni circuiti di misura, come quelli secondari dei TA, la cui interruzione contrasta
-con il principio di funzionamento dell'apparecchiatura.
-Se la protezione viene omessa occorre verificare che il pericolo di corto circuito sia
-minimo e che la conduttura non passi vicino a materiali combustibili.
-Punto d'installazione
-I dispositivi di protezione vanno, di norma, installati all'inizio della conduttura e nei
-punti in cui si ha una riduzione dell'energia specifica K2S2 sopportabile dalla linea (ridu-
-zione di sezione, variazione dell'isolante ecc.). In ogni caso l'ubicazione dei dispositivi di
-protezione deve essere tale da interrompere, in un tempo non superiore a quello che porta
-i conduttori alla temperatura limite ammissibile, tutte le correnti provocate da un corto
-circuito che si presenti in un punto qualsiasi del circuito.
-Eccetto che per i luoghi a maggior rischio in caso d'incendio, per quelli con pericolo
-di esplosione e per gli ambienti e le applicazioni particolari, è consentito porre il disposi-
-tivo di protezione a distanza non superiore a 3 m dal punto in cui si verifica la riduzione
-della sezione o un'altra variazione, a patto che il tratto sia realizzato in modo da ridurre al
-minimo il rischio di corto circuito e non sia posto vicino a materiale combustibile.
+La protezione contro il corto circuito delle condutture elettriche può essere effettuata con interruttori automatici o con fusibili. Il dispositivo di protezione deve interrompere la corrente di cortocircuito prima che essa diventi pericolosa per gli effetti termici e meccanici provocati nei conduttori e nelle relative connessioni. Per gli impianti utilizzatori BT i requisiti richiesti alla protezione sono stabiliti dalla norma CEI 64-8.
+
+**Omissione della protezione**
+Vanno protetti tutti i circuiti a eccezione dei seguenti, per i quali la protezione può essere omessa:
+– condutture di collegamento tra talune apparecchiature, come batterie di accumulatori, generatori, trasformatori, raddrizzatori, e i rispettivi quadri elettrici, nel caso in cui i quadri contengano i dispositivi di protezione;
+– circuiti la cui interruzione improvvisa può dar luogo a situazioni di pericolo, come quelli di alimentazione degli elettromagneti di sollevamento;
+– alcuni circuiti di misura, come quelli secondari dei TA, la cui interruzione contrasta con il principio di funzionamento dell'apparecchiatura.
+
+Se la protezione viene omessa occorre verificare che il pericolo di corto circuito sia minimo e che la conduttura non passi vicino a materiali combustibili.
+
+**Punto d'installazione**
+I dispositivi di protezione vanno, di norma, installati all'inizio della conduttura e nei punti in cui si ha una riduzione dell'energia specifica K²S² sopportabile dalla linea (riduzione di sezione, variazione dell'isolante ecc.). In ogni caso l'ubicazione dei dispositivi di protezione deve essere tale da interrompere, in un tempo non superiore a quello che porta i conduttori alla temperatura limite ammissibile, tutte le correnti provocate da un corto circuito che si presenti in un punto qualsiasi del circuito.
+
+Eccetto che per i luoghi a maggior rischio in caso d'incendio, per quelli con pericolo di esplosione e per gli ambienti e le applicazioni particolari, è consentito porre il dispositivo di protezione a distanza non superiore a 3 m dal punto in cui si verifica la riduzione della sezione o un'altra variazione, a patto che il tratto sia realizzato in modo da ridurre al minimo il rischio di corto circuito e non sia posto vicino a materiale combustibile.
+
 A
 P1
 P2
@@ -965,204 +462,121 @@ In3
 B
 
 [PAG 985]
-IMPIANTI  ELETTRICI                                               X-135
-Corrente nominale e caratteristica d'intervento
-La corrente nominale (o di regolazione) del dispositivo deve essere non inferiore a
-quella d'impiego del circuito, per consentire il funzionamento dello stesso:
+IMPIANTI ELETTRICI                                               X-135
+
+**Corrente nominale e caratteristica d'intervento**
+La corrente nominale (o di regolazione) del dispositivo deve essere non inferiore a quella d'impiego del circuito, per consentire il funzionamento dello stesso:
+
 (X.8.6)
-La corrente Itm di taratura dello sganciatore magnetico (o di quello di massima cor-
-rente usato per la protezione dal corto circuito, nel caso di dispositivi elettronici) deve
-essere non superiore alla corrente di corto circuito minima a fondo linea, per poter inter-
-venire nel caso di guasto in qualunque punto della linea:
+La corrente Itm di taratura dello sganciatore magnetico (o di quello di massima corrente usato per la protezione dal corto circuito, nel caso di dispositivi elettronici) deve essere non superiore alla corrente di corto circuito minima a fondo linea, per poter inter-
+Nel caso di guasto in qualunque punto della linea:
 (X.8.7)
+
 Potere d'interruzione
-Il dispositivo di protezione deve essere in grado di interrompere con sicurezza la mas-
-sima corrente di corto circuito che si può produrre nel punto di installazione e quindi il
-suo potere d'interruzione deve essere non inferiore al valore della corrente di corto cir-
-cuito presunta che può svilupparsi in tale punto, considerando il tipo di guasto che pro-
-duce la Icc massima:
+Il dispositivo di protezione deve essere in grado di interrompere con sicurezza la massima corrente di corto circuito che si può produrre nel punto di installazione e quindi il suo potere d'interruzione deve essere non inferiore al valore della corrente di corto circuito presunta che può svilupparsi in tale punto, considerando il tipo di guasto che produce la Icc massima:
 (X.8.8)
-È consentito, tuttavia, l'uso di un dispositivo con potere di interruzione minore, a patto
-che a monte vi sia un apparecchio con l'adatto potere d'interruzione.
+
+È consentito, tuttavia, l'uso di un dispositivo con potere di interruzione minore, a patto che a monte vi sia un apparecchio con l'adatto potere d'interruzione.
+
 Verifica dell'energia specifica passante
-L'energia termica specifica che viene fatta fluire durante il corto circuito dal disposi-
-tivo di protezione non deve superare quella ammissibile dal cavo di linea, in modo che
-l'isolante non superi la sua temperatura massima di corto circuito:
+L'energia termica specifica che viene fatta fluire durante il corto circuito dal dispositivo di protezione non deve superare quella ammissibile dal cavo di linea, in modo che l'isolante non superi la sua temperatura massima di corto circuito:
 (X.8.9)
-I valori di K sono quelli riportati nella Tab. X.6.3 (Par. 6.5), validi per corto circuiti di
-durata non superiore a 5 s.
-La verifica della condizione X.8.9 è diversa a seconda che per la protezione vengano
-impiegati i fusibili o un interruttore automatico.
-a)  Protezione con fusibili
-Il confronto tra l'energia specifica di un cavo e di un fusibile è riportato nella Fig.
-X.8.5. La condizione X.8.9 è soddisfatta nella zona b, ossia per tutte le correnti non infe-
-riori al valore Ia determinato dall'intersezione tra le due caratteristiche, valore che rappre-
-senta il limite inferiore dalla corrente minima di corto circuito a fondo linea.
-Per la verifica dell'integrale di Joule occorre calcolare la corrente di corto circuito
-minima a fondo linea, determinare graficamente Ia e controllare che sia:
+
+I valori di K sono quelli riportati nella Tab. X.6.3 (Par. 6.5), validi per corto circuiti di durata non superiore a 5 s.
+
+La verifica della condizione X.8.9 è diversa a seconda che per la protezione vengano impiegati i fusibili o un interruttore automatico.
+
+a) Protezione con fusibili
+Il confronto tra l'energia specifica di un cavo e di un fusibile è riportato nella Fig. X.8.5. La condizione X.8.9 è soddisfatta nella zona b, ossia per tutte le correnti non inferiori al valore Ia determinato dall'intersezione tra le due caratteristiche, valore che rappresenta il limite inferiore della corrente minima di corto circuito a fondo linea.
+
+Per la verifica dell'integrale di Joule occorre calcolare la corrente di corto circuito minima a fondo linea, determinare graficamente Ia e controllare che sia:
 (X.8.10)
-Se la X.8.10 non è soddisfatta occorre, in sede di progetto, aumentare il termine K2S2
-in modo da far diminuire il valore di Ia. Questo si ottiene aumentando la sezione o usando
-un cavo con diverso isolamento, in modo che aumenti K (per es. EPR invece di PVC).
+
+Se la X.8.10 non è soddisfatta occorre, in sede di progetto, aumentare il termine K2S2 in modo da far diminuire il valore di Ia. Questo si ottiene aumentando la sezione o usando un cavo con diverso isolamento, in modo che aumenti K (per es. EPR invece di PVC).
+
 In
 Ib
-
+≥
 Itm
 Iccmin
-
+≤
 Icu Icn
-
-
+(
+)
 Iccmax
-
+≥
 i2dt
 K2S2
-
+≤
 0
 ti
-
+∫
 Iccmin
 Ia
-
+≥
 
 [PAG 986]
 X-136
-  IMPIANTI ELETTRICI 
-Fig. X.8.5   Confronto tra le energie specifiche di un cavo e di un fusibile: a) protezione
-non conforme; b) protezione conforme.
-b)  Protezione con interruttore automatico
-Il confronto tra l'energia specifica di un cavo e di un interruttore automatico magneto-
-termico è riportato nella Fig. X.8.6. La condizione X.8.9 è soddisfatta nella zona b, ossia
-per tutte le correnti comprese tra i valori Ia e Ib determinate dall'intersezione tra le due
-caratteristiche, valori che rappresentano rispettivamente il limite inferiore dalla corrente
-minima di corto circuito a fondo linea e il limite superiore di quella massima a inizio linea.
-Fig. X.8.6   Confronto tra le energie specifiche di un cavo e di un interruttore: a) prote-
-zione non conforme; b) protezione conforme.
-Per la verifica dell'integrale di Joule occorre calcolare la corrente di corto circuito
-minima a fondo linea, quella di corto circuito massima a inizio linea, determinare grafica-
-mente Ia e Ib e controllare che siano soddisfatte entrambe le condizioni seguenti:
-10
-102
-103
-I (A eff)
-103
-102
-(kA2 s)
-i2 td
-
-a
-b
-fusibile
-K2S2 cavo
-Ia
-103
-104
-105
-I (A eff)
-103
-1
-(A2 s)
-i2 td
-
-a
-b
-interruttore
-K2S2 cavo
-106
-107
-102
-10
-Ia
-104
-Ib
-105
-a
+IMPIANTI ELETTRICI
 
-[PAG 987]
-IMPIANTI  ELETTRICI                                               X-137
-(X.8.11)
-(X.8.12)
-Se non sono verificate occorre aumentare il termine K2S2 in modo da far diminuire il
+Fig. X.8.5 Confronto tra le energie specifiche di un cavo e di un fusibile: a) protezione non conforme; b) protezione conforme.
+
+b) Protezione con interruttore automatico
+Il confronto tra l'energia specifica di un cavo e di un interruttore automatico magnetotermico è riportato nella Fig. X.8.6. La condizione X.8.9 è soddisfatta nella zona b, ossia per tutte le correnti comprese tra i valori Ia e Ib determinate dall'intersezione tra le due caratteristiche, valori che rappresentano rispettivamente il limite inferiore della corrente minima di corto circuito a fondo linea e il limite superiore di quella massima a inizio linea.
+
+Fig. X.8.
 valore di Ia e far aumentare quello di Ib.
+
 8.3  Particolarità dei sistemi di protezione dalle sovracorrenti
+
 Protezione di sostegno (back-up)
-La norma CEI 64-8/4 consente di utilizzare un dispositivo di protezione dal corto cir-
-cuito avente potere d'interruzione inferiore alla corrente di corto circuito presunta nel
-punto di installazione, a condizione che a monte di esso vi sia un altro dispositivo con il
-necessario potere d'interruzione. Un esempio è riportato nelle Figg. X.8.7 e X.8.8, in cui il
-fusibile sopperisce al ridotto valore del potere d'interruzione dell'interruttore.
-Le due caratteristiche di intervento devono essere coordinate in modo che la corrente
-di scambio Ip, fino alla quale interviene l'interruttore, sia non superiore al potere d'interru-
-zione dello stesso, mentre per correnti di guasto più elevate deve intervenire il fusibile. Il
-dispositivo a monte deve avere un I2t non superiore al valore tollerabile da quello a valle e
-dalla conduttura protetta, in modo da non lasciar fluire un’energia termica eccessiva.
-Fig. X.8.7   Protezione di back-up realiz-
-zata con fusibile e interruttore.
-Fig. X.8.8   Caratteristiche d'intervento
-Tab. X.8.3   Requisiti richiesti al dispositivo per la protezione unica dal sovraccarico e
-dal corto circuito
-Sovraccarico
-Corto circuito
-a)
-b)
-Ib  In  Iz
-If  1,45 Iz
-c)
-d)
-e)
-f)
-Ib  In (compresa nella condizione a)
-Icu (Icn)  Icc presunta nel punto di installazione
-dispositivo di protezione ubicato all'inizio della linea
-Nota. Si può ritenere soddisfatta, senza necessità di verifica, la condizione d) per il guasto in fondo
-alla linea. Per i dispositivi limitatori è generalmente soddisfatta la verifica dell'integrale di Joule per
-tutte le correnti di corto circuito possibili sulla linea.
-Iccmin
-Ia
-
-Iccmax
-Ib
-
-A
-B
-B
-A
-I (A)
-Ip
-t (s)
-P
-i2dt
-K2S2
-
-0
-ti
-
+La norma CEI 64-8/4 consente di utilizzare un dispositivo di protezione dal corto circuito avente potere d’interruzione inferiore alla corrente di corto circuito presunta nel punto di installazione, a condizione che a monte di esso vi sia un altro dispositivo con il necessario potere d’interruzione. Un esempio è riportato nelle Figg. X.8.7 e X.8.8, in cui il fusibile sopperisce al ridotto valore del potere d’interruzione dell’interruttore.
+
+Le due caratteristiche di intervento devono essere coordinate in modo che la corrente di scambio Ip, fino alla quale interviene l’interruttore, sia non superiore al potere d’interruzione dello stesso, mentre per correnti di guasto più elevate deve intervenire il fusibile. Il dispositivo a monte deve avere un I²t non superiore al valore tollerabile da quello a valle e dalla conduttura protetta, in modo da non lasciar fluire un’energia termica eccessiva.
+
+Fig. X.8.7   Protezione di back-up realizzata con fusibile e interruttore.
+Fig. X.8.8   Caratteristiche d’intervento
+Tab. X.8.3   Requisiti richiesti al dispositivo per la protezione unica dal sovraccarico e dal corto circuito
+
+Sovraccarico | Corto circuito
+---|---
+a) | c)
+Ib ≤ In ≤ Iz | Icu (Icn) ≥ Icc presunta nel punto di installazione
+b) | d)
+If ≤ 1,45 Iz | dispositivo di protezione ubicato all’inizio della linea
+e) | f)
+Ib ≤ In (compresa nella condizione a) | Nota. Si può ritenere soddisfatta, senza necessità di verifica, la condizione d) per il guasto in fondo alla linea. Per i dispositivi limitatori è generalmente soddisfatta la verifica dell’integrale di Joule per tutte le correnti di corto circuito possibili sulla linea.
+
+Iccmin | Ia
+---|---
+≥ | Ib
+Iccmax | ≤
+A | B
+B | A
+I (A) | t (s)
+Ip | P
+i²dt | K²S²
+≤ | 0
+ti | ∫
 
 [PAG 988]
 X-138
-  IMPIANTI ELETTRICI 
+
+IMPIANTI ELETTRICI
+
 Protezione unica per sovraccarico e corto circuito
-È possibile usare un unico dispositivo di protezione (fusibile o interruttore automa-
-tico) a patto che vengano soddisfatte contemporaneamente le prescrizioni per il sovracca-
-rico e per il corto circuito, richiamate nella Tab. X.8.3.
+È possibile usare un unico dispositivo di protezione (fusibile o interruttore automatico) a patto che vengano soddisfatte contemporaneamente le prescrizioni per il sovraccarico e per il corto circuito, richiamate nella Tab. X.8.3.
+
 Protezione distinta per sovraccarico e corto circuito
-Quando si usano apparecchi distinti (per esempio nel caso di un contattore con relè
-termico e fusibili) è consigliabile installare il dispositivo di protezione contro il corto cir-
-cuito a monte di quello di protezione contro il sovraccarico. Inoltre le caratteristiche
-devono essere coordinate in modo tale che l'(I2t) fatto fluire dalla protezione contro il
-corto circuito possa essere sopportato senza danno dalla protezione contro il sovraccarico.
-I due dispositivi devono soddisfare separatamente le prescrizioni indicate nella Tab.
-X.8.3; anche in questo caso non è generalmente richiesta la verifica dell'integrale di Joule
-nel punto più lontano della conduttura.
+Quando si usano apparecchi distinti (per esempio nel caso di un contattore con relè termico e fusibili) è consigliabile installare il dispositivo di protezione contro il corto circuito a monte di quello di protezione contro il sovraccarico. Inoltre le caratteristiche devono essere coordinate in modo tale che l’(I²t) fatto fluire dalla protezione contro il corto circuito possa essere sopportato senza danno dalla protezione contro il sovraccarico.
+
+I due dispositivi devono soddisfare separatamente le prescrizioni indicate nella Tab. X.8.3; anche in questo caso non è generalmente richiesta la verifica dell’integrale di Joule nel punto più lontano della conduttura.
+
 Protezione dei conduttori di fase e di neutro
-La necessità di predisporre o meno la protezione contro le sovracorrenti sui vari con-
-duttori di fase e su quello di neutro determina l'uso di interruttori con neutro protetto
-oppure no. Le prescrizioni della norma CEI 64-8 distinguono i vari tipi di sistemi e sono
-sintetizzate nella Tab. X.8.4.
+La necessità di predisporre o meno la protezione contro le sovracorrenti sui vari conduttori di fase e su quello di neutro determina l’uso di interruttori con neutro protetto oppure no. Le prescrizioni della norma CEI 64-8 distinguono i vari tipi di sistemi e sono sintetizzate nella Tab. X.8.4.
+
 8.4  Selettività delle protezioni contro le sovracorrenti
-Un sistema di protezione è selettivo quando, per una qualsiasi sovracorrente, le prote-
-zioni si comportano in modo tale da escludere dall'alimentazione solo la parte interessata
-dalla sovracorrente, facendo intervenire soltanto il dispositivo posto subito a monte del
+Un sistema di protezione è selettivo quando, per una qualsiasi sovracorrente, le protezioni si comportano in modo tale da escludere dall’alimentazione solo la parte interessata dalla sovracorrente, facendo intervenire soltanto il dispositivo posto subito a monte del
 Tab. X.8.4   Protezione dei conduttori di fase e di neutro
 Sistemi
 Circuiti
@@ -1200,11 +614,13 @@ P P P no(1)
 P P P P(5)
 P P P (3) (4)
 P P P P(3)
+
 Legenda
-F: conduttore di fase; N: conduttore di neutro
+F: conduttore di fase; N: conduttore neutro
 P: è richiesto un dispositivo di protezione
 : non è richiesto un dispositivo di protezione; esso, comunque, non è vietato
 no: è vietato inserire un dispositivo di protezione che interrompa il conduttore PEN
+
 Note
 (1) In presenza di armoniche che possono sovraccaricare il conduttore PEN si deve disporre sullo
 stesso un rivelatore di sovracorrente che, senza interrompere il PEN, provochi l'interruzione dei
@@ -1221,6 +637,7 @@ essere percorso da correnti superiori alla sua portata.
 IMPIANTI  ELETTRICI                                               X-139
 punto di guasto, mentre gli altri apparecchi interessati dalla sovracorrente dovranno rima-
 nere chiusi, per assicurare la continuità di servizio al resto dell'impianto.
+
 Fig. X.8.9   Selettività tra interruttori automatici.
 Nel caso rappresentato nella Fig. X.8.9, per un guasto a
 valle di B, tra i due interruttori vi può essere selettività totale
@@ -1231,179 +648,97 @@ invece, la selettività parziale quando non è verificata la con-
 dizione precedente e, quindi, superato un valore di corrente
 inferiore a quella di corto circuito presunta nel punto di
 installazione di B, interviene anche l'interruttore A.
+
 Selettività amperometrica tra interruttori automatici
 Si ottiene (Fig. X.8.10) scegliendo l'interruttore a monte con una corrente di taratura
 magnetica ImA maggiore di quella dell'interruttore a valle ImB. Per correnti di guasto fino a
 ImA interviene solo B, mentre per valori maggiori possono intervenire entrambi. La seletti-
 vità è totale se ImA è pari alla Icc nel punto di installazione di B; se è inferiore si ottiene
 una selettività solo parziale.
+
 Fig. X.8.10   Selettività amperometrica.
+
 Selettività energetica tra interruttori
 Si realizza se l'energia specifica di corto circuito lasciata fluire dall'interruttore a valle
 è minore di quella richiesta per azionare lo sganciatore magnetico dell'interruttore posto a
 monte. È un tipo di selettività che deve essere dichiarata dal costruttore dei dispositivi e
 viene determinata mediante prove di laboratorio; in genere è possibile ottenerla fino a pre-
 stabiliti valori della corrente di corto circuito (10  15 kA).
+
 Selettività cronometrica tra interruttori
 Si ottiene (Fig. X.8.11) ritardando l'intervento dell'interruttore a monte rispetto a
 quello a valle, con ritardo da 40 a 300 ms, tempo che può essere fisso, impostato dal
 costruttore, o regolabile. Dato che il tempo di ritardo totale non deve superare determinati
 limiti, non è possibile coordinare più di 4-5 interruttori in cascata.
-Gli apparecchi appositamente costruiti per realizzare la selettività cronometrica sono
-definiti di categoria B, per distinguerli dagli altri, detti di categoria A. La loro corrente
-A
-B
-B
-A
-I
-ImA
-ImB
-t
+
+Gli apparecchi appositamente costruiti per realizzare la selettività cronometrica sono definiti di categoria B, per distinguerli dagli altri, detti di categoria A.
+
+La loro corrente nominale ammissibile di breve durata Icw deve essere non inferiore alla corrente di corto circuito presunta nel punto di installazione, per evitare che si possano danneggiare in condizione di guasto, durante l'attesa dell'intervento.
 
 [PAG 990]
+
 X-140
-  IMPIANTI ELETTRICI 
-nominale ammissibile di breve durata Icw deve essere non inferiore alla corrente di corto
-circuito presunta nel punto di installazione, per evitare che si possano danneggiare in con-
-dizione di guasto, durante l'attesa dell'intervento.
+
+IMPIANTI ELETTRICI
+
 Fig. X.8.11   Selettività cronometrica.
+
 Selettività di zona
-Negli impianti di una certa complessità si può realizzare la selettività tra le diverse
-zone dell'impianto, dove per zona si intende la parte di impianto compresa fra due inter-
-ruttori in cascata (Fig. X.8.12).
+
+Negli impianti di una certa complessità si può realizzare la selettività tra le diverse zone dell'impianto, dove per zona si intende la parte di impianto compresa fra due interruttori in cascata (Fig. X.8.12).
+
 Fig. X.8.12   Esempio di selettività di zona.
-Gli interruttori si scambiano informazioni attraverso connessioni tra apposite porte
-d'ingresso (IN) e di uscita (OUT). Quando un interruttore rileva un guasto lo comunica a
-quelli a monte; l'apparecchio a cui non arriva alcuna comunicazione da quelli a valle
-interviene con un tempo ridotto, in quanto programmato per non tenere più conto del
-ritardo impostato per la selettività cronometrica.
+
+Gli interruttori si scambiano informazioni attraverso connessioni tra apposite porte d'ingresso (IN) e di uscita (OUT). Quando un interruttore rileva un guasto lo comunica a quelli a monte; l'apparecchio a cui non arriva alcuna comunicazione da quelli a valle interviene con un tempo ridotto, in quanto programmato per non tenere più conto del ritardo impostato per la selettività cronometrica.
+
 8.5  Protezione dei motori asincroni contro le sovracorrenti
-La protezione dei motori contro il sovraccarico e il corto circuito è obbligatoria per
-potenze superiori a 0,5  1 kW e deve essere effettuata tenendo conto che il dispositivo di
-protezione deve consentire l'avviamento del motore, durante il quale si sviluppa una
-sovracorrente di avviamento (di spunto), dipendente dal tipo di motore e variabile nel
-B
-A
-I
-t
-t
-zona 1
-zona 2
-zona 3
-OUT
-IN
-OUT
-IN
-1
-2
-OUT
-IN
-3
-OUT
-IN
-4
-OUT
-IN
-5
 
-[PAG 991]
-IMPIANTI  ELETTRICI                                               X-141
-tempo, il cui valore efficace iniziale Ia per motori a gabbia è generalmente uguale a 6  10
-volte la corrente nominale In (Fig. X.8.13).
-Fig. X.8.13   Andamento della corrente transitoria di avviamento di un m.a.t.: 1) avvia-
-mento normale; 2) avviamento con corrente ridotta e durata maggiore; ta) tempo di avvia-
-mento.
-L'avviamento è possibile se il punto A', di coordinate I'aIn e ta si trova sotto la caratte-
-ristica d'intervento del dispositivo di protezione (Fig. X.8.14).
-Fig. X.8.14   Condizione necessaria per l'avviamento di un m.a.t.
-Fig. X.8.15   Protezione dalle sovracor-
-renti di un m.a.t. mediante relè termico
-e fusibili.
-Fig. X.8.16   Coordinamento tra le
-caratteristiche d'intervento del relè ter-
-mico e dei fusibili.
-1
-2
-t
-ta
-ta
-1
-IaIn
-10
-I  In
-t
-ta
-1
-IaIn
-I  In
-A’
-I’a In
-M
-3
-t
-1
-I  In
-A’
-I’a In
-termica
-fusibile aM
-
-[PAG 992]
-X-142
-  IMPIANTI ELETTRICI 
-La corrente I'a rappresenta il valore equivalente agli effetti termici della corrente I
-assorbita dal motore, variabile nell'intervallo di tempo 0-ta:
-(X.8.13)
-Protezione mediante relè termico e fusibili
-Lo schema elettrico è rappresentato nella Fig. X.8.15 e il coordinamento tra le caratte-
-ristiche è indicato nella Fig. X.8.16.
-La protezione dal corto circuito è svolta dal fusibile aM, quella dal sovraccarico dallo
-sganciatore termico che fa intervenire il contattore. Il fusibile deve avere un potere
-d'interruzione non inferiore alla corrente di corto circuito presunta nel punto di installa-
-zione e un'energia specifica passante non superiore a quella tollerata dai dispositivi a
-valle.
-Nella Tab. X.8.5 sono riportati esempi di coordinamento per la protezione di m.a.t.
+La protezione dei motori contro il sovraccarico e il corto circuito è obbligatoria per potenze superiori a 0,5 ÷ 1 kW e deve essere effettuata tenendo
 con tensione nominale 380-400 V.
 Protezione mediante interruttore automatico salvamotore
+
 Lo schema elettrico è quello della Fig. X.8.17, mentre nella Fig. X.8.18 è riportata la
 caratteristica d'intervento.
+
 L'interruttore svolge la protezione dal sovraccarico e dal corto circuito, il contattore le
 normali manovre di marcia-arresto. Qualora l'interruttore non avesse il necessario potere
 d'interruzione si può installare a monte un fusibile aM con caratteristica d'intervento
 esterna a quella del magnetotermico (back-up).
+
 Tab. X.8.5   Coordinamento delle protezioni dalle sovracorrenti di m.a.t. mediante relè
 termici e fusibili, per tensione nominale concatenata 380-400 V
+
 Potenza
 (kW)
-Corrente 
-nominale 
-assorbita 
-dal motore 
+Corrente
+nominale
+assorbita
+dal motore
 (A)
-Corrente 
-nominale 
+Corrente
+nominale
 del fusi-
 bile aM
 (A)
-Campo di 
-taratura del 
+Campo di
+taratura del
 relè ter-
 mico
 (A)
 Potenza
 (kW)
-Corrente 
-nominale 
-assorbita 
-dal motore 
+Corrente
+nominale
+assorbita
+dal motore
 (A)
-Corrente 
-nominale 
+Corrente
+nominale
 del fusi-
 bile aM
 (A)
-Campo di 
-taratura del 
+Campo di
+taratura del
 relè ter-
 mico
 (A)
@@ -1551,6 +886,7 @@ mico
 130-175
 150-200
 150-200
+
 Ia
 
 1
@@ -1563,22 +899,29 @@ ta
 =
 
 [PAG 993]
-IMPIANTI  ELETTRICI                                               X-143
+IMPIANTI ELETTRICI                                               X-143
+
 Alcune caratteristiche tecniche di interruttori automatici salvamotori modulari sono
 riportate nella Tab. X.8.6.
+
 9  PROTEZIONE DALLE SOVRATENSIONI
 9.1  Sovratensioni di origine interna
+
 Sono quelle dipendenti dallo stesso impianto elettrico in cui si sviluppano, dovute sia
 a guasti che a manovre (per esempio apertura di interruttori). Vengono classificate in base
 alla loro forma d'onda (Tab. X.9.1).
+
 Fig. X.8.17   Protezione dalle sovracor-
 renti di un m.a.t. mediante interruttore
 automatico salvamotore.
+
 Fig. X.8.18   Caratteristica d'intervento
 dell'interruttore.
+
 Tab. X.8.6   Caratteristiche tecniche di interruttori per protezione motori (salvamotori),
 tripolari, con potere d'interruzione Icu non inferiore a 15 kA a 400 V c.a. (serie P25M,
 Schneider Electric)
+
 Corrente nominale (A)
 Campo di regolazione dello sganciatore termico (A)
 0,16
@@ -1600,159 +943,68 @@ Campo di regolazione dello sganciatore termico (A)
 0,25 - 0,40
 0,40 - 0,63
 0,6 - 1
-1 - 1,6
-1,6 - 2,5
-2,5 - 4
-4 - 6,3
-6 - 10
-9 - 14
-13 - 18
-17 - 23
-20 - 25
-Regolazione dello sganciatore magnetico (per tutti i valori di In)
-12  In
-M
-3
-t
-1
-I  In
-A’
-I’a In
-termico
-magnetico
-ta
-
-[PAG 994]
-X-144
-  IMPIANTI ELETTRICI 
-9.2  Sovratensioni di origine esterna
-Sono dovute ai fenomeni elettrici che si sviluppano nell'atmosfera e che interessano le
-linee e gli impianti elettrici; vengono distinte in due categorie.
-Tab. X.9.1   Sovratensioni di origine interna
-Tipo
-Esempi
-A frequenza di esercizio
-Hanno forma d'onda sinu-
-soidale con frequenza pari
-a quella impressa dai
-generatori di alimenta-
-zione.
-Per messa a terra permanente di una fase
-In un sistema trifase a tre fili con centro stella isolato il guasto franco a
-terra di una fase fa sì che la tensione verso terra delle fasi sane diventi
-uguale a quella concatenata del sistema, con un aumento di tensione del
+1 - 1,
 73%.
+
 Per distacco improvviso del carico
-Il brusco distacco del carico di un alternatore provoca sulla linea, prima
-che intervenga il regolatore di tensione della macchina, un aumento di
-tensione dal 30% al 50% circa (a seconda del tipo di linea), per il pas-
-saggio dal funzionamento a carico a quello a vuoto.
+Il brusco distacco del carico di un alternatore provoca sulla linea, prima che intervenga il regolatore di tensione della macchina, un aumento di tensione dal 30% al 50% circa (a seconda del tipo di linea), per il passaggio dal funzionamento a carico a quello a vuoto.
+
 A carattere oscillatorio
-Hanno 
-forma 
-d'onda
-determinata dalla sovrap-
-posizione della sinusoide
-a frequenza di esercizio e
-di una o più componenti
-oscillatorie e frequenza
-superiore (Fig. X.9.1).
+Hanno forma d'onda determinata dalla sovrapposizione della sinusoide a frequenza di esercizio e di una o più componenti oscillatorie a frequenza superiore (Fig. X.9.1).
+
 Per archi a terra
-Si verificano sulle linee AT nel caso di guasto a terra di una fase (peri-
-odo transitorio), con valore di picco uguale circa a 2,5 volte il valore
-massimo della tensione di esercizio. Nel caso di archi a terra intermit-
-tenti si arriva a 4 volte la tensione nominale.
+Si verificano sulle linee AT nel caso di guasto a terra di una fase (periodo transitorio), con valore di picco uguale circa a 2,5 volte il valore massimo della tensione di esercizio. Nel caso di archi a terra intermittenti si arriva a 4 volte la tensione nominale.
+
 Per apertura di interruttori
-Sono determinate dai fenomeni che si verificano durante il periodo tran-
-sitorio conseguente al distacco dei contatti. In condizioni normali
-l'ampiezza massima della sovratensione è 1,2  1,3 volte il valore mas-
-simo della tensione di esercizio, ma può arrivare a 3  4 volte in condi-
-zioni particolari e con interruttori poco efficaci.
+Sono determinate dai fenomeni che si verificano durante il periodo transitorio conseguente al distacco dei contatti. In condizioni normali l'ampiezza massima della sovratensione è 1,2 ÷ 1,3 volte il valore massimo della tensione di esercizio, ma può arrivare a 3 ÷ 4 volte in condizioni particolari e con interruttori poco efficaci.
+
 A carattere impulsivo
-Hanno forma d'onda uni-
-direzionale a fronte ripido
-(Fig. X.9.2).
+Hanno forma d'onda unidirezionale a fronte ripido (Fig. X.9.2).
+
 Per chiusura di un interruttore
-Si verificano su linee AT a vuoto, ossia aperte al loro terminale di arrivo
-e sono dovute alla propagazione e alla riflessione delle onde di tensione
-e di corrente causate dagli scambi energetici tra i parametri elettrici
-della conduttura e del trasformatore. Raggiungono picchi di valore poco
-più che doppio di quello nominale.
-Fig. X.9.1   Forma d'onda indicativa di
-una sovratensione con componente
-oscillatoria.
-Fig. X.9.2   Onda impulsiva 1,2/50 s.
-Ucr: valore di cresta; 0,5 Ucr: emivalore;
-ta: tempo di picco (1,2 s); tb: tempo
-all'emivalore (50 s).
-u
-0
-t
-t
-0
-Ucr
-ta
-tb
-U
-0,5Ucr
-ta = 1,2 s
-tb = 50 s
+Si verificano su linee AT a vuoto, ossia aperte al loro terminale di arrivo, e sono dovute alla propagazione e alla riflessione delle onde di tensione e di corrente causate dagli scambi energetici tra i parametri elettrici della conduttura e del trasformatore. Raggiungono picchi di valore poco più che doppio di quello nominale.
+
+Fig. X.9.1 Forma d'onda indicativa di una sovratensione con componente oscillatoria.
+Fig. X.9.2 Onda impulsiva 1,2/50 µs.
+Ucr: valore di cresta; 0,5 Ucr: emivalore; ta: tempo di picco (1,2 µs); tb: tempo all'emivalore (50 µs).
 
 [PAG 995]
-IMPIANTI  ELETTRICI                                               X-145
-–  Sovratensioni a formazione lenta, originate da fenomeni di induzione elettrostatica
-tra le nubi e i conduttori di linea. Non si manifestano se qualche punto dell'impianto è
-connesso a terra e sono generalmente innocue per le linee AT.
-–  Sovratensioni a impulso, originate da fenomeni transitori e di breve durata, tipici
-dei fulmini. Si parla di fulminazione diretta quando il fulmine colpisce direttamente il
-componente, mentre si ha la fulminazione indiretta quando il lampo tra le nubi o il ful-
-mine verso terra non colpiscono direttamente l'impianto ma, a causa della vicinanza, pro-
-ducono sovratensioni dovute al campo magnetico rapidamente variabile prodotto dalla
-corrente di fulmine. I valori di picco di queste sovratensioni impulsive sono compresi tra
-1000 e 5000 kV nei casi più frequenti, con tempo di picco dell'ordine del microsecondo e
-tempo all'emivalore variabile dalle decine alle centinaia di microsecondi. I danni provo-
-cati sono causati sia dagli sforzi elettrodinamici che dall'intenso sviluppo di calore. I
-primi sono tipici dei fulmini di elevata potenza ma di brevissima durata (fulmini freddi), i
-secondi di quelli meno intensi ma con durate maggiori (fulmini caldi).
-9.3  Coordinamento dell'isolamento
-La protezione dalle sovratensioni viene effettuata mediante l'isolamento dei compo-
-nenti, che devono resistere fino a determinati livelli di tensione, e con l'uso di scaricatori
-di sovratensione per assicurare la protezione nel caso di sovratensioni di valore maggiore
-rispetto ai livelli di isolamento.
-Per i sistemi elettrici funzionanti in c.a. trifase con tensione superiore a 1000 V i cri-
-teri per la scelta dei livelli di isolamento delle apparecchiature sono stabilite dalle norme
-CEI EN 60071-1 (CEI 28-5) e CEI EN 60071-2 (CEI 28-4).
+IMPIANTI ELETTRICI X-145
+– Sovratensioni a formazione lenta, originate da fenomeni di induzione elettrostatica tra le nubi e i conduttori di linea. Non si manifestano se qualche punto dell'impianto è connesso a terra e sono generalmente innocue per le linee AT.
+– Sovratensioni a impulso, originate da fenomeni transitori e di breve durata, tipici dei fulmini. Si parla di fulminazione diretta quando il fulmine colpisce direttamente il componente, mentre si ha la fulminazione indiretta quando il lampo tra le nubi o il fulmine verso terra non colpiscono direttamente l'impianto ma, a causa della vicinanza, producono sovratensioni dovute al campo magnetico rapidamente variabile prodotto dalla corrente di fulmine. I valori di picco di queste sovratensioni impulsive sono compresi tra 1000 e 5000 kV nei casi più frequenti, con tempo di picco dell'ordine del microsecondo e tempo all'emivalore variabile dalle decine alle centinaia di microsecondi. I danni provocati sono causati sia dagli sforzi elettrodinamici che dall'intenso sviluppo di calore. I primi sono tipici dei fulmini di elevata potenza ma di brevissima durata (fulmini freddi), i secondi di quelli meno intensi ma con durate maggiori (fulmini caldi).
+
+9.3 Coordinamento dell'isolamento
+La protezione dalle sovratensioni viene effettuata mediante l'isolamento dei componenti, che devono resistere fino a determinati livelli di tensione, e con l'uso di scaricatori di sovratensione per assicurare la protezione nel caso di sovratensioni di valore maggiore rispetto ai livelli di isolamento.
+Per i sistemi elettrici funzionanti in corrente alternata trifase con tensione superiore a 1000 V, i criteri per la scelta dei livelli di isolamento delle apparecchiature sono stabiliti dalle norme CEI EN 60071-1 (CEI 28-5) e CEI EN 60071-2 (CEI 28-4).
+
 Suddivisione in campi dei livelli di tensione
-Per i sistemi MT e AT la suddivisione in campi (o fasce) dei livelli di tensione viene
-effettuata in base alla tensione massima Um per il componente (o tensione massima di un
-elemento di un sistema), definito come il valore efficace più elevato della tensione tra le
-fasi per il quale viene specificato l'isolamento del sistema.
+Per i sistemi MT e AT la suddivisione in campi (o fasce) dei livelli di tensione viene effettuata in base alla tensione massima Um per il componente (o tensione massima di un elemento di un sistema), definito come il valore efficace più elevato della tensione tra le fasi per il quale viene specificato l'isolamento del sistema.
 La suddivisione e i valori sono riportati nella Tab. X.9.2.
+
 Tensioni nominali e prove di isolamento
-Per i vari campi e per i diversi valori della tensione massima vengono stabilite le
-modalità e i valori di tensione delle varie prove dielettriche da eseguire per verificare se
-l'isolamento del componente è adatto a permetterne il funzionamento nel sistema elettrico
-al quale è destinato. Le prove dielettriche vengono distinte in:
-–  prove di tenuta a frequenza di esercizio di breve durata (1 min);
+Per i vari campi e per i diversi valori della tensione massima vengono stabilite le modalità e i valori di tensione delle varie prove dielettriche da eseguire per verificare se l'isolamento del componente è adatto a permetterne il funzionamento nel sistema elettrico al quale è destinato. Le prove dielettriche vengono distinte in:
+– prove di tenuta a frequenza di esercizio di breve durata (1 min);
+
 Tab. X.9.2   Suddivisione in campi dei livelli di tensione
 Campo A
 1 kV < Um < 52 kV
 Campo B
-52 kV  Um < 300 kV
+52 kV ≤ Um < 300 kV
 Campo C
-Um  300 kV
-Tensione 
-nominale Un 
+Um ≥ 300 kV
+
+Tensione
+nominale Un
 (kV)
 Tensione mas-
 sima Um (kV)
-Tensione 
-nominale Un 
+Tensione
+nominale Un
 (kV)
 Tensione mas-
 sima Um (kV)
-Tensione 
-nominale Un 
+Tensione
+nominale Un
 (kV)
 Tensione mas-
 sima Um (kV)
