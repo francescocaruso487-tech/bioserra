@@ -149,7 +149,7 @@ alimentatore, XIV-26
 , modalità operative, XIV-99
 , moduli di comunicazione, XIV-46
 , moduli di conteggio veloce, XIV-45
-, moduli intelligenti, XIV-43
+, moduli intelligenti, XIV-43
 , moduli I/O, XIV-32
 , moduli I/O remoti, XIV-48
 , moduli per termocoppie, XIV-46
@@ -232,14 +232,8 @@ Nyquist, cammino di, XV-25
 Omogenea associata, XV-11
 Parabola, XV-37
 P.I.D., XV-42
-- costante di proporzionalità, XV-43
-- costante di integrazione,
-PLC, XV-53
-- blocco di scala, XV-58
-- diagramma ladder, XV-53
-- memoria dei PLC, XV-53
-- passaggio dei parametri, XV-58
-- regolatori P.I.D. con i, XV-55
+- costante di proporzionalità,
+- regolatori P.I.D. con *i*, XV-55
 - sintonizzazione del filtro, XV-58
 - subroutine, XV-54
 - tempo di ciclo, XV-54
@@ -268,7 +262,7 @@ Regolatori, XV-3, 42, 49
 - regolatore ON-OFF, XV-50
 - sintonizzazione del filtro, XV-58
 - tecniche di compensazione, XV-42
-- tuning costant, XV-42
+- *tuning* costanti, XV-42
 
 Reti correttrici, XV-40
 Reti di compensazione, XV-40
@@ -360,7 +354,7 @@ Stabilità e criteri di stabilità, XV-22
 - margine di fase, XV-35
 - margine di guadagno, XV-35
 - metodi numerici, XV-24
-- relativa, XV-35
+- stabilità relativa, XV-35
 
 Stazionarietà, XV-10
 Subroutine, XV-54
@@ -385,9 +379,7 @@ Trasformata Zeta, XV-43, 46, 47, 48
 **PROPRIETÀ**, XV-46
 **TEOREMA DEL VALORE FINALE**, XV-47
 **TEOREMA DEL VALORE INIZIALE**, XV-47
-**Velocità di risposta**, XV-37
-
-[PAG. 2279]
+Velocità di risposta, XV-37
 **SEZIONE XVI TECNOLOGIE BUS**
 47
 **Sezione XVI**
@@ -1226,8 +1218,8 @@ Progettazione elettrica ed elettronica
   - Flessibili, XX-140, 141
   - Materiali per i, XX-140
   - Metodi per l’assemblaggio dei, XX-128÷130
-  - Monofaccia, XX-136
-  - Multistrato, XX-136, 137
+- Monofaccia, XX-136
+- Multistrato, XX-136, 137
 - Processi di fabbricazione dei, XX-133÷140
 Coefficiente di sicurezza, XX-115
 Collaudi e verifiche a termine lavori, esami a vista, XX-43
