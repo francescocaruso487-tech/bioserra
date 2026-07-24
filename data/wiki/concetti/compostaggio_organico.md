@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-23
+aggiornato: 2026-07-24
 pdf_count: 6
 ---
 
@@ -12,29 +12,37 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata della materia organica, che trasforma scarti vegetali e animali in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi macro come lombrichi e artropodi, che scompongono la materia in composti umificati. Il compost di qualità si distingue per il suo equilibrio tra macro e micronutrienti, la struttura porosa che migliora l’aerazione del suolo e la capacità di trattenere acqua e nutrienti, fondamentali per la fase vegetativa delle piante in **Living Soil**.
+Il **compostaggio organico** è un processo biologico aerobico che trasforma materiali organici di scarto (come scarti di cucina, sfalci, letame e residui vegetali) in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, acari, collemboli) che decompongono la materia organica in condizioni controllate di umidità, ossigenazione e temperatura. Il compost maturo è un **humus** pregiato, ricco di acidi umici e fulvici, che migliora la struttura del suolo, la capacità di scambio cationico (CEC) e la disponibilità di nutrienti per le piante.
 
-In un contesto di serra outdoor a Caserta (41°N), il compostaggio assume un ruolo chiave per mantenere la fertilità del suolo senza ricorrere a fertilizzanti sintetici. La decomposizione termofila (55-65°C) favorisce l’eliminazione di patogeni e semi di infestanti, mentre la presenza di microrganismi benefici (come *Trichoderma* e batteri azotofissatori) arricchisce il substrato di enzimi e ormoni naturali che stimolano la crescita radicale e la resistenza delle piante. Inoltre, il compost maturo agisce come un "polmone" per il suolo, migliorando la struttura e la capacità di scambio cationico (CEC), essenziale per l’assorbimento dei nutrienti durante la fase vegetativa.
+In un sistema **Living Soil** outdoor, il compost è fondamentale perché:
+- **Riduce la necessità di fertilizzanti sintetici**, sostituendoli con nutrienti a lenta cessione.
+- **Migliora la biodiversità microbica**, favorendo la simbiosi radicale e la resistenza delle piante agli stress.
+- **Aumenta la ritenzione idrica** e la porosità del suolo, contrastando l’erosione e la compattazione.
+- **Bufferizza il pH**, rendendo i nutrienti più disponibili in un range ottimale (6.0–7.0 per la cannabis).
+
+Il meccanismo si basa su **fasi termofile** (55–65°C) dove i patogeni e i semi di malerbe vengono eliminati, seguite da fasi di raffreddamento e maturazione, in cui si formano composti stabili e umificati. Un compost ben gestito può essere pronto in **3–6 mesi**, a seconda delle condizioni climatiche e della qualità dei materiali di partenza.
 
 ---
 
 ## Come si applica in serra
+Per produrre compost di qualità in una **serra outdoor a Caserta (41°N)**, segui questi passaggi pratici, ottimizzati per il clima mediterraneo (estati calde e umide, inverni miti):
 
-### **1. Selezione e bilanciamento dei materiali**
-- **Materiali verdi (ricchi di azoto, umidi)**: scarti di frutta/verdura, erba fresca, fondi di caffè, letame fresco (es. cavallo o pollo).
-- **Materiali marroni (ricchi di carbonio, secchi)**: foglie secche, paglia, cartone non stampato, rametti triturati, segatura non trattata.
-- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Evitare materiali con pesticidi, metalli o plastiche.
+### 1. **Selezione dei materiali**
+- **Materiali verdi (ricchi di azoto, umidi)**:
+  - Scarti di frutta/verdura (non agrumi o avocado, troppo acidi).
+  - Erba fresca (sfalciata, non trattata con erbicidi).
+  - Letame fresco (coniglio, cavallo, pollo; evitare maiale e cane per rischio patogeni).
+  - Fondi di caffè (in quantità moderate, acidificano leggermente).
+- **Materiali marroni (ricchi di carbonio, secchi)**:
+  - Foglie secche, paglia, fieno.
+  - Cartone non stampato (tritato).
+  - Segatura di legno non trattato (in piccole quantità, per evitare eccesso di lignina).
+- **Rapporto C:N ideale**: **25:1 a 30:1** (es. 2 parti marroni per 1 parte verde).
 
-### **2. Preparazione del cumulo**
-- **Ubicazione**: scegliere un’area ombreggiata e ben drenata in serra, lontano da fonti di calore eccessivo.
-- **Struttura**: creare un cumulo di 1-1.5 m di altezza e larghezza, con base larga per favorire l’aerazione.
-- **Umidità**: il cumulo deve essere umido come una spugna strizzata (60-70% di umidità). Aggiungere acqua se necessario, soprattutto in estate a Caserta.
+### 2. **Preparazione del cumulo**
+- **Ubicazione**: Scegli un’area ombreggiata in serra (evita il sole diretto che asciuga troppo) o all’aperto, con drenaggio.
+- **Struttura**: Costruisci un cumulo a forma di **cono tronco** (1–1.5 m di altezza, 1–1.5 m di base) per ottimizzare aerazione e ritenzione termica.
+- **Strato di base**: 10 cm di materiali grossolani (rametti, paglia) per favorire l’aerazione dal basso.
 
-### **3. Gestione della temperatura e rivoltamenti**
-- **Monitoraggio**: utilizzare un termometro da compost per verificare che la temperatura raggiunga 55-65°C (fase termofila). Se supera i 70°C, aggiungere materiali marroni per raffreddare.
-- **Rivoltamenti**: ogni 2-3 giorni con una forca o pala, per ossigenare il cumulo e uniformare la decomposizione. In estate, ridurre la frequenza a 4-5 giorni per evitare eccessiva perdita di umidità.
-- **Durata**: il compost è pronto quando la temperatura si stabilizza a 30-40°C e il materiale assume un aspetto scuro, friabile e odora di terra umida (3-6 mesi, a seconda delle condizioni).
-
-### **4. Utilizzo in serra**
-- **Ammendamento**: mescolare il compost maturo (20-30% del volume) al substrato di coltivazione prima della semina o del trapianto.
-- **Pacciamatura**: applicare uno strato di 2-5 cm intorno alle piante per mantenere l’umidità e
+### 3. **Gestione termica e umidità**
+- **Temperatura**: Mantieni **55–65°C** per 2–3 settimane (misura con sonda termica o termometro da
