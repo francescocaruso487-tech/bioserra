@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-23T05:38:58.427590+00:00",
+  "lastUpdate": "2026-07-24T05:34:23.035995+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -3244,14 +3244,84 @@
       "data_proposta": "2026-07-23",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e acqua filtrata sulla riduzione dei residui post-raccolta in serra outdoor",
+      "ipotesi": "Coltivando piante di pianta in Living Soil (Manuale A) e utilizzando acqua filtrata per l'irrigazione e il water curing post-raccolta (Manuale B), si ottiene una riduzione significativa dei residui chimici (sali, metalli pesanti, clorofilla) nelle cime senza ricorrere a trattamenti aggressivi. L'ipotesi si basa sulla sinergia tra: 1) terreno biologico che minimizza l'accumulo di sali e impurità (Manuale A), e 2) acqua filtrata che evita contaminazioni residue durante la fase di lavaggio (Manuale B).",
+      "protocollo": [
+        "Preparare due lotti identici di piante di pianta (stessa varietà resistente, ad esempio CBD alto) in serra outdoor, coltivate in Living Soil con identici parametri (pH, umidità, temperatura).",
+        "Irrigare entrambi i lotti con acqua di fonte per 2 settimane (fase di acclimatamento).",
+        "Suddividere i lotti in due gruppi: Gruppo A (controllo) irrigato con acqua di fonte non filtrata; Gruppo B irrigato con acqua filtrata (filtro a carbone attivo o osmosi inversa). Continuare per 4 settimane.",
+        "Al momento della raccolta, dividere ogni gruppo in due sottogruppi: uno sottoposto a water curing con acqua di fonte (controllo), l'altro con acqua filtrata. Durata del curing: 48 ore a temperatura ambiente, con cambio d'acqua ogni 12 ore.",
+        "Misurare i residui di sali (EC), metalli pesanti (test kit specifici), e clorofilla (spettrofotometro portatile) nelle cime essiccate di tutti i sottogruppi."
+      ],
+      "materiali": [
+        "Piantine di pianta (varietà CBD alto, resistente)",
+        "Living Soil certificato (senza aggiunte chimiche)",
+        "Filtro per acqua (carbone attivo o osmosi inversa)",
+        "EC meter e test kit per metalli pesanti",
+        "Spettrofotometro portatile per clorofilla",
+        "Bilancia di precisione (0.01g)"
+      ],
+      "durata_giorni": 42,
+      "misure": [
+        "Residui di sali (EC in µS/cm) nelle cime essiccate",
+        "Concentrazione di metalli pesanti (mg/kg) tramite test kit",
+        "Livelli di clorofilla (unità arbitrarie) tramite spettrofotometro",
+        "Peso secco delle cime (g) per valutare perdite durante il curing"
+      ],
+      "variabili_controllo": "Stessa varietà, stesso terreno, stesso regime di irrigazione (solo differenza nell'acqua), stessa durata di curing, stessa temperatura e umidità durante la fase di curing.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "L'esperimento combina due approcci già noti (Living Soil e acqua filtrata) in una sinergia innovativa per la riduzione dei residui post-raccolta, senza precedenti nei manuali originali. Il focus è sulla misurazione quantitativa dell'effetto combinato, non trattato separatamente nei due manuali.",
+      "id": "esp_conn_2026-07-24_001",
+      "data_proposta": "2026-07-24",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra substrato Living Soil in vasi biologici e semi femminizzati su resa in cannabinoidi (CBD/THC) in coltivazione outdoor serra BioSerra Caserta",
+      "ipotesi": "L'uso combinato di vasi biologici con substrato Living Soil (Manuale A: favorisce sviluppo radicale e salute delle piante) e semi femminizzati (Manuale B: garantiscono piante produttive al 100%) porterà a una resa superiore in CBD/THC rispetto a controlli con substrato standard e semi regolari. La sinergia tra radici sane (Living Soil) e piante produttive (semi femminizzati) massimizzerà l'assorbimento dei nutrienti e la biosintesi dei cannabinoidi, riducendo sprechi di risorse (acqua, fertilizzanti) e aumentando la qualità del raccolto.",
+      "protocollo": [
+        "Preparare 4 vasi identici (20L) con substrato Living Soil (compost maturo, micorrize, lombrichi) per gruppo. Aggiungere 500g di biochar attivato per migliorare struttura e capacità di scambio cationico.",
+        "Seminare in ogni vaso 3 semi femminizzati di una stessa varietà CBD-dominante (es. 'ACDC') e 3 semi regolari della stessa genetica. Coprire con 1cm di substrato e mantenere umidità costante (70%) per 7 giorni.",
+        "Dopo la germinazione, selezionare le 2 piante più vigorose per vaso (una femminizzata, una regolare) e rimuovere le altre. Applicare irrigazione 'water-only' (solo acqua, senza nutrienti aggiunti) per 30 giorni, monitorando pH (6.2-6.8) e EC (<0.8 mS/cm).",
+        "Misurare settimanalmente: altezza delle piante, numero di nodi, diametro del fusto, e stato delle radici (tramite osservazione visiva o scanner portatile). Al giorno 30, raccogliere le piante, essiccare in condizioni standard (15°C, 60% umidità) per 7 giorni, e analizzare il contenuto di CBD/THC tramite cromatografia TLC o kit spettrofotometrico."
+      ],
+      "materiali": [
+        "Vasi in terracotta biologica (20L, 4 unità)",
+        "Substrato Living Soil pre-arricchito (compost, micorrize, lombrichi, biochar)",
+        "Semi femminizzati e regolari della stessa varietà CBD-dominante (es. 'ACDC')",
+        "Kit di analisi cannabinoidi (TLC o spettrofotometro portatile)",
+        "Sistema di irrigazione a goccia con timer e pHmetro/ECmetro"
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "Contenuto di CBD e THC (mg/g) nelle infiorescenze secche",
+        "Peso fresco e secco delle piante per vaso",
+        "Indice di salute radicale (scala 1-5 basata su densità e lunghezza delle radici)",
+        "Efficienza idrica (litri di acqua usati per grammo di cannabinoidi prodotti)"
+      ],
+      "variabili_controllo": "Varietà della pianta, volume del vaso, tipo di substrato, metodo di irrigazione, condizioni ambientali della serra (temperatura, umidità, luce).",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "Questo esperimento non è descritto in nessuno dei due manuali individualmente. Il Manuale A si concentra su substrati e coltivazione, ma non menziona semi femminizzati, mentre il Manuale B tratta semi femminizzati ma non approfondisce substrati Living Soil. La combinazione specifica di questi due elementi in un protocollo misurabile per la resa in cannabinoidi rappresenta un approccio innovativo per ottimizzare la coltivazione outdoor in serra.",
+      "id": "esp_conn_2026-07-24_002",
+      "data_proposta": "2026-07-24",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-23",
-    "nuove_proposte": 1,
+    "data": "2026-07-24",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
-    "connessioni_usate": 378
+    "connessioni_usate": 402
   }
 }
