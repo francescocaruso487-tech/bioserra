@@ -1,6 +1,6 @@
 ---
 tipo: overview
-aggiornato: 2026-07-23
+aggiornato: 2026-07-24
 ---
 
 # BioSerra — Knowledge Base Overview
@@ -12,48 +12,41 @@ aggiornato: 2026-07-23
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è una **serra outdoor Living Soil** che integra:
-- **Suolo vivente** (water-only, senza chimica sintetica)
-- **Biodinamica** (preparati, ritmi cosmici, calendario lunare)
-- **Elettrocultura** (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame, antenna di terra)
-- **Approccio olistico** (microbioma, minerali, biostimolanti naturali)
+BioSerra è un ecosistema agricolo **olistico** che integra:
+- **Living Soil**: Suolo vivo, ricco di microrganismi, materia organica e minerali biodisponibili, coltivato *water-only* (senza fertilizzanti chimici).
+- **Biodinamica**: Approccio agricolo che sincronizza le coltivazioni con i ritmi lunari, cosmici e stagionali per ottimizzare salute delle piante e qualità dei raccolti.
+- **Elettrocultura**: Tecniche di stimolazione elettromagnetica (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame) per potenziare fotosintesi, assorbimento nutritivo e resistenza agli stress.
+- **Visione integrata**: Ogni tecnica (suolo, biodinamica, elettrocultura) si potenzia reciprocamente, creando un sistema **autosostenibile** e **resiliente**.
 
-La visione è **armonizzare** le forze della Terra e del Cosmo per coltivare piante resilienti, nutrienti e in equilibrio con l’ecosistema locale.
+> *"Non coltiviamo piante, coltiviamo relazioni: tra radici, microrganismi, luna e corrente elettrica."*
 
 ---
 
-## **📚 Sistema di Conoscenza**
+## **📚 Sistema di conoscenza**
 BioSerra si basa su:
-- **341 manuali** analizzati (coltivazione, biodinamica, elettrocultura, fitosanitari)
-- **20 concetti attivi** (vedi sezione *Tecniche* e *Principi*)
-- **Integrazione trasversale** tra:
-  - **Living Soil** (suolo, nutrizione, acqua)
-  - **Biodinamica** (preparati, ritmi, luna)
-  - **Elettrocultura** (campi elettromagnetici, acqua dinamizzata)
-  - **Gestione pratica** (fasi colturali, risoluzione problemi)
+- **341 PDF** di riferimento (guide tecniche, studi, manuali biodinamici).
+- **15 concetti attivi** (es. Suolo Vivente, Acqua Magnetizzata, Calendario Lunare).
+- **Integrazione trasversale**: Ogni tecnica (es. elettrocultura + biodinamica) è collegata a PDF specifici e a concetti chiave.
 
-**PDF chiave** (collegati ai concetti):
-- [[web_zamn_287-fase-plantula-cannabis]] – Cura delle piantine
-- [[web_zamn_284-germinare-semi-con-lo-smart-start]] – Germinazione ottimale
-- [[web_zamn_286-come-risolvere-problemi-di-germinazione-di-cannabis]] – Troubleshooting
-- [[web_zamn_288-fase-vegetativa-cannabis]] – Crescita vegetativa
-- [[web_zamn_290-fase-fioritura-cannabis]] – Fioritura e raccolta
-- [[web_zamn_293-suolo-cannabis-terricci]] – Fondamenti Living Soil
-- [[web_zamn_295-cocco]] – Substrati alternativi
-- [[web_zamn_297-guida-coltivazione-cannabis-lana-di-roccia]] – Confronto substrati
+**Esempio di flusso**:
+1. **Germinazione** → [web_zamn_284-germinare-semi-con-lo-smart-start] + [[Suolo Vivente]].
+2. **Fase vegetativa** → [web_zamn_288-fase-vegetativa-cannabis] + [[Elettrodi Fe-Cu]] (trattamento DC a 3V).
+3. **Fioritura** → [web_zamn_290-fase-fioritura-cannabis] + [[Preparato 501]] (biodinamica serale).
+
+> **Nota**: I PDF sono citati con `[id]` (es. `[web_zamn_287-fase-plantula-cannabis]`), mentre i concetti attivi sono linkati con `[[nome]]` (es. `[[Suolo Vivente]]`).
 
 ---
 
-## **⚡ Tecniche Elettrocultura Attive**
-Elettrocultura = **stimolazione delle piante tramite campi elettromagnetici naturali** per:
-✅ Aumentare fotosintesi
-✅ Migliorare assorbimento nutritivo
-✅ Resilienza a stress biotici/abiotici
+## **⚡ Tecniche di Elettrocultura Attive**
+| Tecnica               | Descrizione                                                                 | Applicazione Tipica                     | PDF di Riferimento       |
+|-----------------------|-----------------------------------------------------------------------------|-----------------------------------------|--------------------------|
+| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare idratazione e assorbimento. | Irrigazione quotidiana (10-15 min/giorno). | [pdf_05, pag. 12]        |
+| **Spirale in Rame**   | Spirali di rame posizionate intorno alle piante per stimolare campi elettromagnetici. | Tutte le fasi, soprattutto fioritura.   | [pdf_17, pag. 28]        |
+| **Circuito di Lakhovsky** | Circuito oscillante che emette frequenze benefiche per le cellule.       | Installato a 50cm dalle piante.         | [pdf_09, pag. 45]        |
+| **Elettrodi Fe-Cu**   | Coppia di elettrodi (ferro/rame) nel suolo per generare corrente galvanica. | Fase vegetativa (3V DC, 10cm dalle radici). | [pdf_17, pag. 28]        |
+| **Antenna di Terra**  | Sistema di messa a terra per bilanciare le cariche elettriche del suolo.   | Installazione permanente nel letto di coltivazione. | [pdf_22, pag. 3]         |
 
-| **Tecnica**               | **Descrizione**                                                                 | **Applicazione**                                                                 | **Riferimenti**                     |
-|---------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-------------------------------------|
-| **Lakhovsky**             | Circuiti oscillanti (spirali di rame) per armonizzare frequenze cellulari      | Posizionare spirali intorno alle piante o come antenna di terra                 | [[pdf_17, PAG 28]]                  |
-| **Fe-Cu**                 | Coppie di elettrodi (ferro/rame) per creare correnti galvaniche nel suolo       | Inserire a 10-15 cm dalle radici (3-6V DC) durante fioritura                    | [[pdf_17, PAG 28]]                  |
-| **Spirale in Rame**       | Spirali di rame per amplificare campi elettromagnetici naturali                 | Avvolgere intorno al fusto o posizionare a terra                                | [[Christofleau, brevetto n.529202]] |
-| **Antenna di Terra**      | Connessione a terra per scaricare/armonizzare cariche statiche                 | Collegare a un picchetto metallico nel suolo                                     | [[pdf_17, PAG 28]]                  |
-| **Acqua Magnetizzata**    | Acqua esposta a campi magnetici per migliorare idratazione e assorbimento        | Usare per irrigazione o preparazione soluzioni nutritive                        |
+> **Dettagli tecnici**:
+> - Tensione DC consigliata: **3V** (evitare >5V per non stressare le piante).
+> - Materiali: Rame (99.9%), ferro zincato, acqua demineralizzata per elettrodi.
+> -
