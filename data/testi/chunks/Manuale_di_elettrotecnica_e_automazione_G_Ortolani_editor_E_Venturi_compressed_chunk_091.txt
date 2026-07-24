@@ -17,7 +17,7 @@ pag.
 1.4    TRIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  9
 
-1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  10
 
 1.5.1    GTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -35,10 +35,10 @@ pag.
 1.8    Reti snubber . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  18
 
-1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .
+1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  19
 
-1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . * . . . . . . . . . . . . . . . . . .
  20
 
 2    CONVERSIONE DELLA CORRENTE ELETTRICA . . . . . . . . . . . . . . . . . . . .
@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . . * . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  38
 
 7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -87,15 +87,10 @@ ELETTRONICA DI POTENZA
 8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  40
 
-8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-47
-
-10.2    Regolazione con numero intero di cicli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-48
-11    INVERTER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . .
 11.1    Inverter a transistor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
-11.2    Inverter a tiristori . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11.2    Inverter a tiristori . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
 (XVIII.1.1)
 
 ma essendo uAK = 0, si avrà pertanto uu = ui. La resistenza viene interessata da una corrente variabile, legata alla forma della tensione, di valore:
@@ -235,6 +230,8 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 
 | Dispositivo | Tensione di Breakover [V] | Simmetria della tensione di Breakover [V] | Tensione di Breakover dinamica [V] | Corrente di Breakover [mA] | Corrente di picco [A] |
 |-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
+| ST-2        | 28 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
+|-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 32 ± 4                    | ± 3                                      | 5                                  | 5                          | 2                     |
 |-------------|---------------------------|--------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 32 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
@@ -279,7 +276,6 @@ La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi pa
 Dall’analisi della **Fig. XVIII.1.9** si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, però consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di *breakover*, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
 
 Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare attenzione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comunemente indicato come **effetto di dv/dt**; ampi valori di questa grandezza comportano l’innesco, ovvero la conduzione, del dispositivo.
-
 Il problema appena accennato viene usualmente risolto tramite un circuito costituito dalla serie composta da una resistenza e una capacità, indicato come **circuito snubber**, collegato in parallelo tra MT1 e MT2.
 In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore massimo di 40 A e tensioni massime di 2,5 kV in grado di funzionare privi di circuito snubber; vengono comunemente indicati come **TRIAC snubberless**.
 
@@ -337,20 +333,6 @@ dU/dt
 ⌀
 dU/dt
 ∘
-
-[PAG 1829]
-ELETTRONICA DI POTENZA
-XVIII-11
-utilizzati per il controllo di grosse potenze solo 20 anni più tardi, infatti risultavano, ai tempi della loro nascita, particolarmente difficili da realizzare con la tecnologia del tempo.
-Dal punto di vista funzionale sono assimilabili a dispositivi tradizionali quali SCR, TRIAC e MOSFET, ma inglobano le caratteristiche funzionali di tutti questi dispositivi. La Fig. XVIII.1.10 evidenzia lo schema elettrico e funzionale del dispositivo: è un dispositivo che, similmente agli SCR, lascia transitare la corrente in un solo verso. Si noti, in particolare, che il terminale di comando, il Gate, mette in risalto il doppio senso della corrente che lo può percorrere. Al variare del verso di percorrenza della corrente di Gate, si è in grado di modificare lo stato di funzionamento del dispositivo da OFF a ON e viceversa.
-
-Fig. XVIII.1.10 Simbolo elettrico e struttura del GTO.
-
-Per comprendere il funzionamento di questo dispositivo a tre giunzioni, consideriamo il suo circuito equivalente, rappresentato da due transistor, riportato nella Fig. XVIII.1.11. Un impulso positivo applicato sul terminale di comando G rispetto al catodo K crea una corrente entrante in base del transistor NPN, cioè nella zona P, e mette in conduzione il transistor stesso provocando di conseguenza la
-Fig. XVIII.1.11 Circuito equivalente del GTO.
-
-Entrambi i transistor, con la loro configurazione, realizzano un anello di intensa reazione positiva, cioè il fenomeno indicato col termine *loop* rigenerativo. In questa situazione i transistor risultano in saturazione forzata e presentano un piccolo valore di resistenza tra il terminale A e il terminale K.
-
 Se l’intensità di corrente I<sub>AK</sub> è tale per cui la somma dei guadagni dei due dispositivi (funzione della corrente I<sub>C</sub> di ciascuno) è maggiore dell’unità, anche se viene a mancare l’impulso di Gate, il dispositivo persevera nel suo stato di conduzione.
 
 La Fig. XVIII.1.12 illustra l’andamento delle correnti per un dispositivo in conduzione. La differenza sostanziale dagli SCR normali risiede nel valore dei guadagni.
@@ -410,7 +392,7 @@ Normalmente con questi dispositivi si opera con tensioni che possono raggiungere
 
 Il GTO è un eccellente dispositivo allo stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la Fig. XVIII.1.16.
 
-La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità, fanno sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento dovuto a perdite di commutazione estremamente contenute.
+La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento, dovuto a perdite di commutazione estremamente contenute.
 
 Un elemento di particolare rilievo sta nella loro possibilità di interrompere la corrente in qualsiasi istante (Fig. XVIII.1.17), fatto questo che si concretizza nella facoltà di parzializzare un’onda sinusoidale in modo perfettamente simmetrico e ridurre in questo modo il contenuto delle armoniche ad elevata frequenza.
 
