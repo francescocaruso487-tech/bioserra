@@ -2,51 +2,57 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-07-24
+aggiornato: 2026-07-25
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Tè di Compost
+# Te di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ricco di microrganismi benefici, enzimi, acidi umici e nutrienti solubili, ottenuto dalla lisciviazione di compost maturo in acqua. Questo preparato funziona come un **bioattivatore del suolo** e un **stimolante fogliare**, potenziando la biodiversità microbica e migliorando l’assorbimento radicale. Il meccanismo d’azione si basa sulla **traslocazione di comunità microbiche** (batteri, funghi, attinomiceti) e sostanze umiche che:
-- **Aumentano la disponibilità di nutrienti** (azoto, fosforo, potassio) tramite mineralizzazione;
-- **Stimolano la resistenza delle piante** (induzione di resistenza sistemica acquisita, ISR);
-- **Migliorano la struttura del suolo** (aggregazione delle particelle, ritenzione idrica);
-- **Competono con patogeni** (effetto *suppressiveness* contro funghi come *Phytophthora* o batteri come *Pseudomonas*).
+Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dal compost maturo, ricco di microrganismi benefici (batteri, funghi, protozoi e nematodi), nutrienti solubili e sostanze umiche. Questo preparato funziona come un **biofertilizzante e biostimolante**, migliorando la salute del suolo e delle piante attraverso tre meccanismi principali:
+1. **Aumento della biodiversità microbica**: I microrganismi presenti nel compost tea colonizzano la rizosfera e la filosfera, competendo con patogeni e promuovendo la salute delle piante.
+2. **Mobilitazione dei nutrienti**: I batteri e i funghi solubilizano fosforo, potassio e micronutrienti, rendendoli disponibili per le radici.
+3. **Induzione di resistenza sistemica**: Alcuni ceppi microbici stimolano le difese naturali delle piante, riducendo la suscettibilità a malattie e stress ambientali.
 
-In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce stress idrici e attacchi fungini, il Tè di Compost diventa uno strumento chiave per **mantenere il suolo vivente** e ridurre l’uso di input sintetici. La sua efficacia è massima quando applicato in **fasi critiche** (vegetazione e fioritura), dove la domanda di nutrienti e la suscettibilità a patogeni sono elevate.
+In serra outdoor a Caserta (41°N), dove il clima mediterraneo può causare stress idrico e termico, il compost tea agisce come **adattogeno**, migliorando la resilienza delle piante di cannabis durante le fasi di vegetazione e fioritura. La sua applicazione fogliare o radicale è particolarmente efficace in **Living Soil**, dove la materia organica e la vita microbica sono già elevate, ma può essere potenziata con sinergie mirate.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, segui questo protocollo **aerobico** per massimizzare la vitalità microbica:
 
-### **Materiali necessari**
-- Compost maturo (preferibilmente **vermicompost** o compost da letame bovino/equino, maturato almeno 6 mesi);
-- Acqua **non clorata** (lasciare decantare l’acqua del rubinetto 24h o usare acqua piovana);
-- **Aeratore** (pompa ad aria per acquari, 24-48h di funzionamento);
-- **Melassa** (o zucchero di canna, 1-2 g/L) come fonte di carbonio per i batteri;
-- **pHmetro** (ottimale: 6.5–7.5);
-- **Filtro a maglia fine** (per applicazione fogliare);
-- **Irroratrice a pressione** (per applicazione radicale) o nebulizzatore (fogliare).
+### **Preparazione (metodo aerobico)**
+1. **Materiali**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame maturo).
+   - Acqua non clorata (lasciare decantare l’acqua del rubinetto per 24h o usare acqua piovana).
+   - Aeratore per acquario (con pietra porosa).
+   - Melassa biologica (1-2 cucchiai per 10L di acqua).
+   - Contenitore in plastica o vetro (evitare metalli).
 
-### **Procedura**
-1. **Preparazione del compost**:
-   - Usa **1 parte di compost** ogni **5-10 parti di acqua** (es. 1 kg di compost in 10 L di acqua).
-   - Evita compost fresco o con residui di pesticidi.
-
-2. **Estrazione aerobica**:
-   - Immergi il compost in un contenitore pulito e aggiungi l’acqua.
-   - Aggiungi **1-2 g/L di melassa** (o 1 cucchiaio di zucchero di canna) per alimentare i batteri.
-   - Mantieni l’aeratore in funzione **24-48h** a temperatura ambiente (18–25°C). Evita la luce diretta.
+2. **Procedura**:
+   - Riempire il contenitore con acqua e avviare l’aeratore.
+   - Aggiungere **1 kg di compost per 10L di acqua** (rapporto 1:10).
+   - Immergere il compost in un sacchetto di tela o in una retina per evitare sedimenti.
+   - Aggiungere la melassa e mescolare delicatamente.
+   - Aerare per **24-48 ore** a temperatura ambiente (18-25°C), evitando luce diretta.
 
 3. **Filtraggio e applicazione**:
-   - Filtra il liquido con una retina a maglia fine (per applicazione fogliare) o usa direttamente (per applicazione radicale).
-   - **Applica entro 4 ore** dalla preparazione per evitare proliferazione di batteri anaerobici.
+   - Filtrare il liquido con una retina fine o un panno pulito.
+   - Applicare **entro 4 ore** dalla preparazione per massimizzare la vitalità microbica.
    - **Dosi**:
-     - **Radicale**: 50–100 mL/m² ogni 7–14 giorni (innaffiando il suolo).
-     - **Foglia
+     - **Radicale**: 1-2L/m² ogni 2 settimane (innaffiando il suolo).
+     - **Fogliare**: 0.5-1L/m² con nebulizzatore a bassa pressione (mattina presto o sera).
+
+### **Fasi di applicazione in serra outdoor (Caserta)**
+- **Vegetazione**: Applicare ogni 15 giorni per stimolare la crescita radicale e la resistenza a oidio o peronospora.
+- **Fioritura**: Ridurre la frequenza a 1 volta al mese, evitando applicazioni fogliari durante la fioritura piena per non interferire con i tricomi.
+
+---
+
+## Sinergie con altri elementi
+
+| **Tecnica/Sostanza**       | **Sinergia**                                                                 | **Modalità di applicazione**                          |
+|----------------------------|------------------------------------------------------------------------------|-------------------------------------------------------|
+| **Lakhovsky (Onde di forma)** | Il compost tea potenzia l’effetto delle onde di forma, migliorando
