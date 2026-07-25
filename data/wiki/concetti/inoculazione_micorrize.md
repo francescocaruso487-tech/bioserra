@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-24
+aggiornato: 2026-07-25
 pdf_count: 1
 ---
 
@@ -12,24 +12,36 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: il fungo estende la rete radicale della pianta (fino a 100 volte in più), migliorando l’assorbimento di acqua e nutrienti (azoto, fosforo, potassio), mentre la pianta fornisce al fungo carboidrati derivati dalla fotosintesi. In particolare, i funghi micorrizici arbuscolari (AMF) sono i più diffusi e si legano a oltre l’80% delle specie vegetali, incluse le piante di cannabis.
+Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un ecosistema **Living Soil** come quello della serra outdoor a Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono la portata dell’apparato radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre ricevono in cambio carboidrati prodotti dalla fotosintesi. Questo meccanismo è cruciale in condizioni di stress idrico o carenza nutrizionale, tipiche delle coltivazioni outdoor italiane, dove la variabilità climatica può compromettere la salute delle piante.
 
-Il meccanismo d’azione delle micorrize è tanto semplice quanto rivoluzionario: i filamenti fungini (ife) penetrano nelle cellule radicali formando strutture chiamate **arbuscoli**, dove avviene lo scambio di nutrienti. Questo processo non solo ottimizza la crescita delle piante, ma aumenta anche la loro resistenza a stress idrici, patogeni e tossine del suolo. Inoltre, le micorrize migliorano la struttura del terreno, favorendo l’aggregazione delle particelle e la ritenzione idrica, elementi chiave per un ecosistema **Living Soil** equilibrato.
+Il successo dell’inoculazione dipende dalla compatibilità tra specie fungine e pianta ospite, nonché dalle condizioni del suolo. In un **Living Soil** ben strutturato, ricco di materia organica e biodiversità microbica, le micorrize prosperano e potenziano la resilienza delle colture. Studi dimostrano che piante micorrizate sviluppano radici più robuste, una maggiore tolleranza a patogeni e una crescita accelerata, soprattutto nelle fasi iniziali di germinazione e vegetazione, quando l’apparato radicale è ancora poco sviluppato.
+
+---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize va effettuata **al momento del trapianto** o durante la fase di germinazione, quando le radici sono ancora giovani e ricettive. Segui questi passaggi:
 
-1. **Prepara il substrato**: Assicurati che il terreno sia umido ma non zuppo, con un pH compreso tra 6.0 e 7.0 (ideale per la cannabis).
-2. **Dose**: Applica **5-10g di inoculo micorrizico** per pianta, distribuendolo direttamente sulle radici o nel foro di trapianto. Puoi mescolare l’inoculo con un po’ di compost maturo per migliorare l’adesione.
-3. **Copertura**: Riempi il foro con terra e comprimi leggermente per favorire il contatto tra radici e funghi.
-4. **Irrigazione**: Innaffia con acqua a temperatura ambiente, evitando ristagni. Usa acqua a **pH bilanciato** (6.0-7.0) per non stressare i microrganismi.
-5. **Post-trapianto**: Evita l’uso di **fungicidi** (anche naturali come il rame) per almeno **30 giorni** dopo l’inoculazione, per non uccidere i funghi benefici.
+1. **Preparazione dell’inoculo**:
+   - Utilizza un inoculo commerciale a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus spp.* o *Rhizophagus irregularis*, specifico per piante da serra (es. cannabis, pomodoro, basilico).
+   - Dose consigliata: **5–10 g per pianta**, da diluire in acqua non clorata (lasciare decantare l’acqua del rubinetto per 24 ore o usare acqua piovana).
 
-**Consiglio pratico**: In serra outdoor, applica l’inoculo preferibilmente in **serate fresche** (evitando il caldo diurno) per ridurre lo stress termico sulle radici.
+2. **Applicazione al trapianto**:
+   - Al momento del trapianto, posiziona l’inoculo direttamente a contatto con le radici, preferibilmente in una buca o solco profondo 5–10 cm.
+   - Se usi substrato in vaso, mescola l’inoculo con il terriccio di riempimento (es. 1 g per litro di substrato).
+   - Evita di esporre l’inoculo alla luce diretta del sole o a temperature superiori a 30°C, che ne riducono la vitalità.
+
+3. **Post-applicazione**:
+   - Mantieni il suolo umido (ma non inzuppato) per i primi 7–10 giorni, per favorire la colonizzazione radicale.
+   - **Evitare fungicidi** (anche naturali come il rame) nei 30 giorni successivi all’inoculazione, poiché danneggiano i funghi micorrizici.
+   - Integra con **compost maturo** o **biochar** per migliorare la struttura del suolo e la sopravvivenza delle ife.
+
+---
 
 ## Sinergie con altri elementi
-Le micorrize si integrano perfettamente con altre tecniche di **elettrocultura** e **suolo vivente**, potenziando i loro effetti:
 
-- **Lakhovsky (Onde di forma)**: L’inoculazione micorrizica, combinata con l’uso di **acqua magnetizzata** (trattata con dispositivi Lakhovsky), può aumentare la vitalità delle ife fungine, migliorando la conducibilità elettrica del suolo e la risposta delle piante agli stimoli elettromagnetici.
-- **Fe-Cu (Ferro e Rame)**: Questi micronutrienti, aggiunti in forma chelata, supportano la respirazione cellulare delle radici e la sintesi di enzimi fungini. Tuttavia, evita eccessi di rame, tossico per le micorrize.
-- **Acqua magnetizzata**: L’irrigazione con acqua sottoposta
+- **Tecniche elettromagnetiche (Lakhovsky, Fe-Cu)**:
+  Le onde elettromagnetiche a bassa frequenza (es. 7,83 Hz) possono stimolare la crescita delle ife micorriziche, potenziando la simbiosi. Applica un **generatore di onde Schumann** in serra per 2–4 ore al giorno, soprattutto durante la fase di vegetazione.
+
+- **Acqua magnetizzata**:
+  L’irrigazione con acqua sottoposta a **campi magnetici statici** (es. 1.000–3.000 Gauss) aumenta la solubilizzazione dei nutrienti e la motilità delle ife. Usa un **magnete permanente** avvolto intorno al tubo di irrigazione o un dispositivo commerciale.
+
+-
