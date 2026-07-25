@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-24T05:34:23.035995+00:00",
+  "lastUpdate": "2026-07-25T05:28:22.968229+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,46 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "exp_001",
-      "nome": "Legnetto con treccia di rame e punta di rame",
-      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
-      "materiali": [
-        "Legnetto naturale",
-        "Treccia di rame",
-        "Punta di rame"
-      ],
-      "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
-      "funzione": "Conduzione e amplificazione energie naturali",
-      "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
-      "applicato_a": "tutte_le_piante",
-      "attivo": false,
-      "data_attivazione": "2026-06-30",
-      "fonte": "Guida personale",
-      "categoria": "elettrocultura",
-      "note": "",
-      "tipo": "elettrocultura",
-      "data_disattivazione": "2026-07-01"
-    },
-    {
-      "id": "daily_1781640025709_2",
-      "nome": "Tecnica di prunning",
-      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "forbici",
-        "guanti"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-29",
-      "tipo": "coltivazione_generale",
-      "data_disattivazione": "2026-07-01"
-    },
     {
       "id": "daily_1781640025709_1",
       "nome": "Monitoraggio del pH",
@@ -3314,13 +3274,112 @@
       "data_proposta": "2026-07-24",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil e Water Curing sulla qualità delle cime in serra outdoor",
+      "ipotesi": "Coltivando piante in Living Soil (Manuale A) e applicando un protocollo di Water Curing con acqua filtrata (Manuale B) si ottiene una riduzione significativa dei residui chimici e della clorofilla nelle cime, migliorando il sapore e la purezza senza trattamenti post-raccolta aggressivi. L'ipotesi si basa sul fatto che il Living Soil riduce la necessità di fertilizzanti chimici (Manuale A), mentre l'acqua filtrata evita contaminazioni residue (Manuale B), potenziando l'effetto del water curing.",
+      "protocollo": [
+        "Preparare due lotti identici di piante (es. varietà CBD alto) in Living Soil in vasi biologici, posizionati in serra outdoor. Mantenere condizioni di coltivazione identiche (irrigazione, luce, temperatura).",
+        "Al momento della raccolta (fase di fioritura rapida), dividere le pime in due gruppi: Gruppo A (controllo) e Gruppo B (trattato).",
+        "Per il Gruppo B, applicare il Water Curing: immergere le cime intere in acqua filtrata a temperatura ambiente per 24 ore, seguito da un risciacquo finale con acqua distillata. Il Gruppo A viene essiccato senza trattamento.",
+        "Dopo l'essiccazione (10 giorni), analizzare entrambe le cime per residui di sali, clorofilla e sapore erbaceo tramite test organolettici (panel di assaggiatori) e analisi di laboratorio (es. spettrofotometria per clorofilla)."
+      ],
+      "materiali": [
+        "Living Soil biologico (compost, micorrize, humus di lombrico)",
+        "Vasi in terracotta o biodegradabili (diametro 20-30 cm)",
+        "Acqua filtrata (filtro a carbone attivo o osmosi inversa)",
+        "Strumenti per misurazione: conduttivimetro (residui sali), spettrofotometro (clorofilla), bilancia di precisione"
+      ],
+      "durata_giorni": 40,
+      "misure": [
+        "Residui di sali (misurati in µS/cm con conduttivimetro)",
+        "Livelli di clorofilla (assorbanza a 663 nm con spettrofotometro)",
+        "Sapore erbaceo (valutazione organolettica su scala 1-10 da 5 assaggiatori indipendenti)",
+        "Peso secco delle cime (per verificare perdite di massa dovute al water curing)"
+      ],
+      "variabili_controllo": "Stesso lotto di semi, stesso substrato Living Soil, stessa esposizione solare, stessa fase di raccolta, stessa durata di essiccazione.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalità": "L'esperimento combina due approcci (Living Soil e Water Curing) che nei manuali originali sono trattati separatamente: il Manuale A si concentra sulla coltivazione, il Manuale B sul post-raccolta. La sinergia tra i due metodi non è mai stata testata in un protocollo integrato per serre outdoor, rendendo questo esperimento unico nel valutare l'impatto combinato su qualità e purezza delle cime.",
+      "id": "esp_conn_2026-07-25_001",
+      "data_proposta": "2026-07-25",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento LST per Living Soil Outdoor in Serra: Ottimizzazione Resa e CBD tramite Low Stress Training in Coltivazione Water-Only",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) a piante outdoor in Living Soil (Manuale B), si ottiene un aumento della resa e del contenuto di CBD senza stress eccessivo, grazie all'ottimizzazione dell'esposizione luminosa e alla distribuzione omogenea dei nutrienti nel substrato water-only. La cimatura LST indoor è nota per aumentare la resa (Manuale B), mentre le tecniche indoor (Manuale A) permettono un controllo preciso della luce e dell'umidità, adattabili outdoor in serra con Living Soil.",
+      "protocollo": [
+        "Preparare 20 piante di pianta (varietà CBD-dominante, semi femminizzati autofiorenti, 10 per gruppo) in Living Soil (compost biodinamico + micorrize) in vasi da 10L, posizionate in serra BioSerra Caserta con esposizione solare diretta e temperatura controllata (20-28°C).",
+        "Dopo 30 giorni dal trapianto (fase vegetativa avanzata), applicare LST alle 10 piante del gruppo sperimentale: piegare delicatamente i rami principali a 90° rispetto al fusto principale, fissandoli con clips in plastica (metodo indoor adattato outdoor). Mantenere la forma per 15 giorni, ruotando le piante ogni 3 giorni per uniformare l'esposizione.",
+        "Durante il periodo di LST, irrigare solo con acqua (water-only) per evitare accumuli di sali nel Living Soil, monitorando il pH (6.0-6.5) e la conducibilità elettrica (EC < 1.2 mS/cm). Misurare settimanalmente l'altezza delle piante, il numero di rami secondari e la biomassa fogliare.",
+        "Alla fine dei 30 giorni (inizio fioritura), raccogliere i dati: peso secco dei fiori (resa), contenuto di CBD (analisi HPLC), numero di infiorescenze per pianta e salute generale (assenza di stress da trapianto o cimatura). Confrontare con il gruppo di controllo (piante non cimate)."
+      ],
+      "materiali": [
+        "20 piante di pianta (varietà CBD-dominante, semi femminizzati autofiorenti)",
+        "Living Soil biodinamico (compost + micorrize), vasi da 10L, clips in plastica per LST, sonda pH/EC, acqua deionizzata, serra con controllo termico"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso secco dei fiori (resa in g/pianta), contenuto di CBD (HPLC, % sul secco), numero di infiorescenze per pianta, altezza media, biomassa fogliare (foto comparativa). Verifica tramite analisi statistica (t-test) tra gruppo sperimentale e controllo.",
+        "Salute delle piante (assenza di marciumi, stress idrico o nutrizionale) tramite osservazione visiva e misurazione della clorofilla (SPAD meter)."
+      ],
+      "variabili_controllo": "Stesso substrato (Living Soil), stesso volume di vaso, stessa varietà, stessa esposizione solare, stesso regime idrico (water-only), stesso periodo di crescita. Temperature e umidità monitorate costantemente.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "L'esperimento unisce la tecnica LST (tipica indoor) con la coltivazione outdoor in Living Soil water-only, una combinazione non documentata nei due manuali. Il focus su CBD e resa in serra, con controllo rigoroso delle variabili, lo rende originale e applicabile a contesti biodinamici e water-only.",
+      "id": "esp_conn_2026-07-25_002",
+      "data_proposta": "2026-07-25",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil e semi femminizzati su resa in CBD e salute radicale in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi con terreno biologico (Living Soil) e semi femminizzati aumenterà la resa in CBD/THC e la salute radicale rispetto a controlli con terreno non biologico e semi regolari. Secondo il Manuale A, il terreno biologico favorisce lo sviluppo radicale e la salute delle piante, mentre il Manuale B sottolinea che i semi femminizzati garantiscono piante produttive al 100%. La sinergia tra questi elementi dovrebbe massimizzare la resa in principi attivi, riducendo sprechi di risorse e ottimizzando la fotosintesi grazie a radici più sane.",
+      "protocollo": [
+        "Preparare 4 vasi da 10L ciascuno con lo stesso substrato: due con Living Soil (compost maturo, micorrize, lombrichi) e due con terreno standard (torba + perlite). Sterilizzare i vasi per evitare contaminazioni.",
+        "Piantare in ciascun vaso 3 semi femminizzati della stessa varietà (es. 'CBD Dream' con <1% THC) in due vasi con Living Soil e due con terreno standard. Mantenere le stesse condizioni di irrigazione (solo acqua, no fertilizzanti) e esposizione solare.",
+        "Dopo 15 giorni dalla germinazione, misurare settimanalmente l'altezza delle piante, il numero di nodi e la salute delle radici (tramite estrazione non distruttiva di una pianta per vaso). Registrare anche la temperatura del suolo e l'umidità con un igrometro digitale.",
+        "A 30 giorni dalla germinazione, raccogliere tutte le piante, separare radici e fusti, pesare le radici fresche e seccare le infiorescenze per analizzare il contenuto di CBD/THC tramite cromatografia rapida (o kit ELISA se non disponibile). Confrontare i risultati tra i trattamenti."
+      ],
+      "materiali": [
+        "4 vasi da 10L in terracotta",
+        "Living Soil pre-preparato (compost, micorrize, lombrichi)",
+        "Terreno standard (torba + perlite 50/50)",
+        "Semi femminizzati CBD Dream (<1% THC)",
+        "Igrometro digitale e termometro da suolo",
+        "Bilancia di precisione (0.1g)",
+        "Kit per analisi CBD/THC (o accesso a laboratorio)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso fresco delle radici (g)",
+        "Altezza delle piante (cm)",
+        "Numero di nodi",
+        "Resa in CBD/THC (% secco)",
+        "Salute radicale (scala visiva 1-5)"
+      ],
+      "variabili_controllo": "Varietà dei semi, volume dei vasi, quantità di acqua, esposizione solare, temperatura ambientale, umidità del suolo.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "L'esperimento combina specificamente due concetti chiave dei manuali (Living Soil + semi femminizzati) in un protocollo controllato per valutare la loro sinergia su resa e salute radicale, una connessione non esplorata nei manuali individualmente. Inoltre, introduce una misurazione quantitativa della resa in CBD/THC in condizioni di serra outdoor con water-only, un approccio innovativo rispetto ai metodi tradizionali.",
+      "id": "esp_conn_2026-07-25_003",
+      "data_proposta": "2026-07-25",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-24",
-    "nuove_proposte": 2,
+    "data": "2026-07-25",
+    "nuove_proposte": 3,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
