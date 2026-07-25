@@ -2,7 +2,7 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-07-24
+aggiornato: 2026-07-25
 pdf_count: 3
 ---
 
@@ -12,28 +12,25 @@ pdf_count: 3
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta un approccio olistico alla nutrizione delle piante, basato sull’apporto di sostanze naturali di origine vegetale, animale o microbica. A differenza dei fertilizzanti sintetici, questi ammendanti (come farine di sangue, osso, pesce, compost o humus di lombrico) si decompongono gradualmente nel suolo, alimentando la **rete trofica del Living Soil** e stimolando la biodiversità microbica. Il meccanismo d’azione si fonda sulla mineralizzazione lenta dei nutrienti, che vengono resi disponibili alle radici in sincronia con le esigenze fenologiche della pianta. Inoltre, questi materiali migliorano la struttura del suolo, aumentano la capacità di scambio cationico (CEC) e riducono l’impatto ambientale, poiché promuovono un ciclo chiuso di materia organica.
+La **fertilizzazione organica** rappresenta l'apporto di nutrienti attraverso ammendanti naturali di origine vegetale, animale o microbica, in grado di migliorare la struttura del suolo, stimolare la vita microbiologica e fornire elementi nutritivi in forma assimilabile per le piante. A differenza dei fertilizzanti sintetici, questi materiali si decompongono gradualmente grazie all'azione di batteri, funghi e lombrichi, rilasciando nutrienti in modo equilibrato e sostenibile. Il meccanismo d'azione si basa sulla **mineralizzazione** (trasformazione di composti organici complessi in forme inorganiche assimilabili) e sulla **umificazione** (formazione di humus stabile che trattiene acqua e nutrienti). Questo processo non solo nutre le piante ma rigenera anche il suolo, contrastando l'impoverimento e la compattazione tipici dell'agricoltura intensiva.
 
-Funziona perché il suolo non è un semplice substrato inerte, ma un **ecosistema dinamico** in cui funghi micorrizici, batteri e protozoi collaborano alla decomposizione e alla trasformazione dei nutrienti. Ad esempio, i funghi micorrizici (come quelli descritti in [pdf_338]) estendono il loro micelio oltre le radici, aumentando l’assorbimento di fosforo e azoto fino all’80%. La fertilizzazione organica, quindi, non solo nutre la pianta ma **rigenera il suolo**, contrastando l’impoverimento e la compattazione tipici dell’agricoltura convenzionale.
+In un sistema **Living Soil** come quello della serra outdoor a Caserta (41°N), la fertilizzazione organica assume un ruolo centrale perché promuove la **simbiosi micorrizica** e la biodiversità del suolo, elementi chiave per la resilienza delle colture. L'uso di farine organiche (sangue, osso, pesce) fornisce macro e micronutrienti in dosi controllate, evitando squilibri chimici e favorendo una crescita vigorosa. Inoltre, questi ammendanti migliorano la capacità di scambio cationico (CSC) del suolo, essenziale per trattenere nutrienti come calcio, magnesio e potassio, riducendo le perdite per lisciviazione.
+
+---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta (41°N)** in regime **Living Soil**, la fertilizzazione organica segue un protocollo stagionale e fenologico:
+Per una serra outdoor a Caserta in regime **Living Soil**, la fertilizzazione organica segue un protocollo mirato alle fasi di **vegetazione** e **fioritura**, con attenzione alla biodisponibilità dei nutrienti e alla salute del suolo.
 
 1. **Preparazione del suolo (pre-semina)**
-   - Distribuire **1–2 kg/m²** di compost maturo o humus di lombrico, incorporandolo nei primi 10–15 cm con una zappetta o un motocoltivatore.
-   - Aggiungere **farina di osso (3–5% del peso del suolo)** per un apporto lento di fosforo (utile per radicazione e fioritura).
-   - Opzionale: **farina di sangue (1–2%)** per un boost iniziale di azoto (evitare in fioritura).
+   - Distribuire **2–3 kg/m²** di compost maturo o letame ben decomposto (es. stallatico pellettato) mescolato a **100–150 g/m²** di farina di sangue (per azoto rapido) e **50–80 g/m²** di farina d'osso (per fosforo).
+   - Integrare **1–2 kg/m²** di biochar attivato (opzionale) per migliorare la ritenzione idrica e la colonizzazione microbica.
+   - Coprire con pacciamatura (paglia o erba secca) per proteggere la struttura del suolo e ridurre l'evaporazione.
 
 2. **Fase di vegetazione (germinazione → pre-fioritura)**
-   - Applicare **farina di pesce (2–3 kg/100 m²)** ogni **10–14 giorni**, diluita in acqua o sparsa a secco e interrata leggermente.
-   - Monitorare il **colore delle foglie**: un verde scuro può indicare eccesso di azoto, mentre un giallo pallido suggerisce carenza.
-   - Integrare con **tè di compost** (1:10 con acqua) ogni 3 settimane per stimolare la microbiologia.
+   - Applicare **50–70 g/m²** di farina di pesce (ricca in azoto e oligoelementi) ogni **10–14 giorni**, diluita in acqua e distribuita a pioggia fine.
+   - Monitorare il colore delle foglie: un verde scuro e uniforme indica un buon apporto di azoto; se le foglie ingialliscono, aumentare la dose di farina di sangue o aggiungere **guano di pipistrello** (10–20 g/m²).
+   - Evitare eccessi di azoto per prevenire attacchi di afidi o funghi patogeni.
 
-3. **Fase di fioritura**
-   - Ridurre l’azoto (evitare farina di sangue/pesce) e aumentare il **fosforo** (farina di osso, cenere di legna) e il **potassio** (solfato di potassio organico o cenere).
-   - Aggiungere **guano di pipistrello (1–2 kg/100 m²)** per un apporto rapido di fosforo e micronutrienti.
-   - Evitare eccessi: un suolo troppo ricco in fioritura può causare **maturazione precoce** o attirare parassiti.
-
-4. **Manutenzione continua**
-   - Coprire il suolo con **pacciamatura organica** (paglia, foglie secche) per mantenere umidità e proteggere la vita microbica.
-   - Effettuare **analisi visive** mensili: foglie
+3. **Fase di fioritura (da pre-fioritura a raccolta)**
+   - Ridurre l'azoto e aumentare il **fosforo** e il **potassio** con **farina d'osso** (30–50 g/m²) e **cenere di legna** (50–100 g/m², ricca in K e microelementi).
+   - Integrare **alghe marine in polvere** (10–
