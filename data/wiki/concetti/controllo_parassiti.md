@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-24
+aggiornato: 2026-07-25
 pdf_count: 10
 ---
 
@@ -12,29 +12,29 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’equilibrio ecologico, dove la prevenzione e la gestione delle infestazioni avvengono senza l’uso di sostanze chimiche sintetiche. Questo approccio si fonda sulla comprensione che un agroecosistema sano, come il **Living Soil** (suolo vivente), ospita una biodiversità microbica e faunistica in grado di autoregolarsi. I parassiti, infatti, tendono a proliferare in condizioni di squilibrio, ad esempio quando il suolo è impoverito di microrganismi benefici o quando le piante sono stressate da carenze nutrizionali. L’obiettivo è quindi **rafforzare la resilienza delle colture** attraverso pratiche che favoriscono la salute del suolo e la presenza di **insetti utili** (es. acari predatori, coccinelle, lacewings), i quali agiscono come agenti di controllo biologico naturale.
+Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio ecosistemico piuttosto che sulla soppressione chimica. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo), dove la biodiversità microbica e macrobiologica agisce come primo baluardo contro patogeni e parassiti. Il meccanismo d'azione si fonda sulla **prevenzione attiva**: piante sane, coltivate in un substrato ricco di micorrize e batteri benefici, sviluppano una resistenza intrinseca agli attacchi esterni. Inoltre, l'introduzione di **insetti utili** (come acari predatori *Phytoseiulus persimilis* o coccinelle) crea un equilibrio dinamico, dove i predatori naturali mantengono sotto controllo le popolazioni di parassiti senza alterare l'ecosistema.
 
-Il meccanismo d’azione si basa su tre pilastri:
-1. **Prevenzione**: Mantenere un suolo ricco di humus e microrganismi antagonisti (es. *Trichoderma*, *Bacillus*) riduce la suscettibilità delle piante agli attacchi.
-2. **Intervento mirato**: L’uso di repellenti naturali (es. olio di neem, piretro vegetale) o l’introduzione di predatori specifici (es. *Phytoseiulus persimilis* contro gli acari) agisce solo quando necessario, senza alterare l’equilibrio.
-3. **Monitoraggio costante**: L’ispezione quotidiana delle piante consente di intervenire tempestivamente, prima che un’infestazione diventi critica. Questo approccio è in linea con i principi dell’**elettrocultura**, che sfrutta campi elettromagnetici a bassa frequenza per stimolare la risposta immunitaria delle piante e la decomposizione microbica del suolo ([pdf_7]).
+Un altro pilastro è l'**uso di repellenti naturali**, come l'olio di neem (azadiractina), che agisce come insetticida sistemico a basso impatto ambientale, interferendo con lo sviluppo degli insetti e riducendo la loro capacità di nutrirsi. La **rotazione delle colture** e la **diversificazione delle specie** in serra completano il quadro, interrompendo i cicli vitali dei parassiti e favorendo la competizione tra organismi benefici. Questo metodo si allinea con i principi di **Albert Howard** ([pdf_7]), che sottolinea come la salute del suolo sia direttamente proporzionale alla resilienza delle piante: un humus vivo, ricco di materia organica e microrganismi, è la migliore difesa contro le avversità.
 
 ---
 
 ## Come si applica in serra
 
-### **Fase di Vegetazione**
-1. **Ispezione quotidiana**:
-   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** (dove si annidano afidi, acari o cocciniglie).
-   - Usa una **lente di ingrandimento** per identificare uova o larve di parassiti.
-   - *Strumento utile*: Applica un **tappeto adesivo giallo** (trappola cromotropica) per monitorare moscerini e afidi.
+1. **Ispezione quotidiana**
+   - Controlla **foglie (soprattutto sotto il lembo)**, steli e fiori al mattino, quando gli insetti sono meno attivi.
+   - Usa una **lente di ingrandimento** per identificare uova, larve o ragnetti rossi (es. *Tetranychus urticae*).
+   - Segna le piante infestate con un nastro colorato per monitorare la diffusione.
 
-2. **Prevenzione con olio di neem**:
-   - Diluizione: **5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) per 1 litro d’acqua**.
-   - Applicazione: **Ogni 7 giorni** (o dopo pioggia) con nebulizzatore a bassa pressione, preferibilmente al tramonto per evitare ustioni fogliari.
-   - *Effetto*: L’azadiractina (principio attivo) agisce come **repellente, antifeedant e regolatore della crescita** degli insetti, senza uccidere gli insetti utili.
+2. **Prevenzione con olio di neem**
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d'acqua.
+   - **Applicazione**: Spruzza sulle foglie **ogni 7 giorni** (o dopo piogge intense), preferibilmente al tramonto per evitare ustioni.
+   - **Frequenza**: Aumenta a 3-4 giorni in caso di infestazione acuta (es. afidi o tripidi).
 
-3. **Introduzione di insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari rossi, *Amblyseius andersoni* per i tripidi): Rilascia **2–5 individui per m²** in caso di infestazione iniziale.
-   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **nidi artificiali** o pianta **fieno greco** (*Trigonella foenum-graecum*) come attrattivo.
-   - *Consiglio*: Evita di applicare insetticidi chimici 15 giorni prima del rilascio
+3. **Introduzione di insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2-5 individui per pianta infestata da ragnetti rossi, ripetendo dopo 5 giorni se necessario.
+   - **Coccinelle** (*Coccinella septempunctata*): Posiziona 10-20 adulti per serra (meglio al crepuscolo) per afidi e cocciniglie.
+   - **Larve di crisopa** (*Chrysoperla carnea*): Efficaci contro afidi, tripidi e aleurodidi; distribuisci 10-15 larve per m².
+
+4. **Barriere fisiche e trappole**
+   - **Reti anti-insetto** (maglia 0.6 mm) su aperture della serra per bloccare moscerini della frutta o aleurodidi.
+   - **Trappole cromotropiche gialle/blu**: Applica nastri adesivi gialli (per afidi) o blu (per tripidi) a
