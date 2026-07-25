@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-24T05:29:40.113718+00:00",
+  "lastUpdate": "2026-07-25T05:23:32.984904+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -154,35 +154,35 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 18,
-    "chunk_progresso_totale_tradotti": 151,
-    "chunk_progresso_totale_chunk": 335,
+    "chunk_progresso_doc_con_dato": 19,
+    "chunk_progresso_totale_tradotti": 162,
+    "chunk_progresso_totale_chunk": 337,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_5",
         "chunk_progresso": {
-          "tradotti": 14,
+          "tradotti": 15,
           "totale": 8
         }
       },
       {
         "id": "pdf_298",
         "chunk_progresso": {
-          "tradotti": 14,
+          "tradotti": 15,
           "totale": 13
         }
       },
       {
         "id": "pdf_323",
         "chunk_progresso": {
-          "tradotti": 9,
+          "tradotti": 10,
           "totale": 4
         }
       },
       {
         "id": "pdf_331",
         "chunk_progresso": {
-          "tradotti": 18,
+          "tradotti": 19,
           "totale": 4
         }
       }
@@ -193,13 +193,13 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 18,
-    "chunk_progresso_totale_tradotti": 151,
-    "chunk_progresso_totale_chunk": 335
+    "chunk_progresso_doc_con_dato": 19,
+    "chunk_progresso_totale_tradotti": 162,
+    "chunk_progresso_totale_chunk": 337
   },
   "connessioni": {
     "nodi_totali": 399,
-    "edges_totali": 79804,
+    "edges_totali": 79813,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
@@ -208,11 +208,11 @@
       "media": 0.844
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 73,
-      "sinergia": 186,
+      "principio_condiviso": 75,
+      "sinergia": 187,
       "potenziamento": 48,
-      "contraddizione": 193,
-      "(nessuno)": 79304
+      "contraddizione": 201,
+      "(nessuno)": 79302
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.5
