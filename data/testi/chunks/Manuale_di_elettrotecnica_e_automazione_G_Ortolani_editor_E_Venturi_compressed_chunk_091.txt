@@ -38,7 +38,7 @@ pag.
 1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  19
 
-1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . * . . . . . . . . . . . . . . . . . .
+1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  20
 
 2    CONVERSIONE DELLA CORRENTE ELETTRICA . . . . . . . . . . . . . . . . . . . .
@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . * . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  38
 
 7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -87,12 +87,7 @@ ELETTRONICA DI POTENZA
 8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  40
 
-8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . .
-11.1    Inverter a transistor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
-11.2    Inverter a tiristori . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-(XVIII.1.1)
-
+8.2    Convertitore Forward . . . . . . . . . . . . . . .
 ma essendo uAK = 0, si avrà pertanto uu = ui. La resistenza viene interessata da una corrente variabile, legata alla forma della tensione, di valore:
 
 (XVIII.1.2)
@@ -230,6 +225,8 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 
 | Dispositivo | Tensione di Breakover [V] | Simmetria della tensione di Breakover [V] | Tensione di Breakover dinamica [V] | Corrente di Breakover [mA] | Corrente di picco [A] |
 |-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
+| ST-2        | 32 ± 4                    | ± 3                                      | 5                                  | 5                          | 2                     |
+|-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 28 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
 |-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 32 ± 4                    | ± 3                                      | 5                                  | 5                          | 2                     |
@@ -274,8 +271,8 @@ La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi pa
 **Fig. XVIII.1.9** Caratteristica corrente-tensione di un TRIAC.
 
 Dall’analisi della **Fig. XVIII.1.9** si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, però consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di *breakover*, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
-
 Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare attenzione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comunemente indicato come **effetto di dv/dt**; ampi valori di questa grandezza comportano l’innesco, ovvero la conduzione, del dispositivo.
+
 Il problema appena accennato viene usualmente risolto tramite un circuito costituito dalla serie composta da una resistenza e una capacità, indicato come **circuito snubber**, collegato in parallelo tra MT1 e MT2.
 In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore massimo di 40 A e tensioni massime di 2,5 kV in grado di funzionare privi di circuito snubber; vengono comunemente indicati come **TRIAC snubberless**.
 
@@ -333,6 +330,7 @@ dU/dt
 ⌀
 dU/dt
 ∘
+
 Se l’intensità di corrente I<sub>AK</sub> è tale per cui la somma dei guadagni dei due dispositivi (funzione della corrente I<sub>C</sub> di ciascuno) è maggiore dell’unità, anche se viene a mancare l’impulso di Gate, il dispositivo persevera nel suo stato di conduzione.
 
 La Fig. XVIII.1.12 illustra l’andamento delle correnti per un dispositivo in conduzione. La differenza sostanziale dagli SCR normali risiede nel valore dei guadagni.
@@ -346,8 +344,7 @@ Un elevato valore dei guadagni comporta un piccolo valore di resistenza in fase 
 Il minimo valore di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come valore della corrente di automantenimento I<sub>h</sub>.
 
 Fig. XVIII.1.12 Correnti durante la fase di conduzione del GTO.
-
-La Fig. XVIII.1.13 riporta l’andamento del guadagno di una giunzione in funzione della corrente di collettore e della tensione tra collettore ed emettitore.
+La Fig. XVIII.1.13 riporta l’andamento del guadagno di una giunzione in funzione della corrente di collettore (I<sub>C</sub>) e della tensione tra collettore ed emettitore (U<sub>CE</sub>).
 
 Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
 
@@ -388,6 +385,7 @@ XVIII-13
 – valore massimo di .
 
 Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della corrente di Gate superiori alla soglia il comportamento è quello caratteristico di un SCR.
+
 **Fig. XVIII.1.15 Caratteristica corrente-tensione di un GTO.**
 
 Il GTO è un eccellente dispositivo allo stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la Fig. XVIII.1.16.
@@ -395,7 +393,6 @@ Il GTO è un eccellente dispositivo allo stato solido in grado di assolvere a fu
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento, dovuto a perdite di commutazione estremamente contenute.
 
 Un elemento di particolare rilievo sta nella loro possibilità di interrompere la corrente in qualsiasi istante (Fig. XVIII.1.17), fatto questo che si concretizza nella facoltà di parzializzare un’onda sinusoidale in modo perfettamente simmetrico e ridurre in questo modo il contenuto delle armoniche ad elevata frequenza.
-
 dU/dt
 
 IA
@@ -406,7 +403,7 @@ automantenimento Ih
 [PAG 1832]
 XVIII-14
 ELETTRONICA DI POTENZA
-Fig. XVIII.1.16   Impiego di un GTO in circuito a c.a.
+Fig. XVIII.1.16   Impiego di un GTO in circuito a corrente alternata.
 Fig. XVIII.1.17  Parzializzazione simmetrica di un GTO.
 
 1.5.2  IGBT
@@ -437,8 +434,8 @@ XVIII-15
 
 1.6 Semiconduttori nei convertitori a commutazione
 I semiconduttori utilizzati più comunemente sono i transistor bipolari e i MOSFET di potenza. Il transistor bipolare viene utilizzato nei casi in cui la frequenza di commutazione non supera i 30 kHz; questo è dovuto principalmente alle perdite di potenza durante la commutazione, in quanto le sue perdite nello stato di ON sono estremamente contenute. Quando la frequenza di commutazione è più elevata, si ricorre al MOSFET di potenza; questo presenta perdite di commutazione estremamente ridotte in quanto ha tempi di commutazione decisamente piccoli, anche se le perdite di potenza nello stato ON risultano più elevate (queste ultime dipendono infatti dalla sua resistenza nello stato ON). Il circuito di comando del MOSFET è decisamente più semplice e meno costoso, ma il costo dei transistor MOSFET è più elevato; la scelta di un dispositivo o dell’altro risulterà da un compromesso tra velocità, costi e facilità di impiego.
-
 1.7 Criteri di scelta dei dispositivi
+
 La Fig. XVIII.1.19 riporta il grafico tensione-frequenza nell’ambito delle aree di possibile impiego dei dispositivi a commutazione; da tale figura si evince come il GTO sia un dispositivo in grado di operare a frequenze di commutazione più elevate, inoltre è in grado di sostenere tensioni e correnti più elevate.
 
 Il suo più diretto avversario è il MOSFET in quanto è in grado di operare a frequenze decisamente più elevate, avere una maggiore facilità di parallelizzazione, avere un coefficiente di temperatura positivo della resistenza di canale, di non temere sovratensioni. Per contro la resistenza di canale elevata comporta nei MOSFET una elevata tensione di saturazione che li costringe ad operare a tensioni inferiori ai 500 Volt.
@@ -537,17 +534,21 @@ ELETTRONICA DI POTENZA
 Fig. XVIII.1.22 Dispositivi a semiconduttore.
 
 1.8 Reti snubber
-Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, cioè il valore limite di variazione della tensione nel tempo, indicato sovente come transitorio di tensione. Variazioni di tensione superiori a questo indice possono comportare la commutazione del dispositivo dallo stato di OFF a quello di ON. Le reti RC, cioè composte dalla serie di un resistore e una capacità, indicate comunemente come *snubber*, vengono collegate agli estremi del dispositivo di controllo e consentono di limitare il transitorio di tensione. Si precisa che il problema del transitorio può verificarsi sia durante la fase di accensione del dispositivo che quella di spegnimento e che i valori del circuito realizzante lo *snubber* dipendono dal dispositivo e dal circuito controllato. Nei sistemi di controllo dove il valore **dU/dt** è insufficiente è possibile perdere il controllo di fase del dispositivo, quindi quest’ultimo può trovarsi nello stato di ON oppure nello stato di OFF con possibile conseguente distruzione del medesimo se inserito con utilizzatori di tipo ohmico-induttivo (qui la corrente assume valori eccessivi in quanto la tensione passa alla semionda di segno opposto e il dispositivo non è ancora nello stato di OFF), oppure per i dispositivi destinati al controllo dei motori. Costruttivamente i dispositivi meno sensibili ai transitori sono quelli che necessitano di valori più grandi della corrente di controllo sul Gate, e quei dispositivi destinati al controllo di correnti ad elevata intensità. In alternativa o in sinergia con gli *snubber*, talvolta, vengono utilizzati induttori realizzati su nuclei in ferrite ad alta permeabilità collegati in serie all’utilizzatore; questi ultimi introducono un ritardo, rallentando la variazione della corrente e consentendo una migliore commutazione allo stato di OFF nella fase di spegnimento.
 
-[PAG. 1837]
+Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, cioè il valore limite di variazione della tensione nel tempo, indicato sovente come transitorio di tensione. Variazioni di tensione superiori a questo indice possono comportare la commutazione del dispositivo dallo stato di OFF a quello di ON. Le reti RC, cioè composte dalla serie di un resistore e una capacità, indicate comunemente come *snubber*, vengono collegate agli estremi del dispositivo di controllo e consentono di limitare il transitorio di tensione. Si precisa che il problema del transitorio può verificarsi sia durante la fase di accensione del dispositivo che quella di spegnimento e che i valori del circuito realizzante lo *snubber* dipendono dal dispositivo e dal circuito controllato. Nei sistemi di controllo dove il valore **dU/dt** è insufficiente è possibile perdere il controllo di fase del dispositivo, quindi quest’ultimo può trovarsi nello stato di ON oppure nello stato di OFF con possibile conseguente distruzione del medesimo se inserito con utilizzatori di tipo ohmico-induttivo (qui la corrente assume valori eccessivi in quanto la tensione passa alla semionda di segno opposto e il dispositivo non è ancora nello stato di OFF), oppure per i dispositivi destinati al controllo dei motori. Costruttivamente i dispositivi meno sensibili ai transitori sono quelli che necessitano di valori più grandi della corrente di controllo sul Gate, e quei dispositivi destinati al controllo di correnti ad elevata intensità. In alternativa o in sinergia con gli *snubber*, talvolta, vengono utilizzati induttori realizzati su nuclei in ferrite ad alta permeabilità collegati in serie all’utilizzatore; questi ultimi introducono un ritardo, rallentando la variazione della corrente e consentendo una migliore commutazione allo stato di OFF nella fase di spegnimento.
 ELETTRONICA DI POTENZA
 XVIII-19
 
 1.9 Filtri
+
 Non è possibile esimersi dal trattare, almeno brevemente, i filtri: la necessità di questi ultimi deriva sia da problemi inerenti la normativa EMC, sia da problemi legati al buon funzionamento delle apparecchiature, siano esse convertitori o utilizzatori.
-L’uso dei semiconduttori a tecnologia più avanzata quali, per esempio, gli IGBT, nell’impiego come convertitori di tensione-frequenza, consente commutazioni estremamente veloci dei semiconduttori con conseguenti perdite di potenza estremamente contenute nel dispositivo stesso, tant’è che, oggigiorno, apparecchiature quali gli *inverters* vengono costruiti con dissipatori di calore aventi superficie decisamente contenuta rispetto le precedenti realizzazioni.
+
+L’uso dei semiconduttori a tecnologia più avanzata quali, per esempio, gli IGBT, nell’impiego come convertitori di tensione-frequenza, consente commutazioni estremamente veloci dei semiconduttori con conseguenti perdite di potenza estremamente contenute nel dispositivo stesso, tant’è che, oggigiorno, apparecchiature quali gli *inverter* vengono costruiti con dissipatori di calore aventi superficie decisamente contenuta rispetto le precedenti realizzazioni.
+
 Anche se ciò risulta vantaggioso in termini di rendimento e di compattezza dell’apparecchiatura, è fonte di molti altri problemi: le rapide commutazioni dei semiconduttori comportano valori elevati del parametro **dU/dt**. L’importanza di quanto appena affermato risulta maggiormente chiara tramite l’esempio seguente (Fig. XVIII.1.23).
+
 Si consideri un motore collegato a un *inverter* tramite una linea elettrica avente lunghezza di qualche metro; l’*inverter* rileva come utilizzatore un dispositivo (il motore) avente una sua propria capacità elettrica e una sua induttanza. I valori di capacità e induttanza sono in relazione alla potenza del motore e legati al tipo di avvolgimento; anche motori di piccola potenza possono presentare valori di capacità dell’ordine del nF.
+
 **Fig. XVIII.1.23 Connessione inverter-motore.**
 
 Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** collegato a un motore che presenta una capacità degli avvolgimenti di **2 nF**, si può immediatamente determinare il picco di corrente al quale sarà sottoposto ad ogni commutazione. Questa corrente scorre negli avvolgimenti del motore provocandogli perdite addizionali che, tra le altre, incrementano la sua temperatura. Inoltre, le possibili irregolarità nella distribuzione della capacità degli avvolgimenti stessi può portare a sovratensioni locali all’interno del motore con la conseguente possibile scarica elettrica tra i conduttori degli avvolgimenti. Risulta quindi evidente la necessità di limitare l’ampiezza del parametro tramite l’impiego di filtri adeguati; a tal riguardo si ricorda che la normativa **VDE 0530, Parte 1**, limita tale valore a **500 V/µs**.
