@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-25T05:28:22.968229+00:00",
+  "lastUpdate": "2026-07-26T05:45:12.647872+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,25 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640025709_1",
-      "nome": "Monitoraggio del pH",
-      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
-      "materiali": [
-        "pHmetro",
-        "soluzione di calibrazione"
-      ],
-      "categoria": "Controllo ambientale",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-30",
-      "tipo": "coltivazione_generale",
-      "data_disattivazione": "2026-07-01"
-    },
     {
       "id": "daily_1781640155746_1",
       "nome": "Irrigazione intelligente",
@@ -3373,13 +3354,47 @@
       "data_proposta": "2026-07-25",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil, vasi biologici e semi femminizzati sulla resa in CBD e THC in coltivazione outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici (Living Soil, water-only) e semi femminizzati (Manuale A + Manuale B) aumenterà la resa in CBD/THC del 20-30% rispetto a coltivazioni tradizionali, grazie a un sistema radicale ottimizzato (Manuale A) e a piante produttive al 100% (Manuale B). La sinergia eliminerà sprechi di risorse (acqua, nutrienti) e massimizzerà l'assorbimento di flavonoidi, composti chiave per la qualità del raccolto.",
+      "protocollo": [
+        "Preparare due lotti identici di terreno Living Soil (compost, micorrize, vermicompost) in vasi biodegradabili da 10L (10 piante per lotto). Un lotto usa semi femminizzati CBD-dominant (es. 'ACDC'), l'altro semi regolari della stessa varietà come controllo.",
+        "Coltivare entrambe le serie in condizioni outdoor identiche (esposizione solare, irrigazione water-only, nessun fertilizzante aggiuntivo). Marcare le piante femminizzate con etichette verdi, quelle regolari con rosse.",
+        "A 45 giorni dal trapianto (fase di fioritura), misurare settimanalmente: biomassa radicale (peso fresco), altezza delle piante, numero di fiori, e concentrazione di CBD/THC tramite test HPLC su 3 piante per lotto (campione casuale).",
+        "A 60 giorni, raccogliere e pesare il raccolto secco di entrambi i lotti. Confrontare la resa totale, il contenuto di CBD/THC, e la qualità dei flavonoidi (analisi GC-MS su campioni rappresentativi)."
+      ],
+      "materiali": [
+        "Vasi biodegradabili da 10L (10 per lotto)",
+        "Semi femminizzati CBD-dominant (es. 'ACDC') e semi regolari della stessa varietà (10 per tipo)",
+        "Living Soil pre-preparato (compost, micorrize, vermicompost)",
+        "Sistema di irrigazione a goccia water-only",
+        "Bilancia di precisione (0.1g), metro a nastro, HPLC/GC-MS per analisi (accessibile tramite collaborazioni universitarie)"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Resa in grammi di fiori secchi per pianta (peso totale e per pianta)",
+        "Concentrazione di CBD/THC (% su peso secco) tramite HPLC",
+        "Analisi dei flavonoidi (es. cannflavina A/B, apigenina) tramite GC-MS",
+        "Biomassa radicale (peso fresco delle radici a fine ciclo)"
+      ],
+      "variabili_controllo": "Stessa varietà, stesso terreno Living Soil, stessa esposizione solare, stessa irrigazione water-only, stesso periodo di coltivazione. Differenza unica: tipo di seme (femminizzato vs regolare).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento non è presente in nessuno dei due manuali singolarmente. Il Manuale A si concentra su tecniche di coltivazione e substrati, mentre il Manuale B tratta di genetica dei semi. La combinazione specifica di Living Soil + vasi biologici + semi femminizzati per massimizzare resa e qualità (CBD/THC + flavonoidi) è un approccio innovativo non documentato nei due manuali.",
+      "id": "esp_conn_2026-07-26_001",
+      "data_proposta": "2026-07-26",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-25",
-    "nuove_proposte": 3,
+    "data": "2026-07-26",
+    "nuove_proposte": 1,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
