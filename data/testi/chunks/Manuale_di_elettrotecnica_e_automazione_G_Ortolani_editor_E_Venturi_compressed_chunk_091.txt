@@ -8,7 +8,7 @@ pag.
 1.1    Diodi raddrizzatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  2
 
-1.2    SCR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2    SCR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  4
 
 1.3    DIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -87,13 +87,7 @@ ELETTRONICA DI POTENZA
 8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  40
 
-8.2    Convertitore Forward . . . . . . . . . . . . . . .
-ma essendo uAK = 0, si avrà pertanto uu = ui. La resistenza viene interessata da una corrente variabile, legata alla forma della tensione, di valore:
-
-(XVIII.1.2)
-
-In corrispondenza della semionda negativa il diodo si comporta come un circuito aperto in quanto risulta essere polarizzato inversamente. Si comporta quindi come una resistenza di valore praticamente infinito, pertanto la corrente che percorre il carico risulta nulla i = 0. Essendo pertanto nulla la caduta di tensione ai capi del carico uu = R · i, la tensione in ingresso risulta completamente applicata ai capi del diodo. Il valor medio della tensione ai capi della resistenza per questo circuito, indicato anche come raddrizzatore ad una semionda, vale:
-
+8.2    Convertitore Forward . . . . . . .
 (XVIII.1.3)
 
 Circuito di raddrizzamento
@@ -155,27 +149,25 @@ Il tiristore, comunemente indicato come SCR (Silicon Controlled Rectifier), è u
 
 Questo dispositivo viene inoltre designato come diodo controllato al silicio perché, tramite l’elettrodo di controllo G, è possibile governare il passaggio della corrente che lo attraversa. L’elettrodo di controllo è indicato col termine inglese di Gate, cioè di porta, proprio per la sua specifica funzione di consentire il flusso della corrente nella direzione da anodo a catodo: il passaggio inverso della corrente, ad eccezione di debolissime correnti indicate come correnti di fuga, è sempre negato, comportandosi cioè come un normale diodo. Si può pertanto affermare che il passaggio della corrente attraverso il tiristore è sempre interdetto, salvo un flusso di corrente da anodo verso catodo qualora venga applicato un opportuno segnale di controllo sul Gate.
 Pertanto, nella condizione di funzionamento normale, ovvero per tensioni ai suoi capi minori della tensione di breakdown, il tiristore presenta una resistenza praticamente infinita in entrambi i sensi di polarizzazione. È possibile però portare il dispositivo nella situazione di conduzione (con polarizzazioni dirette), in maniera istantanea, applicando un impulso positivo di tensione, anche di breve durata, tra il Gate e il catodo; la corrente applicata sull’elettrodo di controllo interviene diminuendo il valore della tensione di breakdown. In questa condizione, la caduta di tensione tra anodo e catodo risulta simile a quella di un diodo tradizionale.
+**Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
-Fig. XVIII.1.4 Caratteristica corrente-tensione di un SCR.
-È indispensabile notare che, una volta innescata la conduzione, anche se il comando di Gate viene tolto, il dispositivo permane nel suo stato di conduzione fino a che la corrente che lo attraversa non scende al di sotto di un determinato valore: questa corrente viene indicata con Ih e prende il nome di corrente di automantenimento (Fig. XVIII.1.4). Non appena la corrente scende sotto il valore di automantenimento, il tiristore torna nel suo stato di interdizione, cioè di blocco totale del passaggio della corrente fino al prossimo impulso di Gate. Pertanto, l’innesco del dispositivo, cioè il passaggio alla conduzione, avviene tramite l’impulso di comando sul Gate, mentre la sua interdizione avviene autonomamente non appena la corrente scende al di sotto di valori compresi fra frazioni di milliampere e qualche centinaio di milliampere, in funzione della corrente che va a controllare e del dispositivo, mentre la durata dell’impulso può limitarsi a qualche decina di microsecondi. È evidente che la possibilità di variare l’istante di innesco del dispositivo consente di ottenere in uscita una tensione raddrizzata il cui valore medio varia da zero a quello di un diodo rettificatore tradizionale, il tutto con l’impiego di potenze di comando estremamente contenute.
+È indispensabile notare che, una volta innescata la conduzione, anche se il comando di Gate viene tolto, il dispositivo permane nel suo stato di conduzione fino a che la corrente che lo attraversa non scende al di sotto di un determinato valore: questa corrente viene indicata con *I<sub>H</sub>* e prende il nome di corrente di automantenimento (*Fig. XVIII.1.4*). Non appena la corrente scende sotto il valore di automantenimento, il tiristore torna nel suo stato di interdizione, cioè di blocco totale del passaggio della corrente fino al prossimo impulso di Gate. Pertanto, l’innesco del dispositivo, cioè il passaggio alla conduzione, avviene tramite l’impulso di comando sul Gate, mentre la sua interdizione avviene autonomamente non appena la corrente scende al di sotto di valori compresi fra frazioni di milliampere e qualche centinaio di milliampere, in funzione della corrente che va a controllare e del dispositivo, mentre la durata dell’impulso può limitarsi a qualche decina di microsecondi. È evidente che la possibilità di variare l’istante di innesco del dispositivo consente di ottenere in uscita una tensione raddrizzata il cui valore medio varia da zero a quello di un diodo rettificatore tradizionale, il tutto con l’impiego di potenze di comando estremamente contenute.
 
-La Fig. XVIII.1.5 evidenzia l’andamento della tensione ai capi di un carico costituito da una resistenza alimentata da una tensione alternata sinusoidale controllata da un SCR. Lo spostamento della fase dell’impulso di accensione implica una modifica sulla forma d’onda della tensione applicata al carico e, conseguentemente, sul valor medio della tensione applicata al medesimo. La possibilità di intervenire sullo sfasamento dell’impulso di accensione del dispositivo, rispetto alla fase della tensione di alimentazione, consente di ottenere una regolazione continua della tensione applicata al carico e, quindi, della corrente che lo attraversa.
+La **Fig. XVIII.1.5** evidenzia l’andamento della tensione ai capi di un carico costituito da una resistenza alimentata da una tensione alternata sinusoidale controllata da un SCR. Lo spostamento della fase dell’impulso di accensione implica una modifica sulla forma d’onda della tensione applicata al carico e, conseguentemente, sul valor medio della tensione applicata al medesimo. La possibilità di intervenire sullo sfasamento dell’impulso di accensione del dispositivo, rispetto alla fase della tensione di alimentazione, consente di ottenere una regolazione continua della tensione applicata al carico e, quindi, della corrente che lo attraversa.
 
-Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di Fig. XVIII.1.5 in funzione dell’angolo di sfasamento è espresso da:
+Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di **Fig. XVIII.1.5** in funzione dell’angolo di sfasamento è espresso da:
 
-(XVIII.1.5)
+*(XVIII.1.5)*
 
-Um = UiM (1 + cos α) / 2π
+*U<sub>m</sub> = U<sub>iM</sub> (1 + cos α) / 2π*
 
 Naturalmente anche per gli SCR la presenza di un carico ohmico-induttivo comporta delle variazioni sul loro funzionamento alterando quello che sono le forme d’onda delle tensioni risultanti applicate ai carichi. Tipicamente, a causa della forza elettromotrice indotta, la corrente nel carico risulta ritardata in partenza rispetto all’impulso applicato, ma prolungata durante la fase di estinzione. L’annullamento della corrente avviene quando la tensione applicata, peraltro già di valore negativo, equilibra il valore della tensione di autoinduzione del carico: in quell’istante, annullandosi il valore della corrente, il dispositivo passa allo stato di interdizione. È necessario limitare, magari tramite diodi di ricircolo, questo inconveniente, perché si potrebbe arrivare alla condizione limite per la quale con carichi fortemente induttivi risulterebbe impossibile effettuare una buona regolazione della tensione in uscita.
-**Fig. XVIII.1.5** Tensione sul carico in funzione di α.
 
-[PAG 1825]
+**[PAG 1825]**
 **ELETTRONICA DI POTENZA**
-XVIII-7
+**XVIII-7**
 
 Nella **Fig. XVIII.1.6** si evidenzia l’andamento della corrente su un carico induttivo dove la tensione in ingresso *u<sub>i</sub>* viene applicata all’istante *t<sub>i</sub>*; si noti che la corrente cessa di scorrere quando la tensione applicata è pari alla forza elettromotrice *u<sub>L</sub>* di autoinduzione presente sull’utilizzatore (una di segno opposto all’altra). Gli angoli α e β dipendono anch’essi dal valore di induttanza del carico. Si ricorda infine che, come per tutti i dispositivi p-n-p-n, è necessario porre particolare attenzione al cosiddetto effetto *dU/dt*: la tensione di innesco di questi dispositivi è infatti legata a tale effetto; una rapida variazione della tensione applicata può portare il dispositivo in conduzione anche senza impulso di comando.
-
 **Fig. XVIII.1.6** Raddrizzatore controllato con carico induttivo.
 
 Le principali caratteristiche elettriche di questi componenti sono le seguenti:
@@ -230,7 +222,7 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 | ST-2        | 28 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
 |-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 32 ± 4                    | ± 3                                      | 5                                  | 5                          | 2                     |
-|-------------|---------------------------|--------------------------------------------|------------------------------------|----------------------------|-----------------------|
+|-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 32 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
 |-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 |             | Min | Typ | Max | Min | Typ | Max | Min | Max | Max | Min | Max |
@@ -272,7 +264,6 @@ La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi pa
 
 Dall’analisi della **Fig. XVIII.1.9** si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, però consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di *breakover*, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
 Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare attenzione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comunemente indicato come **effetto di dv/dt**; ampi valori di questa grandezza comportano l’innesco, ovvero la conduzione, del dispositivo.
-
 Il problema appena accennato viene usualmente risolto tramite un circuito costituito dalla serie composta da una resistenza e una capacità, indicato come **circuito snubber**, collegato in parallelo tra MT1 e MT2.
 In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore massimo di 40 A e tensioni massime di 2,5 kV in grado di funzionare privi di circuito snubber; vengono comunemente indicati come **TRIAC snubberless**.
 
@@ -347,7 +338,6 @@ Fig. XVIII.1.12 Correnti durante la fase di conduzione del GTO.
 La Fig. XVIII.1.13 riporta l’andamento del guadagno di una giunzione in funzione della corrente di collettore (I<sub>C</sub>) e della tensione tra collettore ed emettitore (U<sub>CE</sub>).
 
 Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
-
 Il GTO viene realizzato ponendo particolare attenzione al drogaggio e alla struttura costruttiva in modo tale da avere la somma dei guadagni appena superiore all’unità in fase di conduzione; questo consente di bloccare la conduzione del dispositivo polarizzando il Gate in modo inverso. Si ricorda che un valore più contenuto dei guadagni implica però correnti più intense di pilotaggio. La transizione da ON ad OFF è dovuta alla polarizzazione inversa del terminale di pilotaggio G che obbliga la corrente del transistor PNP ad uscire dal Gate anziché entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
 
 La conseguenza risulta ovvia: il dispositivo NPN passa allo stato di interdizione e di conseguenza anche quello PNP.
@@ -382,7 +372,7 @@ XVIII-13
 – valore massimo della corrente diretta;
 – corrente e tensione di Gate per il *turn-on* e il *turn-off*;
 – massima potenza dissipabile;
-– valore massimo di .
+– valore massimo di dU/dt.
 
 Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della corrente di Gate superiori alla soglia il comportamento è quello caratteristico di un SCR.
 
@@ -393,10 +383,6 @@ Il GTO è un eccellente dispositivo allo stato solido in grado di assolvere a fu
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento, dovuto a perdite di commutazione estremamente contenute.
 
 Un elemento di particolare rilievo sta nella loro possibilità di interrompere la corrente in qualsiasi istante (Fig. XVIII.1.17), fatto questo che si concretizza nella facoltà di parzializzare un’onda sinusoidale in modo perfettamente simmetrico e ridurre in questo modo il contenuto delle armoniche ad elevata frequenza.
-dU/dt
-
-IA
-UAK
 Corrente di
 automantenimento Ih
 
