@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-25
+aggiornato: 2026-07-26
 pdf_count: 10
 ---
 
@@ -12,29 +12,26 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio ecosistemico piuttosto che sulla soppressione chimica. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo), dove la biodiversità microbica e macrobiologica agisce come primo baluardo contro patogeni e parassiti. Il meccanismo d'azione si fonda sulla **prevenzione attiva**: piante sane, coltivate in un substrato ricco di micorrize e batteri benefici, sviluppano una resistenza intrinseca agli attacchi esterni. Inoltre, l'introduzione di **insetti utili** (come acari predatori *Phytoseiulus persimilis* o coccinelle) crea un equilibrio dinamico, dove i predatori naturali mantengono sotto controllo le popolazioni di parassiti senza alterare l'ecosistema.
+Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio ecosistemico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo) e dell'**elettrocultura** per creare un ambiente sfavorevole ai parassiti, promuovendo al contempo la salute delle piante e la biodiversità microbica. Il meccanismo d'azione si fonda sulla **prevenzione**, attraverso la stimolazione delle difese naturali delle piante (es. produzione di fitoalessine) e l'incremento di organismi utili (predatori, antagonisti), e sulla **correzione tempestiva** di squilibri che favoriscono le infestazioni.
 
-Un altro pilastro è l'**uso di repellenti naturali**, come l'olio di neem (azadiractina), che agisce come insetticida sistemico a basso impatto ambientale, interferendo con lo sviluppo degli insetti e riducendo la loro capacità di nutrirsi. La **rotazione delle colture** e la **diversificazione delle specie** in serra completano il quadro, interrompendo i cicli vitali dei parassiti e favorendo la competizione tra organismi benefici. Questo metodo si allinea con i principi di **Albert Howard** ([pdf_7]), che sottolinea come la salute del suolo sia direttamente proporzionale alla resilienza delle piante: un humus vivo, ricco di materia organica e microrganismi, è la migliore difesa contro le avversità.
+Funziona perché si basa su un **principio di resilienza**: un suolo ricco di microrganismi benefici e ben strutturato (grazie a compost, micorrize e pratiche come il sovescio) rende le piante più resistenti agli attacchi, mentre l'elettrocultura (es. spirali di rame Lakhovsky) armonizza le energie telluriche e stimola la crescita microbica, rafforzando ulteriormente l'ecosistema. Inoltre, l'uso di insetti utili (come *Phytoseiulus persimilis* per gli acari) e repellenti naturali (olio di neem) crea un **controllo biologico dinamico**, dove ogni elemento interagisce per mantenere l'equilibrio.
 
 ---
 
 ## Come si applica in serra
 
+### **Protocollo base per serra outdoor Living Soil (Caserta, 41°N)**
 1. **Ispezione quotidiana**
-   - Controlla **foglie (soprattutto sotto il lembo)**, steli e fiori al mattino, quando gli insetti sono meno attivi.
-   - Usa una **lente di ingrandimento** per identificare uova, larve o ragnetti rossi (es. *Tetranychus urticae*).
-   - Segna le piante infestate con un nastro colorato per monitorare la diffusione.
+   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** (dove si annidano afidi, acari e cocciniglie) al mattino presto, quando gli insetti sono meno attivi.
+   - Usa una **lente d'ingrandimento** per identificare uova o stadi iniziali di infestazione (es. ragnetti rossi).
+   - *Strumento utile*: **trappole cromotropiche gialle/blu** (posizionate a 10 cm dalle piante) per monitorare moscerini e afidi.
 
 2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d'acqua.
-   - **Applicazione**: Spruzza sulle foglie **ogni 7 giorni** (o dopo piogge intense), preferibilmente al tramonto per evitare ustioni.
-   - **Frequenza**: Aumenta a 3-4 giorni in caso di infestazione acuta (es. afidi o tripidi).
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detergente neutro) in 1 L di acqua **magnetizzata** (trattata con magneti al neodimio per 24h).
+   - **Applicazione**: Spruzza **ogni 7 giorni** al tramonto (evita l'esposizione diretta al sole per prevenire ustioni fogliari). Copri uniformemente, soprattutto le parti inferiori delle foglie.
+   - *Nota*: L'olio di neem agisce come **repellente, insetticida e fungistatico**, ma evita di usarlo durante la fioritura per non alterare il sapore dei frutti.
 
 3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2-5 individui per pianta infestata da ragnetti rossi, ripetendo dopo 5 giorni se necessario.
-   - **Coccinelle** (*Coccinella septempunctata*): Posiziona 10-20 adulti per serra (meglio al crepuscolo) per afidi e cocciniglie.
-   - **Larve di crisopa** (*Chrysoperla carnea*): Efficaci contro afidi, tripidi e aleurodidi; distribuisci 10-15 larve per m².
-
-4. **Barriere fisiche e trappole**
-   - **Reti anti-insetto** (maglia 0.6 mm) su aperture della serra per bloccare moscerini della frutta o aleurodidi.
-   - **Trappole cromotropiche gialle/blu**: Applica nastri adesivi gialli (per afidi) o blu (per tripidi) a
+   - **Acari predatori** (*Phytoseiulus persimilis* o *Neoseiulus californicus*): Rilascia **2-3 individui per m²** in caso di infestazione da ragnetti rossi (*Tetranychus urticae*). Ripeti ogni 2 settimane fino a risoluzione.
+   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **piante trappola** (es. calendula, fagioli) vicino alle serre per attirarle. Rilascia manualmente solo se necessario (1 coccinella ogni 10 piante).
+   - **Nematodi benefici** (*Steinernema
