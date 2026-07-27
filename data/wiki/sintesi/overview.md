@@ -1,6 +1,6 @@
 ---
 tipo: overview
-aggiornato: 2026-07-26
+aggiornato: 2026-07-27
 ---
 
 # BioSerra — Knowledge Base Overview
@@ -12,51 +12,45 @@ aggiornato: 2026-07-26
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è una **serra outdoor a suolo vivente** che integra:
-- **Living Soil water-only**: Terreno autosufficiente, ricco di microbioma, senza input chimici.
-- **Biodinamica**: Rispetto dei ritmi lunari, stagionali e delle energie telluriche.
-- **Elettrocultura**: Stimolazione delle piante tramite campi elettromagnetici naturali (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame).
-- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, ionizzata) per massimizzare l’assorbimento radicale.
+BioSerra è un ecosistema agricolo **autosostenibile** che integra:
+- **Living Soil (suolo vivente)**: Terreno ricco di microbiomi, micorrize e materia organica, coltivato *water-only* (senza fertilizzanti chimici).
+- **Biodinamica**: Preparati naturali, ritmi cosmici e calendario lunare per armonizzare crescita e fioritura.
+- **Elettrocultura**: Tecniche a basso voltaggio (Lakhovsky, Fe-Cu, spirali in rame, antenna di terra) per stimolare la vitalità delle piante e la resistenza agli stress.
+- **Water-Only**: Irrigazione con acqua magnetizzata e ad alta frequenza per ottimizzare l’assorbimento dei nutrienti e la salute del suolo.
 
-*Visione*: Coltivare in **armonia con la Terra e il Cosmo**, dove ogni elemento (suolo, acqua, piante, elettromagnetismo) è interconnesso.
+*Visione*: Coltivare piante in **sinergia con la natura**, riducendo l’intervento umano a favore di processi naturali guidati da energia sottile e biodiversità.
 
 ---
 
 ## **📚 Sistema di Conoscenza**
 BioSerra si basa su:
-- **341 PDF** di riferimento (es. [web_zamn_287], [pdf_17], [Manuale Biodinamico Rev.12]).
-- **15 concetti attivi** (es. Suolo Vivente, Elettrocoltura DC, Calendario Lunare).
-- **Guida integrata**: Ogni tecnica o problema ha rimandi a PDF, manuali e pagine wiki correlate.
+- **341 manuali analizzati** (PDF, guide tecniche, studi scientifici) collegati tramite [[id]].
+- **20 concetti attivi** (categorie tematiche) che si intersecano per creare un sistema olistico.
+- **Integrazione dinamica**: Ogni tecnica (es. elettrocultura + biodinamica) viene applicata in base a dati ambientali (umidità, temperatura, fase lunare) e osservazioni sul campo.
 
-*Esempio di integrazione*:
-- **Germinazione**: [web_zamn_284] + [web_zamn_286] + **Smart Start Kit**.
-- **Fioritura**: [web_zamn_290] + **Elettrocoltura DC (3V)** + **Biochar** per umidità.
+*Esempio di flusso decisionale*:
+1. **Dati ambientali** (umidità suolo 86%, pioggia 17.1mm) → [[web_zamn_286-germinazione-problemi]] + [[pdf_17-elettrocultura-guide]].
+2. **Fase colturale** (fioritura avanzata per Cosmic Cheddar) → [[web_zamn_290-fioritura-cannabis]] + regola *water-only*.
+3. **Ritmi cosmici** (calendario lunare) → [[preparati-biodinamici]] + [[ritmi-cosmici]].
 
-*Struttura*:
-- **Concetti**: [[suolo-vivente]], [[elettrocoltura-lakhovsky]].
-- **PDF**: [web_zamn_287], [pdf_17].
-- **Azioni**: [[monitoraggio-umidita-fogliare]], [[gestione-pH-suolo]].
+*Struttura wiki*:
+- **Concetti**: [[elettrocultura-lakhovsky]], [[suolo-vivente]], [[preparati-biodinamici]].
+- **PDF**: [web_zamn_287-fase-plantula], [pdf_17-elettrocultura-guide].
 
 ---
 
 ## **⚡ Tecniche Elettrocultura Attive**
-| Tecnica               | Descrizione                                                                 | Riferimenti Wiki          |
-|-----------------------|-----------------------------------------------------------------------------|---------------------------|
-| **Acqua Magnetizzata** | Acqua strutturata con magneti per aumentare la biodisponibilità dei nutrienti. | [[acqua-magnetizzata]]     |
-| **Spirale in Rame**   | Spirali di rame posizionate intorno alle piante per generare campi elettromagnetici. | [[spirale-rame]]          |
-| **Circuito Lakhovsky** | Circuito oscillante a onde multiple per stimolare la vitalità cellulare.     | [[circuito-lakhovsky]]    |
-| **Elettrodi Fe-Cu**   | Elettrodi in ferro/rame per creare correnti galvaniche nel suolo.            | [[elettrodi-fe-cu]]       |
-| **Antenna di Terra**  | Sistema di messa a terra per bilanciare le cariche elettriche del suolo.    | [[antenna-terra]]         |
+| Tecnica | Descrizione | Applicazione | Riferimento |
+|---------|------------|--------------|-------------|
+| **Elettrocultura Lakhovsky** | Stimolazione cellulare con onde elettromagnetiche a bassa frequenza (3-5V DC). | Applicare su Epsilon F1 oggi (umidità suolo 86%). | [[elettrocultura-lakhovsky]] |
+| **Fe-Cu (Ferro-Rame)** | Coppia galvanica per migliorare la conducibilità e la resistenza delle piante. | Elettrodi a 10-15 cm di profondità, 20 cm dalla base. | [[elettrocultura-fe-cu]] |
+| **Spirale in Rame** | Antenna a spirale per concentrare energie sottili (es. 7 spirali per 7 chakra). | Posizionare vicino alle piante in fioritura. | [[spirale-rame]] |
+| **Antenna di Terra** | Collegamento elettrico tra pianta e terra per equilibrare cariche. | Usare con acqua magnetizzata per ridurre stress idrico. | [[antenna-terra]] |
+| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare idratazione e assorbimento. | Irrigazione su tutte le varietà. | [[acqua-magnetizzata]] |
 
-*Applicazione attuale*:
-- **Epsilon F1 (fioritura)**: Elettrocoltura DC (3V) alle 06-09 AM con elettrodi a 12 cm dalle radici ([pdf_17], [pdf_85]).
+*Nota*: Tutte le tecniche sono **compatibili** con il *Living Soil* e la biodinamica.
 
 ---
 ## **🌍 Principi Living Soil**
-1. **Microbioma**: Batteri, funghi micorrizici e attinomiceti per decomporre materia organica e fornire nutrienti.
-   - *Strumenti*: [[inoculazione-micorrize]], [[te-di-compost]].
-2. **Minerali**: Farine di rocce (es. basalto, zeolite) per apporto lento di silicio e micronutrienti.
-   - *Strumenti*: [[fertilizzazione-organica]], [[farine-di-roccia]].
-3. **Biostimolanti**: Compost, biochar, alghe per migliorare struttura del suolo e resilienza delle piante.
-   - *Strumenti*: [[compostaggio-organico]], [[biochar]].
-4. **Acqua**: Irrigazione con acqua magnetizzata o ionizzata
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: Simbiosi con le radici per aument
