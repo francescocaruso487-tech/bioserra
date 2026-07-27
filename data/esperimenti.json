@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-26T05:45:12.647872+00:00",
+  "lastUpdate": "2026-07-27T06:03:55.561012+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,62 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640155746_1",
-      "nome": "Irrigazione intelligente",
-      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
-      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
-      "materiali": [
-        "Sensori di umidità",
-        "Sistema di irrigazione automatico"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": " Tecnologia agricola",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-23",
-      "data_disattivazione": "2026-07-01"
-    },
-    {
-      "id": "daily_1781640436681_0",
-      "nome": "Tecnica di irrigazione a goccia",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di pianta",
-      "materiali": [
-        "tubazioni",
-        "gocciolatori",
-        "valvole"
-      ],
-      "categoria": "irrigazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-22",
-      "data_disattivazione": "2026-07-01"
-    },
-    {
-      "id": "daily_1781640224648_2",
-      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
-      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
-      "materiali": [
-        "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la pianta",
-        "Tubi e connettori"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della pianta",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-22",
-      "data_disattivazione": "2026-07-01"
-    },
     {
       "id": "daily_1781667046478_0",
       "nome": "Elettrocultura",
@@ -3388,13 +3332,120 @@
       "data_proposta": "2026-07-26",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH dell'acqua di irrigazione sul risciacquo e assorbimento nutrizionale in Living Soil outdoor",
+      "ipotesi": "Un pH bilanciato dell'acqua di irrigazione (6.0-7.0) durante il periodo di risciacquo (7 giorni prima del raccolto) ottimizza l'assorbimento dei nutrienti residui e riduce l'accumulo di sali nelle radici, migliorando la qualità dei fiori (sapore, amarezza, assenza di bruciature) e la biodisponibilità dei nutrienti nel Living Soil, come suggerito dai manuali A (pH 6.0-7.0 per assorbimento ottimale) e B (pH 6.0-7.0 per substrato e periodo di risciacquo).",
+      "protocollo": [
+        "Preparare 3 parcelle identiche nel Living Soil outdoor di BioSerra Caserta, ciascuna con 3 piante di pianta (stessa genetica e età).",
+        "Misurare e registrare il pH iniziale del suolo in ogni parcella con un pH-metro portatile (range atteso: 6.0-7.0).",
+        "Per 7 giorni prima del raccolto, irrigare le parcelle con acqua a pH controllato: Parcell 1 (pH 5.5), Parcell 2 (pH 6.5), Parcell 3 (pH 7.5). Utilizzare acqua distillata e aggiustare il pH con acido citrico o bicarbonato di sodio.",
+        "Al 7° giorno, raccogliere i fiori dalle piante di ogni parcella e misurare: a) contenuto di sali nelle radici (conducibilità elettrica in estratto di suolo), b) livello di amarezza dei fiori (test sensoriale con panel di 5 persone), c) presenza di bruciature alle punte delle foglie (scala visiva 0-5), d) resa in peso secco dei fiori."
+      ],
+      "materiali": [
+        "3 parcelle di Living Soil outdoor (stessa composizione iniziale)",
+        "3 piante di pianta della stessa genetica e età",
+        "pH-metro portatile (precisione ±0.1)",
+        "acqua distillata",
+        "acido citrico e bicarbonato di sodio (per aggiustare pH)",
+        "conducimetro per misurare sali nelle radici",
+        "bilancia di precisione (0.1g)",
+        "scala visiva per bruciature (0-5)",
+        "panel di 5 persone per test sensoriale"
+      ],
+      "durata_giorni": 7,
+      "misure": [
+        "Conducibilità elettrica delle radici (µS/cm): per valutare accumulo di sali",
+        "Livello di amarezza dei fiori (scala 1-10): per valutare qualità sensoriale",
+        "Presenza di bruciature alle punte delle foglie (scala 0-5): per valutare tossicità da sali",
+        "Resa in peso secco dei fiori (g): per valutare efficienza di assorbimento"
+      ],
+      "variabili_controllo": "Stessa genetica, età, substrato iniziale, quantità di acqua irrigata, esposizione solare, temperatura, umidità, metodo di raccolta e essiccazione.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il « risciacquo » delle marihuana",
+      "originalita": "Questo esperimento combina specificamente il principio del pH bilanciato per l'assorbimento nutrizionale (Manuale A) con la tecnica del risciacquo prima del raccolto (Manuale B) in un contesto di Living Soil outdoor, un approccio non trattato nei due manuali singolarmente. Inoltre, introduce una misura quantitativa dell'accumulo di sali nelle radici in relazione al pH dell'acqua di irrigazione, un aspetto trascurato nei manuali originali.",
+      "id": "esp_conn_2026-07-27_001",
+      "data_proposta": "2026-07-27",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e dell'acqua filtrata sulla qualità delle cime senza trattamenti post-raccolta",
+      "ipotesi": "Coltivando piante in vasi con terreno biologico (Living Soil, Manuale A) e utilizzando acqua filtrata per l'irrigazione (Manuale B), si otterranno cime con livelli ridotti di clorofilla, sali e impurità residue, eliminando la necessità di trattamenti post-raccolta come il water curing. Questo perché il Living Soil promuove una crescita equilibrata e una minore accumulazione di sostanze indesiderate, mentre l'acqua filtrata evita contaminazioni esterne durante la coltivazione.",
+      "protocollo": [
+        "Preparare due lotti identici di piante della stessa varietà (es. Pianta sativa a fioritura rapida) in vasi da 10L con terreno biologico (Living Soil) arricchito con micorrize e compost. Mantenere condizioni ambientali identiche (luce, umidità, temperatura).",
+        "Irrigare il Lotto A con acqua di rubinetto filtrata (filtro a carbone attivo per rimuovere cloro e metalli pesanti), e il Lotto B con acqua di rubinetto non filtrata (controllo). Misurare il pH e la conducibilità elettrica (EC) dell'acqua prima dell'uso.",
+        "Al termine della fioritura (circa 30 giorni), raccogliere le cime da entrambi i lotti nello stesso momento. Non applicare alcun trattamento post-raccolta (es. water curing, freezing curing).",
+        "Confrontare visivamente e analiticamente le cime: valutare colore, odore, presenza di residui di sali o clorofilla, e sapore (tramite panel sensoriale o test di laboratorio per terpeni e cannabinoidi)."
+      ],
+      "materiali": [
+        "Piante di Pianta sativa a fioritura rapida (stessa genetica e età)",
+        "Vasi da 10L con Living Soil (compost, micorrize, humus di lombrico)",
+        "Filtro a carbone attivo per acqua (per Lotto A)",
+        "pHmetro e conduttivimetro (EC meter)",
+        "Bilancia di precisione (per pesare le cime)",
+        "Fogli di valutazione sensoriale (per colore, odore, sapore)",
+        "Eventuale kit di analisi rapida per terpeni/cannabinoidi (opzionale)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso secco delle cime (per valutare resa)",
+        "Valutazione sensoriale: colore (verde scuro vs. verde chiaro), odore (erbaceo vs. fresco), sapore (amaro vs. bilanciato)",
+        "Presenza di residui di sali (test con soluzione di nitrato d'argento per cloruri o EC delle cime lavate)",
+        "Analisi dei cannabinoidi (CBD, CBG, THCV) e terpeni (mircene, limonene) tramite kit rapido o laboratorio esterno"
+      ],
+      "variabili_controllo": "Stessa varietà, stesso terreno (Living Soil), stessa esposizione alla luce, stessa temperatura/umidità, stesso metodo di raccolta. L'unica variabile è il tipo di acqua usata per l'irrigazione (filtrata vs. non filtrata).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento non è descritto in nessuno dei due manuali singolarmente. Il Manuale A si concentra sulla coltivazione in terreno biologico senza menzionare l'acqua di irrigazione, mentre il Manuale B tratta solo dei trattamenti post-raccolta. La sinergia tra terreno biologico e acqua filtrata durante la coltivazione per ridurre i trattamenti successivi è una novità assoluta.",
+      "id": "esp_conn_2026-07-27_002",
+      "data_proposta": "2026-07-27",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante CBDV-positive coltivate in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV grazie a un metabolismo radicale più efficiente. L'ipotesi si basa sulla sinergia tra micorrize e batteri del suolo (favoriti dalla concimazione organica) e piante con genotipo CBDV (selezionate tramite semi CBDV).",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (BioSerra Caserta) con Living Soil: una con concimazione organica (letame compostato, humus di lombrico, micorrize) e una con substrato standard (torba e perlite).",
+        "Seminare in entrambe le parcelle semi di una varietà CBDV-dominante (es. 'CBDV Auto' da banca di semi certificata) in condizioni identiche (profondità, distanza, irrigazione).",
+        "Monitorare settimanalmente la crescita, la salute delle piante e la biodiversità microbica del suolo (tramite test al microscopio o kit microbiologici).",
+        "A fine ciclo (30 giorni), raccogliere i fiori delle piante di entrambe le parcelle e analizzare il contenuto di CBDV tramite cromatografia (kit portatile o laboratorio esterno)."
+      ],
+      "materiali": [
+        "Semi CBDV-dominanti (es. 'CBDV Auto' da seedbank come Royal Queen Seeds o Dutch Passion)",
+        "Kit di analisi CBDV (es. test rapido HPLC portatile o servizio di laboratorio locale)",
+        "Living Soil (letame compostato, humus di lombrico, micorrize commerciali)",
+        "Substrato standard (torba e perlite)",
+        "Microscopio o kit microbiologici per suolo (es. conteggio batteri/micorrize)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV nei fiori (mg/g) tramite analisi chimica",
+        "Biodiversità microbica del suolo (conteggio micorrize/batteri)",
+        "Peso fresco e secco dei fiori per valutare la biomassa"
+      ],
+      "variabili_controllo": "Varietà di semi CBDV, condizioni di coltivazione (luce, temperatura, irrigazione), substrato base (stesso per entrambe le parcelle tranne la concimazione), metodo di analisi CBDV.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento combina specificamente la concimazione organica (Manuale A) con semi CBDV (Manuale B) per testare una sinergia non documentata nei manuali individualmente. La misurazione del CBDV in risposta alla biodiversità microbica è un approccio innovativo per la serra outdoor Living Soil.",
+      "id": "esp_conn_2026-07-27_003",
+      "data_proposta": "2026-07-27",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-26",
-    "nuove_proposte": 1,
+    "data": "2026-07-27",
+    "nuove_proposte": 3,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
