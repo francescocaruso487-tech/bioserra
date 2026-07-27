@@ -2,7 +2,7 @@
 id: gestione_suolo_vivente
 label: Suolo Vivente
 categoria: suolo
-aggiornato: 2026-07-26
+aggiornato: 2026-07-27
 pdf_count: 10
 ---
 
@@ -12,22 +12,23 @@ pdf_count: 10
 # Suolo Vivente
 
 ## Descrizione
-Il **Suolo Vivente** (o *Living Soil*) rappresenta un ecosistema complesso e dinamico in cui la salute delle piante dipende direttamente dall'attività biologica del substrato. Questo approccio si basa sulla presenza di un **microbioma attivo** composto da batteri, funghi micorrizici, attinomiceti, protozoi e nematodi, che collaborano per decomporre la materia organica, mineralizzare i nutrienti e proteggere le radici da patogeni. Il meccanismo chiave è la **sintrofia**: i microrganismi si scambiano metaboliti (es. azoto, fosforo, zuccheri) in un ciclo virtuoso che riduce la necessità di input esterni. In particolare, i funghi micorrizici arbuscolari (AMF) formano reti simbiotiche con le radici, aumentando l'assorbimento idrico e minerale fino al 300%. Questo sistema è resiliente perché autoregolato: un suolo sano "si difende" da squilibri chimici o biologici, mentre un suolo morto (sterilizzato o chimico) richiede interventi costanti.
+Il **Suolo Vivente** (o *Living Soil*) rappresenta un ecosistema complesso in cui microrganismi benefici (batteri, funghi micorrizici, attinomiceti, protozoi e nematodi) interagiscono con la materia organica e minerale per creare un ambiente autosufficiente e rigenerativo. Questo approccio si basa sul principio che un suolo sano non è un semplice substrato inerte, ma una rete vivente in cui la decomposizione della materia organica (compost, residui vegetali) viene trasformata in nutrienti assimilabili dalle piante tramite processi biochimici mediati dai microrganismi. La presenza di funghi micorrizici, ad esempio, estende la capacità di assorbimento radicale fino a 100 volte, mentre i batteri solubilizzatori di fosforo e potassio rendono questi elementi disponibili per le radici. Inoltre, un microbioma attivo protegge le piante da patogeni attraverso la competizione per lo spazio e le risorse, e produce ormoni vegetali (auxine, citochinine) che stimolano la crescita.
 
-Il *Living Soil* funziona perché imita i processi naturali dei suoli forestali o delle praterie, dove la materia organica si accumula in superficie e viene lentamente trasformata in humus stabile. In serra outdoor, l'obiettivo è replicare queste condizioni ottimali per il clima mediterraneo di Caserta (41°N), caratterizzato da estati calde e umide e inverni miti. La temperatura del suolo (15-25°C) e l'umidità relativa (60-80%) sono parametri critici per mantenere attivi i microrganismi aerobi, mentre la struttura porosa del substrato (30% aria, 30% acqua, 40% solido) garantisce scambi gassosi e drenaggio. L'assenza di pesticidi chimici e fertilizzanti di sintesi è fondamentale, poiché questi distruggono la biodiversità microbica e creano dipendenza da input esterni.
+In un contesto outdoor come quello di Caserta (41°N), il *Living Soil* sfrutta le condizioni climatiche mediterranee per ottimizzare la mineralizzazione della sostanza organica durante i mesi caldi, mentre in inverno la decomposizione rallenta, permettendo l’accumulo di humus stabile. L’assenza di prodotti chimici sintetici (fertilizzanti, pesticidi) preserva la biodiversità microbica, fondamentale per la resilienza del suolo. Questo sistema è particolarmente efficace per colture come la cannabis, che richiedono un apporto graduale e bilanciato di nutrienti durante le fasi di vegetazione e fioritura, evitando stress nutrizionali.
 
 ---
 
 ## Come si applica in serra
 
-### **Preparazione del substrato (prima della semina)**
-1. **Base organica**: Utilizzare una miscela di **50% terriccio biologico** (senza torba), **30% compost maturo** (minimo 6 mesi di maturazione) e **20% perlite o pomice** per aerazione. Aggiungere **1-2 kg/m² di biochar** (attivatore microbico) e **100 g/m² di micorrize commerciali** (es. *Mycorrhizal Inoculum*).
-2. **pH**: Regolare a **6.2-6.8** con calcite o dolomite (evitare gesso). Testare con kit biologici (non chimici).
-3. **Inoculo microbico**: Aggiungere **1 L/m² di tè di compost aerato** (ACT) o **500 ml/m² di microrganismi efficaci (EM)** per accelerare la colonizzazione.
+1. **Preparazione del substrato**
+   - Utilizzare una miscela base di **terreno locale** (argilloso o sabbioso, a seconda della zona) arricchito con **compost maturo** (20-30% in volume) e **fibra di cocco** (10-15%) per migliorare la struttura e la ritenzione idrica.
+   - Aggiungere **micorrize** (es. *Glomus spp.*) e **batteri benefici** (es. *Bacillus subtilis*, *Pseudomonas fluorescens*) per accelerare la colonizzazione radicale.
+   - Evitare torba (non sostenibile) e perlite (può alterare il pH).
 
-### **Gestione durante la coltivazione**
-- **Aggiunte di compost**: Ogni **15 giorni**, distribuire **1-2 cm di compost setacciato** sulla superficie e incorporarlo leggermente con una forchetta. Evitare di disturbare le radici.
-- **Irrigazione**:
-  - **Fase vegetativa**: Mantenere umidità al **60-70%** (test con dito: suolo umido ma non bagnato).
-  - **Fioritura**: Ridurre a **50-60%** per evitare marciumi radicali.
-  - **Metodo**: Irrigare al mattino con **acqua piovana o osmosi inversa**, evitando cloro. Usare **sistemi a goccia**
+2. **Mantenimento del microbioma**
+   - **Aggiunta periodica di compost**: ogni 2 settimane, distribuire uno strato sottile (1-2 cm) di compost maturo (rapporto C/N 20:1) sulla superficie, evitando di interrare per non disturbare le radici. In serra outdoor, preferire compost a base di letame di cavallo o pollina ben decomposto, con pH 6.5-7.5.
+   - **Irrigazione con acqua non clorata**: utilizzare acqua piovana o filtrata con carbone attivo per evitare di uccidere i microrganismi. Mantenere l’umidità al **60-70%** (misurabile con un igrometro da suolo) senza ristagni, che favoriscono patogeni come *Phytophthora*.
+   - **Pacciamatura**: coprire il suolo con paglia o erba secca (5-10 cm) per ridurre l’evaporazione, mantenere la temperatura stabile (18-25°C) e fornire cibo ai decompositori.
+
+3. **Gestione delle fasi colturali**
+   - **Vegetazione (marzo-maggio)**: aumentare la frequenza di compostaggio (ogni 10 giorni) e monitorare l’azoto (N) tramite analisi
