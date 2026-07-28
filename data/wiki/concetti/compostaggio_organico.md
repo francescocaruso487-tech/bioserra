@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-27
+aggiornato: 2026-07-28
 pdf_count: 6
 ---
 
@@ -12,28 +12,36 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il compost. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, artropodi), che decompongono la sostanza organica in condizioni aerobiche, producendo calore, anidride carbonica, acqua e humus. Il compost maturo è un substrato vivo, ricco di microrganismi benefici, enzimi e sostanze umiche che migliorano la struttura del suolo, la capacità di scambio cationico (CSC) e la disponibilità di nutrienti per le piante.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli), che scompongono la materia organica in humus, una sostanza umificata capace di migliorare la struttura del suolo, la capacità di scambio cationico (CSC) e la disponibilità di nutrienti per le piante. In un sistema **Living Soil** outdoor, il compost diventa l’elemento chiave per mantenere un substrato vivo, fertile e autosufficiente, riducendo la necessità di input esterni.
 
-In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il compostaggio assume un ruolo chiave per mantenere un suolo fertile e resiliente. La decomposizione termofila (55–65°C) elimina patogeni e semi di malerbe, mentre la successiva fase di maturazione (a temperature inferiori) arricchisce il compost di sostanze umiche e acidi fulvici, essenziali per la crescita radicale e la resistenza delle piante. Un compost di qualità garantisce un apporto costante di nutrienti a lento rilascio, riducendo la necessità di fertilizzanti sintetici e promuovendo un ecosistema suolo equilibrato.
+Il meccanismo si basa su **tre fasi principali**:
+1. **Fase mesofila** (20-40°C): decomposizione iniziale ad opera di batteri e funghi, con produzione di calore e CO₂.
+2. **Fase termofila** (55-65°C): temperatura ottimale per eliminare patogeni, semi di malerbe e insetti, accelerando la stabilizzazione della materia organica.
+3. **Fase di maturazione** (20-30°C): umificazione finale, con formazione di humus stabile e nutrienti a lenta cessione. Per un compost di qualità, è cruciale monitorare il **rapporto carbonio/azoto (C/N)**, che dovrebbe essere compreso tra 25:1 e 30:1, e garantire un’adeguata aerazione per evitare processi anaerobici (che generano odori sgradevoli e metano).
+
+---
 
 ## Come si applica in serra
+Per una serra **outdoor a Caserta (41°N)** in **Living Soil**, il compostaggio deve essere adattato alle condizioni climatiche locali (estati calde e umide, inverni miti) e alle esigenze delle piante (es. cannabis, ortaggi). Segui questi passaggi:
 
-### **1. Selezione dei materiali**
-- **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, letame fresco (es. cavallo, pollo), fondi di caffè.
-- **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, rametti triturati, segatura (non trattata).
-- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). A Caserta, dove l’umidità è elevata, aumentare i marroni per evitare compattazione.
+### **1. Scelta dei materiali**
+- **Materiali verdi** (ricchi di azoto, C/N < 30):
+  - Scarti di cucina (resti di frutta/verdura, fondi di caffè, bustine di tè).
+  - Erba fresca, ortaggi, letame fresco (es. cavallo, mucca, pollo – **ben maturo** per evitare bruciature).
+  - Foglie verdi, alghe marine.
+- **Materiali marroni** (ricchi di carbonio, C/N > 30):
+  - Paglia, fieno, foglie secche, carta non patinata, segatura (non trattata).
+  - Cartone non colorato, trucioli di legno.
+- **Materiali di supporto**:
+  - Calce dolomitica o cenere di legna (per neutralizzare l’acidità).
+  - Micorrize e batteri benefici (es. *Bacillus subtilis*, *Trichoderma*) per accelerare la decomposizione.
 
-### **2. Preparazione del cumulo**
-- **Ubicazione**: scegliere un’area ombreggiata e ben drenata in serra, lontano da fonti di calore dirette.
-- **Struttura**: creare un cumulo di 1–1.5 m di altezza e larghezza, con base larga per favorire l’aerazione.
-- **Inoculo**: aggiungere compost maturo o terriccio di bosco (10% del volume) per accelerare la colonizzazione microbica.
+### **2. Bilanciamento e stratificazione**
+- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume).
+- **Struttura del cumulo**:
+  - Base: strato di materiali grossolani (rametti, trucioli) per favorire l’aerazione.
+  - Alternare strati di verdi e marroni (5-10 cm ciascuno), aggiungendo un sottile strato di terra o compost maturo per inoculare microrganismi.
+  - Umidificare ogni strato (il compost deve essere umido come una spugna strizzata).
 
-### **3. Gestione termica e umidità**
-- **Temperatura**: monitorare con sonda termica. Mantenere tra **55–65°C** per 3–7 giorni (fase termofila), poi abbassare a 40–50°C fino al raffreddamento.
-- **Umidità**: il cumulo deve essere umido come una spugna strizzata. In caso di siccità (estate casertana), nebulizzare acqua e coprire con tessuto traspirante.
-- **Aerazione**: rivoltare ogni **2–3 giorni** con forca o pala per ossigenare e uniformare la decomposizione.
-
-### **4. Maturazione e utilizzo**
-- **Durata**: 3–6 mesi (a seconda della stagione e dei materiali).
-- **Segni di maturazione**: temperatura stabile a 20–30°C, odore di terra umida, struttura grumosa e scura.
-- **Applicazione**: mescolare al **20–30%** con substrato base (es. fibra di cocco, torba, perlite) per la fase vegetativa delle piante. In serra outdoor, distribu
+### **3. Gestione del cumulo**
+- **Posizione**: In serra o in zona semi-ombreggiata
