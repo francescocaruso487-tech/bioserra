@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-28
+aggiornato: 2026-07-29
 pdf_count: 1
 ---
 
@@ -12,33 +12,34 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto) anche in condizioni di stress idrico o carenza. In cambio, la pianta fornisce al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in terreni poveri o compattati, dove la simbiosi micorrizica può migliorare la struttura del suolo e la resilienza delle colture.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo la loro rete iphale nel substrato, aumentando la superficie di assorbimento idrico e minerale fino a **100 volte** rispetto alle radici nude. Il meccanismo si basa sulla fornitura di fosforo, azoto e micronutrienti alla pianta in cambio di carboidrati fotosintetizzati, creando un ecosistema radicale **autosostenibile** e resiliente agli stress abiotici (siccità, salinità) e biotici (patogeni).
 
-La simbiosi micorrizica si attiva principalmente durante le fasi di **germinazione** e **vegetazione**, quando le radici sono in rapida crescita e necessitano di un apporto nutrizionale costante. Studi dimostrano che piante inoculate con micorrize sviluppano radici più robuste, una maggiore tolleranza a patogeni e una resa superiore, soprattutto in sistemi a basso input chimico come il **Living Soil**. Inoltre, i funghi micorrizici contribuiscono alla formazione di **aggregati del suolo**, migliorando la porosità e la capacità di ritenzione idrica, elementi critici per la salute delle piante in serra outdoor.
+In ambiente outdoor italiano, come a Caserta (41°N), l’inoculazione micorrizica è particolarmente vantaggiosa per colture a ciclo lungo (es. cannabis, pomodoro, vite) in **Living Soil**, dove la biodiversità microbica è già elevata ma spesso carente di specifici simbionti. Studi dimostrano che piante micorrizate mostrano una **maggiore tolleranza alle fluttuazioni termiche** (tipiche delle serre meridionali) e una ridotta necessità di fertilizzanti chimici, grazie alla capacità dei funghi di solubilizzare nutrienti insolubili (es. fosfati di calcio).
 
 ---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con attenzione, seguendo questi passaggi:
+Per una serra **outdoor Living Soil** a Caserta, segui questi passaggi per un’inoculazione efficace:
 
 1. **Preparazione del substrato**:
-   - Assicurarsi che il terreno sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico).
-   - Evitare l’uso di fungicidi chimici (come propiconazolo o captano) nei **30 giorni precedenti** l’inoculazione, poiché questi possono uccidere i funghi benefici.
+   - Assicurati che il terreno sia **umido ma non zuppo** (evita ristagni, vedi [web_zamn_301]). Il pH ideale per la colonizzazione micorrizica è tra **6.0 e 7.5**.
+   - Mescola l’inoculo micorrizico (es. *Rhizophagus irregularis*) con un po’ di substrato asciutto per distribuirlo uniformemente.
 
-2. **Scelta dell’inoculo**:
-   - Utilizzare un inoculo di micorrize **specifico per piante da serra** (es. *Glomus intraradices* o *Rhizophagus irregularis*), preferibilmente in forma di polvere o granuli da miscelare al substrato.
-   - Quantità consigliata: **5–10 g per pianta**, distribuiti direttamente sulle radici al momento del trapianto o della semina.
+2. **Applicazione al trapianto**:
+   - Al momento del trapianto, crea una **piccola depressione** vicino alle radici della pianta.
+   - Applica **5–10 g di inoculo per pianta** direttamente a contatto con le radici, coprendo con uno strato sottile di terreno (1–2 cm).
+   - *Alternative*: Puoi anche miscelare l’inoculo con acqua (10 g/L) e innaffiare la zona radicale al trapianto.
 
-3. **Applicazione**:
-   - Per **semina diretta**: mescolare l’inoculo al substrato di semina o spargerlo nel solco prima di interrare i semi.
-   - Per **trapianto**: creare una "tasca" di inoculo alla base della pianta, a contatto con le radici, e coprire con terreno. Evitare di esporre l’inoculo alla luce diretta del sole.
-   - Innaffiare immediatamente dopo l’applicazione con acqua **non clorata** (usare acqua piovana o lasciar riposare l’acqua del rubinetto per 24 ore) per attivare i funghi.
+3. **Post-applicazione**:
+   - Evita **fungicidi chimici** (inclusi rame e zolfo) per **almeno 30 giorni** dopo l’inoculazione, poiché possono uccidere i funghi benefici [web_zamn_335].
+   - Mantieni il terreno **leggermente umido** (non bagnato) per favorire la colonizzazione, ma evita l’eccesso d’acqua che soffoca le radici [web_zamn_301].
 
-4. **Manutenzione post-inoculazione**:
-   - Mantenere il suolo umido ma non saturo (evitare ristagni d’acqua, che possono soffocare le radici e i funghi).
-   - Evitare l’uso di fertilizzanti chimici nei **15–30 giorni successivi**, per non interferire con la simbiosi. Preferire input organici leggeri (es. tè di compost, alghe).
-   - Monitorare la crescita delle piante: un buon segno di successo è l’aumento della velocità di sviluppo e la riduzione dello stress idrico.
+4. **Fertilizzazione successiva**:
+   - Usa fertilizzanti **organici a lenta cessione** (es. compost, humus di lombrico) per nutrire sia la pianta che i funghi. Evita eccessi di azoto in fioritura (vedi [web_zamn_308]).
 
 ---
+
 ## Sinergie con altri elementi
-Le micorrize interagiscono positivamente con diverse tecn
+Le micorrize interagiscono positivamente con diverse tecniche di **elettrocultura** e **suolo vivente**, amplificando i benefici:
+
+- **Lakhovsky (Onde Multifrequenza)**: L’inoculazione micorrizica migliora la risposta delle piante alle onde elettromagnetiche, potenziando la resistenza agli stress e la fotosintesi. I funghi agiscono da "antenne biologiche
