@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-28T05:29:14.590247+00:00",
+  "lastUpdate": "2026-07-29T05:36:11.432745+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,24 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
-      "attivo": false,
-      "data_attivazione": "2026-06-22",
-      "data_disattivazione": "2026-07-01"
-    },
     {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
@@ -3439,13 +3421,48 @@
       "data_proposta": "2026-07-27",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento della cimatura LST indoor per piante outdoor in Living Soil con sistema water-only",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) su piante outdoor coltivate in Living Soil con metodo water-only, si ottiene un aumento della resa (fioritura e biomassa) del 20-30% rispetto a piante non cimate, grazie a una maggiore esposizione alla luce e a una distribuzione ottimale dei nutrienti nel substrato. La cimatura LST, combinata con le proprietà del Living Soil (Manuale B), riduce lo stress della pianta grazie alla maggiore biodiversità microbica che supporta la rigenerazione tissutale.",
+      "protocollo": [
+        "Preparare 20 piante della stessa varietà autofiorente (es. Gorilla Glue CBD) in Living Soil, suddivise in due gruppi: Gruppo A (LST adattato) e Gruppo B (controllo senza cimatura).",
+        "A 30 giorni dalla semina, iniziare la cimatura LST sul Gruppo A: piegare delicatamente i rami principali verso l'esterno con legacci in cotone, mantenendo un angolo di 45° rispetto al fusto principale. Ripetere l'operazione ogni 7 giorni fino alla fioritura.",
+        "Mantenere entrambi i gruppi con irrigazione water-only (solo acqua, senza fertilizzanti aggiuntivi) per evitare interferenze nutrizionali. Utilizzare acqua osmotizzata arricchita con microrganismi benefici (es. micorrize e batteri del Living Soil).",
+        "A 60 giorni dalla semina, raccogliere i dati: peso secco delle infiorescenze, altezza delle piante, numero di rami secondari e indice di clorofilla (con misuratore portatile). Confrontare i risultati tra Gruppo A e Gruppo B."
+      ],
+      "materiali": [
+        "20 piante autofiorenti femminizzate (es. Gorilla Glue CBD)",
+        "Living Soil pre-inoculato con micorrize e batteri benefici",
+        "Legacci in cotone biodegradabile",
+        "Misuratore di clorofilla portatile",
+        "Bilancia di precisione per peso secco",
+        "Acqua osmotizzata"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso secco delle infiorescenze (g/pianta): misurato dopo essiccazione a 20°C per 7 giorni.",
+        "Altezza delle piante (cm): misurata dalla base al meristema apicale.",
+        "Numero di rami secondari: conteggio manuale.",
+        "Indice di clorofilla (SPAD): misurato su 3 foglie per pianta con misuratore portatile."
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil, stessa varietà, stesso regime idrico (water-only), stessa esposizione solare, stessa densità di piante per metro quadrato.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "L'esperimento combina la tecnica LST indoor (Manuale A) con le proprietà del Living Soil outdoor (Manuale B), applicando un metodo water-only per isolare l'effetto della cimatura sulla resa. Nessuno dei due manuali suggerisce un adattamento diretto della LST per piante outdoor in Living Soil con irrigazione water-only.",
+      "id": "esp_conn_2026-07-29_001",
+      "data_proposta": "2026-07-29",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-28",
-    "nuove_proposte": 0,
+    "data": "2026-07-29",
+    "nuove_proposte": 1,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
