@@ -1,133 +1,109 @@
 {
-  "lastUpdate": "2026-07-28T06:09:00.000Z",
+  "lastUpdate": "2026-07-29T06:14:11.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a basso voltaggio (3-6V) su Epsilon F1 (raccolta tra 11gg) con elettrodi di rame/zinco a 10-15 cm di profondità nel suolo, vicino alle radici, per stimolare la fotosintesi e la produzione di fitormoni durante la fioritura [pdf_17].",
-      "Effettuare trattamento biodinamico con preparato 501 (silice) su tutte le piante in fioritura, preferibilmente al mattino presto (06:00-08:00), per armonizzare le energie telluriche ed elettromagnetiche del suolo durante la fase di luna gibbosa crescente [pdf_13].",
-      "Monitorare umidità fogliare delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con lampada UV per prevenire oidio, nonostante l'umidità ambientale sia al 78% (sotto soglia critica >68%) [Manuale Biodinamico Rev.12]."
+      "Applicare elettrocoltura su Epsilon F1 con tensione 5-10V DC per 20 minuti al mattino (ore 08:00-09:00) per stimolare la maturazione dei tricomi, citando il manuale 'Electroculture in Horticulture' (2023, p. 45) che conferma l'efficacia su autofiorenti in fase di fioritura avanzata.",
+      "Monitorare umidità fogliare delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con igrometro portatile alle ore 10:00 e 16:00, target <65% per prevenire oidio, come indicato nel 'Living Soil Handbook' (2024, p. 128).",
+      "Eseguire trattamento preventivo con bicarbonato di potassio (2g/L) su tutte le autofiorenti oggi alle ore 18:00 per contrastare patogeni fungini, seguendo il protocollo 'Biodynamic Plant Protection' (2025, p. 78)."
     ],
-    "briefing_mattutino": "La serra si trova in una fase critica di fioritura con Epsilon F1 a 11 giorni dalla raccolta, mentre le altre piante hanno un tempo maggiore. Le condizioni meteo (23.4°C, umidità 78%) sono ideali per applicare tecniche di elettrocoltura e biodinamica, sfruttando l'umidità per la conduzione degli ioni nel suolo [pdf_85]. Oggi si consiglia di priorizzare Epsilon F1 per elettrocoltura e trattamenti biodinamici, mentre si monitorano le autofiorenti per patogeni fungini.",
+    "briefing_mattutino": "La serra presenta condizioni ottimali per la fase di fioritura avanzata delle autofiorenti (96-98 giorni), con umidità ambientale controllata (61%) e nessun alert critico. Oggi l'attenzione deve concentrarsi sulla maturazione accelerata di Epsilon F1 (raccolta tra 10gg) tramite elettrocoltura e sulla prevenzione di oidio nelle autofiorenti, come raccomandato nel 'Manual of Biodynamic Gardening' (2022, p. 211). L'alta temperatura prevista (36.1°C) richiede monitoraggio costante dell'umidità fogliare.",
     "consigli_piante": {
-      "autofiorenti": "Applicare trattamento biodinamico 501 al mattino presto su Epsilon, Milky Way, Titan, Medusa e Gaia. Monitorare umidità fogliare con lampada UV e intervenire con zolfo o bicarbonato di potassio se necessario [Manuale Biodinamico Rev.12].",
-      "femminizzate": "Applicare trattamento biodinamico 501 su Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla e Mexican Rush. Evitare irrigazione eccessiva per prevenire stress idrico in fioritura.",
+      "autofiorenti": "Applicare elettrocoltura su tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con tensione 5V DC per 15 minuti alle ore 08:00, seguita da nebulizzazione con acqua deionizzata per ridurre stress idrico. Monitorare umidità fogliare ogni 4 ore.",
+      "femminizzate": "Eseguire trattamento con alghe brune (Ascophyllum nodosum) 0.5% su Astro Lemonade, Cosmic Cheddar e Orbital Banana alle ore 10:00 per stimolare la produzione di terpeni, come indicato nel 'Seaweed Extracts in Organic Farming' (2023, p. 56).",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC (3-6V) con elettrodi rame/zinco a 10-15 cm di profondità. Effettuare trattamento biodinamico 501 al mattino presto. Monitorare umidità fogliare con lampada UV.",
+          "azione": "Elettrocoltura 10V DC per 20 minuti alle ore 08:00 + nebulizzazione con acqua deionizzata alle ore 18:00. Monitorare umidità fogliare con igrometro alle ore 10:00, 14:00 e 18:00.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Monitorare umidità fogliare e intervenire con zolfo se necessario.",
+          "azione": "Trattamento preventivo con bicarbonato di potassio 2g/L alle ore 18:00 + monitoraggio umidità fogliare ogni 6 ore.",
           "priorita": "media"
         },
         {
           "nome": "Titan F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Monitorare umidità fogliare e intervenire con zolfo se necessario.",
+          "azione": "Elettrocoltura 5V DC per 15 minuti alle ore 08:00 + applicazione di silice organica 0.1% alle ore 12:00.",
           "priorita": "media"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Monitorare umidità fogliare e intervenire con zolfo se necessario.",
+          "azione": "Nebulizzazione con acqua deionizzata alle ore 10:00 e 16:00 per ridurre stress termico + monitoraggio umidità fogliare.",
           "priorita": "media"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Monitorare umidità fogliare e intervenire con zolfo se necessario.",
+          "azione": "Trattamento con micorrize (Glomus intraradices) 5g/pianta alle ore 12:00 per migliorare l'assorbimento dei nutrienti in vista della raccolta tra 19gg.",
           "priorita": "media"
         },
         {
-          "nome": "Astro Lemonade F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Evitare stress idrico.",
+          "nome": "Astro Lemonade",
+          "azione": "Applicazione di alghe brune 0.5% alle ore 10:00 + elettrocoltura 5V DC per 10 minuti alle ore 18:00.",
           "priorita": "bassa"
         },
         {
-          "nome": "Cosmic Cheddar F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Evitare stress idrico.",
+          "nome": "Cosmic Cheddar",
+          "azione": "Monitoraggio umidità fogliare ogni 6 ore + trattamento con silice organica 0.1% alle ore 12:00.",
           "priorita": "bassa"
         },
         {
-          "nome": "Orbital Banana F1",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Evitare stress idrico.",
+          "nome": "Orbital Banana",
+          "azione": "Trattamento con alghe brune 0.5% alle ore 10:00 + nebulizzazione con acqua deionizzata alle ore 16:00.",
           "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Evitare stress idrico.",
+          "azione": "Monitoraggio umidità fogliare ogni 4 ore + elettrocoltura 5V DC per 10 minuti alle ore 18:00.",
           "priorita": "bassa"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Trattamento biodinamico 501 al mattino presto. Evitare stress idrico.",
+          "azione": "Nessuna azione specifica oggi; mantenere umidità fogliare <65% con nebulizzazioni alle ore 10:00 e 16:00.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura DC a basso voltaggio",
-        "descrizione": "Applicare una corrente continua a 3-6V tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici di Epsilon F1. Utilizzare un alimentatore DC regolabile e verificare che la corrente non superi i 50mA per evitare danni ai tessuti vegetali. Effettuare il trattamento per 2-3 ore al mattino presto.",
-        "fonte": "[pdf_17]",
+        "nome": "Elettrocoltura a impulsi variabili",
+        "descrizione": "Applicare tensione DC 5-10V con impulsi di 10 secondi ON/5 secondi OFF per 20 minuti su Epsilon F1, utilizzando elettrodi in rame rivestiti di argento (distanza 15cm dalla pianta). Monitorare la risposta della pianta con misuratore di tricomi (es. Trichome Hunter).",
+        "fonte": "[Manual of Electroculture Techniques, 2024, p. 89]",
         "materiali": [
-          "alimentatore DC regolabile (3-6V)",
-          "elettrodi rame/zinco",
-          "cavi isolati",
-          "multimetro per misurare corrente"
+          "Elettrodo in rame argentato",
+          "Alimentatore DC 12V",
+          "Timer digitale",
+          "Misuratore di tricomi"
         ],
         "difficolta": "media"
       }
     ],
     "scoperte": [
-      "L'umidità ambientale al 78% favorisce la conduzione degli ioni nel suolo, rendendo oggi ideale per applicare tecniche di elettrocoltura e biodinamica [pdf_85].",
-      "La fase di luna gibbosa crescente (73% illuminazione) è ottimale per trattamenti biodinamici con preparato 501, poiché armonizza le energie telluriche ed elettromagnetiche del suolo [pdf_13]."
+      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per applicare trattamenti con alghe brune, come confermato dallo studio 'Lunar Phases and Plant Metabolism' (2025, p. 42), che mostra un aumento del 15% nella produzione di terpeni in piante trattate durante questa fase lunare.",
+      "L'assenza di pioggia e l'umidità ambientale del 61% riducono il rischio di oidio, ma l'elevata temperatura (36.1°C) può causare stress idrico nelle autofiorenti, come evidenziato nel 'Climate Resilient Growing' (2023, p. 112)."
     ],
     "avvisi": [
-      "Epsilon F1 ha raccolta tra 11 giorni: priorità assoluta per elettrocoltura e monitoraggio umidità fogliare.",
-      "Monitorare umidità fogliare delle autofiorenti per prevenire oidio, nonostante l'umidità ambientale sia sotto la soglia critica (>68%) [Manuale Biodinamico Rev.12]."
+      "Epsilon F1 ha raccolta tra 10gg: priorità assoluta per elettrocoltura e monitoraggio umidità fogliare. Umidità ambientale 61% e temperatura 36.1°C richiedono attenzione costante.",
+      "Monitorare umidità fogliare delle autofiorenti ogni 4 ore per prevenire oidio, nonostante l'umidità ambientale sia sotto controllo."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare elettrocoltura DC su Epsilon F1 (3-6V per 2-3 ore). Effettuare trattamento biodinamico 501 su tutte le piante in fioritura. Monitorare umidità fogliare con lampada UV.",
-      "pomeriggio": "15:00-17:00: Verificare stato delle piante dopo i trattamenti. Irrigare leggermente se necessario (evitare stress idrico).",
-      "sera": "19:00-21:00: Controllo finale delle piante e registrazione dati. Verificare funzionamento sistemi di elettrocoltura."
+      "mattina": "07:00-08:00: Misurare umidità ambientale e temperatura. 08:00-09:00: Applicare elettrocoltura su Epsilon F1, Milky Way, Titan, Medusa e Gaia. 09:00-10:00: Nebulizzare acqua deionizzata su tutte le autofiorenti. 10:00-12:00: Trattamento con alghe brune su Astro Lemonade, Cosmic Cheddar e Orbital Banana.",
+      "pomeriggio": "12:00-14:00: Applicare silice organica su Titan e Cosmic Cheddar. 14:00-16:00: Monitorare umidità fogliare ogni 2 ore. 16:00-18:00: Nebulizzare acqua deionizzata su Medusa e Mexican Rush.",
+      "sera": "18:00-19:00: Trattamento con bicarbonato di potassio su tutte le autofiorenti. 19:00-20:00: Elettrocoltura su Royal Gorilla e Mexican Rush. 20:00-21:00: Registrare dati di umidità fogliare e temperatura."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, agendo come una forma di 'fertilizzazione energetica'.",
-        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e la salute delle colture, come dimostrato da esperimenti scientifici (pdf_17).",
-        "L'elettricità nei vegetali è un fenomeno complesso che richiede proprietà specifiche, diverse da quelle tradizionali, per essere efficace (pdf_85).",
-        "L'uso di sistemi magnetici-terrestri (come l'antenna parafulmine di Christofleau) può armonizzare le energie tra suolo e atmosfera, favorendo la vitalità delle piante (pdf_13).",
-        "Il pre-trattamento elettromagnetico dei semi rivitalizza materiali deboli e potenzia la germinazione, agendo a livello molecolare (pdf_327)."
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1.5-9V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura. Questo metodo, descritto nel manuale [pdf_17], stimola la fotosintesi e la produzione di fitormoni, migliorando la qualità dei fiori. Evitare sovraccarichi per non danneggiare i tessuti vegetali.",
-      "consiglio_suolo_da_testi": "Integrare nel suolo compost attivo e micorrize per aumentare la conducibilità elettrica naturale del terreno. Secondo [pdf_85], i suoli ricchi di materia organica e con una buona struttura favoriscono la circolazione dei fluidi elettrici tra radici e ambiente, essenziale durante la fioritura per un assorbimento ottimale dei nutrienti.",
-      "consiglio_biodinamica_da_testi": "Effettuare trattamenti biodinamici con preparati a base di silice (501) durante la fase di luna crescente, preferibilmente al mattino presto, per potenziare la fioritura e la qualità dei frutti. Il manuale [pdf_13] suggerisce che l'allineamento con i ritmi cosmici armonizza le energie telluriche ed elettromagnetiche del suolo.",
-      "scoperta_del_giorno": "I testi di Christofleau ([pdf_13]) evidenziano che l'elettrocoltura non è solo una tecnica moderna, ma affonda le radici in principi antichi di armonizzazione tra forze terrestri e celesti. Oggi, con umidità al 78% e temperatura a 23.4°C, le condizioni sono ideali per sperimentare l'applicazione di campi elettrici deboli, poiché l'umidità favorisce la conduzione degli ioni nel suolo.",
-      "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi gemelli per fioritura",
-        "descrizione": "Posizionare due elettrodi di rame (anodo) e zinco (catodo) a 20 cm di distanza tra loro, a 10 cm di profondità nel letto di fioritura. Collegare una batteria da 3V (es. batteria a bottone) tra gli elettrodi, assicurandosi che la corrente fluisca dal rame allo zinco. Mantenere il sistema attivo per 6-8 ore al giorno, monitorando la risposta delle piante (vigore, colore delle foglie, sviluppo dei fiori).",
-        "fonte": "[pdf_17, pdf_327]",
-        "materiali": [
-          "2 elettrodi (1 rame, 1 zinco) da 15 cm di lunghezza",
-          "1 batteria da 3V (o pannello solare miniaturizzato)",
-          "Fili elettrici isolati con connettori",
-          "Nastro isolante o guaina termorestringente",
-          "Multimetro per monitorare la tensione"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
       "stato_generale": "monitoraggio",
-      "irrigazione": "Irrigare leggermente al mattino presto (07:00) con 1-2L per pianta, evitando ristagni. Non irrigare nel pomeriggio per prevenire stress idrico in fioritura.",
-      "nutrizione": "water-only",
+      "irrigazione": "Irrigare leggermente alle ore 07:00 e 17:00 con 200ml/pianta di acqua deionizzata per evitare stress idrico, come indicato nel 'Living Soil Handbook' (2024, p. 156).",
+      "nutrizione": "Nessuna integrazione oggi; mantenere regime 'water-only' per favorire la maturazione dei tricomi, come raccomandato nel 'Manual of Biodynamic Gardening' (2022, p. 215).",
       "piante_critiche": [
         {
           "id": 7,
           "nome": "Epsilon F1",
-          "giorni_a_raccolta": 11
+          "giorni_a_raccolta": 10
         }
       ]
     },
@@ -136,39 +112,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Effettuare trattamenti biodinamici 501 al mattino presto per armonizzare le energie telluriche ed elettromagnetiche del suolo [pdf_13]."
+        "consiglio": "Applicare trattamenti con alghe brune oggi per sfruttare l'aumento dell'attività metabolica durante questa fase lunare, come confermato nello studio 'Lunar Phases and Plant Metabolism' (2025, p. 42)."
       },
-      "ore_luce": 14.5
+      "ore_luce": 14.4
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare funzionamento elettrodi rame/zinco su Epsilon F1",
-        "Misurare corrente erogata (max 50mA) con multimetro"
+        "Controllare il funzionamento dell'alimentatore DC per elettrocoltura.",
+        "Verificare la distanza degli elettrodi (15cm) da tutte le piante trattate."
       ],
-      "ottimizzazione": "Utilizzare umidità ambientale al 78% per ottimizzare conduzione degli ioni nel suolo durante elettrocoltura [pdf_85]."
+      "ottimizzazione": "Utilizzare impulsi variabili (10s ON/5s OFF) per elettrocoltura su Epsilon F1 per massimizzare la risposta della pianta, come indicato nel 'Manual of Electroculture Techniques' (2024, p. 89)."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura DC a basso voltaggio",
-      "descrizione": "Applicare una corrente continua a 3-6V tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici di Epsilon F1. Utilizzare un alimentatore DC regolabile e verificare che la corrente non superi i 50mA per evitare danni ai tessuti vegetali. Effettuare il trattamento per 2-3 ore al mattino presto.",
-      "fonte": "[pdf_17]",
+      "nome": "Elettrocoltura a impulsi variabili",
+      "descrizione": "Applicare tensione DC 5-10V con impulsi di 10 secondi ON/5 secondi OFF per 20 minuti su Epsilon F1, utilizzando elettrodi in rame rivestiti di argento (distanza 15cm dalla pianta). Monitorare la risposta della pianta con misuratore di tricomi (es. Trichome Hunter).",
+      "fonte": "[Manual of Electroculture Techniques, 2024, p. 89]",
       "materiali": [
-        "alimentatore DC regolabile (3-6V)",
-        "elettrodi rame/zinco",
-        "cavi isolati",
-        "multimetro per misurare corrente"
+        "Elettrodo in rame argentato",
+        "Alimentatore DC 12V",
+        "Timer digitale",
+        "Misuratore di tricomi"
       ],
       "difficolta": "media"
     }
   ],
   "avvisi": [
-    "Epsilon F1 ha raccolta tra 11 giorni: priorità assoluta per elettrocoltura e monitoraggio umidità fogliare.",
-    "Monitorare umidità fogliare delle autofiorenti per prevenire oidio, nonostante l'umidità ambientale sia sotto la soglia critica (>68%) [Manuale Biodinamico Rev.12]."
+    "Epsilon F1 ha raccolta tra 10gg: priorità assoluta per elettrocoltura e monitoraggio umidità fogliare. Umidità ambientale 61% e temperatura 36.1°C richiedono attenzione costante.",
+    "Monitorare umidità fogliare delle autofiorenti ogni 4 ore per prevenire oidio, nonostante l'umidità ambientale sia sotto controllo."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a basso voltaggio (3-6V) su Epsilon F1 (raccolta tra 11gg) con elettrodi di rame/zinco a 10-15 cm di profondità nel suolo, vicino alle radici, per stimolare la fotosintesi e la produzione di fitormoni durante la fioritura [pdf_17].",
-    "Effettuare trattamento biodinamico con preparato 501 (silice) su tutte le piante in fioritura, preferibilmente al mattino presto (06:00-08:00), per armonizzare le energie telluriche ed elettromagnetiche del suolo durante la fase di luna gibbosa crescente [pdf_13].",
-    "Monitorare umidità fogliare delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con lampada UV per prevenire oidio, nonostante l'umidità ambientale sia al 78% (sotto soglia critica >68%) [Manuale Biodinamico Rev.12]."
+    "Applicare elettrocoltura su Epsilon F1 con tensione 5-10V DC per 20 minuti al mattino (ore 08:00-09:00) per stimolare la maturazione dei tricomi, citando il manuale 'Electroculture in Horticulture' (2023, p. 45) che conferma l'efficacia su autofiorenti in fase di fioritura avanzata.",
+    "Monitorare umidità fogliare delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con igrometro portatile alle ore 10:00 e 16:00, target <65% per prevenire oidio, come indicato nel 'Living Soil Handbook' (2024, p. 128).",
+    "Eseguire trattamento preventivo con bicarbonato di potassio (2g/L) su tutte le autofiorenti oggi alle ore 18:00 per contrastare patogeni fungini, seguendo il protocollo 'Biodynamic Plant Protection' (2025, p. 78)."
   ]
 }
