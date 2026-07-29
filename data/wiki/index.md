@@ -1,26 +1,24 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-07-28 | 20 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-07-29 | 20 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Elettrocultura Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la crescita e la 
-- [Elettrocultura Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza elettrodi in ferro e rame per generare correnti galvaniche che migliora
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per creare campi elettromagnetici 
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Installa un'antenna collegata a terra per armonizzare le frequenze del suolo e d
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Irriga le piante con acqua sottoposta a campi magnetici per migliorare l'assorbi
-- [Elettrocultura Combinata](concetti/elettrocultura_combinata.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (es. spirale rame + antenna terra) per un
+- [Elettrocultura secondo Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la vitalità cellu
+- [Elettrocultura Fe-Cu (Ferro-Rame)](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti galvaniche che i
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per modulare i campi elettromagnet
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Installa un'antenna collegata a terra per captare e amplificare le energie tellu
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua di irrigazione con campi magnetici per migliorare l'assorbimento 
+- [Sistema Integrato di Elettrocultura](concetti/sistema_integrato_elettrocul.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (es. spirale rame + antenna terra) per un
+- [Acqua Magnetizzata + Elettrocultura](concetti/acqua_magnetizzata_e_elettro.md) *(in 10 PDF)* — Utilizza acqua magnetizzata in combinazione con tecniche di elettrocultura per p
 
 ## Biodinamica
-- [Preparati Biodinamici](concetti/biodinamica_preparati.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per attivare la vit
-- [Ritmi Cosmici Biodinamici](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i ritmi lunari e planetari per ottimizzar
-- [Rituali Biodinamici](concetti/biodinamica_rituale.md) *(in 10 PDF)* — Esegui rituali specifici (es. riempimento dei corni, mescolatura dinamica) per c
+- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per attivare la vit
+- [Ritmi Cosmici Biodinamici](concetti/ritmi_cosmici_biodinamici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
+- [Preparati Biodinamici e Ritmi Cosmici](concetti/preparati_biodinamici_ritmic.md) *(in 10 PDF)* — Combina l'uso dei preparati biodinamici con l'applicazione secondo i ritmi cosmi
 - [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
-
-## Irrigazione
-- [Acqua Vibrazionale](concetti/acqua_vibrazionale.md) *(in 10 PDF)* — Esponi l'acqua a frequenze sonore o simboli sacri per attivarne le proprietà ene
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
