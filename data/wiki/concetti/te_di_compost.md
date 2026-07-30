@@ -2,39 +2,52 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-07-29
+aggiornato: 2026-07-30
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Te di Compost
+# Tè di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri benefici, funghi, protozoi e sostanze umiche, in grado di stimolare la salute del suolo e delle piante. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi del tea colonizzano la rizosfera, competono con patogeni, migliorano la disponibilità di nutrienti e producono ormoni vegetali (auxine, citochinine) che favoriscono la crescita radicale e la resistenza agli stress. Inoltre, le sostanze umiche agiscono come chelanti naturali, rendendo i minerali più accessibili alle radici.
+Il **Tè di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri, funghi, protozoi e sostanze umiche, pronti per essere assorbiti dalle piante sia per via fogliare che radicale. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi attivi colonizzano la rizosfera o le foglie, migliorando l'assorbimento dei nutrienti, la resistenza agli stress e la struttura del suolo. Inoltre, le sostanze umiche e gli enzimi prodotti durante la fermentazione agiscono come **chelatanti naturali**, rendendo i minerali più disponibili per le piante.
 
-In un contesto di **Living Soil** outdoor (come quello di Caserta, 41°N), il Te di Compost è particolarmente efficace perché integra la biodiversità microbica del suolo, spesso compromessa da pratiche agricole intensive o condizioni climatiche estreme. A differenza dei fertilizzanti chimici, che creano dipendenza, il tea di compost nutre il suolo *a lungo termine*, migliorando la struttura, la capacità di ritenzione idrica e la resilienza delle piante. Studi dimostrano che applicazioni regolari possono ridurre l’incidenza di malattie fungine (es. *Phytophthora*) e aumentare la produzione di terpeni e cannabinoidi nelle piante di cannabis, grazie all’attivazione di vie metaboliche secondarie.
+In un contesto di **Living Soil outdoor** come quello di Caserta (41°N), dove il clima mediterraneo favorisce l'attività microbica ma può anche stressare le piante con caldo e siccità, il tè di compost diventa uno strumento chiave per **rigenerare il suolo** e **potenziare la resilienza delle colture**. La sua applicazione è particolarmente efficace durante le fasi di **vegetazione** (per stimolare la crescita radicale e fogliare) e **fioritura** (per supportare la produzione di terpeni e cannabinoidi).
 
 ---
 
 ## Come si applica in serra
 
-### **Preparazione (per 100L di soluzione)**
+### **Preparazione (metodo aerobico)**
 1. **Materiali necessari**:
-   - Compost maturo (preferibilmente vermicompost o compost da letame maturo, senza residui di metalli pesanti).
-   - Acqua non clorata (lasciare decantare l’acqua del rubinetto per 24h o usare acqua piovana).
+   - Compost maturo (preferibilmente ricco di micorrize e batteri benefici).
+   - Acqua non clorata (meglio se piovana o filtrata).
    - Aeratore per acquario (con pietra porosa per ossigenazione).
-   - Melassa di canna da zucchero o sciroppo d’acero (1-2 cucchiai per 100L, come fonte di carbonio per i batteri).
-   - Termometro (per monitorare la temperatura, ideale: 15–25°C).
-   - Filtro a maglia fine (per rimuovere particelle solide prima dell’applicazione).
+   - Melassa di canna da zucchero (1-2 cucchiai per 10L di acqua).
+   - Contenitore in plastica o vetro (evitare metalli).
+   - Filtro a maglia fine (per separare i solidi).
 
 2. **Procedura**:
-   - **Immersioni**: Riempire un secchio o un bidone con 10L di acqua e 1–2kg di compost (rapporto 1:5 o 1:10). Mescolare bene.
-   - **Aerazione**: Collegare l’aeratore e mantenere l’ossigenazione costante per **24–48 ore** (evitare l’anaerobiosi, che produce odori sgradevoli e composti tossici come l’ammoniaca).
-   - **Nutrizione microbica**: Aggiungere la melassa dopo 12 ore dall’inizio dell’aerazione (evitare di aggiungerla subito per prevenire la crescita di muffe).
-   - **Filtraggio**: Dopo 24–48 ore, filtrare il liquido con un tessuto a trama fine per rimuovere i residui solidi.
-   - **Applicazione**: Utilizzare entro **4 ore** dalla preparazione per massimizzare l’attività microbica. Applicare **radicale** (irrigazione) o **fogliare** (irrorazione) nelle ore serali per evitare evaporazione rapida.
+   - Riempire il contenitore con **1 parte di compost** ogni **5-10 parti di acqua** (es. 1kg di compost in 10L di acqua).
+   - Aggiungere la melassa (1-2 cucchiai per 10L) come fonte di carbonio per i microrganismi.
+   - Aerare continuamente per **24 ore** a temperatura ambiente (18-25°C), evitando la luce diretta.
+   - Filtrare il liquido con un panno pulito per rimuovere i residui solidi.
+   - **Applicare entro 4 ore** dalla preparazione per massimizzare l'attività microbica.
 
-3. **Dosi e frequenza per serra outdoor a Caserta**:
-   - **Vegetazione**: 1 applicazione ogni 7–10 giorni (dose: 5–10L/1
+### **Applicazione in serra outdoor (Caserta)**
+- **Frequenza**:
+  - **Vegetazione**: ogni 2-3 settimane (10-20L per 10m²).
+  - **Fioritura**: ogni 3-4 settimane (diluire a 50% con acqua per evitare eccesso di umidità).
+- **Metodi**:
+  - **Radicale**: Irrigazione a goccia o innaffiatoio, evitando ristagni.
+  - **Fogliare**: Spruzzatura fine al mattino presto o al tramonto (evitare ore calde).
+- **Diluizione consigliata**:
+  - **Radicale**: 1:1 con acqua.
+  - **Fogliare**: 1:2 con acqua (per evitare bruciature).
+
+### **Avvertenze per il clima di Caserta**
+- Evitare applicazioni in **giornate ventose** (perdita di efficacia).
+- Non applicare su piante bagnate (rischio di marciumi).
+- Monitorare l'**umidità del su
