@@ -1,21 +1,22 @@
 {
-  "lastUpdate": "2026-07-29",
+  "lastUpdate": "2026-07-30",
   "total": 20,
   "fonte": "341 PDF analizzati",
   "concetti": [
     {
       "id": "elettrocultura_lakhovsky",
-      "label": "Elettrocultura secondo Lakhovsky",
+      "label": "Elettrocultura Lakhovsky",
       "categoria": "elettrocultura",
-      "descrizione": "Applica campi elettromagnetici a bassa frequenza per stimolare la vitalità cellulare delle piante.",
+      "descrizione": "Applica onde elettromagnetiche a bassa frequenza per stimolare la vitalità cellulare delle piante.",
       "istruzioni_pratiche": [
-        "Collega un generatore di onde a un elettrodo a spirale posto sopra la serra.",
-        "Regola la frequenza tra 100 Hz e 1 MHz in base alla fase di crescita.",
+        "Collega un generatore di onde a un'antenna a spirale di rame posizionata sopra la serra.",
+        "Regola la frequenza tra 100 Hz e 1 MHz in base alla fase fenologica della pianta.",
         "Mantieni l'impianto acceso per 4-6 ore al giorno durante la vegetazione."
       ],
       "varianti": [
         "Lakhovsky",
-        "Oscillatori Lakhovsky"
+        "onde elettromagnetiche",
+        "frequenza cellulare"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -23,9 +24,9 @@
       ],
       "rilevanza": 95,
       "tag_correlati": [
-        "onde elettromagnetiche",
+        "onde EM",
         "vitalità cellulare",
-        "frequenze"
+        "stimolazione"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -43,18 +44,18 @@
     },
     {
       "id": "elettrocultura_fe_cu",
-      "label": "Elettrocultura Fe-Cu (Ferro-Rame)",
+      "label": "Elettrocultura Fe-Cu",
       "categoria": "elettrocultura",
       "descrizione": "Utilizza coppie di metalli (ferro e rame) per generare correnti galvaniche che influenzano la crescita.",
       "istruzioni_pratiche": [
-        "Inserisci una barra di ferro e una di rame nel terreno a 20 cm di distanza.",
+        "Inserisci una barra di ferro e una di rame nel terreno, distanti 20-30 cm l'una dall'altra.",
         "Collega i due metalli con un filo di rame per creare un circuito chiuso.",
-        "Posiziona il sistema vicino alle radici durante la fase di vegetazione."
+        "Posiziona il sistema in prossimità delle radici durante la fase di vegetazione."
       ],
       "varianti": [
         "Fe-Cu",
-        "coppie galvaniche",
-        "metalli redox"
+        "correnti galvaniche",
+        "metalli accoppiati"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -62,9 +63,9 @@
       ],
       "rilevanza": 85,
       "tag_correlati": [
-        "correnti galvaniche",
+        "correnti telluriche",
         "metalli",
-        "redox"
+        "crescita radicale"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -84,16 +85,16 @@
       "id": "spirale_rame",
       "label": "Spirale in Rame",
       "categoria": "elettrocultura",
-      "descrizione": "Posiziona spirali di rame intorno alle piante per modulare i campi elettromagnetici naturali.",
+      "descrizione": "Posiziona spirali di rame intorno alle piante per concentrare campi elettromagnetici benefici.",
       "istruzioni_pratiche": [
-        "Avvolgi un filo di rame (2-3 mm) in spirale intorno al fusto della pianta.",
-        "Assicurati che la spirale non tocchi direttamente il fusto per evitare ustioni.",
-        "Orienta la spirale verso nord per massimizzare l'effetto durante la fioritura."
+        "Avvolgi un filo di rame (diametro 2-3 mm) in spirali di 10-15 cm di diametro.",
+        "Sospendi le spirali a 30-50 cm sopra le piante o avvolgile intorno ai fusti.",
+        "Orientale verso nord per massimizzare l'effetto durante la fioritura."
       ],
       "varianti": [
         "spirale rame",
-        "anello di rame",
-        "avvolgimento rame"
+        "avvolgimento rame",
+        "campi EM concentrati"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -101,9 +102,9 @@
       ],
       "rilevanza": 80,
       "tag_correlati": [
-        "campi EM",
-        "modulazione",
-        "rame"
+        "campi magnetici",
+        "rame",
+        "concentrazione EM"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -123,11 +124,11 @@
       "id": "antenna_terra",
       "label": "Antenna di Terra",
       "categoria": "elettrocultura",
-      "descrizione": "Installa un'antenna collegata a terra per captare e amplificare le energie telluriche.",
+      "descrizione": "Installa un'antenna collegata a terra per captare e trasmettere energie telluriche alle piante.",
       "istruzioni_pratiche": [
-        "Pianta un'asta di metallo (ferro o rame) nel terreno a 1 m di profondità.",
-        "Collega l'asta a una struttura metallica sopra la serra (es. tettoia).",
-        "Assicurati che il sistema sia isolato da correnti parassite."
+        "Pianta un'asta di metallo (ferro o rame) nel terreno per 50-80 cm di profondità.",
+        "Collega l'asta a un filo di rame che si estende verso l'alto per 1-2 metri.",
+        "Posiziona l'antenna al centro della serra per coprire uniformemente l'area."
       ],
       "varianti": [
         "antenna terra",
@@ -141,8 +142,8 @@
       "rilevanza": 75,
       "tag_correlati": [
         "energia tellurica",
-        "captazione",
-        "metallo"
+        "antenna",
+        "collegamento a terra"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -159,30 +160,30 @@
       "pdf_count": 10
     },
     {
-      "id": "preparati_biodinamici",
+      "id": "biodinamica_preparati",
       "label": "Preparati Biodinamici",
       "categoria": "biodinamica",
-      "descrizione": "Applica preparati biodinamici (es. cornoletame, cornosilice) per attivare la vitalità del suolo e delle piante.",
+      "descrizione": "Applica preparati biodinamici (es. cornoletame, cornosilice) per armonizzare le forze vitali delle piante.",
       "istruzioni_pratiche": [
-        "Diluisci 1 grammo di cornoletame in 10 litri d'acqua e spruzza sul terreno al tramonto.",
-        "Applica il preparato 501 (cornoletame) durante la fase di luna calante.",
-        "Usa il preparato 500 (cornoletame) per migliorare la struttura del suolo prima della semina."
+        "Diluisci il preparato in acqua dinamizzata (1:50.000) e nebulizza sulle foglie al tramonto.",
+        "Applica il preparato al terreno durante la luna calante per favorire l'assorbimento.",
+        "Ripeti l'operazione ogni 4-6 settimane durante il ciclo colturale."
       ],
       "varianti": [
-        "preparati BD",
+        "preparati biodinamici",
         "cornoletame",
         "cornosilice"
       ],
       "fasi_guida": [
         "germinazione",
         "vegetazione",
-        "concia"
+        "fioritura"
       ],
       "rilevanza": 90,
       "tag_correlati": [
-        "vitalità del suolo",
+        "forze vitali",
         "ritmi cosmici",
-        "fertilità"
+        "preparati naturali"
       ],
       "pdf_ids": [
         "pdf_3",
@@ -199,14 +200,14 @@
       "pdf_count": 10
     },
     {
-      "id": "ritmi_cosmici_biodinamici",
-      "label": "Ritmi Cosmici Biodinamici",
+      "id": "ritmi_cosmici",
+      "label": "Ritmi Cosmici",
       "categoria": "biodinamica",
-      "descrizione": "Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzare la crescita.",
+      "descrizione": "Sincronizza le operazioni colturali con i cicli lunari e planetari per ottimizzare la crescita.",
       "istruzioni_pratiche": [
-        "Semi e trapianti durante la luna crescente per favorire la crescita vegetativa.",
-        "Effettua la concimazione durante la luna calante per stimolare le radici.",
-        "Raccogli le piante durante la luna piena per massimizzare la conservazione."
+        "Seme e trapianta durante la luna crescente per favorire lo sviluppo vegetativo.",
+        "Effettua trattamenti fogliari in luna calante per ridurre lo stress idrico.",
+        "Evita operazioni durante i nodi lunari o eclissi per non interferire con l'energia delle piante."
       ],
       "varianti": [
         "calendario biodinamico",
@@ -216,14 +217,13 @@
       "fasi_guida": [
         "germinazione",
         "vegetazione",
-        "taglio",
-        "essiccazione"
+        "fioritura"
       ],
-      "rilevanza": 85,
+      "rilevanza": 88,
       "tag_correlati": [
         "luna",
-        "cicli naturali",
-        "sincronizzazione"
+        "calendario agricolo",
+        "sincronizzazione cosmica"
       ],
       "pdf_ids": [
         "pdf_3",
@@ -243,25 +243,25 @@
       "id": "acqua_magnetizzata",
       "label": "Acqua Magnetizzata",
       "categoria": "elettrocultura",
-      "descrizione": "Tratta l'acqua di irrigazione con campi magnetici per migliorare l'assorbimento dei nutrienti.",
+      "descrizione": "Tratta l'acqua di irrigazione con campi magnetici per migliorare l'assorbimento e la struttura molecolare.",
       "istruzioni_pratiche": [
-        "Fai passare l'acqua attraverso un dispositivo magnetico (es. magneti al neodimio) prima dell'irrigazione.",
-        "Mantieni l'acqua in contatto con i magneti per almeno 30 minuti.",
-        "Usa acqua magnetizzata per l'irrigazione durante la fase di fioritura."
+        "Fai passare l'acqua attraverso un dispositivo magnetico (2-4 magneti al neodimio, 1000-3000 Gauss).",
+        "Irriga le piante con acqua magnetizzata al mattino presto per massimizzare l'effetto.",
+        "Ripeti il trattamento ogni 2-3 giorni durante la fase di vegetazione."
       ],
       "varianti": [
-        "acqua magnetica",
-        "trattamento magnetico",
-        "irrigazione EM"
+        "acqua magnetizzata",
+        "irrigazione magnetica",
+        "struttura dell'acqua"
       ],
       "fasi_guida": [
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 88,
+      "rilevanza": 85,
       "tag_correlati": [
-        "assorbimento nutrienti",
-        "struttura dell'acqua",
+        "struttura H2O",
+        "assorbimento radicale",
         "campi magnetici"
       ],
       "pdf_ids": [
@@ -279,109 +279,29 @@
       "pdf_count": 10
     },
     {
-      "id": "sistema_integrato_elettrocul",
-      "label": "Sistema Integrato di Elettrocultura",
-      "categoria": "elettrocultura",
-      "descrizione": "Combina più tecniche di elettrocultura (es. spirale rame + antenna terra) per un effetto sinergico.",
+      "id": "acqua_dinamizzata",
+      "label": "Acqua Dinamizzata",
+      "categoria": "irrigazione",
+      "descrizione": "Rendi l'acqua di irrigazione più viva tramite movimenti vorticosi o suoni per aumentarne l'energia.",
       "istruzioni_pratiche": [
-        "Installa una spirale di rame intorno al fusto e un'antenna di terra nel terreno.",
-        "Collega i due sistemi con un filo di rame per creare un circuito chiuso.",
-        "Attiva il sistema per 6-8 ore al giorno durante la vegetazione."
+        "Fai scorrere l'acqua in un vortice (es. con un cono di rame o un agitatore manuale) per 5-10 minuti.",
+        "Aggiungi una nota musicale (es. 432 Hz) vicino al flusso d'acqua durante la dinamizzazione.",
+        "Utilizza l'acqua dinamizzata entro 24 ore per preservarne le proprietà."
       ],
       "varianti": [
-        "sistema combinato",
-        "elettrocultura avanzata",
-        "rete EM"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 92,
-      "tag_correlati": [
-        "sinergia",
-        "sistemi integrati",
-        "campi EM"
-      ],
-      "pdf_ids": [
-        "pdf_3",
-        "pdf_9",
-        "pdf_62",
-        "pdf_308",
-        "pdf_294",
-        "pdf_298",
-        "pdf_299",
-        "pdf_325",
-        "pdf_20",
-        "pdf_8"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "preparati_biodinamici_ritmic",
-      "label": "Preparati Biodinamici e Ritmi Cosmici",
-      "categoria": "biodinamica",
-      "descrizione": "Combina l'uso dei preparati biodinamici con l'applicazione secondo i ritmi cosmici.",
-      "istruzioni_pratiche": [
-        "Prepara il cornoletame (500) durante la luna calante e applicalo al tramonto.",
-        "Usa il preparato 501 (cornoletame) durante la luna crescente per la fioritura.",
-        "Sincronizza la raccolta con la luna piena per ottimizzare la conservazione."
-      ],
-      "varianti": [
-        "BD + ritmi",
-        "preparati e lune",
-        "sistema biodinamico completo"
+        "acqua vorticosa",
+        "suono e acqua",
+        "energia dell'acqua"
       ],
       "fasi_guida": [
         "germinazione",
-        "vegetazione",
-        "fioritura",
-        "taglio"
+        "vegetazione"
       ],
-      "rilevanza": 95,
+      "rilevanza": 80,
       "tag_correlati": [
-        "sinergia",
-        "ritmi naturali",
-        "preparati"
-      ],
-      "pdf_ids": [
-        "pdf_3",
-        "pdf_308",
-        "pdf_300",
-        "pdf_325",
-        "pdf_344",
-        "pdf_294",
-        "pdf_307",
-        "pdf_296",
-        "pdf_297",
-        "pdf_298"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "acqua_magnetizzata_e_elettro",
-      "label": "Acqua Magnetizzata + Elettrocultura",
-      "categoria": "elettrocultura",
-      "descrizione": "Utilizza acqua magnetizzata in combinazione con tecniche di elettrocultura per potenziare la crescita.",
-      "istruzioni_pratiche": [
-        "Tratta l'acqua di irrigazione con magneti prima di usarla per l'elettrocultura.",
-        "Applica l'acqua magnetizzata durante l'attivazione di spirali di rame o antenne di terra.",
-        "Usa questo sistema durante la fase di vegetazione per massimizzare l'assorbimento."
-      ],
-      "varianti": [
-        "acqua EM + elettrocultura",
-        "sistema ibrido",
-        "irrigazione potenziata"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 90,
-      "tag_correlati": [
-        "sinergia",
-        "assorbimento potenziato",
-        "campi EM"
+        "vortice",
+        "frequenza sonora",
+        "vitalità idrica"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -390,10 +310,85 @@
         "pdf_62",
         "pdf_308",
         "pdf_294",
+        "pdf_307",
+        "pdf_311",
+        "pdf_344",
+        "pdf_25"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "sistema_combinato_elettro_bi",
+      "label": "Sistema Combinato Elettro-Biodinamico",
+      "categoria": "biodinamica",
+      "descrizione": "Integra elettrocultura (metalli, onde) e biodinamica (preparati, ritmi) per un approccio olistico.",
+      "istruzioni_pratiche": [
+        "Combina spirali di rame con preparati biodinamici nebulizzati settimanalmente.",
+        "Sincronizza l'accensione delle antenne di terra con le fasi lunari favorevoli.",
+        "Monitora la risposta delle piante e aggiusta frequenze o preparati di conseguenza."
+      ],
+      "varianti": [
+        "sistema ibrido",
+        "elettro-biodinamica",
+        "approccio olistico"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 92,
+      "tag_correlati": [
+        "integrazione",
+        "sinergia",
+        "vitalità complessiva"
+      ],
+      "pdf_ids": [
+        "pdf_296",
+        "pdf_330",
+        "pdf_351",
+        "pdf_352",
+        "pdf_12"
+      ],
+      "pdf_count": 5
+    },
+    {
+      "id": "monitoraggio_energetico",
+      "label": "Monitoraggio Energetico delle Piante",
+      "categoria": "elettrocultura",
+      "descrizione": "Valuta lo stato energetico delle piante tramite strumenti biofisici per ottimizzare gli interventi.",
+      "istruzioni_pratiche": [
+        "Utilizza un dispositivo di misurazione del potenziale elettrico delle piante (es. elettrodi in rame).",
+        "Registra i dati durante diverse fasi fenologiche per identificare squilibri.",
+        "Aggiusta le tecniche (es. frequenza, preparati) in base ai risultati ottenuti."
+      ],
+      "varianti": [
+        "diagnosi energetica",
+        "biofisica vegetale",
+        "strumenti EM"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura",
+        "essiccazione"
+      ],
+      "rilevanza": 87,
+      "tag_correlati": [
+        "diagnostica",
+        "potenziale bioelettrico",
+        "ottimizzazione"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_3",
+        "pdf_9",
+        "pdf_62",
+        "pdf_307",
+        "pdf_311",
+        "pdf_297",
         "pdf_298",
         "pdf_299",
-        "pdf_325",
-        "pdf_20"
+        "pdf_300"
       ],
       "pdf_count": 10
     },
@@ -726,12 +721,12 @@
     "nodi": [
       {
         "id": "elettrocultura_lakhovsky",
-        "label": "Elettrocultura secondo Lakhovsky",
+        "label": "Elettrocultura Lakhovsky",
         "categoria": "elettrocultura"
       },
       {
         "id": "elettrocultura_fe_cu",
-        "label": "Elettrocultura Fe-Cu (Ferro-Rame)",
+        "label": "Elettrocultura Fe-Cu",
         "categoria": "elettrocultura"
       },
       {
@@ -745,13 +740,13 @@
         "categoria": "elettrocultura"
       },
       {
-        "id": "preparati_biodinamici",
+        "id": "biodinamica_preparati",
         "label": "Preparati Biodinamici",
         "categoria": "biodinamica"
       },
       {
-        "id": "ritmi_cosmici_biodinamici",
-        "label": "Ritmi Cosmici Biodinamici",
+        "id": "ritmi_cosmici",
+        "label": "Ritmi Cosmici",
         "categoria": "biodinamica"
       },
       {
@@ -760,18 +755,18 @@
         "categoria": "elettrocultura"
       },
       {
-        "id": "sistema_integrato_elettrocul",
-        "label": "Sistema Integrato di Elettrocultura",
-        "categoria": "elettrocultura"
+        "id": "acqua_dinamizzata",
+        "label": "Acqua Dinamizzata",
+        "categoria": "irrigazione"
       },
       {
-        "id": "preparati_biodinamici_ritmic",
-        "label": "Preparati Biodinamici e Ritmi Cosmici",
+        "id": "sistema_combinato_elettro_bi",
+        "label": "Sistema Combinato Elettro-Biodinamico",
         "categoria": "biodinamica"
       },
       {
-        "id": "acqua_magnetizzata_e_elettro",
-        "label": "Acqua Magnetizzata + Elettrocultura",
+        "id": "monitoraggio_energetico",
+        "label": "Monitoraggio Energetico delle Piante",
         "categoria": "elettrocultura"
       },
       {
@@ -848,12 +843,7 @@
       },
       {
         "source": "elettrocultura_lakhovsky",
-        "target": "sistema_integrato_elettrocul",
-        "peso": 1
-      },
-      {
-        "source": "elettrocultura_lakhovsky",
-        "target": "acqua_magnetizzata_e_elettro",
+        "target": "monitoraggio_energetico",
         "peso": 1
       },
       {
@@ -873,12 +863,7 @@
       },
       {
         "source": "elettrocultura_fe_cu",
-        "target": "sistema_integrato_elettrocul",
-        "peso": 1
-      },
-      {
-        "source": "elettrocultura_fe_cu",
-        "target": "acqua_magnetizzata_e_elettro",
+        "target": "monitoraggio_energetico",
         "peso": 1
       },
       {
@@ -889,17 +874,12 @@
       {
         "source": "spirale_rame",
         "target": "acqua_magnetizzata",
+        "peso": 3
+      },
+      {
+        "source": "spirale_rame",
+        "target": "monitoraggio_energetico",
         "peso": 1
-      },
-      {
-        "source": "spirale_rame",
-        "target": "sistema_integrato_elettrocul",
-        "peso": 3
-      },
-      {
-        "source": "spirale_rame",
-        "target": "acqua_magnetizzata_e_elettro",
-        "peso": 3
       },
       {
         "source": "antenna_terra",
@@ -908,66 +888,41 @@
       },
       {
         "source": "antenna_terra",
-        "target": "sistema_integrato_elettrocul",
+        "target": "monitoraggio_energetico",
         "peso": 1
       },
       {
-        "source": "antenna_terra",
-        "target": "acqua_magnetizzata_e_elettro",
+        "source": "biodinamica_preparati",
+        "target": "ritmi_cosmici",
         "peso": 1
       },
       {
-        "source": "preparati_biodinamici",
-        "target": "ritmi_cosmici_biodinamici",
+        "source": "biodinamica_preparati",
+        "target": "sistema_combinato_elettro_bi",
         "peso": 1
       },
       {
-        "source": "preparati_biodinamici",
-        "target": "preparati_biodinamici_ritmic",
-        "peso": 1
-      },
-      {
-        "source": "preparati_biodinamici",
+        "source": "biodinamica_preparati",
         "target": "calendario_lunare",
         "peso": 1
       },
       {
-        "source": "ritmi_cosmici_biodinamici",
-        "target": "preparati_biodinamici_ritmic",
+        "source": "ritmi_cosmici",
+        "target": "sistema_combinato_elettro_bi",
         "peso": 1
       },
       {
-        "source": "ritmi_cosmici_biodinamici",
+        "source": "ritmi_cosmici",
         "target": "calendario_lunare",
         "peso": 3
       },
       {
         "source": "acqua_magnetizzata",
-        "target": "sistema_integrato_elettrocul",
+        "target": "monitoraggio_energetico",
         "peso": 1
       },
       {
-        "source": "acqua_magnetizzata",
-        "target": "acqua_magnetizzata_e_elettro",
-        "peso": 1
-      },
-      {
-        "source": "sistema_integrato_elettrocul",
-        "target": "preparati_biodinamici_ritmic",
-        "peso": 2
-      },
-      {
-        "source": "sistema_integrato_elettrocul",
-        "target": "acqua_magnetizzata_e_elettro",
-        "peso": 5
-      },
-      {
-        "source": "preparati_biodinamici_ritmic",
-        "target": "acqua_magnetizzata_e_elettro",
-        "peso": 2
-      },
-      {
-        "source": "preparati_biodinamici_ritmic",
+        "source": "sistema_combinato_elettro_bi",
         "target": "calendario_lunare",
         "peso": 1
       },
