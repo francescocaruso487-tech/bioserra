@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-30
+aggiornato: 2026-07-31
 pdf_count: 6
 ---
 
@@ -12,30 +12,31 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli), che degradano la materia organica in presenza di ossigeno (processo aerobico). Il compost maturo è un substrato umico, ricco di humus, che migliora la struttura del suolo, la capacità di ritenzione idrica, l’aerazione e la disponibilità di nutrienti per le piante.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata della materia organica, che trasforma scarti vegetali e animali in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi macro come lombrichi e artropodi, che scompongono la materia in composti stabili e assimilabili dalle piante. In un sistema **Living Soil**, il compost diventa la base per un suolo vivo, capace di sostenere la crescita delle piante senza l’uso di fertilizzanti chimici, migliorando la struttura del terreno, la capacità di ritenzione idrica e la biodiversità microbica.
 
-Il meccanismo chiave del compostaggio si basa sulla **termoregolazione naturale**: durante la fase attiva (mesofila e termofila), la decomposizione genera calore (fino a 70°C), che sterilizza il materiale eliminando patogeni, semi di malerbe e organismi indesiderati. Una volta raggiunta la stabilità (fase di raffreddamento e maturazione), il compost diventa un **substrato vivente**, capace di sostenere la biodiversità microbica del suolo e di rilasciare nutrienti in modo graduale, fondamentale per il **Living Soil** outdoor. In particolare, in serra a Caserta (41°N), il compost ben strutturato aiuta a contrastare la siccità estiva e a mantenere un equilibrio nutrizionale durante la fase vegetativa delle piante.
-
----
+Il meccanismo chiave del compostaggio si basa sull’equilibrio tra **materiali azotati (verdi)** e **carboniosi (marroni)**, che forniscono rispettivamente energia e carbonio ai decompositori. Una corretta aerazione, umidità (40-60%) e temperatura (55-65°C) accelerano la fase termofila, dove patogeni e semi di infestanti vengono neutralizzati. Il prodotto finale, il **compost maturo**, è un substrato scuro, friabile e dall’odore di terra umida, ricco di acidi umici e fulvici che stimolano l’assorbimento radicale e la resistenza delle piante.
 
 ## Come si applica in serra
+Per una serra **outdoor a Caserta (41°N)** in **Living Soil**, segui questi passaggi per produrre compost di qualità:
 
-### **Preparazione del cumulo (metodo a cumulo statico aerato)**
-1. **Scelta del sito**: Posiziona il cumulo in un’area ombreggiata della serra, su terreno nudo o su un telo traspirante per evitare perdite di nutrienti. Assicurati che sia accessibile per le operazioni di rivoltamento.
-2. **Bilanciamento dei materiali**:
-   - **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame fresco, fondi di caffè.
-   - **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, rametti triturati.
-   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Esempio: 20 kg di foglie secche + 10 kg di scarti di cucina.
-3. **Stratificazione**:
-   - Stendi uno strato di 10 cm di materiali marroni sul fondo (per favorire l’aerazione).
-   - Aggiungi uno strato di 15-20 cm di materiali verdi.
-   - Ripeti alternando strati fino a raggiungere un’altezza di 1-1.5 m.
-4. **Umidificazione**: Il cumulo deve essere umido come una spugna strizzata (non gocciolante). Usa un annaffiatoio a pioggia per distribuire acqua uniformemente.
-5. **Monitoraggio della temperatura**:
-   - Inserisci un termometro da compost nel centro del cumulo.
-   - **Obiettivo**: 55-65°C per 3-5 giorni (fase termofila). Se supera i 70°C, aggiungi materiali marroni per abbassare la temperatura.
-6. **Rivoltamento**:
-   - Rivolta il cumulo ogni 2-3 giorni con una forca o una pala, spostando il materiale esterno verso il centro per garantire ossigenazione e omogeneità.
-   - Dopo 2-3 settimane, la temperatura dovrebbe scendere sotto i 40°C (fase di maturazione).
-7. **Maturazione**:
-   - Lascia
+1. **Selezione dei materiali**:
+   - **Verde (azoto)**: scarti di frutta/verdura, erba fresca, fondi di caffè, letame maturo (es. cavallo o pollo).
+   - **Marroni (carbonio)**: foglie secche, paglia, cartone non stampato, rametti triturati, segatura non trattata.
+   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Evita agrumi, carne, latticini e piante malate.
+
+2. **Preparazione del cumulo**:
+   - Crea una base di **rametti grossolani** (10-15 cm) per garantire aerazione.
+   - Alterna strati di verdi e marroni (10-15 cm ciascuno), bagnando leggermente ogni strato con acqua piovana o osmosi inversa.
+   - Copri con un telo traspirante per trattenere umidità e proteggere dalla pioggia.
+
+3. **Gestione termica**:
+   - **Temperatura**: Monitora con sonda termica. Se supera 65°C, rivolta per abbassarla; se scende sotto 55°C, aggiungi materiali verdi o copri con telo nero per riscaldare.
+   - **Rivoltamento**: Ogni **2-3 giorni** con forca o pala, mescolando bene per ossigenare e uniformare la decomposizione.
+
+4. **Maturazione**:
+   - Dopo **4-6 settimane**, il compost dovrebbe avere temperatura stabile (20-30°C) e aspetto omogeneo.
+   - **Test di maturità**: Prendi un campione in mano; se non si scalda e odora di terra, è pronto. Filtra con setaccio da 1 cm per rimuovere materiali non decomposti.
+
+5. **Applicazione in serra**:
+   - **Ammendamento**: Stendi 3-5 cm di compost maturo sulla superficie del suolo prima della semina o trapianto, incorporandolo leggermente con una zappa.
+   - **Tè di compost**: Per un apporto rapido, prepara un estratto (1 parte compost : 5 parti acqua, fermentato 24-48h) da nebulizzare sulle fog
