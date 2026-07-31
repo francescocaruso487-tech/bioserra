@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-30T05:23:01.073610+00:00",
+  "lastUpdate": "2026-07-31T05:49:22.103849+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,44 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640025709_3",
-      "nome": "Introduzione di micorrize",
-      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "micorrize",
-        "substrato"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-23",
-      "data_disattivazione": "2026-07-01"
-    },
-    {
-      "id": "daily_1781640224648_2",
-      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
-      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
-      "materiali": [
-        "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la pianta",
-        "Tubi e connettori"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della pianta",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "2026-06-23",
-      "data_disattivazione": "2026-06-23",
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "daily_1781640436681_3",
       "nome": "Implementazione di un sistema di supporto",
@@ -3456,13 +3418,85 @@
       "data_proposta": "2026-07-29",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH bilanciato sul risciacquo in Living Soil: ottimizzazione dell'assorbimento nutrizionale e riduzione dei sali residui",
+      "ipotesi": "Un risciacquo con acqua a pH bilanciato (6.0-7.0) in piante coltivate in Living Soil migliorerà l'assorbimento dei nutrienti residui (come da Manuale A) e ridurrà l'accumulo di sali nelle radici (come da Manuale B), portando a una maggiore qualità dei fiori e minore amarezza. Il pH ottimale favorirà anche l'attività microbica del suolo, potenziando la biodisponibilità dei nutrienti.",
+      "protocollo": [
+        "Selezionare 10 piante di pianta (stessa genetica e stadio fenologico) in Living Soil outdoor, suddivise in due gruppi di 5 piante ciascuno: Gruppo A (controllo) e Gruppo B (trattato).",
+        "Misurare il pH del suolo di partenza in entrambi i gruppi con un pHmetro da terreno (range atteso: 6.0-7.0 per Living Soil).",
+        "Per il Gruppo B, eseguire un risciacquo con acqua a pH 6.5 (aggiustato con acido citrico o idrossido di calcio se necessario) per 3 giorni consecutivi, 1 litro/pianta/giorno, evitando ristagni. Il Gruppo A riceverà solo acqua a pH naturale del rubinetto (non aggiustato).",
+        "Al termine dei 3 giorni, raccogliere campioni di suolo (100g) da entrambi i gruppi e analizzare: 1) pH del suolo, 2) conducibilità elettrica (EC) per valutare i sali residui, 3) biomassa microbica (test al glucosio o osservazione al microscopio). Misurare anche il peso secco dei fiori dopo la raccolta."
+      ],
+      "materiali": [
+        "10 piante di pianta (stessa genetica e stadio)",
+        "pHmetro da terreno e da acqua",
+        "acido citrico e idrossido di calcio (per aggiustare pH)",
+        "ECmetro (conducibilità elettrica)",
+        "bilancia di precisione (0.01g)",
+        "guanti e annaffiatoio",
+        "microscopio ottico (opzionale per biomassa microbica)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "pH del suolo pre/post risciacquo (con pHmetro)",
+        "EC del suolo pre/post risciacquo (con ECmetro) per valutare sali residui",
+        "Peso secco dei fiori (dopo essiccazione a 20°C per 7 giorni)",
+        "Osservazione visiva della biomassa microbica (es. presenza di ife fungine o batteri)",
+        "Valutazione sensoriale dei fiori (amarezza, sapore) tramite panel di 3 persone (scala 1-5)"
+      ],
+      "variabili_controllo": "Genetica delle piante, stadio fenologico, volume d'acqua per risciacquo, esposizione solare, tipo di Living Soil, temperatura ambientale, umidità del suolo.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il « risciacquo » delle marihuana",
+      "originalita": "L'esperimento combina il principio del pH bilanciato per l'assorbimento nutrizionale (Manuale A) con la tecnica del risciacquo per ridurre i sali residui (Manuale B), applicandoli specificamente al contesto del Living Soil outdoor. Nessuno dei due manuali suggerisce di testare l'effetto sinergico di queste due pratiche in un sistema biologico complesso come il Living Soil, né di misurare l'impatto sulla biomassa microbica e sulla qualità sensoriale dei fiori.",
+      "id": "esp_conn_2026-07-31_001",
+      "data_proposta": "2026-07-31",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra vasi biologici e semi femminizzati su resa in CBD in Living Soil (BioSerra Caserta)",
+      "ipotesi": "L'uso combinato di vasi in terracotta biologica (Manuale A: favorisce sviluppo radicale e salute delle piante) e semi femminizzati (Manuale B: garantiscono piante produttive al 100%) in un sistema Living Soil outdoor aumenterà la resa in CBD/THC del 20-30% rispetto a controlli con vasi non biologici o semi regolari. La sinergia tra questi due elementi ottimizza l'assorbimento dei nutrienti e la fotosintesi, massimizzando la produzione di cannabinoidi.",
+      "protocollo": [
+        "Preparare 4 lotti identici di terreno Living Soil (compost, biochar, micorrize) in serra outdoor, ciascuno con 10 piante di pianta (varietà CBD-dominante, 1% THC).",
+        "Lotto 1: Vasi in terracotta non trattata + semi femminizzati. Lotto 2: Vasi in terracotta biologica (non smaltata) + semi femminizzati. Lotto 3: Vasi in plastica + semi femminizzati. Lotto 4: Vasi in terracotta biologica + semi regolari (controllo negativo).",
+        "Irrigare solo con acqua (water-only) per evitare interferenze di fertilizzanti. Mantenere condizioni ambientali identiche (umidità, temperatura, luce).",
+        "Dopo 30 giorni, raccogliere i dati: peso secco delle infiorescenze, contenuto di CBD/THC (test HPLC), lunghezza delle radici, e salute fogliare (indice SPAD)."
+      ],
+      "materiali": [
+        "Vasi in terracotta biologica non smaltata (diametro 30 cm)",
+        "Vasi in plastica (diametro 30 cm, controllo)",
+        "Semi femminizzati CBD-dominante (varietà USA, <1% THC)",
+        "Semi regolari CBD-dominante (varietà USA, <1% THC)",
+        "Terreno Living Soil (compost, biochar, micorrize)",
+        "Strumenti di misura: bilancia analitica, kit HPLC portatile, misuratore SPAD, metro a nastro"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso secco delle infiorescenze (g/piante)",
+        "Contenuto di CBD e THC (% secco, tramite HPLC)",
+        "Lunghezza radici (cm, prelievo non distruttivo)",
+        "Indice SPAD (salute fogliare, misuratore portatile)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), condizioni ambientali (serra identica), tipo di terreno (Living Soil standardizzato), irrigazione (solo acqua, stessa quantità).",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "Questo esperimento non è presente in nessuno dei due manuali singolarmente perché combina due approcci (vasi biologici + semi femminizzati) in un contesto Living Soil outdoor, con misurazioni specifiche di CBD/THC. I manuali trattano separatamente i vasi biologici e i semi femminizzati, ma non la loro interazione sinergica in un sistema produttivo misurabile.",
+      "id": "esp_conn_2026-07-31_002",
+      "data_proposta": "2026-07-31",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-30",
-    "nuove_proposte": 0,
+    "data": "2026-07-31",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
