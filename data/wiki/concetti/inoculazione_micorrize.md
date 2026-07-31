@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-30
+aggiornato: 2026-07-31
 pdf_count: 1
 ---
 
@@ -12,25 +12,23 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono la portata dell’apparato radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre ricevono in cambio carboidrati prodotti tramite fotosintesi. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o carenza nutrizionale, tipiche delle coltivazioni outdoor italiane, dove i suoli possono essere poveri o compattati.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la resilienza delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando la superficie di assorbimento dei nutrienti (in particolare fosforo e azoto) e dell’acqua fino a 100 volte rispetto alle radici sole. In cambio, la pianta fornisce al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o nutrizionale, tipiche delle serre outdoor italiane, dove le temperature estive e la variabilità climatica possono limitare l’efficienza delle radici.
 
-La simbiosi micorrizica non è universale: alcune piante (come la cannabis) sono **obbligatoriamente micorriziche**, mentre altre (es. brassicacee) ne sono indipendenti. In serra outdoor a Caserta (41°N), con clima mediterraneo caratterizzato da estati calde e siccitose, l’inoculazione mirata di micorrize può compensare la scarsa umidità del suolo e la competizione con altri organismi per le risorse. Studi dimostrano che piante colonizzate da micorrize sviluppano radici più resistenti, una maggiore tolleranza a patogeni e una fioritura più vigorosa, elementi chiave per coltivazioni **Living Soil** dove l’equilibrio biologico è prioritario.
+La simbiosi micorrizica non si limita al trasporto di nutrienti: i funghi producono anche **glomaline**, una glicoproteina che migliora la struttura del suolo, aumentandone la porosità e la capacità di trattenere acqua e aria. Inoltre, le micorrize attivano meccanismi di **biocontrollo**, proteggendo le radici da patogeni come *Fusarium* o *Phytophthora*, e stimolano la produzione di ormoni vegetali (es. auxine) che favoriscono la crescita. Per coltivatori di **Cannabis sativa** in serra outdoor a Caserta (41°N), dove il suolo è spesso povero di materia organica e soggetto a siccità estiva, l’inoculazione mirata di micorrize può rappresentare un fattore chiave per ottimizzare la resa e la qualità dei fiori, riducendo al contempo la necessità di interventi chimici.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, l’inoculazione delle micorrize deve seguire un protocollo mirato, adattato alle condizioni climatiche locali e alle fasi di crescita della pianta. Ecco i passaggi dettagliati:
+Per una serra **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con attenzione per massimizzare la simbiosi. Segui questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurarsi che il suolo sia già ricco di materia organica (compost maturo, humus di lombrico) e abbia un pH compreso tra **6.0 e 7.0** (ideale per la simbiosi micorrizica).
-   - Evitare l’uso di fungicidi chimici (es. propiconazolo, mancozeb) nei **30 giorni precedenti** l’inoculazione, poiché questi possono uccidere i funghi benefici [web_zamn_335-conservare-cannabis].
+   - Assicurati che il suolo sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico). Evita terreni compatti o con pH estremo (<6.0 o >7.5), che ostacolano la colonizzazione fungina.
+   - Se usi substrati inerti (es. fibra di cocco), aggiungi almeno il 30% di compost per fornire un substrato organico ai funghi.
 
 2. **Scelta dell’inoculo**:
-   - Utilizzare un inoculo di micorrize **specifico per cannabis** (es. *Rhizophagus irregularis*, *Glomus spp.*), disponibile in polvere, granuli o liquido. La dose consigliata è **5-10g per pianta** per piante adulte, ridotta a 2-5g per piantine al trapianto.
+   - Utilizza un **mix di funghi micorrizici arbuscolari (AMF)** specifico per piante a fiore (es. *Rhizophagus irregularis*, *Glomus mosseae*). Questi ceppi sono adatti alla Cannabis e tollerano le temperature estive tipiche di Caserta (fino a 35°C).
+   - Preferisci inoculi in **polvere umida** o **granulare** per una distribuzione omogenea. Evita formulazioni liquide se il suolo è secco, poiché l’acqua può diluire e disperdere le spore.
 
 3. **Applicazione al trapianto**:
-   - **Metodo diretto**: Mescolare l’inoculo con il substrato di trapianto o applicarlo direttamente sulle radici nude della piantina, coprendo poi con terra. Per piante già radicate, distribuire l’inoculo intorno alla base dello stelo, a 2-3 cm di profondità, evitando il contatto diretto con il colletto.
-   - **Metodo indiretto**: Sciogliere l’inoculo in acqua (seguendo le istruzioni del produttore) e irrigare la zona radicale dopo il trapianto, assicurandosi che il terreno sia umido ma non saturo [web_zamn_301-come-irrigare-le-piante-di-cannabis].
-
-4. **Post-applicazione**:
-   - Mantenere il suolo umido (ma non bagnato) per **7-10 giorni** dopo l’inoculazione, per favorire la colonizzazione delle radici. Evitare ristagni idrici, che possono soffocare le ife e favorire patogeni [web_zam
+   - **Momento ideale**: Applica l’inoculo **al momento del trapianto** (o entro 24 ore), quando le radici sono ancora giovani e ricettive. Per la Cannabis, il trapianto avviene tipicamente dopo 2-3 settimane di germinazione in semenzaio.
+   - **Dose**: 5–10 g di inoculo per pianta, distribuiti direttamente sulle radici o nel foro di impianto. Se usi un substrato già colonizzato (es. compost micorrizato), riduci la dose a 2–5 g.
