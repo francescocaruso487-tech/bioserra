@@ -532,9 +532,12 @@ Codifica, circuiti, XVII-105
 Comparatori di tensione, con AO, XVII-79
 Comparatori digitali, XVII-104
 Complemento a due, numeri binari, XVII-85
-Componenti, attivi, XVII-6
+
+Componenti:
+- attivi, XVII-6
 - passivi, XVII-6
-Contatori, XVII-121
+
+Contatori:
 - asincroni binari avanti, XVII-121
 - asincroni binari avanti-indietro, XVII-122
 - asincroni binari indietro, XVII-122
@@ -542,35 +545,56 @@ Contatori, XVII-121
 - espansione, XVII-123, 124
 - modulo, XVII-121
 - sincroni, XVII-124
-Conversione, A/D, XVII-183
+
+Conversione:
+- A/D, XVII-183
 - D/A, XVII-180
-Convertitore, A/D ad approssimazioni successive, XVII-188
+
+Convertitore:
+- A/D ad approssimazioni successive, XVII-188
 - D/A a resistori pesati, XVII-186
+
 Teorema di De Morgan, XVII-89
+
 Decodifica, circuiti, XVII-107
+
 Demultiplexer, XVII-110
+
 Derivatori, circuiti con AO, XVII-78
+
 DIAC, XVII-175
-Diodi, a giunzione, XVII-39
+
+Diodi:
+- a giunzione, XVII-39
 - caratteristiche, XVII-40
 - circuiti, XVII-44
 - LED, XVII-44
 - modelli, XVII-41
 - Schottky, XVII-44
 - Zener, XVII-43
+
 DIP, XVII-5
+
 Display a LED, XVII-108
-Distorsione, XVII-56
+
+Distorsione:
 - armonica, XVII-162
 - di cross-over, XVII-168
 - di non linearità, XVII-162
+
 Divisori di frequenza, XVII-125
+
 ECL, XVII-70
+
 Elementi concentrati, XVII-6
+
 Elettroni liberi, XVII-37
+
 Famiglie di integrati, XVII-6
+
 FdT, XVII-12
-Filtri, XVII-147
+
+Filtri:
 - attivi, XVII-156
 - attivi a reazione multipla, XVII-158
 - attivi del primo ordine, XVII-156
@@ -581,50 +605,77 @@ Filtri, XVII-147
 - classificazioni, XVII-147
 - RLC, XVII-151
 - specifiche di trasmissione, XVII-148
-Flip-flop, XVII-114
+
+Flip-flop:
 - caratteristiche di commutazione, XVII-117
 - di tipo D edge-triggered, XVII-116
 - di tipo JK edge-triggered, XVII-116
 - di tipo SR edge-triggered, XVII-115
 - di tipo T edge-triggered, XVII-116
 - edge-triggered, XVII-114
+
 Forma canonica, FdT, XVII-14
+
 Frequenza di transizione, XVII-35
-Funzioni, booleane, XVII-90
+
+Funzioni:
+- booleane, XVII-90
 - di trasferimento, XVII-12
+
 GBW, XVII-36
-Generatori, di forme d'onda rettangolari, XVII-139, 140
+
+Generatori:
+- di forme d'onda rettangolari, XVII-139, 140
 - di forme d'onda, XVII-139
 - di funzioni, XVII-141
 - dipendenti, XVII-7
 - indipendenti, XVII-7
+
 Giunzioni, XVII-38
-Guadagno, amplificatori, XVII-26
-Guadagno d'anello, XVII-17
+
+Guadagno:
+- amplificatori, XVII-26
+- d'anello, XVII-17
+
 Impedenza, bipoli, XVII-9
+
 JFET, XVII-59
-MOSFET, XVII-67
+
+MOSFET:
 - caratteristiche, XVII-61
 - funzionamento, XVII-60
 - modelli, XVII-66
 - polarizzazione, XVII-65
+
 Mappe di Karnaugh, XVII-93
+
 Lacune, XVII-37
-Latch, XVII-111
+
+Latch:
 - caratteristiche di commutazione, XVII-113
 - di tipo D, XVII-112
 - di tipo SR, XVII-111
 - di tipo SR con abilitazione, XVII-112
+
 Limitatori, con diodi, XVII-48
+
 Figure di Lissajous, XVII-215
+
 Livelli, circuiti digitali, XVII-68
-Logica, negativa, XVII-97
+
+Logica:
+- negativa, XVII-97
 - positiva, XVII-97
+
 LSI, XVII-5
+
 Circuiti LTI, XVII-6
+
 Margine di rumore, XVII-69
+
 Maxtermini, XVII-91
-Memorie, XVII-125
+
+Memorie:
 - capacità, XVII-126
 - classificazione, XVII-128
 - EEPROM, XVII-129
@@ -638,7 +689,7 @@ Memorie, XVII-125
 - tecnologia, XVII-128
 - tipi, XVII-125
 
-Microprocessore, XVII-132
+Microprocessore:
 - 8080, XVII-134
 - assembler, XVII-133
 - bus, XVII-133
@@ -648,24 +699,38 @@ Microprocessore, XVII-132
 Mintermini, XVII-91
 
 Modelli, amplificatori, XVII-25, 27
+
 Modulo, contatori, XVII-121
+
 MOSFET, XVII-62
 - circuiti digitali, XVII-71
 - Depletion, XVII-64
 - Enhancement, XVII-62
 - modelli, XVII-66
 - di potenza, XVII-164
+
 MSI, XVII-5
+
 Multiplexer, XVII-110
+
 Multivibratore monostabile, con 555, XVII-144
+
 Multivibratori astabili, XVII-139, 140, 146
+
 Porte NAND, XVII-98, 99
+
 Porte NOR, XVII-98, 100
+
 Teorema di Norton, XVII-10
+
 Porte NOT, XVII-98
-Notazione, a virgola fissa, XVII-87
+
+Notazione:
+- a virgola fissa, XVII-87
 - virgola mobile, XVII-87
-Numerazione binaria, XVII-83
+
+Numerazione:
+- binaria, XVII-83
 - esadecimale, XVII-84
 - ottale, XVII-84
 Numeri binari con segno, XVII-85
