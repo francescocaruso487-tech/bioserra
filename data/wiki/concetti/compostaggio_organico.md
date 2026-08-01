@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-31
+aggiornato: 2026-08-01
 pdf_count: 6
 ---
 
@@ -12,31 +12,26 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata della materia organica, che trasforma scarti vegetali e animali in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi macro come lombrichi e artropodi, che scompongono la materia in composti stabili e assimilabili dalle piante. In un sistema **Living Soil**, il compost diventa la base per un suolo vivo, capace di sostenere la crescita delle piante senza l’uso di fertilizzanti chimici, migliorando la struttura del terreno, la capacità di ritenzione idrica e la biodiversità microbica.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante stabile e ricco di nutrienti, fondamentale per la salute del suolo in un sistema **Living Soil**. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (come lombrichi e artropodi), che scompongono la materia organica in humus, migliorando la struttura del terreno, la capacità di ritenzione idrica e la biodisponibilità dei nutrienti. In un contesto outdoor come quello di Caserta (41°N), il compostaggio assume un ruolo chiave per contrastare la degradazione del suolo dovuta a condizioni climatiche estreme (caldo estivo, piogge intense) e per garantire un substrato vivo e resiliente durante tutte le fasi colturali, dalla germinazione alla vegetazione.
 
-Il meccanismo chiave del compostaggio si basa sull’equilibrio tra **materiali azotati (verdi)** e **carboniosi (marroni)**, che forniscono rispettivamente energia e carbonio ai decompositori. Una corretta aerazione, umidità (40-60%) e temperatura (55-65°C) accelerano la fase termofila, dove patogeni e semi di infestanti vengono neutralizzati. Il prodotto finale, il **compost maturo**, è un substrato scuro, friabile e dall’odore di terra umida, ricco di acidi umici e fulvici che stimolano l’assorbimento radicale e la resistenza delle piante.
+Il meccanismo si basa su un equilibrio termico (55–65°C) che favorisce la proliferazione di microrganismi termofili, accelerando la decomposizione e riducendo patogeni e semi di infestanti. L’umidità (50–60%) e l’aerazione (ottenuta tramite rivoltamenti ogni 2–3 giorni) sono essenziali per evitare fermentazioni anaerobiche, che produrrebbero odori sgradevoli e composti tossici come l’ammoniaca. Un compost di qualità si distingue per un rapporto C/N (carbonio/azoto) ottimale (25:1–30:1), un pH neutro (6.5–7.5) e una struttura porosa che facilita l’assorbimento radicale.
 
 ## Come si applica in serra
-Per una serra **outdoor a Caserta (41°N)** in **Living Soil**, segui questi passaggi per produrre compost di qualità:
+Per una serra outdoor **Living Soil** a Caserta, segui questi passaggi pratici per produrre compost di qualità:
 
 1. **Selezione dei materiali**:
-   - **Verde (azoto)**: scarti di frutta/verdura, erba fresca, fondi di caffè, letame maturo (es. cavallo o pollo).
-   - **Marroni (carbonio)**: foglie secche, paglia, cartone non stampato, rametti triturati, segatura non trattata.
-   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Evita agrumi, carne, latticini e piante malate.
+   - **Verde (ricco di azoto)**: scarti di cucina (resti di frutta/verdura, fondi di caffè), erba fresca, ortaggi, letame fresco (es. stallatico di cavallo o pollo).
+   - **Marrone (ricco di carbonio)**: foglie secche, paglia, cartone non stampato, rametti triturati, segatura (usare con moderazione per evitare acidificazione).
+   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Esempio: 20 kg di foglie secche + 10 kg di scarti di cucina.
 
 2. **Preparazione del cumulo**:
-   - Crea una base di **rametti grossolani** (10-15 cm) per garantire aerazione.
-   - Alterna strati di verdi e marroni (10-15 cm ciascuno), bagnando leggermente ogni strato con acqua piovana o osmosi inversa.
-   - Copri con un telo traspirante per trattenere umidità e proteggere dalla pioggia.
+   - Scegli un’area ombreggiata e ben drenata, possibilmente su terreno nudo (per favorire l’accesso di lombrichi e microrganismi del suolo).
+   - Crea un cumulo di 1–1.5 m di altezza e 1–1.5 m di diametro per ottimizzare la termogenesi.
+   - Aggiungi uno strato di base di materiali grossolani (rametti) per favorire l’aerazione.
 
-3. **Gestione termica**:
-   - **Temperatura**: Monitora con sonda termica. Se supera 65°C, rivolta per abbassarla; se scende sotto 55°C, aggiungi materiali verdi o copri con telo nero per riscaldare.
-   - **Rivoltamento**: Ogni **2-3 giorni** con forca o pala, mescolando bene per ossigenare e uniformare la decomposizione.
+3. **Gestione termica e umidità**:
+   - **Temperatura**: Monitora con un termometro da compost. Se supera i 65°C, rivolta più frequentemente per evitare la morte dei microrganismi utili. Se scende sotto i 55°C, aggiungi materiali verdi o copri con un telo per trattenere il calore.
+   - **Umidità**: Il cumulo deve essere umido come una spugna strizzata. In estate (Caserta), copri con un telo traspirante per evitare l’essiccazione. In caso di pioggia, proteggi con un telo impermeabile.
 
-4. **Maturazione**:
-   - Dopo **4-6 settimane**, il compost dovrebbe avere temperatura stabile (20-30°C) e aspetto omogeneo.
-   - **Test di maturità**: Prendi un campione in mano; se non si scalda e odora di terra, è pronto. Filtra con setaccio da 1 cm per rimuovere materiali non decomposti.
-
-5. **Applicazione in serra**:
-   - **Ammendamento**: Stendi 3-5 cm di compost maturo sulla superficie del suolo prima della semina o trapianto, incorporandolo leggermente con una zappa.
-   - **Tè di compost**: Per un apporto rapido, prepara un estratto (1 parte compost : 5 parti acqua, fermentato 24-48h) da nebulizzare sulle fog
+4. **Rivoltamenti e maturazione**:
+   - Rivolta il cumulo ogni 2–3 giorni con una forca o una pala, spost
