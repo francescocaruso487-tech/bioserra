@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-31T05:49:22.103849+00:00",
+  "lastUpdate": "2026-08-01T05:40:18.962756+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,24 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640436681_3",
-      "nome": "Implementazione di un sistema di supporto",
-      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "materiali": [
-        "tavole",
-        "filo",
-        "cordini"
-      ],
-      "categoria": "supporto",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 2,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "ai_001",
       "nome": "Low-Stress Training (LST) mirato",
@@ -3490,13 +3472,48 @@
       "data_proposta": "2026-07-31",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil e semi femminizzati su resa in CBD e biomassa radicale in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici (Living Soil) e semi femminizzati (Manuale A + Manuale B) aumenterà la resa in CBD/THC e lo sviluppo radicale rispetto a controlli con semi regolari o terreno non biologico. Il Living Soil favorisce l'assorbimento dei flavonoidi (collegamento indiretto con i semi femminizzati) e la salute radicale, mentre i semi femminizzati garantiscono piante produttive al 100% senza sprechi di risorse. Questo approccio massimizza l'efficienza fotosintetica e la produzione di cannabinoidi, come suggerito dai due manuali.",
+      "protocollo": [
+        "Preparare 4 parcelle identiche in serra outdoor (2m x 1m) con Living Soil certificato (compost, biochar, micorrize, lombrichi). Due parcelle saranno coltivate con semi femminizzati CBD-dominant (es. 'ACDC' o 'Charlotte's Angel'), le altre due con semi regolari della stessa genetica.",
+        "Trapiantare 10 piante per parcella (distanza 30cm) a 30 giorni dalla germinazione, mantenendo umidità al 60% e temperatura tra 20-28°C. Applicare solo acqua (water-only) con pH 6.5.",
+        "Dopo 15 giorni, misurare l'altezza media delle piante e il diametro del fusto. Applicare un trattamento elettroculturale (onde ELF 7.83Hz, 10 minuti/giorno) solo su due parcelle (una con semi femminizzati, una con regolari) per valutare l'effetto sinergico.",
+        "A 30 giorni dalla fioritura (stadio di pre-fioritura), raccogliere 3 piante per parcella. Misurare: biomassa radicale (peso secco), contenuto di CBD/THC (test HPLC), e flavonoidi totali (spettrofotometria). Confrontare i risultati tra trattamenti."
+      ],
+      "materiali": [
+        "Semi femminizzati CBD-dominant (es. 'ACDC')",
+        "Semi regolari della stessa genetica",
+        "Living Soil certificato (compost, biochar, micorrize, lombrichi)",
+        "Vasi in terracotta (30cm diametro, 40cm profondità)",
+        "Sistema di elettrocultura ELF (generatore 7.83Hz, elettrodi in rame)"
+      ],
+      "durata_giorni": 90,
+      "misure": [
+        "Biomassa radicale (peso secco in grammi)",
+        "Contenuto di CBD/THC (mg/g, test HPLC)",
+        "Flavonoidi totali (mg/g, spettrofotometria UV-VIS)",
+        "Altezza piante e diametro fusto (cm)",
+        "Resa per pianta (grammi di fiori secchi)"
+      ],
+      "variabili_controllo": "Genetica delle piante, condizioni ambientali (umidità, temperatura, luce), tipo di terreno (Living Soil identico per tutte le parcelle), metodo di coltivazione (water-only), trattamento elettroculturale applicato solo a due parcelle.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina specificamente i concetti chiave dei due manuali (Living Soil + semi femminizzati) in un protocollo originale che valuta l'effetto sinergico su resa in cannabinoidi e biomassa radicale, con un approccio water-only ed elettroculturale. Nessuno dei due manuali suggerisce un esperimento che integri direttamente questi elementi in questo modo.",
+      "id": "esp_conn_2026-08-01_001",
+      "data_proposta": "2026-08-01",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-31",
-    "nuove_proposte": 2,
+    "data": "2026-08-01",
+    "nuove_proposte": 1,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
