@@ -17,7 +17,7 @@ pag.
 1.4    TRIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  9
 
-1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
+1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
 1.5.1    GTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -50,7 +50,7 @@ pag.
 2.2    Utilizzatori ohmico-induttivi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  22
 
-3    ALIMENTAZIONE MONOFASE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3    ALIMENTAZIONE MONOFASE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  23
 
 3.1    Circuito monofase a semionda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -65,7 +65,7 @@ pag.
 7    CONVERTITORI NON ISOLATI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
+7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  37
 
 7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -87,7 +87,7 @@ ELETTRONICA DI POTENZA
 8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  40
 
-8.2    Convertitore Forward . . . . . . . . . . . . . . . *(XVIII.1.4)*
+8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *(XVIII.1.4)*
 
 che si somma algebricamente alla tensione applicata *u<sub>i</sub>*. L’andamento della corrente è quello della Fig. XVIII.1.2, nella quale si evidenzia che l’annullamento dell’intensità di corrente avviene sempre con un certo ritardo Δ*t*: in particolare, pur essendo già cambiata la polarità della tensione applicata, il diodo si trova ancora in stato di conduzione. Questo è dovuto al fatto che la corrente sta diminuendo, presenta cioè pendenza e quindi derivata negativa con conseguente forza elettromotrice indotta di valore positivo, cioè in grado di polarizzare direttamente il diodo nonostante la tensione di ingresso abbia già modificato la sua polarità. In particolare la tensione applicata in ingresso e la tensione di autoinduzione si equilibrano durante l’intervallo di tempo Δ*t*.
 **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
@@ -325,7 +325,7 @@ XVIII-13
 Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della corrente di Gate superiori alla soglia il comportamento è quello caratteristico di un SCR.
 **Fig. XVIII.1.15** Caratteristica corrente-tensione di un GTO.
 
-Il GTO è un eccellente dispositivo allo stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
+Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
 
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento, dovuto a perdite di commutazione estremamente contenute.
 
