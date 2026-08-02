@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-01
+aggiornato: 2026-08-02
 pdf_count: 8
 ---
 
@@ -12,42 +12,34 @@ pdf_count: 8
 # Te di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri, funghi, protozoi e nutrienti organici pronti per essere assorbiti dalle piante sia per via fogliare che radicale. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi attivi nel tè competono con patogeni del suolo, migliorano la struttura del terreno e aumentano la biodisponibilità dei nutrienti. Inoltre, i metaboliti secondari prodotti (come enzimi e ormoni) stimolano la crescita delle radici e la resistenza delle piante agli stress abiotici, come quelli tipici del clima mediterraneo di Caserta (caldo estivo, siccità).
+Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri aerobi, funghi benefici, protozoi e sostanze umiche, pronti per essere assorbiti dalle piante sia per via fogliare che radicale. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi del tea colonizzano la rizosfera e la filosfera, migliorando la disponibilità di nutrienti, la resistenza agli stress abiotici (come siccità o sbalzi termici tipici di Caserta) e la difesa contro patogeni. Inoltre, le sostanze umiche e gli acidi organici contenuti nel compost favoriscono la chelazione dei minerali, rendendoli più assimilabili dalle radici.
 
-L'efficacia del tè di compost dipende dalla **qualità del compost di partenza** (deve essere maturo, privo di patogeni e ricco di diversità microbica) e dalla **gestione dell'aerazione**. Un tè anaerobico, infatti, può favorire lo sviluppo di batteri patogeni e produrre composti tossici come l'acido solfidrico. L'aggiunta di melassa (o altri substrati carboniosi) serve da cibo per i microrganismi, accelerando la loro proliferazione e garantendo una popolazione microbica attiva al momento dell'applicazione.
+La preparazione aerobica (con aeratore) è cruciale per evitare la proliferazione di batteri anaerobi, che potrebbero produrre composti tossici come l'acido solfidrico. L'aggiunta di melassa (1-2 g/L) fornisce un substrato energetico per i microrganismi, accelerando la loro crescita e moltiplicazione. Il tea di compost è particolarmente efficace in **Living Soil** perché integra e potenzia la vita microbica del suolo, creando un ecosistema equilibrato e resiliente. Studi dimostrano che applicazioni regolari possono aumentare la biomassa radicale fino al 30% e ridurre l'incidenza di malattie fungine come la *Phytophthora* o la *Fusarium*.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta (41°N), segui queste istruzioni pratiche per preparare e applicare il tè di compost:
+Per una serra outdoor a **Caserta (41°N)**, con clima mediterraneo caratterizzato da estati calde e umide, il tea di compost va preparato e applicato seguendo queste fasi:
 
-### **Materiali necessari**
-- Compost maturo (preferibilmente vermicompost o compost da letame maturo, es. stallatico)
-- Acqua non clorata (lasciare decantare l'acqua del rubinetto per 24h o usare acqua piovana)
-- Aeratore per acquario (con pietra porosa)
-- Melassa biologica (o zucchero di canna, 1-2 cucchiai per 10L)
-- Termometro (per monitorare la temperatura, ideale: 18-25°C)
-- Recipiente in plastica o vetro (evitare metalli)
-- Filtro a maglia fine (per applicazione fogliare)
+1. **Preparazione del compost**:
+   - Utilizza compost maturo (6-12 mesi), privo di odori putridi e con rapporto C/N < 20:1.
+   - Filtra il compost con una retina a maglia fine (1-2 mm) per rimuovere particelle grossolane.
 
-### **Procedura passo-passo**
-1. **Preparazione del compost**
-   - Usa **1 parte di compost** ogni **5-10 parti di acqua** (es. 1kg di compost in 10L di acqua).
-   - Evita compost fresco o con residui di pesticidi.
+2. **Infusione aerobica**:
+   - Riempi un contenitore (es. bidone da 20 L) con **acqua non clorata** (lasciare riposare l'acqua del rubinetto 24h o usare acqua piovana).
+   - Aggiungi **1 kg di compost filtrato** ogni 10 L d'acqua.
+   - Immergi un **aeratore per acquari** (portata 2-3 L/min) per 24-48h, mantenendo la temperatura tra **18-25°C** (evitare il surriscaldamento).
+   - Aggiungi **1-2 g/L di melassa** (o zucchero di canna) dopo 12h per alimentare i batteri.
 
-2. **Infusione aerobica**
-   - Riempi il recipiente con acqua e aggiungi il compost.
-   - Immergi la pietra porosa dell'aeratore e attivalo immediatamente.
-   - Aggiungi la melassa e mescola delicatamente.
-   - Mantieni l'aerazione **24-48 ore** (fino a quando il liquido diventa scuro e schiumoso).
+3. **Filtraggio e applicazione**:
+   - Filtra il tea con una retina a maglia sottile (0.5 mm) per rimuovere residui solidi.
+   - Applica **entro 4 ore** dalla preparazione per massimizzare la vitalità microbica.
+   - **Dosi**:
+     - **Radicale**: 5-10 L/10 m², ogni 7-14 giorni durante vegetazione e fioritura.
+     - **Fogliare**: 3-5 L/10 m², diluito al 50% con acqua, nebulizzato al mattino presto o al tramonto (evitare ore calde).
 
-3. **Filtraggio e applicazione**
-   - Filtra il tè con un panno o una retina per rimuovere i residui solidi.
-   - **Applica entro 4 ore** dalla preparazione per massimizzare l'attività microbica.
-   - **Dosi consigliate**:
-     - **Radicale**: 1-2L/m² ogni 2 settimane durante vegetazione e fioritura.
-     - **Fogliare**: diluisci 1:1 con acqua e spruzza al tramonto (evita ore calde).
+4. **Frequenza**:
+   - **Vegetazione**: ogni 10-15 giorni.
+   - **Fioritura**: ridurre a ogni 20 giorni, monitorando lo sviluppo dei fiori.
 
-4. **Condizioni ambientali**
-   - Applica in **assenza di vento** e con temperatura inferiore a 28°C.
-   - Evita l'applicazione durante piogge o in caso di sicc
+>
