@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-02
+aggiornato: 2026-08-03
 pdf_count: 1
 ---
 
@@ -12,33 +12,27 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso i loro ife, estendono la rete radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto) anche in condizioni di stress idrico o carenza. In cambio, la pianta fornisce ai funghi carboidrati prodotti tramite fotosintesi, essenziali per la loro crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in **serra outdoor** a Caserta (41°N), dove il clima mediterraneo e la gestione intensiva del suolo possono portare a squilibri nutrizionali o compattazione.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando la superficie di assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre ricevono in cambio carboidrati prodotti dalla fotosintesi. In condizioni di stress idrico o nutrizionale, le micorrize possono migliorare la resilienza delle piante fino al 30%, riducendo la necessità di irrigazioni frequenti e fertilizzanti chimici. Questo meccanismo è particolarmente vantaggioso in coltivazioni outdoor a Caserta (41°N), dove il clima mediterraneo può esporre le piante a siccità estiva e sbalzi termici.
 
-La simbiosi micorrizica non solo migliora la resilienza delle piante, ma stimola anche la produzione di **glomalina**, una glicoproteina che aggrega le particelle del suolo, migliorando la struttura e la capacità di ritenzione idrica. Inoltre, i funghi micorrizici agiscono come barriera biologica contro patogeni radicali, riducendo la necessità di interventi chimici. Studi hanno dimostrato che piante inoculate con micorrize sviluppano radici più robuste e una maggiore tolleranza a condizioni avverse, come siccità o salinità, tipiche di alcune aree campane.
+La simbiosi micorrizica non è universale: alcune piante (come le Brassicacee) non formano questo tipo di associazione, mentre altre, tra cui la cannabis, ne traggono benefici significativi. L’inoculazione artificiale con ceppi specifici (ad esempio *Glomus intraradices*) accelera la colonizzazione delle radici, soprattutto in terreni poveri di materia organica o sottoposti a lavorazioni intensive. Studi dimostrano che le piante micorrizate sviluppano radici più robuste e una maggiore tolleranza a patogeni come *Phytophthora* o *Fusarium*, grazie alla competizione diretta per lo spazio radicale e alla produzione di metaboliti antifungini da parte dei funghi.
 
 ---
 
 ## Come si applica in serra
-Per una **serra outdoor Living Soil** a Caserta, l’inoculazione delle micorrize deve essere eseguita con precisione per massimizzare l’efficacia. Segui questi passaggi:
+Per una serra outdoor **Living Soil** a Caserta, l’inoculazione delle micorrize segue questi passaggi critici:
 
 1. **Preparazione del substrato**:
-   - Assicurati che il terreno sia già ricco di materia organica (compost maturo, humus di lombrico) e abbia un pH compreso tra **6.0 e 7.0**. Evita substrati troppo compatti o con eccesso di sali (es. residui di fertilizzanti chimici).
-   - Se usi **torba o cocco**, aggiungi almeno il **30% di suolo locale** per favorire la colonizzazione fungina.
+   - Assicurarsi che il terreno sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico). Evitare substrati sterilizzati o con residui di fungicidi chimici (es. clorotalonil, propiconazolo).
+   - *Nota*: Il PDF [web_zamn_335-conservare-cannabis] sottolinea l’importanza di un suolo vivo per la conservazione della qualità della cannabis, dove le micorrize giocano un ruolo chiave nella biodiversità microbica.
 
 2. **Scelta dell’inoculo**:
-   - Opta per un inoculo a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus intraradices* o *Rhizophagus irregularis*, specifici per piante erbacee e orticole.
-   - Verifica che il prodotto sia **attivo** (non disidratato) e certificato per uso agricolo. Quantità consigliata: **5–10 g per pianta**, diluiti in acqua non clorata (usare acqua piovana o filtrata).
+   - Utilizzare un inoculo a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus spp.* o *Rhizophagus irregularis*, specifico per piante da fiore. Verificare la compatibilità con la cannabis (es. ceppi commerciali come **MycoApply** o **Plant Success**).
+   - Quantità: **5–10 g per pianta**, distribuiti direttamente sulle radici durante il trapianto.
 
 3. **Applicazione al trapianto**:
-   - Al momento del trapianto, crea una **buca** profonda quanto il pane di terra della piantina.
-   - Mescola l’inoculo con un po’ di substrato umido e posizionalo **direttamente a contatto con le radici**, evitando di esporlo alla luce solare diretta.
-   - Copri con terreno e irriga **lievemente** per favorire l’adesione delle ife alle radici.
+   - Bagnare leggermente le radici della piantina con acqua non clorata (usare acqua magnetizzata o a pH 6.0–6.5 per ottimizzare l’assorbimento).
+   - Spargere l’inoculo direttamente sul substrato a contatto con le radici, coprendo con uno strato sottile di terriccio umido. Evitare di mescolare l’inoculo nel terreno profondo, dove la colonizzazione sarebbe meno efficace.
+   - *Consiglio pratico*: In caso di trapianto in vaso, aggiungere l’inoculo anche al fondo del contenitore per favorire la crescita delle ife verso l’alto.
 
-4. **Post-trapianto**:
-   - Mantieni il suolo **umido ma non zuppo** per i primi 7–10 giorni, evitando stress idrico che potrebbe compromettere la simbiosi.
-   - **Non usare fungicidi** (anche naturali come il bicarbonato) nei **30 giorni successivi** all’inoculazione, per non uccidere i funghi benefici.
-   - Integra con **tè di compost** o **biochar** per stimolare ulteriormente la rete micorrizica.
-
----
-## Sinergie con altri elementi
-Le micorri
+4. **Post-trapianto e manutenzione**:
+   - Mantenere il substrato umido (ma non zuppo) per i primi 7–10 giorni, evitando ristagni che possono soffocare le radici. Il
