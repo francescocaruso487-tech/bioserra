@@ -1,171 +1,62 @@
 {
-  "lastUpdate": "2026-08-02T06:17:56.000Z",
+  "lastUpdate": "2026-08-03T06:44:26.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
-    "consigli_giorno": [
-      "Applicare elettrocoltura DC a 2.5V con elettrodi in rame/zinco vicino alle radici di Epsilon F1 (raccolta tra 6gg) per stimolare la maturazione finale e prevenire stress idrico, come da [pdf_17, pag. 28]. Umidità ambientale a 87% richiede monitoraggio costante delle foglie per oidio.",
-      "Eseguire trattamento preventivo con lampada UV ogni 2 ore su tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per contrastare oidio, come indicato nei manuali [pdf_30, pag. 45] e [pdf_85, pag. 69].",
-      "Utilizzare la fase di Gibbosa Crescente (73% illuminazione) per applicare un pre-trattamento elettromagnetico sul suolo con 'Tower of Power' per 30 minuti su Cosmic Cheddar e Orbital Banana, migliorando la resilienza in fioritura [pdf_327, pag. 1]."
-    ],
-    "briefing_mattutino": "La serra presenta umidità ambientale elevata (87%) e temperature in aumento (max 33.4°C), condizioni ideali per lo sviluppo di oidio sulle autofiorenti in fioritura. Oggi è prioritario applicare elettrocoltura su Epsilon F1 (raccolta tra 6gg) e monitorare costantemente l'umidità fogliare con lampada UV. L'elettrocoltura DC a basso voltaggio (1.5-3V) è fondamentale per stimolare la maturazione senza stress idrico, come descritto nei manuali [pdf_17, pag. 28] e [pdf_85, pag. 69]. La fase lunare di Gibbosa Crescente offre un'opportunità per armonizzare le energie telluriche con trattamenti elettromagnetici sul suolo.",
-    "consigli_piante": {
-      "autofiorenti": "Monitoraggio costante con lampada UV ogni 2 ore per oidio su Epsilon, Milky Way, Titan, Medusa, Gaia. Applicare elettrocoltura DC a 2.5V su Epsilon F1 (raccolta tra 6gg) per accelerare la maturazione. Evitare irrigazione fogliare per ridurre umidità.",
-      "femminizzate": "Applicare pre-trattamento elettromagnetico con 'Tower of Power' per 30 minuti su Cosmic Cheddar e Orbital Banana per migliorare resilienza in fioritura. Monitorare umidità fogliare con lampada UV ogni 3 ore.",
-      "per_pianta": [
-        {
-          "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC a 2.5V con elettrodi in rame/zinco vicino alle radici. Monitorare umidità fogliare con lampada UV ogni 2 ore. Irrigazione al mattino presto con 0.5L per pianta per evitare stress idrico.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Milky Way F1",
-          "azione": "Monitoraggio con lampada UV ogni 2 ore per oidio. Evitare irrigazione fogliare. Applicare elettrocoltura DC a 2V per stimolare fioritura.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Titan F1",
-          "azione": "Monitoraggio con lampada UV ogni 2 ore per oidio. Applicare elettrocoltura DC a 2V. Irrigazione al mattino presto con 0.5L per pianta.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Medusa F1",
-          "azione": "Monitoraggio con lampada UV ogni 2 ore per oidio. Applicare elettrocoltura DC a 2V. Evitare irrigazione fogliare.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Gaia F1",
-          "azione": "Monitoraggio con lampada UV ogni 2 ore per oidio. Applicare elettrocoltura DC a 2V. Irrigazione al mattino presto con 0.5L per pianta.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Astro Lemonade F1",
-          "azione": "Monitoraggio con lampada UV ogni 3 ore per oidio. Applicare elettrocoltura DC a 2.5V per stimolare fioritura.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Cosmic Cheddar F1",
-          "azione": "Pre-trattamento elettromagnetico con 'Tower of Power' per 30 minuti. Monitoraggio con lampada UV ogni 3 ore.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Orbital Banana F1",
-          "azione": "Pre-trattamento elettromagnetico con 'Tower of Power' per 30 minuti. Monitoraggio con lampada UV ogni 3 ore.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Royal Gorilla",
-          "azione": "Monitoraggio con lampada UV ogni 3 ore per oidio. Applicare elettrocoltura DC a 2.5V per stimolare fioritura.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Mexican Rush",
-          "azione": "Monitoraggio con lampada UV ogni 3 ore per oidio. Applicare elettrocoltura DC a 2.5V. Irrigazione al mattino presto con 0.5L per pianta.",
-          "priorita": "bassa"
-        }
-      ]
-    },
-    "tecniche_nuove": [
-      {
-        "nome": "Pre-trattamento elettromagnetico con 'Tower of Power'",
-        "descrizione": "Applicare un campo elettromagnetico a bassa frequenza (1-10Hz) sul suolo per 30 minuti utilizzando la 'Tower of Power'. Posizionare la torre a 50cm dal suolo, puntando verso le radici delle piante target (Cosmic Cheddar e Orbital Banana). Questo metodo, citato in [pdf_327, pag. 1], rivitalizza le radici e potenzia la resilienza in fioritura.",
-        "fonte": "[pdf_327, pag. 1]",
-        "materiali": [
-          "Tower of Power",
-          "cavo di alimentazione",
-          "timer"
-        ],
-        "difficolta": "bassa"
-      }
-    ],
-    "scoperte": [
-      "L'elevata umidità ambientale (87%) e la temperatura in aumento (33.4°C) creano condizioni ideali per lo sviluppo di oidio sulle autofiorenti in fioritura. La modulazione delle esalazioni idioelettriche tramite elettrocoltura DC potrebbe ridurre lo stress idrico e prevenire infezioni fungine, come suggerito in [pdf_85, pag. 69].",
-      "La fase di Gibbosa Crescente (73% illuminazione) offre un'opportunità per armonizzare le energie telluriche e celesti, migliorando l'efficacia dei trattamenti elettromagnetici sul suolo."
-    ],
-    "avvisi": [
-      "ALERT URGENTE: Epsilon F1 ha raccolta tra 6 giorni (2026-08-07). Priorità assoluta per elettrocoltura e monitoraggio umidità fogliare.",
-      "Rischio elevato di oidio su autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) a causa dell'umidità ambientale >85% e temperature >30°C. Monitorare costantemente con lampada UV."
-    ],
+    "consigli_giorno": [],
+    "briefing_mattutino": "Briefing non disponibile (parse fallito)",
+    "consigli_piante": {},
+    "tecniche_nuove": [],
+    "scoperte": [],
+    "avvisi": [],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare elettrocoltura DC a 2.5V su Epsilon F1. Eseguire trattamento preventivo con lampada UV ogni 2 ore su tutte le autofiorenti. Pre-trattamento elettromagnetico con 'Tower of Power' su Cosmic Cheddar e Orbital Banana per 30 minuti. Irrigazione al mattino presto con 0.5L per pianta.",
-      "pomeriggio": "12:00-18:00: Monitoraggio continuo con lampada UV su tutte le piante. Evitare ore calde (14:00-16:00) per trattamenti elettromagnetici. Applicare elettrocoltura DC a 2V su Milky Way, Titan, Medusa, Gaia. Verifica funzionamento elettrodi e umidità suolo.",
-      "sera": "18:00-21:00: Monitoraggio finale con lampada UV. Registrare dati umidità e temperatura. Preparare piani per domani: elettrocoltura su Astro Lemonade, Royal Gorilla e Mexican Rush. Verifica stato elettrodi e funzionalità 'Tower of Power'."
+      "mattina": "",
+      "pomeriggio": "",
+      "sera": ""
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, agendo su radici e suolo con campi elettromagnetici controllati.",
-        "L'applicazione di corrente continua (DC) a basso voltaggio vicino alle radici stimola la crescita e la salute delle piante, migliorando l'assorbimento dei nutrienti.",
-        "I brevetti di Justin Etienne Christofleau (1920) dimostrano l'efficacia di apparecchi magnetici terro-celesti per armonizzare le energie tra suolo e atmosfera.",
-        "L'elettricità dei vegetali emette esalazioni idioelettriche, che possono essere modulate per ottimizzare i processi fisiologici delle piante.",
-        "Sistemi come la 'Tower of Power' permettono di generare campi elettromagnetici su larga scala per rivitalizzare semi e potenziare la germinazione."
+        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, come dimostrato dai 39 brevetti di Christofleau, tra cui 16 dedicati all'elettrocoltura [pdf_13].",
+        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e la salute delle colture, come riportato in studi scientifici [pdf_17].",
+        "L'elettricità dei vegetali è un fenomeno complesso che richiede proprietà specifiche, diverse da quelle tradizionali, per essere efficace [pdf_85].",
+        "L'uso di sistemi di elettrocoltura su larga scala, come la 'Tower of Power', può essere adattato anche a serre di dimensioni ridotte per ottimizzare i risultati [pdf_327].",
+        "Il pre-trattamento elettromagnetico dei semi rivitalizza quelli deboli e potenzia la germinazione, migliorando la resa delle colture [pdf_327]."
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1.5-3V) tramite elettrodi in rame/zinco posizionati vicino alle radici delle piante in fioritura. Questo metodo, descritto nel manuale [pdf_17, pag. 28], stimola la crescita e la salute delle piante senza stress idrico, ideale per condizioni di umidità elevata (87%) come oggi.",
-      "consiglio_suolo_da_testi": "Utilizzare un pre-trattamento elettromagnetico sui semi o sul suolo con un generatore a 'Tower of Power' per rivitalizzare radici deboli e potenziare la germinazione. Questo approccio, citato nel manuale [pdf_327, pag. 1], è particolarmente utile in serra durante la fioritura per migliorare la resilienza delle piante.",
-      "consiglio_biodinamica_da_testi": "Nessun consiglio biodinamico specifico emerge dai testi estratti. Tuttavia, l'elettrocoltura può essere integrata con pratiche biodinamiche per armonizzare le energie telluriche e celesti, come suggerito dai brevetti di Christofleau [pdf_13, pag. 3].",
-      "scoperta_del_giorno": "L'osservazione che l'elettricità dei vegetali emette esalazioni idioelettriche (manuali [pdf_85, pag. 69]) suggerisce che, in condizioni di alta umidità (87%), la modulazione di queste emissioni potrebbe essere cruciale per ottimizzare la fioritura e prevenire stress idrici.",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1.5-9V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura. Questo metodo, descritto nel manuale [pdf_17], stimola la crescita e la resistenza delle piante durante la fase critica di fioritura.",
+      "consiglio_suolo_da_testi": "Mantenere un suolo vivo e ben strutturato con alta attività microbica, poiché l'elettrocoltura funziona meglio in terreni ricchi di materia organica e con una buona conducibilità elettrica. Questo principio è sottolineato nei lavori di Christofleau [pdf_13], che evidenziano l'importanza di un suolo equilibrato per massimizzare gli effetti dell'elettrocoltura.",
+      "consiglio_biodinamica_da_tesi": "Durante la fase di fioritura, applicare preparati biodinamici come il '501' (silice) nelle ore serali, quando la pianta è più recettiva alle energie sottili. Questo approccio è suggerito nei manuali di elettrocoltura naturale, che integrano principi biodinamici per armonizzare le energie delle piante [pdf_13, pdf_85].",
+      "scoperta_del_giorno": "La combinazione di elettrocoltura e biodinamica può potenziare la fioritura delle piante, poiché le energie armoniche libere (elettrocoltura) e le forze sottili (biodinamica) lavorano sinergicamente per stimolare la produzione di fiori e frutti. Questo è particolarmente rilevante oggi, con temperature di 25.2°C e umidità al 74%, condizioni ideali per sperimentare queste tecniche [pdf_13, pdf_85].",
       "tecnica_da_provare": {
-        "nome": "Elettrocoltura DC con elettrodi rame-zinco",
-        "descrizione": "Posizionare elettrodi in rame (positivo) e zinco (negativo) a 10-15 cm di profondità nel suolo, distanziati di 30 cm dalle piante in fioritura. Applicare una corrente continua di 2V per 2-3 ore al giorno, preferibilmente nelle ore più fresche (mattina presto o sera) per evitare stress termico. Monitorare la risposta delle piante dopo 3-5 giorni.",
-        "fonte": "[pdf_17, pag. 28]",
+        "nome": "Sistema a corrente continua con elettrodi di rame/zinco",
+        "descrizione": "Posizionare due elettrodi (uno di rame e uno di zinco) a 10-15 cm di profondità nel suolo, distanti 20-30 cm l'uno dall'altro, vicino alle radici delle piante in fioritura. Collegare gli elettrodi a una batteria da 9V o a un generatore a basso voltaggio (1.5-9V). Mantenere la corrente per 4-6 ore al giorno, preferibilmente nelle ore più fresche della mattina o della sera. Monitorare la risposta delle piante e regolare la durata in base ai risultati.",
+        "fonte": "[pdf_17, pdf_327]",
         "materiali": [
-          "Elettrodi in rame e zinco (diametro 5-8 mm, lunghezza 30 cm)",
+          "Elettrodi di rame e zinco (diametro 3-5 mm, lunghezza 20-30 cm)",
+          "Batteria da 9V o generatore a basso voltaggio",
           "Cavi elettrici isolati",
-          "Alimentatore DC regolabile (0-5V)",
-          "Timer per l'accensione automatica"
+          "Nastro isolante o connettori elettrici",
+          "Strumenti per misurare la conducibilità del suolo (opzionale)"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "monitoraggio",
-      "irrigazione": "Irrigazione al mattino presto (07:00) con 0.5L per pianta per evitare stress idrico e ridurre umidità ambientale. Evitare irrigazione fogliare per prevenire oidio. Umidità suolo controllata con igrometro a 60-70%.",
-      "nutrizione": "water-only (nessuna integrazione oggi per evitare stress in fioritura avanzata)",
       "piante_critiche": [
         {
           "id": 7,
           "nome": "Epsilon F1",
-          "giorni_a_raccolta": 6
+          "giorni_a_raccolta": 5
+        },
+        {
+          "id": 8,
+          "nome": "Gaia F1",
+          "giorni_a_raccolta": 14
         }
       ]
-    },
-    "ambiente": {
-      "luna": {
-        "fase": "Gibbosa Crescente",
-        "emoji": "🌔",
-        "illuminazione_pct": 73,
-        "consiglio": "Utilizzare la fase di Gibbosa Crescente per applicare trattamenti elettromagnetici sul suolo (es. 'Tower of Power') per armonizzare le energie telluriche e migliorare la resilienza delle piante in fioritura."
-      },
-      "ore_luce": 14.3
-    },
-    "elettro": {
-      "verifica_oggi": [
-        "Verificare funzionamento elettrodi in rame/zinco su Epsilon F1 e applicare corrente DC a 2.5V per 2 ore al mattino.",
-        "Controllare stato della 'Tower of Power' e applicare pre-trattamento elettromagnetico su Cosmic Cheddar e Orbital Banana per 30 minuti."
-      ],
-      "ottimizzazione": "Ottimizzare la corrente DC su Epsilon F1 a 2.5V per accelerare la maturazione finale, come da [pdf_17, pag. 28]. Ridurre voltaggio a 2V su altre autofiorenti per evitare stress."
     }
   },
-  "tecniche_nuove": [
-    {
-      "nome": "Pre-trattamento elettromagnetico con 'Tower of Power'",
-      "descrizione": "Applicare un campo elettromagnetico a bassa frequenza (1-10Hz) sul suolo per 30 minuti utilizzando la 'Tower of Power'. Posizionare la torre a 50cm dal suolo, puntando verso le radici delle piante target (Cosmic Cheddar e Orbital Banana). Questo metodo, citato in [pdf_327, pag. 1], rivitalizza le radici e potenzia la resilienza in fioritura.",
-      "fonte": "[pdf_327, pag. 1]",
-      "materiali": [
-        "Tower of Power",
-        "cavo di alimentazione",
-        "timer"
-      ],
-      "difficolta": "bassa"
-    }
-  ],
-  "avvisi": [
-    "ALERT URGENTE: Epsilon F1 ha raccolta tra 6 giorni (2026-08-07). Priorità assoluta per elettrocoltura e monitoraggio umidità fogliare.",
-    "Rischio elevato di oidio su autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) a causa dell'umidità ambientale >85% e temperature >30°C. Monitorare costantemente con lampada UV."
-  ],
-  "consigli_giorno": [
-    "Applicare elettrocoltura DC a 2.5V con elettrodi in rame/zinco vicino alle radici di Epsilon F1 (raccolta tra 6gg) per stimolare la maturazione finale e prevenire stress idrico, come da [pdf_17, pag. 28]. Umidità ambientale a 87% richiede monitoraggio costante delle foglie per oidio.",
-    "Eseguire trattamento preventivo con lampada UV ogni 2 ore su tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per contrastare oidio, come indicato nei manuali [pdf_30, pag. 45] e [pdf_85, pag. 69].",
-    "Utilizzare la fase di Gibbosa Crescente (73% illuminazione) per applicare un pre-trattamento elettromagnetico sul suolo con 'Tower of Power' per 30 minuti su Cosmic Cheddar e Orbital Banana, migliorando la resilienza in fioritura [pdf_327, pag. 1]."
-  ]
+  "tecniche_nuove": [],
+  "avvisi": [],
+  "consigli_giorno": []
 }
