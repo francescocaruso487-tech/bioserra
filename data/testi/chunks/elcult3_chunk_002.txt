@@ -192,6 +192,7 @@ La procedura di test consisteva nel seguente. Le foglie venivano tagliate da pia
 Come sorgenti di radiazione venivano utilizzati vari filtri riflettenti e lampade a proiezione. L'angolo di incidenza della radiazione sulle foglie era di 15°. La regione richiesta dello spettro veniva selezionata utilizzando filtri di vetro standard [5]. Per l'irradiazione delle piante con luce visibile veniva utilizzato anche un filtro d'acqua spesso 35 mm. La radiazione veniva misurata con un termopila secondo P. I. Bogoevskii [6].
 
 Il primo test, condotto su foglie di tabacco, ha mostrato che la respirazione al buio nella fase di sviluppo delle foglie superiori era di circa 2,5 ng CO₂/dm²h. In una tale foglia, l'approccio al punto di scambio gassoso viene raggiunto con la sua esposizione alla luce rossa (filtro KS-10 che trasmette nella regione di 600-700 nm con un'intensità di circa 2000 erg/cm²sec). In queste condizioni, la respirazione non supera il 15% della respirazione al buio.
+
 Quando la foglia veniva esposta per 5 minuti alla radiazione infrarossa vicina (filtro DKS-11 che trasmette nella regione di 0,7-3,0 µm) con un'intensità di 200.000 erg/cm²·sec, la respirazione aumentava del 100%. Sotto l'effetto simultaneo della luce rossa e infrarossa, la respirazione diminuiva considerevolmente rispetto a quella ottenuta al buio.
 
 L'aumento limitato della respirazione durante la continua eccitazione elettrica delle radiazioni infrarosse e delle radiazioni rosse e blu, rispetto a quella ottenuta al buio, era indicativo dell'effetto distintivo della luce rossa.
@@ -212,9 +213,9 @@ dm²·h
 al buio
 Foglia di lillà
 Buio
-K S - 1 0
-K S - 3
-K S - 1 0 + K S - 3
+KS-10
+KS-3
+KS-10 + KS-3
 2.000
 200.000
 202.000
@@ -227,9 +228,9 @@ K S - 1 0 + K S - 3
 160
 1,1
 Buio
-K S - 1 0
-K S - 3
-K S - 1 0 + K S - 3
+KS-10
+KS-3
+KS-10 + KS-3
 2.000
 200.000
 202.000
@@ -243,15 +244,15 @@ K S - 1 0 + K S - 3
 18
 Foglia di ribes nero
 Buio
-S Z S - 1 4
-K S - 3
-S Z S - 1 4 + K S - 3
+SZS-14
+KS-3
+SZS-14 + KS-3
 2.000
 150.000
 152.000
 1,4
 0,4
-2,
+2,0
 0,6
 100
 29
