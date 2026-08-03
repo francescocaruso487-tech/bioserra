@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-02T05:36:09.133451+00:00",
+  "lastUpdate": "2026-08-03T05:52:13.820359+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -154,35 +154,35 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 19,
-    "chunk_progresso_totale_tradotti": 250,
-    "chunk_progresso_totale_chunk": 337,
+    "chunk_progresso_doc_con_dato": 20,
+    "chunk_progresso_totale_tradotti": 261,
+    "chunk_progresso_totale_chunk": 358,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_5",
         "chunk_progresso": {
-          "tradotti": 23,
+          "tradotti": 24,
           "totale": 8
         }
       },
       {
         "id": "pdf_298",
         "chunk_progresso": {
-          "tradotti": 23,
+          "tradotti": 24,
           "totale": 13
         }
       },
       {
         "id": "pdf_299",
         "chunk_progresso": {
-          "tradotti": 14,
+          "tradotti": 15,
           "totale": 6
         }
       },
       {
         "id": "pdf_323",
         "chunk_progresso": {
-          "tradotti": 18,
+          "tradotti": 19,
           "totale": 4
         }
       },
@@ -196,21 +196,21 @@
       {
         "id": "pdf_329",
         "chunk_progresso": {
-          "tradotti": 23,
+          "tradotti": 24,
           "totale": 17
         }
       },
       {
         "id": "pdf_331",
         "chunk_progresso": {
-          "tradotti": 27,
+          "tradotti": 28,
           "totale": 4
         }
       },
       {
         "id": "pdf_85",
         "chunk_progresso": {
-          "tradotti": 20,
+          "tradotti": 21,
           "totale": 18
         }
       }
@@ -221,9 +221,9 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 19,
-    "chunk_progresso_totale_tradotti": 250,
-    "chunk_progresso_totale_chunk": 337
+    "chunk_progresso_doc_con_dato": 20,
+    "chunk_progresso_totale_tradotti": 261,
+    "chunk_progresso_totale_chunk": 358
   },
   "connessioni": {
     "nodi_totali": 399,
