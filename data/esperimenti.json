@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-02T05:41:01.144411+00:00",
+  "lastUpdate": "2026-08-03T05:56:33.116437+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,39 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "ai_001",
-      "nome": "Low-Stress Training (LST) mirato",
-      "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
-      "materiali": [
-        "Filo morbido o clip",
-        "Supporti"
-      ],
-      "obiettivo": "Aumentare i siti di fioritura e uniformare l esposizione alla luce",
-      "fonte": "Royal Queen Seeds",
-      "categoria": "training",
-      "difficolta": "facile",
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "tipo": "training"
-    },
-    {
-      "id": "ai_004",
-      "nome": "Elettrocultura a bassa intensità con coils nel suolo",
-      "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
-      "materiali": [
-        "Filo di rame o acciaio inox",
-        "Sorgente corrente bassa intensità",
-        "Connettori"
-      ],
-      "obiettivo": "Stimolare attività radicale e assorbimento nutrienti",
-      "fonte": "PDF Drive",
-      "categoria": "elettrocultura",
-      "difficolta": "avanzata",
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "tipo": "elettrocultura"
-    },
     {
       "id": "ai_005",
       "nome": "Infuso di ortica fermentato potenziato",
@@ -3507,13 +3474,85 @@
       "data_proposta": "2026-08-01",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH bilanciato sull'efficienza del risciacquo in Living Soil: ottimizzazione dell'assorbimento post-risciacquo e qualità dei fiori",
+      "ipotesi": "Un pH bilanciato dell'acqua (6.0-7.0) durante il risciacquo delle piante in Living Soil ottimizzerà l'eliminazione dei sali nutritivi accumulati, migliorando l'assorbimento successivo dei nutrienti (come indicato nel Manuale A) e riducendo l'amarezza dei fiori (come suggerito nel Manuale B). L'attività microbica del Living Soil sarà preservata, garantendo una maggiore qualità dei fiori post-raccolta.",
+      "protocollo": [
+        "Preparare 3 gruppi di piante (A, B, C) in Living Soil identico, con stessa genetica e stadio vegetativo (es. 4 settimane di fioritura). Ogni gruppo avrà 5 piante.",
+        "Effettuare un pre-risciacquo con acqua a pH 6.5 (valore medio tra 6.0-7.0) per tutti i gruppi per uniformare la condizione iniziale. Misurare EC e pH dell'acqua di risciacquo prima e dopo.",
+        "Applicare il risciacquo per 7 giorni consecutivi: Gruppo A con acqua a pH 5.5 (idroponico, Manuale B), Gruppo B con acqua a pH 6.5 (substrato, Manuale B), Gruppo C con acqua a pH 7.5 (fuori range, controllo negativo). Usare acqua pura (EC < 0.1 mS/cm) per tutti i gruppi.",
+        "Dopo il risciacquo, misurare settimanalmente per 30 giorni: pH del suolo (a 10 cm di profondità), EC del suolo, peso fresco dei fiori, livello di amarezza (tramite test sensoriale con panel di 3 persone non esperte), e attività microbica (test della respirazione del suolo con metodo CO2)."
+      ],
+      "materiali": [
+        "pHmetro digitale (precisione ±0.1)",
+        "ECmetro digitale",
+        "Acqua deionizzata (EC < 0.1 mS/cm)",
+        "pH-up e pH-down (soluzioni tampone)",
+        "Bilancia di precisione (0.1 g)",
+        "Test kit per attività microbica del suolo (es. respirometro)",
+        "Fogli di registrazione dati"
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "pH del suolo (giorni 7, 14, 21, 28, 35)",
+        "EC del suolo (giorni 7, 14, 21, 28, 35)",
+        "Peso fresco dei fiori (giorno 35, raccolto)",
+        "Livello di amarezza (scala 1-5, giorni 30-35)",
+        "Attività microbica (giorno 35, metodo respirometro)"
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil, stessa genetica, stesso volume di acqua per risciacquo (1L/pianta/giorno), stessa esposizione solare, stessa umidità ambientale, stesso metodo di raccolta e pesatura.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il «risciacquo» delle marihuana",
+      "originalita": "L'esperimento combina il principio del pH bilanciato per l'assorbimento dei nutrienti (Manuale A) con la tecnica del risciacquo (Manuale B) in un contesto Living Soil, dove l'interazione tra pH, attività microbica e qualità dei fiori non è mai stata testata in modo sistematico. Nessuno dei due manuali suggerisce di applicare il pH bilanciato del risciacquo in un sistema Living Soil outdoor, né di valutare l'effetto a lungo termine sulla qualità dei fiori.",
+      "id": "esp_conn_2026-08-03_001",
+      "data_proposta": "2026-08-03",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di Pianta CBDV-dominante coltivate in serra outdoor",
+      "ipotesi": "L'arricchimento del suolo con microrganismi simbionti tramite concimazione organica (Manuale A) potenzia il metabolismo radicale delle piante coltivate con semi CBDV-dominante (Manuale B), aumentando la produzione di CBDV e altri cannabinoidi secondari (es. CBG) grazie alla maggiore biodisponibilità di nutrienti e alla sinergia microbica. Questo effetto è misurabile in termini di concentrazione di CBDV nelle infiorescenze e resa per pianta.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (Living Soil) con substrato omogeneo (compost maturo, biochar, micorrize e batteri benefici come *Bacillus* spp. e *Trichoderma*). Una parcella riceverà solo acqua (controllo), l'altra verrà fertilizzata con una soluzione organica a base di humus di lombrico, alghe e melassa (trattamento).",
+        "Seminare 20 semi di una varietà CBDV-dominante (es. 'CBDV Auto White Widow' da banca semi CBD) in ciascuna parcella, mantenendo distanza e densità identiche. Utilizzare semi femminizzati autofiorenti per standardizzare la genetica e la tempistica.",
+        "Dopo 30 giorni (fase vegetativa), prelevare campioni di suolo da entrambe le parcelle per analizzare la biodiversità microbica (metodo PCR o piastre di coltura) e misurare la biomassa radicale delle piante. Effettuare un trattamento fogliare con estratto di alghe (es. *Ascophyllum nodosum*) per entrambi i gruppi per stimolare la risposta metabolica.",
+        "A 60 giorni (inizio fioritura), raccogliere le infiorescenze di 10 piante per parcella, essiccarle e sottoporle a test HPLC per quantificare CBDV, CBG e CBD. Confrontare i risultati tra trattamento e controllo, normalizzando per peso secco delle infiorescenze."
+      ],
+      "materiali": [
+        "Semi di Pianta CBDV-dominante (es. 'CBDV Auto White Widow' da seedbank CBD)",
+        "Substrato Living Soil (compost, biochar, micorrize, batteri benefici, lombrichi)",
+        "Concime organico (humus di lombrico, alghe, melassa)",
+        "Kit di analisi HPLC portatile o servizio di laboratorio per cannabinoidi",
+        "Strumenti per misurazione biomassa radicale (bilancia analitica, setaccio)",
+        "Estratto di alghe per trattamento fogliare"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Concentrazione di CBDV, CBG e CBD (mg/g) nelle infiorescenze essiccate tramite HPLC",
+        "Peso secco delle infiorescenze per pianta (resa)",
+        "Analisi della biodiversità microbica del suolo (diversità batterica/fungina)",
+        "Biomassa radicale (peso secco delle radici)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (luce, temperatura, umidità), metodo di coltivazione (water-only, nessun fertilizzante sintetico), tempistica di raccolta, protocollo di essiccazione.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento non è presente in nessuno dei due manuali singolarmente perché combina: (1) l'approccio Living Soil del Manuale A con (2) la selezione di semi CBDV-dominante del Manuale B, creando un protocollo specifico per ottimizzare la produzione di cannabinoidi secondari tramite sinergia microbica. La misurazione diretta di CBDV in risposta alla concimazione organica è un'applicazione innovativa non documentata nei manuali originali.",
+      "id": "esp_conn_2026-08-03_002",
+      "data_proposta": "2026-08-03",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-02",
-    "nuove_proposte": 0,
+    "data": "2026-08-03",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
