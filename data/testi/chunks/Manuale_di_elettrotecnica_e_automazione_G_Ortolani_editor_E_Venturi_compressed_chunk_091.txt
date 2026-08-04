@@ -35,7 +35,7 @@ pag.
 1.8    Reti snubber . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  18
 
-1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . in . . . . . . . . . . . . . . . . . . . .
  19
 
 1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -84,12 +84,7 @@ ELETTRONICA DI POTENZA
 8    CONVERTITORI CON TRASFORMATORI . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  39
 
-8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 40
-
-8.2    Convertitore Forward . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *(XVIII.1.4)*
-
-che si somma algebricamente alla tensione applicata *u<sub>i</sub>*. L’andamento della corrente è quello della Fig. XVIII.1.2, nella quale si evidenzia che l’annullamento dell’intensità di corrente avviene sempre con un certo ritardo Δ*t*: in particolare, pur essendo già cambiata la polarità della tensione applicata, il diodo si trova ancora in stato di conduzione. Questo è dovuto al fatto che la corrente sta diminuendo, presenta cioè pendenza e quindi derivata negativa con conseguente forza elettromotrice indotta di valore positivo, cioè in grado di polarizzare direttamente il diodo nonostante la tensione di ingresso abbia già modificato la sua polarità. In particolare la tensione applicata in ingresso e la tensione di autoinduzione si equilibrano durante l’intervallo di tempo Δ*t*.
+8.1    Convertitore Flyback . . . . . . . . .
 **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
 Una conseguenza di ciò è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che attraversa il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
 
@@ -280,12 +275,12 @@ ELETTRONICA DI POTENZA
 
 Un elevato valore dei guadagni comporta una bassa resistenza in conduzione e, di conseguenza, una piccola caduta di tensione durante la conduzione, oltre a richiedere correnti di pilotaggio al Gate ridotte. Gli SCR vengono realizzati con il valore più alto possibile dei guadagni, per cui, quando sono attraversati da corrente, la somma dei loro guadagni supera l’unità: il dispositivo rimane in conduzione e non è possibile bloccarne la conduzione.
 
-Il valore minimo di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come corrente di automantenimento I<sub>h</sub>.
+Il valore minimo di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come corrente di automantenimento I<sub>h</sub</sub>.
 
 Fig. XVIII.1.12 Correnti durante la fase di conduzione del GTO.
 La Fig. XVIII.1.13 mostra l’andamento del guadagno di una giunzione in funzione della corrente di collettore (I<sub>C</sub>) e della tensione tra collettore ed emettitore (U<sub>CE</sub>).
 
-Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
+Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub</sub>.
 Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura costruttiva, in modo che la somma dei guadagni sia appena superiore all’unità durante la conduzione; ciò consente di bloccare la conduzione del dispositivo polarizzando inversamente il Gate. Si noti che valori più bassi dei guadagni richiedono correnti di pilotaggio più elevate. La transizione da ON a OFF è ottenuta applicando una polarizzazione inversa al terminale di controllo G, che costringe la corrente del transistor PNP a uscire dal Gate invece di entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
 
 Ne consegue che il dispositivo NPN passa nello stato di interdizione, e di conseguenza anche quello PNP.
@@ -322,7 +317,7 @@ XVIII-13
 – massima potenza dissipabile;
 – valore massimo di dU/dt.
 
-Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della corrente di Gate superiori alla soglia il comportamento è quello caratteristico di un SCR.
+Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor. Per valori della corrente di
 **Fig. XVIII.1.15** Caratteristica corrente-tensione di un GTO.
 
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
@@ -412,7 +407,6 @@ SKKT 55
 1.8 Reti snubber
 
 Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, ossia il valore limite di variazione della tensione nel tempo, indicato sovente come transitorio di tensione. Variazioni di tensione superiori a questo indice possono comportare la commutazione del dispositivo dallo stato di OFF a quello di ON. Le reti RC, cioè composte dalla serie di un resistore e una capacità, indicate comunemente come *snubber*, vengono collegate agli estremi del dispositivo di controllo e consentono di limitare il transitorio di tensione. Si precisa che il problema del transitorio può verificarsi sia durante la fase di accensione del dispositivo che quella di spegnimento e che i valori del circuito realizzante lo *snubber* dipendono dal dispositivo e dal circuito controllato. Nei sistemi di controllo dove il valore **dU/dt** è insufficiente è possibile perdere il controllo di fase del dispositivo, quindi quest’ultimo può trovarsi nello stato di ON oppure nello stato di OFF con possibile conseguente distruzione del medesimo se inserito con utilizzatori di tipo ohmico-induttivo (qui la corrente assume valori eccessivi in quanto la tensione passa alla semionda di segno opposto e il dispositivo non è ancora nello stato di OFF), oppure per i dispositivi destinati al controllo dei motori. Costruttivamente i dispositivi meno sensibili ai transitori sono quelli che necessitano di valori più grandi della corrente di controllo sul Gate, e quei dispositivi destinati al controllo di correnti ad elevata intensità. In alternativa o in sinergia con gli *snubber*, talvolta, vengono utilizzati induttori realizzati su nuclei in ferrite ad alta permeabilità collegati in serie all’utilizzatore; questi ultimi introducono un ritardo, rallentando la variazione della corrente e consentendo una migliore commutazione allo stato di OFF nella fase di spegnimento.
-
 ELETTRONICA DI POTENZA
 XVIII-19
 
