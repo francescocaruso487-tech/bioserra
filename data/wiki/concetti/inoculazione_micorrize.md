@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-03
+aggiornato: 2026-08-04
 pdf_count: 1
 ---
 
@@ -12,27 +12,32 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando la superficie di assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre ricevono in cambio carboidrati prodotti dalla fotosintesi. In condizioni di stress idrico o nutrizionale, le micorrize possono migliorare la resilienza delle piante fino al 30%, riducendo la necessità di irrigazioni frequenti e fertilizzanti chimici. Questo meccanismo è particolarmente vantaggioso in coltivazioni outdoor a Caserta (41°N), dove il clima mediterraneo può esporre le piante a siccità estiva e sbalzi termici.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** in serra outdoor. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando la superficie di assorbimento di acqua e nutrienti (in particolare fosforo e azoto) fino a 100 volte rispetto alle radici sole. In cambio, la pianta fornisce al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o nutrizionale, tipiche delle coltivazioni outdoor in climi mediterranei come quello di Caserta (41°N), dove le estati secche e calde possono limitare l’efficienza radicale.
 
-La simbiosi micorrizica non è universale: alcune piante (come le Brassicacee) non formano questo tipo di associazione, mentre altre, tra cui la cannabis, ne traggono benefici significativi. L’inoculazione artificiale con ceppi specifici (ad esempio *Glomus intraradices*) accelera la colonizzazione delle radici, soprattutto in terreni poveri di materia organica o sottoposti a lavorazioni intensive. Studi dimostrano che le piante micorrizate sviluppano radici più robuste e una maggiore tolleranza a patogeni come *Phytophthora* o *Fusarium*, grazie alla competizione diretta per lo spazio radicale e alla produzione di metaboliti antifungini da parte dei funghi.
+La simbiosi micorrizica non è universale: alcune piante (come le Brassicaceae) non formano micorrize, mentre altre, tra cui la cannabis, ne dipendono fortemente per ottimizzare la crescita. Studi dimostrano che l’inoculazione con funghi micorrizici arbuscolari (AMF) può aumentare la resistenza a patogeni, migliorare la struttura del suolo tramite la produzione di glomalina (una glicoproteina che aggrega le particelle terrose) e ridurre la necessità di fertilizzanti chimici. Inoltre, in un sistema **Living Soil**, le micorrize collaborano con batteri benefici (es. *Pseudomonas*) per mineralizzare nutrienti organici, creando un ecosistema autosufficiente e resiliente.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, l’inoculazione delle micorrize segue questi passaggi critici:
+Per una serra outdoor **Living Soil** a Caserta, l’inoculazione delle micorrize deve essere eseguita con precisione per massimizzare i benefici. Segui questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurarsi che il terreno sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico). Evitare substrati sterilizzati o con residui di fungicidi chimici (es. clorotalonil, propiconazolo).
-   - *Nota*: Il PDF [web_zamn_335-conservare-cannabis] sottolinea l’importanza di un suolo vivo per la conservazione della qualità della cannabis, dove le micorrize giocano un ruolo chiave nella biodiversità microbica.
+   - Assicurati che il terreno sia umido ma non bagnato (evita ristagni, come indicato in [web_zamn_301](web_zamn_301-come-irrigare-le-piante-di-cannabis)).
+   - Mescola l’inoculo micorrizico (5–10 g per pianta) con un po’ di substrato umido o compost maturo per facilitare il contatto con le radici.
 
-2. **Scelta dell’inoculo**:
-   - Utilizzare un inoculo a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus spp.* o *Rhizophagus irregularis*, specifico per piante da fiore. Verificare la compatibilità con la cannabis (es. ceppi commerciali come **MycoApply** o **Plant Success**).
-   - Quantità: **5–10 g per pianta**, distribuiti direttamente sulle radici durante il trapianto.
+2. **Trapianto**:
+   - Al momento del trapianto, posiziona l’inoculo direttamente a contatto con le radici della pianta, preferibilmente in una buca profonda 5–10 cm.
+   - Se usi vasi, distribuisci l’inoculo sul fondo del contenitore prima di aggiungere il substrato.
 
-3. **Applicazione al trapianto**:
-   - Bagnare leggermente le radici della piantina con acqua non clorata (usare acqua magnetizzata o a pH 6.0–6.5 per ottimizzare l’assorbimento).
-   - Spargere l’inoculo direttamente sul substrato a contatto con le radici, coprendo con uno strato sottile di terriccio umido. Evitare di mescolare l’inoculo nel terreno profondo, dove la colonizzazione sarebbe meno efficace.
-   - *Consiglio pratico*: In caso di trapianto in vaso, aggiungere l’inoculo anche al fondo del contenitore per favorire la crescita delle ife verso l’alto.
+3. **Post-trapianto**:
+   - Evita l’uso di fungicidi (inclusi quelli a base di rame) per almeno **30 giorni** dopo l’inoculazione, come specificato in [web_zamn_335](web_zamn_335-conservare-cannabis), per non uccidere i funghi benefici.
+   - Mantieni il suolo umido (ma non saturo) per i primi 7–10 giorni, per favorire l’attecchimento delle ife.
 
-4. **Post-trapianto e manutenzione**:
-   - Mantenere il substrato umido (ma non zuppo) per i primi 7–10 giorni, evitando ristagni che possono soffocare le radici. Il
+4. **Irrigazione**:
+   - Usa acqua a **pH 6.0–6.5** (come suggerito in [web_zamn_301](web_zamn_301-come-irrigare-le-piante-di-cannabis)) per non alterare l’equilibrio microbiologico.
+   - Evita l’irrigazione eccessiva, che può dilavare l’inoculo o creare condizioni anaerobiche dannose per i funghi.
+
+---
+
+## Sinergie con altri elementi
+Le micorrize interagiscono positivamente con diverse tecniche e
