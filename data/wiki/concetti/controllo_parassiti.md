@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-03
+aggiornato: 2026-08-04
 pdf_count: 10
 ---
 
@@ -12,26 +12,37 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil**, dove la biodiversità microbica e macrobiologica del suolo (funghi micorrizici, batteri benefici, insetti predatori) agisce come primo baluardo contro patogeni e parassiti. Il meccanismo d'azione si fonda sulla **prevenzione attiva**: un suolo vivo e ben strutturato favorisce piante vigorose con sistemi di difesa naturali (es. produzione di fitoalessine), mentre la presenza di organismi utili (acari *Phytoseiulus persimilis*, coccinelle, nematodi entomopatogeni) crea un **controllo biologico dinamico**. L'elettrocultura, in particolare con spirali di rame (Lakhovsky) o antenne di terra, può ulteriormente stimolare la resilienza delle piante attraverso la **armonizzazione delle frequenze elettromagnetiche**, migliorando la risposta immunitaria e la comunicazione tra organismi.
+Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in serra outdoor, basata sull'equilibrio ecologico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo approccio sfrutta le dinamiche predatorie naturali, i principi attivi di piante repellenti e le tecniche di elettrocultura per creare un ambiente sfavorevole ai parassiti (afidi, acari, tripidi) senza alterare la biodiversità del suolo. Il meccanismo d'azione si fonda sulla **teoria della piramide trofica**: introducendo insetti utili (es. *Phytoseiulus persimilis* per gli acari) o applicando oli essenziali (neem, piretro naturale), si riduce la pressione dei patogeni senza eliminare i loro predatori naturali, mantenendo così la resilienza dell'ecosistema serra.
 
-Questa strategia si allinea ai principi di **Albert Howard** (*An Agricultural Testament*), che evidenzia come la salute del suolo sia la base per piante resistenti: *"Humus non è un semplice composto chimico, ma un ecosistema vivo"* [pdf_7]. Integrare il controllo parassiti naturale con pratiche come il compostaggio Indore o l'uso di urine animali (ricche di azoto e microrganismi) potenzia la fertilità del suolo, rendendo le piante meno suscettibili agli attacchi. Inoltre, l'approccio risponde alla necessità di **autosufficienza** tipica delle serre italiane, riducendo la dipendenza da input esterni e preservando la qualità del raccolto.
+Funziona perché si basa su **tre pilastri**:
+1. **Prevenzione attiva**: monitoraggio costante e trattamenti preventivi (es. olio di neem ogni 7 giorni) che disturbano i cicli riproduttivi dei parassiti.
+2. **Bilanciamento energetico**: l'elettrocultura (es. spirali di rame Lakhovsky) stimola la produzione di composti volatili repellenti nelle piante e attiva la microflora del suolo, rendendo l'ambiente meno ospitale per gli insetti dannosi.
+3. **Rinforzo immunitario**: un suolo vivo (Living Soil) con alto contenuto di humus favorisce piante più vigorose, in grado di resistere meglio agli attacchi.
 
 ---
 
 ## Come si applica in serra
-
 **Protocollo per serra outdoor Living Soil a Caserta (41°N):**
 
-1. **Monitoraggio quotidiano**
-   - Ispeziona **foglie (soprattutto sottofusto), steli e terreno** al mattino, usando una lente d’ingrandimento per individuare uova, larve o danni iniziali (es. fori, melata).
-   - Segna le piante infestate con un nastro colorato per interventi mirati.
+1. **Ispezione quotidiana** (mattina presto):
+   - Controllare **foglie giovani, gemme e steli** con lente 10x. Segnare con nastro colorato le piante infestate.
+   - *Strumento*: lente da giardiniere + quaderno per registrare dati (es. presenza di melata, uova di afidi).
 
-2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detersivo ecologico) in 1 litro d’acqua.
-   - **Applicazione**: Spruzza **preventivamente ogni 7 giorni** (o dopo pioggia) sulle foglie, preferibilmente al tramonto per evitare ustioni. Evita di bagnare il suolo direttamente (può inibire i microrganismi).
-   - **Rotazione**: Alterna con **sapone di potassio** (10 g/L) per afidi e acari, o **infuso di ortica** (1 kg di ortica fresca in 10 L d’acqua per 48h) per afidi e funghi.
+2. **Prevenzione settimanale**:
+   - **Olio di neem**: diluire 5 ml in 1 L di acqua + 1 ml di sapone di potassio (adesivo). Spruzzare al tramonto (evitare ore calde) su tutte le foglie, con particolare attenzione alla pagina inferiore. *Frequenza*: ogni 7 giorni in vegetazione, ogni 10 in fioritura.
+   - **Elettrocultura**: posizionare una **spirale di rame Lakhovsky** (diametro 30 cm) a 20 cm sopra le piante più suscettibili (es. pomodori). Collegare a un'antenna di terra in rame infissa nel suolo (profondità 50 cm).
 
-3. **Insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di infestazione da **ragnetto rosso** (*Tetranychus urticae*). Ripeti ogni 2 settimane fino a risoluzione.
-   - **Coccinelle** (*Coccinella septempunctata*): Posiziona piante trappola (es. *Fagopyrum esculentum*) o acquista larve da fornitori biologici per afidi.
-   - **Nematodi entomopatogeni** (*Steinernema feltiae*): Applica al suolo in caso di
+3. **Intervento mirato**:
+   - **Insetti utili**:
+     - *Acari predatori* (*Phytoseiulus persimilis*): rilasciare 2 individui/m² in caso di infestazione da *Tetranychus urticae* (acaro rosso). Ripetere dopo 5 giorni.
+     - *Crisope* (*Chrysoperla carnea*): introdurre 1 larva/m² ogni 2 settimane in prevenzione.
+   - **Repellenti naturali**: piantare **basilico, calendula o aglio** ai bordi della serra per creare barriere olfattive.
+
+4. **Monitoraggio post-trattamento**:
+   - Dopo 72 ore, verificare la riduzione delle infestazioni. Se persistono, ripetere l'applicazione di insetti utili o aumentare la frequenza dell'olio di neem.
+
+---
+
+## Sinergie con altri elementi
+
+- **Elettrocultura Lakhov
