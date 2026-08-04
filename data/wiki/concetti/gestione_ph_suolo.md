@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-08-03
+aggiornato: 2026-08-04
 pdf_count: 10
 ---
 
@@ -12,22 +12,23 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la concentrazione di ioni idrogeno (H⁺) e determina l’acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un pH ottimale (6.0–7.0 per la maggior parte delle colture) garantisce che macro e micronutrienti come azoto (N), fosforo (P), potassio (K), calcio (Ca) e magnesio (Mg) siano assorbiti in forma assimilabile dalle radici. Al di fuori di questo range, alcuni elementi diventano insolubili (es. fosforo a pH < 5.5 o > 8.0) o tossici (es. alluminio a pH < 5.0), compromettendo lo sviluppo vegetale. La gestione del pH non è statica: variazioni stagionali, apporti di materia organica, attività microbica e condizioni climatiche (umidità, temperatura) richiedono monitoraggi costanti, soprattutto in sistemi Living Soil dove la complessità biologica amplifica le dinamiche di equilibrio.
+Il pH del suolo rappresenta la concentrazione di ioni idrogeno (H⁺) e determina l’acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il range ottimale per la maggior parte delle colture (ortaggi, aromatiche, medicinali) si attesta tra **6.0 e 7.0**, un intervallo in cui macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro, zinco) sono presenti in forme assimilabili dalle radici. Al di fuori di questo range, si verificano fenomeni di **blocco nutrizionale**: in ambiente acido (pH < 5.5), elementi come fosforo, calcio e magnesio precipitano, mentre in condizioni alcaline (pH > 7.5), ferro, manganese e zinco diventano insolubili. La gestione del pH non è un’azione statica, ma un **processo dinamico** che richiede monitoraggio costante, poiché fattori come piogge acide, decomposizione della materia organica, fertilizzanti minerali e attività microbica possono alterarne rapidamente l’equilibrio.
 
-In serra outdoor a Caserta (41°N), il clima mediterraneo con estati calde e siccitose accentua la tendenza all’acidificazione del suolo a causa della lisciviazione dei cationi basici (Ca²⁺, Mg²⁺) e dell’accumulo di acidi organici derivanti dalla decomposizione della sostanza organica. Inoltre, l’uso di acqua calcarea (tipica della zona) può innalzare il pH, mentre l’irrigazione con acqua piovana o l’uso di fertilizzanti acidificanti (es. solfato di ammonio) lo abbassano. La correzione tempestiva del pH, abbinata a pratiche di elettrocultura (es. spirali di rame collegate a terra), può ottimizzare la risposta delle piante alle frequenze naturali del suolo, migliorando la sintesi di fitormoni e la resistenza agli stress abiotici.
+L’approccio **Living Soil** integra la regolazione del pH con la promozione della **vita del suolo**: batteri, funghi micorrizici e lombrichi non solo decompongono la materia organica, ma producono acidi organici (es. acido citrico, gluconico) che influenzano indirettamente il pH. Ad esempio, i funghi micorrizici acidificano leggermente la rizosfera, migliorando l’assorbimento di fosforo. Tuttavia, in serra outdoor, dove la mineralizzazione è accelerata e l’evapotraspirazione concentrata, il pH può fluttuare più rapidamente rispetto a un suolo naturale. L’uso di **calce agricola** (carbonato di calcio) o **zolfo elementare** (che si ossida in acido solforico) deve essere calibrato sulla base di analisi periodiche, evitando correzioni eccessive che possano destabilizzare la comunità microbica.
 
 ---
 
 ## Come si applica in serra
 
-### **Strumenti e frequenza**
-1. **Misurazione**:
-   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o strisce reattive per substrato (validare con soluzione tampone pH 6.86 prima dell’uso).
-   - Prelevare campioni di suolo a **10–15 cm di profondità** in 3–5 punti della serra, mescolarli e testare il pH **ogni settimana** (soprattutto durante la fioritura, quando le piante sono più sensibili).
-   - *Nota*: In Living Soil, il pH può variare localmente a causa di hotspot microbici (es. cumuli di compost). Misurare anche vicino alle radici delle piante più giovani.
+1. **Monitoraggio settimanale**
+   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o strisce reattive per substrato, prelevando campioni a **10-15 cm di profondità** in 3-4 punti della serra (evitando zone umide o secche).
+   - Registrare i valori in un **registro di coltivazione** per identificare tendenze (es. acidificazione dopo piogge intense).
 
-2. **Correzione**:
-   - **pH < 5.8 (acido)**:
-     - **Calce agricola** (CaCO₃, dose: 50–100 g/m²) o **calce dolomitica** (aggiunge anche Mg) da spargere a secco e incorporare con una zappetta o irrigazione leggera.
-     - *Alternativa*: **Cenere di legna** (pH ~12, dose: 20–30 g/m², usare con cautela per evitare eccesso di potassio).
-     - *Elettrocultura*: Posizionare una **spirale di rame** (diametro 30–50 cm) sopra il letto di coltivazione e collegarla a un’**antenna di terra** (picchetto in acciaio zincato da 1m) con cavo di rame isolato. La spirale aiuta a neutralizzare le cariche negative del suolo, favorendo l’assorbimento dei cation
+2. **Correzione in caso di pH basso (< 5.8)**
+   - **Calce agricola** (CaCO₃): distribuire **50-100 g/m²** su terreno umido, interrando leggermente con una zappetta. Evitare l’uso di calce viva (CaO), troppo aggressiva per la vita microbica.
+   - **Cenere di legna** (opzione alternativa): applicare **100-200 g/m²**, ricca di calcio e potassio, ma usarla con cautela (può innalzare troppo il pH se in eccesso).
+   - **Attendere 7-10 giorni** prima di ri-misurare e ripetere se necessario.
+
+3. **Correzione in caso di pH alto (> 7.2)**
+   - **Zolfo elementare in polvere**: distribuire **20-50 g/m²**, interrando a **5 cm di profondità**. Lo zolfo si ossida lentamente in acido solforico grazie ai batteri *Thiobacillus*.
+   - **Torba acida o compost di foglie**: aggi
