@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-04
+aggiornato: 2026-08-05
 pdf_count: 10
 ---
 
@@ -12,37 +12,28 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in serra outdoor, basata sull'equilibrio ecologico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo approccio sfrutta le dinamiche predatorie naturali, i principi attivi di piante repellenti e le tecniche di elettrocultura per creare un ambiente sfavorevole ai parassiti (afidi, acari, tripidi) senza alterare la biodiversità del suolo. Il meccanismo d'azione si fonda sulla **teoria della piramide trofica**: introducendo insetti utili (es. *Phytoseiulus persimilis* per gli acari) o applicando oli essenziali (neem, piretro naturale), si riduce la pressione dei patogeni senza eliminare i loro predatori naturali, mantenendo così la resilienza dell'ecosistema serra.
+Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per gestire infestazioni in serra outdoor senza ricorrere a pesticidi chimici, preservando l'equilibrio dell'ecosistema del *Living Soil*. Questo approccio si basa sulla **prevenzione attiva** e sulla **promozione della biodiversità funzionale**, dove insetti predatori, microrganismi benefici e piante compagne lavorano in sinergia per limitare i danni da parassiti. Il meccanismo d'azione sfrutta le **interazioni trofiche naturali**: ad esempio, gli acari predatori (*Phytoseiulus persimilis*) si nutrono di acari dannosi come il ragnetto rosso (*Tetranychus urticae*), mentre il **neem** agisce come repellente e regolatore della crescita degli insetti, interferendo con il loro ciclo vitale senza uccidere indiscriminatamente gli organismi utili.
 
-Funziona perché si basa su **tre pilastri**:
-1. **Prevenzione attiva**: monitoraggio costante e trattamenti preventivi (es. olio di neem ogni 7 giorni) che disturbano i cicli riproduttivi dei parassiti.
-2. **Bilanciamento energetico**: l'elettrocultura (es. spirali di rame Lakhovsky) stimola la produzione di composti volatili repellenti nelle piante e attiva la microflora del suolo, rendendo l'ambiente meno ospitale per gli insetti dannosi.
-3. **Rinforzo immunitario**: un suolo vivo (Living Soil) con alto contenuto di humus favorisce piante più vigorose, in grado di resistere meglio agli attacchi.
+Questa metodologia è particolarmente efficace in **serre outdoor a clima mediterraneo** (come quella di Caserta, 41°N), dove l'alta umidità e le temperature miti favoriscono la proliferazione di patogeni fungini e insetti. Tuttavia, il successo dipende dalla **costanza nell'osservazione** e dall'adozione di pratiche che rafforzino la resilienza delle piante, come l'uso di **compost attivato** e **biochar**, che migliorano la struttura del suolo e la sua capacità di ospitare microrganismi antagonisti. Inoltre, l'**elettrocultura** (ad esempio con spirali di rame secondo il metodo Lakhovsky) può potenziare la risposta immunitaria delle piante, rendendole meno suscettibili agli attacchi.
 
 ---
 
 ## Come si applica in serra
-**Protocollo per serra outdoor Living Soil a Caserta (41°N):**
 
-1. **Ispezione quotidiana** (mattina presto):
-   - Controllare **foglie giovani, gemme e steli** con lente 10x. Segnare con nastro colorato le piante infestate.
-   - *Strumento*: lente da giardiniere + quaderno per registrare dati (es. presenza di melata, uova di afidi).
+1. **Ispezione quotidiana**
+   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** con una lente d'ingrandimento (10x) per rilevare uova, larve o adulti di parassiti (es. afidi, tripidi, cocciniglie).
+   - Usa una **trappola cromotropica gialla** (adesiva) per monitorare la presenza di moscerini e afidi.
 
-2. **Prevenzione settimanale**:
-   - **Olio di neem**: diluire 5 ml in 1 L di acqua + 1 ml di sapone di potassio (adesivo). Spruzzare al tramonto (evitare ore calde) su tutte le foglie, con particolare attenzione alla pagina inferiore. *Frequenza*: ogni 7 giorni in vegetazione, ogni 10 in fioritura.
-   - **Elettrocultura**: posizionare una **spirale di rame Lakhovsky** (diametro 30 cm) a 20 cm sopra le piante più suscettibili (es. pomodori). Collegare a un'antenna di terra in rame infissa nel suolo (profondità 50 cm).
+2. **Prevenzione con olio di neem**
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d'acqua.
+   - **Applicazione**: Spruzza sulle piante **ogni 7 giorni** (o dopo piogge intense), preferibilmente al tramonto per evitare ustioni fogliari.
+   - **Effetto**: Interrompe il ciclo vitale degli insetti (repellente e insetticida sistemico leggero) e stimola le difese delle piante.
 
-3. **Intervento mirato**:
-   - **Insetti utili**:
-     - *Acari predatori* (*Phytoseiulus persimilis*): rilasciare 2 individui/m² in caso di infestazione da *Tetranychus urticae* (acaro rosso). Ripetere dopo 5 giorni.
-     - *Crisope* (*Chrysoperla carnea*): introdurre 1 larva/m² ogni 2 settimane in prevenzione.
-   - **Repellenti naturali**: piantare **basilico, calendula o aglio** ai bordi della serra per creare barriere olfattive.
+3. **Introduzione di insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di infestazione da ragnetto rosso. Ripeti ogni 2 settimane fino a controllo.
+   - **Crisope** (*Chrysoperla carnea*): Deposita uova o larve (10–20/m²) per combattere afidi e cocciniglie.
+   - **Coccinelle** (*Hippodamia convergens*): Utili contro afidi; posiziona piante trappola (es. *Calendula officinalis*) per attirarle.
 
-4. **Monitoraggio post-trattamento**:
-   - Dopo 72 ore, verificare la riduzione delle infestazioni. Se persistono, ripetere l'applicazione di insetti utili o aumentare la frequenza dell'olio di neem.
-
----
-
-## Sinergie con altri elementi
-
-- **Elettrocultura Lakhov
+4. **Barriere fisiche e piante trappola**
+   - Copri le aperture della serra con **reti anti-insetto** (maglie < 0.6 mm) per escludere moscerini e farfalle.
+   - Coltiva **piante repellenti** tra le colture principali: *Basilico*, *Aglio*, *Tagete* o *Nasturzio* (
