@@ -2,48 +2,46 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-04
+aggiornato: 2026-08-05
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Tè di Compost
+# Te di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei microrganismi benefici, nutrienti e sostanze umiche presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" per il suolo e le piante, arricchendo il **Living Soil** di batteri, funghi, protozoi e nematodi utili. L’aerazione costante durante la preparazione (24 ore) evita la proliferazione di anaerobi dannosi, garantendo un prodotto sicuro e ricco di biodiversità microbica. L’aggiunta di melassa come substrato per i microrganismi accelera la loro replicazione, mentre l’applicazione tempestiva (entro 4 ore) preserva la vitalità della soluzione.
+Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, estrae batteri, funghi, protozoi e nutrienti in forma biodisponibile, pronti per essere assorbiti sia per via radicale che fogliare. Il meccanismo d'azione si basa sulla **biostimolazione del suolo vivente**: i microrganismi del compost colonizzano la rizosfera, migliorando la struttura del terreno, la disponibilità di nutrienti (azoto, fosforo, potassio) e la resistenza delle piante agli stress biotici (funghi patogeni) e abiotici (siccità, salinità). Inoltre, i metaboliti secondari prodotti dai batteri (come gli acidi umici e gli enzimi) agiscono da **elicitori naturali**, stimolando le difese della pianta e la produzione di fitormoni (auxine, citochinine).
 
-Il meccanismo d’azione si basa sulla **nutrizione indiretta** delle piante: i microrganismi del tè colonizzano la rizosfera, migliorando la disponibilità di nutrienti (azoto, fosforo, potassio) attraverso processi di mineralizzazione e solubilizzazione. Inoltre, stimolano la produzione di **ormoni vegetali** (auxine, citochinine) e rafforzano le difese naturali contro patogeni (effetto *biocontrollo*). In serra outdoor a Caserta, dove il clima caldo e umido può favorire stress idrici e attacchi fungini, il tè di compost agisce come **rigeneratore del suolo** e **protettore delle piante**, soprattutto durante le fasi critiche di vegetazione e fioritura.
+L'efficacia del te di compost dipende strettamente dalla **qualità del compost di partenza** (deve essere maturo, privo di patogeni e ricco di diversità microbica) e dalle condizioni di preparazione (aerazione, temperatura, pH). In un contesto di **Living Soil outdoor** come quello di Caserta (41°N), dove il clima mediterraneo favorisce l'attività microbica ma può anche accelerare la degradazione della materia organica, l'applicazione di te di compost rappresenta un metodo rapido ed ecologico per **rinvigorire il suolo** tra un raccolto e l'altro o durante le fasi critiche di crescita (vegetazione e fioritura).
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta (41°N), segui queste istruzioni pratiche:
 
-1. **Preparazione del compost**:
-   - Usa compost maturo (6-12 mesi), privo di odori sgradevoli e con rapporto C/N equilibrato (ideale: 20:1).
-   - Setaccia il compost per rimuovere materiali grossolani (rametti, plastica).
+### **Preparazione del Te di Compost (metodo aerobico)**
+**Materiali necessari:**
+- Compost maturo (preferibilmente vermicompost o compost da letame di cavallo/pecora, maturo da almeno 6 mesi)
+- Acqua non clorata (piovana, osmosi inversa o lasciata decantare 24h in un contenitore aperto)
+- Aeratore per acquario (con pietra porosa)
+- Melassa biologica (o zucchero di canna non raffinato) come cibo per i batteri
+- Secchio in plastica o vetro (evitare metalli)
+- Filtro a maglia fine (calza di nylon o tessuto non tessuto)
 
-2. **Estrazione del tè**:
-   - **Dosaggio**: 1 parte di compost ogni 5 parti di acqua (es. 1 kg di compost in 5 litri di acqua).
-   - **Aerazione**: Utilizza un aeratore per acquario (pompa + pietra porosa) per mantenere l’ossigenazione costante (evita la putrefazione).
-   - **Additivi**:
-     - 1 cucchiaio di melassa per litro d’acqua (come fonte di carbonio per i batteri).
-     - Opzionale: 1 cucchiaino di **humus di lombrico** per aumentare la biodiversità microbica.
-   - **Tempo di infusione**: 24 ore a temperatura ambiente (18-25°C). Evita la luce diretta.
+**Procedura:**
+1. **Dosaggio:**
+   - **1 parte di compost** ogni **5-10 parti di acqua** (es. 1 kg di compost in 10L di acqua per serre di medie dimensioni).
+   - Per serre piccole (2-3 piante), ridurre a 200-300g di compost in 5L.
 
-3. **Filtraggio e applicazione**:
-   - Filtra il tè con una retina fine (100-200 micron) per rimuovere residui solidi.
-   - **Applica entro 4 ore** dalla preparazione, preferibilmente al mattino presto o al tramonto per evitare evaporazione rapida.
-   - **Modalità**:
-     - **Radicale**: Irriga il suolo alla base delle piante (1-2 litri/m² ogni 2 settimane).
-     - **Fogliare**: Spruzza sulle foglie con nebulizzatore (diluizione 1:1 con acqua) per prevenire funghi come *Oidium* o *Botrytis*.
+2. **Estrazione:**
+   - Immergere il compost in un sacchetto di tessuto (tipo "tea bag" per compost) o direttamente nel secchio.
+   - Aggiungere l'acqua e posizionare l'aeratore sul fondo, assicurandosi che la pietra porosa sia completamente immersa.
+   - **Aerare continuamente** per 24 ore a temperatura ambiente (18-25°C). Evitare la luce diretta per prevenire la crescita di alghe.
 
-4. **Frequenza**:
-   - **Vegetazione**: 1 applicazione ogni 10-15 giorni.
-   - **Fioritura**: Ridurre a 1 applicazione ogni 3 settimane per evitare eccesso di umidità.
+3. **Nutrizione microbica:**
+   - Dopo 12 ore dall'inizio dell'aerazione, aggiungere **1-2 cucchiai di melassa per 10L di acqua** (o 1g/L). Questo alimento favorisce la proliferazione di batteri aerobici e funghi benefici.
 
----
-## Sinergie con altri elementi
-Il tè di compost si integra perfettamente con tecniche avanzate per ottimizzare la cres
+4. **Filtraggio e applicazione:**
+   - Rimuovere il sacchetto di compost e filtrare il liquido con un panno fine per eliminare i residui solidi.
+   - **Applicare entro 4 ore
