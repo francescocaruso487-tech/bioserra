@@ -84,7 +84,7 @@ ELETTRONICA DI POTENZA
 8    CONVERTITORI CON TRASFORMATORI . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  39
 
-8.1    Convertitore Flyback . . . . . . . . .
+8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
 Una conseguenza di ciò è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che attraversa il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
@@ -199,7 +199,7 @@ Corrente di *breakover*
 Il **TRIAC** è un dispositivo a giunzione di tipo p-n-p-n, la cui struttura e schema simbolico sono rappresentati in **Fig. XVIII.1.8**, che possiede anch’esso tre terminali ma riesce a controllare il flusso della corrente in entrambe le direzioni. Si noti che lo schema simbolico evidenzia il fatto che esso è costituito da due SCR collegati tra loro in antiparallelo aventi un unico terminale di controllo indicato come Gate. Gli altri terminali sono indicati con MT1 ed MT2.
 **Fig. XVIII.1.8** Simbolo elettrico e struttura del TRIAC.
 
-Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è positivo rispetto a MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto a MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto al terminale MT2 e viene applicato un impulso negativo rispetto a MT1 sul terminale di Gate. Anche in questo caso, affinché il dispositivo rimanga nello stato di conduzione è necessario che la corrente abbia un valore superiore alla corrente di automantenimento *I<sub>h</sub>*.
+Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è positivo rispetto a MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto a MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto al termine
 La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi particolari semiconduttori.
 
 **Fig. XVIII.1.9** Caratteristica corrente-tensione di un TRIAC.
@@ -354,8 +354,6 @@ Un confronto diretto tra un MOSFET e un IGBT consente di riportare i seguenti ri
 – Tempi di commutazione maggiori per un IGBT rispetto a quelli di un MOSFET.
 
 Il transistor IGBT viene largamente impiegato nella realizzazione di convertitori di tutti i tipi, molto spesso presente in moduli di potenza che contengono i circuiti di protezione del transistor stesso dalle sovracorrenti.
-
-[PAG. 1833]
 ELETTRONICA DI POTENZA
 XVIII-15
 
@@ -383,28 +381,10 @@ negativo
 negativo
 positivo
 
-[PAG. 1835]
+---
+
 ELETTRONICA DI POTENZA
-XVIII-17
-
-Fig. XVIII.1.21 Dispositivi a semiconduttore.
-
-SEMIKRON
-SKKT 106/16 E
-SEMIKRON
-SKDT 145
-
-[PAG. 1836]
 XVIII-18
-ELETTRONICA DI POTENZA
-Fig. XVIII.1.22 Dispositivi a semiconduttore.
-
-SEMIKRON
-SKM 200 GB 128D
-SEMIKRON
-SKM 151 A4R
-SEMIKRON
-SKKT 55
 
 1.8 Reti snubber
 
