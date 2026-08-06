@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-05T05:28:48.333775+00:00",
+  "lastUpdate": "2026-08-06T05:31:04.947782+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,79 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640025709_0",
-      "nome": "Elettrocultura con LED",
-      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "LED grow light",
-        "cavi",
-        "trasformatore"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640025709_4",
-      "nome": "Controllo della temperatura",
-      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della pianta",
-      "materiali": [
-        "termometro",
-        "ventilatore"
-      ],
-      "categoria": "Controllo ambientale",
-      "difficolta": "facile",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640155746_0",
-      "nome": "Elettrocultura per pianta",
-      "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
-      "obiettivo": "Aumentare la resa e la qualità delle piante",
-      "materiali": [
-        "Generatore di campo elettrico",
-        "Elettrodi"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Ricerca scientifica",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640155746_2",
-      "nome": "Fertilizzazione organica",
-      "descrizione": "Utilizzare fertilizzanti organici per aumentare la salute e la resistenza delle piante",
-      "obiettivo": "Aumentare la resa e la qualità delle piante",
-      "materiali": [
-        "Fertilizzanti organici",
-        "Compost"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": "Agricoltura biologica",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "daily_1781640155746_3",
       "nome": "Monitoraggio della temperatura",
@@ -3594,13 +3521,157 @@
       "data_proposta": "2026-08-05",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH bilanciato sull'efficienza del risciacquo in Living Soil: ottimizzazione dell'assorbimento nutrizionale e riduzione dell'accumulo di sali",
+      "ipotesi": "Un pH bilanciato dell'acqua (6.0-7.0) durante il risciacquo delle piante in Living Soil ottimizza l'assorbimento dei nutrienti residui e riduce l'accumulo di sali nelle radici, migliorando la qualità dei fiori e prevenendo bruciature delle punte delle foglie. Secondo il Manuale A, un pH bilanciato è fondamentale per la disponibilità dei nutrienti, mentre il Manuale B sottolinea che il risciacquo con acqua a pH corretto elimina eccessi di fertilizzanti e migliora la qualità della pianta.",
+      "protocollo": [
+        "Preparare 6 piante di pianta (stesso clone e età) in Living Soil, suddivise in 3 gruppi: Gruppo 1 (pH 5.5), Gruppo 2 (pH 6.5), Gruppo 3 (pH 7.0).",
+        "Effettuare il risciacquo con acqua pura (EC < 0.1) a pH controllato per ciascun gruppo, utilizzando un misuratore di pH digitale e soluzioni di correzione (acido citrico per abbassare, bicarbonato per alzare).",
+        "Raccogliere 200 ml di acqua di drenaggio per ciascun gruppo e misurare EC (conducibilità elettrica) e pH per valutare la quantità di sali residui eliminati.",
+        "Dopo 7 giorni, raccogliere campioni di foglie apicali per analisi di clorofilla (con clorofillometro) e osservare visivamente la presenza di bruciature delle punte."
+      ],
+      "materiali": [
+        "6 piante di pianta (stesso clone e età)",
+        "Misuratore di pH digitale (precisione ±0.1)",
+        "Misuratore di EC (conducibilità elettrica)",
+        "Acqua pura (EC < 0.1)",
+        "Soluzioni per correzione pH (acido citrico, bicarbonato di sodio)",
+        "Clorofillometro portatile",
+        "Contenitori per raccolta acqua di drenaggio"
+      ],
+      "durata_giorni": 14,
+      "misure": [
+        "EC e pH dell'acqua di drenaggio (misurati al giorno 1 e 7)",
+        "Indice di clorofilla nelle foglie apicali (misurato al giorno 7)",
+        "Osservazione visiva di bruciature delle punte delle foglie (scala 0-5, giorno 7)",
+        "Peso fresco dei fiori dopo la raccolta (giorno 14)"
+      ],
+      "variabili_controllo": "Stesso clone, stesso substrato Living Soil, stessa quantità di acqua per il risciacquo, stessa esposizione alla luce, stessa temperatura e umidità.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il « risciacquo » delle marijuana",
+      "originalità": "Questo esperimento combina i principi di pH bilanciato (Manuale A) e risciacquo (Manuale B) in un contesto Living Soil, dove l'interazione tra pH e attività microbica è cruciale. Nessuno dei due manuali suggerisce di testare l'effetto del pH durante il risciacquo in Living Soil, né di misurare l'impatto sulla qualità finale dei fiori.",
+      "id": "esp_conn_2026-08-06_001",
+      "data_proposta": "2026-08-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico di Living Soil e Water Curing sulla riduzione dei residui di clorofilla e sali nelle cime di Pianta coltivate outdoor",
+      "ipotesi": "L'uso combinato di vasi con terreno biologico (Living Soil, Manuale A) e trattamento post-raccolta con acqua distillata (Water Curing, Manuale B) ridurrà significativamente i residui di clorofilla, sali e impurità nelle cime rispetto all'uso singolo di uno dei due metodi. Questo perché il Living Soil promuove una crescita equilibrata con minore accumulo di sali (Manuale A), mentre l'acqua distillata rimuove efficacemente i residui superficiali senza alterare i terpeni (Manuale B).",
+      "protocollo": [
+        "1. Preparare 3 gruppi di piante di Pianta (stessa varietà e età) in serra outdoor: Gruppo A (Living Soil + nessun trattamento post-raccolta), Gruppo B (Living Soil + Water Curing con acqua del rubinetto), Gruppo C (Living Soil + Water Curing con acqua distillata).",
+        "2. Al momento della raccolta, prelevare cime equivalenti da ogni gruppo e pesarle per uniformità (es. 100g per gruppo).",
+        "3. Applicare il Water Curing solo ai Gruppi B e C: immergere le cime in acqua a temperatura ambiente per 24 ore (Gruppo B: acqua del rubinetto; Gruppo C: acqua distillata), seguite da risciacquo finale con acqua pulita. Il Gruppo A non riceve trattamento.",
+        "4. Asciugare tutte le cime in condizioni identiche (stessa stanza, temperatura e umidità) per 7 giorni, quindi misurare i residui di clorofilla, sali e impurità tramite test di laboratorio (es. spettrofotometria per clorofilla, conducibilità elettrica per sali)."
+      ],
+      "materiali": [
+        "Terriccio biologico (Living Soil) per tutti i gruppi",
+        "Acqua distillata e acqua del rubinetto (Gruppi B e C)",
+        "Bilancia di precisione (0.1g)",
+        "Contenitori per immersione (es. vaschette in vetro)",
+        "Termometro e igrometro per controllo asciugatura",
+        "Kit di test per residui (clorofilla, sali, terpeni)"
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "Residui di clorofilla (valore numerico in mg/g di cima)",
+        "Conducibilità elettrica (µS/cm) per sali residui",
+        "Peso secco finale (per valutare perdita di massa)",
+        "Analisi sensoriale (sapore erbaceo/amaro tramite panel di 5 persone)"
+      ],
+      "variabili_controllo": "Stessa varietà di pianta, stessa età, stesso peso iniziale delle cime, stessa temperatura e umidità durante asciugatura, stesso metodo di coltivazione (Living Soil) per tutti i gruppi.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento non è descritto in nessuno dei due manuali singolarmente. Il Manuale A non menziona trattamenti post-raccolta, mentre il Manuale B non considera l'impatto del suolo sulla qualità delle cime. La sinergia tra Living Soil e Water Curing è una combinazione originale che sfrutta i punti di forza di entrambi i metodi per ottimizzare la qualità finale del prodotto.",
+      "id": "esp_conn_2026-08-06_002",
+      "data_proposta": "2026-08-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate coltivate in serra outdoor",
+      "ipotesi": "L'applicazione di concimazione organica (Manuale A) in un substrato Living Soil arricchisce la rizosfera di microrganismi simbionti che, in sinergia con semi di piante CBD femminizzate (Manuale B), aumentano la produzione di CBDV (cannabidivarina) grazie a un metabolismo radicale più efficiente. Questo effetto è misurabile in termini di concentrazione di CBDV nelle infiorescenze a fine ciclo, rispetto a un controllo con concimazione minerale.",
+      "protocollo": [
+        "Preparare due letti di coltivazione identici in serra outdoor (BioSerra Caserta) con substrato Living Soil (compost maturo, biochar, micorrize, lombrichi e copertura con pacciamatura organica).",
+        "Seminare in entrambi i letti semi di pianta femminizzati ad alto contenuto di CBD (es. varietà 'CBDV Rich' da seedbank certificata, Manuale B) in file alternate, mantenendo distanza e densità identiche. Un letto riceverà solo acqua (controllo), l'altro sarà concimato con tè di compost aerato (Manuale A) ogni 7 giorni.",
+        "Monitorare settimanalmente pH del suolo (6.0-7.0), umidità (60-70% WHC) e temperatura (18-26°C). Effettuare analisi del suolo pre e post esperimento per valutare la biodiversità microbica (test PLFA o DNA metabarcoding).",
+        "A fine ciclo (30 giorni dalla fioritura), raccogliere campioni di infiorescenze da 5 piante per letto, essiccare in modo identico e inviare per analisi HPLC per quantificare CBDV, CBD e THC. Confrontare i risultati tra i due trattamenti."
+      ],
+      "materiali": [
+        "Semi di pianta femminizzati 'CBDV Rich' (varietà certificata, Manuale B)",
+        "Substrato Living Soil (compost, biochar, micorrize, lombrichi, pacciamatura organica, Manuale A)",
+        "Tè di compost aerato (preparato con compost maturo, acqua non clorata, melassa e micorrize, Manuale A)",
+        "Strumenti per analisi suolo (pHmetro, termometro, igrometro, kit umidità WHC)",
+        "Laboratorio di analisi HPLC per cannabinoidi (CBDV, CBD, THC)"
+      ],
+      "durata_giorni": 90,
+      "misure": [
+        "Concentrazione di CBDV nelle infiorescenze (mg/g, HPLC) - confronto tra trattamento organico e controllo",
+        "Biodiversità microbica del suolo (indici di ricchezza e abbondanza microbica, test PLFA o DNA metabarcoding)",
+        "Resa per pianta (grammi di infiorescenze secche)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (serra identica, stessa esposizione solare, stessa irrigazione), metodo di essiccazione e analisi di laboratorio.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento combina specificamente la concimazione organica Living Soil (Manuale A) con l'uso di semi CBDV (Manuale B) per testare un effetto sinergico non documentato nei manuali singolarmente. Mentre il Manuale A si concentra sulla concimazione organica generica e il Manuale B sulla genetica dei semi, l'esperimento valuta l'interazione tra suolo e genetica per un cannabinoide specifico (CBDV), in un contesto di coltivazione outdoor Living Soil.",
+      "id": "esp_conn_2026-08-06_003",
+      "data_proposta": "2026-08-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra vasi biologici e semi femminizzati su resa in CBD in coltivazione outdoor Living Soil",
+      "ipotesi": "L'uso combinato di vasi biologici (Manuale A: terreno ricco di micorrize e sostanza organica) e semi femminizzati (Manuale B: piante produttive al 100%) in un sistema Living Soil outdoor aumenterà la resa in CBD/THC del 20-30% rispetto a controlli con vasi standard e semi regolari, grazie a una maggiore esplorazione radicale e assorbimento dei nutrienti. La sinergia tra radici sane (vasi biologici) e piante produttive (semi femminizzati) ottimizza l'efficienza fotosintetica e la biosintesi dei cannabinoidi.",
+      "protocollo": [
+        "Preparare 20 vasi da 20L in terracotta non smaltata (per traspirazione) e 20 vasi in plastica nera (controllo). Riempire tutti i vasi con lo stesso substrato Living Soil (compost maturo, perlite, biochar, micorrize e vermicompost in rapporto 60:20:10:5:5).",
+        "Seminare 10 semi femminizzati CBD-dominant (es. varietà 'ACDC' o 'Charlotte's Web') in 10 vasi biologici e 10 semi regolari della stessa genetica in 10 vasi biologici. Ripetere lo stesso schema con 10 vasi in plastica. Etichettare tutti i vasi con codici QR per tracciabilità.",
+        "Posizionare i vasi in serra outdoor BioSerra Caserta, distribuiti casualmente in 4 blocchi (2 blocchi per tipo di vaso × 2 blocchi per tipo di seme). Mantenere irrigazione a goccia con sola acqua (no nutrienti aggiuntivi) per 30 giorni, monitorando umidità e temperatura.",
+        "Al giorno 30, prelevare campioni di foglie apicali da 3 piante per gruppo (6 gruppi totali) per analisi HPLC del contenuto di CBD, THC e terpeni. Misurare anche il peso secco delle radici e l'altezza delle piante."
+      ],
+      "materiali": [
+        "20 vasi in terracotta non smaltata (20L)",
+        "20 vasi in plastica nera (20L)",
+        "Substrato Living Soil (compost, perlite, biochar, micorrize, vermicompost)",
+        "Semi femminizzati CBD-dominant (es. 'ACDC')",
+        "Semi regolari della stessa genetica",
+        "Sistema di irrigazione a goccia",
+        "pHmetro e termometro",
+        "Bilancia di precisione (0.01g)",
+        "HPLC per analisi cannabinoidi",
+        "Codici QR per tracciabilità"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBD/THC (HPLC) per campione",
+        "Peso secco delle radici (g)",
+        "Altezza delle piante (cm)",
+        "Resa totale in biomassa secca (g)",
+        "Analisi statistica (ANOVA) per confrontare gruppi"
+      ],
+      "variabili_controllo": "Genetica delle piante, volume del vaso, tipo di substrato, quantità di acqua, esposizione solare, temperatura, umidità, metodo di irrigazione.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina due concetti chiave (vasi biologici + semi femminizzati) in un protocollo Living Soil outdoor, misurando la resa in CBD/THC. Nessuno dei due manuali suggerisce di testare questa specifica sinergia in un sistema water-only con substrato biologico, né di isolare l'effetto combinato su piante femminizzate vs regolari in condizioni outdoor.",
+      "id": "esp_conn_2026-08-06_004",
+      "data_proposta": "2026-08-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-05",
-    "nuove_proposte": 2,
+    "data": "2026-08-06",
+    "nuove_proposte": 4,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
