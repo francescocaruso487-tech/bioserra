@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-05
+aggiornato: 2026-08-06
 pdf_count: 6
 ---
 
@@ -12,30 +12,37 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (lombrichi, artropodi), che scompongono la materia in molecole semplici (humus, NPK, oligoelementi) assimilabili dalle piante. In un **Living Soil** outdoor, il compost agisce come **polizza assicurativa nutrizionale**, rilasciando lentamente nutrienti durante la stagione e migliorando la struttura del suolo (porosità, capacità di ritenzione idrica, CEC).
+Il **compostaggio organico** è un processo biologico aerobico che trasforma materiali organici di scarto (come scarti vegetali, letame, fondi di caffè, foglie secche) in un ammendante ricco di nutrienti, il **compost**, attraverso l’azione di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari). Questo processo non solo riduce i rifiuti, ma produce un substrato vivo e bilanciato, fondamentale per il **Living Soil** outdoor, soprattutto in climi mediterranei come quello di Caserta (41°N), dove l’evaporazione e la mineralizzazione rapida del suolo richiedono un apporto costante di materia organica stabile.
 
-Il meccanismo chiave è la **termofilia**: una fase iniziale (3-7 giorni) in cui la temperatura sale a 55-65°C grazie all’attività microbica, uccidendo patogeni e semi di malerbe, seguita da una fase di raffreddamento e maturazione (2-6 mesi) in cui si formano composti umici stabili. Per piante in **fase vegetativa** (come la cannabis in serra a Caserta), un compost maturo e ben strutturato garantisce un apporto costante di azoto organico, fondamentale per lo sviluppo fogliare e radicale, senza rischi di bruciature da fertilizzanti chimici.
+Il meccanismo si basa su **tre fasi principali**:
+1. **Fase mesofila** (20-40°C): decomposizione iniziale da parte di batteri e funghi, con produzione di calore.
+2. **Fase termofila** (55-65°C): attivazione di microrganismi termofili che degradano lignina e cellulosa, eliminando patogeni e semi di infestanti.
+3. **Fase di maturazione** (20-40°C): stabilizzazione del compost, arricchimento in humus e nutrienti complessi (NPK, microelementi) pronti per l’assorbimento radicale.
+
+Un compost di qualità migliora la **struttura del suolo** (aerazione, capacità di ritenzione idrica), stimola la **biomassa microbica** (funghi micorrizici, batteri solubilizatori di fosforo) e fornisce nutrienti a lento rilascio, essenziali durante la **fase vegetativa** delle piante, quando la domanda di azoto e potassio è massima [web_zamn_288-fase-vegetativa-cannabis].
+
+---
 
 ## Come si applica in serra
-Per una serra **outdoor Living Soil** a Caserta (41°N), segui questo protocollo pratico:
 
-1. **Selezione dei materiali**:
-   - **Verde** (60%): scarti di cucina (resti di frutta/verdura, fondi di caffè), erba fresca, ortaggi, letame fresco (coniglio, cavallo, pollo).
-   - **Marroni** (40%): paglia, foglie secche, cartone non stampato, rametti triturati, trucioli di legno non trattato.
-   - *Evita*: carne, latticini, agrumi in eccesso, piante malate (es. con funghi).
+### **1. Selezione e bilanciamento dei materiali**
+- **Materiali "verdi" (ricchi di azoto, umidi)**:
+  - Scarti di frutta/verdura (buccia di banana, fondi di caffè)
+  - Letame fresco (coniglio, cavallo, pollo – evitare suino/bovino se non compostato)
+  - Erba tagliata, residui di potatura verde
+  - **Rapporto**: 1 parte verde : 2-3 parti marroni.
 
-2. **Struttura del cumulo**:
-   - Crea un cumulo a **piramide tronca** (1-1.5m di base, 1m di altezza) in zona ombreggiata della serra, su terreno nudo (non su cemento).
-   - Alterna strati di 10-15cm di verdi e marroni, bagnando leggermente ogni strato (umidità simile a una spugna strizzata).
+- **Materiali "marroni" (ricchi di carbonio, secchi)**:
+  - Foglie secche, paglia, cartone non stampato
+  - Segatura di legno non trattato (in piccole quantità)
+  - Gusci di frutta secca, carta da giornale
+  - **Evita**: agrumi, carne, latticini, piante malate (pericolo di patogeni).
 
-3. **Controllo parametri**:
-   - **Temperatura**: Usa un termometro da compost (sonda 30cm di profondità). Se supera 65°C, gira il cumulo per ossigenare; se scende sotto 55°C, aggiungi verdi o copri con tessuto traspirante.
-   - **Umidità**: Mantieni al 50-60% (test: stringi un pugno di compost; dovrebbe gocciolare 2-3 gocce).
-   - **Aerazione**: Rivolta ogni **2-3 giorni** con forca da compost, spostando il materiale esterno verso il centro.
+### **2. Preparazione del cumulo**
+- **Ubicazione**: In serra, preferibilmente in zona ombreggiata (evita il sole diretto che asciuga il cumulo).
+- **Struttura**: Sovrapporre i materiali a strati (5-10 cm per tipo), iniziando con uno strato di rami grossi per aerazione alla base.
+- **Umidità**: Il cumulo deve essere umido come una spugna strizzata (60-70% di umidità). Se troppo secco, aggiungere acqua; se troppo bagnato, aggiungere marroni.
 
-4. **Maturazione**:
-   - Dopo 4-6 settimane, il cumulo si raffredda (30-40°C). A questo punto, setaccia con una rete a maglia 1cm per separare il compost maturo (usalo come **top dressing** o **ammendante**) dal materiale grossolano (da reintrodurre nel cumulo).
-
-5. **Applicazione in serra**:
-   - **Pre-semina**: Incorpora 3-5cm di compost maturo nel primo 20cm di suolo, mescolando con una forca.
-   -
+### **3. Gestione termica e rivoltamenti**
+- **Temperatura**: Monitorare con sonda termica. Mantenere tra **55-65°C** per 2-3 settimane (fase termofila). Se supera 70°C, aggiungere acqua e marroni per raffreddare.
+- **Rivoltamenti**: Ogni **2-3 giorni**
