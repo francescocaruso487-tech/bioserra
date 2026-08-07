@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-06
+aggiornato: 2026-08-07
 pdf_count: 6
 ---
 
@@ -12,37 +12,32 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico aerobico che trasforma materiali organici di scarto (come scarti vegetali, letame, fondi di caffè, foglie secche) in un ammendante ricco di nutrienti, il **compost**, attraverso l’azione di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari). Questo processo non solo riduce i rifiuti, ma produce un substrato vivo e bilanciato, fondamentale per il **Living Soil** outdoor, soprattutto in climi mediterranei come quello di Caserta (41°N), dove l’evaporazione e la mineralizzazione rapida del suolo richiedono un apporto costante di materia organica stabile.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi macro (come lombrichi e artropodi), che scompongono la materia organica in composti più semplici e stabili. Il compost maturo è un **Living Soil** ideale per serre outdoor come quelle di Caserta (41°N), poiché migliora la struttura del suolo, la capacità di ritenzione idrica, l’aerazione e la biodiversità microbica, fondamentali per la fase vegetativa delle piante.
 
-Il meccanismo si basa su **tre fasi principali**:
-1. **Fase mesofila** (20-40°C): decomposizione iniziale da parte di batteri e funghi, con produzione di calore.
-2. **Fase termofila** (55-65°C): attivazione di microrganismi termofili che degradano lignina e cellulosa, eliminando patogeni e semi di infestanti.
-3. **Fase di maturazione** (20-40°C): stabilizzazione del compost, arricchimento in humus e nutrienti complessi (NPK, microelementi) pronti per l’assorbimento radicale.
-
-Un compost di qualità migliora la **struttura del suolo** (aerazione, capacità di ritenzione idrica), stimola la **biomassa microbica** (funghi micorrizici, batteri solubilizatori di fosforo) e fornisce nutrienti a lento rilascio, essenziali durante la **fase vegetativa** delle piante, quando la domanda di azoto e potassio è massima [web_zamn_288-fase-vegetativa-cannabis].
+Il meccanismo chiave del compostaggio si basa sul **bilancio tra carbonio (C) e azoto (N)**, dove i materiali "verdi" (ricchi di N, come scarti di cucina o erba fresca) forniscono energia ai microrganismi, mentre i materiali "marroni" (ricchi di C, come foglie secche o paglia) strutturano il compost e ne regolano la porosità. La temperatura (55–65°C) è un indicatore della salute del processo: un compost troppo freddo (<40°C) indica scarsa attività microbica, mentre temperature eccessive (>70°C) uccidono i microrganismi benefici. Il compost di qualità, oltre a nutrire le piante, stimola la **resilienza del suolo** contro patogeni e stress ambientali, come dimostrato nei PDF [web_zamn_293-suolo-cannabis-terricci] e [web_zamn_288-fase-vegetativa-cannabis].
 
 ---
 
 ## Come si applica in serra
 
-### **1. Selezione e bilanciamento dei materiali**
-- **Materiali "verdi" (ricchi di azoto, umidi)**:
-  - Scarti di frutta/verdura (buccia di banana, fondi di caffè)
-  - Letame fresco (coniglio, cavallo, pollo – evitare suino/bovino se non compostato)
-  - Erba tagliata, residui di potatura verde
-  - **Rapporto**: 1 parte verde : 2-3 parti marroni.
-
-- **Materiali "marroni" (ricchi di carbonio, secchi)**:
-  - Foglie secche, paglia, cartone non stampato
+### **1. Raccolta dei materiali**
+- **Materiali verdi (ricchi di N, umidi, 30% del totale):**
+  - Scarti di frutta/verdura (non agrumi o carne)
+  - Erba fresca (non trattata con pesticidi)
+  - Fondi di caffè, bustine di tè (senza graffette)
+  - Letame fresco (es. cavallo, mucca, pollo – ben decomposto)
+- **Materiali marroni (ricchi di C, secchi, 70% del totale):**
+  - Foglie secche, paglia, fieno
+  - Cartone non stampato (senza inchiostro)
   - Segatura di legno non trattato (in piccole quantità)
-  - Gusci di frutta secca, carta da giornale
-  - **Evita**: agrumi, carne, latticini, piante malate (pericolo di patogeni).
+  - Gusci di frutta a guscio (noci, mandorle) triturati
 
 ### **2. Preparazione del cumulo**
-- **Ubicazione**: In serra, preferibilmente in zona ombreggiata (evita il sole diretto che asciuga il cumulo).
-- **Struttura**: Sovrapporre i materiali a strati (5-10 cm per tipo), iniziando con uno strato di rami grossi per aerazione alla base.
-- **Umidità**: Il cumulo deve essere umido come una spugna strizzata (60-70% di umidità). Se troppo secco, aggiungere acqua; se troppo bagnato, aggiungere marroni.
+- **Ubicazione:** Scegli un’area ombreggiata e ben drenata in serra, lontano da fonti di calore dirette.
+- **Struttura:** Costruisci un cumulo a forma di tronco di cono (1–1,5 m di altezza) per ottimizzare aerazione e ritenzione di umidità.
+- **Bilanciamento C/N:** Mescola i materiali in strati alternati (es. 1 parte verde : 2 parti marroni) o tritura tutto per accelerare la decomposizione.
 
-### **3. Gestione termica e rivoltamenti**
-- **Temperatura**: Monitorare con sonda termica. Mantenere tra **55-65°C** per 2-3 settimane (fase termofila). Se supera 70°C, aggiungere acqua e marroni per raffreddare.
-- **Rivoltamenti**: Ogni **2-3 giorni**
+### **3. Gestione del processo**
+- **Umidità:** Mantieni il cumulo umido come una spugna strizzata (60–70% di umidità). In serra, copri con un telo traspirante per evitare eccessi di pioggia o sole.
+- **Aerazione:** Rivolta il cumulo ogni **2–3 giorni** con una forca o un aeratore per ossigenare i microrganismi e prevenire odori (anaerobiosi).
+- **Temperatura:** Monitora con un termometro da compost. Se supera i **65°C
