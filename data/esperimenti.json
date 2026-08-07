@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-06T05:31:04.947782+00:00",
+  "lastUpdate": "2026-08-07T04:36:17.277444+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,41 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640155746_3",
-      "nome": "Monitoraggio della temperatura",
-      "descrizione": "Utilizzare termometri per monitorare la temperatura e regolare l'ambiente",
-      "obiettivo": "Mantenere una temperatura ottimale per la crescita delle piante",
-      "materiali": [
-        "Termometri",
-        "Sistema di riscaldamento/raffreddamento"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": "Tecnologia agricola",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640155746_4",
-      "nome": "Pruning selettiva",
-      "descrizione": "Utilizzare la tecnica di pruning per regolare la crescita e la forma delle piante",
-      "obiettivo": "Aumentare la resa e la qualità delle piante",
-      "materiali": [
-        "Forbici da giardinaggio"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Tecnica di coltivazione",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "daily_1781640224648_0",
       "nome": "Elettrocultura con impulsi elettromagnetici",
@@ -3665,13 +3630,76 @@
       "data_proposta": "2026-08-06",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate coltivate in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV nelle piante di pianta femminizzate. Questo avviene grazie a un metabolismo radicale potenziato, che favorisce la sintesi di cannabinoidi secondari in condizioni di coltivazione outdoor Living Soil. L'ipotesi si basa sulla sinergia tra la biodiversità microbica del suolo (Manuale A) e la genetica delle piante selezionate per alto CBDV (Manuale B).",
+      "protocollo": [
+        "Preparare due lotti identici di terreno Living Soil (100% organico, senza fertilizzanti sintetici) in vasi da 20L, posizionati in serra outdoor a Caserta. Ogni lotto contiene 5 piante di pianta femminizzate della stessa varietà ad alto CBDV (es. 'CBDV Auto' di una seedbank affidabile, Manuale B).",
+        "Applicare concimazione organica solo al lotto sperimentale: compost maturo (20% del volume del vaso) + micorrize (Glomus spp., 5g per vaso) + batteri benefici (Bacillus spp., 1g per vaso). Il lotto di controllo riceve solo terreno Living Soil senza aggiunte. Irrigare entrambi i lotti con sola acqua (water-only, Manuale A).",
+        "Mantenere condizioni ambientali identiche (temperatura, umidità, luce) per entrambi i lotti. Monitorare settimanalmente il pH del suolo (obiettivo: 6.0-6.5) e l'umidità (60-70%).",
+        "Dopo 30 giorni, raccogliere i campioni di foglie apicali da ogni pianta (5 piante per lotto). Misurare il contenuto di CBDV tramite cromatografia su strato sottile (TLC) o kit di analisi rapida (es. CBDV Test Strips). Confrontare i risultati tra lotto sperimentale e controllo."
+      ],
+      "materiali": [
+        "Semi di pianta femminizzati ad alto CBDV (Manuale B)",
+        "Terreno Living Soil (100% organico, senza fertilizzanti sintetici)",
+        "Compost maturo, micorrize (Glomus spp.), batteri benefici (Bacillus spp.)",
+        "Vasi da 20L, kit di analisi CBDV (TLC o test strips), pHmetro, igrometro"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV nelle foglie apicali (mg/g di peso secco)",
+        "Metodo: cromatografia su strato sottile (TLC) o kit di analisi rapida (es. CBDV Test Strips). Confrontare i valori medi tra lotto sperimentale e controllo.",
+        "Verifica: aumento significativo (>20%) del CBDV nel lotto sperimentale rispetto al controllo."
+      ],
+      "variabili_controllo": "Varietà di pianta (stessa genetica), condizioni ambientali (temperatura, umidità, luce), tipo di terreno (Living Soil identico), metodo di raccolta e analisi (stesso protocollo).",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento combina specificamente la concimazione organica (Manuale A) con la genetica delle piante ad alto CBDV (Manuale B), creando una sinergia unica non presente nei due manuali singolarmente. L'approccio 'water-only' in Living Soil outdoor è innovativo per valutare l'effetto dei microrganismi sul metabolismo dei cannabinoidi secondari.",
+      "id": "esp_conn_2026-08-07_001",
+      "data_proposta": "2026-08-07",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico di Living Soil e semi femminizzati sulla resa in CBD e sviluppo radicale in serra outdoor",
+      "ipotesi": "L'utilizzo combinato di vasi con terreno biologico (Living Soil) e semi femminizzati (Manuale A + Manuale B) aumenterà la resa in CBD/THC e la biomassa radicale rispetto a controlli con semi regolari o terreno non biologico. Questo perché il Living Soil favorisce lo sviluppo radicale (Manuale A) e i semi femminizzati garantiscono piante produttive al 100% (Manuale B), eliminando sprechi di risorse e massimizzando l'assorbimento di nutrienti.",
+      "protocollo": [
+        "Preparare 4 vasi identici (diametro 30 cm, altezza 40 cm) con Living Soil (compost maturo, biochar, micorrize, lombrichi) e 4 vasi con terreno convenzionale (controllo). Suddividere ogni gruppo in 2 sottogruppi: uno con semi femminizzati CBD-dominant (varietà USA, <1% THC) e uno con semi regolari della stessa genetica.",
+        "Pianta 2 semi femminizzati per vaso e 2 semi regolari per vaso, mantenendo la stessa densità di semina. Posizionare i vasi in serra outdoor con esposizione solare uniforme e irrigazione a goccia (water-only).",
+        "Monitorare settimanalmente l'altezza delle piante, il numero di foglie e lo sviluppo radicale (tramite ispezione visiva non invasiva). Misurare il pH e la conducibilità elettrica del suolo ogni 10 giorni.",
+        "A 30 giorni dalla semina, raccogliere le piante, separare radici e parte aerea, asciugarle e pesare la biomassa secca. Estrarre i cannabinoidi tramite metodo standard (Soxhlet o CO2 supercritica) e quantificare CBD, THC e CBG tramite HPLC."
+      ],
+      "materiali": [
+        "8 vasi in terracotta (diametro 30 cm, altezza 40 cm)",
+        "Living Soil pre-preparato (compost, biochar, micorrize, lombrichi), terreno convenzionale di controllo, semi femminizzati CBD-dominant (<1% THC), semi regolari della stessa genetica, sistema di irrigazione a goccia, pH-metro, conduttivimetro, bilancia analitica, attrezzatura per estrazione cannabinoidi (Soxhlet o CO2), HPLC"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Biomassa radicale secca (g) e biomassa aerea secca (g) per pianta",
+        "Contenuto di CBD, THC e CBG (% sul peso secco) tramite HPLC",
+        "Verifica della resa totale in cannabinoidi (mg/pianta) e rapporto CBD/THC",
+        "Confronto statistico (test t di Student) tra gruppi per identificare differenze significative"
+      ],
+      "variabili_controllo": "Genetica delle piante, condizioni ambientali (luce, temperatura, umidità), volume di terreno per vaso, metodo di irrigazione, durata della coltivazione",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina specificamente i concetti chiave dei due manuali (Living Soil + semi femminizzati) per testare una sinergia non esplorata nei manuali stessi. Mentre il Manuale A si concentra sul terreno biologico e il Manuale B sui semi, questa ricerca valuta l'interazione diretta tra i due elementi in un contesto di serra outdoor, con misure quantitative precise di biomassa e cannabinoidi.",
+      "id": "esp_conn_2026-08-07_002",
+      "data_proposta": "2026-08-07",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-06",
-    "nuove_proposte": 4,
+    "data": "2026-08-07",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
