@@ -203,7 +203,8 @@ Corrente di *breakover*
 Il **TRIAC** è un dispositivo a giunzione di tipo p-n-p-n, la cui struttura e schema simbolico sono rappresentati in **Fig. XVIII.1.8**, che possiede anch’esso tre terminali ma riesce a controllare il flusso della corrente in entrambe le direzioni. Si noti che lo schema simbolico evidenzia il fatto che esso è costituito da due SCR collegati tra loro in antiparallelo aventi un unico terminale di controllo indicato come Gate. Gli altri terminali sono indicati con MT1 ed MT2.
 **Fig. XVIII.1.8** Simbolo elettrico e struttura del TRIAC.
 
-Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è positivo rispetto a MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto a MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto al
+Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è positivo rispetto a MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto a MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto a MT2.
+
 La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi particolari semiconduttori.
 
 **Fig. XVIII.1.9** Caratteristica corrente-tensione di un TRIAC.
@@ -269,7 +270,6 @@ dU/dt
 ∘
 
 Se l’intensità di corrente I<sub>AK</sub> è tale che la somma dei guadagni dei due dispositivi (funzione della corrente I<sub>C</sub> di ciascuno) supera l’unità, il dispositivo continua a condurre anche in assenza dell’impulso di Gate.
-
 La Fig. XVIII.1.12 illustra l’andamento delle correnti durante la fase di conduzione di un dispositivo. La differenza principale rispetto agli SCR tradizionali risiede nel valore dei guadagni.
 
 [PAG 1830]
@@ -322,7 +322,6 @@ XVIII-13
 Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor.
 
 **Fig. XVIII.1.15** Caratteristica corrente-tensione di un GTO.
-
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
 
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento, dovuto a perdite di commutazione estremamente contenute.
