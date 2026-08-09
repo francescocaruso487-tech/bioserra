@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-08
+aggiornato: 2026-08-09
 pdf_count: 1
 ---
 
@@ -12,33 +12,32 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. I funghi micorrizici arbuscolari (AMF) colonizzano le radici, estendendo la rete iphea (ife) nel substrato e aumentando la superficie di assorbimento idrico e minerale fino a **100 volte**. Questo processo non solo ottimizza l’assorbimento di fosforo (P), azoto (N) e micronutrienti, ma migliora anche la resistenza a stress idrici, patogeni e tossine del suolo. Inoltre, le micorrize stimolano la produzione di **glomalina**, una glicoproteina che aggrega le particelle del suolo, migliorando la struttura e la ritenzione idrica.
+Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello coltivato a Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: il fungo, attraverso i suoi ife, estende la superficie radicale della pianta fino a 100 volte, migliorando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre la pianta fornisce al fungo carboidrati prodotti dalla fotosintesi. In condizioni di stress idrico o nutrizionale, le micorrize agiscono come una "rete internet sotterranea", consentendo alle piante di condividere risorse e segnalare pericoli (es. attacchi di patogeni). Studi dimostrano che in suoli poveri o disturbati (come quelli italiani spesso compattati o trattati con chimica), l’inoculazione artificiale può accelerare la rigenerazione della biodiversità microbica, riducendo la necessità di fertilizzanti sintetici.
 
-In ambiente **outdoor a Caserta (41°N)**, dove le temperature estive possono superare i 35°C e i terreni spesso presentano carenze di fosforo, l’inoculazione mirata di micorrize diventa un alleato strategico. Studi dimostrano che piante colonizzate da AMF mostrano un **aumento della biomassa radicale** e una maggiore tolleranza a condizioni di siccità, grazie alla capacità delle ife di esplorare micro-pori del suolo inaccessibili alle radici. Inoltre, la simbiosi favorisce la **comunità microbica benefica**, creando un ecosistema radicale più resiliente.
+Il meccanismo d’azione delle micorrize si divide in due tipologie principali:
+- **Endomicorrize (AMF)**: Penetrano nelle cellule radicali (es. *Glomus*, *Rhizophagus*), comuni in oltre l’80% delle piante terrestri, incluse cannabis e ortaggi.
+- **Ectomicorrize**: Avvolgono le radici senza penetrarle (tipiche di alberi come querce o pini).
+In serra outdoor, le AMF sono le più efficaci per colture annuali, poiché colonizzano rapidamente e migliorano la resilienza a patogeni come *Phytophthora* o *Fusarium*. L’efficacia dipende da fattori ambientali: temperature tra 15-30°C, pH del suolo tra 5.5-7.5, e umidità costante ma non eccessiva. In climi mediterranei come quello casertano, l’applicazione pre-trapianto (primavera) massimizza i benefici prima dell’estate secca.
 
 ---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** in serra a Caserta, l’inoculazione delle micorrize deve seguire un protocollo preciso per massimizzare la colonizzazione:
+**Materiali necessari**:
+- Inoculo micorrizico (polvere, gel o granuli) a base di *Glomus intraradices* o *Rhizophagus irregularis* (es. MycoApply, Plant Success).
+- Acqua non clorata (usare filtro a carbone attivo o lasciar decantare 24h).
+- Siringa o spruzzino per applicazione localizzata.
 
+**Procedura passo-passo**:
 1. **Preparazione del substrato**:
-   - Assicurarsi che il terreno sia **umido ma non zuppo** (evitare ristagni, come indicato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
-   - Mescolare l’inoculo micorrizico (es. *Glomus intraradices* o *Rhizophagus irregularis*) direttamente nel substrato al momento del trapianto, a una profondità di **5–10 cm** dalla superficie.
+   - Assicurarsi che il suolo sia umido ma non bagnato (evitare ristagni, vedi [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
+   - Se si usa terriccio nuovo, mescolare 5-10g di inoculo per ogni 10L di substrato prima del trapianto.
 
-2. **Applicazione diretta alle radici**:
-   - Al trapianto, distribuire **5–10 g di inoculo per pianta** direttamente sul pane di terra delle radici, evitando il contatto con il colletto.
-   - Coprire con uno strato sottile di **compost maturo** (ricco di materia organica) per proteggere le ife dalla luce e mantenere umidità.
+2. **Applicazione al trapianto**:
+   - Sciogliere 5-10g di inoculo in 1L d’acqua per ogni pianta.
+   - Versare direttamente nel solco di trapianto o spruzzare sulle radici nude (se trapianto da vaso).
+   - Coprire immediatamente con terreno per proteggere le ife dalla luce e dall’essiccamento.
 
-3. **Condizioni post-inoculo**:
-   - **Evitare fungicidi chimici** per almeno **30 giorni** dopo l’applicazione, poiché possono uccidere i funghi benefici (vedi [web_zamn_335-conservare-cannabis]).
-   - Mantenere il suolo **leggermente umido** (non bagnato) per favorire la germinazione delle spore micorriziche.
-   - **Non lavare le radici** nei primi 15 giorni (come suggerito in [web_zamn_302-lavaggio-delle-radici]), per non disturbare la colonizzazione.
-
-4. **Fertilizzazione successiva**:
-   - Preferire fertilizzanti **organici a lenta cessione** (es. humus di lombrico, guano) con un rapporto NPK bilanciato per la fase di crescita (es. 3-2-4 in vegetazione, come indicato in [web_zamn_308-rapporti-npk]).
-   - Evitare eccessi di fosforo (P) nei primi 30 giorni, poiché può inibire la colonizzazione micorrizica.
-
----
-
-## Sinergie con altri elementi
-Le micorrize interagiscono posit
+3. **Post-trapianto**:
+   - Mantenere umidità costante per 2-3 settimane (irrigare a goccia o con nebulizzatore).
+   - Evitare fungicidi chimici (inclusi rame e zolfo) per almeno 30 giorni dopo l’inoculazione, poiché uccidono anche i funghi benefici [web_zamn_335-conservare-cannabis].
+   - In caso di stress idrico, us
