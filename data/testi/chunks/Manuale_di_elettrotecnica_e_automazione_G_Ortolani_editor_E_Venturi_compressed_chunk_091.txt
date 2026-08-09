@@ -279,9 +279,6 @@ ELETTRONICA DI POTENZA
 Un elevato valore dei guadagni comporta una bassa resistenza in conduzione e, di conseguenza, una piccola caduta di tensione durante la conduzione, oltre a richiedere correnti di pilotaggio al Gate ridotte. Gli SCR vengono realizzati con il valore più alto possibile dei guadagni, per cui, quando sono attraversati da corrente, la somma dei loro guadagni supera l’unità: il dispositivo rimane in conduzione e non è possibile bloccarne la conduzione.
 Il valore minimo di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come corrente di automantenimento I<sub>h</sub>.
 
-Fig. XVIII.1.12 Correnti durante la fase di conduzione del GTO.
-La Fig. XVIII.1.13 mostra l’andamento del guadagno di una giunzione in funzione della corrente di collettore (I<sub>C</sub>) e della tensione tra collettore ed emettitore (U<sub>CE</sub>).
-
 Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
 Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura costruttiva, in modo che la somma dei guadagni sia appena superiore all’unità durante la conduzione; ciò consente di bloccare la conduzione del dispositivo polarizzando inversamente il Gate. Si noti che valori più bassi dei guadagni richiedono correnti di pilotaggio più elevate. La transizione da ON a OFF è ottenuta applicando una polarizzazione inversa al terminale di controllo G, che costringe la corrente del transistor PNP a uscire dal Gate invece di entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
 
