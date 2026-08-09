@@ -30,13 +30,18 @@
         "germoglio": "2026-04-23",
         "giorni_vita": 108,
         "ore_luce_oggi": 4.5,
-        "fase": "Fioritura",
+        "fase": "Taglio",
         "giorni_a_raccolta": 18,
         "giorni_a_essiccazione": 33,
         "giorni_a_concia": 53,
-        "data_raccolta": "2026-08-27",
+        "data_raccolta": "2026-08-09",
         "data_essiccazione": "2026-09-11",
-        "data_concia": "2026-10-01"
+        "data_concia": "2026-10-01",
+        "override": {
+          "currentPhase": "taglio",
+          "savedAt": "2026-08-09T14:29:23.536Z",
+          "harvestDate": "2026-08-09"
+        }
       },
       {
         "id": 2,
