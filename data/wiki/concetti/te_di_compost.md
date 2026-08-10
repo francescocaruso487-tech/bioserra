@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-09
+aggiornato: 2026-08-10
 pdf_count: 8
 ---
 
@@ -12,29 +12,42 @@ pdf_count: 8
 # Te di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dal compost maturo, progettato per arricchire il suolo o le piante con microrganismi benefici, nutrienti solubili e sostanze umiche. Questo preparato funziona come un "probiotico" per il suolo, stimolando la biodiversità microbica e migliorando la salute delle piante attraverso meccanismi di **competizione biologica** (contro patogeni), **mobilitazione dei nutrienti** (es. fosforo, azoto) e **produzione di fitormoni** (auxine, citochinine). In particolare, i batteri aerobici (come *Pseudomonas* e *Bacillus*) e i funghi micorrizici presenti nel compost tea formano una rete simbiotica con le radici, potenziando l’assorbimento idrico e minerale. Inoltre, le sostanze umiche agiscono come **chelanti naturali**, rendendo i nutrienti più disponibili per le piante.
+Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dal compost maturo, progettato per arricchire il suolo o le piante con microrganismi benefici, nutrienti solubili e sostanze umiche. Questo preparato funziona come un "probiotico" per il suolo, stimolando la biodiversità microbica e migliorando la salute delle piante attraverso meccanismi diretti (nutrizione fogliare/radicale) e indiretti (competizione con patogeni, solubilizzazione dei nutrienti). La sua efficacia si basa sulla **teoria del suolo vivente (Living Soil)**, che privilegia l'equilibrio tra batteri, funghi, protozoi e nematodi per creare un ecosistema autosostenibile.
 
-L’efficacia del Te di Compost dipende dalla **qualità del compost** (maturo, privo di patogeni e ricco di diversità microbica) e dalle condizioni di preparazione (aerazione, temperatura, tempo di infusione). In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce l’attività microbica ma può anche stressare le piante con caldo e umidità, questo trattamento è particolarmente utile per **prevenire stress idrici**, **ridurre la suscettibilità a malattie fungine** (es. oidio, peronospora) e **accelerare la ripresa vegetativa** dopo eventi avversi. Studi dimostrano che applicazioni regolari migliorano la struttura del suolo, aumentano la capacità di scambio cationico (CSC) e riducono la necessità di fertilizzanti chimici [web_zamn_328-come-conciare-cannabis].
+Il processo di estrazione aerobica (con aeratore) consente di ottenere una soluzione ricca di **batteri aerobici**, funghi benefici (come *Trichoderma*), attinomiceti e sostanze umiche, che favoriscono la struttura del suolo, la disponibilità di azoto e la resistenza delle piante agli stress biotici e abiotici. In particolare, per coltivazioni outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e umidità, il Te di Compost agisce come **barriera biologica** contro funghi patogeni (es. *Botrytis*) e come booster di resilienza.
 
 ---
 
 ## Come si applica in serra
+Per una serra outdoor **Living Soil** a Caserta, segui queste istruzioni pratiche:
 
-### **Preparazione (per 10L di Te di Compost)**
-1. **Materiali necessari**:
-   - Compost maturo (preferibilmente vermicompost o compost da letame di cavallo/buono)
-   - Acqua non clorata (lasciare decantare l’acqua del rubinetto 24h o usare acqua piovana)
-   - Aeratore per acquario (o pompa ad aria)
-   - Melassa biologica (1-2 cucchiai per 10L)
-   - Contenitore in plastica o vetro (evitare metalli)
-   - Filtro a maglia fine (per rimuovere residui solidi)
+1. **Preparazione del compost**:
+   - Usa compost maturo (3-6 mesi) con rapporto C/N equilibrato (ideale 20:1–30:1).
+   - Evita compost con residui di carne, latticini o oli (rischio di anaerobiosi).
 
-2. **Procedura**:
-   - **Immersione**: Metti 1-2 kg di compost in un sacchetto di tela o calza per alimenti e immergilo in 10L di acqua. Evita di schiacciare il compost per non rilasciare sostanze tossiche.
-   - **Aerazione**: Collega l’aeratore e mantieni l’ossigenazione costante per **24-48 ore** (ideale: 24h per evitare fermentazione anaerobica).
-   - **Nutrizione microbica**: Aggiungi la melassa dopo 12 ore dall’inizio dell’aerazione per alimentare i batteri e funghi.
-   - **Filtraggio**: Rimuovi il sacchetto con il compost e filtra il liquido con un panno pulito per eliminare residui solidi.
-   - **Applicazione**: Usa il Te di Compost entro **4 ore** dalla preparazione per massimizzare la vitalità microbica. Applica **radicale** (irrigazione) o **fogliare** (irrorazione) al mattino presto o al tramonto.
+2. **Estrazione aerobica**:
+   - Riempi un secchio con **10 litri di acqua non clorata** (lasciare decantare 24h o usare acqua piovana).
+   - Aggiungi **1 kg di compost** in un sacchetto di tela o calza per stivali (evita la torbidità).
+   - Immergi e **aera con una pompa per acquario** (24–48h) a temperatura ambiente (18–25°C).
+   - *Opzionale*: Aggiungi **10–20 ml di melassa** (o zucchero di canna) come fonte di carbonio per i batteri.
 
-3. **Dosaggi e frequenza**:
-   - **Radicale**: 1L di Te ogni 1
+3. **Applicazione**:
+   - Filtra il liquido con una retina fine (evita intasamenti).
+   - Applica **entro 4 ore** dalla preparazione (massima vitalità microbica).
+   - **Dosi**:
+     - **Radicale**: 1–2 litri/m² ogni 2 settimane (innaffiando il suolo).
+     - **Fogliare**: 0.5–1 litro/m² con nebulizzatore (mattina presto o sera).
+   - *Frequenza*: Ogni 10–15 giorni durante **vegetazione** e **fioritura**.
+
+4. **Consigli per Caserta**:
+   - Applica in **assenza di vento forte** (evita deriva).
+   - Evita l'applicazione sotto il sole diretto (ustioni fogliari).
+   - In caso di pioggia, posticipa l'applicazione di 24h.
+
+---
+
+## Sinergie con altri elementi
+Il Te di Compost si combina efficacemente con altre tecniche per potenziare la salute delle piante e del suolo:
+
+- **Lakhovsky (Onde Multifrequenza)**:
+  - Applica il Te di Compost **dopo** una sessione di elettrocultura (es. bobina di Lakhovsky) per stimolare la risposta immunitaria delle piante. I microrgan
