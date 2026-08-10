@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-09T03:58:08.308323+00:00",
+  "lastUpdate": "2026-08-10T04:12:27.121340+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,42 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640396342_1",
-      "nome": "Tecnica di pruning",
-      "descrizione": "Tagliare le piante di pianta per controllare la forma e aumentare la produzione",
-      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
-      "materiali": [
-        "Forbici da giardinaggio",
-        "guanti"
-      ],
-      "categoria": "Potatura",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "training"
-    },
-    {
-      "id": "daily_1781640396342_3",
-      "nome": "Tecnica di training con LST",
-      "descrizione": "Utilizzare la tecnica di LST (Low-Stress Training) per controllare la forma della pianta",
-      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
-      "materiali": [
-        "Fil di ferro",
-        "clip"
-      ],
-      "categoria": "Addestramento",
-      "difficolta": "medio",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "training"
-    },
     {
       "id": "daily_1781640436681_1",
       "nome": "Monitoraggio del pH del suolo",
@@ -3752,12 +3716,83 @@
       "data_proposta": "2026-08-09",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra terreno biologico (Living Soil) e water curing su qualità delle cime in serra outdoor",
+      "ipotesi": "Coltivando piante in vasi con terreno biologico (Manuale A) si riducono i residui chimici e i sali, rendendo il water curing (Manuale B) meno necessario ma più efficace. L'ipotesi è che le piante coltivate in Living Soil richiedano un trattamento con acqua filtrata di durata inferiore per ottenere cime con profilo terpenico e sapore ottimali, rispetto a piante coltivate in substrati convenzionali.",
+      "protocollo": [
+        "Preparare due gruppi di piante (es. Pianta sativa cv. 'Early Skunk') in serra outdoor: Gruppo A (Living Soil) con substrato biologico (compost, biochar, micorrize) e Gruppo B (Controllo) con substrato commerciale standard (torba + perlite). Mantenere identiche condizioni di irrigazione (acqua filtrata), nutrizione (solo compost tea) e esposizione.",
+        "Al momento della raccolta (fine fioritura), dividere ogni gruppo in due sottogruppi: Sottogruppo 1 (nessun trattamento) e Sottogruppo 2 (water curing con acqua filtrata a temperatura ambiente per 12 ore per Gruppo A e 24 ore per Gruppo B).",
+        "Dopo il trattamento, asciugare le cime in ambiente controllato (20°C, 50% umidità) per 7 giorni.",
+        "Confrontare i risultati tramite analisi sensoriale (pannello di 5 esperti) e test di laboratorio (GC-MS per terpeni e HPLC per residui di sali/pesticidi). Misurare anche il peso secco finale."
+      ],
+      "materiali": [
+        "Piantine di Pianta sativa cv. 'Early Skunk' (stesso clone)",
+        "Substrato Living Soil (compost, biochar, micorrize) vs substrato commerciale",
+        "Acqua filtrata (sistema a osmosi inversa o carbone attivo)",
+        "Vasi identici (10L)",
+        "Strumenti di misura: pHmetro, conduttivimetro, bilancia di precisione, GC-MS/HPLC (accesso a laboratorio esterno)"
+      ],
+      "durata_giorni": 45,
+      "misure": [
+        "Profili terpenici (GC-MS): concentrazione di mircene, limonene, pinene, ecc.",
+        "Residui di sali (conduttività dell'acqua di lavaggio post-trattamento)",
+        "Analisi sensoriale (scala 1-10 per aroma, sapore erbaceo, amaro)",
+        "Peso secco finale delle cime (g)",
+        "Confrontare i dati tra Gruppo A e Gruppo B, e tra sottogruppi con/senza water curing."
+      ],
+      "variabili_controllo": "Genetica delle piante, condizioni ambientali (luce, temperatura, umidità), metodo di coltivazione (irrigazione, nutrizione), durata della fioritura, metodo di asciugatura.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "L'esperimento combina due approcci solitamente trattati separatamente: l'uso di terreno biologico per prevenire problemi post-raccolta (Manuale A) e il water curing come metodo di purificazione (Manuale B). Nessun manuale suggerisce di testare l'interazione tra i due, né di ottimizzare la durata del water curing in funzione della qualità del substrato. Inoltre, l'applicazione in serra outdoor con Living Soil è un contesto innovativo rispetto alle coltivazioni indoor tipiche dei manuali.",
+      "id": "esp_conn_2026-08-10_001",
+      "data_proposta": "2026-08-10",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Ottimizzazione della resa in CBD tramite Living Soil e semi femminizzati in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici con Living Soil (Manuale A) e semi femminizzati (Manuale B) porterà a una maggiore resa in CBD (fino al 20% in più rispetto ai controlli) e a una fioritura più rapida (5-7 giorni in anticipo) grazie alla sinergia tra radici sane e piante produttive al 100%. La combinazione elimina sprechi di risorse (acqua, nutrienti) e massimizza l'efficienza fotosintetica, come suggerito dai due manuali.",
+      "protocollo": [
+        "Preparare 20 vasi identici (10L) con Living Soil fresco (compost, micorrize, lombrichi) e posizionarli in serra outdoor. Suddividere in due gruppi: Gruppo A (10 vasi con semi femminizzati CBD-dominant) e Gruppo B (10 vasi con semi regolari CBD-dominant come controllo).",
+        "Pianta i semi femminizzati (Gruppo A) e i semi regolari (Gruppo B) contemporaneamente, mantenendo identiche condizioni di irrigazione (water-only, pH 6.5) e esposizione solare. Marcare le piante con etichette per tracciabilità.",
+        "Monitorare settimanalmente l'altezza, il numero di nodi e lo sviluppo radicale (tramite osservazione visiva dei vasi trasparenti o trapianto in vaso trasparente per 1 giorno). Registrare dati su un foglio Excel.",
+        "Dopo 30 giorni, raccogliere i dati: peso fresco delle infiorescenze, analisi del contenuto di CBD/THC (tramite kit di test rapidi o laboratorio esterno), e valutazione della salute delle piante (assenza di stress idrico o nutrizionale)."
+      ],
+      "materiali": [
+        "20 vasi in terracotta/bioplastica (10L)",
+        "Living Soil pre-arricchito (compost, micorrize, lombrichi)",
+        "Semi femminizzati CBD-dominant (es. varietà USA a basso THC)",
+        "Semi regolari CBD-dominant (stessa varietà per controllo)",
+        "Kit di test CBD/THC rapido",
+        "Fogli Excel per registrazione dati",
+        "Vasi trasparenti per osservazione radici (opzionale)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso fresco delle infiorescenze (bilancia digitale 0.1g precisione)",
+        "Contenuto di CBD/THC (kit di test rapido o analisi di laboratorio)",
+        "Altezza e numero di nodi (metro a nastro e conteggio manuale)",
+        "Salute delle piante (scala 1-5 per clorosi, stress idrico, ecc.)"
+      ],
+      "variabili_controllo": "Stesso substrato (Living Soil), stesso volume di vaso, stessa esposizione solare, stessa irrigazione (water-only, 500ml/giorno), stessa temperatura e umidità in serra.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "Questo esperimento non è presente in nessuno dei due manuali singolarmente perché combina specificamente i concetti chiave di entrambi: l'uso di vasi biologici con Living Soil (Manuale A) e semi femminizzati (Manuale B) per ottimizzare la resa in CBD in un contesto outdoor. Nessun manuale suggerisce di testare questa sinergia in modo sistematico con misure quantitative.",
+      "id": "esp_conn_2026-08-10_002",
+      "data_proposta": "2026-08-10",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-09",
+    "data": "2026-08-10",
     "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
