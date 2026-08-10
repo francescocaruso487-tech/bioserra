@@ -2221,13 +2221,29 @@ function initJsonLoaders() {
 }
 
 
+async function _hydrateOverridesFromRemote() {
+  try {
+    const d = await fetchGHJson('data/piante_stato.json');
+    const arr = (d && d.data && d.data.stato_piante) || [];
+    let changed = false;
+    arr.forEach(function(s) {
+      if (!s || !s.override) return;
+      const local = loadPlantPhaseOverride(s.id);
+      const remoteTime = s.override.savedAt ? new Date(s.override.savedAt).getTime() : 0;
+      const localTime  = local && local.savedAt ? new Date(local.savedAt).getTime() : 0;
+      if (!local || remoteTime > localTime) {
+        savePlantPhaseOverride(s.id, s.override);
+        changed = true;
+      }
+    });
+    if (changed) { renderActivePlants(); checkHarvestAlerts(); }
+  } catch(e) { console.warn('[BioSerra] Hydrate override da remoto fallita:', e); }
+}
+
 /* ── Init Piante — chiamata da app.js all'avvio ── */
 function initPiante() {
-  // Pulizia override manuali per le 5 autofiorenti (date aggiornate)
-  [1, 2, 3, 7, 8].forEach(id => {
-    localStorage.removeItem('bioserra_phase_' + id);
-  });
 
+  _hydrateOverridesFromRemote();
   // Seed localStorage con piante di default se vuoto
   try {
     if (!localStorage.getItem('bioserra_active_plants')) {
