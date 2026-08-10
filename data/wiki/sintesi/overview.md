@@ -1,63 +1,54 @@
 ---
 tipo: overview
-aggiornato: 2026-08-09
+aggiornato: 2026-08-10
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
-# **BioSerra Wiki**
-*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
+# BioSerra Wiki
+*Living Soil Outdoor a Caserta (41°N) – Elettrocultura, Biodinamica & Suolo Vivente*
 
 ---
 
-## **🌱 Filosofia BioSerra**
-BioSerra è un ecosistema agricolo **autosostenibile** che integra:
-- **Living Soil (Suolo Vivente)**: Terreno ricco di microbi, funghi micorrizici e materia organica, gestito senza chimica sintetica.
-- **Water-Only**: Irrigazione con acqua magnetizzata, arricchita da elettrocultura e biodinamica, per massimizzare l’assorbimento radicale.
-- **Biodinamica**: Sincronizzazione con i ritmi lunari e cosmici per ottimizzare crescita, fioritura e resa.
-- **Elettrocultura**: Stimolazione delle piante tramite campi elettromagnetici (Lakhovsky, Fe-Cu, rame, antenna di terra) per potenziare metabolismo e resistenza.
+## ## Filosofia BioSerra
+BioSerra è un ecosistema colturale **integrato** che unisce:
+- **Living Soil**: Suolo vivo ricco di microrganismi, materia organica e minerali biodisponibili, coltivato *water-only* (senza fertilizzanti chimici).
+- **Elettrocultura**: Tecniche passive/attive (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali rame, antenna terra) per stimolare la vitalità delle piante e del suolo.
+- **Biodinamica**: Approccio olistico basato su ritmi cosmici (luna, stelle) e preparati naturali per armonizzare energie telluriche e solari.
+- **Water-Only**: Irrigazione con acqua viva (magnetizzata, strutturata) per attivare il microbioma e ridurre lo stress idrico.
 
-*Visione*: Coltivare piante in armonia con la natura, sfruttando le sinergie tra suolo, acqua, energia e organismi viventi.
-
----
-
-## **📚 Sistema di Conoscenza**
-BioSerra si basa su:
-- **341 manuali** (PDF) analizzati e interconnessi, con focus su:
-  - Fasi colturali ([[web_zamn_287]], [[web_zamn_288]], [[web_zamn_290]])
-  - Gestione del suolo ([[web_zamn_293]], [[pdf_85]])
-  - Elettrocultura ([[pdf_17]])
-  - Biodinamica ([[pdf_13]])
-- **15 concetti attivi** (es. *Suolo Vivente*, *Acqua Magnetizzata*, *Calendario Lunare*) che collegano le pratiche.
-- **Guide operative** per risolvere problemi (es. [[web_zamn_286]] per germinazione).
-
-*Approccio*: Ogni tecnica è testata sul campo e documentata con dati empirici e riferimenti scientifici.
+*Visione*: Coltivare piante in **sinergia con la Terra**, dove ogni elemento (suolo, acqua, energia, luna) è un attore attivo nel processo produttivo.
 
 ---
 
-## **⚡ Tecniche di Elettrocultura Attive**
-| Tecnica | Descrizione | Riferimento |
-|---------|------------|-------------|
-| **Acqua Magnetizzata** | Acqua trattata con campi magnetici per migliorare idratazione e assorbimento. | [[web_zamn_284]] |
-| **Spirale in Rame** | Installazione di spirali di rame intorno alle piante per generare campi elettromagnetici. | [[pdf_17]] |
-| **Circuito di Lakhovsky** | Rete di fili conduttori (rame/zinco) che emette frequenze per stimolare la crescita. | [[pdf_17]] |
-| **Elettrodi Fe-Cu** | Coppie di elettrodi in ferro e rame nel suolo per creare correnti galvaniche. | [[pdf_17]] |
-| **Antenna di Terra** | Sistema di messa a terra per bilanciare le cariche elettriche del suolo. | [[pdf_17]] |
+## ## Sistema di conoscenza
+BioSerra si basa su un **ecosistema di conoscenza** strutturato:
+- **341 PDF** (guide, studi, esperienze) collegati tramite **15 concetti attivi** (es. "Suolo Vivente", "Elettrodi Fe-Cu").
+- **Integrazione trasversale**:
+  - I PDF [[web_zamn_287]] (fase plantula) e [[web_zamn_288]] (vegetativa) si collegano ai concetti di **nutrizione organica** e **gestione pH**.
+  - Le tecniche di elettrocultura ([[pdf_17]]) si applicano in sinergia con il **Living Soil** ([[web_zamn_293]]).
+  - La biodinamica ([[pdf_13]]) guida i trattamenti serali durante la fioritura ([[web_zamn_290]]).
+- **Flusso decisionale**:
+  - Dati ambientali (umidità 76%, temperatura 36.6°C) → Azioni (ombreggiamento, elettrocoltura DC).
+  - Calendario lunare → Trattamenti con equiseto/silice.
 
-*Nota*: Tutte le tecniche sono applicate a **basso voltaggio (1-12V DC)** per evitare stress alle piante.
-
----
-## **🌍 Principi Living Soil**
-1. **Microbioma**: Popolazione di batteri, funghi e protozoi che decompongono la materia organica e rendono i nutrienti disponibili.
-   - *Strumenti*: Compost attivo, tè di compost, inoculazione micorrizica.
-2. **Minerali**: Integrazione di farine di rocce (es. basalto, zeolite) per fornire macro/microelementi.
-3. **Biostimolanti**: Sostanze naturali (es. alghe, humus) che attivano le difese delle piante.
-4. **Acqua**: Gestione dell’umidità (60-70%) e pH (6.0-7.0) per evitare stress idrico e patologie.
-
-*Riferimenti*: [[web_zamn_293]], [[web_zamn_295]]
+*Esempio di collegamento*:
+> [[web_zamn_284]] (Smart Start) + [[pdf_17]] (elettrocoltura DC) → Germinazione ottimale con stimolazione radiale.
 
 ---
-## **📅 Calendario e Ritmi**
-### **🌙 Biodinamica**
-- **Fasi lunari**: Applicare trattamenti (es. preparato 501) in **Gibb
+## ## Tecniche elettrocultura attive
+| Tecnica               | Descrizione                                                                 | Applicazione pratica                          | Riferimenti          |
+|-----------------------|-----------------------------------------------------------------------------|-----------------------------------------------|----------------------|
+| **Acqua Magnetizzata** | Acqua strutturata tramite campi magnetici per migliorare assorbimento nutrienti. | Irrigazione serale su tutte le colture.       | [[pdf_17], pag. 12]  |
+| **Spirale in Rame**   | Spirali di rame intorno al fusto per armonizzare frequenze vitali.          | Posizionamento su Astro Lemonade (fioritura). | [[pdf_17], pag. 22]  |
+| **Circuito di Lakhovsky** | Antenna a forma di spirale per amplificare energia cellulare.             | Installazione su Gaia F1 (raccolta tra 7gg).  | [[pdf_17], pag. 28]  |
+| **Elettrodi Fe-Cu**   | Coppia di elettrodi (ferro/rame) a 3V per stimolare radici e microbioma.    | Profondità 10-15 cm vicino alle radici.       | [[pdf_17], pag. 5]   |
+| **Antenna di Terra**  | Sistema di messa a terra per scaricare e ricaricare energia tellurica.     | Connessione a piante in stress idrico.        | [[pdf_13], pag. 4]   |
+
+---
+## ## Principi Living Soil
+### 1. **Microbioma del Suolo**
+- **Funzione**: Decompone materia organica, solubilizza minerali, protegge dalle patologie.
+- **Azioni**:
+  - Inoc
