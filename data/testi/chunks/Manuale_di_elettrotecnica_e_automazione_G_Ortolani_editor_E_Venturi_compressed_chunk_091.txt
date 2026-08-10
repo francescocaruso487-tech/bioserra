@@ -20,7 +20,7 @@ pag.
 1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
-1.5.1    GTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.5.1    GTO . . . . . . . . . . . . . . . . . . . . . . . . . dispositivi a semiconduttore
  10
 
 1.5.2    IGBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -320,7 +320,6 @@ Normalmente con questi dispositivi si opera con tensioni che possono raggiungere
 
 **Fig. XVIII.1.15** Caratteristica corrente-tensione di un GTO.
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
-
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di grandi potenze con elevato rendimento, dovuto a perdite di commutazione estremamente contenute.
 Un elemento di particolare rilievo sta nella loro possibilità di interrompere la corrente in qualsiasi istante (**Fig. XVIII.1.17**), fatto questo che si concretizza nella facoltà di parzializzare un’onda sinusoidale in modo perfettamente simmetrico e ridurre in questo modo il contenuto delle armoniche ad elevata frequenza.
 
@@ -350,7 +349,6 @@ Un confronto diretto tra un MOSFET e un IGBT consente di riportare i seguenti ri
 – Diminuzione del coefficiente di temperatura della tensione di saturazione di un IGBT rispetto a un MOSFET avente pari dimensioni di chip.
 
 – A parità di dimensioni del chip, il transistor IGBT presenta, rispetto al MOSFET, una carica elettrica di Gate necessaria per la commutazione minore di circa il 20%.
-
 – Tempi di commutazione maggiori per un IGBT rispetto a quelli di un MOSFET.
 
 Il transistor IGBT viene largamente impiegato nella realizzazione di convertitori di tutti i tipi, molto spesso presente in moduli di potenza che contengono i circuiti di protezione del transistor stesso dalle sovracorrenti.
