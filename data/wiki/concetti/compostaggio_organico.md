@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-10
+aggiornato: 2026-08-11
 pdf_count: 6
 ---
 
@@ -12,32 +12,26 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione di batteri, funghi e macroinvertebrati che, in condizioni ottimali di umidità, ossigeno e temperatura (55-65°C), scompongono la materia organica in composti stabili e assimilabili dalle piante. Il compost di qualità migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, stimola l’attività microbica e fornisce nutrienti a lento rilascio, fondamentali per la fase vegetativa delle piante in **Living Soil**.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macroinvertebrati (lombrichi, collemboli), che scompongono i composti complessi in forme assimilabili dalle piante. Il risultato è un **compost maturo**, caratterizzato da un equilibrio tra macro e micronutrienti, una struttura porosa che migliora l’aerazione del suolo e una capacità di trattenere acqua e sostanze nutritive (CEC elevata).
 
-In un contesto di **serra outdoor a Caserta (41°N)**, il compostaggio assume un ruolo chiave per mantenere un substrato vivo e resiliente. L’equilibrio tra materiali azotati (verdi) e carboniosi (marroni) è essenziale per evitare fermentazioni anaerobiche o eccessiva acidità, mentre il controllo della temperatura garantisce l’eliminazione di patogeni e semi infestanti. Un compost ben maturato (6-12 mesi) diventa un substrato ideale per la germinazione e la crescita vegetativa, poiché fornisce una base nutrizionale equilibrata senza rischi di bruciature da sali minerali.
+In un sistema **Living Soil** outdoor, il compost non è solo un fertilizzante, ma un **ecosistema a sé stante**: fornisce energia ai microrganismi del suolo, stimola la formazione di micorrize e favorisce la resilienza delle piante contro patogeni e stress ambientali. La temperatura di 55–65°C durante la fase termofila (2–4 settimane) è cruciale per eliminare semi di malerbe, patogeni e parassiti, mentre la successiva fase di maturazione (2–6 mesi) permette la sintesi di sostanze umiche e acidi fulvici, essenziali per la salute del suolo e la crescita radicale.
 
 ---
 
 ## Come si applica in serra
+Per una serra outdoor a **Caserta (41°N)**, il compostaggio deve adattarsi al clima mediterraneo (estati calde e secche, inverni miti e umidi). Segui questi passaggi per ottenere un compost di qualità in **Living Soil**:
 
-### **1. Selezione dei materiali**
-- **Materiali verdi (azoto)**: scarti di cucina (resti di frutta/verdura), erba fresca, foglie tenere, fondi di caffè, letame fresco (es. stallatico).
-- **Materiali marroni (carbonio)**: paglia, foglie secche, cartone non stampato, ramaglie triturate, segatura (non trattata).
-- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). A Caserta, dove l’umidità è elevata, aumentare i marroni per evitare compattazione.
+### 1. **Selezione e bilanciamento dei materiali**
+- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame (es. cavallo, pollo), fondi di caffè.
+- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, rametti triturati, gusci d’uovo.
+- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). A Caserta, dove l’umidità estiva può accelerare la decomposizione, aggiungi più marroni per evitare compattazione e cattivi odori.
 
-### **2. Preparazione del cumulo**
-- **Posizione**: scegliere un’area ombreggiata e ben drenata, possibilmente su terreno nudo (non su cemento).
-- **Struttura**: creare un cumulo a forma di tronco di cono (1-1.5 m di altezza) per ottimizzare aerazione e ritenzione termica.
-- **Inoculo**: aggiungere compost maturo o terriccio di bosco (10-20% del volume) per accelerare la colonizzazione microbica.
+### 2. **Struttura del cumulo**
+- **Posizione**: In serra, scegli un’area ombreggiata (es. sotto una rete ombreggiante) per evitare surriscaldamento estivo. Proteggi il cumulo con un telo traspirante per regolare l’umidità.
+- **Dimensioni**: 1–1,5 m di altezza e larghezza (ottimale per trattenere calore e umidità).
+- **Aerazione**: Crea strati alternati (5–10 cm) di verdi e marroni, aggiungendo rametti o trucioli di legno per favorire la circolazione d’aria.
 
-### **3. Gestione del processo**
-- **Umidità**: mantenere il cumulo umido come una spugna strizzata (non gocciolante). In estate, coprire con teli traspiranti per evitare essiccazione.
-- **Temperatura**: monitorare con sonda termometrica. Se supera i 65°C, rivoltare per abbassare la temperatura. Se scende sotto i 50°C, aggiungere materiali verdi.
-- **Aerazione**: rivoltare ogni 2-3 giorni con forca o pala, smuovendo bene i bordi per ossigenare il centro. In serra, usare un aeratore meccanico per cumuli grandi.
-- **Maturazione**: dopo 4-6 settimane (fase termofila), ridurre le rivolte a 1 volta/settimana. Il compost è pronto quando:
-  - Odore di terra umida (non di ammoniaca o marcio).
-  - Colore scuro e struttura simile a terriccio.
-  - Temperatura stabile a quella ambientale.
-
-### **4. Applicazione in serra**
-- **Ammendamento**: mescolare 20-30% di compost maturo al substrato base (es. 70% terriccio +
+### 3. **Gestione della temperatura e umidità**
+- **Monitoraggio**: Usa un termometro da compost per verificare che la temperatura rimanga tra **55–65°C** (fase termofila). Se supera i 70°C, gira il cumulo per raffreddare.
+- **Umidità**: Il compost deve essere umido come una spugna strizzata. In estate, nebulizza acqua ogni 2–3 giorni; in inverno, copri con un telo per evitare eccesso di pioggia.
+- **Rivoltamento**: Gira il cumulo ogni **2–3 giorni** con una forca o un compost turner per ossigenare e uniformare la decomposizione. Dopo 2
