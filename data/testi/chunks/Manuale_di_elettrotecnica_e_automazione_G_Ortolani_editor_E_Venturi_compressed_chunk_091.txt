@@ -20,7 +20,7 @@ pag.
 1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
-1.5.1    GTO . . . . . . . . . . . . . . . . . . . . . . . . . dispositivi a semiconduttore
+1.5.1    GTO . . . . . . . . . . . . . . . . . . . . dispositivi a semiconduttore
  10
 
 1.5.2    IGBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -71,22 +71,7 @@ pag.
 7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  38
 
-7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 39
-
-Sezione XVIII
-Elettronica di potenza
-
-[PAG 1820]
-XVIII-2
-ELETTRONICA DI POTENZA
-
-8    CONVERTITORI CON TRASFORMATORI . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 39
-
-8.1    Convertitore Flyback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-**Fig. XVIII.1.2 Raddrizzatore a una semionda.**
+7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
 Una conseguenza di ciò è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che attraversa il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
 
 Particolare attenzione deve essere posta affinché la tensione inversa applicata al dispositivo non superi un valore indicato come tensione di breakdown: quest’ultimo rappresenta quel valore di tensione, proprio di ogni dispositivo a semiconduttore, superato il quale avviene il passaggio di corrente anche con polarizzazione inversa.
@@ -138,8 +123,6 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 **Caratteristiche elettriche T = 25 °C**
 
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
-Ecco il testo tradotto fedelmente in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
-
 ---
 
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
