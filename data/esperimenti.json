@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-10T04:12:27.121340+00:00",
+  "lastUpdate": "2026-08-11T03:59:39.690232+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,60 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640436681_1",
-      "nome": "Monitoraggio del pH del suolo",
-      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere un pH ottimale per la crescita della pianta",
-      "materiali": [
-        "pHmetro",
-        "soluzione di calibrazione"
-      ],
-      "categoria": "manutenzione",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 1,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640436681_4",
-      "nome": "Monitoraggio della temperatura e dell'umidità",
-      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere un ambiente ottimale per la crescita della pianta",
-      "materiali": [
-        "termometro",
-        "igrometro"
-      ],
-      "categoria": "manutenzione",
-      "difficolta": "facile",
-      "fonte": "Zamnesia",
-      "durata_giorni": 1,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781667046478_1",
-      "nome": "Controllo del pH",
-      "descrizione": "Verifica e regola il pH del substrato e dell'acqua per garantire condizioni ottimali per la crescita delle piante",
-      "obiettivo": "Mantenere un pH ottimale per la crescita delle piante",
-      "materiali": [
-        "pHmetro",
-        "Sostanze correttrici del pH"
-      ],
-      "categoria": "Gestione del substrato",
-      "difficolta": "Facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-17",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "daily_1781667046478_2",
       "nome": "Tecniche di prunning",
@@ -3787,13 +3733,116 @@
       "data_proposta": "2026-08-10",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento LST Outdoor in Living Soil per ottimizzazione resa e CBD: confronto tra cimatura Low Stress Training e controllo",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) su piante outdoor in Living Soil (Manuale B), si ottiene un aumento della resa in biomassa e contenuto di CBD senza stress eccessivo, grazie a una migliore esposizione luminosa e distribuzione dei nutrienti. La cimatura LST, combinata con substrato Living Soil e irrigazione water-only, favorisce lo sviluppo di piante più compatte e produttive rispetto a piante non cimate, come suggerito dalla sinergia tra tecniche indoor adattabili outdoor e metodi di cimatura per aumento resa.",
+      "protocollo": [
+        "Preparare 20 piante di Pianta sativa (varietà a medio-alto CBD, semi femminizzati autofiorenti, es. 'ACDC' o 'Charlotte's Web') in Living Soil (compost maturo + micorrize + biochar) all'interno di vasi da 10L. Mantenere 10 piante come controllo (C) e 10 piante sottoposte a LST (T).",
+        "A 30 giorni dal trapianto (fase vegetativa avanzata), applicare LST alle piante T: piegare delicatamente i rami principali a 90° rispetto al fusto principale, fissandoli con clips in plastica o filo di rame rivestito. Ripetere l'operazione ogni 7 giorni fino alla fioritura (totale 3-4 interventi). Le piante C non vengono cimate.",
+        "Durante la fioritura (40 giorni dal trapianto), mantenere irrigazione water-only con soluzione di acqua + 0.5% di estratto di alghe (es. Ascophyllum nodosum) ogni 3 giorni. Monitorare umidità del suolo (50-60% WHC) e temperatura (18-26°C).",
+        "A 70 giorni dal trapianto (fine fioritura), raccogliere tutte le piante. Misurare: peso fresco totale, peso secco dei fiori, contenuto di CBD e CBG (tramite test HPLC o kit rapidi), e numero di infiorescenze principali per pianta."
+      ],
+      "materiali": [
+        "20 piante di Pianta sativa (varietà CBD-dominante, semi femminizzati autofiorenti)",
+        "Living Soil (substrato: 60% compost maturo, 20% perlite, 10% biochar, 10% micorrize)",
+        "Vasi da 10L, clips in plastica o filo di rame rivestito, metro a nastro",
+        "Soluzione nutritiva water-only (acqua + 0.5% estratto di alghe), pHmetro, termometro",
+        "Bilancia di precisione (0.1g), essiccatore, kit per analisi CBD/CBG (o accesso a laboratorio)"
+      ],
+      "durata_giorni": 70,
+      "misure": [
+        "Peso fresco totale per pianta (g)",
+        "Peso secco dei fiori (g)",
+        "Contenuto di CBD e CBG (% sul secco)",
+        "Numero di infiorescenze principali per pianta",
+        "Altezza media delle piante (cm) a fine fioritura"
+      ],
+      "variabili_controllo": "Varietà genetica identica, substrato Living Soil con stessa composizione, volume di substrato per pianta, regime irriguo water-only, esposizione solare identica, temperatura e umidità ambientale.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "L'esperimento unisce la tecnica LST (tipica indoor) con la coltivazione outdoor in Living Soil water-only, una combinazione non documentata nei manuali originali. Inoltre, integra la misurazione del CBD/CBG, non menzionata nei manuali di cimatura, per valutare l'impatto sulla qualità chimica della pianta.",
+      "id": "esp_conn_2026-08-11_001",
+      "data_proposta": "2026-08-11",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate coltivate in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV grazie a un metabolismo radicale più efficiente. L'ipotesi si basa sulla sinergia tra la biodiversità microbica del Living Soil e la genetica delle piante CBDV, che potrebbe esprimere meglio i cannabinoidi secondari in condizioni di suolo vivo e senza input chimici.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (BioSerra Caserta) con Living Soil: una concimata con compost organico + micorrize (trattamento) e una con solo compost (controllo).",
+        "Seminare semi femminizzati di una varietà ad alto CBDV (es. 'CBDV Auto White Widow') in entrambe le parcelle, con distanza e densità identiche. Mantenere condizioni ambientali (luce, temperatura, umidità) costanti.",
+        "Irrigare entrambe le parcelle solo con acqua (water-only) per 30 giorni, evitando qualsiasi altro fertilizzante. Monitorare settimanalmente la salute delle piante e la crescita radicale.",
+        "A fine ciclo, raccogliere campioni fogliari dalle piante di entrambe le parcelle per analisi HPLC: misurare i livelli di CBDV, CBD, CBG e THC. Confrontare i risultati tra trattamento e controllo."
+      ],
+      "materiali": [
+        "Semi femminizzati CBDV (es. 'CBDV Auto White Widow')",
+        "Compost organico + micorrize (trattamento) e solo compost (controllo)",
+        "Living Soil pre-preparato per serra outdoor",
+        "Kit HPLC portatile o servizio di analisi esterno",
+        "Strumenti per misurazione pH/EC dell'acqua e umidità del suolo"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Livelli di CBDV, CBD, CBG e THC (mg/g) tramite HPLC",
+        "Crescita radicale (lunghezza e biomassa) e salute fogliare (indice SPAD)",
+        "Verifica: confronto statistico (t-test) tra trattamento e controllo per CBDV"
+      ],
+      "variabili_controllo": "Genetica della pianta (stesso lotto di semi), condizioni ambientali (serra), tipo di suolo (Living Soil), irrigazione (solo acqua), durata dell'esperimento.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica del Living Soil (Manuale A) con la genetica CBDV (Manuale B), testando una sinergia non esplorata nei manuali individualmente. La misurazione diretta del CBDV in risposta al suolo vivo è un approccio innovativo per ottimizzare la coltivazione di cannabinoidi secondari.",
+      "id": "esp_conn_2026-08-11_002",
+      "data_proposta": "2026-08-11",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil in vasi biologici e semi femminizzati su resa CBD/THC in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici con Living Soil (Manuale A) e semi femminizzati (Manuale B) aumenterà la resa in CBD/THC del 20-30% rispetto a controlli con terreno standard e semi regolari, grazie alla sinergia tra sviluppo radicale ottimale e produttività garantita. Il Living Soil favorisce la biodisponibilità dei nutrienti e la salute microbica (Manuale A), mentre i semi femminizzati eliminano sprechi di risorse su piante maschio non produttive (Manuale B).",
+      "protocollo": [
+        "Preparare 20 vasi identici (10L) con Living Soil composto da 60% terra biologica, 20% compost, 10% perlite e 10% biochar. Aggiungere micorrize e batteri benefici (es. *Trichoderma*).",
+        "Seminare 10 vasi con semi femminizzati CBD-dominant (es. varietà USA con <1% THC) e 10 vasi con semi regolari della stessa genetica (controllo). Mantenere distanza e irrigazione identiche.",
+        "Coltivare in serra outdoor per 30 giorni con sistema water-only (solo acqua osmotizzata + 0.5% di estratto di alghe come biostimolante). Monitorare umidità del suolo (50-60%) e temperatura (20-28°C).",
+        "A fine ciclo, raccogliere le piante, essiccare in modo uniforme e analizzare il contenuto di CBD/THC tramite cromatografia HPLC. Confrontare i risultati tra i due gruppi."
+      ],
+      "materiali": [
+        "Vasi in terracotta (10L) con fori di drenaggio",
+        "Semi femminizzati CBD-dominant (es. varietà USA) e semi regolari della stessa genetica",
+        "Living Soil pre-miscelato (terra biologica, compost, perlite, biochar, micorrize)",
+        "Estratto di alghe (biostimolante)",
+        "Sistema di irrigazione a goccia",
+        "Bilancia di precisione (0.01g) e kit HPLC per analisi cannabinoidi"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso secco delle infiorescenze (g/pianta)",
+        "Contenuto di CBD e THC (% secco) tramite HPLC",
+        "Rapporto CBD:THC per valutare la qualità del prodotto",
+        "Osservazioni visive: salute delle piante, sviluppo radicale, presenza di patogeni"
+      ],
+      "variabili_controllo": "Genetica delle piante, volume del vaso, composizione del Living Soil, condizioni ambientali (luce, temperatura, umidità), metodo di essiccazione, protocollo di analisi HPLC.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "Questo esperimento non è presente né nel Manuale A (che non considera la genetica dei semi) né nel Manuale B (che non approfondisce il substrato di coltivazione). La combinazione Living Soil + semi femminizzati è una strategia innovativa per massimizzare la resa in cannabinoidi in contesti outdoor/serra, sfruttando sia la biologia del suolo che la genetica delle piante.",
+      "id": "esp_conn_2026-08-11_003",
+      "data_proposta": "2026-08-11",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-10",
-    "nuove_proposte": 2,
+    "data": "2026-08-11",
+    "nuove_proposte": 3,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
