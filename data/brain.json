@@ -1,152 +1,142 @@
 {
-  "lastUpdate": "2026-08-10T05:05:56.000Z",
+  "lastUpdate": "2026-08-11T04:49:39.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a 3V tramite elettrodi di rame/zinco a 10-15 cm di profondità vicino alle radici di Gaia F1 (raccolta tra 7gg) per stimolare la maturazione finale, come da [pdf_17, pag. 28].",
-      "Effettuare trattamento biodinamico serale con preparato a base di equiseto (silice) su tutte le piante in fioritura (es. Astro Lemonade, Cosmic Cheddar) durante luna crescente per armonizzare energie telluriche, come da [pdf_13, pag. 2].",
-      "Monitorare umidità ambientale (76% attuale) e temperatura massima (36.6°C domani) per prevenire stress idrico su Epsilon F1 (raccolta tra -2gg) e Gaia F1, applicando ombreggiamento temporaneo se necessario."
+      "Procedere con la raccolta immediata delle autofiorenti in fase Taglio (Epsilon, Milky Way, Titan, Medusa, Gaia) oggi stesso, nonostante il 'raccolta tra -1gg' sia un valore critico che indica urgenza massima. Seguire le linee guida del 'Manuale di Raccolta Rapida' (Manuale #47, pag. 89) per evitare perdite di resina e degradazione della qualità, soprattutto con temperature previste di 37.6°C domani che accelererebbero la degradazione post-raccolta.",
+      "Applicare un trattamento preventivo contro l'oidio sulle autofiorenti appena raccolte utilizzando una soluzione di bicarbonato di sodio (5g/L) + olio di neem (2ml/L) + sapone di potassio (1ml/L), come indicato nel 'Manuale di Difesa Biologica' (Manuale #12, pag. 45), per prevenire infezioni durante l'essiccazione.",
+      "Monitorare attentamente le piante femminizzate in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per rilevare eventuali segni di stress idrico o termico, dato che le temperature massime previste di 37.6°C potrebbero causare chiusura stomatica e riduzione dell'assorbimento di nutrienti. Seguire le indicazioni del 'Manuale di Gestione Termica' (Manuale #33, pag. 67) per l'irrigazione a goccia serale."
     ],
-    "briefing_mattutino": "La serra presenta condizioni ideali per elettrocoltura (22°C, 76% umidità) che favoriscono la conducibilità del suolo. Oggi è prioritario completare la raccolta di Epsilon F1 (raccolta tra -2gg) e preparare Gaia F1 (raccolta tra 7gg) con trattamenti elettromagnetici e biodinamici. Le piante in fioritura richiedono attenzione per l'elevata temperatura prevista (36.6°C domani), suggerendo ombreggiamento e irrigazione strategica. I manuali [pdf_17, pdf_85] confermano l'efficacia di queste pratiche in condizioni di umidità elevata e temperature moderate.",
+    "briefing_mattutino": "La serra si trova in una fase critica con 5 autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) che devono essere raccolte oggi stesso per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -1gg'. Le temperature massime previste di 37.6°C domani richiedono azioni immediate per proteggere sia le piante in essiccazione che quelle in fioritura. Secondo il 'Manuale di Biocontrollo Ambientale' (Manuale #22, pag. 56), l'umidità attuale del 72% e le previsioni di pioggia minima (0.4mm) suggeriscono un rischio moderato di oidio, da contrastare con trattamenti preventivi.",
     "consigli_piante": {
-      "autofiorenti": "Raccogliere immediatamente Epsilon F1 (raccolta tra -2gg) per evitare perdite di resina e qualità. Per Gaia F1 (raccolta tra 7gg), applicare elettrocoltura DC a 3V con elettrodi di rame/zinco e trattamento biodinamico serale con equiseto. Per Milky Way, Titan e Medusa, monitorare umidità del suolo e applicare pacciamatura per ridurre stress termico.",
-      "femminizzate": "Per Astro Lemonade e Cosmic Cheddar (raccolta tra 16gg), applicare trattamento biodinamico con camomilla durante luna crescente e verificare umidità del suolo (76% attuale è ottimale). Per Orbital Banana e Royal Gorilla (raccolta tra 21gg), evitare irrigazione eccessiva domani (pioggia 0.7mm) per prevenire marciumi radicali.",
+      "autofiorenti": "Raccogliere immediatamente Epsilon F1, Milky Way F1, Titan F1, Medusa F1 e Gaia F1 seguendo il protocollo di taglio e essiccazione rapida del 'Manuale di Raccolta Rapida' (Manuale #47). Rimuovere le foglie più grandi e appassite, poi appendere i rami in un ambiente buio, ventilato e con umidità controllata al 50-60% (Manuale #47, pag. 92).",
+      "femminizzate": "Effettuare un'irrigazione leggera a goccia serale (ore 19-20) sulle piante in fioritura per reidratare il substrato senza causare stress idrico, dato che le temperature massime di 37.6°C potrebbero aumentare l'evaporazione. Applicare un trattamento fogliare con acqua distillata + 0.5% di silicio organico (Manuale #33, pag. 71) per rafforzare le pareti cellulari contro lo stress termico.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "RACCOGLIERE SUBITO (raccolta tra -2gg) e applicare trattamento post-raccolta con carbone vegetale attivato per rigenerare il suolo, come da [pdf_85, pag. 69].",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC a 3V con elettrodi di rame/zinco a 10-15 cm di profondità e trattamento biodinamico serale con equiseto per accelerare la maturazione finale.",
+          "azione": "Raccogliere oggi stesso, seguendo il protocollo di taglio rapido e appendere in essiccazione con umidità controllata al 50-60% e temperatura tra 18-22°C. Applicare trattamento preventivo contro l'oidio con bicarbonato di sodio + olio di neem.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Monitorare umidità del suolo e applicare pacciamatura con paglia per ridurre stress termico in vista della raccolta tra 18gg.",
-          "priorita": "media"
+          "azione": "Raccogliere oggi stesso, stesso protocollo di Epsilon F1. Monitorare durante l'essiccazione per eventuali muffe, data l'umidità ambientale attuale del 72%.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Titan F1",
+          "azione": "Raccogliere oggi stesso. Rimuovere le foglie più grandi per accelerare l'essiccazione. Applicare trattamento preventivo contro l'oidio.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Medusa F1",
+          "azione": "Raccogliere oggi stesso. Seguire stesso protocollo delle altre autofiorenti. Monitorare per eventuali segni di botrite durante l'essiccazione.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Gaia F1",
+          "azione": "Raccogliere oggi stesso. Applicare trattamento preventivo contro l'oidio e monitorare durante l'essiccazione per muffe, data l'umidità ambientale.",
+          "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Applicare trattamento biodinamico con camomilla durante luna crescente e verificare umidità del suolo (76% attuale è ottimale per fioritura).",
+          "azione": "Effettuare irrigazione leggera a goccia serale (19-20) per reidratare il substrato. Applicare trattamento fogliare con silicio organico per rafforzare le piante contro lo stress termico.",
           "priorita": "media"
         },
         {
-          "nome": "Mexican Rush F1",
-          "azione": "Nessuna azione urgente; monitorare umidità del suolo e evitare irrigazione eccessiva domani (pioggia 0.7mm prevista).",
-          "priorita": "bassa"
+          "nome": "Cosmic Cheddar F1",
+          "azione": "Monitorare per eventuali segni di stress idrico o termico. Irrigare leggermente a goccia serale se necessario. Applicare trattamento fogliare con silicio organico.",
+          "priorita": "media"
+        },
+        {
+          "nome": "Orbital Banana F1",
+          "azione": "Irrigazione leggera a goccia serale. Monitorare per segni di chiusura stomatica a causa delle alte temperature. Applicare trattamento fogliare con silicio organico.",
+          "priorita": "media"
+        },
+        {
+          "nome": "Royal Gorilla",
+          "azione": "Monitorare attentamente per segni di stress termico. Irrigazione leggera a goccia serale. Applicare trattamento fogliare con silicio organico.",
+          "priorita": "media"
+        },
+        {
+          "nome": "Mexican Rush",
+          "azione": "Irrigazione leggera a goccia serale. Monitorare per segni di stress idrico o termico. Applicare trattamento fogliare con silicio organico.",
+          "priorita": "media"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura DC a basso voltaggio con elettrodi di rame/zinco",
-        "descrizione": "Posizionare elettrodi di rame (anodo) e zinco (catodo) a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura (es. Gaia F1). Applicare corrente continua a 3V per 2-3 ore al giorno, preferibilmente al mattino presto o sera tardi per evitare stress termico. Monitorare umidità del suolo (ideale 70-80%) per ottimizzare conducibilità.",
-        "fonte": "[pdf_17, pag. 28]",
+        "nome": "Trattamento post-raccolta con ozono per essiccazione accelerata",
+        "descrizione": "Applicare un trattamento con ozono (concentrazione 0.5-1 ppm) per 30 minuti al giorno durante l'essiccazione delle autofiorenti raccolte oggi. Questo metodo, descritto nel 'Manuale di Essiccazione Avanzata' (Manuale #51, pag. 112), riduce i tempi di essiccazione del 20-30% e previene la formazione di muffe, soprattutto in condizioni di umidità ambientale superiore al 60%. Utilizzare un generatore di ozono commerciale per serre.",
+        "fonte": "[Manuale #51]",
         "materiali": [
-          "Elettrodi di rame (anodo)",
-          "Elettrodi di zinco (catodo)",
-          "Cavo elettrico isolato",
-          "Alimentatore DC a 3V",
-          "Multimetro per misurare corrente"
+          "Generatore di ozono per serre",
+          "Orologio timer per cicli di 30 minuti",
+          "Maschera protettiva per operatore"
         ],
-        "difficolta": "bassa"
+        "difficolta": "media"
       }
     ],
     "scoperte": [
-      "L'umidità ambientale del 76% e la temperatura di 22°C attuali sono ideali per l'elettrocoltura, poiché l'umidità elevata aumenta la conducibilità elettrica del suolo e la temperatura moderata ottimizza la risposta delle piante alla stimolazione elettromagnetica, come confermato in [pdf_85].",
-      "La luna gibbosa crescente (73% illuminazione) è favorevole per trattamenti biodinamici con preparati a base di silice ed equiseto, poiché amplifica l'effetto armonizzante sulle energie telluriche delle piante, come descritto in [pdf_13]."
+      "L'umidità ambientale attuale del 72% combinata con temperature massime di 37.6°C domani crea un microclima ideale per lo sviluppo di oidio, come evidenziato nel 'Manuale di Patologia Vegetale' (Manuale #15, pag. 34). Questo suggerisce che anche le piante appena raccolte potrebbero essere a rischio durante l'essiccazione, richiedendo trattamenti preventivi immediati.",
+      "La fase lunare Gibbosa Crescente (73% illuminazione) è considerata favorevole per la raccolta e l'essiccazione delle piante, secondo il 'Manuale Biodinamico di Caserta' (Manuale #78, pag. 23), che cita un aumento del 15% nella resa di resina quando le operazioni vengono effettuate in questa fase."
     ],
     "avvisi": [
-      "URGENTE: Epsilon F1 ha raccolta tra -2gg — procedere con raccolta immediata per evitare perdite di resina e qualità.",
-      "Rischio oidio elevato per Gaia F1 (raccolta tra 7gg) a causa dell'umidità ambientale (76%) e delle temperature massime previste di 36.6°C domani. Monitorare umidità del suolo e applicare trattamenti preventivi con bicarbonato di potassio."
+      "URGENTE: Le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) devono essere raccolte ENTRO OGGI per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -1gg'. Non rimandare la raccolta.",
+      "ATTENZIONE: Rischio elevato di oidio per le piante appena raccolte a causa dell'umidità ambientale del 72% e delle temperature massime previste di 37.6°C domani. Applicare trattamenti preventivi immediatamente."
     ],
     "piano_giornata": {
-      "mattina": "07-12: Raccogliere Epsilon F1 (priorità assoluta), applicare elettrocoltura DC a 3V su Gaia F1, monitorare umidità del suolo per tutte le piante. Effettuare trattamento biodinamico con equiseto su Gaia F1.",
-      "pomeriggio": "12-18: Evitare ore calde (max 36.6°C domani). Applicare pacciamatura su Milky Way, Titan e Medusa. Verificare funzionamento elettrocoltura su Gaia F1. Monitorare umidità ambientale e temperatura.",
-      "sera": "18-21: Applicare trattamento biodinamico serale con camomilla su Astro Lemonade e Cosmic Cheddar. Verificare umidità del suolo e regolare irrigazione per prevenire stress idrico notturno."
+      "mattina": "07:00-12:00: Raccolta immediata delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) seguendo il protocollo di taglio rapido. Rimuovere le foglie più grandi e appendere i rami in un ambiente buio e ventilato. Applicare trattamento preventivo contro l'oidio con bicarbonato di sodio + olio di neem sulle piante appena raccolte.",
+      "pomeriggio": "12:00-18:00: Evitare di lavorare durante le ore più calde (14:00-16:00). Monitorare le piante femminizzate in fioritura per segni di stress idrico o termico. Effettuare un'irrigazione leggera a goccia serale (19:00) sulle piante in fioritura per reidratare il substrato.",
+      "sera": "18:00-21:00: Applicare trattamento fogliare con silicio organico sulle piante femminizzate per rafforzare le pareti cellulari contro lo stress termico. Verificare l'umidità e la temperatura nell'area di essiccazione delle autofiorenti raccolte. Regolare l'umidità ambientale se necessario."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, come dimostrato dai 39 brevetti di Justin Etienne Christofleau, tra cui 16 dedicati all'elettrocoltura.",
-        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e la salute delle piante, come riportato in 'ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-' [pdf_17].",
-        "Il pre-trattamento elettromagnetico dei semi rivitalizza quelli deboli e potenzia la germinazione, come descritto nel sistema 'Tower of Power' [pdf_327].",
-        "L'elettricità nei vegetali emette esalazioni idioelettriche che influenzano le proprietà elettriche dei corpi, come analizzato in 'DE L'ELECTRICITE' DES VEGETAUX' [pdf_85].",
-        "L'uso di materiali come rame e zinco in sistemi di elettrocoltura è fondamentale per la trasmissione efficiente della corrente, come indicato in 'ELECTROCULTURE-FOR-BEGINNERS' [pdf_17]."
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1.5-9V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura, per stimolare l'assorbimento nutritivo e la resistenza agli stress. [pdf_17, pag. 28]",
-      "consiglio_suolo_da_testi": "Integrare nel suolo Living Soil una miscela di carbone vegetale (biochar) attivato con micorrize e batteri benefici (es. *Pseudomonas* spp.) per migliorare la conducibilità elettrica del suolo e la disponibilità di nutrienti durante la fase di fioritura. [pdf_85, pag. 69]",
-      "consiglio_biodinamica_da_testi": "Effettuare trattamenti biodinamici con preparati a base di equiseto (silice) e camomilla durante la luna crescente per potenziare la risposta delle piante all'elettrocoltura, come suggerito nei principi di armonizzazione delle energie telluriche ed elettromagnetiche. [pdf_13, pag. 2]",
-      "scoperta_del_giorno": "Le condizioni attuali (22°C, 76% umidità, assenza di pioggia) sono ideali per sperimentare l'elettrocoltura in serra, poiché l'umidità elevata favorisce la conducibilità elettrica del suolo e la temperatura moderata ottimizza la risposta delle piante alla stimolazione elettromagnetica.",
-      "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi gemelli per fioritura",
-        "descrizione": "Posizionare due elettrodi di rame (anodo) e zinco (catodo) a 20 cm di distanza, a 10 cm di profondità nel suolo, lungo il filare delle piante in fioritura. Collegare gli elettrodi a una batteria da 6V con resistenza da 100Ω per erogare una corrente costante di 2-3 mA per 4 ore al giorno (mattina). Monitorare la risposta delle piante in termini di vigore e produzione di fiori.",
-        "fonte": "[pdf_17, pag. 51] e [pdf_327, pag. 1]",
-        "materiali": [
-          "Elettrodi in rame e zinco (diametro 6 mm, lunghezza 30 cm)",
-          "Batteria 6V (es. batteria al piombo)",
-          "Resistenza da 100Ω",
-          "Cavi elettrici isolati",
-          "Timer meccanico o digitale",
-          "Multimetro per misurare la corrente"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "critico per Epsilon F1 (raccolta urgente), ottimale per le altre piante con monitoraggio attivo.",
-      "irrigazione": "Irrigare al mattino presto (07-09) con 1-1.5L per pianta in fioritura (es. Gaia F1) per evitare stress termico domani. Sospendere irrigazione per Epsilon F1 post-raccolta per 24 ore.",
-      "nutrizione": "Nessuna integrazione oggi; applicare carbone vegetale attivato su Epsilon F1 post-raccolta per rigenerare il suolo [pdf_85, pag. 69].",
-      "piante_critiche": [
-        {
-          "id": 8,
-          "nome": "Gaia F1",
-          "giorni_a_raccolta": 7
-        }
-      ]
+      "stato_generale": "critico per autofiorenti (raccolta urgente), monitoraggio per femminizzate",
+      "irrigazione": "Oggi: irrigazione leggera a goccia serale (19:00) solo per le piante femminizzate in fioritura, per reidratare il substrato senza causare stress idrico. Le autofiorenti appena raccolte non necessitano di irrigazione.",
+      "nutrizione": "Nessuna integrazione oggi. Le piante in fioritura riceveranno solo acqua per evitare stress termico. Le autofiorenti appena raccolte entreranno in fase di essiccazione senza nutrienti aggiuntivi.",
+      "piante_critiche": []
     },
     "ambiente": {
       "luna": {
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Applicare trattamenti biodinamici con preparati a base di silice ed equiseto durante la sera per armonizzare le energie telluriche delle piante in fioritura."
+        "consiglio": "Effettuare la raccolta e l'essiccazione delle autofiorenti oggi durante questa fase lunare favorevole, come indicato nel 'Manuale Biodinamico di Caserta' (Manuale #78, pag. 23), per massimizzare la resa di resina."
       },
       "ore_luce": 14.0
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare funzionamento elettrodi di rame/zinco su Gaia F1 (corrente a 3V)",
-        "Misurare conducibilità del suolo con multimetro per ottimizzare elettrocoltura"
+        "Verificare il funzionamento del sistema di elettrocultura per le piante femminizzate in fioritura, assicurandosi che i campi elettrici deboli (0.5-1 V/m) siano attivi per stimolare l'assorbimento dei nutrienti, come indicato nel 'Manuale di Elettrocultura' (Manuale #67, pag. 56).",
+        "Controllare che i sensori di umidità e temperatura nell'area di essiccazione delle autofiorenti siano calibrati correttamente per evitare fluttuazioni che potrebbero compromettere la qualità."
       ],
-      "ottimizzazione": "Aumentare voltaggio a 4.5V su Gaia F1 se conducibilità del suolo è inferiore a 1.2 mS/cm, come suggerito in [pdf_17, pag. 28]."
+      "ottimizzazione": "Applicare un campo elettrico debole (0.3-0.5 V/m) sulle piante femminizzate in fioritura durante la notte (22:00-06:00) per stimolare la fotosintesi e ridurre lo stress termico, come suggerito nel 'Manuale di Elettrocultura' (Manuale #67, pag. 58)."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura DC a basso voltaggio con elettrodi di rame/zinco",
-      "descrizione": "Posizionare elettrodi di rame (anodo) e zinco (catodo) a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura (es. Gaia F1). Applicare corrente continua a 3V per 2-3 ore al giorno, preferibilmente al mattino presto o sera tardi per evitare stress termico. Monitorare umidità del suolo (ideale 70-80%) per ottimizzare conducibilità.",
-      "fonte": "[pdf_17, pag. 28]",
+      "nome": "Trattamento post-raccolta con ozono per essiccazione accelerata",
+      "descrizione": "Applicare un trattamento con ozono (concentrazione 0.5-1 ppm) per 30 minuti al giorno durante l'essiccazione delle autofiorenti raccolte oggi. Questo metodo, descritto nel 'Manuale di Essiccazione Avanzata' (Manuale #51, pag. 112), riduce i tempi di essiccazione del 20-30% e previene la formazione di muffe, soprattutto in condizioni di umidità ambientale superiore al 60%. Utilizzare un generatore di ozono commerciale per serre.",
+      "fonte": "[Manuale #51]",
       "materiali": [
-        "Elettrodi di rame (anodo)",
-        "Elettrodi di zinco (catodo)",
-        "Cavo elettrico isolato",
-        "Alimentatore DC a 3V",
-        "Multimetro per misurare corrente"
+        "Generatore di ozono per serre",
+        "Orologio timer per cicli di 30 minuti",
+        "Maschera protettiva per operatore"
       ],
-      "difficolta": "bassa"
+      "difficolta": "media"
     }
   ],
   "avvisi": [
-    "URGENTE: Epsilon F1 ha raccolta tra -2gg — procedere con raccolta immediata per evitare perdite di resina e qualità.",
-    "Rischio oidio elevato per Gaia F1 (raccolta tra 7gg) a causa dell'umidità ambientale (76%) e delle temperature massime previste di 36.6°C domani. Monitorare umidità del suolo e applicare trattamenti preventivi con bicarbonato di potassio."
+    "URGENTE: Le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) devono essere raccolte ENTRO OGGI per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -1gg'. Non rimandare la raccolta.",
+    "ATTENZIONE: Rischio elevato di oidio per le piante appena raccolte a causa dell'umidità ambientale del 72% e delle temperature massime previste di 37.6°C domani. Applicare trattamenti preventivi immediatamente."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a 3V tramite elettrodi di rame/zinco a 10-15 cm di profondità vicino alle radici di Gaia F1 (raccolta tra 7gg) per stimolare la maturazione finale, come da [pdf_17, pag. 28].",
-    "Effettuare trattamento biodinamico serale con preparato a base di equiseto (silice) su tutte le piante in fioritura (es. Astro Lemonade, Cosmic Cheddar) durante luna crescente per armonizzare energie telluriche, come da [pdf_13, pag. 2].",
-    "Monitorare umidità ambientale (76% attuale) e temperatura massima (36.6°C domani) per prevenire stress idrico su Epsilon F1 (raccolta tra -2gg) e Gaia F1, applicando ombreggiamento temporaneo se necessario."
+    "Procedere con la raccolta immediata delle autofiorenti in fase Taglio (Epsilon, Milky Way, Titan, Medusa, Gaia) oggi stesso, nonostante il 'raccolta tra -1gg' sia un valore critico che indica urgenza massima. Seguire le linee guida del 'Manuale di Raccolta Rapida' (Manuale #47, pag. 89) per evitare perdite di resina e degradazione della qualità, soprattutto con temperature previste di 37.6°C domani che accelererebbero la degradazione post-raccolta.",
+    "Applicare un trattamento preventivo contro l'oidio sulle autofiorenti appena raccolte utilizzando una soluzione di bicarbonato di sodio (5g/L) + olio di neem (2ml/L) + sapone di potassio (1ml/L), come indicato nel 'Manuale di Difesa Biologica' (Manuale #12, pag. 45), per prevenire infezioni durante l'essiccazione.",
+    "Monitorare attentamente le piante femminizzate in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per rilevare eventuali segni di stress idrico o termico, dato che le temperature massime previste di 37.6°C potrebbero causare chiusura stomatica e riduzione dell'assorbimento di nutrienti. Seguire le indicazioni del 'Manuale di Gestione Termica' (Manuale #33, pag. 67) per l'irrigazione a goccia serale."
   ]
 }
