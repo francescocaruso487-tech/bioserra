@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-10
+aggiornato: 2026-08-11
 pdf_count: 1
 ---
 
@@ -12,30 +12,33 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale delle colture outdoor, in particolare in condizioni climatiche come quelle di Caserta (41°N). Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo il loro micelio nel substrato, creando una rete di assorbimento che aumenta la superficie radicale fino a 100 volte. Il meccanismo d’azione si basa sulla fornitura di nutrienti (azoto, fosforo, acqua) alla pianta in cambio di carboidrati fotosintetizzati, migliorando la resilienza delle colture a stress idrici, patogeni e squilibri nutrizionali.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** outdoor, soprattutto in contesti come quello di Caserta (41°N). Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo il loro micelio nel terreno, creando una rete di assorbimento che supera di 100-1000 volte la capacità radicale della pianta. Il meccanismo d'azione si basa su uno scambio reciproco: il fungo fornisce alla pianta acqua, fosforo, azoto e micronutrienti (come zinco e rame) in forme biodisponibili, mentre la pianta cede al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione.
 
-In un ecosistema **Living Soil**, le micorrize sono un pilastro della biodiversità funzionale: non solo ottimizzano l’assorbimento dei nutrienti, ma promuovono anche la struttura del suolo attraverso la produzione di glomalina, una glicoproteina che aggrega le particelle terrose. Questo processo è cruciale in serra outdoor, dove la gestione idrica e la mineralizzazione della sostanza organica devono essere bilanciate per evitare ristagni (come evidenziato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]) o accumuli di sali (come discusso in [web_zamn_302-lavaggio-delle-radici]).
+Questa simbiosi è particolarmente vantaggiosa in **serra outdoor** perché:
+- **Aumenta la resilienza** delle piante a stress idrici e nutrizionali, tipici dei climi mediterranei estivi.
+- **Migliora la struttura del suolo** attraverso la produzione di glomalina, una glicoproteina che aggrega le particelle terrose, riducendo l’erosione e aumentando la capacità di ritenzione idrica.
+- **Compete con patogeni radicali**, occupando nicchie ecologiche e secernendo metaboliti antifungini.
+- **Ottimizza l’uso dei nutrienti** in un sistema *Living Soil*, dove la biodiversità microbica è la chiave per ridurre l’input di fertilizzanti esterni.
 
 ## Come si applica in serra
-Per un coltivatore **Living Soil outdoor** a Caserta, l’inoculazione micorrizica deve essere eseguita con precisione durante le fasi critiche di trapianto e sviluppo radicale. Segui questi passaggi:
+Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con attenzione alle condizioni climatiche e al ciclo di crescita della pianta (ad esempio, *Cannabis sativa* L.). Ecco una procedura passo-passo:
 
 1. **Preparazione del substrato**:
-   - Assicurati che il terreno sia umido ma non saturo (evita ristagni, come indicato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
-   - Mescola l’inoculo micorrizico (es. *Rhizophagus irregularis* o *Glomus spp.*) con un carrier organico (torba, compost maturo) per distribuirlo uniformemente.
+   - Assicurarsi che il terreno sia **umido ma non zuppo** (evitare ristagni, come indicato in [web_zamn_301](web_zamn_301-come-irrigare-le-piante-di-cannabis)).
+   - Verificare che il pH del suolo sia compreso tra **6.0 e 7.0** (ideale per la colonizzazione micorrizica).
 
-2. **Applicazione al trapianto**:
-   - Al momento del trapianto, posiziona **5–10 g di inoculo per pianta** direttamente a contatto con le radici, preferibilmente in una buca profonda 5–10 cm.
-   - Copri con uno strato sottile di substrato per proteggere i funghi dalla luce e dall’essiccamento.
+2. **Scelta dell’inoculo**:
+   - Utilizzare un inoculo **specifico per piante a fiore** (es. *Rhizophagus irregularis* o miscele di funghi endomicorrizici).
+   - Quantità: **5-10g per pianta**, distribuiti direttamente sulle radici al momento del trapianto o della semina.
 
-3. **Post-trapianto**:
-   - Mantieni il suolo umido (ma non bagnato) per 7–10 giorni per favorire la colonizzazione radicale.
-   - **Evita fungicidi chimici** nei 30 giorni successivi all’inoculazione, poiché possono uccidere i funghi micorrizici (come sottolineato in [web_zamn_335-conservare-cannabis] per l’importanza di un suolo vivo).
+3. **Applicazione**:
+   - **Al trapianto**: Mescolare l’inoculo con un po’ di substrato umido e posizionarlo a contatto con le radici, evitando di esporlo alla luce diretta (i funghi sono fotosensibili).
+   - **Per semi**: Applicare l’inoculo direttamente nel foro di semina, a 2-3 cm di profondità.
+   - **Dopo l’applicazione**: Coprire leggermente con terreno e irrigare con **acqua a pH 6.5** per favorire l’attecchimento.
 
-4. **Monitoraggio**:
-   - Osserva lo sviluppo delle radici e la crescita della pianta: una colonizzazione efficace si traduce in un apparato radicale più denso e in una maggiore resistenza a stress idrici.
+4. **Post-trattamento**:
+   - Evitare **fungicidi chimici** per almeno **30 giorni** dall’inoculazione [web_zamn_335](web_zamn_335-conservare-cannabis).
+   - Mantenere il suolo **ben ossigenato** (evitare compattazione) e **umido ma non saturo** per favorire la crescita del micelio.
 
 ## Sinergie con altri elementi
-Le micorrize interagiscono positivamente con diverse tecniche agronomiche, potenziando i loro effetti in un sistema **Living Soil** outdoor:
-
-- **Elettrocultura (Lakhovsky/Fe-Cu)**:
-  Le correnti elettriche deboli (es. anelli di Lakhovsky) possono stimolare la crescita del micelio, accelerando la simbiosi. L’uso di **Fe-Cu** (ferro e rame) come microelementi favorisce la
+Le micorrize interag
