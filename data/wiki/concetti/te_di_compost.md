@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-10
+aggiornato: 2026-08-11
 pdf_count: 8
 ---
 
@@ -12,42 +12,29 @@ pdf_count: 8
 # Te di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dal compost maturo, progettato per arricchire il suolo o le piante con microrganismi benefici, nutrienti solubili e sostanze umiche. Questo preparato funziona come un "probiotico" per il suolo, stimolando la biodiversità microbica e migliorando la salute delle piante attraverso meccanismi diretti (nutrizione fogliare/radicale) e indiretti (competizione con patogeni, solubilizzazione dei nutrienti). La sua efficacia si basa sulla **teoria del suolo vivente (Living Soil)**, che privilegia l'equilibrio tra batteri, funghi, protozoi e nematodi per creare un ecosistema autosostenibile.
+Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dal compost maturo, ricco di microrganismi benefici (batteri, funghi, attinomiceti, protozoi) e sostanze nutritive disciolte. Questo preparato funziona come un **bioattivatore del suolo** e un **stimolatore della salute vegetale**, agendo sia per via radicale che fogliare. Il meccanismo d'azione si basa sulla **riattivazione della vita microbica** nel rizosfera e sulla fornitura di nutrienti prontamente assimilabili, oltre che sulla produzione di **sostanze biostimolanti** (ormoni, enzimi, acidi umici) che migliorano la resistenza delle piante agli stress abiotici (siccità, caldo) e biotici (patogeni).
 
-Il processo di estrazione aerobica (con aeratore) consente di ottenere una soluzione ricca di **batteri aerobici**, funghi benefici (come *Trichoderma*), attinomiceti e sostanze umiche, che favoriscono la struttura del suolo, la disponibilità di azoto e la resistenza delle piante agli stress biotici e abiotici. In particolare, per coltivazioni outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e umidità, il Te di Compost agisce come **barriera biologica** contro funghi patogeni (es. *Botrytis*) e come booster di resilienza.
+In un contesto di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con alte temperature e siccità estiva, il Te di Compost diventa uno strumento chiave per **mantenere l'equilibrio microbiologico** del suolo e **potenziare la fotosintesi** grazie all'apporto di carbonio organico e azoto biodisponibile. La sua efficacia è massima quando applicato in **fase di vegetazione** (per stimolare lo sviluppo radicale) e in **inizio fioritura** (per supportare la produzione di biomassa e resina).
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, segui queste istruzioni pratiche:
 
-1. **Preparazione del compost**:
-   - Usa compost maturo (3-6 mesi) con rapporto C/N equilibrato (ideale 20:1–30:1).
-   - Evita compost con residui di carne, latticini o oli (rischio di anaerobiosi).
+**Materiali necessari:**
+- Compost maturo (preferibilmente vermicompost o compost da letame maturo)
+- Acqua non clorata (piovana, osmosi inversa o lasciata decantare 24h)
+- Aeratore per acquario (con pietra porosa)
+- Melassa biologica (o zucchero di canna non raffinato)
+- Contenitore in plastica o vetro (evitare metalli)
+- Filtro a maglie fini (per rimuovere particelle grossolane)
+- Spruzzatore a pressione o sistema di irrigazione a goccia
 
-2. **Estrazione aerobica**:
-   - Riempi un secchio con **10 litri di acqua non clorata** (lasciare decantare 24h o usare acqua piovana).
-   - Aggiungi **1 kg di compost** in un sacchetto di tela o calza per stivali (evita la torbidità).
-   - Immergi e **aera con una pompa per acquario** (24–48h) a temperatura ambiente (18–25°C).
-   - *Opzionale*: Aggiungi **10–20 ml di melassa** (o zucchero di canna) come fonte di carbonio per i batteri.
-
-3. **Applicazione**:
-   - Filtra il liquido con una retina fine (evita intasamenti).
-   - Applica **entro 4 ore** dalla preparazione (massima vitalità microbica).
-   - **Dosi**:
-     - **Radicale**: 1–2 litri/m² ogni 2 settimane (innaffiando il suolo).
-     - **Fogliare**: 0.5–1 litro/m² con nebulizzatore (mattina presto o sera).
-   - *Frequenza*: Ogni 10–15 giorni durante **vegetazione** e **fioritura**.
-
-4. **Consigli per Caserta**:
-   - Applica in **assenza di vento forte** (evita deriva).
-   - Evita l'applicazione sotto il sole diretto (ustioni fogliari).
-   - In caso di pioggia, posticipa l'applicazione di 24h.
-
----
-
-## Sinergie con altri elementi
-Il Te di Compost si combina efficacemente con altre tecniche per potenziare la salute delle piante e del suolo:
-
-- **Lakhovsky (Onde Multifrequenza)**:
-  - Applica il Te di Compost **dopo** una sessione di elettrocultura (es. bobina di Lakhovsky) per stimolare la risposta immunitaria delle piante. I microrgan
+**Procedura (per 10L di Te di Compost):**
+1. **Preparazione del compost**: Utilizza compost maturo (6-12 mesi) con rapporto C/N equilibrato. Evita compost fresco o con odori sgradevoli (indice di anaerobiosi).
+2. **Immersione**: Metti **1-2 kg di compost** in un sacchetto di tela o una retina (per evitare sedimenti) e immergilo in **10L di acqua**. Aggiungi **10-20g di melassa** (1-2%) come substrato per i microrganismi.
+3. **Aerazione**: Collega l'aeratore e mantieni l'infusione in movimento per **24-48h** a temperatura ambiente (18-25°C). L'ossigenazione è cruciale per evitare la proliferazione di batteri anaerobi (che producono tossine come l'acido solfidrico).
+4. **Filtraggio**: Dopo 24h, rimuovi il sacchetto e filtra il liquido con un panno a trama fine per eliminare residui solidi.
+5. **Applicazione**: Utilizza il Te di Compost entro **4-6h** dalla preparazione per massimizzare la vitalità microbica. Applica:
+   - **Radicale**: Irriga il suolo alla base delle piante (1-2L/m²) evitando ristagni.
+   - **Fogliare**: Spruzza sulle foglie al mattino presto o al tramonto (diluizione 1:1 con acqua se necessario) per evitare ustioni.
+6. **Frequenza**: Applica ogni **7-14 giorni** durante la vegetazione e ogni **10-20 giorni** in fioritura, alternando con altri trattamenti
