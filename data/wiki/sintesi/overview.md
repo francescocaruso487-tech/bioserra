@@ -1,6 +1,6 @@
 ---
 tipo: overview
-aggiornato: 2026-08-11
+aggiornato: 2026-08-12
 ---
 
 # BioSerra — Knowledge Base Overview
@@ -11,37 +11,49 @@ aggiornato: 2026-08-11
 
 ---
 
-## ## Filosofia BioSerra
-**Living Soil Water-Only** è il cuore della nostra serra: un ecosistema autosufficiente dove il suolo è un organismo vivente, nutrito solo da acqua, materia organica e stimoli elettromagnetici. La **biodinamica** sincronizza le pratiche con i ritmi cosmici, mentre l’**elettrocultura** amplifica la vitalità delle piante attraverso campi elettromagnetici naturali e artificiali.
+## **🌱 Filosofia BioSerra**
+BioSerra è una **serra outdoor a suolo vivente** che adotta un approccio **olistico e rigenerativo**, fondendo:
+- **Living Soil (suolo vivente water-only)**: Ecosistema microbico autosufficiente, senza substrati inerti, con nutrienti rilasciati lentamente dalla materia organica e dalle rocce.
+- **Biodinamica**: Rispetto dei ritmi naturali (luna, stagioni) e uso di preparati dinamizzati per attivare la vitalità del suolo.
+- **Elettrocultura**: Tecniche passive/attive per stimolare la crescita, la resistenza e la qualità delle piante tramite campi elettromagnetici naturali (Lakhovsky, acqua magnetizzata, ecc.).
+- **Water-Only**: Irrigazione con acqua viva (magnetizzata, ionizzata) per massimizzare l’assorbimento radicale e ridurre lo stress idrico.
 
-- **Visione integrata**: Ogni tecnica (suolo, biodinamica, elettrocultura) non è isolata, ma parte di un sistema sinergico che ottimizza salute delle piante, resa e qualità dei raccolti.
-- **Water-only**: L’acqua non è solo un vettore di nutrienti, ma un medium attivo, trattata con **magnetizzazione**, **leghe Fe-Cu** e **antenne di terra** per potenziarne le proprietà.
-- **Zero chimica sintetica**: Solo input naturali (compost, micorrize, farine di roccia) e stimoli fisici (onde Lakhovsky, spirali di rame).
-
----
-
-## ## Sistema di conoscenza
-BioSerra si basa su **341 manuali** e **20 concetti attivi**, organizzati in una rete di conoscenze interconnesse:
-
-| **Risorsa**          | **Ruolo**                                                                 | **Esempi**                                                                 |
-|-----------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| **PDF**               | Guide operative dettagliate per fasi colturali e tecniche specifiche.     | [[web_zamn_287-fase-plantula-cannabis]], [[web_zamn_290-fase-fioritura-cannabis]] |
-| **Concetti**          | Modelli astratti che collegano più PDF e tecniche.                        | Elettrocultura Lakhovsky, Suolo Vivente Elettrico, Ritmi Cosmici.          |
-| **Manuali AI**        | Sintesi operative generate dall’IA per decisioni in tempo reale.          | Manuale #47 (Raccolta Rapida), Manuale #12 (Difesa Biologica).             |
-| **Categorie**         | Tassonomia delle pratiche attive in serra.                                | Elettrocultura, Biodinamica, Suolo, Irrigazione, Nutrizione, Fitosanitario. |
-
-**Flusso di lavoro**:
-1. **Dati in entrata**: Condizioni meteo (es. 37.6°C), fase colturale (autofiorenti in Taglio), segni di stress.
-2. **Ricerche**: PDF e concetti attivi vengono incrociati per identificare soluzioni (es. [[web_zamn_288-fase-vegetativa-cannabis]] + Elettrocultura Lakhovsky).
-3. **Azioni**: Applicazione di tecniche (es. trattamento preventivo con bicarbonato + neem) e monitoraggio tramite [[Manuale di Gestione Termica]].
+*Visione*: Coltivare piante **sane, resilienti e potenti** in armonia con l’ambiente, senza input chimici, sfruttando la **saggezza del suolo** e le leggi della natura.
 
 ---
 
-## ## Tecniche Elettrocultura Attive
-L’elettrocultura in BioSerra sfrutta campi elettromagnetici per **stimolare la crescita**, **aumentare la resistenza** e **migliorare l’assorbimento idrico**. Le 5 tecniche principali:
+## **📚 Sistema di Conoscenza**
+BioSerra si basa su un **ecosistema di conoscenza integrato**:
+- **341 manuali/PDF** analizzati (es. [web_zamn_287], [web_zamn_293], ecc.) che coprono:
+  - Fasi colturali (germinazione, vegetativa, fioritura).
+  - Gestione del suolo (compostaggio, micorrize, pH).
+  - Difesa fitosanitaria (controllo parassiti, oidio).
+  - Protocolli elettrocultura (antenne, acqua magnetizzata).
+- **15 concetti attivi** (es. [[suolo-vivente]], [[elettrodi-fe-cu]]) che collegano le tecniche a principi scientifici e pratici.
+- **Alerts e protocolli** (es. raccolta urgente, trattamenti preventivi) che aggiornano in tempo reale le azioni necessarie.
 
-| **Tecnica**               | **Funzione**                                                                 | **Applicazione**                                                                 | **PDF/Concetto correlato**                     |
-|---------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------|
-| **Elettrocultura Lakhovsky** | Amplifica la frequenza cellulare delle piante per resistenza e vitalità.   | Antenne a spirale di rame intorno alle piante, collegate a terra.               | [[Elettrocultura Lakhovsky]]                  |
-| **Spirale in Rame**       | Crea campi EM locali per stimolare microrganismi e radici.                  | Installata intorno al colletto delle piante o lungo i filari.                  | [[Spirale in Rame]]                           |
-| **Antenna di Terra**      | Bilancia il potenziale elettrico del suolo e delle piante.                 | Dispersori di rame interrati, collegati a un sistema di messa a terra dedicato
+*Come funziona*:
+- Ogni **tecnica** (es. spirale rame) ha una pagina wiki dedicata con:
+  - **Teoria** (come funziona).
+  - **Pratica** (come implementarla).
+  - **Riferimenti** a PDF e concetti correlati.
+- I **PDF** sono citati con `[id]` (es. `[web_zamn_288]`) e linkati direttamente.
+- I **concetti** sono collegati con `[[nome-concetto]]` (es. `[[acqua-magnetizzata]]`).
+
+---
+
+## **⚡ Tecniche Elettrocultura Attive**
+Le 5 tecniche principali in uso a BioSerra:
+
+| **Tecnica**               | **Funzione**                                                                 | **Pagina Wiki**          | **Stato**       |
+|---------------------------|-----------------------------------------------------------------------------|--------------------------|-----------------|
+| **Acqua Magnetizzata**    | Aumenta la coerenza molecolare dell’acqua, migliorando assorbimento e fotosintesi. | [[acqua-magnetizzata]]   | Attiva          |
+| **Spirale in Rame**       | Genera campi elettromagnetici per stimolare la crescita e la resistenza.    | [[spirale-rame]]         | Attiva          |
+| **Circuito di Lakhovsky** | Risonanza cellulare per equilibrare le frequenze vitali delle piante.       | [[circuito-lakhovsky]]   | Attiva          |
+| **Elettrodi Fe-Cu**       | Stimolazione redox del suolo per mobilitare nutrienti e attivare microrganismi. | [[elettrodi-fe-cu]]      | Attiva          |
+| **Antenna di Terra**      | Connette il suolo al campo elettromagnetico terrestre per armonizzare la pianta. | [[antenna-terra]]        | Attiva          |
+
+*Nota*: Tutte le tecniche sono **passive/low-energy** e si integrano con il Living Soil senza interferire con la biodiversità.
+
+---
+## **🌍 Princip
