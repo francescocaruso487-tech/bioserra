@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-11
+aggiornato: 2026-08-12
 pdf_count: 6
 ---
 
@@ -12,26 +12,31 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macroinvertebrati (lombrichi, collemboli), che scompongono i composti complessi in forme assimilabili dalle piante. Il risultato è un **compost maturo**, caratterizzato da un equilibrio tra macro e micronutrienti, una struttura porosa che migliora l’aerazione del suolo e una capacità di trattenere acqua e sostanze nutritive (CEC elevata).
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione di batteri termofili, funghi e macroinvertebrati che, in condizioni ottimali di umidità, aerazione e temperatura (55-65°C), scompongono la materia organica in composti stabili e assimilabili dalle piante. Il compost di qualità agisce come **condizionatore del suolo**, migliorando la struttura, la capacità di ritenzione idrica e la biodiversità microbica, elementi fondamentali per un **Living Soil** outdoor, soprattutto in climi mediterranei come quello di Caserta (41°N), dove la siccità estiva e la compattazione del suolo possono limitare la crescita radicale.
 
-In un sistema **Living Soil** outdoor, il compost non è solo un fertilizzante, ma un **ecosistema a sé stante**: fornisce energia ai microrganismi del suolo, stimola la formazione di micorrize e favorisce la resilienza delle piante contro patogeni e stress ambientali. La temperatura di 55–65°C durante la fase termofila (2–4 settimane) è cruciale per eliminare semi di malerbe, patogeni e parassiti, mentre la successiva fase di maturazione (2–6 mesi) permette la sintesi di sostanze umiche e acidi fulvici, essenziali per la salute del suolo e la crescita radicale.
+Il meccanismo chiave del compostaggio si basa sull’equilibrio tra **materiali azotati (verdi)** e **carboniosi (marroni)**. I primi forniscono l’azoto necessario per la crescita microbica, mentre i secondi (ricchi di cellulosa e lignina) strutturano il compost e ne regolano la porosità. In assenza di questo bilanciamento, il processo può diventare anaerobico (con produzione di odori sgradevoli e metano) o troppo lento. Un compost ben maturo, inoltre, contiene **sostanze umiche** che chelano i nutrienti, rendendoli disponibili gradualmente durante la fase vegetativa delle piante, cruciale per lo sviluppo di radici forti e una crescita vigorosa.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta (41°N)**, il compostaggio deve adattarsi al clima mediterraneo (estati calde e secche, inverni miti e umidi). Segui questi passaggi per ottenere un compost di qualità in **Living Soil**:
 
-### 1. **Selezione e bilanciamento dei materiali**
-- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame (es. cavallo, pollo), fondi di caffè.
-- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, rametti triturati, gusci d’uovo.
-- **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). A Caserta, dove l’umidità estiva può accelerare la decomposizione, aggiungi più marroni per evitare compattazione e cattivi odori.
+### **1. Selezione dei materiali**
+- **Materiali verdi (ricchi di azoto, rapporto C/N < 30:1):**
+  - Scarti di cucina (resti di frutta/verdura, fondi di caffè, bustine di tè non sintetiche)
+  - Erba fresca tagliata (evitare erbe infestanti con semi)
+  - Letame fresco (di cavallo, mucca o pollo, ben decomposto)
+  - Residui di potatura verde (foglie, giovani rametti)
+- **Materiali marroni (ricchi di carbonio, rapporto C/N > 30:1):**
+  - Paglia, fieno o paglia di riso
+  - Foglie secche (non di quercia o pino, troppo acide)
+  - Cartone non stampato o giornali (in piccoli pezzi)
+  - Segatura o trucioli di legno non trattato (da aggiungere con moderazione)
 
-### 2. **Struttura del cumulo**
-- **Posizione**: In serra, scegli un’area ombreggiata (es. sotto una rete ombreggiante) per evitare surriscaldamento estivo. Proteggi il cumulo con un telo traspirante per regolare l’umidità.
-- **Dimensioni**: 1–1,5 m di altezza e larghezza (ottimale per trattenere calore e umidità).
-- **Aerazione**: Crea strati alternati (5–10 cm) di verdi e marroni, aggiungendo rametti o trucioli di legno per favorire la circolazione d’aria.
+### **2. Costruzione del cumulo**
+- **Stratificazione:** Alternare strati di materiali verdi e marroni (spessore 10-15 cm ciascuno), iniziando e terminando con uno strato marrone per limitare gli insetti.
+- **Umidità:** Il cumulo deve essere umido come una spugna strizzata (non gocciolante). In caso di siccità estiva, nebulizzare acqua tra gli strati.
+- **Aerazione:** Inserire tubi forati o bastoni di bambù verticali per favorire la circolazione dell’aria.
 
-### 3. **Gestione della temperatura e umidità**
-- **Monitoraggio**: Usa un termometro da compost per verificare che la temperatura rimanga tra **55–65°C** (fase termofila). Se supera i 70°C, gira il cumulo per raffreddare.
-- **Umidità**: Il compost deve essere umido come una spugna strizzata. In estate, nebulizza acqua ogni 2–3 giorni; in inverno, copri con un telo per evitare eccesso di pioggia.
-- **Rivoltamento**: Gira il cumulo ogni **2–3 giorni** con una forca o un compost turner per ossigenare e uniformare la decomposizione. Dopo 2
+### **3. Gestione della temperatura**
+- **Monitoraggio:** Usare un termometro da compost (o un termometro da forno) per verificare che la temperatura si mantenga tra **55-65°C** per almeno 3 giorni consecutivi. Questo garantisce la morte di patogeni e semi di infestanti.
+- **Rivoltamenti:** Girare il cumulo ogni **2-3 giorni** con una forca o una pala, spostando i materiali dall’esterno verso il centro per uniformare la decomposizione. In serra, questo può essere fatto nelle ore più fresche (mattina presto
