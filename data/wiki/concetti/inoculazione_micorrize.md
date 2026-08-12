@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-11
+aggiornato: 2026-08-12
 pdf_count: 1
 ---
 
@@ -12,33 +12,34 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** outdoor, soprattutto in contesti come quello di Caserta (41°N). Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo il loro micelio nel terreno, creando una rete di assorbimento che supera di 100-1000 volte la capacità radicale della pianta. Il meccanismo d'azione si basa su uno scambio reciproco: il fungo fornisce alla pianta acqua, fosforo, azoto e micronutrienti (come zinco e rame) in forme biodisponibili, mentre la pianta cede al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione.
+Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, tramite le loro ife, estendono la rete radicale della pianta fino a 100 volte, migliorando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto) in cambio di carboidrati prodotti dalla fotosintesi. In condizioni di stress idrico o nutrizionale, le micorrize agiscono come un "secondo sistema radicale", aumentando la resilienza delle piante. Inoltre, secernono enzimi che mineralizzano sostanze organiche complesse, rendendo disponibili nutrienti altrimenti inaccessibili.
 
-Questa simbiosi è particolarmente vantaggiosa in **serra outdoor** perché:
-- **Aumenta la resilienza** delle piante a stress idrici e nutrizionali, tipici dei climi mediterranei estivi.
-- **Migliora la struttura del suolo** attraverso la produzione di glomalina, una glicoproteina che aggrega le particelle terrose, riducendo l’erosione e aumentando la capacità di ritenzione idrica.
-- **Compete con patogeni radicali**, occupando nicchie ecologiche e secernendo metaboliti antifungini.
-- **Ottimizza l’uso dei nutrienti** in un sistema *Living Soil*, dove la biodiversità microbica è la chiave per ridurre l’input di fertilizzanti esterni.
+Questa simbiosi è particolarmente vantaggiosa in **serre outdoor italiane**, dove il clima mediterraneo (estati calde e secche) può limitare l’efficienza radicale. Studi dimostrano che piante micorrizate presentano una crescita più vigorosa, maggiore tolleranza a patogeni e una ridotta necessità di fertilizzanti sintetici. La presenza di micorrize nel suolo è anche un indicatore di salute del **Living Soil**, poiché questi funghi dipendono da un ecosistema equilibrato, ricco di materia organica e batteri benefici.
+
+---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con attenzione alle condizioni climatiche e al ciclo di crescita della pianta (ad esempio, *Cannabis sativa* L.). Ecco una procedura passo-passo:
+Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize va eseguita al **trapianto** (o durante la germinazione per piante sensibili), seguendo questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurarsi che il terreno sia **umido ma non zuppo** (evitare ristagni, come indicato in [web_zamn_301](web_zamn_301-come-irrigare-le-piante-di-cannabis)).
-   - Verificare che il pH del suolo sia compreso tra **6.0 e 7.0** (ideale per la colonizzazione micorrizica).
+   - Assicurarsi che il suolo sia umido ma non zuppo (evitare ristagni, come indicato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
+   - Mescolare l’inoculo micorrizico (es. *Glomus intraradices* o *Rhizophagus irregularis*) direttamente al substrato o applicarlo a diretto contatto con le radici.
 
-2. **Scelta dell’inoculo**:
-   - Utilizzare un inoculo **specifico per piante a fiore** (es. *Rhizophagus irregularis* o miscele di funghi endomicorrizici).
-   - Quantità: **5-10g per pianta**, distribuiti direttamente sulle radici al momento del trapianto o della semina.
+2. **Dosaggio**:
+   - Usare **5–10 g di inoculo per pianta**, distribuendolo uniformemente nel foro di trapianto o intorno alle radici.
+   - Per piante in vaso, incorporare l’inoculo nello strato di substrato a contatto con le radici.
 
-3. **Applicazione**:
-   - **Al trapianto**: Mescolare l’inoculo con un po’ di substrato umido e posizionarlo a contatto con le radici, evitando di esporlo alla luce diretta (i funghi sono fotosensibili).
-   - **Per semi**: Applicare l’inoculo direttamente nel foro di semina, a 2-3 cm di profondità.
-   - **Dopo l’applicazione**: Coprire leggermente con terreno e irrigare con **acqua a pH 6.5** per favorire l’attecchimento.
+3. **Post-applicazione**:
+   - Evitare l’uso di **fungicidi chimici** nei **30 giorni successivi** all’inoculazione, poiché possono uccidere i funghi benefici (vedi [web_zamn_335-conservare-cannabis]).
+   - Mantenere un’irrigazione costante ma non eccessiva per favorire la colonizzazione radicale (rif. [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
+   - Integrare con **compost maturo** per fornire substrato organico ai funghi.
 
-4. **Post-trattamento**:
-   - Evitare **fungicidi chimici** per almeno **30 giorni** dall’inoculazione [web_zamn_335](web_zamn_335-conservare-cannabis).
-   - Mantenere il suolo **ben ossigenato** (evitare compattazione) e **umido ma non saturo** per favorire la crescita del micelio.
+4. **Fasi critiche**:
+   - **Germinazione**: Applicare inoculo a semina o trapianto per stimolare lo sviluppo precoce delle ife.
+   - **Vegetazione**: Monitorare la crescita radicale; se necessario, ripetere l’inoculazione dopo 4–6 settimane.
 
+---
 ## Sinergie con altri elementi
-Le micorrize interag
+Le micorrize si integrano perfettamente con altre tecniche di **elettrocultura** e **suolo vivente** per ottimizzare la crescita in serra outdoor:
+
+- **Lakhovsky (Onde Multifrequenza)**: L’uso di dispositivi a onde lunghe (es. *Ondina 3*) può stimolare l’attività metabolica delle piante e, indirettamente, favorire la simbiosi micorrizica, poiché un suolo più attivo
