@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-12
+aggiornato: 2026-08-13
 pdf_count: 8
 ---
 
@@ -12,27 +12,38 @@ pdf_count: 8
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma un substrato solido in un liquido ricco di batteri, funghi, protozoi e sostanze umiche, pronti per essere assorbiti dalle piante sia per via fogliare che radicale. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi attivi colonizzano la rizosfera, competono con patogeni, migliorano la disponibilità di nutrienti (es. fosforo tramite solubilizzazione) e producono ormoni vegetali come auxine e citochinine. Inoltre, le sostanze umiche aumentano la capacità di scambio cationico del suolo, riducendo la lisciviazione dei nutrienti.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico di compost maturo ricco di microrganismi benefici, enzimi, acidi umici e nutrienti solubili, utilizzato per stimolare la vita del suolo e la salute delle piante. Questo metodo, parte integrante della **Living Soil**, si basa sulla proliferazione controllata di batteri, funghi benefici (come micorrize) e protozoi, che migliorano la struttura del terreno, la disponibilità di nutrienti e la resistenza delle piante a patogeni. L’aerazione costante durante la preparazione evita la proliferazione di batteri anaerobici (potenzialmente dannosi) e garantisce un prodotto equilibrato, adatto sia per applicazioni fogliari che radicali.
 
-In serra outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il Tè di Compost agisce come **adattogeno**: rafforza la resilienza delle colture (es. cannabis) stimolando la produzione di metaboliti secondari (terpeni, cannabinoidi) e migliorando l'assorbimento idrico tramite l'azione dei funghi micorrizici. Studi hanno dimostrato che applicazioni regolari possono ridurre fino al 30% l'incidenza di malattie fungine (es. *Botrytis*) grazie alla competizione microbica e all'induzione di resistenza sistemica acquisita (ISR).
+Il meccanismo d’azione si fonda sulla **teoria del suolo come ecosistema**: i microrganismi del tè di compost colonizzano la rizosfera, competono con patogeni, solubilizzano nutrienti (es. fosforo, potassio) e producono sostanze bioattive come auxine e citochinine, che promuovono la crescita radicale e la fotosintesi. Studi in agricoltura rigenerativa dimostrano che applicazioni regolari migliorano la resilienza delle piante allo stress idrico e termico, tipico del clima mediterraneo di Caserta (41°N), dove sbalzi termici e siccità sono frequenti.
 
 ---
 
 ## Come si applica in serra
-**Preparazione (per 10L di Tè di Compost):**
-1. **Seleziona il compost**: Usa compost maturo (6-12 mesi) ricco di materia organica e microrganismi. Evita compost fresco o con residui di pesticidi.
-2. **Immersione e aerazione**:
-   - Metti **1-2 kg di compost** in un sacchetto di tela (o calza di nylon) e immergilo in **10L di acqua non clorata** (usare acqua piovana o lasciar riposare l'acqua del rubinetto 24h).
-   - Aggiungi **10-20g di melassa** (o zucchero di canna) come fonte di carbonio per i batteri.
-   - Collega un **aeratore per acquario** (2-4L/min) per 24-48h a temperatura ambiente (20-25°C). L'aerazione previene la formazione di batteri anaerobici (es. *Clostridium*) e favorisce la proliferazione di funghi benefici.
-3. **Filtraggio e applicazione**:
-   - Rimuovi il sacchetto e filtra il liquido con una retina fine (evita residui solidi che possano intasare gli spruzzatori).
-   - Applica **entro 4 ore** dalla preparazione per massimizzare l'attività microbica.
-4. **Modalità di somministrazione**:
-   - **Fogliare**: Spruzza con uno spruzzatore a pressione (0.5-1 bar) al tramonto, bagnando uniformemente le foglie. Diluizione consigliata: 1:1 con acqua.
-   - **Radicale**: Irriga il suolo con una pompa a bassa pressione (evita ristagni). Diluizione: 1:3 con acqua.
-   - **Frequenza**: Ogni 7-14 giorni durante la vegetazione e la fioritura, riducendo a ogni 21 giorni in fioritura avanzata.
+**Preparazione per serra outdoor Living Soil (Caserta, clima mediterraneo):**
 
-**Consigli per Caserta:**
-- Applica il Tè di Compost **al mattino presto** o **sera** per evitare evaporazione rapida.
-- Evita l'applicazione in caso di **pioggia imminente** (sci
+1. **Materiali necessari**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturo da almeno 6 mesi).
+   - Acqua non clorata (lasciare decantare acqua di rubinetto per 24h o usare acqua piovana).
+   - Aeratore per acquario (con pietra porosa per ossigenazione).
+   - Melassa biologica (1-2 cucchiai per 10L) o zucchero di canna come alimento per i batteri.
+   - Contenitore in plastica o vetro (evitare metalli).
+   - Filtro a maglia fine (per applicazione fogliare).
+
+2. **Procedura**:
+   - **Dosaggio**: 1 parte di compost ogni 5-10 parti di acqua (es. 1kg di compost in 10L di acqua).
+   - **Immersione**: Sciogliere il compost in acqua e aggiungere la melassa. Aerare costantemente per **24-48h** a temperatura ambiente (18-25°C).
+   - **Monitoraggio**: Il pH dovrebbe stabilizzarsi tra 6.5-7.5; se troppo acido, aggiungere bicarbonato di sodio.
+   - **Applicazione**: Filtrare il tè (per uso fogliare) o applicare tal quale al suolo. **Usare entro 4 ore** dalla preparazione per massimizzare l’attività microbica.
+
+3. **Frequenza e timing**:
+   - **Vegetazione**: Ogni 2 settimane (diluire 1:1 con acqua se applicato fogliare).
+   - **Fioritura**: Ridurre a 1 applicazione ogni 3 settimane, evitando eccessi di azoto.
+   - **Momento ideale**: Applicare al mattino presto o al tramonto per evitare stress termico.
+
+4. **Compatibilità con elettrocultura**:
+   - Abbinare a **acqua magnetizzata** (trattare il tè con un magnete al neodimio per 10 min) per migliorare l’assorbimento radicale.
+   - Usare **Lakhovsky Multi-Wave Oscillator** (MWO) per irradiare il tè prima dell’applicazione, potenziando la risposta delle piante.
+
+---
+
+## Sin
