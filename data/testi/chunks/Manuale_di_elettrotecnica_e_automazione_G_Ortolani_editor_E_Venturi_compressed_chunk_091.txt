@@ -20,7 +20,7 @@ pag.
 1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
-1.5.1    GTO . . . . . . . . . . . . . . . . dispositivi a semiconduttore
+1.5.1    GTO . . . . . . . . . . . dispositivi a semiconduttore
  10
 
 1.5.2    IGBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -71,7 +71,9 @@ pag.
 7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  38
 
-7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
+7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+**Fig. XVIII.1.2 Raddrizzatore a una semionda.**
 Una conseguenza di ciò è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che attraversa il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
 
 Particolare attenzione deve essere posta affinché la tensione inversa applicata al dispositivo non superi un valore indicato come tensione di breakdown: quest’ultimo rappresenta quel valore di tensione, proprio di ogni dispositivo a semiconduttore, superato il quale avviene il passaggio di corrente anche con polarizzazione inversa.
@@ -94,7 +96,7 @@ XVIII.1.5
 
 U<sub>m</sub> = U<sub>iM</sub> (1 + cos α) / 2π
 
-Naturalmente anche per gli SCR la presenza di un carico ohmico-induttivo comporta delle variazioni sul loro funzionamento alterando quello che sono le forme d'onda delle tensioni risultanti applicate ai carichi. Tipicamente, a causa della forza elettromotrice indotta, la corrente nel carico risulta ritardata in partenza rispetto all’impulso applicato, ma prolungata durante la fase di estinzione. L’annullamento della corrente avviene quando la tensione applicata, peraltro già di valore negativo, equilibra il valore della tensione di autoinduzione del carico: in quell’istante, annullandosi il valore della corrente, il dispositivo passa allo stato di interdizione. È necessario limitare, maggiormante tramite diodi di ricircolo, questo inconveniente, perché si potrebbe arrivare alla condizione limite per la quale con carichi fortemente induttivi risulterebbe impossibile effettuare una buona regolazione della tensione in uscita.
+Naturalmente anche per gli SCR la presenza di un carico ohmico-induttivo comporta delle variazioni sul loro funzionamento alterando quello che sono le forme d'onda delle tensioni risultanti applicate ai carichi. Tipicamente, a causa della forza elettromotrice indotta, la corrente nel carico risulta ritardata in partenza rispetto all’impulso applicato, ma prolungata durante la fase di estinzione. L’annullamento della corrente avviene quando la tensione applicata, peraltro già di valore negativo, equilibra il valore della tensione di autoinduzione del carico: in quell’istante, annullandosi il valore della corrente, il dispositivo passa allo stato di interdizione. È necessario limitare, principalmente tramite diodi di ricircolo, questo inconveniente, perché si potrebbe arrivare alla condizione limite per la quale con carichi fortemente induttivi risulterebbe impossibile effettuare una buona regolazione della tensione in uscita.
 
 [PAG 1825]
 ELETTRONICA DI POTENZA
@@ -123,8 +125,7 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
-| TYN 1006    | 1000                                     | 15                               | 1,5                            | 70
-**[PAG 1826]**
+| TYN 1006    | 1000                                     | 15                               | 1,5                            | 70 |
 **XVIII-8**
 **ELETTRONICA DI POTENZA**
 
