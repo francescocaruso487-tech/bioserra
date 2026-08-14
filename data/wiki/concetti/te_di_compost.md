@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-13
+aggiornato: 2026-08-14
 pdf_count: 8
 ---
 
@@ -12,38 +12,33 @@ pdf_count: 8
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico di compost maturo ricco di microrganismi benefici, enzimi, acidi umici e nutrienti solubili, utilizzato per stimolare la vita del suolo e la salute delle piante. Questo metodo, parte integrante della **Living Soil**, si basa sulla proliferazione controllata di batteri, funghi benefici (come micorrize) e protozoi, che migliorano la struttura del terreno, la disponibilità di nutrienti e la resistenza delle piante a patogeni. L’aerazione costante durante la preparazione evita la proliferazione di batteri anaerobici (potenzialmente dannosi) e garantisce un prodotto equilibrato, adatto sia per applicazioni fogliari che radicali.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla fermentazione controllata di compost maturo in acqua, arricchito con nutrienti per stimolare la proliferazione di microrganismi benefici (batteri, funghi, protozoi e nematodi). Questo processo trasforma il compost in una soluzione ricca di nutrienti pronta per l'applicazione fogliare o radicale, che agisce come **biofertilizzante** e **biostimolante** per le piante. Il meccanismo d'azione si basa sulla **nutrizione indiretta**: i microrganismi del tè competono con patogeni del suolo, migliorano la struttura del terreno e aumentano la biodisponibilità di nutrienti (azoto, fosforo, potassio) attraverso processi di mineralizzazione e simbiosi.
 
-Il meccanismo d’azione si fonda sulla **teoria del suolo come ecosistema**: i microrganismi del tè di compost colonizzano la rizosfera, competono con patogeni, solubilizzano nutrienti (es. fosforo, potassio) e producono sostanze bioattive come auxine e citochinine, che promuovono la crescita radicale e la fotosintesi. Studi in agricoltura rigenerativa dimostrano che applicazioni regolari migliorano la resilienza delle piante allo stress idrico e termico, tipico del clima mediterraneo di Caserta (41°N), dove sbalzi termici e siccità sono frequenti.
+In un contesto di **Living Soil outdoor** come quello di Caserta (41°N), dove il clima mediterraneo favorisce l'attività microbica ma può anche stressare le piante con caldo e umidità, il tè di compost diventa uno strumento chiave per **rinvigorire il suolo** e **prevenire squilibri nutrizionali**. La sua efficacia è massima quando applicato in **fasi critiche** della coltivazione (vegetazione e fioritura), poiché supporta la fotosintesi, la resistenza agli stress abiotici e la salute delle radici.
 
 ---
 
 ## Come si applica in serra
-**Preparazione per serra outdoor Living Soil (Caserta, clima mediterraneo):**
 
-1. **Materiali necessari**:
-   - Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturo da almeno 6 mesi).
-   - Acqua non clorata (lasciare decantare acqua di rubinetto per 24h o usare acqua piovana).
-   - Aeratore per acquario (con pietra porosa per ossigenazione).
-   - Melassa biologica (1-2 cucchiai per 10L) o zucchero di canna come alimento per i batteri.
-   - Contenitore in plastica o vetro (evitare metalli).
-   - Filtro a maglia fine (per applicazione fogliare).
+**Preparazione (per 10L di tè):**
+1. **Riempire un contenitore** con acqua non clorata (lasciare decantare l'acqua del rubinetto per 24h o usare acqua piovana).
+2. **Aggiungere compost maturo** (1-2 kg) in un sacchetto di tela o una retina per evitare sedimenti. Per serre outdoor a Caserta, preferire compost derivato da **letame equino/bovino** o **vermicompost** (ricco di micorrize).
+3. **Aerare l'acqua** con un **aeratore per acquario** (o pompa ad aria) per 24h a temperatura ambiente (18-25°C). L'ossigenazione previene la formazione di odori anaerobici (zolfo, metano) e favorisce batteri aerobi.
+4. **Aggiungere melassa** (1-2 cucchiai) come fonte di carbonio per i microrganismi. Opzionale: **alghe marine** (100ml) per apporto di oligoelementi.
+5. **Filtrare** il tè con una retina fine per rimuovere i solidi e applicare **entro 4 ore** dalla preparazione per massimizzare la vitalità microbica.
 
-2. **Procedura**:
-   - **Dosaggio**: 1 parte di compost ogni 5-10 parti di acqua (es. 1kg di compost in 10L di acqua).
-   - **Immersione**: Sciogliere il compost in acqua e aggiungere la melassa. Aerare costantemente per **24-48h** a temperatura ambiente (18-25°C).
-   - **Monitoraggio**: Il pH dovrebbe stabilizzarsi tra 6.5-7.5; se troppo acido, aggiungere bicarbonato di sodio.
-   - **Applicazione**: Filtrare il tè (per uso fogliare) o applicare tal quale al suolo. **Usare entro 4 ore** dalla preparazione per massimizzare l’attività microbica.
+**Applicazione:**
+- **Radicale**: Irrorare direttamente sul suolo intorno alla base della pianta (evitare ristagni). Frequenza: ogni 10-15 giorni in vegetazione, ogni 20 giorni in fioritura.
+- **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (evitare ore calde). Diluire 1:1 con acqua per evitare bruciature. Frequenza: ogni 7-10 giorni.
+- **Dosi**: 1-2L per pianta adulta (adattare in base alla dimensione).
 
-3. **Frequenza e timing**:
-   - **Vegetazione**: Ogni 2 settimane (diluire 1:1 con acqua se applicato fogliare).
-   - **Fioritura**: Ridurre a 1 applicazione ogni 3 settimane, evitando eccessi di azoto.
-   - **Momento ideale**: Applicare al mattino presto o al tramonto per evitare stress termico.
-
-4. **Compatibilità con elettrocultura**:
-   - Abbinare a **acqua magnetizzata** (trattare il tè con un magnete al neodimio per 10 min) per migliorare l’assorbimento radicale.
-   - Usare **Lakhovsky Multi-Wave Oscillator** (MWO) per irradiare il tè prima dell’applicazione, potenziando la risposta delle piante.
+**Consigli per serra outdoor a Caserta:**
+- Applicare dopo piogge o irrigazioni per evitare diluizione.
+- Evitare l'uso in concomitanza con **fungicidi chimici** (distruggono i microrganismi).
+- Monitorare il pH del tè (ideale: 6.5-7.5) con strisce reattive.
 
 ---
 
-## Sin
+## Sinergie con altri elementi
+
+Il tè di compost si combina efficacemente con altre tecniche per **potenziarne gli effetti** in un sistema **Living Soil**
