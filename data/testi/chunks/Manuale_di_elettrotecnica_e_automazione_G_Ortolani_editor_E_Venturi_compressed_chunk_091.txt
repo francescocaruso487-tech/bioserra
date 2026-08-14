@@ -20,7 +20,7 @@ pag.
 1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
-1.5.1    GTO . . . . . . . . . . . dispositivi a semiconduttore
+1.5.1    GTO . . . . . . . . dispositivi a semiconduttore
  10
 
 1.5.2    IGBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -126,7 +126,6 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
 | TYN 1006    | 1000                                     | 15                               | 1,5                            | 70 |
-**XVIII-8**
 **ELETTRONICA DI POTENZA**
 
 **Fig. XVIII.1.7** Simbolo e caratteristica del DIAC.
