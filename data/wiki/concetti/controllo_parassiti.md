@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-13
+aggiornato: 2026-08-14
 pdf_count: 10
 ---
 
@@ -12,30 +12,36 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio degli ecosistemi piuttosto che sull'uso di sostanze chimiche sintetiche. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo), dove la biodiversità microbica e macrobiologica funge da barriera naturale contro patogeni e parassiti. Il meccanismo d'azione si fonda sulla **prevenzione** (mantenimento di un suolo sano e ricco di microrganismi benefici) e sulla **regolazione dinamica** (introduzione di antagonisti naturali o repellenti biologici). Ad esempio, l'olio di neem agisce come insetticida sistemico e repellente grazie alla sua azione antifeedant e regolatrice della crescita degli insetti, mentre gli acari predatori (come *Phytoseiulus persimilis*) instaurano un rapporto preda-predatore che limita le popolazioni di acari dannosi come *Tetranychus urticae*.
+Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai patogeni, favorendo al contempo la resilienza delle piante. Il meccanismo d'azione si fonda sulla **promozione della biodiversità microbica** e sulla **stimolazione delle difese naturali** delle colture, attraverso l'uso di organismi utili, repellenti naturali e campi elettromagnetici a bassa frequenza.
 
-Questa metodologia è particolarmente efficace in ambienti controllati come le serre outdoor, dove la densità colturale e le condizioni microclimatiche possono favorire la proliferazione di parassiti. La chiave del successo risiede nella **proattività**: ispezioni regolari, monitoraggio dei primi segni di infestazione e interventi tempestivi con agenti naturali permettono di evitare danni economici senza alterare l'equilibrio dell'agroecosistema. Inoltre, l'adozione di pratiche come la rotazione delle colture e la consociazione vegetale rafforza la resilienza delle piante, rendendole meno suscettibili agli attacchi.
+Funziona perché un suolo vivo (ricco di funghi micorrizici, batteri benefici e nematodi predatori) riduce la vulnerabilità delle piante agli attacchi esterni, mentre l'elettrocultura (come le spirali di rame di Lakhovsky) armonizza le frequenze vitali, rafforzando la risposta immunitaria delle piante. Inoltre, l'adozione di pratiche preventive (come l'olio di neem) interrompe i cicli riproduttivi dei parassiti senza alterare l'ecosistema. Questo approccio è particolarmente efficace in serra outdoor a Caserta, dove il clima mediterraneo favorisce la proliferazione di insetti, ma offre anche condizioni ideali per la coltivazione di piante robuste e resistenti.
 
 ---
 
 ## Come si applica in serra
 
 1. **Ispezione quotidiana**
-   - Controlla **foglie (soprattutto pagina inferiore), steli e germogli** al mattino, quando gli insetti sono meno attivi.
-   - Usa una **lente d’ingrandimento** per identificare uova, larve o adulti di parassiti (es. afidi, tripidi, acari).
-   - Segna le aree a rischio con **etichette colorate** per monitorare l’evoluzione dell’infestazione.
+   - Controlla **foglie, steli e substrato** (soprattutto sotto le foglie) per rilevare segni di infestazione (es. ragnatele, puntini gialli, melata).
+   - Usa una **lente di ingrandimento** per identificare acari o afidi in fase iniziale.
+   - Rimuovi manualmente i parassiti visibili (es. bruchi) o le foglie gravemente danneggiate.
 
 2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5–10 ml di olio di neem puro in 1 litro d’acqua + 1 cucchiaino di sapone di Marsiglia (adesivante).
-   - **Applicazione**: Spruzza sulle piante **ogni 7 giorni** (o dopo pioggia) con nebulizzatore a bassa pressione, evitando le ore più calde.
-   - **Effetto**: Repellente per afidi, cocciniglie e mosche bianche; interferisce con la metamorfosi degli insetti.
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 cucchiaino di bicarbonato) in 1 litro d'acqua.
+   - **Applicazione**: Spruzza sulle piante **ogni 7 giorni** (meglio al tramonto per evitare ustioni fogliari).
+   - **Effetto**: Repellente per afidi, cocciniglie e moscerini, oltre a fungere da **fungicida naturale** (contro oidio e peronospora).
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di infestazione da *Tetranychus urticae* (ragnetto rosso).
-   - **Crisopidi** (*Chrysoperla carnea*): Larve voraci di afidi; distribuisci uova o larve ogni 2 settimane.
-   - **Coccinelle** (*Coccinella septempunctata*): Efficaci contro afidi e cocciniglie; posiziona piante trappola (es. *Calendula officinalis*) per attirarle.
+3. **Insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari rossi, *Amblyseius andersoni* per trips e aleurodidi):
+     - Rilascia **2-5 individui per m²** in caso di infestazione lieve.
+     - Mantieni l'umidità relativa sopra il **60%** per favorirne la sopravvivenza.
+   - **Coccinelle** (*Coccinella septempunctata*): Attira con piante trappola (es. calendula) o rilascia larve in serra.
 
-4. **Barriere fisiche e trappole**
-   - **Teli anti-insetto** (maglia 0.6 mm) per proteggere le giovani piantine.
-   - **Trappole cromotropiche gialle/blu** (adesive) per monitorare e catturare tripidi e mosche bianche.
+4. **Elettrocultura preventiva**
+   - **Spirale di rame Lakhovsky**:
+     - Posiziona una spirale di rame (diametro 20-30 cm) **a 30 cm sopra le piante** durante la vegetazione.
+     - Collega a una **antenna di terra** (filo di rame interrato a 50 cm di profondità) per armonizzare le frequenze.
+   - **Circuito Fe-Cu**:
+     - Installa un sistema a **onde di forma** (frequenze 7.83 Hz, risonanza di Schumann) con elettrodi in ferro e rame interrati lateralmente alla serra.
+
+5. **Barriere fisiche**
    -
