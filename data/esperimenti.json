@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-13T04:25:05.097254+00:00",
+  "lastUpdate": "2026-08-14T04:22:14.123752+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,58 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781753446349_3",
-      "nome": "Regolazione del pH",
-      "descrizione": "Regolazione del pH del substrato per ottimizzare la crescita delle piante",
-      "obiettivo": "Miglioramento della crescita e della salute delle piante",
-      "materiali": [
-        "Prodotto per la regolazione del pH"
-      ],
-      "categoria": "Chimica",
-      "difficolta": "Facile",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-18",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "nutrizione"
-    },
-    {
-      "id": "daily_1781753446349_4",
-      "nome": "Ossigenazione del Substrato",
-      "descrizione": "Aumento dell'ossigenazione del substrato per migliorare la crescita radicale",
-      "obiettivo": "Miglioramento della crescita e della salute delle piante",
-      "materiali": [
-        "Aeratore per substrato"
-      ],
-      "categoria": "Fisiologia",
-      "difficolta": "Medio",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-18",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "nutrizione"
-    },
-    {
-      "id": "daily_1781839846625_0",
-      "nome": "Sistema di irrigazione automatico",
-      "descrizione": "Implementare un sistema di irrigazione automatico per ottimizzare l'apporto di acqua alle piante",
-      "obiettivo": "Ridurre lo stress idrico e migliorare la crescita delle piante",
-      "materiali": [
-        "Sistema di irrigazione automatico",
-        "Sensori di umidità del suolo"
-      ],
-      "categoria": "Irrigazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-19",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "irrigazione"
-    },
     {
       "id": "daily_1781839846625_1",
       "nome": "Introduzione di micorrize",
@@ -3952,13 +3900,116 @@
       "data_proposta": "2026-08-13",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e Water Curing sulla purezza delle cime in serra outdoor",
+      "ipotesi": "Coltivando piante di pianta in Living Soil (Manuale A) si riducono i residui chimici nelle cime, rendendo il Water Curing (Manuale B) meno necessario. Tuttavia, l'uso combinato di entrambi i metodi (terreno biologico + trattamento con acqua filtrata post-raccolta) porterà a cime con livelli di clorofilla, sali e impurità significativamente inferiori rispetto a piante coltivate in terreno convenzionale e non sottoposte a trattamento. Questo perché il Living Soil promuove una crescita più sana e meno stressata, mentre l'acqua filtrata elimina eventuali residui residui senza alterare i terpeni.",
+      "protocollo": [
+        "Preparare 3 gruppi di piante identiche (stessa genetica, stessa età): Gruppo A (Living Soil + Water Curing), Gruppo B (Living Soil senza Water Curing), Gruppo C (Terreno convenzionale + Water Curing).",
+        "Coltivare tutte le piante nelle stesse condizioni di serra outdoor (irrigazione con acqua filtrata, stessa esposizione solare, stessa nutrizione aggiuntiva se necessaria).",
+        "Al momento della raccolta, raccogliere le cime di ogni gruppo separatamente e pesarle per ottenere un campione omogeneo.",
+        "Applicare il Water Curing solo al Gruppo A e Gruppo C: immergere le cime in acqua filtrata a temperatura ambiente per 24 ore, poi risciacquare con acqua pulita e asciugare all'aria per 48 ore."
+      ],
+      "materiali": [
+        "Piante di pianta della stessa genetica (es. varietà resistente a patogeni come quelle citate nel Manuale A)",
+        "Acqua filtrata o distillata (per irrigazione e Water Curing, Manuale B)",
+        "Terreno Living Soil certificato (Manuale A)",
+        "Terreno convenzionale (per controllo, Manuale A)",
+        "Bilancia di precisione (per pesare le cime)",
+        "pHmetro e conduttivimetro (per misurare residui di sali nel terreno e nelle cime)",
+        "Spettrofotometro portatile o kit di analisi dei terpeni (per valutare la qualità delle cime)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso delle cime prima e dopo il Water Curing (per valutare perdita di peso dovuta a residui)",
+        "Conducibilità elettrica (EC) delle cime (misurata in acqua di lavaggio, per valutare sali residui, Manuale B)",
+        "Livelli di clorofilla (misurati con spettrofotometro o kit colorimetrico, Manuale B)",
+        "Analisi dei terpeni (GC-MS o kit rapido, per valutare la conservazione degli aromi, Manuale A)",
+        "Valutazione sensoriale (pannello di assaggiatori per valutare sapore erbaceo/amaro, Manuale B)"
+      ],
+      "variabili_controllo": "Stessa genetica, stessa età delle piante, stesse condizioni di serra (temperatura, umidità, luce), stessa quantità di acqua per irrigazione, stesso metodo di raccolta e asciugatura.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento non è descritto in nessuno dei due manuali singolarmente. Il Manuale A si concentra sulla coltivazione in Living Soil senza approfondire i trattamenti post-raccolta, mentre il Manuale B tratta il Water Curing come metodo indipendente dalla qualità del terreno. L'originalità sta nell'analizzare l'interazione tra i due approcci, dimostrando che il Living Soil riduce la necessità di trattamenti aggressivi ma che, quando combinato con il Water Curing, massimizza la purezza delle cime.",
+      "id": "esp_conn_2026-08-14_001",
+      "data_proposta": "2026-08-14",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento LST Outdoor in Living Soil per ottimizzazione resa in serra BioSerra Caserta",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) a piante outdoor in Living Soil (Manuale B), si ottiene un aumento della resa fino al 30% grazie a una migliore esposizione luminosa e distribuzione dei nutrienti, senza compromettere la salute della pianta. La cimatura LST, combinata con la biodisponibilità dei nutrienti in Living Soil, potenzia la fotosintesi e la ramificazione, portando a una fioritura più uniforme e a un raccolto ottimizzato.",
+      "protocollo": [
+        "Preparare due lotti identici di piante (es. varietà autofiorenti CBD-dominanti come quelle citate nel Manuale B) in Living Soil, in vasi da 10L, posizionati in serra BioSerra Caserta. Mantenere distanza tra le piante di 50cm per evitare competizione.",
+        "Al giorno 14 dalla germinazione (fase vegetativa avanzata), applicare il metodo LST outdoor: piegare delicatamente i fusti principali verso l'esterno con legacci morbidi (es. rafia), creando una struttura a 'tenda' per massimizzare l'esposizione alla luce solare (tecnica mutuata dal Manuale A ma adattata outdoor).",
+        "Monitorare quotidianamente la risposta delle piante: verificare segni di stress (es. ingiallimento foglie) e regolare la posizione dei legacci. Al giorno 21, effettuare una seconda cimatura leggera per stimolare ulteriori ramificazioni laterali.",
+        "Al giorno 30, raccogliere i dati: pesare i fiori secchi per lotto, misurare l'altezza delle piante e contare il numero di cime principali. Confrontare con un lotto di controllo non sottoposto a LST."
+      ],
+      "materiali": [
+        "Piante autofiorenti CBD-dominanti (es. varietà USA citate nel Manuale B)",
+        "Vasi in terracotta da 10L, Living Soil pre-preparato (compost + micorrize + biochar), legacci in rafia, metro a nastro, bilancia di precisione (0.1g), fotocamera per documentazione"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso fresco/secco dei fiori per pianta (g), altezza della pianta (cm), numero di cime principali per pianta, diametro medio delle cime (cm).",
+        "Confrontare i dati tra lotto LST e controllo tramite analisi statistica (test t di Student) per verificare la significatività dell'aumento di resa."
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil, stessa varietà di pianta, stessa esposizione solare, stessa irrigazione (water-only), stessa temperatura e umidità in serra.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "Questo esperimento unisce la tecnica LST indoor (Manuale A) con la coltivazione outdoor in Living Soil (Manuale B), creando un protocollo ibrido non documentato nei manuali originali. La sinergia tra cimatura LST e biodisponibilità dei nutrienti in Living Soil è una novità nel contesto della serra BioSerra Caserta.",
+      "id": "esp_conn_2026-08-14_002",
+      "data_proposta": "2026-08-14",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate coltivate outdoor in serra",
+      "ipotesi": "L'applicazione di concimazione organica (Manuale A) in un substrato Living Soil arricchisce la rizosfera di microrganismi simbionti che, in sinergia con semi di pianta femminizzati ad alto CBD (Manuale B), aumentano la produzione di CBDV fino al 20% rispetto a un controllo con concimazione minerale. Questo avviene perché i microrganismi migliorano l'assorbimento dei nutrienti e stimolano il metabolismo secondario delle piante, come suggerito dalla correlazione tra biodiversità microbica e produzione di cannabinoidi secondari nei sistemi outdoor Living Soil.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra (5m² ciascuna) con terreno Living Soil prelevato dalla stessa fonte, suddiviso in modo omogeneo. Una parcella (trattamento) riceverà concimazione organica (letame compostato, humus di lombrico, micorrize e batteri benefici), l'altra (controllo) riceverà concimazione minerale bilanciata (NPK 5-5-5) in quantità equivalenti di azoto.",
+        "Seminare 20 semi femminizzati di una varietà ad alto CBD (es. 'CBDV Rich') in ciascuna parcella, disposti in file regolari con distanza di 50 cm tra le piante. Mantenere le condizioni di irrigazione identiche (water-only, 1L/piante/giorno) e evitare stress idrico.",
+        "Monitorare settimanalmente la crescita (altezza, numero di foglie, vigore) e applicare trattamenti preventivi contro patogeni (es. macerato di ortica) in modo uniforme su entrambe le parcelle.",
+        "Al termine dei 30 giorni, prelevare campioni fogliari (terzo nodo dall'apice) da 5 piante per parcella per analisi HPLC del contenuto di CBDV, CBD, THC e CBG. Confrontare i risultati tra trattamento e controllo."
+      ],
+      "materiali": [
+        "Semi femminizzati CBDV Rich (varietà ad alto CBDV, Manuale B)",
+        "Terreno Living Soil prelevato da zona outdoor (Manuale A)",
+        "Concime organico (letame compostato, humus di lombrico, micorrize, batteri benefici)",
+        "Concime minerale bilanciato (NPK 5-5-5)",
+        "Sistema di irrigazione a goccia (water-only)",
+        "Kit HPLC portatile o servizio di analisi esterno",
+        "Strumenti di misura (metro, bilancia di precisione, pHmetro)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV (% secco) tramite HPLC",
+        "Contenuto di CBD, THC e CBG (% secco) per analisi comparativa",
+        "Peso fresco e secco delle piante (g)",
+        "Vigore vegetativo (scala 1-5)",
+        "Analisi statistica (test t di Student) per verificare la significatività delle differenze"
+      ],
+      "variabili_controllo": "Stesso substrato iniziale, stessa varietà di semi, stessa irrigazione (water-only), stessa esposizione solare, stessa densità di semina, stessa temperatura e umidità in serra.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica Living Soil (Manuale A) con l'uso di semi femminizzati ad alto CBD (Manuale B) per testare un effetto sinergico sulla produzione di CBDV, un cannabinoide secondario poco studiato. Nessuno dei due manuali suggerisce un esperimento che integri direttamente questi due aspetti in un sistema outdoor Living Soil con misurazione HPLC del CBDV.",
+      "id": "esp_conn_2026-08-14_003",
+      "data_proposta": "2026-08-14",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-13",
-    "nuove_proposte": 4,
+    "data": "2026-08-14",
+    "nuove_proposte": 3,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
