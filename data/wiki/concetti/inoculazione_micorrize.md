@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-13
+aggiornato: 2026-08-14
 pdf_count: 1
 ---
 
@@ -12,27 +12,28 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, penetrando nelle radici, estendono la rete radicale della pianta (fino a 100 volte in più) migliorando l’assorbimento di acqua e nutrienti, in particolare fosforo e azoto. In cambio, la pianta fornisce al fungo carboidrati prodotti dalla fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o carenza nutrizionale, tipiche delle coltivazioni outdoor italiane, dove la variabilità climatica può compromettere la stabilità del suolo.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso i loro ife, estendono la rete radicale della pianta, aumentando la superficie di assorbimento di acqua e nutrienti (in particolare fosforo e azoto) fino al 300%. In cambio, la pianta fornisce al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o nutrizionale, tipiche delle coltivazioni outdoor italiane, dove la variabilità climatica può compromettere l’assorbimento radicale.
 
-La simbiosi micorrizica non solo potenzia la resilienza delle piante, ma promuove anche la salute del suolo a lungo termine. I funghi micorrizici, infatti, secernono **glomalina**, una glicoproteina che agisce da "colla biologica", aggregando le particelle del suolo e migliorando la struttura e la capacità di ritenzione idrica. Inoltre, la loro presenza riduce la necessità di fertilizzanti chimici, poiché ottimizzano l’utilizzo dei nutrienti già presenti nel substrato. Studi dimostrano che piante inoculate con micorrize sviluppano radici più robuste e sono meno suscettibili a patogeni radicali, come *Phytophthora* o *Fusarium*, grazie alla competizione per lo spazio e le risorse.
-
----
+La simbiosi micorrizica non si limita a migliorare l’efficienza nutrizionale: i funghi producono anche **glomaline**, una glicoproteina che stabilizza la struttura del suolo, aumentandone la porosità e la capacità di ritenzione idrica. Inoltre, le micorrize attivano meccanismi di difesa delle piante contro patogeni radicali, grazie alla produzione di composti antimicrobici e alla competizione per lo spazio e i nutrienti. Studi dimostrano che piante inoculate con micorrize mostrano una maggiore resilienza a condizioni avverse, come siccità o salinità, e una fioritura più vigorosa, elementi cruciali per la coltivazione di cannabis in serra outdoor a Caserta (41°N), dove le estati possono essere calde e secche.
 
 ## Come si applica in serra
-Per una serra **Living Soil** outdoor a Caserta, l’inoculazione delle micorrize deve essere eseguita con precisione per massimizzare l’efficacia. Segui questi passaggi:
+Per una serra **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con precisione per massimizzare i benefici. Segui questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurati che il suolo sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico). Evita substrati sterilizzati o con residui di fungicidi chimici.
-   - Se usi terriccio commerciale, mescolalo con almeno il 30% di compost per favorire la colonizzazione fungina.
+   - Assicurati che il terreno sia ben strutturato, con un buon contenuto di materia organica (compost maturo, humus di lombrico) e una pH compreso tra **6.0 e 7.0**. Evita terreni troppo compatti o con eccesso di argilla, che limitano la diffusione delle ife.
 
-2. **Inoculazione al trapianto**:
-   - **Quantità**: Applica **5–10 g di inoculo micorrizico** per pianta, direttamente sulle radici durante il trapianto. Per piante giovani (es. talee radicate), riduci la dose a 2–5 g per evitare stress.
-   - **Metodo**: Mescola l’inoculo con un po’ di acqua per creare una "pappa" da applicare sul pane radicale. In alternativa, spargilo uniformemente nel foro di trapianto.
-   - **Profondità**: Interra l’inoculo a **5–10 cm di profondità**, dove la concentrazione di radici è maggiore.
+2. **Scelta dell’inoculo**:
+   - Utilizza un inoculo di micorrize **specifico per cannabis** o piante da fiore, contenente ceppi come *Glomus intraradices* o *Rhizophagus irregularis*. Preferisci formulazioni in polvere o granuli, più facili da applicare rispetto a liquidi.
 
-3. **Post-trapianto**:
-   - **Irrigazione**: Innaffia immediatamente dopo l’applicazione con acqua a **pH 6.0–6.5** (ideale per l’attività micorrizica) e a temperatura ambiente. Evita ristagni idrici, che possono soffocare le radici e dilavare l’inoculo [web_zamn_301-come-irrigare-le-piante-di-cannabis].
-   - **Protezione**: Non utilizzare **fungicidi chimici** (es. propiconazolo, mancozeb) nei **30 giorni successivi** all’inoculazione, poiché uccidono anche i funghi benefici. Preferisci trattamenti biologici (es. *Trichoderma*) se necessario.
+3. **Applicazione al trapianto**:
+   - Al momento del trapianto, crea una **buchetta** di 5-10 cm di profondità vicino alle radici della pianta.
+   - Aggiungi **5-10g di inoculo per pianta** direttamente a contatto con le radici, mescolando leggermente con il substrato circostante. Evita di esporre l’inoculo alla luce diretta, che può uccidere i funghi.
+   - Copri con uno strato sottile di terra per proteggere l’inoculo dall’essiccamento.
 
-4. **Manutenzione**:
-   - Mantieni il suolo umido ma non bagnato, per favorire
+4. **Irrigazione post-applicazione**:
+   - Innaffia **moderatamente** dopo l’applicazione per favorire l’adesione delle ife alle radici, ma evita ristagni d’acqua. In serra outdoor, usa acqua a temperatura ambiente e preferibilmente **acqua magnetizzata** o arricchita con batteri benefici (es. *Bacillus*) per potenziare l’effetto dell’inoculo.
+
+5. **Fase critica di adesione**:
+   - Nei **15-30 giorni successivi** al trapianto, mantieni il substrato umido ma non bagnato, evitando sbalzi termici. I funghi impiegano questo periodo per colonizzare le radici.
+
+6
