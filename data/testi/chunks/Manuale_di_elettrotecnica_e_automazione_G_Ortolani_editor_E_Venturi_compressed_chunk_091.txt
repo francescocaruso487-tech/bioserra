@@ -17,7 +17,7 @@ pag.
 1.4    TRIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  9
 
-1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
+1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
 1.5.1    GTO . . . . . . . . dispositivi a semiconduttore
@@ -41,7 +41,7 @@ pag.
 1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  20
 
-2    CONVERSIONE DELLA CORRENTE ELETTRICA . . . . . . . . . . . . . . . . . . . .
+2    CONVERSIONE DELLA CORRENTE ELETTRICA . . . . . . . . . . . . . .
  22
 
 2.1    Utilizzo dei raddrizzatori normali e controllati per la conversione c.a.-c.c.
@@ -68,12 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
- 38
-
-7.3    Convertitore Buck-Boost (Flyback) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-**Fig. XVIII.1.2 Raddrizzatore a una semionda.**
+7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
 Una conseguenza di ciò è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che attraversa il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
 
 Particolare attenzione deve essere posta affinché la tensione inversa applicata al dispositivo non superi un valore indicato come tensione di breakdown: quest’ultimo rappresenta quel valore di tensione, proprio di ogni dispositivo a semiconduttore, superato il quale avviene il passaggio di corrente anche con polarizzazione inversa.
@@ -126,8 +121,6 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
 | TYN 1006    | 1000                                     | 15                               | 1,5                            | 70 |
-**ELETTRONICA DI POTENZA**
-
 **Fig. XVIII.1.7** Simbolo e caratteristica del DIAC.
 
 Dalla **Fig. XVIII.1.7** si evince che, tipicamente, la caratteristica corrente-tensione per il DIAC è di tipo simmetrico, anche se sono disponibili dispositivi aventi caratteristica asimmetrica.
