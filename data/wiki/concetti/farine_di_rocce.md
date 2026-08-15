@@ -2,7 +2,7 @@
 id: farine_di_rocce
 label: Farine di Rocce
 categoria: nutrizione
-aggiornato: 2026-08-14
+aggiornato: 2026-08-15
 pdf_count: 0
 ---
 
@@ -12,25 +12,25 @@ pdf_count: 0
 # Farine di Rocce
 
 ## Descrizione
-Le **farine di rocce** rappresentano un approccio naturale e sostenibile per la **rimineralizzazione lenta** dei substrati colturali, basato sull’impiego di minerali in polvere derivati dalla frantumazione di rocce vulcaniche o sedimentarie. Questi materiali, ricchi di silicio (SiO₂), calcio (Ca), magnesio (Mg), potassio (K) e oligoelementi, vengono gradualmente rilasciati nel suolo attraverso processi di alterazione chimica e attività microbica, migliorando la struttura fisica del terreno e la disponibilità di nutrienti per le piante. Il meccanismo d’azione si fonda sulla **capacità tampone** delle farine, che neutralizzano l’acidità del substrato e favoriscono la formazione di **argille secondarie** (come caolinite o montmorillonite), essenziali per la ritenzione idrica e la CEC (Capacità di Scambio Cationico). Inoltre, il silicio contenuto in forme stabili (es. basalto o silicio verde) stimola la produzione di **acido silicico** nelle piante, rafforzando le pareti cellulari e aumentando la resistenza a stress biotici (funghi, insetti) e abiotici (siccità, sbalzi termici).
+Le **farine di rocce** rappresentano una soluzione naturale per la **rimineralizzazione lenta** dei substrati colturali, sfruttando la lenta cessione di macro e micronutrienti essenziali per le piante. Questi minerali in polvere, derivati dalla macinazione di rocce vulcaniche (come basalto) o sedimentarie (come silicio verde), agiscono come un "deposito nutrizionale" che si dissolve gradualmente nel tempo, migliorando la struttura del suolo e la disponibilità di elementi come silicio, calcio, magnesio e ferro. Il meccanismo d'azione si basa sulla **lisciviazione controllata** operata dall’attività microbica e dalle radici, che trasformano i minerali in forme assimilabili dalle piante. Inoltre, la silice (SiO₂) contenuta nelle farine di roccia rinforza le pareti cellulari delle piante, aumentandone la resistenza a stress biotici (patogeni) e abiotici (siccità, sbalzi termici), un vantaggio cruciale per le colture in serra outdoor a Caserta, dove il clima mediterraneo può esporre le piante a condizioni estreme.
 
-L’efficacia delle farine di rocce è particolarmente evidente in sistemi **Living Soil**, dove la biodiversità microbica del suolo (batteri, funghi micorrizici, attinomiceti) accelera la solubilizzazione dei minerali attraverso la produzione di acidi organici (es. acido citrico, gluconico) e enzimi. Questo processo, noto come **weathering biologico**, trasforma i minerali in forme assimilabili dalle radici, riducendo la necessità di fertilizzanti sintetici e promuovendo un **equilibrio nutrizionale a lungo termine**. Studi in agricoltura rigenerativa hanno dimostrato che l’applicazione regolare di farine di rocce può incrementare la resa delle colture del 15-30% e migliorare la qualità nutrizionale dei prodotti, grazie all’arricchimento di oligoelementi spesso carenti nei suoli intensivi.
+L’efficacia delle farine di roccia è massima in sistemi **Living Soil**, dove la biodiversità microbica accelera la mineralizzazione. Studi agronomici dimostrano che l’uso di basalto o silicio verde può ridurre la necessità di fertilizzanti sintetici fino al 30%, grazie alla loro capacità di **tamponare il pH** e fornire nutrienti in modo equilibrato. In particolare, il silicio favorisce l’assorbimento di fosforo e potassio, mentre il calcio e il magnesio migliorano la struttura del suolo, promuovendo aggregazione e aerazione. Per le colture in serra, questo approccio è ideale perché consente di **mantenere la fertilità del substrato** tra un ciclo e l’altro, riducendo l’impoverimento del suolo e la necessità di sostituzione frequente del medium di coltivazione.
 
 ---
 
 ## Come si applica in serra
 
-Per una serra outdoor **Living Soil** a Caserta (41°N), con clima mediterraneo caratterizzato da estati calde e siccitose e inverni miti, le farine di rocce possono essere integrate seguendo questo protocollo:
+1. **Scelta del minerale**:
+   - **Basalto**: Ideale per apportare calcio, magnesio, ferro e silicio. Ottimo per piante a foglia larga (es. pomodori, peperoni) e ortaggi da frutto.
+   - **Silicio verde**: Ricco in silice biodisponibile, utile per piante stressate o soggette a patogeni (es. oidio, peronospora). Adatto a colture come zucchine, cetrioli e basilico.
+   - *Evita farine di roccia calcaree* (es. marmo) in terreni già alcalini (pH > 7.5), per non aumentare eccessivamente il pH.
 
-1. **Scelta del materiale**:
-   - Utilizzare **basalto in polvere** (0-2 mm) o **silicio verde** (ricco in SiO₂ >70%), evitando farine troppo fini (<0.1 mm) che possono formare croste nel substrato.
-   - Verificare la composizione chimica: preferire prodotti con rapporto Ca:Mg >2:1 e basso contenuto di metalli pesanti (es. arsenico, piombo).
+2. **Dosaggio e miscelazione**:
+   - Aggiungi **2-3% in volume** della farina di roccia al substrato (es. 20-30 g per 1 kg di terriccio o compost).
+   - Mescola accuratamente con una **vanga o un miscelatore meccanico** per evitare accumuli localizzati.
+   - *Per substrati poveri* (es. torba o fibra di cocco), aumenta il dosaggio fino al 4% e integra con **humus di lombrico** (10-15%) per migliorare la ritenzione idrica.
 
-2. **Preparazione del substrato**:
-   - Miscelare **2-3% in volume** di farina di roccia con il substrato base (es. 200-300 g/m² per 10 cm di profondità).
-   - Per terreni argillosi, ridurre la dose al 1.5% per evitare eccessiva compattazione; per terreni sabbiosi, aumentare fino al 4% per migliorare la ritenzione idrica.
-   - Aggiungere **compost maturo** (20-30% del volume) e **micorrize** (es. *Glomus spp.*) per accelerare la colonizzazione radicale.
-
-3. **Applicazione in ciclo colturale**:
-   - **Germinazione**: Incorporare la farina nel letto di semina (1-2 cm sotto il seme) per stimolare lo sviluppo radicale precoce.
-   - **Vegetazione**: Distribuire una seconda dose
+3. **Applicazione nel ciclo colturale**:
+   - **Germinazione**: Incorpora la farina di roccia nel substrato di semina (es. 1-2% nel mix di partenza) per favorire lo sviluppo radicale.
+   - **Vegetazione**: Aggiungi un **top dressing** (1-2% in superficie) dopo il trapianto o ogni 4-6 settimane, soprattutto in caso di piante a ciclo lungo (es. pomodori).
+   - **Rinnovo
