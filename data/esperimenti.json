@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-14T04:22:14.123752+00:00",
+  "lastUpdate": "2026-08-15T03:11:08.628916+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,42 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781839846625_1",
-      "nome": "Introduzione di micorrize",
-      "descrizione": "Introdurre micorrize nel substrato per migliorare l'assorbimento di nutrienti",
-      "obiettivo": "Migliorare la salute e la resistenza delle piante",
-      "materiali": [
-        "Micorrize",
-        "Substrato di crescita"
-      ],
-      "categoria": "Biologia",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-19",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "nutrizione"
-    },
-    {
-      "id": "daily_1781839846625_2",
-      "nome": "Monitoraggio del pH del substrato",
-      "descrizione": "Monitorare regolarmente il pH del substrato per assicurarsi che sia all'interno del range ottimale",
-      "obiettivo": "Prevenire carenze nutrizionali e migliorare la crescita delle piante",
-      "materiali": [
-        "pHmetro",
-        "Substrato di crescita"
-      ],
-      "categoria": "Chimica",
-      "difficolta": "facile",
-      "fonte": "Zamnesia",
-      "durata_giorni": 3,
-      "data_proposta": "2026-06-19",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "nutrizione"
-    },
     {
       "id": "daily_1781839846625_3",
       "nome": "Impiego di batteri azotofissatori",
@@ -4003,13 +3967,73 @@
       "data_proposta": "2026-08-14",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento della tecnica LST indoor per piante outdoor in Living Soil: ottimizzazione della cimatura e resa tramite esposizione luminosa controllata",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) su piante outdoor coltivate in Living Soil (Manuale B), si ottiene un aumento della resa e della qualità dei fiori senza stress eccessivo, grazie a una distribuzione uniforme della luce e a una maggiore esposizione dei siti di fioritura. La sinergia tra le due tecniche (cimatura LST + Living Soil) potenzia l'assorbimento dei nutrienti e la fotosintesi, portando a piante più produttive e resistenti.",
+      "protocollo": [
+        "Passo 1: Selezione delle piante e preparazione del terreno. Scegliere 10 piante della stessa varietà (es. ibrido F1 autofiorente a CBD alto, Manuale B) e trapiantarle in Living Soil (Manuale A) in vasi da 20L. Assicurarsi che il terreno sia ben strutturato con micorrize e batteri benefici.",
+        "Passo 2: Applicazione della tecnica LST. A partire dalla 3ª settimana di crescita (fase vegetativa), iniziare a cimare le piante ogni 7 giorni, piegando delicatamente i rami principali per formare un 'ventaglio' orizzontale (Manuale A). Mantenere un'altezza massima di 60 cm per ottimizzare l'esposizione alla luce solare (Manuale B).",
+        "Passo 3: Monitoraggio e aggiustamenti. Misurare settimanalmente l'altezza delle piante, il numero di rami laterali e la densità dei siti di fioritura. Regolare la cimatura per evitare ombreggiamenti reciproci tra le piante.",
+        "Passo 4: Raccolta e analisi. A fine ciclo (30 giorni), raccogliere i fiori e pesare la resa per pianta. Confrontare con un gruppo di controllo non cimato (Manuale B) coltivato nello stesso Living Soil. Effettuare analisi del CBD/CBG tramite kit rapidi (Manuale A) per valutare la qualità."
+      ],
+      "materiali": [
+        "10 piante di pianta ibrido F1 autofiorente (es. varietà USA a CBD alto, Manuale B)",
+        "Living Soil pre-arricchito con micorrize e batteri benefici (Manuale A)",
+        "Vasi da 20L, tutori flessibili (es. fil di ferro rivestito), forbici da potatura",
+        "Kit di analisi rapida per CBD/CBG, bilancia di precisione, metro a nastro"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Resa in grammi per pianta (peso fresco dei fiori)",
+        "Contenuto di CBD/CBG tramite kit rapido (Manuale A)",
+        "Numero di siti di fioritura per pianta (Manuale B)",
+        "Altezza media delle piante e distribuzione della biomassa"
+      ],
+      "variabili_controllo": "Stesso substrato (Living Soil), stessa varietà, stessa esposizione solare, stesso regime idrico (water-only), stessa densità di piante per m².",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "Questo esperimento non è descritto in nessuno dei due manuali singolarmente. Il Manuale A si concentra su tecniche indoor senza considerare l'adattamento outdoor, mentre il Manuale B tratta la cimatura in modo generico senza integrare il Living Soil o l'elettrocultura. La combinazione di LST + Living Soil + water-only in serra outdoor è una novità assoluta.",
+      "id": "esp_conn_2026-08-15_001",
+      "data_proposta": "2026-08-15",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra semi femminizzati e substrato biologico in Living Soil su resa CBD indoor/outdoor",
+      "ipotesi": "L'uso combinato di semi femminizzati (Manuale B) e substrato biologico in vasi (Manuale A) in un sistema Living Soil water-only aumenterà la resa in CBD/THC del 30-40% rispetto a controlli con semi regolari o substrati non biologici, grazie a: 1) ottimizzazione della crescita radicale (Living Soil) e 2) eliminazione di piante maschio non produttive (semi femminizzati).",
+      "protocollo": [
+        "Preparare 4 vasi identici (5L) con Living Soil composto da 60% terra biologica, 20% compost maturo, 10% perlite e 10% biochar. Inoculare con micorrize e batteri benefici (es. *Trichoderma*).",
+        "Seminare 10 semi femminizzati di una varietà CBD-dominante (es. 'ACDC') in 2 vasi (trattamento A) e 10 semi regolari della stessa varietà in altri 2 vasi (trattamento B). Mantenere condizioni identiche (irrigazione water-only, 16h luce/8h buio, temperatura 22-26°C).",
+        "Dopo 3 settimane (fase vegetativa), trapiantare le piantine più vigorose (5 per vaso) in nuovi vasi da 10L con lo stesso substrato. Applicare un trattamento di elettrocultura leggera (12V DC, 5 minuti/giorno) a tutti i vasi per stimolare l'assorbimento radicale.",
+        "Monitorare settimanalmente: altezza, numero di nodi, salute fogliare (scala 1-5), e fioritura. A 60 giorni dalla semina, raccogliere e analizzare il contenuto di CBD/THC tramite cromatografia rapida (es. kit HPLC portatile)."
+      ],
+      "materiali": [
+        "Semi femminizzati 'ACDC' (Manuale B), semi regolari 'ACDC' (controllo), Living Soil pre-inoculato, vasi in terracotta (5L e 10L), sistema di irrigazione a goccia water-only, kit di elettrocultura (batterie 12V, elettrodi in grafite), luxmetro, pHmetro, kit HPLC portatile per cannabinoidi."
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Resa CBD/THC (mg/pianta) tramite HPLC portatile, biomassa secca (g/pianta), numero di fiori principali, salute radicale (scala 1-5 dopo lavaggio del suolo), e consumo idrico (L/pianta). Confronto statistico tra trattamento A (semi femminizzati + Living Soil) e trattamento B (semi regolari + Living Soil)."
+      ],
+      "variabili_controllo": "Varietà di pianta, volume del vaso, composizione del Living Soil, condizioni ambientali (luce, temperatura, umidità), metodo di irrigazione, e trattamento di elettrocultura. Escludere piante con patologie evidenti.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "Questo esperimento combina due concetti chiave di manuali diversi (semi femminizzati dal Manuale B e Living Soil dal Manuale A) in un protocollo originale che integra elettrocultura per massimizzare la sinergia. Nessun manuale suggerisce di testare l'interazione diretta tra questi elementi in un sistema water-only, né di quantificare l'effetto combinato su resa CBD/THC.",
+      "id": "esp_conn_2026-08-15_002",
+      "data_proposta": "2026-08-15",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-14",
-    "nuove_proposte": 3,
+    "data": "2026-08-15",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
