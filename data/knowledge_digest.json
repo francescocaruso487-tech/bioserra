@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-15T04:57:26.226914+00:00",
-  "data": "2026-08-15",
+  "lastUpdate": "2026-08-16T05:01:22.339013+00:00",
+  "data": "2026-08-16",
   "guide_potenziate": [
     {
       "titolo": "Germinazione in Living Soil Outdoor a Caserta: Guida Pratica per Semi di Pianta e Piante M",
@@ -12,30 +12,30 @@
     },
     {
       "titolo": "Guida Pratica alla Fase Vegetativa in Living Soil Outdoor a Caserta: Ottimizzazione con Bi",
-      "guida_base": "Mantenere umidità del suolo al 60-70% WHC per favorire l'attività microbica e l'assorbimento radicale, evitando ristagni",
-      "potenziamento_pdf": "Applicare un campo elettrico debole (1-5V) tramite elettrodi in rame interrati a 10-15 cm di profondità, distanziati di 30-50 cm. Collegare gli elettr",
-      "esperimento_suggerito": "La fase vegetativa a Caserta inizia tipicamente tra metà aprile e inizio maggio, quando le temperature notturne superano stabilmente i 10°C e le giorn",
+      "guida_base": "Mantenere umidità del suolo al 60-70% per favorire l’attività microbica in Living Soil, evitando ristagni idrici che pos",
+      "potenziamento_pdf": "Collegare elettrodi in rame o acciaio inox (5-12V) alla rizosfera, posizionandoli a 10-15 cm di profondità e a 20 cm di distanza dalle piante. Attivar",
+      "esperimento_suggerito": "A Caserta, la fase vegetativa inizia tipicamente tra fine marzo e inizio aprile, con l’allungamento delle giornate e l’aumento delle temperature medie",
       "applicabile_oggi": true,
       "piante_coinvolte": []
     }
   ],
   "esperimenti_attivi_suggeriti": [
     {
-      "nome": "Impiego di batteri azotofissatori",
-      "descrizione": "Utilizzare batteri azotofissatori per migliorare la disponibilità di azoto nel substrato",
+      "nome": "Monitoraggio Clima e Irrigazione",
+      "descrizione": "Verifica temperatura e umidità, asciuga leggermente il substrato prima di irrigare",
       "urgenza": "media",
       "piante": []
     },
     {
-      "nome": "Sistema di supporto per le piante",
-      "descrizione": "Implementare un sistema di supporto per le piante per prevenire danni e migliorare la crescita",
+      "nome": "Regolazione pH Acqua/substrato",
+      "descrizione": "Regola il pH dell'acqua e del substrato",
       "urgenza": "media",
       "piante": []
     }
   ],
-  "scoperta_del_giorno": "I testi di Christofleau (brevetto 529202) e Legé suggeriscono che le piante in fioritura (come le tue in serra) rispondono positivamente a campi elettromagnetici deboli (1-5V/m), soprattutto in condizioni di umidità moderata (59% oggi). Questo potreb",
-  "consiglio_integrato": "Applicare una corrente continua (DC) a 1-3V tramite elettrodi in rame/zinco posizionati a 5-10 cm dalle radici delle piante in fioritura, per 2-4 ore al giorno (mattina). Questo metodo, citato in [pdf_17] (PAG 28), stimola l'assorbimento di nutrienti",
-  "connessione_inaspettata": "Posizionare elettrodi a spirale in rame (diametro 10 cm) intorno al colletto delle piante in fioritura, collegati a una batteria da 3V con timer per erogare impulsi di 10 secondi ogni 5 minuti per 4 ore al giorno (ore 8-12). Gli elettrodi devono esse",
+  "scoperta_del_giorno": "L'umidità elevata (86%) e la temperatura moderata (17.7°C) sono condizioni ideali per l'elettrocoltura, poiché l'acqua aumenta la conducibilità del suolo e facilita la trasmissione delle energie elettriche alle piante, come evidenziato in *[pdf_13]*.",
+  "consiglio_integrato": "Applicare una corrente continua (DC) a basso voltaggio (es. 1-5V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura. Questo metodo, descritto in *[pdf_17]*, stimola l'assorbim",
+  "connessione_inaspettata": "Posizionare due elettrodi (rame e zinco) a 10 cm di profondità nel suolo, a 20 cm di distanza dalle piante in fioritura. Collegare gli elettrodi a una batteria da 3V (es. batteria a bottone) per 6-8 ore al giorno, preferibilmente nelle ore più calde.",
   "stats": {
     "guide": 2,
     "esperimenti": 2
