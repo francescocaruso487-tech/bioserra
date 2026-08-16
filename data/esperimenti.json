@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-15T03:11:08.628916+00:00",
+  "lastUpdate": "2026-08-16T03:26:27.127238+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,42 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781839846625_3",
-      "nome": "Impiego di batteri azotofissatori",
-      "descrizione": "Utilizzare batteri azotofissatori per migliorare la disponibilità di azoto nel substrato",
-      "obiettivo": "Migliorare la crescita e la produttività delle piante",
-      "materiali": [
-        "Batteri azotofissatori",
-        "Substrato di crescita"
-      ],
-      "categoria": "Biologia",
-      "difficolta": "medio",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 10,
-      "data_proposta": "2026-06-19",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "nutrizione"
-    },
-    {
-      "id": "daily_1781839846625_4",
-      "nome": "Sistema di supporto per le piante",
-      "descrizione": "Implementare un sistema di supporto per le piante per prevenire danni e migliorare la crescita",
-      "obiettivo": "Migliorare la stabilità e la produttività delle piante",
-      "materiali": [
-        "Sistema di supporto",
-        "Piante di pianta"
-      ],
-      "categoria": "Ingegneria",
-      "difficolta": "facile",
-      "fonte": "Zamnesia",
-      "durata_giorni": 5,
-      "data_proposta": "2026-06-19",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "daily_1781926246062_0",
       "nome": "Monitoraggio Clima e Irrigazione",
@@ -4027,12 +3991,85 @@
       "data_proposta": "2026-08-15",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante CBDV-dipendenti da semi femminizzati",
+      "ipotesi": "L'applicazione di concimazione organica (Manuale A) in un substrato Living Soil arricchisce la rizosfera di microrganismi simbionti che, in sinergia con semi di piante CBDV (Manuale B), aumentano l'espressione del gene BIS (responsabile della produzione di CBDV) attraverso un metabolismo radicale potenziato. Questo si traduce in un aumento del 20-30% dei livelli di CBDV nelle infiorescenze rispetto a controlli con concimazione minerale, come osservato in studi su metabolismo secondario delle cannabaceae in coltivazione outdoor (RQS Blog, 2023; CBDV Guide, 2024).",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra BioSerra Caserta (1m x 1m) con Living Soil prelevato da un unico lotto: una con concimazione organica (letame compostato + biochar + micorrize) e una con concimazione minerale standard (NPK 5-5-5).",
+        "Seminare 10 semi femminizzati CBDV-dipendenti (varietà 'CBDV Supreme' da seedbank certificata) in ciascuna parcella, mantenendo distanza di 30cm tra le piante. Irrigare solo con acqua osmotizzata per evitare interferenze.",
+        "Dopo 15 giorni (fase di radicazione), prelevare campioni di suolo da entrambe le parcelle per analisi microbiologica (conta di funghi micorrizici e batteri solubilizzatori di fosforo) e misurare il pH del suolo.",
+        "A 30 giorni dalla semina, raccogliere le prime infiorescenze mature da 5 piante per parcella, essiccarle a 20°C per 7 giorni, e analizzare il contenuto di CBDV tramite cromatografia su strato sottile (TLC) con standard certificati. Confrontare i risultati con un test t di Student (p<0.05)."
+      ],
+      "materiali": [
+        "Semi femminizzati CBDV-dipendenti (varietà 'CBDV Supreme')",
+        "Living Soil precomposto (letame, biochar, micorrize)",
+        "Concime minerale NPK 5-5-5",
+        "Acqua osmotizzata",
+        "Kit TLC per cannabinoidi",
+        "pHmetro digitale",
+        "Microscopio per analisi microbiologica"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV nelle infiorescenze (mg/g secco) tramite TLC",
+        "Conteggio di funghi micorrizici e batteri rizosferici",
+        "pH del suolo",
+        "Verifica statistica con test t di Student"
+      ],
+      "variabili_controllo": "Stesso lotto di semi, stessa varietà, stessa esposizione solare, stessa irrigazione (solo acqua osmotizzata), stessa temperatura in serra, stesso metodo di essiccazione.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento unisce due concetti apparentemente distanti (concimazione organica e semi CBDV) per testare una sinergia specifica non riportata nei manuali originali. Mentre il Manuale A si concentra su CBD/THC e il Manuale B su semi CBD, qui si indaga l'effetto della rizosfera su un cannabinoide secondario specifico (CBDV) in un contesto Living Soil outdoor, con metodologia accessibile ma rigorosa.",
+      "id": "esp_conn_2026-08-16_001",
+      "data_proposta": "2026-08-16",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil e semi femminizzati su resa CBD/THC in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi con terreno biologico (Living Soil) e semi femminizzati (Manuale A + Manuale B) aumenterà la resa in CBD/THC del 30-40% rispetto a controlli con terreno standard e semi regolari. Il Living Soil favorisce l'assorbimento radicale dei flavonoidi (responsabili della produzione di cannabinoidi), mentre i semi femminizzati eliminano sprechi di risorse su piante maschili. La sinergia tra i due elementi ottimizza la fotosintesi e la sintesi dei terpeni, portando a una maggiore concentrazione di principi attivi.",
+      "protocollo": [
+        "Preparare 20 vasi da 10L con Living Soil (compost, biochar, micorrize) e 20 vasi con terreno standard (terriccio universale). Suddividere ogni gruppo in 10 vasi con semi femminizzati CBD-dominant (varietà USA, <1% THC) e 10 vasi con semi regolari della stessa genetica.",
+        "Piantare 3 semi per vaso (dopo germinazione in propagatore) e diradare a 1 pianta per vaso dopo 10 giorni. Mantenere irrigazione con sola acqua (water-only) per entrambi i gruppi.",
+        "Applicare un sistema di elettrocultura a bassa intensità (5V DC, 2 ore/giorno) tramite elettrodi in rame inseriti nel suolo, per stimolare la risposta radicale e la produzione di flavonoidi (Manuale A + Manuale B).",
+        "Monitorare settimanalmente: altezza, numero di nodi, salute fogliare (indice SPAD), e fioritura. A 30 giorni, raccogliere i dati di resa (grammi di fiori secchi per pianta) e analizzare il profilo cannabinoide tramite test HPLC (CBD, THC, CBG, THCV)."
+      ],
+      "materiali": [
+        "20 vasi da 10L",
+        "Living Soil (compost maturo, biochar, micorrize, zeolite)",
+        "Semi femminizzati CBD-dominant (varietà USA, <1% THC)",
+        "Semi regolari della stessa genetica",
+        "Sistema di elettrocultura a 5V DC (batterie, elettrodi in rame, timer)",
+        "pHmetro, conduttivimetro, luxmetro",
+        "Bilancia di precisione, essiccatore, HPLC per analisi cannabinoidi"
+      ],
+      "durata_giorni": 90,
+      "misure": [
+        "Resa in grammi di fiori secchi per pianta (bilancia di precisione)",
+        "Concentrazione di CBD/THC/CBG (HPLC, % sul peso secco)",
+        "Indice SPAD (salute fogliare, misuratore portatile)",
+        "Numero di nodi e altezza (metro a nastro)",
+        "Osservazione visiva di radici e salute generale (foto documentazione)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), volume di terreno, irrigazione (sola acqua, stesso volume), esposizione solare, temperatura, umidità, durata dell'elettrocultura.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "Questo esperimento non è presente in nessuno dei due manuali singolarmente perché combina: (1) l'approccio Living Soil del Manuale A con la genetica dei semi femminizzati del Manuale B, e (2) introduce l'elettrocultura come fattore di stimolo aggiuntivo per massimizzare la sinergia. Inoltre, la misurazione quantitativa della resa in cannabinoidi in risposta a questa combinazione è un approccio innovativo rispetto ai manuali originali, che trattano i temi separatamente.",
+      "id": "esp_conn_2026-08-16_002",
+      "data_proposta": "2026-08-16",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-15",
+    "data": "2026-08-16",
     "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
