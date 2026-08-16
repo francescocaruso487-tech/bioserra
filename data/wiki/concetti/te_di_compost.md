@@ -2,51 +2,50 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-15
+aggiornato: 2026-08-16
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Te di Compost
+# Tè di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dal compost maturo, progettato per arricchire il suolo e le piante con una comunità microbica diversificata e nutrienti biodisponibili. Questo metodo si basa sulla **biostimolazione del suolo vivente**, dove i microrganismi benefici (batteri, funghi, attinomiceti) vengono estratti dal compost e trasferiti alle piante tramite applicazione fogliare o radicale. Il meccanismo d'azione si fonda sulla **competizione microbica**: i microrganismi benefici colonizzano le superfici delle piante e del suolo, sopprimendo patogeni e migliorando l'assorbimento dei nutrienti. Inoltre, il te di compost apporta enzimi, acidi umici, ormoni naturali (auxine, citochinine) e micronutrienti che stimolano la crescita vegetativa e la resistenza agli stress abiotici.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo, utilizzato per stimolare la salute del suolo e delle piante. Questo metodo si basa sul principio della **biostimolazione microbica**, dove i batteri, funghi e protozoi attivi nel tè colonizzano la rizosfera, migliorando la disponibilità di nutrienti, la struttura del suolo e la resistenza delle piante agli stress biotici e abiotici. In particolare, i microrganismi eterotrofi (come *Pseudomonas*, *Bacillus* e funghi micorrizici) scompongono la materia organica, rilasciando enzimi e sostanze umiche che favoriscono l’assorbimento radicale e la fotosintesi.
 
-In un contesto di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il te di compost agisce come un **immunostimolante naturale**, rafforzando la rizosfera e riducendo la necessità di input chimici. La sua efficacia è massima quando il compost di partenza è ricco di materia organica stabile e micorrize, e quando la preparazione rispetta i principi dell'aerobiosi per evitare la proliferazione di anaerobi dannosi.
+L’efficacia del tè di compost dipende dalla **diversità microbica** del compost di partenza e dalle condizioni di preparazione (aerazione, temperatura, pH). A differenza dei fertilizzanti chimici, questo approccio promuove un **suolo vivente**, dove la competizione tra microrganismi benefici e patogeni riduce naturalmente le malattie. Studi dimostrano che applicazioni regolari possono aumentare la biomassa radicale del 30-50% e la resa delle colture fino al 20%, soprattutto in sistemi *Living Soil* outdoor, dove il clima mediterraneo di Caserta (41°N) favorisce l’attività microbica durante la stagione vegetativa.
 
 ---
 
 ## Come si applica in serra
+Per una serra outdoor a **Caserta** (clima caldo-umido in estate, inverni miti), il tè di compost va preparato e applicato seguendo queste fasi:
 
-Per una serra outdoor a Caserta in **Living Soil**, segui queste istruzioni pratiche:
+1. **Preparazione del compost**
+   - Usa **compost maturo** (3-6 mesi), privo di odori putridi e con rapporto C/N < 20:1.
+   - Evita compost con residui di carne o latticini per prevenire patogeni.
 
-1. **Preparazione del compost**:
-   - Usa compost maturo (6-12 mesi) con rapporto C/N equilibrato (ideale 20:1).
-   - Evita compost con residui di metalli pesanti o patogeni (es. *Phytophthora*).
+2. **Estrazione del tè**
+   - **Dosaggio**: 1 parte di compost ogni 10 parti di acqua (es. 1 kg di compost in 10 L di acqua).
+   - **Aerazione**: Utilizza un **aeratore da acquario** (2-4 L/min) per 24-48 ore, mantenendo la temperatura tra **18-25°C** (evita surriscaldamento).
+   - **Additivi**:
+     - **Melassa** (1-2 g/L) come fonte di carbonio per i batteri.
+     - **Humus di lombrico** (100 g/10 L) per aumentare la biodiversità microbica.
+     - **Zucchero di canna** (opzionale, 5 g/L) per accelerare la fermentazione.
 
-2. **Estrazione aerobica**:
-   - Immergi **1 kg di compost** in **10 litri di acqua non clorata** (pioggia o acqua decantata).
-   - Aggiungi **100 ml di melassa di canna** (o 50 g di zucchero di canna) come fonte di carbonio per i batteri.
-   - Mantieni l'infuso in un **recipiente aerato** (es. secchio con pompa ad aria per acquario) per **24 ore** a temperatura ambiente (18-25°C).
+3. **Filtraggio e applicazione**
+   - Filtra il tè con una retina a maglia fine (50-100 micron) per rimuovere particelle grossolane.
+   - **Applica entro 4 ore** dalla preparazione per massimizzare l’attività microbica.
+   - **Metodi di distribuzione**:
+     - **Radicale**: Irrigazione a goccia (diluizione 1:1 con acqua se necessario).
+     - **Fogliare**: Nebulizzazione fine (evita applicazioni nelle ore calde per prevenire ustioni).
 
-3. **Filtraggio e applicazione**:
-   - Filtra il liquido con una retina a maglia fine (es. 50-100 micron) per rimuovere particelle solide.
-   - Applica **entro 4 ore** dalla preparazione per massimizzare la vitalità microbica.
-   - **Dosi**:
-     - **Radicale**: 1-2 litri/m² ogni 7-14 giorni, diluito 1:1 con acqua.
-     - **Fogliare**: 0.5-1 litro/m², diluito 1:2, preferibilmente al tramonto per evitare ustioni.
-
-4. **Frequenza**:
-   - **Vegetazione**: ogni 10-15 giorni.
-   - **Fioritura**: ridurre a ogni 20 giorni per evitare eccesso di umidità.
+4. **Frequenza**
+   - **Vegetazione**: 1 volta ogni 2 settimane (diluizione 1:5).
+   - **Fioritura**: 1 volta ogni 3 settimane (diluizione 1:10 per evitare eccesso di azoto).
 
 ---
-
 ## Sinergie con altri elementi
+Il tè di compost si integra perfettamente con altre tecniche per ottimizzare la salute delle piante in serra:
 
-Il te di compost si integra perfettamente con tecniche avanzate di elettrocultura e suolo vivente:
-
-- **Lakhovsky (Onde di forma)**: Applicare il te di compost **dopo** l'esposizione a campi elettromagnetici (es. bobine di Lakhovsky) potenzia la risposta delle piante, poiché i microrganismi benefici assorbono più efficacemente le frequenze benefiche [web_zamn_391].
-- **Fe-C
+- **L
