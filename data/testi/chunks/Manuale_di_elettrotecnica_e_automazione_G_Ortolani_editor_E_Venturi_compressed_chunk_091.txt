@@ -17,7 +17,7 @@ pag.
 1.4    TRIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  9
 
-1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
+1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
 1.5.1    GTO . . . . . . . . dispositivi a semiconduttore
@@ -68,7 +68,9 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **Fig. XVIII.1.2 Raddrizzatore a una semionda.**
+7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+**Fig. XVIII.1.2 Raddrizzatore a una semionda.**
 Una conseguenza di ciò è che il valore medio della tensione raddrizzata risulta diminuito; inoltre, la corrente che attraversa il carico presenta una forma non propriamente sinusoidale: l’aumento e la diminuzione di quest’ultima subisce un rallentamento a causa della f.e.m. di autoinduzione.
 
 Particolare attenzione deve essere posta affinché la tensione inversa applicata al dispositivo non superi un valore indicato come tensione di breakdown: quest’ultimo rappresenta quel valore di tensione, proprio di ogni dispositivo a semiconduttore, superato il quale avviene il passaggio di corrente anche con polarizzazione inversa.
@@ -121,8 +123,6 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
 | TYN 1006    | 1000                                     | 15                               | 1,5                            | 70 |
-**Fig. XVIII.1.7** Simbolo e caratteristica del DIAC.
-
 Dalla **Fig. XVIII.1.7** si evince che, tipicamente, la caratteristica corrente-tensione per il DIAC è di tipo simmetrico, anche se sono disponibili dispositivi aventi caratteristica asimmetrica.
 
 Le principali caratteristiche elettriche di questi dispositivi sono le seguenti:
@@ -177,9 +177,10 @@ Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale
 
 La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi particolari semiconduttori.
 **Fig. XVIII.1.9** Caratteristica corrente-tensione di un TRIAC.
-
 Dall’analisi della **Fig. XVIII.1.9** si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, ma consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di *breakover*, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
+
 Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare attenzione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comunemente indicato come **effetto di dv/dt**; ampi valori di questa grandezza comportano l’innesco, ovvero la conduzione, del dispositivo.
+
 Il problema appena accennato viene usualmente risolto tramite un circuito costituito dalla serie composta da una resistenza e una capacità, indicato come **circuito snubber**, collegato in parallelo tra MT1 e MT2.
 In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore massimo di 40 A e tensioni massime di 2,5 kV in grado di funzionare privi di circuito snubber; vengono comunemente indicati come **TRIAC snubberless**.
 
