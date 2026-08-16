@@ -111,6 +111,7 @@ SEZIONE XIV AUTOMAZIONE
 43
 Sezione XIV
 Automazione
+
 CIM, XIV-9
 CPU (Central Processing Unit), ALU (Arithmetic Logic Unit), XIV-28
 , UC (Unità di Controllo), XIV-30
@@ -238,7 +239,6 @@ Rappresentazione delle funzioni
 - diagrammi di Bode, XV-22, 25, 26
 - diagrammi polari, XV-24
 - luogo delle radici, XV-32
-- diagrammi di Nichols, XV-22
 - diagrammi di Nyquist, XV-22, 25
 
 Regolatore ON-OFF, XV-50
@@ -1280,16 +1280,16 @@ Progettazione elettrica ed elettronica
 - Dissipazione del calore, XX-119
 - Documentazione, del progetto definitivo, XX-7
   - Del progetto esecutivo, XX-7
-Fori metallizzati, XX-136
-Fotoincisione, XX-137÷139
-Impedenza termica, XX-146
-Incisione con maschera, XX-139
-Layout, XX-104, 137
-Limitazione di corrente negli alimentatori, XX-157, 159
-Lista di connessione, XX-121
-Marchio CE, XX-124
-Maschera, del layout, XX-137
-- Per il solder resist, XX-139
+- Fori metallizzati, XX-136
+- Fotoincisione, XX-137÷139
+- Impedenza termica, XX-146
+- Incisione con maschera, XX-139
+- Layout, XX-104, 137
+- Limitazione di corrente negli alimentatori, XX-157, 159
+- Lista di connessione, XX-121
+- Marchio CE, XX-124
+- Maschera, del layout, XX-137
+- Per il *solder resist*, XX-139
 Master, XX-136, 175, 179
 Metallizzazione dei fori, XX-136, 138
 Metodi per l’assemblaggio delle apparecchiature elettroniche, XX-128÷135
@@ -1297,7 +1297,7 @@ Metodo per la realizzazione dei circuiti stampati, additivo, XX-139, 140
 - Sottrattivo, XX-137÷139
 Ondulazione residua, XX-151, 152, 166
 Orologio digitale, XX-189÷196
-Photoresist, XX-139
+*Photoresist*, XX-139
 Piano, di manutenzione, XX-8
 - Di sicurezza, XX-8
 Planimetria generale, XX-7
@@ -1334,10 +1334,10 @@ Resistenza termica, XX-141÷146, 173, 174
 - Giunzione-ambiente, XX-142
 - Giunzione-contenitore, XX-142
 Ricerca dei guasti, XX-118
-Ripple, XX-151, 152, 166
+*Ripple*, XX-151, 152, 166
 Saldatura, XX-130÷134
 – a onda, XX-134
-Schede Eurocard, XX-123
+Schede *Eurocard*, XX-123
 Schema, dell’impianto elettrico, XX-8
 – di contratto, XX-8
 – elettrico generale, XX-7
@@ -1352,7 +1352,7 @@ Tecnica di montaggio superficiale, XX-134
 Tecniche di saldatura, automatica, XX-133, 134
 – manuale, XX-133
 Temporizzatore, 555, XX-185÷187
-Tensione di dropout, XX-161
+Tensione di *dropout*, XX-161
 Trasformatore, XX-149
 Valutazione dei costi, XX-126÷128
-Wrap, XX-121
+*Wrap*, XX-121
