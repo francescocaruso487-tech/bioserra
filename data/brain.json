@@ -1,151 +1,138 @@
 {
-  "lastUpdate": "2026-08-15T04:04:29.000Z",
+  "lastUpdate": "2026-08-16T04:08:12.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare corrente DC a 2V per 3 ore (08:00-11:00) su piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) tramite elettrodi in rame/zinco posizionati a 8 cm dalle radici, come da [pdf_17] (PAG 28) per stimolare assorbimento di fosforo/potassio in fioritura.",
-      "Integrare 50g di basalto caricato elettricamente (12h con bobina Tesla) nel substrato delle autofiorenti in essiccazione (Epsilon, Milky Way, Titan, Medusa, Gaia) per potenziare la rizosfera durante la fase critica di raccolta, ispirato a [pdf_327] (PAG 1).",
-      "Effettuare trattamento biodinamico con preparato 500 (cornoletame) alle radici delle autofiorenti al tramonto (20:00), seguendo principi biodinamici storici integrati nei manuali BioSerra, per supportare la fase di essiccazione."
+      "Applicare corrente DC a basso voltaggio (3-4V) tramite elettrodi di rame/zinco a 10-15 cm di profondità vicino alle radici delle piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per stimolare l'assorbimento di nutrienti e resistenza, monitorando la risposta dopo 48 ore come da *[pdf_17].",
+      "Preparare un tè di equiseto (10g in 1L d'acqua) per irrorare le piante in fioritura (fase attuale: Gibbosa Crescente) per potenziare la produzione di sostanze aromatiche e la salute delle piante, seguendo i principi biodinamici dei manuali BioSerra.",
+      "Effettuare un controllo visivo e manuale delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per verificare lo stato di essiccazione e preparare la raccolta immediata, poiché la fase di taglio è già in corso e l'essiccazione è programmata per il 2026-08-24."
     ],
-    "briefing_mattutino": "La serra presenta 5 autofiorenti in fase di essiccazione (raccolta tra -5gg) con umidità al 59% e temperature massime di 33.8°C, condizioni ideali per applicare tecniche di elettrocultura e biodinamica. Oggi è prioritario raccogliere le autofiorenti per evitare perdite di resina, mentre le piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) richiedono stimolazione elettromagnetica per ottimizzare la fase critica. Le tecniche di elettrocultura e Living Soil, citate nei manuali [pdf_17] e [pdf_327], sono fondamentali per massimizzare la qualità del raccolto.",
+    "briefing_mattutino": "La serra si trova in una fase critica: le autofiorenti sono in taglio con raccolta imminente (raccolta tra -6gg) e essiccazione programmata per il 24/08, mentre le femminizzate sono in fioritura con raccolta tra 10-20gg. L'umidità elevata (86%) e la temperatura moderata (17.7°C) creano condizioni ideali per l'elettrocoltura, come evidenziato in *[pdf_13]. Oggi è prioritario completare la raccolta delle autofiorenti e applicare tecniche di elettrocoltura e biodinamica alle piante in fioritura per massimizzare la qualità e la resa.",
     "consigli_piante": {
-      "autofiorenti": "Raccogliere ENTRO OGGI tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -5gg' e dall'essiccazione programmata per il 2026-08-24. Applicare trattamento biodinamico con preparato 500 al tramonto e integrare basalto caricato elettricamente nel substrato.",
-      "femminizzate": "Applicare corrente DC a 2V per 3 ore (08:00-11:00) su Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush tramite elettrodi in rame/zinco a 8 cm dalle radici. Monitorare umidità e temperatura per evitare stress idrico.",
+      "autofiorenti": "Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI, poiché la fase di taglio è avanzata (raccolta tra -6gg) e l'essiccazione è programmata per il 2026-08-24. Verificare lo stato di essiccazione e preparare le piante per la fase successiva.",
+      "femminizzate": "Applicare corrente DC a basso voltaggio (3-4V) tramite elettrodi di rame/zinco a 10-15 cm di profondità vicino alle radici delle piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per stimolare l'assorbimento di nutrienti e resistenza. Irrorare con tè di equiseto per potenziare la produzione di sostanze aromatiche.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Raccogliere immediatamente. Applicare trattamento biodinamico con preparato 500 al tramonto e integrare 50g di basalto caricato elettricamente nel substrato.",
+          "azione": "Raccogliere immediatamente, verificare stato di essiccazione e preparare per la fase successiva.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Raccogliere immediatamente. Applicare trattamento biodinamico con preparato 500 al tramonto e integrare 50g di basalto caricato elettricamente nel substrato.",
+          "azione": "Raccogliere immediatamente, verificare stato di essiccazione e preparare per la fase successiva.",
           "priorita": "alta"
         },
         {
           "nome": "Titan F1",
-          "azione": "Raccogliere immediatamente. Applicare trattamento biodinamico con preparato 500 al tramonto e integrare 50g di basalto caricato elettricamente nel substrato.",
+          "azione": "Raccogliere immediatamente, verificare stato di essiccazione e preparare per la fase successiva.",
           "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Raccogliere immediatamente. Applicare trattamento biodinamico con preparato 500 al tramonto e integrare 50g di basalto caricato elettricamente nel substrato.",
+          "azione": "Raccogliere immediatamente, verificare stato di essiccazione e preparare per la fase successiva.",
           "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Raccogliere immediatamente. Applicare trattamento biodinamico con preparato 500 al tramonto e integrare 50g di basalto caricato elettricamente nel substrato.",
+          "azione": "Raccogliere immediatamente, verificare stato di essiccazione e preparare per la fase successiva.",
           "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Applicare corrente DC a 2V per 3 ore (08:00-11:00) tramite elettrodi in rame/zinco a 8 cm dalle radici. Monitorare umidità e temperatura.",
+          "azione": "Applicare corrente DC (3-4V) e irrorare con tè di equiseto per stimolare la fioritura e la produzione di sostanze aromatiche.",
           "priorita": "media"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Applicare corrente DC a 2V per 3 ore (08:00-11:00) tramite elettrodi in rame/zinco a 8 cm dalle radici. Monitorare umidità e temperatura.",
+          "azione": "Applicare corrente DC (3-4V) e irrorare con tè di equiseto per stimolare la fioritura e la produzione di sostanze aromatiche.",
           "priorita": "media"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Applicare corrente DC a 2V per 3 ore (08:00-11:00) tramite elettrodi in rame/zinco a 8 cm dalle radici. Monitorare umidità e temperatura.",
+          "azione": "Applicare corrente DC (3-4V) e irrorare con tè di equiseto per stimolare la fioritura e la produzione di sostanze aromatiche.",
           "priorita": "media"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Applicare corrente DC a 2V per 3 ore (08:00-11:00) tramite elettrodi in rame/zinco a 8 cm dalle radici. Monitorare umidità e temperatura.",
+          "azione": "Applicare corrente DC (3-4V) e irrorare con tè di equiseto per stimolare la fioritura e la produzione di sostanze aromatiche.",
           "priorita": "media"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Applicare corrente DC a 2V per 3 ore (08:00-11:00) tramite elettrodi in rame/zinco a 8 cm dalle radici. Monitorare umidità e temperatura.",
+          "azione": "Applicare corrente DC (3-4V) e irrorare con tè di equiseto per stimolare la fioritura e la produzione di sostanze aromatiche.",
           "priorita": "media"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocultura DC a basso voltaggio",
-        "descrizione": "Applicare corrente continua a 2V per 3 ore (08:00-11:00) su piante in fioritura tramite elettrodi in rame/zinco posizionati a 8 cm dalle radici. Utilizzare un generatore DC da 12V con resistenza variabile per regolare il voltaggio. Monitorare la corrente erogata (obiettivo: 1-3V).",
-        "fonte": "[pdf_17] (PAG 28)",
+        "nome": "Torre di Potenza per Elettrocoltura",
+        "descrizione": "Installare una torre di rame/zinco alta 1-1.5m al centro della serra per generare un campo elettrico su larga scala. Collegare la torre a una fonte di corrente DC a basso voltaggio (3-5V) e posizionare gli elettrodi a 10-15 cm di profondità nel suolo vicino alle radici delle piante in fioritura. Monitorare la risposta delle piante dopo 48 ore.",
+        "fonte": "[elcult2]",
         "materiali": [
-          "Generatore DC 12V",
-          "Elettrodi in rame/zinco",
-          "Resistenza variabile",
+          "Torre di rame/zinco (1-1.5m)",
+          "Fonte di corrente DC (3-5V)",
           "Cavi isolati",
-          "Timer"
-        ],
-        "difficolta": "bassa"
-      },
-      {
-        "nome": "Basalto caricato elettricamente",
-        "descrizione": "Integrare 50g di basalto nel substrato delle autofiorenti in essiccazione dopo averlo caricato elettricamente con una bobina Tesla per 12 ore. Spargere uniformemente nel substrato e irrigare leggermente per favorire l'assorbimento.",
-        "fonte": "[pdf_327] (PAG 1)",
-        "materiali": [
-          "Basalto in polvere",
-          "Bobina Tesla",
-          "Contenitore isolante",
-          "Guanti protettivi"
+          "Elettrodi di rame/zinco per il suolo"
         ],
         "difficolta": "media"
       }
     ],
     "scoperte": [
-      "Le piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) rispondono positivamente a campi elettromagnetici deboli (1-5V/m) in condizioni di umidità moderata (59% oggi), come suggerito dai testi di Christofleau (brevetto 529202) e Legé.",
-      "L'applicazione di corrente DC a 2V per 3 ore al mattino su piante in fioritura può aumentare l'assorbimento di fosforo e potassio, critici in questa fase, come dimostrato in studi citati nei manuali BioSerra."
+      "L'umidità elevata (86%) e la temperatura moderata (17.7°C) aumentano la conducibilità del suolo, facilitando la trasmissione delle energie elettriche alle piante, come evidenziato in *[pdf_13].",
+      "La fase lunare Gibbosa Crescente (73% illuminazione) è ideale per interventi biodinamici come l'irrorazione di tè di equiseto, che potenzia la produzione di sostanze aromatiche nelle piante in fioritura."
     ],
     "avvisi": [
-      "URGENTE: Raccogliere ENTRO OGGI tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -5gg' e dall'essiccazione programmata per il 2026-08-24.",
-      "Monitorare le piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per segni di stress idrico a causa delle temperature massime di 33.8°C e umidità al 59%."
+      "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità, poiché la fase di taglio è avanzata (raccolta tra -6gg) e l'essiccazione è programmata per il 2026-08-24.",
+      "Attenzione all'aumento di umidità previsto per domani (pioggia 4.7mm): proteggere le piante già raccolte e verificare la stabilità del suolo per evitare ristagni idrici."
     ],
     "piano_giornata": {
-      "mattina": "07:00-08:00: Verifica umidità del substrato e temperatura. 08:00-11:00: Applicare corrente DC a 2V su piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush). 11:00-12:00: Iniziare raccolta autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia).",
-      "pomeriggio": "12:00-15:00: Completare raccolta autofiorenti e applicare trattamento biodinamico con preparato 500 al tramonto. 15:00-18:00: Integrare basalto caricato elettricamente nel substrato delle autofiorenti raccolte. Evitare ore calde (>30°C) per manipolazione piante.",
-      "sera": "18:00-20:00: Applicare trattamento biodinamico con preparato 500 alle radici delle autofiorenti. 20:00-21:00: Monitorare condizioni ambientali e registrare dati di raccolta."
+      "mattina": "07-12: Raccogliere tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia), verificare lo stato di essiccazione e preparare le piante per la fase successiva. Applicare corrente DC (3-4V) tramite elettrodi a 10-15 cm di profondità vicino alle radici delle piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush).",
+      "pomeriggio": "12-18: Irrorare le piante in fioritura con tè di equiseto (10g in 1L d'acqua) per potenziare la produzione di sostanze aromatiche. Monitorare la risposta delle piante all'elettrocoltura dopo 4-6 ore dall'applicazione della corrente DC.",
+      "sera": "18-21: Verificare la stabilità del suolo dopo le piogge previste per domani. Applicare eventuali correzioni al sistema di elettrocoltura (es. regolazione voltaggio) in base alle risposte delle piante durante la giornata."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, con radici storiche nell'opera di Justin Etienne Christofleau (brevetti dal 1920).",
-        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e la salute delle colture, come dimostrato in studi scientifici citati nei manuali.",
-        "L'elettricità nei vegetali è un fenomeno complesso che richiede approcci specifici, non assimilabili alle proprietà tradizionali dell'elettricità, come evidenziato nei testi di Legé e altri autori.",
-        "La pre-trattamento elettromagnetico dei semi (es. con generatori a bobina) può rivitalizzare semi deboli e potenziare la germinazione, utile in fase di fioritura per piante stressate.",
-        "L'uso di sistemi a torre di potenza (Tower of Power) per grandi campi agricoli suggerisce scalabilità anche in serra, con applicazioni mirate a radici e rizosfera."
+        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, come dimostrato dai 39 brevetti di Christofleau, tra cui 16 dedicati all'elettrocoltura.",
+        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e la salute delle piante, come riportato in *Electroculture for Beginners*.",
+        "L'elettricità dei vegetali emette esalazioni idioelettriche che possono essere sfruttate per ottimizzare l'assorbimento di fluidi elettrici, secondo *De l'Électricité des Végétaux*.",
+        "L'uso di sistemi a torre (es. 'Tower of Power') permette di generare campi elettrici su larga scala per l'elettrocoltura, come descritto in *elcult2*.",
+        "Il pre-trattamento elettromagnetico dei semi rivitalizza quelli deboli e potenzia la germinazione, come indicato in *elcult2*."
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a 1-3V tramite elettrodi in rame/zinco posizionati a 5-10 cm dalle radici delle piante in fioritura, per 2-4 ore al giorno (mattina). Questo metodo, citato in [pdf_17] (PAG 28), stimola l'assorbimento di nutrienti e la resistenza agli stress idrici, particolarmente utile in serra con umidità al 59%.",
-      "consiglio_suolo_da_testi": "Integrare nel suolo (Living Soil) polveri di basalto o zeolite caricate elettricamente (es. con bobina Tesla per 12 ore) per migliorare la struttura e la capacità di scambio cationico. Questo approccio, ispirato a [pdf_327] (PAG 1), potenzia la rizosfera durante la fioritura, fase critica per l'assorbimento di fosforo e potassio.",
-      "consiglio_biodinamica_da_testi": "Effettuare un trattamento biodinamico con preparato 500 (cornoletame) alle radici al tramonto, seguendo il calendario lunare per la semina/raccolta (fase di luna crescente per fioritura). Citazione indiretta da principi biodinamici storici, integrati nei manuali della BioSerra Caserta.",
-      "scoperta_del_giorno": "I testi di Christofleau (brevetto 529202) e Legé suggeriscono che le piante in fioritura (come le tue in serra) rispondono positivamente a campi elettromagnetici deboli (1-5V/m), soprattutto in condizioni di umidità moderata (59% oggi). Questo potrebbe spiegare perché le piante in serra spesso fioriscono più vigorosamente che all'aperto.",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (es. 1-5V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura. Questo metodo, descritto in *[pdf_17]*, stimola l'assorbimento di nutrienti e la resistenza delle piante. Monitorare la risposta delle piante dopo 48 ore.",
+      "consiglio_suolo_da_testi": "Mantenere un suolo ben strutturato e ricco di materia organica per favorire la conducibilità elettrica naturale. Secondo *[pdf_85]*, l'elettricità dei vegetali è strettamente legata alla capacità del suolo di trattenere e trasmettere fluidi elettrici. Aggiungere compost maturo o biochar per migliorare la conducibilità.",
+      "consiglio_biodinamica_da_testi": "Osservare la fase lunare attuale (17.7°C, umidità 86%) per eventuali interventi biodinamici. Secondo i principi biodinamici, la luna crescente favorisce la fioritura e la produzione di sostanze aromatiche. Preparare un tè di equiseto o camomilla per irrorare le piante in fioritura, come suggerito nei manuali della BioSerra Caserta.",
+      "scoperta_del_giorno": "L'umidità elevata (86%) e la temperatura moderata (17.7°C) sono condizioni ideali per l'elettrocoltura, poiché l'acqua aumenta la conducibilità del suolo e facilita la trasmissione delle energie elettriche alle piante, come evidenziato in *[pdf_13]*.",
       "tecnica_da_provare": {
-        "nome": "Elettrocoltura a impulsi con elettrodi a spirale",
-        "descrizione": "Posizionare elettrodi a spirale in rame (diametro 10 cm) intorno al colletto delle piante in fioritura, collegati a una batteria da 3V con timer per erogare impulsi di 10 secondi ogni 5 minuti per 4 ore al giorno (ore 8-12). Gli elettrodi devono essere isolati dal suolo con guaine in plastica per evitare corrosione. Monitorare la risposta in 7 giorni.",
-        "fonte": "[pdf_17] (PAG 51) + [pdf_327] (PAG 1)",
+        "nome": "Elettrocoltura a corrente continua con elettrodi di rame/zinco",
+        "descrizione": "Posizionare due elettrodi (rame e zinco) a 10 cm di profondità nel suolo, a 20 cm di distanza dalle piante in fioritura. Collegare gli elettrodi a una batteria da 3V (es. batteria a bottone) per 6-8 ore al giorno, preferibilmente nelle ore più calde. Monitorare la risposta delle piante dopo 3 giorni.",
+        "fonte": "[pdf_17]",
         "materiali": [
-          "Elettrodi a spirale in rame (2-3 per pianta)",
-          "Batteria da 3V (es. pila al litio)",
-          "Timer meccanico o Arduino per impulsi",
-          "Guaine in PVC per isolamento",
-          "Multimetro per misurare corrente"
+          "Elettrodi di rame e zinco (diametro 3-5 mm, lunghezza 20 cm)",
+          "Batteria da 3V (es. batteria a bottone)",
+          "Cavi elettrici isolati",
+          "Nastro isolante",
+          "Multimetro (opzionale, per misurare la corrente)"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "critico per autofiorenti (raccolta urgente), ottimale per piante in fioritura",
-      "irrigazione": "Nessuna irrigazione oggi sulle autofiorenti in essiccazione. Per piante in fioritura, irrigare leggermente al mattino (07:00) con 200ml per pianta per evitare stress idrico a 33.8°C.",
-      "nutrizione": "Nessuna integrazione nutrizionale oggi. Solo acqua per piante in essiccazione. Per piante in fioritura, nessuna integrazione aggiuntiva.",
+      "stato_generale": "critico per autofiorenti (raccolta urgente), monitoraggio per femminizzate",
+      "irrigazione": "Nessuna irrigazione oggi per le autofiorenti in fase di essiccazione. Per le piante in fioritura, irrigare leggermente al mattino (0.5L/mq) per mantenere il suolo umido ma non bagnato, evitando ristagni.",
+      "nutrizione": "Water-only per tutte le piante oggi. Evitare qualsiasi integrazione nutrizionale fino al completamento della raccolta delle autofiorenti.",
       "piante_critiche": [
         {
           "id": 4,
           "nome": "Astro Lemonade F1",
-          "giorni_a_raccolta": 11
+          "giorni_a_raccolta": 10
         },
         {
           "id": 11,
           "nome": "Cosmic Cheddar F1",
-          "giorni_a_raccolta": 11
+          "giorni_a_raccolta": 10
         }
       ]
     },
@@ -154,52 +141,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Effettuare trattamento biodinamico con preparato 500 al tramonto (20:00) per sfruttare la fase lunare crescente, ideale per fioritura e raccolta."
+        "consiglio": "Applicare tè di equiseto alle piante in fioritura per sfruttare la fase lunare favorevole alla produzione di sostanze aromatiche."
       },
       "ore_luce": 13.8
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare funzionamento generatore DC e resistenza variabile per applicazione su piante in fioritura.",
-        "Controllare collegamento elettrodi in rame/zinco e posizione a 8 cm dalle radici."
+        "Verificare il corretto funzionamento degli elettrodi di rame/zinco e della fonte di corrente DC per le piante in fioritura.",
+        "Monitorare la risposta delle piante all'elettrocoltura dopo 4-6 ore dall'applicazione della corrente, osservando eventuali cambiamenti nella crescita o nella salute delle foglie."
       ],
-      "ottimizzazione": "Regolare voltaggio a 2V per ottimizzare risposta delle piante in fioritura, come da [pdf_17] (PAG 28)."
+      "ottimizzazione": "Regolare il voltaggio della corrente DC tra 3-4V per ottimizzare l'assorbimento di nutrienti senza stressare le piante, come suggerito in *[pdf_17]."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocultura DC a basso voltaggio",
-      "descrizione": "Applicare corrente continua a 2V per 3 ore (08:00-11:00) su piante in fioritura tramite elettrodi in rame/zinco posizionati a 8 cm dalle radici. Utilizzare un generatore DC da 12V con resistenza variabile per regolare il voltaggio. Monitorare la corrente erogata (obiettivo: 1-3V).",
-      "fonte": "[pdf_17] (PAG 28)",
+      "nome": "Torre di Potenza per Elettrocoltura",
+      "descrizione": "Installare una torre di rame/zinco alta 1-1.5m al centro della serra per generare un campo elettrico su larga scala. Collegare la torre a una fonte di corrente DC a basso voltaggio (3-5V) e posizionare gli elettrodi a 10-15 cm di profondità nel suolo vicino alle radici delle piante in fioritura. Monitorare la risposta delle piante dopo 48 ore.",
+      "fonte": "[elcult2]",
       "materiali": [
-        "Generatore DC 12V",
-        "Elettrodi in rame/zinco",
-        "Resistenza variabile",
+        "Torre di rame/zinco (1-1.5m)",
+        "Fonte di corrente DC (3-5V)",
         "Cavi isolati",
-        "Timer"
-      ],
-      "difficolta": "bassa"
-    },
-    {
-      "nome": "Basalto caricato elettricamente",
-      "descrizione": "Integrare 50g di basalto nel substrato delle autofiorenti in essiccazione dopo averlo caricato elettricamente con una bobina Tesla per 12 ore. Spargere uniformemente nel substrato e irrigare leggermente per favorire l'assorbimento.",
-      "fonte": "[pdf_327] (PAG 1)",
-      "materiali": [
-        "Basalto in polvere",
-        "Bobina Tesla",
-        "Contenitore isolante",
-        "Guanti protettivi"
+        "Elettrodi di rame/zinco per il suolo"
       ],
       "difficolta": "media"
     }
   ],
   "avvisi": [
-    "URGENTE: Raccogliere ENTRO OGGI tutte le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -5gg' e dall'essiccazione programmata per il 2026-08-24.",
-    "Monitorare le piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per segni di stress idrico a causa delle temperature massime di 33.8°C e umidità al 59%."
+    "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità, poiché la fase di taglio è avanzata (raccolta tra -6gg) e l'essiccazione è programmata per il 2026-08-24.",
+    "Attenzione all'aumento di umidità previsto per domani (pioggia 4.7mm): proteggere le piante già raccolte e verificare la stabilità del suolo per evitare ristagni idrici."
   ],
   "consigli_giorno": [
-    "Applicare corrente DC a 2V per 3 ore (08:00-11:00) su piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) tramite elettrodi in rame/zinco posizionati a 8 cm dalle radici, come da [pdf_17] (PAG 28) per stimolare assorbimento di fosforo/potassio in fioritura.",
-    "Integrare 50g di basalto caricato elettricamente (12h con bobina Tesla) nel substrato delle autofiorenti in essiccazione (Epsilon, Milky Way, Titan, Medusa, Gaia) per potenziare la rizosfera durante la fase critica di raccolta, ispirato a [pdf_327] (PAG 1).",
-    "Effettuare trattamento biodinamico con preparato 500 (cornoletame) alle radici delle autofiorenti al tramonto (20:00), seguendo principi biodinamici storici integrati nei manuali BioSerra, per supportare la fase di essiccazione."
+    "Applicare corrente DC a basso voltaggio (3-4V) tramite elettrodi di rame/zinco a 10-15 cm di profondità vicino alle radici delle piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per stimolare l'assorbimento di nutrienti e resistenza, monitorando la risposta dopo 48 ore come da *[pdf_17].",
+    "Preparare un tè di equiseto (10g in 1L d'acqua) per irrorare le piante in fioritura (fase attuale: Gibbosa Crescente) per potenziare la produzione di sostanze aromatiche e la salute delle piante, seguendo i principi biodinamici dei manuali BioSerra.",
+    "Effettuare un controllo visivo e manuale delle autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) per verificare lo stato di essiccazione e preparare la raccolta immediata, poiché la fase di taglio è già in corso e l'essiccazione è programmata per il 2026-08-24."
   ]
 }
