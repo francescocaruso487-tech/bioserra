@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-16
+aggiornato: 2026-08-17
 pdf_count: 6
 ---
 
@@ -12,29 +12,34 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macroinvertebrati (come lombrichi), che decompongono la materia organica in condizioni aerobiche. Il risultato è un **compost maturo**, simile al terriccio forestale, che migliora la struttura del suolo, la capacità di ritenzione idrica, la biodiversità microbica e la disponibilità di nutrienti per le piante.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il compost. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, insetti) che, in presenza di ossigeno, scompongono la materia organica in humus, CO₂, acqua e nutrienti minerali. Il compost maturo è un **biofertilizzante** che migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, stimola l’attività microbica e fornisce nutrienti a lento rilascio, fondamentali per la fase vegetativa delle piante in **Living Soil**.
 
-In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il compost è fondamentale per mantenere un substrato vivo e fertile. La decomposizione avviene in modo ottimale a temperature tra **55-65°C**, che accelerano la mineralizzazione dei composti organici e uccidono patogeni e semi di malerbe. Un compost ben fatto riduce la necessità di fertilizzanti sintetici, promuove la resilienza delle piante alle avversità e favorisce lo sviluppo di radici sane, essenziale durante le fasi di **germinazione** e **vegetazione**.
+Il meccanismo chiave del compostaggio si basa su **tre fasi termofile**:
+1. **Fase mesofila** (20-40°C): decomposizione iniziale da parte di batteri mesofili.
+2. **Fase termofila** (55-65°C): attivazione di batteri termofili che eliminano patogeni e semi infestanti, producendo calore (esotermia).
+3. **Fase di maturazione** (raffreddamento): colonizzazione da parte di funghi e attinomiceti che stabilizzano l’humus.
+In serra outdoor a Caserta (41°N), dove le temperature estive possono superare i 30°C, è cruciale monitorare la temperatura per evitare surriscaldamenti (>70°C) che uccidono i microrganismi benefici.
 
 ---
 
 ## Come si applica in serra
+Per produrre compost di qualità in serra **Living Soil** a Caserta, segui questi passaggi:
 
-### **1. Scelta dei materiali**
-- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame (es. equino o bovino), fondi di caffè.
-- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, rametti triturati, segatura (usare con moderazione).
-- **Bilanciamento**: rapporto ideale **C:N = 25:1 a 30:1**. Esempio pratico:
-  - 3 parti marroni (es. 3 kg di foglie secche) + 1 parte verde (es. 1 kg di scarti di cucina).
-  - Aggiungere **1-2% di calce agricola** (CaCO₃) ogni 100 kg di compost per neutralizzare l’acidità e accelerare la decomposizione.
+1. **Selezione dei materiali**:
+   - **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, letame (es. stallatico), fondi di caffè.
+   - **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, rametti triturati.
+   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (es. 60% foglie secche, 30% scarti verdi, 10% letame).
+   - *Evita*: carne, latticini, agrumi in eccesso, piante malate.
 
-### **2. Preparazione del cumulo**
-- **Ubicazione**: scegliere un’area ombreggiata e ben drenata in serra (evitare il sole diretto che asciuga troppo il cumulo).
-- **Struttura**: creare un cumulo a forma di **cono** (altezza 1-1.5 m, base 1-1.5 m di diametro) per ottimizzare aerazione e ritenzione di umidità.
-- **Stratificazione**: alternare strati di materiali verdi e marroni (5-10 cm per strato), bagnando leggermente ogni strato con acqua **non clorata** (meglio acqua piovana o magnetizzata).
+2. **Preparazione del cumulo**:
+   - Crea un cumulo di **1-1.5 m di altezza** e **1-1.5 m di larghezza** (dimensione ottimale per trattenere calore).
+   - Posiziona il cumulo su terreno nudo (non su cemento) per favorire l’accesso di lombrichi e microrganismi.
+   - Copri con un telo traspirante per proteggere dalla pioggia (evita ristagni) e dal sole diretto.
 
-### **3. Gestione del processo**
-- **Temperatura**: monitorare con un **termometro da compost** (inserito al centro del cumulo). Se supera **65°C**, rivoltare per evitare la morte dei microrganismi termofili.
-- **Umidità**: il cumulo deve essere umido come una **spugna strizzata** (se gocciola, è troppo bagnato; se si sbriciola, è troppo secco).
-- **Aerazione**: rivoltare ogni **2-3 giorni** con una forca o un aeratore per ossigenare il cumulo e uniformare la decomposizione. Dopo 2-3 settimane, ridurre la frequenza a **1 volta a settimana**.
-- **Tempo di maturazione**:
-  - **Compost fresco** (3-6 mesi): ideale per ammendare il su
+3. **Gestione della temperatura e umidità**:
+   - **Temperatura**: Mantieni tra **55-65°C** (usa un termometro da compost). Se supera i 70°C, aggiungi materiali marroni e rivolta.
+   - **Umidità**: Il cumulo deve essere umido come una spugna strizzata (60-70% di umidità). Se troppo secco, bagna; se troppo bagnato, aggiungi materiali marroni.
+   - *Strumenti*: Usa un termometro da compost e un igrometro per monitorare.
+
+4. **Rivoltamento**:
+   - Rivolta il cumulo **ogni 2-3 giorni** con una forca o una pala, spostando il materiale esterno verso il centro per garantire ossigenazione uniforme
