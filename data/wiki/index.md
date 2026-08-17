@@ -1,27 +1,24 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-08-16 | 20 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-08-17 | 20 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Elettrocultura Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica onde elettromagnetiche a bassa frequenza per stimolare la vitalità cellu
-- [Elettrocultura Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti galvaniche che s
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Avvolgi un filo di rame a spirale intorno al fusto o al vaso per potenziare la r
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Installa un'antenna metallica collegata a terra per captare e trasmettere energi
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua con magneti per migliorare la struttura molecolare e l'assorbimen
-- [Sistemi Combinati di Elettrocultura](concetti/sistemi_combinati_elettrocul.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (es. spirale rame + antenna terra) per un
-- [Irrigazione Magnetizzata Biodinamica](concetti/irrigazione_magnetizzata_bio.md) *(in 10 PDF)* — Combina acqua magnetizzata e ritmi biodinamici per un'irrigazione ottimale in tu
+- [Elettrocultura secondo Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la vitalità cellu
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Utilizza spirali di rame per generare campi elettromagnetici naturali che influe
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Installa un'antenna interrata per captare e amplificare le energie telluriche a 
+- [Lega Ferro-Rame](concetti/lega_fe_cu.md) *(in 10 PDF)* — Utilizza una lega di ferro e rame per creare un campo elettromagnetico che stimo
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua di irrigazione con magneti per migliorare la sua struttura moleco
+- [Campi Elettromagnetici Combinati](concetti/campi_elettromagnetici_combi.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (es. spirale rame + antenna terra) per po
+- [Acqua Magnetizzata + Elettrocultura](concetti/acqua_magnetizzata_e_elettro.md) *(in 10 PDF)* — Combina l'acqua magnetizzata con tecniche di elettrocultura per massimizzare l'a
 
 ## Biodinamica
-- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Utilizza preparati biodinamici (es. cornoletame, cornosilice) per attivare la vi
-- [Ritmi Cosmici Biodinamici](concetti/ritmi_cosmici_biodinamici.md) *(in 10 PDF)* — Irriga e tratta le piante seguendo i ritmi lunari e planetari per ottimizzare cr
+- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per armonizzare le 
+- [Ritmi Cosmici](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i ritmi lunari e planetari per ottimizzar
+- [Preparati Biodinamici + Ritmi Cosmici](concetti/preparati_biodinamici_ritmi.md) *(in 10 PDF)* — Integra l'uso dei preparati biodinamici con l'applicazione secondo i ritmi cosmi
 - [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
-
-## Raccolta
-- [Preparati Biodinamici per Essiccazione](concetti/preparati_biodinamici_essicc.md) *(in 10 PDF)* — Utilizza preparati specifici (es. equiseto) per migliorare la qualità delle pian
-- [Essiccazione Corretta](concetti/essiccazione_corretta.md) — Processo di asciugatura lenta per preservare qualita.
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
@@ -36,6 +33,9 @@
 
 ## Fitosanitario
 - [Controllo Parassiti Naturale](concetti/controllo_parassiti.md) *(in 10 PDF)* — Gestione biologica di infestazioni con metodi naturali.
+
+## Raccolta
+- [Essiccazione Corretta](concetti/essiccazione_corretta.md) — Processo di asciugatura lenta per preservare qualita.
 
 ## Log aggiornamenti
 - [log.md](log.md)
