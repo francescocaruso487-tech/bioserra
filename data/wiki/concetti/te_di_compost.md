@@ -2,50 +2,46 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-16
+aggiornato: 2026-08-17
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Tè di Compost
+# Te di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo, utilizzato per stimolare la salute del suolo e delle piante. Questo metodo si basa sul principio della **biostimolazione microbica**, dove i batteri, funghi e protozoi attivi nel tè colonizzano la rizosfera, migliorando la disponibilità di nutrienti, la struttura del suolo e la resistenza delle piante agli stress biotici e abiotici. In particolare, i microrganismi eterotrofi (come *Pseudomonas*, *Bacillus* e funghi micorrizici) scompongono la materia organica, rilasciando enzimi e sostanze umiche che favoriscono l’assorbimento radicale e la fotosintesi.
+Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in una soluzione ricca di batteri, funghi, protozoi e nutrienti prontamente assimilabili dalle piante, sia per via fogliare che radicale. Il meccanismo d'azione si basa sulla **biostimolazione del suolo vivente**: i microrganismi del compost tea colonizzano la rizosfera, competono con patogeni, migliorano la struttura del suolo e facilitano l'assorbimento di nutrienti come azoto, fosforo e potassio. Inoltre, la presenza di **sostanze umiche e acidi organici** (derivati dalla decomposizione della materia organica) agisce come chelante naturale, rendendo i minerali più disponibili per le radici.
 
-L’efficacia del tè di compost dipende dalla **diversità microbica** del compost di partenza e dalle condizioni di preparazione (aerazione, temperatura, pH). A differenza dei fertilizzanti chimici, questo approccio promuove un **suolo vivente**, dove la competizione tra microrganismi benefici e patogeni riduce naturalmente le malattie. Studi dimostrano che applicazioni regolari possono aumentare la biomassa radicale del 30-50% e la resa delle colture fino al 20%, soprattutto in sistemi *Living Soil* outdoor, dove il clima mediterraneo di Caserta (41°N) favorisce l’attività microbica durante la stagione vegetativa.
+In un contesto di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il compost tea rappresenta uno strumento chiave per **mantenere l'equilibrio microbiologico** del suolo, soprattutto durante le fasi di vegetazione e fioritura. Studi dimostrano che l'applicazione regolare di compost tea può aumentare la resilienza delle piante agli attacchi di funghi patogeni (come *Phytophthora* o *Fusarium*) e ridurre la necessità di input chimici, allineandosi ai principi dell'agricoltura rigenerativa. La sua efficacia è massima quando il compost di partenza è **ben maturo** (con rapporto C/N < 20) e privo di patogeni, garantendo una popolazione microbica equilibrata e non tossica.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta** (clima caldo-umido in estate, inverni miti), il tè di compost va preparato e applicato seguendo queste fasi:
 
-1. **Preparazione del compost**
-   - Usa **compost maturo** (3-6 mesi), privo di odori putridi e con rapporto C/N < 20:1.
-   - Evita compost con residui di carne o latticini per prevenire patogeni.
+Per una serra outdoor a **Caserta** (clima caldo-umido in estate, inverni miti), segui queste istruzioni pratiche per preparare e applicare il compost tea in **Living Soil**:
 
-2. **Estrazione del tè**
-   - **Dosaggio**: 1 parte di compost ogni 10 parti di acqua (es. 1 kg di compost in 10 L di acqua).
-   - **Aerazione**: Utilizza un **aeratore da acquario** (2-4 L/min) per 24-48 ore, mantenendo la temperatura tra **18-25°C** (evita surriscaldamento).
-   - **Additivi**:
-     - **Melassa** (1-2 g/L) come fonte di carbonio per i batteri.
-     - **Humus di lombrico** (100 g/10 L) per aumentare la biodiversità microbica.
-     - **Zucchero di canna** (opzionale, 5 g/L) per accelerare la fermentazione.
+### **Materiali necessari**
+- Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturato almeno 6 mesi).
+- Acqua non clorata (lasciare decantare l'acqua del rubinetto per 24h o usare acqua piovana).
+- Aeratore per acquario (con pietra porosa per ossigenazione).
+- Melassa biologica (1-2 cucchiai per 10L di acqua) o zucchero di canna.
+- Recipiente in plastica o vetro (evitare metalli).
+- Filtro a maglia fine (per applicazione fogliare).
+- pH-metro e EC-metro (opzionali ma consigliati).
 
-3. **Filtraggio e applicazione**
-   - Filtra il tè con una retina a maglia fine (50-100 micron) per rimuovere particelle grossolane.
-   - **Applica entro 4 ore** dalla preparazione per massimizzare l’attività microbica.
-   - **Metodi di distribuzione**:
-     - **Radicale**: Irrigazione a goccia (diluizione 1:1 con acqua se necessario).
-     - **Fogliare**: Nebulizzazione fine (evita applicazioni nelle ore calde per prevenire ustioni).
+### **Procedura passo-passo**
+1. **Preparazione del compost**:
+   - Usa **1 parte di compost** ogni **5-10 parti di acqua** (es. 1kg di compost in 10L di acqua).
+   - Evita compost fresco o con odori sgradevoli (può contenere ammoniaca o patogeni).
 
-4. **Frequenza**
-   - **Vegetazione**: 1 volta ogni 2 settimane (diluizione 1:5).
-   - **Fioritura**: 1 volta ogni 3 settimane (diluizione 1:10 per evitare eccesso di azoto).
+2. **Infusione aerobica**:
+   - Riempi il recipiente con acqua e aggiungi il compost.
+   - Aggiungi la melassa (1-2 cucchiai per 10L) come **substrato per i batteri**.
+   - Posiziona l'aeratore e mantieni l'ossigenazione **costante per 24h** (evita la fermentazione anaerobica, che produce tossine).
 
----
-## Sinergie con altri elementi
-Il tè di compost si integra perfettamente con altre tecniche per ottimizzare la salute delle piante in serra:
-
-- **L
+3. **Filtraggio e applicazione**:
+   - Filtra il liquido con un panno a trama fine per rimuovere i residui solidi.
+   - **Applica entro 4 ore** dalla preparazione per massimizzare l'attività microbica.
+   - **Dosi consigliate**:
