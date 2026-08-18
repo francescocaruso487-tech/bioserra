@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-17
+aggiornato: 2026-08-18
 pdf_count: 10
 ---
 
@@ -12,35 +12,37 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio ecosistemico piuttosto che sulla soppressione chimica. Questo approccio sfrutta i principi della **Living Soil** (suolo vivente), dove la biodiversità microbica e macrobiologica funge da barriera naturale contro patogeni e parassiti. I meccanismi d'azione includono:
-- **Prevenzione**: La salute del suolo, ricco di microrganismi benefici (funghi micorrizici, batteri antagonisti), ostacola la proliferazione di parassiti come afidi o acari.
-- **Regolazione biologica**: L'introduzione di **insetti utili** (es. *Phytoseiulus persimilis* per gli acari) o l'uso di **feromoni** altera i comportamenti riproduttivi dei parassiti.
-- **Barriere fisiche**: Oli essenziali (neem, piretro naturale) o estratti vegetali (aglio, ortica) agiscono come repellenti o insetticidi sistemici a basso impatto.
+Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull'equilibrio ecosistemico piuttosto che sulla soppressione chimica. Questo approccio sfrutta la biodiversità del suolo e dell'ambiente serra per prevenire e contrastare patogeni e insetti dannosi, promuovendo al contempo la salute delle piante. Il meccanismo d'azione si fonda su principi di **resilienza ecologica**: insetti utili, funghi antagonisti e piante repellenti creano un ambiente ostile ai parassiti, mentre il suolo vivo (Living Soil) rafforza le difese naturali delle colture. L'obiettivo non è l'eradicazione totale dei parassiti, ma il mantenimento di un equilibrio dinamico in cui i danni siano minimi e gestibili.
 
-Questo metodo si allinea ai principi di **Albert Howard** ([pdf_7]), che sottolinea come la fertilità del suolo — intesa come ecosistema complesso — sia la prima linea di difesa contro le avversità. L'elettrocultura, ad esempio, può potenziare la resilienza delle piante stimolando la crescita microbica tramite **spirali di rame** (Lakhovsky), migliorando la risposta immunitaria delle colture.
+Questa tecnica si allinea ai principi dell'**agricoltura rigenerativa**, dove la prevenzione è prioritaria rispetto alla cura. L'uso di oli essenziali, estratti vegetali e organismi benefici (come *Phytoseiulus persimilis* per gli acari) riduce la necessità di interventi esterni, preservando la salute del suolo e la qualità dei prodotti. In serra outdoor a Caserta, con il suo clima mediterraneo umido, il controllo naturale dei parassiti diventa ancora più cruciale a causa dell'alto rischio di infestazioni fungine (es. *Oidium*) e insetti (es. *Tuta absoluta*).
 
 ---
 
 ## Come si applica in serra
 
-### **Protocollo base per serra outdoor a Caserta (41°N)**
-1. **Ispezione quotidiana**:
-   - Controllare **foglie giovani, steli e pagina inferiore** delle foglie (siti preferiti per afidi e acari).
-   - Utilizzare una **lente di ingrandimento** per identificare uova o stadi iniziali di infestazione.
+1. **Ispezione quotidiana**
+   - Controlla foglie (soprattutto sotto il lato), steli e frutti al mattino, quando gli insetti sono meno attivi.
+   - Usa una lente d'ingrandimento per identificare uova, larve o danni precoci (es. fori, melata).
+   - *Strumento consigliato*: Quaderno di campo per tracciare le infestazioni.
 
-2. **Prevenzione con olio di neem**:
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (agente bagnante) in 1 litro d'acqua.
-   - **Applicazione**: Spruzzare **ogni 7 giorni** al tramonto (evitare ore calde) su tutta la pianta, con particolare attenzione ai germogli.
-   - **Frequenza**: Aumentare a 3-4 giorni in caso di umidità elevata (favorisce funghi come *Botrytis*).
+2. **Prevenzione con olio di neem**
+   - Applica **olio di neem puro al 100%** (diluito in acqua con 1% di sapone di potassio come adesivante) ogni **7 giorni** durante la vegetazione e ogni **10 giorni** in fioritura.
+   - Orario ideale: **sera** (evita stress termico alle piante).
+   - *Dose*: 5–10 ml/L d'acqua, nebulizzato fino a sgocciolamento.
 
-3. **Insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis*): Introduzione preventiva (5-10 individui/m²) in caso di presenza di *Tetranychus urticae* (acaro rosso).
-   - **Coccinelle** (*Coccinella septempunctata*): Rilascio di 1-2 esemplari/m² per afidi.
-   - **Nematodi benefici** (*Steinernema feltiae*): Applicazione al suolo per larve di moscerini (es. *Sciaridae*).
+3. **Insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis* o *Neoseiulus californicus*) per *Tetranychus urticae* (ragnetto rosso):
+     - Rilascia **2–5 individui/m²** ogni 2 settimane in caso di infestazione.
+     - *Condizione*: Umidità >60% (evita di applicare in giornate troppo secche).
+   - **Coccinelle** (*Coccinella septempunctata*) per afidi:
+     - Posiziona piante trappola (es. *Calendula officinalis*) per attirarle.
 
-4. **Tecniche elettrocolturali integrative**:
-   - **Spirale di rame Lakhovsky**: Posizionare una spirale di rame (diametro 10-15 cm) a 30 cm dal suolo, collegata a un **filo di terra** interrato. Attiva a partire dalla fase di vegetazione.
-   - **Antenna di terra**: Installare un'antenna in rame (lunghezza 50 cm) collegata a una spirale intorno alle piante, abbinata a un **circuito Lakhovsky** per armonizzare le frequenze [pdf_9].
+4. **Barriere fisiche**
+   - **Reti anti-insetto** (maglia <0.6 mm) su aperture della serra per bloccare *Tuta absoluta* e moscerini.
+   - **Pacciamatura con paglia** per ridurre l'umidità a livello del suolo e ostacolare la deposizione delle uova.
 
-5. **Supporti naturali**:
-   - **
+5. **Piante repellenti**
+   - Intercalare **basilico**, **lavanda** o **tagete** tra le colture per allontanare afidi e nematodi.
+   - *Esempio*: Pianta 3–4 piante di tagete ogni 10 m² di serra.
+
+6. **Monitoraggio con trappole**
