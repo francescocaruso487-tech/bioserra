@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-17T03:26:48.354793+00:00",
+  "lastUpdate": "2026-08-18T03:15:30.567611+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,44 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "exp_002",
-      "nome": "Magnete per ogni irrigatore",
-      "descrizione": "Magnete posizionato su ogni irrigatore/gocciolatore per magnetizzare l acqua prima che raggiunga le radici.",
-      "materiali": [
-        "Magneti permanenti",
-        "Fascette o supporti"
-      ],
-      "obiettivo": "Magnetizzare l acqua di irrigazione per migliorare assorbimento radicale",
-      "funzione": "Strutturazione molecolare dell acqua tramite campo magnetico",
-      "come_applicare": "Posizionare un magnete su ogni irrigatore. Si applica a tutte le piante contemporaneamente.",
-      "applicato_a": "tutte_le_piante",
-      "attivo": false,
-      "data_attivazione": null,
-      "fonte": "Guida personale",
-      "categoria": "magnetismo",
-      "note": "",
-      "tipo": "elettrocultura"
-    },
-    {
-      "id": "exp_003",
-      "nome": "Melassa settimanale",
-      "descrizione": "Somministrazione di melassa di canna come fonte di carboidrati per i microrganismi del Living Soil. Frequenza decisa dall utente.",
-      "materiali": [
-        "Melassa di canna non solforata",
-        "Acqua"
-      ],
-      "obiettivo": "Nutrire i microrganismi del Living Soil e aumentare attivita microbica",
-      "funzione": "Stimolo microbico e nutrimento radicale indiretto",
-      "come_applicare": "Diluire in acqua e irrigare tutte le piante. Frequenza a discrezione dell utente.",
-      "applicato_a": "tutte_le_piante",
-      "attivo": false,
-      "data_attivazione": null,
-      "fonte": "Guida personale",
-      "categoria": "nutrizione_biologica",
-      "note": "Frequenza variabile a discrezione",
-      "tipo": "nutrizione"
-    },
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
@@ -4136,13 +4098,84 @@
       "data_proposta": "2026-08-17",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta CBDV-dominante coltivate in serra outdoor",
+      "ipotesi": "L'applicazione di concimazione organica (Manuale A) in un sistema Living Soil arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV-dominanti (Manuale B), aumentano la produzione di CBDV e altri cannabinoidi secondari (es. CBG) grazie a un metabolismo radicale potenziato. Questo effetto è misurabile come aumento percentuale di CBDV nei fiori rispetto a un controllo con concimazione minerale.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (Living Soil) con terreno prelevato dalla stessa fonte, suddiviso in due lotti: A (trattamento) e B (controllo). Ogni parcella deve avere dimensioni di 1m x 1m e profondità di 30cm.",
+        "Seminare in entrambe le parcelle semi femminizzati di una varietà CBDV-dominante (es. 'CBDV Auto' da seedbank certificata, Manuale B). Mantenere la stessa densità di semina (10 semi/m²) e profondità (0.5cm).",
+        "Applicare al lotto A una concimazione organica Living Soil (es. compost maturo + micorrize + humus di lombrico) secondo protocollo RQS (Manuale A), mentre al lotto B applicare una concimazione minerale bilanciata (NPK 5-5-5) con stessa quantità di nutrienti totali. Irrigare solo con acqua (water-only).",
+        "Dopo 30 giorni, prelevare campioni di fiori dalle piante di entrambe le parcelle (n=10 per parcella) e analizzare il contenuto di CBDV, CBG e CBD tramite cromatografia liquida (HPLC) in laboratorio certificato. Confrontare i risultati tra i due lotti."
+      ],
+      "materiali": [
+        "Semi femminizzati CBDV-dominanti (es. 'CBDV Auto' da seedbank certificata)",
+        "Terreno Living Soil prelevato da zona non coltivata (per omogeneità)",
+        "Compost maturo, micorrize, humus di lombrico (per concimazione organica)",
+        "Concime minerale NPK 5-5-5 (per controllo)",
+        "Sistema di irrigazione a goccia (water-only)",
+        "Strumenti per prelievo campioni (forbici sterili, sacchetti ermetici)",
+        "Laboratorio HPLC per analisi cannabinoidi"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV, CBG e CBD nei fiori (% su peso secco) tramite HPLC",
+        "Confrontare la media dei due lotti e calcolare la differenza percentuale. Verificare se il lotto A supera il lotto B con significatività statistica (test t di Student, p<0.05)."
+      ],
+      "variabili_controllo": "Varietà di semi CBDV-dominante identica, stessa fonte di terreno, stessa quantità di nutrienti totali (N-P-K), stessa esposizione solare, stessa irrigazione (water-only), stessa durata di coltivazione.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento non è presente né nel Manuale A (che si concentra su concimazione organica ma non su cannabinoidi specifici) né nel Manuale B (che tratta semi CBD ma non la sinergia con il suolo). La connessione tra Living Soil, microrganismi simbionti e produzione di CBDV è una ipotesi originale derivante dall'incrocio dei due manuali.",
+      "id": "esp_conn_2026-08-18_001",
+      "data_proposta": "2026-08-18",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Sinergia Radicali Femminili: Effetto combinato di vasi biologici e semi femminizzati su resa CBD in Living Soil",
+      "ipotesi": "L'uso combinato di vasi in materiale biodegradabile riempiti con Living Soil (Manuale A) e semi femminizzati (Manuale B) aumenterà la resa in CBD/THC del 20-30% rispetto a controlli con semi regolari o vasi non biologici, grazie a un apparato radicale più sviluppato e a una fioritura ottimizzata. La sinergia elimina sprechi di risorse (acqua, nutrienti) e massimizza l'assorbimento dei flavonoidi precursori dei cannabinoidi, come suggerito dall'interazione tra i due manuali.",
+      "protocollo": [
+        "Preparare 20 vasi biodegradabili (es. fibra di cocco) da 5L ciascuno, riempiti con Living Soil (composto da 60% terriccio biologico, 30% perlite, 10% humus di lombrico). Mantenere umidità al 60% con acqua piovana filtrata.",
+        "Seminare 10 vasi con semi femminizzati CBD-dominant (es. varietà USA 'Charlotte's Angel CBD' con <1% THC) e 10 vasi con semi regolari della stessa genetica come controllo. Posizionare in serra outdoor BioSerra Caserta con esposizione solare omogenea (6-8 ore/giorno).",
+        "Monitorare settimanalmente: diametro del fusto a 5cm da terra, numero di nodi, lunghezza delle radici (tramite estrazione delicata di 3 piante per gruppo). Applicare solo acqua (water-only) per evitare interferenze nutrizionali.",
+        "A 30 giorni dalla semina, raccogliere le piante, essiccare a 18°C per 7 giorni, e analizzare il contenuto di CBD/THC tramite cromatografia TLC (kit accessibile) o spettrofotometro UV-VIS (se disponibile). Confrontare i risultati tra gruppi."
+      ],
+      "materiali": [
+        "20 vasi biodegradabili (5L)",
+        "Living Soil pre-miscelato (terriccio biologico, perlite, humus di lombrico)",
+        "Semi femminizzati CBD-dominant (<1% THC) e semi regolari della stessa genetica",
+        "Acqua piovana filtrata",
+        "Kit di analisi CBD/THC (TLC o spettrofotometro UV-VIS)",
+        "Termometro/igrometro per serra",
+        "Bilancia di precisione (0.01g)"
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "Contenuto di CBD/THC (% peso secco) nelle infiorescenze",
+        "Peso fresco e secco delle piante",
+        "Lunghezza radici e diametro fusto",
+        "Osservazione visiva della salute fogliare (clorosi, stress idrico)",
+        "Verifica tramite confronto statistico (test t di Student) tra gruppi"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), volume del vaso, composizione del Living Soil, esposizione solare, metodo di essiccazione, strumenti di misura.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina due concetti chiave di manuali diversi (vasi biologici + semi femminizzati) in un protocollo originale che non è presente né nel Manuale A (che non menziona semi femminizzati) né nel Manuale B (che non considera l'impatto del substrato sullo sviluppo radicale). La misura diretta della resa CBD in funzione di questa sinergia è un approccio innovativo per la serra BioSerra Caserta.",
+      "id": "esp_conn_2026-08-18_002",
+      "data_proposta": "2026-08-18",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-17",
-    "nuove_proposte": 4,
+    "data": "2026-08-18",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
