@@ -1,52 +1,71 @@
 ---
 tipo: overview
-aggiornato: 2026-08-18
+aggiornato: 2026-08-19
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
 # **BioSerra Wiki**
-*Living Soil Outdoor a Caserta (41°N) – Elettrocultura, Biodinamica e Suolo Vivente*
+*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è una **serra outdoor a suolo vivente** che integra:
-- **Living Soil**: Terreno ricco di microbioma, materia organica e minerali biodisponibili.
-- **Water-Only**: Irrigazione con acqua magnetizzata e nutrienti esclusivamente organici.
-- **Biodinamica**: Ritmi cosmici e preparati naturali per armonizzare crescita e salute delle piante.
-- **Elettrocultura**: Tecniche a basso voltaggio (Lakhovsky, Fe-Cu, spirali in rame, antenna di terra) per stimolare la vitalità cellulare e la resa.
+BioSerra è una serra **Living Soil outdoor** che integra:
+- **Suolo vivente** (water-only, nessun fertilizzante sintetico)
+- **Biodinamica** (calendario lunare, preparati biodinamici)
+- **Elettrocultura** (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame, antenna di terra)
+- **Approccio olistico** alla coltivazione, dove **acqua, microbioma e energia** sono i pilastri della salute delle piante.
 
-*Visione*: Coltivare piante in **sinergia con la natura**, sfruttando forze elettromagnetiche, cicli lunari e biodiversità microbica per ottenere **resine di qualità superiore** e piante resilienti.
+*Visione*: Coltivare cannabis (e altre piante) in armonia con i ritmi naturali, potenziando la resilienza del suolo e la qualità dei raccolti tramite tecniche low-tech e ad alta efficienza.
 
 ---
 
-## **📚 Sistema di Conoscenza**
+## **📚 Sistema di conoscenza**
 BioSerra si basa su:
-- **341 manuali** (PDF) analizzati e categorizzati per fase colturale, tecnica o problema.
-- **20 concetti attivi** (es. *Suolo Vivente*, *Elettrocultura Lakhovsky*, *Preparati Biodinamici*).
-- **Integrazione trasversale**: Ogni tecnica (es. elettrocultura + biodinamica) si sovrappone per ottimizzare risultati.
+- **341 manuali** (PDF) analizzati e cross-referenziati
+- **15 concetti attivi** (es. Suolo Vivente, Elettrocoltura DC, Calendario Lunare)
+- **Guide pratiche** per ogni fase (germinazione, vegetativa, fioritura, essiccazione)
 
-*Esempio di connessione*:
-- [[web_zamn_287-fase-plantula-cannabis]] + [[pdf_17, chunk_002]] → *Elettrocultura DC per piantine autofiorenti*.
-- [[web_zamn_290-fase-fioritura-cannabis]] + [[pdf_85, chunk_003]] → *Biodinamica e gestione umidità in fioritura*.
-
-*Struttura wiki*:
-- Ogni pagina è collegata tramite **[[id]]** (concetti) o **[id]** (PDF).
-- Le sezioni sono organizzate per **fasi colturali** (germinazione, vegetativa, fioritura) e **tecniche** (elettrocultura, biodinamica).
+*Integrazione*: I PDF sono collegati ai concetti tramite [[id]] e citati con [id] (es. [[web_zamn_287]] per la fase plantula). Le tecniche si combinano per ottimizzare **nutrizione, energia e salute delle piante**.
 
 ---
 
 ## **⚡ Tecniche Elettrocultura Attive**
-| Tecnica | Descrizione | Applicazione | Riferimenti |
-|---------|------------|--------------|-------------|
-| **Elettrocultura Lakhovsky** | Circuiti oscillanti a basso voltaggio per stimolare la divisione cellulare. | Antenne a spirale di rame intorno alle piante. | [[pdf_17, chunk_002]] |
-| **Elettrocultura Fe-Cu** | Coppie di elettrodi (ferro/rame) per generare correnti galvaniche nel suolo. | Profondità 10-15 cm vicino alle radici. | [[pdf_17, chunk_002]] |
-| **Spirale in Rame** | Spirali posizionate intorno al colletto delle piante per armonizzare campi elettromagnetici. | Tutte le fasi, soprattutto fioritura. | [[pdf_17, chunk_002]] |
-| **Antenna di Terra** | Sistema di messa a terra per scaricare e ricaricare l’energia del suolo. | Connessione a un picchetto metallico nel terreno. | [[pdf_17, chunk_002]] |
-| **Acqua Magnetizzata** | Irrigazione con acqua esposta a campi magnetici per migliorare assorbimento nutrienti. | Ogni irrigazione, soprattutto in fioritura. | [[pdf_17, chunk_002]] |
-| **Sistema Integrato** | Combinazione delle tecniche sopra per effetto sinergico. | Monitoraggio costante con multimetro. | [[pdf_17, chunk_002]] |
-| **Irrigazione con Acqua Magnetizzata** | Acqua trattata con magneti per ridurre tensione superficiale e aumentare biodisponibilità. | 1-1.5L/pianta al mattino. | [[pdf_13]] |
+| Tecnica               | Descrizione                                                                 | Pagina Wiki |
+|-----------------------|-----------------------------------------------------------------------------|-------------|
+| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare l’assorbimento dei nutrienti. | [[elettro_acqua_magnetizzata]] |
+| **Spirale in Rame**   | Spirali di rame posizionate intorno alle piante per stimolare la crescita. | [[elettro_spirale_rame]] |
+| **Circuito di Lakhovsky** | Circuito oscillante per armonizzare le frequenze delle piante.          | [[elettro_lakhovsky]] |
+| **Elettrodi Fe-Cu**   | Elettrodi in ferro e rame per stimolare l’attività microbica del suolo.    | [[elettro_fe_cu]] |
+| **Antenna di Terra**  | Sistema di messa a terra per bilanciare le cariche elettriche del suolo.  | [[elettro_antenna_terra]] |
 
-*Nota*: Le tecniche elettroculture sono **sempre adattate** alle condizioni meteo (es. evitare in caso di pioggia
+*Applicazione attuale*:
+- Elettrocoltura DC (1-3V) su autofiorenti in fase di taglio per accelerare l’essiccazione (es. Epsilon, Milky Way).
+- Monitoraggio umidità suolo (96%) e aggiunta di compost attivo/micorrize per migliorare conducibilità elettrica.
+
+---
+
+## **🌍 Principi Living Soil**
+1. **Microbioma del suolo**:
+   - Inoculazione con micorrize e batteri benefici (es. *Trichoderma*).
+   - Compost attivo e tè di compost per nutrire i microrganismi.
+   - *PDF correlato*: [[web_zamn_293-suolo-cannabis-terricci]]
+
+2. **Minerali e biostimolanti**:
+   - Farine di rocce (es. basalto, zeolite) per apporto minerale lento.
+   - Preparati biodinamici (es. cornoletame, silice).
+
+3. **Acqua come vettore**:
+   - Acqua magnetizzata e strutturata per migliorare l’idratazione delle piante.
+   - Gestione umidità (obiettivo: 60-70% in fase vegetativa, 40-50% in fioritura).
+
+4. **pH e conducibilità**:
+   - Monitoraggio costante del pH (ideale: 6.0-7.0 per cannabis).
+   - Conducibilità elettrica naturale potenziata tramite elettrocoltura.
+
+---
+## **📅 Calendario e Ritmi**
+### **🌙 Biodinamica (Luna)**
+- **Luna crescente**: Semina, trapianti,
