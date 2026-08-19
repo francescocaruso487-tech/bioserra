@@ -1,24 +1,16 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-08-18 | 20 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-08-19 | 15 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Elettrocultura Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la crescita e la 
-- [Elettrocultura Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti galvaniche che i
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Avvolgi una spirale di rame intorno al fusto o al vaso per creare un campo elett
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un'antenna metallica al terreno per captare e trasmettere energie tellur
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua di irrigazione con magneti per migliorare la solubilità dei nutri
-- [Sistema Integrato di Elettrocultura](concetti/sistema_integrato_elettrocul.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (es. spirale rame + antenna terra) per un
-- [Irrigazione con Acqua Magnetizzata](concetti/acqua_magnetizzata_irrigazio.md) *(in 10 PDF)* — Utilizza acqua trattata magneticamente per irrigare, migliorando la struttura de
-
-## Biodinamica
-- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati naturali (es. cornoletame, silice) secondo i ritmi lunari per 
-- [Ritmi Cosmici Biodinamici](concetti/ritmi_cosmici_biodinamici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
-- [Preparati Biodinamici e Ritmi](concetti/preparati_biodinamici_ritmic.md) *(in 10 PDF)* — Combina l'uso di preparati biodinamici con l'applicazione secondo i ritmi lunari
-- [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Trattamento acqua con magneti per migliorare assorbimento radicale.
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Spirale in rame per armonizzazione campi elettromagnetici nella zona radice.
+- [Circuito di Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Oscillatore multicellulare per stimolazione risonanza cellulare delle piante.
+- [Elettrodi Fe-Cu](concetti/elettrodi_fe_cu.md) *(in 10 PDF)* — Coppia ferro-rame nel suolo per stimolazione bioelettrochimica radicale.
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Connessione a terra per captare energie telluriche e migliorare il campo bioelet
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
@@ -30,6 +22,9 @@
 ## Nutrizione
 - [Fertilizzazione Organica](concetti/fertilizzazione_organica.md) *(in 3 PDF)* — Apporto nutrienti tramite ammendanti organici naturali.
 - [Farine di Rocce](concetti/farine_di_rocce.md) — Minerali in polvere per rimineralizzazione lenta del substrato.
+
+## Biodinamica
+- [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
 
 ## Fitosanitario
 - [Controllo Parassiti Naturale](concetti/controllo_parassiti.md) *(in 10 PDF)* — Gestione biologica di infestazioni con metodi naturali.
