@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-18
+aggiornato: 2026-08-19
 pdf_count: 6
 ---
 
@@ -12,37 +12,27 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo naturale di decomposizione aerobica della materia organica, che trasforma scarti vegetali e animali in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo è fondamentale per la creazione di un **Living Soil** outdoor, poiché arricchisce il substrato di humus, migliora la struttura del suolo, aumenta la capacità di ritenzione idrica e favorisce la biodiversità microbica. In un clima mediterraneo come quello di Caserta (41°N), il compostaggio è particolarmente efficace grazie alle temperature miti che accelerano la decomposizione, a patto che si mantenga un equilibrio tra umidità, aerazione e rapporto carbonio/azoto (C/N).
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, aerazione e temperatura, scompongono la materia organica in humus. L’humus risultante è un substrato vivo, con una struttura porosa che migliora la ritenzione idrica, la capacità di scambio cationico (CSC) e la biodiversità microbica del suolo.
 
-Il meccanismo d'azione si basa sull'attività di batteri, funghi e altri microrganismi che scompongono la materia organica in composti più semplici, rilasciando nutrienti assimilabili dalle piante. Un compost di qualità si distingue per il suo colore scuro, l'odore terroso e una struttura friabile, indice di una decomposizione completa. L'uso di compost maturo in serra outdoor permette di ridurre la necessità di fertilizzanti chimici, migliorando la salute delle piante e la resilienza del suolo ai patogeni.
+In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il compostaggio assume un ruolo cruciale perché fornisce nutrienti a lento rilascio, fondamentali durante la **fase vegetativa** delle piante (es. cannabis). Il compost, infatti, rilascia azoto (N), fosforo (P) e potassio (K) in modo graduale, evitando picchi di salinità che potrebbero danneggiare le radici. Inoltre, arricchisce il suolo di microrganismi benefici (es. *Trichoderma*, *Pseudomonas*), che competono con patogeni e promuovono la simbiosi radicale. La temperatura ideale di compostaggio (55–65°C) garantisce la distruzione di semi di malerbe e patogeni, mentre la struttura granulare del compost migliora l’aerazione del substrato, essenziale per radici sane e sviluppo vegetativo.
+
+---
 
 ## Come si applica in serra
-Per produrre compost di qualità in una serra outdoor a Caserta, segui questi passaggi:
 
-1. **Selezione dei materiali**:
-   - **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, fondi di caffè, letame fresco (es. pollina o cavallo).
-   - **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, rametti triturati.
-   - **Bilanciamento**: rapporto ideale C/N = 25:1 a 30:1. Esempio pratico: 3 parti marroni per 1 parte verde.
+### **1. Scelta dei materiali**
+- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame (es. cavallo o pollo, ben maturo), fondi di caffè.
+- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, rametti triturati, segatura (in quantità limitata).
+- **Bilanciamento**: rapporto ideale **C:N = 25:1 a 30:1**. Esempio pratico per 1 m³ di compost:
+  - 60% marroni (es. 600 kg di foglie secche)
+  - 30% verdi (es. 300 kg di scarti di cucina)
+  - 10% attivatori (es. letame maturo o compost pronto).
 
-2. **Costruzione del cumulo**:
-   - Crea uno strato di base drenante (rametti o paglia) per evitare ristagni.
-   - Alterna strati di materiali verdi e marroni (5-10 cm per strato), bagnando leggermente ogni strato per mantenere umidità al 50-60%.
-   - Aggiungi un po' di suolo della serra o compost maturo per inoculare microrganismi.
+### **2. Preparazione del cumulo**
+- **Ubicazione**: in serra, scegliere un’area ombreggiata e ben drenata (evitare ristagni). Usare una base di rametti o trucioli per favorire l’aerazione dal basso.
+- **Struttura**: alternare strati di materiali verdi e marroni (10–15 cm per strato), bagnando leggermente ogni strato con acqua non clorata (meglio se magnetizzata o arricchita con **Fe-Cu** per stimolare i microrganismi).
+- **Dimensioni**: cumulo di almeno 1 m³ per garantire un buon isolamento termico. Forma a tronco di cono per ottimizzare la decomposizione.
 
-3. **Gestione della temperatura**:
-   - Monitora la temperatura con una sonda: deve raggiungere 55-65°C entro 2-3 giorni. Se supera i 70°C, aggiungi materiali marroni per raffreddare.
-   - Isola il cumulo con un telo traspirante per mantenere il calore in inverno o proteggerlo dal sole estivo.
-
-4. **Rivoltamento e aerazione**:
-   - Rivolta il cumulo ogni 2-3 giorni con una forca o un aeratore per ossigenare e uniformare la decomposizione.
-   - Controlla l'umidità: deve essere come una spugna strizzata (non gocciolante).
-
-5. **Maturazione**:
-   - Dopo 4-6 settimane, la temperatura scenderà sotto i 40°C: il compost è pronto quando è scuro, friabile e profuma di terra. Setaccia per eliminare materiali non decomposti.
-
-6. **Applicazione in serra**:
-   - Mescola il compost maturo (20-30% del volume) con il substrato della serra prima della semina o del trapianto.
-   - Per piante in fase vegetativa, distribuisci 1-2 cm di compost sulla superficie e lavoralo leggermente nel primo strato di suolo.
-
-## Sinergie con altri elementi
-Il compost organico si integra perfettamente con altre tecniche per potenziare la salute del su
+### **3. Controllo dei parametri**
+- **Temperatura**: monitorare con sonda termica. Se supera i 65°C, rivoltare il cumulo per abbassare la temperatura. Se scende sotto i 55°C, aggiungere materiali verdi o coprire con telo traspirante.
+- **Umidità**: deve essere simile a una spugna strizzata (60–70%). Se troppo secco, aggiungere
