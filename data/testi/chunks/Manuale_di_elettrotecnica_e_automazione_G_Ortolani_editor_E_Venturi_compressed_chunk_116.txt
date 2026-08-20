@@ -167,8 +167,7 @@ Scansione del PLC, XIV-87
 , asincrona I/O, XIV-92
 , ciclo di, XIV-87
 , sincrona I, asincrona O, XIV-91
-, sincrona I/O, XIV-91
-, tempo di, XIV-87
+, tempo di, XIV-87
 Trasmissione, XIV-17
 , CSMA/CD, XIV-13
 , seriale asincrona, XIV-18
@@ -218,28 +217,7 @@ Microcontrollore, XV-64
 - codice oggetto, XV-71
 - compilatore, XV-71
 - controllore di posizione a microcontrollore, XV-66
-- controllore di temperatura a microcontrollore, XV-66
-- margine di fase, XV-36
-- margine di guadagno, XV-36
-- picco di risonanza, XV-31
-Nodi sommatori, XV-7
-Nyquist, cammino di, XV-25
-- diagramma di, XV-25
-- funzione caratteristica, XV-26
-- margine di fase, XV-35
-- margine di guadagno, XV-35
-- teorema dell’argomento di Cauchy, XV-26
-Omogenea associata, XV-11
-Parabola, XV-37
-P.I.D., XV-37
-Punto di diramazione, XV-8
-Rampa, XV-37
-Rappresentazione asintotica, XV-22
-Rappresentazione delle funzioni
-- diagrammi di Bode, XV-22, 25, 26
-- diagrammi polari, XV-24
-- luogo delle radici, XV-32
-- diagrammi di Nyquist, XV-22, 25
+- controllore di temperatura a microcontrollore,
 Regolatore ON-OFF, XV-50
 - banda, XV-50
 - isteresi, XV-50
@@ -537,7 +515,7 @@ Conversione:
 
 Convertitore:
 - A/D ad approssimazioni successive, XVII-188
-- D/A a resistori pesati, XVII-186
+- D/A con resistori pesati, XVII-186
 
 Teorema di De Morgan, XVII-89
 
@@ -545,7 +523,7 @@ Decodifica, circuiti, XVII-107
 
 Demultiplexer, XVII-110
 
-Derivatori, circuiti con AO, XVII-78
+Derivatore, circuiti con AO, XVII-78
 
 DIAC, XVII-175
 
@@ -737,6 +715,7 @@ Oscilloscopio, XVII-190
 - deflessione elettrostatica, XVII-193
 - digitale, XVII-209
 - figure di Lissajous, XVII-216
+
 Oscilloscopio, generalità, XVII-191
 - misure di corrente, XVII-214
 - misure di fase, XVII-216
@@ -745,86 +724,143 @@ Oscilloscopio, generalità, XVII-191
 - schema a blocchi, XVII-197
 - sonde, XVII-211
 - tubo a raggi catodici, XVII-192
+
 PAL, XVII-130
+
 Parametri di ammettenza, XVII-21
 - ibridi g, XVII-23
 - ibridi h, XVII-22
 - di impedenza, XVII-20
+
 Piastre di raffreddamento, XVII-163
+
 PLD, XVII-129
+
 Poli, XVII-14
+
 Ponte di Graetz, XVII-46
+
 Porte logiche di base, XVII-97
 - simboli delle porte logiche, XVII-99
 - simboli normalizzati delle porte logiche, XVII-100
+
 Porte universali, XVII-99
+
 Pulsazioni di taglio, XVII-29
+
 Q, fattore di qualità, XVII-19
+
 Quadripoli, XVII-12
+
 Quantizzazione, XVII-183
+
 Quanto, XVII-183
+
 Raddrizzamento, circuiti di, XVII-44
+
 Raddrizzatori di precisione con AO, XVII-81
+
 RAM, XVII-125, 129
+
 Reazione, XVII-17
+
 Registri, XVII-118
 - a scorrimento, XVII-119
 - tipi di registri a scorrimento, XVII-121
+
 Rendimento di conversione degli amplificatori, XVII-166
+
 Resistenza termica, XVII-163
+
 Ripple, XVII-46
+
 Risoluzione, XVII-184
+
 Ritardi di propagazione, XVII-73
+
 Ritardi di propagazione nei latch, XVII-113
+
 Circuito RLC, XVII-18
+
 ROM, XVII-125, 128
+
 Rumore di quantizzazione, XVII-184
+
 Sag, XVII-31
+
 Schemi a blocchi, algebra degli, XVII-15
+
 Trigger di Schmitt con AO, XVII-80
 - Trigger di Schmitt con 555, XVII-146
+
 SCR, XVII-170
 Caratteristiche degli SCR, XVII-170
 - Circuiti di controllo degli SCR, XVII-172
 - Disinnesco degli SCR, XVII-172
+
 Semiconduttori, XVII-37
+
 Shift register, XVII-119
+
 Sistemi numerici, XVII-82
+
 Sommatori binari, XVII-102
+
 SOP, XVII-5
+
 Sottrattori binari, XVII-103
+
 SSI, XVII-5
+
 Stabilizzatori, XVII-48
+
 Tabelle di verità, XVII-90
+
 Tempo di commutazione, XVII-72
 - Tempo di discesa, XVII-72
 - Tempo di salita, XVII-31, 72
+
 Teorema di Norton, XVII-10
 - Teorema di sostituzione, XVII-10
 - Teorema di sovrapposizione, XVII-10
 - Teorema di Thévenin, XVII-10
+
 THD, XVII-162
+
 Teorema di Thévenin, XVII-10
+
 Porte three-state, XVII-101
+
 Timer 555, XVII-143
 - Multivibratore astabile con 555, XVII-146
 - Multivibratore monostabile con 555, XVII-144
 Schema a blocchi del timer 555, XVII-143
 - Trigger di Schmitt con 555, XVII-146
+
 Tiristori, XVII-169
+
 Transistor ad effetto di campo (FET), XVII-59
 - Transistor bipolari a giunzione (BJT), XVII-49
+
 TRIAC, XVII-173
 - Circuiti di controllo del TRIAC, XVII-174
 - Principio di funzionamento del TRIAC, XVII-173
+
 Trigger di Schmitt con 555, XVII-146
 - Trigger di Schmitt con AO, XVII-80
+
 TTL, XVII-70
+
 Variabili di rete, XVII-6
+
 VLSI, XVII-5
+
 Voltage follower con AO, XVII-77
+
 Porte XNOR, XVII-99
+
 Porte XOR, XVII-99
+
 Zeri, XVII-14
 
 [PAG 2284]
@@ -832,29 +868,45 @@ Zeri, XVII-14
 INDICE ANALITICO PER SEZIONI
 Sezione XVIII
 Elettronica di potenza
+
 Alimentatori a commutazione, XVIII-35
 - Alimentatori lineari, XVIII-35
 - Alimentatori switching, XVIII-49
+
 Alimentazione monofase, XVIII-23
 - Alimentazione trifase, XVIII-25
+
 Automantenimento, corrente di, XVIII-5, 9, 31, 46
+
 Armoniche, XVIII-13, 19, 49
+
 Breakdown, tensione di, XVIII-4, 5, 14
+
 Breakover, tensione di, XVIII-7, 10
+
 Bridge Converter, XVIII-37
+
 Bobina di assorbimento, XVIII-2
+
 Boost, convertitore, XVIII-37, 38
+
 Buck, convertitore, XVIII-37
+
 Buck-Boost, convertitore, XVIII-39, 41
+
 Choppers, convertitori, XVIII-45
+
 Cicloconverter, XVIII-53
+
 Circuiti invertitori, XVIII-33
+
 Circuito monofase, XVIII-30
 - a semionda, XVIII-23, 30
 - a ponte, XVIII-24
 - a onda intera, XVIII-23, 24, 31
 
 Circuito snubber, XVIII-10
+
 Circuito trifase, XVIII-25, 31
 - a doppia stella, XVIII-27
 - a semionda, XVIII-25
@@ -1025,7 +1077,6 @@ Tiristori, XVIII-49
 
 Transistor, bipolari, XVIII-15, 50
 - di potenza, XVIII-10, 49, 50
-
 [PAG 2286]
 SEZIONE XVIII ELETTRONICA DI POTENZA
 54
@@ -1286,9 +1337,9 @@ Progettazione elettrica ed elettronica
 - Marchio CE, XX-124
 - Maschera, del layout, XX-137
 - *Solder resist*, XX-139
-Master, XX-136, 175, 179
-Metallizzazione dei fori, XX-136, 138
-Metodi per l’assemblaggio delle apparecchiature elettroniche, XX-128÷135
+- Master, XX-136, 175, 179
+- Metallizzazione dei fori, XX-136, 138
+- Metodi per l’assemblaggio delle apparecchiature elettroniche, XX-128÷135
 Metodo per la realizzazione dei circuiti stampati, additivo, XX-139, 140
 - Sottrattivo, XX-137÷139
 Ondulazione residua, XX-151, 152, 166
