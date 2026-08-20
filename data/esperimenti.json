@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-19T03:24:39.229683+00:00",
+  "lastUpdate": "2026-08-20T03:24:02.058583+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,74 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "nome": "Effetto della germinazione con Kit Smart Start su varietà miste in Living Soil outdoor: ottimizzazione della crescita e resa finale",
-      "ipotesi": "Utilizzando confezioni miste di semi (Manuale A) e il Kit Smart Start (Manuale B) per la germinazione, si ottiene una maggiore uniformità, velocità di crescita e resa finale rispetto alla germinazione tradizionale in Living Soil. Questo perché il Kit Smart Start garantisce una germinazione ottimale (Manuale B), mentre le confezioni miste permettono di selezionare le varietà più adatte al Living Soil outdoor (Manuale A). L'ipotesi si basa sulla sinergia tra germinazione controllata e ambiente di crescita ricco di microrganismi.",
-      "protocollo": [
-        "Preparare 4 vasi da 10L con Living Soil (compost maturo, micorrize, lombrichi) identico per composizione, distribuiti in modo casuale in serra outdoor. Ogni vaso riceve 1L di acqua piovana filtrata (pH 6.5) per umidificare il substrato.",
-        "Seminare in ogni vaso 5 semi di una confezione mista (es. 2 femminizzati THC alto, 2 autofiorenti CBD, 1 regolare ibrido F1) secondo due metodi: 2 vasi con germinazione tramite Kit Smart Start (Manuale B) e 2 vasi con germinazione diretta in Living Soil (Manuale A).",
-        "Monitorare giornalmente la germinazione (giorni 3-7) e registrare tasso di germinazione, tempo medio di emergenza e uniformità. Dopo 7 giorni, trapiantare le piantine più vigorose (2 per vaso) in vasi da 20L con lo stesso Living Soil, mantenendo la stessa distribuzione.",
-        "Irrigare solo con acqua piovana (water-only) per 30 giorni, registrando consumo idrico, altezza delle piante, numero di foglie e salute generale ogni 5 giorni. A fine periodo, misurare biomassa fresca e secca (radici + parte aerea) per valutare la resa."
-      ],
-      "materiali": [
-        "4 vasi in terracotta (10L e 20L)",
-        "Living Soil (compost, micorrize, lombrichi)",
-        "Kit Smart Start per germinazione",
-        "Confezioni miste di semi di pianta (es. Zamnesia 'Mix Outdoor')",
-        "pHmetro, acqua piovana filtrata, bilancia di precisione",
-        "Cronometro, righello, quaderno di campo"
-      ],
-      "durata_giorni": 30,
-      "misure": [
-        "Tasso di germinazione (%) e tempo medio di emergenza (giorni)",
-        "Altezza media (cm), numero di foglie, salute visiva (scala 1-5)",
-        "Consumo idrico (L/giorno/vaso), biomassa fresca e secca (g)",
-        "Uniformità delle piante (deviazione standard dell'altezza)"
-      ],
-      "variabili_controllo": "Stesso Living Soil, stessa esposizione solare, stessa irrigazione (solo acqua piovana), stesso numero di piante per vaso (2), stessa temperatura e umidità ambientale (serra outdoor controllata).",
-      "categoria": "sinergia",
-      "difficolta": "media",
-      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
-      "fonte_b": "Come Far Germinare I Semi Di Pianta Con Il Kit Smart Start",
-      "originalita": "L'esperimento combina due approcci normalmente trattati separatamente: l'uso di confezioni miste per la biodiversità genetica (Manuale A) e la germinazione ottimizzata con Kit Smart Start (Manuale B). Nessun manuale suggerisce di testare l'interazione tra questi due elementi in un sistema Living Soil outdoor, né di misurare l'impatto sulla resa finale. L'originalità sta nell'integrazione di germinazione controllata e selezione varietale in un contesto di agricoltura rigenerativa.",
-      "id": "esp_conn_2026-06-29_001",
-      "data_proposta": "2026-06-29",
-      "attivo": false,
-      "tipo": "connessione_pairwise"
-    },
-    {
-      "nome": "Effetto del pH controllato su produzione di CBD in varietà low-THC in Living Soil outdoor",
-      "ipotesi": "Varietà di pianta a basso THC (<1%) coltivate in Living Soil outdoor con pH controllato a 6.0–7.0 mostreranno una produzione di CBD significativamente superiore rispetto a piante con pH non controllato (5.0–8.0), a parità di nutrienti. Questo perché, come riportato nel Manuale A, lo squilibrio di pH inibisce l'assorbimento dei nutrienti essenziali per la sintesi di CBD, mentre il Manuale B evidenzia la sensibilità di queste varietà a crescita lenta senza sintomi evidenti. Un pH ottimale in Living Soil favorisce l'attività microbica e la disponibilità di nutrienti, massimizzando la produzione di cannabinoidi.",
-      "protocollo": [
-        "Preparare 20 piante di una stessa varietà CBD (es. 'Carmagnola') da seme femminizzato, suddivise in 2 gruppi di 10: Gruppo A (pH controllato) e Gruppo B (pH non controllato).",
-        "Coltivare tutte le piante in Living Soil outdoor (BioSerra Caserta), con substrato identico (compost maturo + biochar + micorrize) e stessa esposizione solare. Utilizzare contenitori da 20L con drenaggio.",
-        "Per il Gruppo A, misurare e regolare settimanalmente il pH del suolo (profondità 10cm) a 6.5 ± 0.2 usando un pH-metro digitale e soluzioni di acidificazione (acido citrico diluito) o alcalinizzazione (bicarbonato di potassio). Per il Gruppo B, non intervenire sul pH, lasciando il naturale equilibrio del Living Soil (pH variabile 5.0–8.0).",
-        "Dopo 30 giorni, raccogliere le foglie apicali di ogni pianta (stesso stadio fenologico), essiccare a 22°C per 7 giorni, e analizzare il contenuto di CBD tramite test HPLC (o kit colorimetrico quantitativo) su campioni omogenei."
-      ],
-      "materiali": [
-        "20 piante di pianta CBD femminizzate (es. 'Carmagnola')",
-        "pH-metro digitale (precisione ±0.1), strisce reattive di controllo",
-        "acido citrico (1%), bicarbonato di potassio (1%), acqua distillata",
-        "Living Soil pre-preparato (compost, biochar, micorrize)",
-        "contenitori da 20L con fori di drenaggio",
-        "essiccatore a temperatura controllata, bilancia analitica, kit HPLC o colorimetrico per CBD"
-      ],
-      "durata_giorni": 37,
-      "misure": [
-        "Contenuto di CBD (%) nelle foglie essiccate: confrontare la media del Gruppo A vs Gruppo B con test t di Student (p<0.05).",
-        "Verifica: se il Gruppo A mostra +20% CBD rispetto al Gruppo B, l'ipotesi è confermata."
-      ],
-      "variabili_controllo": "Varietà di pianta, substrato, esposizione solare, irrigazione (solo acqua, no nutrienti aggiunti), temperatura, umidità, stadio fenologico al raccolto.",
-      "categoria": "living_soil",
-      "difficolta": "media",
-      "fonte_a": "Manuale A: pH per la pianta: come misurarlo e regolarlo",
-      "fonte_b": "Manuale B: Tutto Quello Che Devi Sapere Sulla Coltivazione Della Pianta",
-      "originalita": "L'esperimento unisce due concetti apparentemente scollegati: la sensibilità al pH delle varietà low-THC (Manuale B) e l'importanza del pH in Living Soil per l'assorbimento nutrizionale (Manuale A). Nessun manuale suggerisce di testare l'effetto del pH su varietà CBD in condizioni outdoor con Living Soil, né propone un protocollo pratico per misurare la produzione di CBD in risposta al pH.",
-      "id": "esp_conn_2026-06-29_001",
-      "data_proposta": "2026-06-29",
-      "attivo": false,
-      "tipo": "connessione_pairwise"
-    },
     {
       "nome": "Compost Umano Integrato con Micorrize e Leguminose per Living Soil in Serra Outdoor",
       "ipotesi": "L'uso di compost derivato da deiezioni umane (come descritto da Howard nel 'An Agricultural Testament') arricchito con micorrize e piante companion (leguminose) in un sistema Living Soil outdoor (come suggerito da 'La Fase Di Fioritura Nelle Coltivazioni Di Pianta') aumenterà la biomassa radicale e la resa in fiori di pianta CBD (varietà Amnesia) rispetto a un controllo con solo compost vegetale, grazie alla maggiore disponibilità di azoto fissato biologicamente e alla stimolazione dei funghi micorrizici.",
@@ -4188,13 +4120,82 @@
       "data_proposta": "2026-08-19",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH bilanciato sull'efficienza del risciacquo in Living Soil: ottimizzazione dell'assorbimento nutrizionale e riduzione dell'amarezza nei fiori",
+      "ipotesi": "Un pH bilanciato dell'acqua (6.0-7.0) durante il risciacquo delle piante in Living Soil ottimizza l'assorbimento dei nutrienti residui (Manuale A: pH 6.0-7.0 per prevenire carenze) e riduce l'accumulo di sali nelle radici (Manuale B: risciacquo con pH bilanciato per eliminare eccessi di fertilizzanti). Questo dovrebbe migliorare la qualità dei fiori (sapore e riduzione dell'amarezza) senza compromettere la salute della pianta.",
+      "protocollo": [
+        "Preparare 3 gruppi di piante (A, B, C) in Living Soil identico, con stessa genetica e condizioni ambientali. Ogni gruppo avrà 5 piante (n=15).",
+        "Iniziare il risciacquo (acqua pura a pH controllato) 7 giorni prima del raccolto: Gruppo A con pH 5.5 (sottodosato), Gruppo B con pH 6.5 (ottimale), Gruppo C con pH 7.5 (sovradosato).",
+        "Monitorare giornalmente il pH dell'acqua di risciacquo e il drenaggio, aggiustando con soluzioni di correzione (es. acido citrico per abbassare, bicarbonato per alzare).",
+        "Al raccolto, misurare: peso fresco dei fiori, contenuto di clorofilla (SPAD meter), analisi sensoriale del sapore (panel di 3 persone non addestrate), e residui di sali nelle radici (test EC del substrato post-risciacquo)."
+      ],
+      "materiali": [
+        "pHmetro digitale portatile (es. Bluelab Soil pH Pen)",
+        "Acqua deionizzata o piovana (EC < 0.1 mS/cm)",
+        "Soluzioni di correzione pH (acido citrico 1%, bicarbonato di sodio 0.1%)",
+        "SPAD meter per clorofilla",
+        "Bilancia di precisione (0.1 g)",
+        "Test kit EC per substrato (es. Bluelab Truncheon)"
+      ],
+      "durata_giorni": 14,
+      "misure": [
+        "Peso fresco dei fiori (g/piante): per valutare resa e qualità biomassa.",
+        "Contenuto di clorofilla (unità SPAD): indicatore di salute metabolica post-risciacquo.",
+        "Analisi sensoriale del sapore (scala 1-10 per amarezza e dolcezza): per validare l'effetto del risciacquo sul profilo aromatico.",
+        "EC del substrato post-risciacquo (mS/cm): per quantificare la rimozione dei sali residui."
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil (compost maturo + biochar), stessa genetica (es. varietà 'White Widow'), stesso volume di acqua di risciacquo (1L/piante), stessa esposizione solare, stessa umidità ambientale.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Come Prevenire e Risolvere le Carenze Nutrizionali della Pianta",
+      "fonte_b": "Come, quando e perché fare il «risciacquo» delle marihuana",
+      "originalita": "L'esperimento combina il principio del pH bilanciato per l'assorbimento nutrizionale (Manuale A) con la tecnica del risciacquo per eliminare eccessi di fertilizzanti (Manuale B), applicandoli specificamente al contesto del Living Soil outdoor. Nessun manuale suggerisce di testare diversi pH durante il risciacquo in un sistema Living Soil, né di valutare l'impatto sul sapore dei fiori in questo modo.",
+      "id": "esp_conn_2026-08-20_001",
+      "data_proposta": "2026-08-20",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento della cimatura LST indoor per piante outdoor in Living Soil con metodo Water-Only",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) a piante outdoor coltivate in Living Soil con metodo Water-Only, si ottimizza l'esposizione alla luce solare e la distribuzione dei nutrienti, aumentando la resa in biomassa e principi attivi (CBD, CBG) senza stressare la pianta. La cimatura LST indoor è progettata per massimizzare l'efficienza fotosintetica in ambienti controllati; adattarla outdoor in condizioni di Living Soil potrebbe sfruttare la biodiversità microbica per una crescita più vigorosa e resiliente (Manuale B).",
+      "protocollo": [
+        "Preparare 20 piante di pianta (varietà ibrida F1 con alto CBD, semi femminizzati) in Living Soil all'interno della serra BioSerra Caserta. Dividere in due gruppi: Gruppo A (10 piante) sottoposto a LST adattato outdoor; Gruppo B (10 piante) controllo senza cimatura.",
+        "Al raggiungimento di 30 cm di altezza (circa 30 giorni dopo la germinazione), applicare la cimatura LST al Gruppo A: piegare delicatamente i rami principali verso l'esterno con supporti in bambù e filo di rame, mantenendo un angolo di 45° rispetto al fusto principale. Ripetere l'operazione ogni 7 giorni per 4 settimane, assicurandosi che tutti i rami ricevano luce uniforme.",
+        "Coltivare entrambe le gruppi in condizioni identiche di Living Soil (compost maturo, micorrize, acqua-only con pH 6.5) e esposizione solare. Monitorare settimanalmente l'altezza, il numero di rami laterali e lo stato di salute delle piante.",
+        "Al termine delle 4 settimane, raccogliere i dati: peso fresco delle infiorescenze, contenuto di CBD e CBG (tramite test HPLC), numero di rami produttivi e resistenza a patogeni. Confrontare i risultati tra Gruppo A e Gruppo B."
+      ],
+      "materiali": [
+        "20 piante di pianta ibrida F1 (alto CBD, semi femminizzati)",
+        "Living Soil pre-preparato (compost, micorrize, lombrichi)",
+        "Supporti in bambù, filo di rame, forbici sterilizzate",
+        "pHmetro, acqua deionizzata, kit HPLC per analisi principi attivi"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso fresco delle infiorescenze (bilancia digitale 0.1g precisione)",
+        "Contenuto di CBD e CBG (test HPLC, report in mg/g)",
+        "Numero di rami laterali produttivi (conteggio visivo)",
+        "Altezza media delle piante (metro a nastro)",
+        "Resistenza a patogeni (scala 1-5, osservazione visiva)"
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil, stessa varietà, stessa esposizione solare, stesso metodo di irrigazione water-only, stessa temperatura e umidità nella serra.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "Questo esperimento non è descritto in nessuno dei due manuali singolarmente. Il Manuale A si concentra su tecniche indoor senza Living Soil, mentre il Manuale B tratta la cimatura in modo generico senza considerare l'adattamento outdoor in sistemi water-only. La sinergia tra LST indoor, Living Soil e coltivazione outdoor rappresenta un approccio innovativo non documentato.",
+      "id": "esp_conn_2026-08-20_002",
+      "data_proposta": "2026-08-20",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-19",
-    "nuove_proposte": 1,
+    "data": "2026-08-20",
+    "nuove_proposte": 2,
     "pdf_analizzati": 350,
     "connessioni_usate": 402
   }
