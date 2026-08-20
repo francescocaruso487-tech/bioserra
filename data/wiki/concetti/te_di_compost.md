@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-19
+aggiornato: 2026-08-20
 pdf_count: 8
 ---
 
@@ -12,31 +12,38 @@ pdf_count: 8
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un biostimolante liquido ricco di batteri aerobici, funghi benefici, protozoi, nematodi e sostanze umiche, che possono essere assorbiti sia per via fogliare che radicale. L’aerazione costante durante la preparazione (24 ore) evita la proliferazione di batteri anaerobici, responsabili di odori sgradevoli e di potenziali patogeni per le piante. L’aggiunta di melassa (o altri zuccheri semplici) fornisce energia ai microrganismi, accelerando la loro crescita e moltiplicazione, mentre il pH leggermente acido (6.0–6.8) favorisce l’assorbimento dei nutrienti.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri, funghi, protozoi e nutrienti prontamente assimilabili dalle piante. L’aerazione costante durante la preparazione (24-48 ore) favorisce la proliferazione di microrganismi aerobici, evitando la proliferazione di patogeni anaerobici che potrebbero danneggiare le radici o le foglie. L’aggiunta di melassa come fonte di carbonio semplice (C6H12O6) stimola la crescita batterica, mentre l’ossigenazione garantisce un ambiente ottimale per lo sviluppo di una comunità microbica equilibrata.
 
-Il meccanismo d’azione si basa sulla **teoria della rizosfera attiva**: i microrganismi del tè di compost colonizzano la superficie delle foglie e delle radici, creando una barriera protettiva contro patogeni e migliorando la disponibilità di nutrienti. Studi in *Living Soil* dimostrano che applicazioni regolari possono aumentare la biodiversità microbica del suolo, stimolare la produzione di enzimi radicali (come le fosfatasi) e potenziare la resistenza delle piante a stress abiotici (siccità, salinità) e biotici (funghi, batteri patogeni). In serra outdoor a Caserta, dove il clima mediterraneo può stressare le piante con caldo e umidità elevati, il tè di compost diventa uno strumento chiave per mantenere un suolo vivo e reattivo.
+L’applicazione del tè di compost agisce sia per via radicale che fogliare, potenziando la rizosfera e la resilienza delle piante. I microrganismi benefici colonizzano le radici, competono con i patogeni e migliorano la disponibilità di nutrienti (azoto, fosforo, potassio) attraverso processi di mineralizzazione e solubilizzazione. Inoltre, i metaboliti secondari prodotti dai batteri (come gli acidi umici e gli enzimi) stimolano la risposta immunitaria delle piante, rendendole più resistenti a stress biotici e abiotici. In serra outdoor a Caserta, dove le temperature estive possono superare i 35°C e l’umidità relativa è spesso elevata, il tè di compost aiuta a prevenire attacchi fungini (es. *Botrytis*) e a mantenere un suolo vivo e strutturato.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta (41°N)**, seguire questo protocollo per massimizzare l’efficacia del tè di compost:
 
-### **Materiali necessari**
-- Compost maturo (preferibilmente vermicompost o compost da letame maturo, 1–2 anni)
-- Acqua non clorata (piovana, osmosi inversa o acqua di pozzo lasciata decantare 24h)
-- Aeratore per acquario (con pietra porosa)
-- Melassa biologica (1–2 cucchiai per 10L) o zucchero di canna
-- Contenitore in plastica o vetro (evitare metalli)
-- Filtro a maglia fine (per applicazione fogliare)
-- pH-metro e EC-metro (opzionali ma consigliati)
+### **Preparazione (per 100L di tè)**
+1. **Materiali necessari**:
+   - Compost maturo (1-2 kg, preferibilmente ricco di micorrize e batteri benefici).
+   - Acqua non clorata (meglio se piovana o filtrata).
+   - Aeratore per acquario (con pietra porosa per ossigenazione).
+   - Melassa biologica (100-200 ml, come fonte di carbonio).
+   - Termometro (per monitorare la temperatura, ideale: 15-25°C).
+   - Contenitore in plastica o vetro (evitare metalli).
 
-### **Preparazione (24 ore)**
-1. **Dosaggio**: 1 parte di compost ogni 5–10 parti di acqua (es. 1kg di compost in 10L di acqua).
-2. **Aerazione**: Immergere il compost in acqua e attivare l’aeratore per 24 ore a temperatura ambiente (18–25°C). Evitare la luce diretta.
-3. **Nutrizione microbica**: Dopo 12 ore, aggiungere la melassa (1–2 cucchiai per 10L) per alimentare i batteri.
-4. **Filtraggio**: Passare il liquido attraverso un filtro a maglia fine per rimuovere particelle solide (opzionale per applicazione fogliare).
-5. **Applicazione**: Utilizzare entro **4 ore** dalla preparazione per evitare la crescita di anaerobi.
+2. **Procedura**:
+   - Riempire il contenitore con **100L di acqua** e avviare l’aeratore.
+   - Aggiungere **1-2 kg di compost** in un sacchetto di tela o in una retina (per evitare sedimenti).
+   - Immergere il compost nell’acqua e lasciarlo in infusione per **24 ore**, mantenendo l’aerazione costante.
+   - Dopo 12 ore, aggiungere **100-200 ml di melassa** per stimolare la crescita batterica.
+   - Monitorare la temperatura: se supera i 30°C, raffreddare con ghiaccio o ridurre l’aerazione.
+   - **Filtrare** il tè (opzionale, per applicazione fogliare) e applicare **entro 4 ore** dalla preparazione.
 
-### **Modalità di applicazione**
-- **Radicale**: Irrigare il suolo alla base delle piante (1–2L/m²) ogni 7–14 giorni, soprattutto in fase di vegetazione e pre-fioritura.
-- **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (diluizione
+3. **Applicazione**:
+   - **Radicale**: Irrigare il suolo alla base delle piante (1-2L/m²), evitando ristagni.
+   - **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (con nebulizzatore a bassa pressione), diluendo il tè al 50% con acqua.
+   - **Frequenza**:
+     - **Vegetazione**: 1 volta ogni 2 settimane.
+     - **Fioritura**: 1 volta ogni 3 settimane (evitare eccessi di azoto).
+
+---
+
+##
