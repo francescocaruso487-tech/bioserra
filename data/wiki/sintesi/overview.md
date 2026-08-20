@@ -1,71 +1,57 @@
 ---
 tipo: overview
-aggiornato: 2026-08-19
+aggiornato: 2026-08-20
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
 # **BioSerra Wiki**
-*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
+*Serra Living Soil outdoor a Caserta (41°N) – Elettrocultura, Biodinamica e Suolo Vivente*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è una serra **Living Soil outdoor** che integra:
-- **Suolo vivente** (water-only, nessun fertilizzante sintetico)
-- **Biodinamica** (calendario lunare, preparati biodinamici)
-- **Elettrocultura** (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame, antenna di terra)
-- **Approccio olistico** alla coltivazione, dove **acqua, microbioma e energia** sono i pilastri della salute delle piante.
+BioSerra è un ecosistema agricolo **olistico** che integra:
+- **Living Soil (suolo vivente)**: Terreno ricco di microbi, micorrize e materia organica, senza input chimici.
+- **Water-only**: Irrigazione con acqua strutturata (magnetizzata, elettrizzata) per massimizzare l’assorbimento dei nutrienti.
+- **Biodinamica**: Coltivazione in sintonia con i ritmi cosmici (luna, pianeti) e preparati naturali (es. cornoletame, silice).
+- **Elettrocultura**: Uso di campi elettromagnetici (Lakhovsky, Fe-Cu, spirali di rame) per stimolare la crescita, la resistenza e la qualità delle piante.
 
-*Visione*: Coltivare cannabis (e altre piante) in armonia con i ritmi naturali, potenziando la resilienza del suolo e la qualità dei raccolti tramite tecniche low-tech e ad alta efficienza.
+**Visione**: Coltivare piante (es. autofiorenti come *Epsilon*, *Milky Way*) in armonia con la natura, potenziando le loro difese naturali e la produzione di resina/essenze.
 
 ---
 
 ## **📚 Sistema di conoscenza**
 BioSerra si basa su:
-- **341 manuali** (PDF) analizzati e cross-referenziati
-- **15 concetti attivi** (es. Suolo Vivente, Elettrocoltura DC, Calendario Lunare)
-- **Guide pratiche** per ogni fase (germinazione, vegetativa, fioritura, essiccazione)
+- **341 PDF** (guide pratiche, studi, esperienze) collegati a:
+  - Fasi di crescita ([`web_zamn_287`], [`web_zamn_288`], [`web_zamn_290`])
+  - Gestione del suolo ([`web_zamn_293`], [`web_zamn_295`])
+  - Soluzioni a problemi ([`web_zamn_286`], [`web_zamn_284`])
+- **20 concetti attivi** (es. *Elettrocultura Lakhovsky*, *Preparati Biodinamici*, *Te di Compost*) che si interconnettono per ottimizzare la coltivazione.
+- **Knowledge Graph**: Ogni tecnica, PDF o concetto è mappato con [[ID]] per facilitare la navigazione (es. [[elettrocultura_lakhovsky]], [[pdf_17]]).
 
-*Integrazione*: I PDF sono collegati ai concetti tramite [[id]] e citati con [id] (es. [[web_zamn_287]] per la fase plantula). Le tecniche si combinano per ottimizzare **nutrizione, energia e salute delle piante**.
+**Esempio di integrazione**:
+> *L’elettrocultura DC (1-3V) ([[elettrocultura_dc]]) + l’acqua magnetizzata ([[acqua_magnetizzata]]) + il calendario lunare ([[calendario_lunare]]) lavorano sinergicamente per accelerare la fioritura e migliorare la resina delle autofiorenti.*
 
 ---
 
 ## **⚡ Tecniche Elettrocultura Attive**
-| Tecnica               | Descrizione                                                                 | Pagina Wiki |
-|-----------------------|-----------------------------------------------------------------------------|-------------|
-| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare l’assorbimento dei nutrienti. | [[elettro_acqua_magnetizzata]] |
-| **Spirale in Rame**   | Spirali di rame posizionate intorno alle piante per stimolare la crescita. | [[elettro_spirale_rame]] |
-| **Circuito di Lakhovsky** | Circuito oscillante per armonizzare le frequenze delle piante.          | [[elettro_lakhovsky]] |
-| **Elettrodi Fe-Cu**   | Elettrodi in ferro e rame per stimolare l’attività microbica del suolo.    | [[elettro_fe_cu]] |
-| **Antenna di Terra**  | Sistema di messa a terra per bilanciare le cariche elettriche del suolo.  | [[elettro_antenna_terra]] |
+| Tecnica | Descrizione | Pagina Wiki |
+|---------|------------|-------------|
+| **Elettrocultura Lakhovsky** | Uso di campi elettromagnetici a bassa frequenza per stimolare la divisione cellulare e la resistenza delle piante. | [[elettrocultura_lakhovsky]] |
+| **Spirale in Rame** | Installazione di spirali di rame intorno alle piante per generare campi elettromagnetici benefici. | [[spirale_rame]] |
+| **Antenna di Terra** | Collegamento a terra per scaricare e armonizzare le energie statiche del suolo. | [[antenna_terra]] |
+| **Leghe Ferro-Rame** | Uso di elettrodi in Fe-Cu per creare gradienti elettrochimici nel suolo. | [[lega_fe_cu]] |
+| **Acqua Magnetizzata** | Trattamento dell’acqua con magneti per migliorare l’assorbimento dei nutrienti e la struttura cellulare. | [[acqua_magnetizzata]] |
 
-*Applicazione attuale*:
-- Elettrocoltura DC (1-3V) su autofiorenti in fase di taglio per accelerare l’essiccazione (es. Epsilon, Milky Way).
-- Monitoraggio umidità suolo (96%) e aggiunta di compost attivo/micorrize per migliorare conducibilità elettrica.
+**Note**:
+- Applicare **DC 1-3V** vicino alle radici delle autofiorenti in fase di taglio ([[pdf_17]]).
+- Monitorare umidità al **99%** e temperatura a **20.9°C** per ottimizzare l’assorbimento energetico ([[pdf_13]]).
 
 ---
 
 ## **🌍 Principi Living Soil**
-1. **Microbioma del suolo**:
-   - Inoculazione con micorrize e batteri benefici (es. *Trichoderma*).
-   - Compost attivo e tè di compost per nutrire i microrganismi.
-   - *PDF correlato*: [[web_zamn_293-suolo-cannabis-terricci]]
-
-2. **Minerali e biostimolanti**:
-   - Farine di rocce (es. basalto, zeolite) per apporto minerale lento.
-   - Preparati biodinamici (es. cornoletame, silice).
-
-3. **Acqua come vettore**:
-   - Acqua magnetizzata e strutturata per migliorare l’idratazione delle piante.
-   - Gestione umidità (obiettivo: 60-70% in fase vegetativa, 40-50% in fioritura).
-
-4. **pH e conducibilità**:
-   - Monitoraggio costante del pH (ideale: 6.0-7.0 per cannabis).
-   - Conducibilità elettrica naturale potenziata tramite elettrocoltura.
-
----
-## **📅 Calendario e Ritmi**
-### **🌙 Biodinamica (Luna)**
-- **Luna crescente**: Semina, trapianti,
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: Simbiosi con le radici per aumentare l’assorbimento di fosforo e acqua.
+- **Batteri benefici**: Decompositori (es. *Pseudomonas*) che mineralizzano la
