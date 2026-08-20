@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-19
+aggiornato: 2026-08-20
 pdf_count: 6
 ---
 
@@ -12,27 +12,31 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, aerazione e temperatura, scompongono la materia organica in humus. L’humus risultante è un substrato vivo, con una struttura porosa che migliora la ritenzione idrica, la capacità di scambio cationico (CSC) e la biodiversità microbica del suolo.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata della materia organica (resti vegetali, scarti di cucina, letame, ecc.) che trasforma questi materiali in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, artropodi) che, in condizioni ottimali di umidità, ossigenazione e temperatura, scompongono la materia organica in humus, un substrato scuro, poroso e ricco di sostanza organica umificata. L’humus migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, favorisce la biodiversità microbica e rilascia nutrienti in modo graduale, riducendo la necessità di fertilizzanti chimici.
 
-In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il compostaggio assume un ruolo cruciale perché fornisce nutrienti a lento rilascio, fondamentali durante la **fase vegetativa** delle piante (es. cannabis). Il compost, infatti, rilascia azoto (N), fosforo (P) e potassio (K) in modo graduale, evitando picchi di salinità che potrebbero danneggiare le radici. Inoltre, arricchisce il suolo di microrganismi benefici (es. *Trichoderma*, *Pseudomonas*), che competono con patogeni e promuovono la simbiosi radicale. La temperatura ideale di compostaggio (55–65°C) garantisce la distruzione di semi di malerbe e patogeni, mentre la struttura granulare del compost migliora l’aerazione del substrato, essenziale per radici sane e sviluppo vegetativo.
+In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il compost è fondamentale per mantenere un suolo vivo e fertile. La decomposizione avviene in due fasi: una **fase termofila** (55–65°C), in cui i microrganismi termofili degradano rapidamente la materia organica, e una **fase di maturazione** (2–6 mesi), in cui si formano composti stabili e complessi. Un compost di qualità deve essere privo di patogeni, semi di infestanti e metalli pesanti, con un rapporto C/N equilibrato (idealmente 25:1–30:1) per garantire una decomposizione efficiente.
 
 ---
 
 ## Come si applica in serra
 
-### **1. Scelta dei materiali**
-- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame (es. cavallo o pollo, ben maturo), fondi di caffè.
-- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, rametti triturati, segatura (in quantità limitata).
-- **Bilanciamento**: rapporto ideale **C:N = 25:1 a 30:1**. Esempio pratico per 1 m³ di compost:
-  - 60% marroni (es. 600 kg di foglie secche)
-  - 30% verdi (es. 300 kg di scarti di cucina)
-  - 10% attivatori (es. letame maturo o compost pronto).
+### **1. Selezione dei materiali**
+- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, letame fresco (es. stallatico), fondi di caffè.
+- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non patinato, rametti triturati, gusci d’uovo schiacciati.
+- **Evita**: carne, latticini, oli, piante malate, carta patinata o plastificata.
 
-### **2. Preparazione del cumulo**
-- **Ubicazione**: in serra, scegliere un’area ombreggiata e ben drenata (evitare ristagni). Usare una base di rametti o trucioli per favorire l’aerazione dal basso.
-- **Struttura**: alternare strati di materiali verdi e marroni (10–15 cm per strato), bagnando leggermente ogni strato con acqua non clorata (meglio se magnetizzata o arricchita con **Fe-Cu** per stimolare i microrganismi).
-- **Dimensioni**: cumulo di almeno 1 m³ per garantire un buon isolamento termico. Forma a tronco di cono per ottimizzare la decomposizione.
+### **2. Bilanciamento e struttura**
+- **Rapporto C/N**: 25–30 parti di carbonio ogni 1 parte di azoto (es. 3 parti verdi + 1 parte marrone).
+- **Dimensione delle particelle**: triturare i materiali per accelerare la decomposizione (pezzi < 5 cm).
+- **Stratificazione**: alternare strati di verdi e marroni (5–10 cm ciascuno) per favorire l’aerazione.
 
-### **3. Controllo dei parametri**
-- **Temperatura**: monitorare con sonda termica. Se supera i 65°C, rivoltare il cumulo per abbassare la temperatura. Se scende sotto i 55°C, aggiungere materiali verdi o coprire con telo traspirante.
-- **Umidità**: deve essere simile a una spugna strizzata (60–70%). Se troppo secco, aggiungere
+### **3. Gestione della temperatura e umidità**
+- **Temperatura**: monitorare con sonda termica. Mantenere tra **55–65°C** per 3–7 giorni (fase termofila), poi abbassare a 40–50°C fino al raffreddamento.
+- **Umidità**: il cumulo deve essere umido come una spugna strizzata (60–70% di umidità). In caso di secchezza, aggiungere acqua; in caso di eccesso, aggiungere materiali marroni.
+- **Aerazione**: rivoltare il cumulo ogni **2–3 giorni** con forca o pala per ossigenare e uniformare la decomposizione.
+
+### **4. Maturazione e utilizzo**
+- **Durata**: 2–6 mesi a seconda delle condizioni climatiche (in serra outdoor a Caserta, proteggere con telo traspirante in inverno).
+- **Test di maturità**:
+  - **Test del sacchetto**: se dopo 7 giorni in un sacchetto chiuso non si avvertono odori sgradevoli, il compost è maturo.
+  - **Aspetto**: colore sc
