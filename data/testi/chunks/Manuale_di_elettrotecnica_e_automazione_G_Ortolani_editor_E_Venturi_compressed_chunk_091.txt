@@ -35,7 +35,7 @@ pag.
 1.8    Reti snubber . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  18
 
-1.9    Filtri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.9    Filtri . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . . . .
  19
 
 1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . .
 
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
@@ -160,8 +160,11 @@ Il **TRIAC** è un dispositivo a giunzione di tipo p-n-p-n, la cui struttura e s
 
 Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è positivo rispetto a MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto a MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto a MT2.
 La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi particolari semiconduttori.
+
 **Fig. XVIII.1.9** Caratteristica corrente-tensione di un TRIAC.
+
 Dall’analisi della **Fig. XVIII.1.9** si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, ma consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di *breakover*, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
+
 Anche con questo dispositivo è necessario, in fase di utilizzo, porre particolare attenzione alla velocità con cui varia la tensione ai suoi capi, cioè a quello che viene comunemente indicato come **effetto di dv/dt**; ampi valori di questa grandezza comportano l’innesco, ovvero la conduzione, del dispositivo.
 
 Il problema appena accennato viene usualmente risolto tramite un circuito costituito dalla serie composta da una resistenza e una capacità, indicato come **circuito snubber**, collegato in parallelo tra MT1 e MT2.
