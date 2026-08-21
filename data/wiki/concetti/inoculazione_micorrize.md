@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-20
+aggiornato: 2026-08-21
 pdf_count: 1
 ---
 
@@ -12,31 +12,28 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un ecosistema **Living Soil** come quello della serra outdoor a Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono la portata dell’apparato radicale della pianta, migliorando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre ricevono in cambio carboidrati prodotti dalla fotosintesi. Questo meccanismo è cruciale in condizioni di stress idrico o nutrizionale, tipiche delle coltivazioni outdoor italiane, dove la variabilità climatica può compromettere la stabilità del suolo.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Basidiomycota*, colonizzano le radici estendendo il loro micelio nel substrato, creando una rete di assorbimento che può superare di 100 volte la capacità radicale della pianta. Il meccanismo si basa su uno scambio reciproco: la pianta fornisce al fungo carboidrati (zuccheri prodotti tramite fotosintesi), mentre il micelio assorbe acqua, fosforo, azoto, micronutrienti e protegge dalle patologie radicali. In condizioni di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con siccità estiva e suoli spesso compatti, le micorrize migliorano la resilienza idrica e la tolleranza agli stress abiotici, oltre a potenziare la struttura del suolo tramite la produzione di glomalina, una glicoproteina che aggrega le particelle terrose.
 
-La simbiosi micorrizica non è universale: alcune piante (come la cannabis) ne traggono benefici significativi, mentre altre possono risultare indifferenti o addirittura ostacolate. I funghi micorrizici arbuscolari (AMF, *Arbuscular Mycorrhizal Fungi*) sono i più comuni in agricoltura e si adattano bene ai terreni italiani, ricchi di materia organica e biodiversità microbica. L’inoculazione artificiale è quindi una strategia per accelerare la colonizzazione radicale, soprattutto in terreni poveri o dopo trattamenti con fungicidi, che possono alterare l’equilibrio del suolo.
+L’efficacia dell’inoculazione dipende dalla compatibilità tra specie fungine e pianta ospite, dalla salute del suolo e dall’assenza di perturbazioni chimiche. Studi dimostrano che in colture di *Cannabis sativa* in serra outdoor, l’uso di micorrize specifiche (es. *Rhizophagus irregularis*) può aumentare la biomassa radicale del 30-50% e ridurre l’impiego di fertilizzanti del 20-30%, grazie a una maggiore efficienza nell’assorbimento dei nutrienti. Inoltre, le micorrize stimolano la produzione di ormoni vegetali come le auxine, accelerando la crescita nelle fasi iniziali (germinazione e vegetazione) e migliorando la qualità dei fiori in fioritura.
 
 ---
 
 ## Come si applica in serra
-Per una serra **Living Soil** outdoor a Caserta, l’inoculazione delle micorrize va eseguita con attenzione al **trapianto** o durante la fase di **germinazione/vegetazione precoce**, quando le radici sono più recettive. Segui questi passaggi:
+Per una serra **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize va eseguita con precisione per massimizzare la colonizzazione radicale. Segui questi passaggi:
 
-1. **Preparazione dell’inoculo**:
-   - Usa un prodotto commerciale a base di **spore di AMF** (es. *Rhizophagus irregularis*, *Glomus spp.*) o un inoculo liquido/granulare specifico per cannabis.
-   - Dose consigliata: **5–10 g per pianta** (o 1–2 g in forma liquida), distribuiti direttamente sul substrato o sulle radici al momento del trapianto.
+1. **Preparazione del substrato**:
+   - Assicurati che il suolo sia umido ma non saturo (evita ristagni d’acqua, come indicato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
+   - Lavora il terreno a una profondità di 10-15 cm per favorire la penetrazione del micelio, evitando compattazione.
 
-2. **Applicazione**:
-   - **Metodo diretto**: Mescola l’inoculo al substrato di riempimento del vaso o della buca di trapianto, evitando il contatto diretto con le radici nude (può causare shock).
-   - **Metodo radicale**: Per piante già trapiantate, sciogli l’inoculo in acqua (seguendo le istruzioni del produttore) e irriga intorno alla base della pianta, assicurandoti che il liquido raggiunga lo strato radicale.
-   - **Copertura**: Mantieni il suolo umido (ma non zuppo) per 7–10 giorni dopo l’applicazione, per favorire la germinazione delle spore.
+2. **Scelta dell’inoculo**:
+   - Usa un inoculo a base di **funghi micorrizici arbuscolari (AMF)** come *Rhizophagus irregularis* o *Glomus spp.*, specifico per piante a fiore (es. cannabis).
+   - Verifica che l’inoculo sia vivo (forma di spore o micelio attivo) e non trattato con fungicidi.
 
-3. **Post-trattamento**:
-   - Evita l’uso di **fungicidi** (anche naturali come il bicarbonato) nei **30 giorni successivi** all’inoculazione, per non compromettere la colonizzazione.
-   - Integra con **compost maturo** o **biochar** per migliorare la struttura del suolo e la sopravvivenza dei funghi.
+3. **Applicazione al trapianto**:
+   - Al momento del trapianto, posiziona **5-10 g di inoculo per pianta** direttamente a contatto con le radici, a una profondità di 5-10 cm.
+   - Puoi mescolare l’inoculo al substrato di riempimento o applicarlo in una "tasca" vicino al colletto radicale.
+   - Evita di esporre l’inoculo alla luce solare diretta per più di 30 minuti (il micelio è fotosensibile).
 
----
-
-## Sinergie con altri elementi
-Le micorrize interagiscono positivamente con diverse tecniche di **elettrocultura** e **suolo vivente**, potenziando i loro effetti:
-
-- **Lakhovsky (Onde Multifrequenza)**: L’applicazione di campi elettromagnetici a bassa frequenza (es. 7,83 Hz) può stimolare la crescita delle ife micorriziche, accelerando la simbiosi. In serra, posiziona un **generatore Lakhovsky** vicino alle p
+4. **Post-applicazione**:
+   - Mantieni il suolo umido (ma non bagnato) per 7-10 giorni dopo l’inoculazione, per favorire la colonizzazione.
+   - **Evita l’uso di fungicidi** (inclus
