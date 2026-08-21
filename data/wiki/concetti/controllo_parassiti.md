@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-20
+aggiornato: 2026-08-21
 pdf_count: 10
 ---
 
@@ -12,37 +12,33 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai patogeni, promuovendo al contempo la salute delle piante attraverso la biodiversità microbica e la resilienza del suolo. Il meccanismo d'azione si fonda sulla **prevenzione attiva** (es. olio di neem, insetti utili) e sulla **stimolazione delle difese naturali** delle piante, che in un suolo vivo sviluppano una maggiore tolleranza agli stress biotici. L'obiettivo è ridurre la necessità di interventi correttivi, favorendo un ecosistema autosufficiente in cui predatori naturali (acari, insetti ausiliari) e microrganismi benefici (funghi micorrizici, batteri antagonisti) mantengono i parassiti sotto soglia di danno.
+Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in agricoltura, basato sull'equilibrio degli ecosistemi piuttosto che sull'uso di sostanze chimiche sintetiche. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai parassiti, promuovendo al contempo la salute delle piante e la biodiversità microbica. Il meccanismo d'azione si fonda sulla **prevenzione** (rinforzo delle difese naturali delle piante) e sulla **regolazione** (introduzione di predatori naturali o sostanze repellenti). Funziona perché un suolo vivo e ben strutturato ospita microrganismi antagonisti ai patogeni, mentre le piante in condizioni ottimali sviluppano resistenze innate. L'elettrocultura, in particolare, può modulare i campi elettromagnetici delle piante, stimolando la produzione di metaboliti secondari utili contro gli insetti.
 
-Funziona perché si basa su **tre pilastri**:
-1. **Prevenzione**: L'uso di oli essenziali (neem) e insetti utili crea una barriera dinamica contro gli attacchi.
-2. **Rinforzo**: La Living Soil, arricchita di humus e microrganismi, potenzia le difese delle piante (es. produzione di fitoalessine).
-3. **Armonizzazione**: L'elettrocultura (es. spirali di rame Lakhovsky) stimola la crescita microbica e l'equilibrio elettromagnetico, rendendo l'ambiente meno ospitale per i parassiti.
+Questa tecnica è particolarmente efficace in serra outdoor, dove l'ambiente controllato permette di ottimizzare le condizioni per la crescita delle piante e la proliferazione di insetti utili. L'adozione di metodi naturali riduce il rischio di resistenza dei parassiti e preserva la qualità del suolo e dei prodotti, allineandosi ai principi dell'agricoltura rigenerativa.
 
 ---
 
 ## Come si applica in serra
-**Protocollo per serra outdoor Living Soil a Caserta (41°N):**
 
-### **Fase di Vegetazione**
-1. **Ispezione quotidiana**:
-   - Controllare l'avversità di **afidi, tripidi, acari** (soprattutto sulle foglie giovani e sotto le nervature).
-   - Segnare con un pennarello le piante infestate per monitorare la progressione.
+### **Protocollo base per serra outdoor a Caserta (41°N)**
+1. **Ispezione quotidiana**
+   - Controlla foglie (soprattutto pagina inferiore), steli e fiori con una lente d'ingrandimento (10x).
+   - Segna le aree con segni di danno (morsi, decolorazioni, ragnatele) o presenza di insetti (afidi, acari, tripidi).
+   - *Strumento utile*: Trappole cromotropiche gialle/blu per monitorare la popolazione di insetti.
 
-2. **Prevenzione con olio di neem**:
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detergente biodegradabile) in 1 litro d'acqua.
-   - **Applicazione**: Spruzzare sulle foglie (soprattutto sul lato inferiore) ogni **7 giorni**, preferibilmente al tramonto per evitare ustioni solari.
-   - **Frequenza**: Aumentare a 3-4 giorni in caso di infestazione iniziale.
+2. **Prevenzione con olio di neem**
+   - **Frequenza**: Ogni 7 giorni durante la vegetazione e ogni 5 giorni in fioritura (evita applicazioni nei giorni troppo caldi >30°C).
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detergente neutro) in 1 litro d'acqua.
+   - **Applicazione**: Nebulizza sulle foglie al tramonto (evita la fotosensibilizzazione). Copri bene la pagina inferiore.
+   - *Elettrocultura*: Posiziona una **spirale di rame Lakhovsky** (diametro 10-15 cm) vicino alle piante per potenziare l'effetto repellente (stimola la produzione di terpeni).
 
-3. **Insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari rossi, *Amblyseius andersoni* per tripidi).
-   - **Rilascio**: 10-20 individui/m² ogni 2 settimane, distribuiti sulle piante infestate.
-   - **Consiglio**: Abbinare a piante trappola (es. *Calendula officinalis*) per attirare i parassiti lontano dalle colture principali.
+3. **Introduzione di insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari, *Amblyseius andersoni* per tripidi).
+     - **Dose**: 1-2 individui per m² ogni 2 settimane in caso di infestazione.
+     - **Condizioni**: Umidità >60% (evita l'asciugatura delle foglie).
+   - **Coccinelle** (*Coccinella septempunctata*): Rilascia 5-10 adulti per 10 m² in caso di afidi.
+   - **Funghi entomopatogeni** (*Beauveria bassiana*): Applica in polvere o spray (1 g/L) ogni 10 giorni in prevenzione.
 
-4. **Elettrocultura preventiva**:
-   - Posizionare una **spirale di rame Lakhovsky** (diametro 30 cm) a 30 cm sopra le piante, collegata a un **palo di terra** infisso nel suolo.
-   - **Manutenzione**: Pulire la spirale con aceto ogni mese per evitare ossidazione.
-
-### **Fase di Fioritura**
-1. **Ridurre gli interventi chimici**:
-   - Sospendere l'olio di neem (può alterare il profumo dei fiori) e sostituirlo con
+4. **Barriere fisiche e repellenti naturali**
+   - **Reti anti-insetto** (maglia 0.6 mm) per impedire l'accesso di moscerini e farfalle.
+   - **Piante trappola
