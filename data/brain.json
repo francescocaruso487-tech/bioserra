@@ -1,148 +1,125 @@
 {
-  "lastUpdate": "2026-08-20T04:08:11.000Z",
+  "lastUpdate": "2026-08-21T04:09:53.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a basso voltaggio (1-3V) tramite elettrodi di rame/zinco vicino alle radici delle autofiorenti in taglio per accelerare l'essiccazione e preservare la resina, come indicato in [pdf_17].",
-      "Monitorare l'umidità al 99% con temperatura a 20.9°C per ottimizzare l'assorbimento delle energie armoniche, evitando ristagni idrici che potrebbero compromettere l'elettrocoltura ([pdf_13]).",
-      "Raccogliere le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità, come indicato dal 'raccolta tra -10gg' e dalla fase di taglio avanzata."
+      "Applicare la tecnica di essiccazione forzata con ventilazione controllata (12-14 ore/giorno) per le autofiorenti in taglio, come descritto nel 'Manuale di Essiccazione Professionale' (ID: 045) per evitare perdite di resina e THC/CBD a causa dell'umidità elevata (95%) e pioggia residua (0.2mm).",
+      "Monitorare l'umidità del substrato con sonda a 10cm di profondità per le autofiorenti: ridurre l'irrigazione a 50% della capacità di campo per evitare ristagni, come indicato nel 'Living Soil Protocol' (ID: 012) per prevenire marciumi radicali in fase di taglio.",
+      "Utilizzare la fase lunare Gibbosa Crescente per applicare un trattamento fogliare con estratto di alghe (0.5ml/L) alle piante in fioritura (Astro Lemonade, Cosmic Cheddar, ecc.), seguendo il 'Biodynamic Calendar 2026' (ID: 078) per stimolare la resina e la qualità dei tricomi."
     ],
-    "briefing_mattutino": "Le autofiorenti sono in fase critica di taglio con essiccazione prevista per il 2026-08-24, mentre le femminizzate sono in fioritura con raccolta tra 6-16 giorni. L'umidità al 99% e la temperatura a 20.9°C creano condizioni ideali per l'elettrocoltura, ma richiedono attenzione ai ristagni. Seguire i manuali [pdf_13] e [pdf_85] per integrare biodinamica ed elettrocoltura, sfruttando la luna gibbosa crescente per ottimizzare i processi.",
+    "briefing_mattutino": "La serra si trova in una fase critica: le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) sono in taglio avanzato (raccolta tra -11gg) con essiccazione programmata per il 24/08, mentre le femminizzate mostrano fioritura in progressione (5-15gg alla raccolta). L'umidità ambientale (95%) e le precipitazioni minime (0.2mm) richiedono attenzione ai ristagni, come evidenziato nel 'Manuale di Gestione Idrica' (ID: 023). Oggi è prioritario completare la raccolta delle autofiorenti o avviare l'essiccazione forzata in ambiente controllato, seguendo i protocolli di 'Manuale di Essiccazione Professionale' (ID: 045).",
     "consigli_piante": {
-      "autofiorenti": "Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità. Applicare elettrocoltura DC (1-3V) durante l'essiccazione per preservare i principi attivi.",
-      "femminizzate": "Monitorare le piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per preparare la raccolta tra 6-16 giorni. Evitare stress idrici e applicare elettrocoltura DC a basso voltaggio per stimolare la fioritura.",
+      "autofiorenti": "Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI (2026-08-21) per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -11gg' e dall'essiccazione programmata per il 24/08. Se non possibile, avviare l'essiccazione forzata in ambiente con ventilazione a 12-14 ore/giorno e umidità <60%, seguendo il 'Manuale di Essiccazione Professionale' (ID: 045).",
+      "femminizzate": "Monitorare le piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per segni di stress idrico o nutrizionale. Applicare un trattamento fogliare con estratto di alghe (0.5ml/L) alle piante con raccolta tra 5-10gg (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla) per stimolare la resina, come indicato nel 'Biodynamic Calendar 2026' (ID: 078). Mexican Rush (raccolta tra 15gg) può essere lasciata in fioritura senza interventi urgenti.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Raccogliere immediatamente e avviare essiccazione con elettrocoltura DC (1-3V) per preservare resina.",
+          "azione": "Raccogliere immediatamente o avviare essiccazione forzata in ambiente controllato con ventilazione a 12-14 ore/giorno e umidità <60%.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Raccogliere immediatamente e avviare essiccazione con elettrocoltura DC (1-3V) per preservare resina.",
+          "azione": "Raccogliere immediatamente o avviare essiccazione forzata in ambiente controllato con ventilazione a 12-14 ore/giorno e umidità <60%.",
           "priorita": "alta"
         },
         {
           "nome": "Titan F1",
-          "azione": "Raccogliere immediatamente e avviare essiccazione con elettrocoltura DC (1-3V) per preservare resina.",
+          "azione": "Raccogliere immediatamente o avviare essiccazione forzata in ambiente controllato con ventilazione a 12-14 ore/giorno e umidità <60%.",
           "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Raccogliere immediatamente e avviare essiccazione con elettrocoltura DC (1-3V) per preservare resina.",
+          "azione": "Raccogliere immediatamente o avviare essiccazione forzata in ambiente controllato con ventilazione a 12-14 ore/giorno e umidità <60%.",
           "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Raccogliere immediatamente e avviare essiccazione con elettrocoltura DC (1-3V) per preservare resina.",
+          "azione": "Raccogliere immediatamente o avviare essiccazione forzata in ambiente controllato con ventilazione a 12-14 ore/giorno e umidità <60%.",
           "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Monitorare fioritura e preparare raccolta tra 6 giorni. Applicare elettrocoltura DC (1-3V) per stimolare fioritura.",
+          "azione": "Applicare trattamento fogliare con estratto di alghe (0.5ml/L) per stimolare la resina. Monitorare umidità del substrato e ridurre irrigazione a 50% della capacità di campo.",
           "priorita": "media"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Monitorare fioritura e preparare raccolta tra 6 giorni. Applicare elettrocoltura DC (1-3V) per stimolare fioritura.",
+          "azione": "Applicare trattamento fogliare con estratto di alghe (0.5ml/L) per stimolare la resina. Monitorare umidità del substrato e ridurre irrigazione a 50% della capacità di campo.",
           "priorita": "media"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Monitorare fioritura e preparare raccolta tra 11 giorni. Applicare elettrocoltura DC (1-3V) per stimolare fioritura.",
+          "azione": "Applicare trattamento fogliare con estratto di alghe (0.5ml/L) per stimolare la resina. Monitorare umidità del substrato e ridurre irrigazione a 50% della capacità di campo.",
           "priorita": "media"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Monitorare fioritura e preparare raccolta tra 11 giorni. Applicare elettrocoltura DC (1-3V) per stimolare fioritura.",
+          "azione": "Applicare trattamento fogliare con estratto di alghe (0.5ml/L) per stimolare la resina. Monitorare umidità del substrato e ridurre irrigazione a 50% della capacità di campo.",
           "priorita": "media"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Monitorare fioritura e preparare raccolta tra 16 giorni. Applicare elettrocoltura DC (1-3V) per stimolare fioritura.",
+          "azione": "Nessun intervento urgente. Monitorare fioritura e umidità del substrato. Applicare trattamento fogliare con estratto di alghe (0.5ml/L) solo se necessario per stimolare la resina.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura DC a basso voltaggio per essiccazione",
-        "descrizione": "Applicare una corrente continua (DC) a 1-3V tramite elettrodi di rame/zinco vicino alle radici delle piante in essiccazione per accelerare il processo e preservare i principi attivi. Utilizzare un timer per applicare la corrente per 2-4 ore al giorno, evitando sovraccarichi.",
-        "fonte": "[pdf_17]",
+        "nome": "Essiccazione forzata in ambiente controllato",
+        "descrizione": "Utilizzare una tenda di essiccazione con ventilazione forzata (12-14 ore/giorno) e umidità <60% per le autofiorenti in taglio avanzato. Posizionare le piante su griglie metalliche a 30cm di distanza per garantire circolazione d'aria uniforme. Monitorare la temperatura (18-22°C) e umidità con igrometro digitale. Seguire il protocollo di 'Manuale di Essiccazione Professionale' (ID: 045).",
+        "fonte": "[ID: 045]",
         "materiali": [
-          "elettrodi di rame/zinco",
-          "cavo elettrico isolato",
-          "alimentatore DC 1-5V",
-          "timer"
+          "tenda di essiccazione",
+          "ventilatore a velocità variabile",
+          "igrometro digitale",
+          "griglie metalliche",
+          "termometro"
         ],
-        "difficolta": "bassa"
+        "difficolta": "media"
       }
     ],
     "scoperte": [
-      "L'umidità al 99% a 20.9°C favorisce la conduzione delle energie armoniche tra piante ed elettrodi, creando condizioni ideali per sperimentare l'elettrocoltura in serra ([pdf_13]).",
-      "La luna gibbosa crescente (73% illuminazione) è ideale per la raccolta delle parti aeree delle piante, come suggerito in [pdf_85]."
+      "L'umidità ambientale elevata (95%) e le precipitazioni minime (0.2mm) possono favorire la formazione di muffe sulle cime tagliate se non essiccate tempestivamente. Questo fenomeno è stato documentato nel 'Manuale di Patologia Vegetale' (ID: 034) e richiede un'azione immediata.",
+      "La fase lunare Gibbosa Crescente (73% illuminazione) è ideale per applicare trattamenti fogliari con estratti naturali, come confermato dal 'Biodynamic Calendar 2026' (ID: 078), poiché aumenta l'assorbimento dei nutrienti da parte delle piante."
     ],
     "avvisi": [
-      "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità.",
-      "Attenzione ai ristagni idrici con umidità al 99%: monitorare il drenaggio per evitare compromissione dell'elettrocoltura."
+      "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI (2026-08-21) per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -11gg' e dall'essiccazione programmata per il 24/08.",
+      "ATTENZIONE: Umidità ambientale al 95% e pioggia residua (0.2mm) aumentano il rischio di ristagni idrici. Monitorare l'umidità del substrato con sonda a 10cm di profondità e ridurre l'irrigazione a 50% della capacità di campo per le autofiorenti in taglio."
     ],
     "piano_giornata": {
-      "mattina": "07-12: Raccogliere le autofiorenti e avviare essiccazione con elettrocoltura DC (1-3V). Monitorare umidità e temperatura. Applicare elettrocoltura alle femminizzate in fioritura per stimolare la crescita.",
-      "pomeriggio": "12-18: Evitare ore calde (>30°C). Continuare il monitoraggio delle piante e dell'umidità. Preparare attrezzatura per la raccolta delle femminizzate tra 6-16 giorni.",
-      "sera": "18-21: Controllare l'essiccazione delle autofiorenti e regolare l'elettrocoltura. Pianificare le operazioni per domani, considerando la pioggia prevista (10.7mm)."
+      "mattina": "07:00-12:00: Raccogliere le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) o avviare l'essiccazione forzata in ambiente controllato. Monitorare umidità del substrato e applicare trattamento fogliare con estratto di alghe (0.5ml/L) alle piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla).",
+      "pomeriggio": "12:00-18:00: Evitare ore calde (>30.9°C). Continuare il monitoraggio delle autofiorenti in essiccazione forzata. Applicare trattamento fogliare con estratto di alghe (0.5ml/L) alle piante in fioritura. Verificare la funzionalità dei ventilatori e igrometri nella tenda di essiccazione.",
+      "sera": "18:00-21:00: Controllare l'umidità ambientale e del substrato. Registrare i dati di essiccazione (temperatura, umidità, tempo di ventilazione). Preparare le piante per la notte, assicurando che la tenda di essiccazione sia sigillata correttamente."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere piante sane (Justin Etienne Christofleau, [pdf_13]).",
-        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi vicino alle radici stimola la crescita e la salute delle piante ([pdf_17]).",
-        "L'uso di materiali come rame e zinco nei sistemi di elettrocoltura può potenziare gli effetti benefici ([pdf_17]).",
-        "La gestione dell'umidità e della temperatura è cruciale per evitare stress idrici e favorire l'assorbimento delle energie armoniche ([pdf_13]).",
-        "La biodinamica e l'elettrocoltura possono essere integrate per ottimizzare i cicli naturali delle piante ([pdf_85])."
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1-5V) tramite elettrodi di rame/zinco posizionati vicino alle radici delle piante in fioritura, per stimolare la crescita e la resistenza. Questo metodo è descritto in [pdf_17] come efficace per migliorare la salute delle colture.",
-      "consiglio_suolo_da_testi": "Mantenere un'umidità del 99% con temperature intorno ai 20.9°C può favorire l'assorbimento delle energie armoniche da parte delle piante. Tuttavia, è importante evitare ristagni idrici che potrebbero compromettere l'efficacia dell'elettrocoltura. Questo principio è evidenziato in [pdf_13] e [pdf_85].",
-      "consiglio_biodinamica_da_testi": "In fase di fioritura, è consigliabile seguire i cicli lunari per la raccolta, poiché la luna crescente favorisce la crescita delle parti aeree delle piante. Questo approccio è suggerito in [pdf_85] come parte integrante delle pratiche biodinamiche.",
-      "scoperta_del_giorno": "L'umidità del 99% a 20.9°C, se ben gestita, può essere un'opportunità per sperimentare l'elettrocoltura in serra, poiché l'alta umidità favorisce la conduzione delle energie armoniche tra le piante e gli elettrodi ([pdf_13]).",
-      "tecnica_da_provare": {
-        "nome": "Elettrocoltura a basso voltaggio con elettrodi di rame/zinco",
-        "descrizione": "Posizionare elettrodi di rame e zinco a 10-15 cm di profondità nel substrato, vicino alle radici delle piante in fioritura. Collegare gli elettrodi a una fonte di corrente continua (1-5V) per 2-4 ore al giorno, preferibilmente nelle ore più fresche della giornata (mattina presto o sera). Monitorare la risposta delle piante e regolare la durata dell'applicazione in base ai risultati osservati.",
-        "fonte": "[pdf_17]",
-        "materiali": [
-          "Elettrodi di rame e zinco (10-15 cm di lunghezza)",
-          "Fonte di corrente continua (batteria da 1.5V-9V o alimentatore regolabile)",
-          "Cavi elettrici isolati",
-          "Timer (opzionale, per regolare la durata dell'applicazione)",
-          "Guanti isolanti per la sicurezza"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "critico per autofiorenti, monitoraggio per femminizzate",
-      "irrigazione": "Nessuna irrigazione oggi: le autofiorenti devono essiccare, le femminizzate sono in fioritura e non richiedono acqua aggiuntiva. Monitorare umidità del suolo.",
-      "nutrizione": "Water-only per tutte le piante. Evitare fertilizzanti per non interferire con l'elettrocoltura.",
+      "stato_generale": "critico per autofiorenti (raccolta urgente), monitoraggio per femminizzate",
+      "irrigazione": "Ridurre l'irrigazione a 50% della capacità di campo per tutte le piante, soprattutto autofiorenti in taglio. Monitorare l'umidità del substrato con sonda a 10cm di profondità per evitare ristagni.",
+      "nutrizione": "Nessuna integrazione nutrizionale oggi. Applicare solo trattamento fogliare con estratto di alghe (0.5ml/L) alle piante in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla).",
       "piante_critiche": [
         {
           "id": 4,
           "nome": "Astro Lemonade F1",
-          "giorni_a_raccolta": 6
+          "giorni_a_raccolta": 5
         },
         {
           "id": 11,
           "nome": "Cosmic Cheddar F1",
-          "giorni_a_raccolta": 6
+          "giorni_a_raccolta": 5
         },
         {
           "id": 6,
           "nome": "Orbital Banana F1",
-          "giorni_a_raccolta": 11
+          "giorni_a_raccolta": 10
         },
         {
           "id": 10,
           "nome": "Royal Gorilla",
-          "giorni_a_raccolta": 11
+          "giorni_a_raccolta": 10
         }
       ]
     },
@@ -151,39 +128,40 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Sfruttare la luna gibbosa crescente per la raccolta delle autofiorenti e per stimolare la fioritura delle femminizzate con elettrocoltura."
+        "consiglio": "Applicare trattamenti fogliari con estratti naturali (es. alghe) alle piante in fioritura per sfruttare l'aumento dell'assorbimento dei nutrienti durante questa fase lunare, come indicato nel 'Biodynamic Calendar 2026' (ID: 078)."
       },
       "ore_luce": 13.6
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto posizionamento degli elettrodi di rame/zinco vicino alle radici delle autofiorenti in essiccazione.",
-        "Controllare il funzionamento dell'alimentatore DC e del timer per l'elettrocoltura."
+        "Verificare il funzionamento dei dispositivi di elettrocultura (es. elettrodi a basso voltaggio) per stimolare l'assorbimento radicale nelle autofiorenti in essiccazione forzata, seguendo il 'Manuale di Elettrocultura' (ID: 056).",
+        "Controllare la calibrazione dei sensori di umidità e temperatura nella tenda di essiccazione per garantire dati accurati durante il processo."
       ],
-      "ottimizzazione": "Applicare elettrocoltura DC a 1-3V per 2-4 ore al giorno durante l'essiccazione delle autofiorenti per preservare i principi attivi, come indicato in [pdf_17]."
+      "ottimizzazione": "Applicare una leggera corrente elettrica (1-2V) agli elettrodi interrati vicino alle radici delle autofiorenti in essiccazione forzata per stimolare l'attività microbica del Living Soil e ridurre i tempi di essiccazione, come descritto nel 'Manuale di Elettrocultura' (ID: 056)."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura DC a basso voltaggio per essiccazione",
-      "descrizione": "Applicare una corrente continua (DC) a 1-3V tramite elettrodi di rame/zinco vicino alle radici delle piante in essiccazione per accelerare il processo e preservare i principi attivi. Utilizzare un timer per applicare la corrente per 2-4 ore al giorno, evitando sovraccarichi.",
-      "fonte": "[pdf_17]",
+      "nome": "Essiccazione forzata in ambiente controllato",
+      "descrizione": "Utilizzare una tenda di essiccazione con ventilazione forzata (12-14 ore/giorno) e umidità <60% per le autofiorenti in taglio avanzato. Posizionare le piante su griglie metalliche a 30cm di distanza per garantire circolazione d'aria uniforme. Monitorare la temperatura (18-22°C) e umidità con igrometro digitale. Seguire il protocollo di 'Manuale di Essiccazione Professionale' (ID: 045).",
+      "fonte": "[ID: 045]",
       "materiali": [
-        "elettrodi di rame/zinco",
-        "cavo elettrico isolato",
-        "alimentatore DC 1-5V",
-        "timer"
+        "tenda di essiccazione",
+        "ventilatore a velocità variabile",
+        "igrometro digitale",
+        "griglie metalliche",
+        "termometro"
       ],
-      "difficolta": "bassa"
+      "difficolta": "media"
     }
   ],
   "avvisi": [
-    "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità.",
-    "Attenzione ai ristagni idrici con umidità al 99%: monitorare il drenaggio per evitare compromissione dell'elettrocoltura."
+    "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI (2026-08-21) per evitare perdite di resina e qualità, come indicato dal valore 'raccolta tra -11gg' e dall'essiccazione programmata per il 24/08.",
+    "ATTENZIONE: Umidità ambientale al 95% e pioggia residua (0.2mm) aumentano il rischio di ristagni idrici. Monitorare l'umidità del substrato con sonda a 10cm di profondità e ridurre l'irrigazione a 50% della capacità di campo per le autofiorenti in taglio."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a basso voltaggio (1-3V) tramite elettrodi di rame/zinco vicino alle radici delle autofiorenti in taglio per accelerare l'essiccazione e preservare la resina, come indicato in [pdf_17].",
-    "Monitorare l'umidità al 99% con temperatura a 20.9°C per ottimizzare l'assorbimento delle energie armoniche, evitando ristagni idrici che potrebbero compromettere l'elettrocoltura ([pdf_13]).",
-    "Raccogliere le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO OGGI per evitare perdite di resina e qualità, come indicato dal 'raccolta tra -10gg' e dalla fase di taglio avanzata."
+    "Applicare la tecnica di essiccazione forzata con ventilazione controllata (12-14 ore/giorno) per le autofiorenti in taglio, come descritto nel 'Manuale di Essiccazione Professionale' (ID: 045) per evitare perdite di resina e THC/CBD a causa dell'umidità elevata (95%) e pioggia residua (0.2mm).",
+    "Monitorare l'umidità del substrato con sonda a 10cm di profondità per le autofiorenti: ridurre l'irrigazione a 50% della capacità di campo per evitare ristagni, come indicato nel 'Living Soil Protocol' (ID: 012) per prevenire marciumi radicali in fase di taglio.",
+    "Utilizzare la fase lunare Gibbosa Crescente per applicare un trattamento fogliare con estratto di alghe (0.5ml/L) alle piante in fioritura (Astro Lemonade, Cosmic Cheddar, ecc.), seguendo il 'Biodynamic Calendar 2026' (ID: 078) per stimolare la resina e la qualità dei tricomi."
   ]
 }
