@@ -223,28 +223,7 @@ Regolatore ON-OFF, XV-50
 - isteresi, XV-50
 - set-point, XV-50
 - soglia inferiore, XV-50
-- soglia superiore, XV-50
-
-Regolatori, XV-3, 42, 49
-- controllo adattativo, XV-42
-- controllore P.I.D., XV-42, 55, 57
-- regolatore ON-OFF, XV-50
-- sintonizzazione del filtro, XV-58
-- tecniche di compensazione, XV-42
-- *tuning* costanti, XV-42
-
-Reti correttrici, XV-40
-Reti di compensazione, XV-40
-- a sella, XV-40, 41
-- anticipatrice, XV-40
-- ritardatrice, XV-40, 41
-
-Risposta
-- a regime, XV-14, 15
-- alla rampa, XV-15
-- canonica, XV-15
-- forzata, XV-11
-- impulsiva, XV-15
+- soglia superiore,
 - indiciale, XV-15, 39
 - libera, XV-10
 - sovraelongazione, XV-16
@@ -552,7 +531,6 @@ ECL, XVII-70
 Elementi concentrati, XVII-6
 
 Elettroni liberi, XVII-37
-
 Famiglie di integrati, XVII-6
 
 FdT, XVII-12
@@ -739,7 +717,6 @@ PLD, XVII-129
 Poli, XVII-14
 
 Ponte di Graetz, XVII-46
-
 Porte logiche di base, XVII-97
 - simboli delle porte logiche, XVII-99
 - simboli normalizzati delle porte logiche, XVII-100
@@ -925,7 +902,6 @@ Controllo di potenza nella conversione c.a.-c.c., XVIII-30
 - monofase a semionda, XVIII-30
 - ponte trifase semicontrollato, XVIII-32
 - ponte trifase totalmente controllato, XVIII-33
-
 Conversione della corrente elettrica, XVIII-22
 - c.a.-c.c., XVIII-22
 - c.c.-c.c., XVIII-45
@@ -1077,6 +1053,7 @@ Tiristori, XVIII-49
 
 Transistor, bipolari, XVIII-15, 50
 - di potenza, XVIII-10, 49, 50
+
 [PAG 2286]
 SEZIONE XVIII ELETTRONICA DI POTENZA
 54
@@ -1340,21 +1317,21 @@ Progettazione elettrica ed elettronica
 - Master, XX-136, 175, 179
 - Metallizzazione dei fori, XX-136, 138
 - Metodi per l’assemblaggio delle apparecchiature elettroniche, XX-128÷135
-Metodo per la realizzazione dei circuiti stampati, additivo, XX-139, 140
-- Sottrattivo, XX-137÷139
-Ondulazione residua, XX-151, 152, 166
-Orologio digitale, XX-189÷196
-*Photoresist*, XX-139
-Piano, di manutenzione, XX-8
-- Di sicurezza, XX-8
-Planimetria generale, XX-7
-Preventivo di spesa, XX-128
-Progetto, definitivo, XX-4
-- Documentazione di, XX-4, 5
-- Esecutivo, XX-4
-- Preliminare, XX-4
-Prove, per apparecchiature militari, XX-117
-- Per reazione al fuoco, XX-117
+- Metodo per la realizzazione dei circuiti stampati, additivo, XX-139, 140
+  - Sottrattivo, XX-137÷139
+- Ondulazione residua, XX-151, 152, 166
+- Orologio digitale, XX-189÷196
+- *Photoresist*, XX-139
+- Piano, di manutenzione, XX-8
+  - Di sicurezza, XX-8
+- Planimetria generale, XX-7
+- Preventivo di spesa, XX-128
+- Progetto, definitivo, XX-4
+  - Documentazione di, XX-4, 5
+  - Esecutivo, XX-4
+  - Preliminare, XX-4
+- Prove, per apparecchiature militari, XX-117
+  - Per reazione al fuoco, XX-117
 - Sul modello, XX-116
 - Sul prodotto finito, XX-116
 - Sul prototipo, XX-116
