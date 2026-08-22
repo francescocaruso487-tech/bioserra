@@ -231,18 +231,7 @@ Regolatore ON-OFF, XV-50
 - tempo di ritardo, XV-15
 - tempo di salita, XV-15
 - temporale dei sistemi, XV-15
-- totale del sistema, XV-14
-- transitoria, XV-14, 15
-- velocità di risposta, XV-37
-
-Sample and Hold, XV-45
-Scalino unitario, XV-14
-Schemi, XV-7
-- a blocchi, XV-7
-- a blocchi di sistema retroazionato, XV-9
-- funzionale, XV-7
-- nodo sommatore, XV-7
-- punto di diramazione, XV-8
+- totale del sistema,
 - strutturale, XV-7
 
 Segnale campionato, XV-43
@@ -744,7 +733,6 @@ Reazione, XVII-17
 Registri, XVII-118
 - a scorrimento, XVII-119
 - tipi di registri a scorrimento, XVII-121
-
 Rendimento di conversione degli amplificatori, XVII-166
 
 Resistenza termica, XVII-163
@@ -902,6 +890,7 @@ Controllo di potenza nella conversione c.a.-c.c., XVIII-30
 - monofase a semionda, XVIII-30
 - ponte trifase semicontrollato, XVIII-32
 - ponte trifase totalmente controllato, XVIII-33
+
 Conversione della corrente elettrica, XVIII-22
 - c.a.-c.c., XVIII-22
 - c.c.-c.c., XVIII-45
@@ -1103,71 +1092,113 @@ Ciclo di isteresi, XIX-17, 143
 Codice colori, dei condensatori, XIX-135, 136
 - degli induttori, XIX-140
 - dei resistori, XIX-112
-Coefficiente di, bontà, XIX-129
+Coefficiente di bontà, XIX-129
 - conducibilità termica interna, XIX-11
 - dilatazione lineare, XIX-11
 - temperatura, XIX-13, 108, 122, 123, 127
 - merito, XIX-129, 144
 - tensione, XIX-109
+
 Commutatore, XIX-53
+
 Condensatori, XIX-127, 137
 - variabili, XIX-136
+
 Contaimpulsi, XIX-87
+
 Contattore, XIX-79
+
 Corrente di fuga, XIX-133
+
 Corrosione, XIX-13
+
 Costante dielettrica, XIX-127
+
 Curva di magnetizzazione, XIX-17, 143
+
 Densità, XIX-7
+
 Deriva di un campo elettrico, XIX-28
+
 Deviatore, XIX-52
+
 Diamagnetismo, XIX-16
+
 Dielettrico, XIX-15
+
 Diffusione in un gradiente di concentrazione, XIX-28
+
 Durata degli isolanti, XIX-22
+
 Durezza, XIX-10
+
 Duttilità, XIX-11
+
 Effetto pelle, XIX-13
+
 Elastomeri, XIX-21
+
 Elettrone libero, XIX-26, 27
+
 Elettroserratura, XIX-77
+
 Fattore di merito, XIX-138
 - perdita, XIX-129
 - rumore, XIX-109
+
 Fotocellula, XIX-92
+
 Fotoresistenze, XIX-124, 125
+
 Fusibile, XIX-105
+
 Fusibilità, XIX-10
+
 Induttanza, XIX-137
+
 Induttori, XIX-137, 144
 - con nucleo ferromagnetico, XIX-142, 144
 - in aria, XIX-140
 - schermatura degli, XIX-144
+
 Impurità accettatrici, XIX-27
 - donatrici, XIX-27
+
 Interruttore, XIX-52
 - crepuscolare, XIX-71
 - di prossimità (connessioni), XIX-91
 - finecorsa, XIX-91
+
 Interruttore automatico magnetotermico, XIX-49, 93
 - Caratteristiche di intervento, XIX-94
 - Sequenze cinematiche di funzionamento, XIX-95
+
 Interruttore differenziale, XIX-50, 96
 - Tipi di, XIX-97
 - Selettività, XIX-101
 - Sensibilità, XIX-98
 - Sequenze cinematiche di funzionamento, XIX-100
+
 Invertitore, XIX-53
+
 Isolanti gassosi, XIX-18
 - liquidi, XIX-18
+
 Lacuna, XIX-26
+
 Lampade di segnalazione, XIX-89
 - Codice colori, XIX-90
+
 Leghe, XIX-5
+
 Magnetismo residuo, XIX-17
+
 Magnetoresistenze, XIX-125
+
 Malleabilità, XIX-10
+
 Massa volumetrica, XIX-7
+
 Materiali, XIX-3
 - ceramici, XIX-4, 6
 - conduttori, XIX-18
@@ -1185,21 +1216,21 @@ Materiali, XIX-3
   - Tipi di, XIX-57, 58
 - Pressoresistori, XIX-126
 - Proprietà, fisico-chimiche dei materiali, XIX-6, 17
-- Chimiche, XIX-12
-- Elettriche, XIX-12, 16
-- Fisiche, XIX-7, 8
-- Magnetiche, XIX-16, 18
-- Meccaniche, XIX-8, 10
-- Tecnologiche, XIX-10, 11
+  - Chimiche, XIX-12
+  - Elettriche, XIX-12, 16
+  - Fisiche, XIX-7, 8
+  - Magnetiche, XIX-16, 18
+  - Meccaniche, XIX-8, 10
+  - Tecnologiche, XIX-10, 11
 - Protettore termico, XIX-104
 - Prove di fatica, XIX-10
 - Pulsante, XIX-54, 87
-- Codici colori, XIX-89
+  - Codici colori, XIX-89
 - Relè, XIX-69, 85
-- Magnetotermico, XIX-102
-- Passo-passo, XIX-70
-- Statico, XIX-82
-- Termico, XIX-103
+  - Magnetotermico, XIX-102
+  - Passo-passo, XIX-70
+  - Statico, XIX-82
+  - Termico, XIX-103
 - Regolatore di livello, XIX-90
 - Resilienza, XIX-10
 - Resine, XIX-20
@@ -1234,13 +1265,12 @@ Materiali, XIX-3
 - Sostanze, diamagnetiche, XIX-16
   - Paramagnetiche, XIX-16
 - Stabilità, XIX-111
-
 [PAG 2289]
 SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
 57
-- Suscettibilità magnetica, XIX-17
-- Tecnologie di fabbricazione dei, condensatori, XIX-131, 134
-- Tecnologie di fabbricazione dei, condensatori elettrolitici, XIX-132, 133
+- Suscettività magnetica, XIX-17
+- Tecnologie di fabbricazione dei condensatori, XIX-131, 134
+- Tecnologie di fabbricazione dei condensatori elettrolitici, XIX-132, 133
   - Induttori, XIX-140
   - Resistori, XIX-113, 115
   - Varistori, XIX-126
@@ -1335,17 +1365,17 @@ Progettazione elettrica ed elettronica
 - Sul modello, XX-116
 - Sul prodotto finito, XX-116
 - Sul prototipo, XX-116
-PWM, XX-165
-Quadro, dell’incidenza della manodopera, XX-8
+- PWM, XX-165
+- Quadro, dell’incidenza della manodopera, XX-8
 - Economico, XX-7
-Quote d’installazione, delle apparecchiature, XX-11
+- Quote d’installazione, delle apparecchiature, XX-11
 - Eliminazione barriere architettoniche, XX-11
-Raddrizzatore, XX-149
-- Tipi di, XX-150, 151
-Regolatori, a commutazione, XX-164÷167
-- A quattro terminali, XX-164÷167
-- A tre terminali, XX-160÷164, 167÷175
-- Di tipo parallelo, XX-155, 156
+- Raddrizzatore, XX-149
+  - Tipi di, XX-150, 151
+- Regolatori, a commutazione, XX-164÷167
+  - A quattro terminali, XX-164÷167
+  - A tre terminali, XX-160÷164, 167÷175
+  - Di tipo parallelo, XX-155, 156
 - Di tipo serie, XX-166÷161
 Relazione, descrittiva, XX-7
 - Generale, XX-7, 54, 75
