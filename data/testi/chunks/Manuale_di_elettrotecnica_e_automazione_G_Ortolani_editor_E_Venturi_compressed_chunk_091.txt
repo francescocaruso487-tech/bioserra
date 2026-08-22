@@ -20,7 +20,7 @@ pag.
 1.5    Transistor di Potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico*:
  10
 
-1.5.1    GTO . . . . . . . . dispositivi a semiconduttore
+1.5.1    GTO . . . . . . . dispositivi a semiconduttore
  10
 
 1.5.2    IGBT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -35,7 +35,7 @@ pag.
 1.8    Reti snubber . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  18
 
-1.9    Filtri . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . . . .
+1.9    Filtri . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . . . .
  19
 
 1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . .
 
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
@@ -230,8 +230,6 @@ La Fig. XVIII.1.12 illustra l’andamento delle correnti durante la fase di cond
 [PAG 1830]
 XVIII-12
 ELETTRONICA DI POTENZA
-
-Un elevato valore dei guadagni comporta una bassa resistenza in conduzione e, di conseguenza, una piccola caduta di tensione durante la conduzione, oltre a richiedere correnti di pilotaggio al Gate ridotte. Gli SCR vengono realizzati con il valore più alto possibile dei guadagni, per cui, quando sono attraversati da corrente, la somma dei loro guadagni supera l’unità: il dispositivo rimane in conduzione e non è possibile bloccarne la conduzione.
 Il valore minimo di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come corrente di automantenimento I<sub>h</sub>.
 
 Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub</sub>.
