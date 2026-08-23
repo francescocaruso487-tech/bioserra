@@ -207,44 +207,7 @@ Luogo delle radici, XV-32
 - condizione di fase, XV-34
 - margine di fase, XV-36
 - margine di guadagno, XV-36
-- spirule, XV-34
-
-Memoria, XV-53
-- dati, XV-53
-- programma, XV-53
-Microcontrollore, XV-64
-- codice binario, XV-71
-- codice oggetto, XV-71
-- compilatore, XV-71
-- controllore di posizione a microcontrollore, XV-66
-- controllore di temperatura a microcontrollore,
-Regolatore ON-OFF, XV-50
-- banda, XV-50
-- isteresi, XV-50
-- set-point, XV-50
-- soglia inferiore, XV-50
-- soglia superiore,
-- indiciale, XV-15, 39
-- libera, XV-10
-- sovraelongazione, XV-16
-- tempo di assestamento, XV-15
-- tempo di ritardo, XV-15
-- tempo di salita, XV-15
-- temporale dei sistemi, XV-15
-- totale del sistema,
-- strutturale, XV-7
-
-Segnale campionato, XV-43
-Servosistemi, XV-3, 49
-Sintonizzazione del filtro, XV-58
-
-Sistema/i, XV-2
-- a catena aperta, XV-2
-- a catena chiusa, XV-2
-- a tempo discreto, XV-43
-- analogici, XV-3
-- classificazione, XV-37
-- coefficiente di errore, XV-37
+- spirule,
 - coefficiente di sensibilità, XV-37
 - controllante, XV-3
 - controllato, XV-3
@@ -394,7 +357,6 @@ Domotica, XVI-8, 11
 **Ammettenza**, bipoli, XVII-9
 
 **Amplificatori**, a JFET, XVII-67
-- bilancio energetico, XVII-164
 - delle differenze con AO, XVII-77
 - invertenti con AO, XVII-76
 - non invertenti con AO, XVII-77
@@ -746,7 +708,6 @@ Ritardi di propagazione, XVII-73
 Ritardi di propagazione nei latch, XVII-113
 
 Circuito RLC, XVII-18
-
 ROM, XVII-125, 128
 
 Rumore di quantizzazione, XVII-184
@@ -921,11 +882,6 @@ Duty cycle, XVIII-36, 37, 49
 
 Effetto, dU/dt, XVIII-7, 10
 - valanga, XVIII-7
-
-[PAG 2285]
-SEZIONE XVIII ELETTRONICA DI POTENZA
-53
-
 Equilibrio termico, XVIII-20
 
 Filtri, XVIII-19
@@ -1100,7 +1056,6 @@ Coefficiente di bontà, XIX-129
 - tensione, XIX-109
 
 Commutatore, XIX-53
-
 Condensatori, XIX-127, 137
 - variabili, XIX-136
 
@@ -1377,7 +1332,7 @@ Progettazione elettrica ed elettronica
   - A tre terminali, XX-160÷164, 167÷175
   - Di tipo parallelo, XX-155, 156
 - Di tipo serie, XX-166÷161
-Relazione, descrittiva, XX-7
+- Relazione, descrittiva, XX-7
 - Generale, XX-7, 54, 75
 - Illustrativa, XX-5, 68, 86
 - Specialistica, XX-7, 55, 75
@@ -1387,6 +1342,7 @@ Resistenza termica, XX-141÷146, 173, 174
 - Dissipatore-ambiente, XX-145
 - Giunzione-ambiente, XX-142
 - Giunzione-contenitore, XX-142
+
 Ricerca dei guasti, XX-118
 *Ripple*, XX-151, 152, 166
 Saldatura, XX-130÷134
