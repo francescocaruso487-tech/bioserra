@@ -1,53 +1,57 @@
 ---
 tipo: overview
-aggiornato: 2026-08-22
+aggiornato: 2026-08-23
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
 # **BioSerra Wiki**
-*Serra Living Soil outdoor a Caserta (41°N) – Integrazione di biodinamica, elettrocultura e suolo vivente*
+*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
 
 ---
 
-## ## Filosofia BioSerra
-**BioSerra** è un ecosistema agricolo outdoor che fonde:
-- **Living Soil**: Suolo vivo, ricco di microbioma, micorrize e materia organica, senza input chimici.
-- **Water-Only**: Irrigazione con acqua vibrazionale, magnetizzata e strutturata per massimizzare l’assorbimento radicale.
-- **Biodinamica**: Preparati (500-501), ritmi cosmici e calendario lunare per armonizzare le piante con i cicli terrestri e celesti.
-- **Elettrocultura**: Tecniche attive (Lakhovsky, Fe-Cu, spirali in rame, antenna di terra) per stimolare la crescita, la fotosintesi e la resistenza delle piante.
+## **🌱 Filosofia BioSerra**
+BioSerra è un ecosistema agricolo **autosostenibile** che integra:
+- **Living Soil**: Suolo vivo ricco di microrganismi, materia organica e minerali biodisponibili, coltivato *water-only* (senza fertilizzanti chimici).
+- **Biodinamica**: Approccio olistico che sincronizza le coltivazioni con i ritmi cosmici (luna, stelle) e preparati naturali (es. 501 silice).
+- **Elettrocultura**: Tecniche di stimolazione elettrica del suolo e delle piante per ottimizzare crescita, resina e resilienza (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame, antenna di terra).
 
-**Visione**: Coltivare piante (es. *Astro Lemonade*, *Cosmic Cheddar*, *Orbital Banana*) in sinergia con le forze naturali, riducendo lo stress e potenziando la qualità dei fiori.
+**Visione**: Coltivare piante (es. *Astro Lemonade*, *Cosmic Cheddar*, *Orbital Banana*) in armonia con la natura, massimizzando qualità, aroma e resa senza compromessi ambientali.
 
 ---
 
-## ## Sistema di conoscenza
+## **📚 Sistema di Conoscenza**
 BioSerra si basa su:
-- **341 manuali** (PDF) analizzati, organizzati per temi: germinazione, fasi colturali, suolo, nutrizione, fitosanitari, raccolta.
-- **20 concetti attivi** (es. *Elettrocultura Lakhovsky*, *Preparato 501*, *Acqua Magnetizzata*), collegati tramite [[wiki_id]].
-- **Integrazione trasversale**: Ogni tecnica (es. elettrocultura in fioritura) si sovrappone a biodinamica e Living Soil, creando un sistema olistico.
+- **341 PDF** (manuali tecnici, studi scientifici, guide pratiche) collegati tramite [[id]].
+- **15 concetti attivi** (es. *Suolo Vivente*, *Elettrocoltura DC*, *Calendario Lunare*) integrati in un network di conoscenza.
+- **Guide operative**: Ogni fase colturale (germinazione, vegetativa, fioritura) ha riferimenti specifici (es. [[web_zamn_287-fase-plantula-cannabis]]).
 
-**Esempio di flusso**:
-1. **Germinazione** → [[web_zamn_284-germinare-semi-con-lo-smart-start]] + [[web_zamn_286-problemi-germinazione]].
-2. **Fase vegetativa** → [[web_zamn_288-fase-vegetativa-cannabis]] + elettrocultura DC [[pdf_17]].
-3. **Fioritura** → [[web_zamn_290-fase-fioritura-cannabis]] + preparato 501 [[pdf_85]] + antenna di terra.
+**Esempio di integrazione**:
+- *Elettrocoltura DC* → [[pdf_17]] (PAG 28) + *Suolo Vivente* → [[web_zamn_293-suolo-cannabis-terricci]].
+- *Biodinamica* → *Calendario Lunare* + *Preparato 501* → [[manuali_biodinamici]].
+
+---
+
+## **⚡ Tecniche di Elettrocultura Attive**
+| Tecnica               | Descrizione                                                                 | Riferimento Wiki          |
+|-----------------------|-----------------------------------------------------------------------------|---------------------------|
+| **Acqua Magnetizzata** | Irrigazione con acqua esposta a campi magnetici per migliorare assorbimento. | [[tecnica_acqua_magnetizzata]] |
+| **Spirale in Rame**   | Installazione di spirali in rame intorno alle piante per stimolare radici.  | [[tecnica_spirale_rame]]  |
+| **Circuito Lakhovsky** | Circuito oscillante a onde multiple per armonizzare il campo elettromagnetico delle piante. | [[tecnica_lakhovsky]]     |
+| **Elettrodi Fe-Cu**   | Coppia di elettrodi (ferro-rame) interrati per generare correnti galvaniche. | [[tecnica_elettrodi_fecu]] |
+| **Antenna di Terra**  | Sistema di messa a terra per bilanciare le cariche elettriche del suolo.    | [[tecnica_antenna_terra]] |
+
+**Applicazione attuale**:
+- Elettrocoltura DC a **2V** con elettrodi Fe-Cu a **12 cm di profondità** per piante in fioritura (es. *Royal Gorilla*).
 
 ---
 
-## ## Tecniche elettrocultura attive
-| Tecnica | Descrizione | Applicazione | Riferimenti |
-|---------|------------|--------------|-------------|
-| **Elettrocultura Lakhovsky** | Campi elettromagnetici a bassa frequenza per stimolare la divisione cellulare. | 3V DC tramite elettrodi Cu/Zn a 10-15 cm dalle radici in fioritura. | [[pdf_17]] (PAG 28) |
-| **Spirale in Rame** | Struttura a spirale che amplifica le frequenze naturali del suolo. | Posizionata intorno alle piante o al substrato. | [[pdf_22]] |
-| **Antenna di Terra** | Collegamento elettrico tra piante e terra per scaricare tensioni statiche. | Installata in serra con filo di rame e picchetti. | [[pdf_45]] |
-| **Lega Ferro-Rame (Fe-Cu)** | Elettrodi misti per bilanciare micronutrienti e stimolare l’assorbimento. | Interrati vicino alle radici o in soluzione irrigua. | [[pdf_33]] |
-| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare idratazione e solubilità dei nutrienti. | Usata per irrigazione e preparati biodinamici. | [[pdf_51]] |
-| **Sistemi Misti** | Combinazione delle tecniche sopra per effetti sinergici. | Es. spirale + antenna + acqua magnetizzata. | [[pdf_78]] |
+## **🌍 Principi Living Soil**
+1. **Microbioma**: Suolo ricco di batteri, funghi micorrizici e attinomiceti per decomporre materia organica e rendere nutrienti biodisponibili.
+2. **Minerali**: Integrazione di **farine di rocce** (es. basalto, zeolite) per apporto lento di silicio, calcio e oligoelementi.
+3. **Biostimolanti**: Uso di **tè di compost** e inoculanti micorrizici per potenziare la salute delle piante.
+4. **Acqua**: Gestione oculata dell’**umidità al 100%** e temperatura a **18.5°C** per ottimizzare la conducibilità elettrica del suolo.
 
----
-## ## Principi Living Soil
-### **Microbioma**
-- **Funghi micorrizici**: Simbiosi con le radici per aumentare l’assorbimento di P e acqua.
-- **Batteri benefici**: *Pseudomonas*, *Bacillus* per decomporre la materia organica e sopprimere patogeni.
-- **
+**Riferimenti**:
+- [[web_zamn_
