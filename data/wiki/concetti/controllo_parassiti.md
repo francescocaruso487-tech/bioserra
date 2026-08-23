@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-22
+aggiornato: 2026-08-23
 pdf_count: 10
 ---
 
@@ -12,28 +12,33 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per gestire infestazioni in serra outdoor, basata sull'equilibrio ecosistemico piuttosto che sull'uso di pesticidi chimici. Questo approccio sfrutta la biodiversità del suolo e delle piante per prevenire e contrastare patogeni e insetti dannosi, promuovendo al contempo la salute delle colture. Il meccanismo d'azione si fonda sulla **prevenzione attiva** (es. olio di neem, insetti utili) e sulla **resilienza del suolo**, dove microrganismi benefici e piante vigorose respingono naturalmente i parassiti. Secondo Albert Howard, la salute delle piante è direttamente collegata alla fertilità del suolo, inteso come un ecosistema vivo (*"Humus non è un semplice composto chimico, ma un ecosistema vivo e in continua evoluzione"* [[pdf_7]]). In questo contesto, il controllo parassiti diventa un'estensione della gestione del suolo, dove la diversità biologica agisce da barriera naturale.
+Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai patogeni, promuovendo al contempo la resilienza delle piante. Il meccanismo d'azione si fonda sulla **biodiversità funzionale**: insetti utili, microrganismi antagonisti e piante repellenti agiscono sinergicamente per ridurre le popolazioni di parassiti senza alterare l'ecosistema. Ad esempio, l'**olio di neem** (azadiractina) interferisce con il ciclo riproduttivo degli insetti, mentre gli **acari predatori** (*Phytoseiulus persimilis*) cacciano attivamente gli acari dannosi come *Tetranychus urticae*.
 
-L'elettrocultura, integrata con tecniche tradizionali, può potenziare l'efficacia del controllo parassiti. Ad esempio, l'uso di spirali di rame (Lakhovsky) stimola la crescita microbica e la decomposizione del compost, creando un ambiente sfavorevole ai patogeni [[pdf_7]]. Inoltre, l'applicazione di frequenze specifiche (Fe-Cu) o circuiti a valvole termoioniche può armonizzare le energie telluriche, riducendo lo stress delle piante e la loro suscettibilità agli attacchi [[pdf_304]]. Questo approccio si allinea con principi antichi, come quelli di Diana/Aradia, dove la natura è vista come un'entità viva da rispettare e armonizzare [[pdf_9]].
+Questa strategia è particolarmente efficace in **serre outdoor a Caserta (41°N)**, dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, tripidi e cocciniglie. La chiave del successo risiede nella **prevenzione**: un suolo vivo, ricco di funghi micorrizici e batteri benefici, induce nelle piante una risposta immunitaria naturale (es. produzione di fitoalessine). L'**elettrocultura**, attraverso campi elettromagnetici a bassa frequenza (es. spirali di rame Lakhovsky), può ulteriormente stimolare la resistenza delle piante, accelerando la decomposizione della materia organica e potenziando l'attività microbica.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta (41°N)** in regime **Living Soil**, segui questo protocollo:
 
-1. **Ispezione quotidiana**
-   - Controlla foglie (soprattutto sotto il lato inferiore), steli e substrato per segni di infestazione (es. ragnatele, uova, danni da masticazione).
-   - Usa una lente d'ingrandimento per identificare parassiti precocemente (es. afidi, acari, tripidi).
+### **Fase di Vegetazione**
+1. **Ispezione quotidiana**:
+   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** con una lente d'ingrandimento (10x). Cerca uova, larve o danni da masticazione (es. afidi, tripidi).
+   - *Strumento utile*: Trappole cromotropiche gialle/blu per monitorare insetti volanti.
 
-2. **Prevenzione con olio di neem**
+2. **Prevenzione con olio di neem**:
    - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detergente neutro) in 1 litro d'acqua.
-   - **Applicazione**: Spruzza sulle foglie (meglio al mattino o sera) ogni **7 giorni** durante la vegetazione e la fioritura. Evita i periodi di fioritura intensa per non disturbare gli impollinatori.
-   - **Effetto**: Repellente per afidi, cocciniglie e funghi (es. oidio), oltre a stimolare le difese delle piante.
+   - **Applicazione**: Nebulizza sulle piante **ogni 7 giorni** al tramonto (evita l'esposizione solare diretta per prevenire ustioni fogliari).
+   - *Effetto*: Repellente per afidi, cocciniglie e funghi (oidio). Interrompi 3 giorni prima della raccolta.
 
-3. **Insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Introduci 2-5 individui/m² in caso di infestazione da ragnetti rossi. Ripeti ogni 2 settimane se necessario.
-   - **Coccinelle** (*Coccinella septempunctata*): Rilascia 5-10 adulti/m² per afidi. Attira anche insetti utili con piante trappola (es. calendula, nasturzio).
-   - **Bacillus thuringiensis (Bt)**: Usa 1 g/L d'acqua per bruchi (es. nottue) in fioritura, spruzzando al tramonto.
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis*): 2-5 individui/m² per controllare *Tetranychus urticae* (acaro rosso).
+   - **Crisopidi** (*Chrysoperla carnea*): 10-20 uova/m² per afidi e tripidi.
+   - *Tecnica*: Distribuisci gli insetti utili **al mattino presto** o in condizioni di umidità moderata.
 
-4. **Elettrocultura integrata**
-   - **Spirale di rame (Lakhovsky)**: Posiziona una spirale di rame (diam
+4. **Piante trappola**:
+   - Coltiva **tagete** (*Tagetes patula*) o **basilico** ai bordi della serra: attirano afidi e tripidi lontano dalle colture principali.
+
+### **Fase di Fioritura**
+1. **Riduzione degli interventi chimici**:
+   - Sospendi l'olio di neem 10 giorni prima della fioritura per non alterare l'odore dei fiori (attraente per impollinatori).
+   - Usa **sapone di potassio** (1%) solo in caso di infestazioni gravi, evit
