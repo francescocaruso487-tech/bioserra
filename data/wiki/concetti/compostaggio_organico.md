@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-22
+aggiornato: 2026-08-23
 pdf_count: 6
 ---
 
@@ -12,38 +12,29 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, ossigenazione e temperatura, scompongono la materia organica in humus. Il compost maturo è un **substrato vivente** che migliora la struttura del suolo, aumenta la capacità di scambio cationico (CSC), favorisce la ritenzione idrica e introduce una comunità microbica benefica, essenziale per il **Living Soil** outdoor.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (come lombrichi e artropodi), che decompongono la materia organica in presenza di ossigeno (processo aerobico). Il risultato è un substrato umificato, con un equilibrio ottimale tra macroelementi (N, P, K) e micronutrienti, oltre a una struttura porosa che migliora la ritenzione idrica e l’aerazione del suolo.
 
-Il meccanismo si basa su **due fasi principali**:
-1. **Fase mesofila** (20-40°C): decomposizione iniziale ad opera di batteri e funghi, con produzione di calore e CO₂.
-2. **Fase termofila** (55-65°C): i microrganismi termofili dominano, eliminando patogeni e semi di infestanti, e stabilizzando la materia organica. Questa temperatura è cruciale per ottenere un compost di qualità, privo di agenti patogeni e ricco di nutrienti assimilabili dalle piante durante le fasi di **germinazione** e **vegetazione**.
-
-Il compost di qualità si distingue per:
-- **Colore scuro e odore terroso** (assenza di odori putridi).
-- **Struttura porosa e friabile**, che migliora l’aerazione del suolo.
-- **pH neutro o leggermente alcalino** (6.5-7.5), ideale per la maggior parte delle piante.
-- **Rapporto C/N equilibrato** (20:1–30:1), che garantisce una decomposizione lenta e nutrienti disponibili nel tempo.
-
----
+In un contesto di **Living Soil** outdoor, il compost è fondamentale per rigenerare la fertilità del terreno, poiché introduce microrganismi benefici (come *Pseudomonas*, *Bacillus* e funghi micorrizici) che promuovono la salute delle piante e la resilienza alle avversità. Il compost maturo agisce anche come tampone contro la salinità eccessiva, tipica di alcuni substrati, e favorisce la formazione di aggregati terrosi stabili, essenziali per lo sviluppo radicale durante le fasi di **germinazione** e **vegetazione**.
 
 ## Come si applica in serra
+Per produrre compost di qualità in una serra outdoor a **Caserta (41°N)**, segui questi passaggi pratici, ottimizzati per il clima mediterraneo e il **Living Soil**:
 
-Per produrre compost di qualità in una **serra outdoor a Caserta (41°N)**, segui questi passaggi pratici, ottimizzati per il clima mediterraneo (estati calde e secche, inverni miti e umidi):
+1. **Selezione dei materiali**:
+   - **Materiali verdi** (ricchi di azoto): scarti di ortaggi, erba fresca, letame fresco (es. pollina o equino), fondi di caffè.
+   - **Materiali marroni** (ricchi di carbonio): paglia, foglie secche, cartone non stampato, ramaglie triturate.
+   - **Bilancia** il rapporto **C/N** tra 25:1 e 30:1 (es. 3 parti marroni per 1 parte verde). A Caserta, dove le temperature estive possono superare i 35°C, un eccesso di azoto può causare fermentazioni anaerobiche.
 
-### 1. **Selezione dei materiali**
-- **Materiali verdi (ricchi di azoto, C/N < 30:1)**:
-  - Scarti di frutta/verdura (non agrumi o avocado).
-  - Erba fresca tagliata (evita quella trattata con erbicidi).
-  - Letame fresco (equino, bovino, o pollina ben decomposta).
-  - Fondi di caffè e tè (in quantità moderate).
-- **Materiali marroni (ricchi di carbonio, C/N > 30:1)**:
-  - Paglia, fieno, foglie secche.
-  - Cartone non patinato (spezzettato).
-  - Segatura e trucioli di legno non trattato (in quantità limitata, poiché rallentano la decomposizione).
-  - Gusci di noci o mandorle (frantumati).
+2. **Preparazione del cumulo**:
+   - Crea un cumulo di **1-1.5 m di altezza** e **1.5-2 m di base**, posizionato in zona ombreggiata (es. sotto una rete ombreggiante) per evitare surriscaldamenti estivi.
+   - Aggiungi uno strato di **ramaglie grossolane** alla base per garantire aerazione.
 
-**Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). A Caserta, dove l’umidità è spesso elevata, riduci i marroni per evitare compattazione.
+3. **Gestione della temperatura e umidità**:
+   - **Monitora la temperatura** con una sonda da compost (obiettivo: **55-65°C** per 3-5 giorni). A Caserta, in estate, usa un termometro a sonda e ombreggia il cumulo nelle ore più calde.
+   - **Mantieni l’umidità** al **50-60%** (simile a una spugna strizzata). In caso di siccità, irriga leggermente; in caso di pioggia, copri con un telo traspirante.
 
-### 2. **Preparazione del cumulo**
-- **Posizione**: Scegli un’area ombreggiata della serra (evita il sole diretto che asciuga il cumulo) e ben drenata. In inverno, copri il cumulo con un telo traspirante per proteggerlo dalle piogge eccessive.
-- **Struttura**: Costruisci il cumulo a strati alternati (10–15 cm di verdi +
+4. **Rivoltamento e ossigenazione**:
+   - **Rivolta il cumulo ogni 2-3 giorni** con una forca o un aeratore, spostando il materiale esterno verso il centro per omogeneizzare la decomposizione.
+   - In estate, riduci la frequenza a **1 volta ogni 4-5 giorni** per evitare dispersioni di calore.
+
+5. **Maturazione**:
+   - Dopo **4-8 settimane**, la temperatura scenderà sotto i 40°C. A questo punto, riduci i rivoltamenti a **1 volta ogni 7-10
