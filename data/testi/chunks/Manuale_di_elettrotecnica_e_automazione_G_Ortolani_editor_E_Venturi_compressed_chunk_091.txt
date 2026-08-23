@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
 
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
@@ -230,9 +230,7 @@ La Fig. XVIII.1.12 illustra l’andamento delle correnti durante la fase di cond
 [PAG 1830]
 XVIII-12
 ELETTRONICA DI POTENZA
-Il valore minimo di corrente che mantiene la somma dei guadagni superiore all’unità è indicato come corrente di automantenimento I<sub>h</sub>.
-
-Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub</sub>.
+Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
 Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura costruttiva, in modo che la somma dei guadagni sia appena superiore all’unità durante la conduzione; ciò consente di bloccare la conduzione del dispositivo polarizzando inversamente il Gate. Si noti che valori più bassi dei guadagni richiedono correnti di pilotaggio più elevate. La transizione da ON a OFF è ottenuta applicando una polarizzazione inversa al terminale di controllo G, che costringe la corrente del transistor PNP a uscire dal Gate invece di entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
 Ne consegue che il dispositivo NPN passa nello stato di interdizione, e di conseguenza anche quello PNP.
 
@@ -247,7 +245,7 @@ NPN
 PNP
 A
 I<sub>C</sub>
-U<sub>CE</sub</sub>
+U<sub>CE</sub>
 α
 α
 1
@@ -275,7 +273,6 @@ La possibilità di passare in qualsiasi istante dallo stato di conduzione a quel
 
 Queste caratteristiche comportano però anche un incremento della resistenza di conduzione del canale *R<sub>DS(on)</sub>* e, quindi, l’impossibilità di controllare elevate correnti con conseguenti elevate dissipazioni di potenza. La resistenza di canale *R<sub>DS(on)</sub>* modifica il suo valore raddoppiando per una variazione di temperatura da 25 a 125 °C, ed è proporzionale alla tensione di breakdown elevata alla 2,5.
 Il transistor IGBT si differenzia dal normale MOSFET in quanto il substrato epitassiale di partenza è drogato p invece che n. Si sfrutta il fenomeno indicato come modulazione di conduttività consistente nel fatto che la giunzione p-n che si forma (non presente nei normali MOSFET), inietta lacune nello strato epitassiale diminuendo così la resistenza del dispositivo in conduzione migliorando di conseguenza le sue caratteristiche nel controllo delle correnti.
-
 La **Fig. XVIII.1.18** mostra chiaramente la caduta di tensione diretta ai capi dei MOSFET e degli IGBT evidenziando, nel caso dei MOSFET, una relazione diretta tra la corrente che percorre il dispositivo e la tensione ai suoi capi.
 
 Un confronto diretto tra un MOSFET e un IGBT consente di riportare i seguenti risultati:
