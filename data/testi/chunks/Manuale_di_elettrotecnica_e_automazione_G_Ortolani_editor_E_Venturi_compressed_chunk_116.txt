@@ -235,11 +235,6 @@ Sistemi a tempo discreto, XV-43
 - a logica programmabile (PLC), XV-43
 - algoritmi di controllo, XV-49
 - azione derivativa, XV-69
-- azione integrale, XV-69
-- circuiti di campionamento Sample and Hold, XV-44
-- convertitori ADC, XV-44
-- equazioni alle differenze finite, XV-43, 45, 46
-
 Sovraelongazione massima, XV-16
 Sovrapposizione degli effetti
 - di un sistema lineare, XV-10
@@ -373,21 +368,9 @@ Domotica, XVI-8, 11
 - analisi grafica, XVII-55
 - distorsione, XVII-56
 - modelli, XVII-57
-- tipi di connessioni, XVII-58
-
-**Amplificatori di potenza**, in classe A, XVII-166, 167
-- in classe B, XVII-168
-- push-pull a simmetria complementare, XVII-169
-- push-pull a simmetria quasi complementare, XVII-169
-
-**Amplificatori operazionali**, XVII-73
-- amplificatore delle differenze, XVII-77
-- amplificatore invertente, XVII-76
-- amplificatore non invertente, XVII-77
-- amplificatore sommatore, XVII-78
-- caratteristica di trasferimento, XVII-74
+- tipi di connessioni,
 - circuiti lineari, XVII-76
-- circuiti non lineari,
+- circuiti non lineari, XVII-76
 
 **Banda passante**, XVII-29
 **Criterio di Barkhausen**, XVII-135
@@ -425,39 +408,39 @@ Domotica, XVI-8, 11
 **Codici**, alfanumerici, XVII-88
 - numerici, XVII-87
 - pesati, XVII-87
-Codifica, circuiti, XVII-105
-Comparatori di tensione, con AO, XVII-79
-Comparatori digitali, XVII-104
-Complemento a due, numeri binari, XVII-85
-Componenti:
+**Codifica**, circuiti, XVII-105
+**Comparatori di tensione**, con AO, XVII-79
+**Comparatori digitali**, XVII-104
+**Complemento a due**, numeri binari, XVII-85
+**Componenti**:
 - attivi, XVII-6
 - passivi, XVII-6
 
-Contatori:
+**Contatori**:
 - asincroni binari avanti, XVII-121
-- asincroni binari avanti-indietro,
+- asincroni binari avanti-indietro, XVII-121
 - modulo, XVII-121
 - sincroni, XVII-124
 
-Conversione:
+**Conversione**:
 - A/D, XVII-183
 - D/A, XVII-180
 
-Convertitore:
+**Convertitore**:
 - A/D ad approssimazioni successive, XVII-188
 - D/A con resistori pesati, XVII-186
 
-Teorema di De Morgan, XVII-89
+**Teorema di De Morgan**, XVII-89
 
-Decodifica, circuiti, XVII-107
+**Decodifica**, circuiti, XVII-107
 
-Demultiplexer, XVII-110
+**Demultiplexer**, XVII-110
 
-Derivatore, circuiti con AO, XVII-78
+**Derivatore**, circuiti con AO, XVII-78
 
-DIAC, XVII-175
+**DIAC**, XVII-175
 
-Diodi:
+**Diodi**:
 - a giunzione, XVII-39
 - caratteristiche, XVII-40
 - circuiti, XVII-44
@@ -466,27 +449,27 @@ Diodi:
 - Schottky, XVII-44
 - Zener, XVII-43
 
-DIP, XVII-5
+**DIP**, XVII-5
 
-Display a LED, XVII-108
+**Display a LED**, XVII-108
 
-Distorsione:
+**Distorsione**:
 - armonica, XVII-162
 - di cross-over, XVII-168
 - di non linearità, XVII-162
 
-Divisori di frequenza, XVII-125
+**Divisori di frequenza**, XVII-125
 
-ECL, XVII-70
+**ECL**, XVII-70
 
-Elementi concentrati, XVII-6
+**Elementi concentrati**, XVII-6
 
-Elettroni liberi, XVII-37
-Famiglie di integrati, XVII-6
+**Elettroni liberi**, XVII-37
+**Famiglie di integrati**, XVII-6
 
-FdT, XVII-12
+**FdT**, XVII-12
 
-Filtri:
+**Filtri**:
 - attivi, XVII-156
 - attivi a reazione multipla, XVII-158
 - attivi del primo ordine, XVII-156
@@ -498,7 +481,7 @@ Filtri:
 - RLC, XVII-151
 - specifiche di trasmissione, XVII-148
 
-Flip-flop:
+**Flip-flop**:
 - caratteristiche di commutazione, XVII-117
 - di tipo D edge-triggered, XVII-116
 - di tipo JK edge-triggered, XVII-116
@@ -506,68 +489,68 @@ Flip-flop:
 - di tipo T edge-triggered, XVII-116
 - edge-triggered, XVII-114
 
-Forma canonica, FdT, XVII-14
+**Forma canonica**, FdT, XVII-14
 
-Frequenza di transizione, XVII-35
+**Frequenza di transizione**, XVII-35
 
-Funzioni:
+**Funzioni**:
 - booleane, XVII-90
 - di trasferimento, XVII-12
 
-GBW, XVII-36
+**GBW**, XVII-36
 
-Generatori:
+**Generatori**:
 - di forme d'onda rettangolari, XVII-139, 140
 - di forme d'onda, XVII-139
 - di funzioni, XVII-141
 - dipendenti, XVII-7
 - indipendenti, XVII-7
 
-Giunzioni, XVII-38
+**Giunzioni**, XVII-38
 
-Guadagno:
+**Guadagno**:
 - amplificatori, XVII-26
 - d'anello, XVII-17
 
-Impedenza, bipoli, XVII-9
+**Impedenza**, bipoli, XVII-9
 
-JFET, XVII-59
+**JFET**, XVII-59
 
-MOSFET:
+**MOSFET**:
 - caratteristiche, XVII-61
 - funzionamento, XVII-60
 - modelli, XVII-66
 - polarizzazione, XVII-65
 
-Mappe di Karnaugh, XVII-93
+**Mappe di Karnaugh**, XVII-93
 
-Lacune, XVII-37
+**Lacune**, XVII-37
 
-Latch:
+**Latch**:
 - caratteristiche di commutazione, XVII-113
 - di tipo D, XVII-112
 - di tipo SR, XVII-111
 - di tipo SR con abilitazione, XVII-112
 
-Limitatori, con diodi, XVII-48
+**Limitatori**, con diodi, XVII-48
 
-Figure di Lissajous, XVII-215
+**Figure di Lissajous**, XVII-215
 
-Livelli, circuiti digitali, XVII-68
+**Livelli**, circuiti digitali, XVII-68
 
-Logica:
+**Logica**:
 - negativa, XVII-97
 - positiva, XVII-97
 
-LSI, XVII-5
+**LSI**, XVII-5
 
-Circuiti LTI, XVII-6
+**Circuiti LTI**, XVII-6
 
-Margine di rumore, XVII-69
+**Margine di rumore**, XVII-69
 
-Maxtermini, XVII-91
+**Maxtermini**, XVII-91
 
-Memorie:
+**Memorie**:
 - capacità, XVII-126
 - classificazione, XVII-128
 - EEPROM, XVII-129
@@ -931,7 +914,6 @@ Modulazione di conduttività, XVIII-14
 Mosfet, XVIII-14, 15, 35, 49, 50
 
 MosIgbt, XVIII-14
-
 Normativa, EMC, XVIII-19
 - VDE 0530, XVIII-19
 
@@ -1220,6 +1202,7 @@ Materiali, XIX-3
 - Sostanze, diamagnetiche, XIX-16
   - Paramagnetiche, XIX-16
 - Stabilità, XIX-111
+
 [PAG 2289]
 SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
 57
@@ -1261,7 +1244,7 @@ Progettazione elettrica ed elettronica
 - Bread-boarding, XX-121
 - Cablaggio delle apparecchiature elettriche, XX-120
 - Calcoli, esecutivi, XX-8, 68, 86
-  - Preliminari, XX-7
+- Preliminari, XX-7
 - Capacità termica, XX-146
 - Capitolato speciale d’appalto, XX-8, 44, 72, 96
 - Categorie di rischio, XX-124÷126
@@ -1336,33 +1319,33 @@ Progettazione elettrica ed elettronica
 - Generale, XX-7, 54, 75
 - Illustrativa, XX-5, 68, 86
 - Specialistica, XX-7, 55, 75
-Resistenza termica, XX-141÷146, 173, 174
-- Contenitore-ambiente, XX-144
-- Contenitore-dissipatore, XX-144, 145
-- Dissipatore-ambiente, XX-145
-- Giunzione-ambiente, XX-142
-- Giunzione-contenitore, XX-142
+- Resistenza termica, XX-141÷146, 173, 174
+  - Contenitore-ambiente, XX-144
+  - Contenitore-dissipatore, XX-144, 145
+  - Dissipatore-ambiente, XX-145
+  - Giunzione-ambiente, XX-142
+  - Giunzione-contenitore, XX-142
 
-Ricerca dei guasti, XX-118
-*Ripple*, XX-151, 152, 166
-Saldatura, XX-130÷134
-– a onda, XX-134
-Schede *Eurocard*, XX-123
-Schema, dell’impianto elettrico, XX-8
-– di contratto, XX-8
-– elettrico generale, XX-7
-Serratura elettronica, XX-196÷211
-SMD, XX-134, 135
-SMT, XX-134, 135
-Stabilità, XX-115
-Stabilizzatore di tensione, XX-155
-Stabilizzatori integrati, XX-161÷164
-Tabelle di coordinamento delle protezioni, XX-8, 72, 94
-Tecnica di montaggio superficiale, XX-134
-Tecniche di saldatura, automatica, XX-133, 134
-– manuale, XX-133
-Temporizzatore, 555, XX-185÷187
-Tensione di *dropout*, XX-161
-Trasformatore, XX-149
-Valutazione dei costi, XX-126÷128
-*Wrap*, XX-121
+- Ricerca dei guasti, XX-118
+- *Ripple*, XX-151, 152, 166
+- Saldatura, XX-130÷134
+  – a onda, XX-134
+- Schede *Eurocard*, XX-123
+- Schema, dell’impianto elettrico, XX-8
+  – di contratto, XX-8
+  – elettrico generale, XX-7
+- Serratura elettronica, XX-196÷211
+- SMD, XX-134, 135
+- SMT, XX-134, 135
+- Stabilità, XX-115
+- Stabilizzatore di tensione, XX-155
+- Stabilizzatori integrati, XX-161÷164
+- Tabelle di coordinamento delle protezioni, XX-8, 72, 94
+- Tecnica di montaggio superficiale, XX-134
+- Tecniche di saldatura, automatica, XX-133, 134
+  – manuale, XX-133
+- Temporizzatore, 555, XX-185÷187
+- Tensione di *dropout*, XX-161
+- Trasformatore, XX-149
+- Valutazione dei costi, XX-126÷128
+- *Wrap*, XX-121
