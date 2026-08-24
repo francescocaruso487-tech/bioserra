@@ -1,16 +1,26 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-08-23 | 15 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-08-24 | 20 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Trattamento acqua con magneti per migliorare assorbimento radicale.
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Spirale in rame per armonizzazione campi elettromagnetici nella zona radice.
-- [Circuito di Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Oscillatore multicellulare per stimolazione risonanza cellulare delle piante.
-- [Elettrodi Fe-Cu](concetti/elettrodi_fe_cu.md) *(in 10 PDF)* — Coppia ferro-rame nel suolo per stimolazione bioelettrochimica radicale.
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Connessione a terra per captare energie telluriche e migliorare il campo bioelet
+- [Elettrocultura Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica onde elettromagnetiche a bassa frequenza per stimolare la vitalità cellu
+- [Elettrocultura Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti elettriche nel s
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per amplificare i campi elettromag
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Installa un'antenna collegata a terra per captare e trasmettere energie telluric
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua con campi magnetici per migliorare la sua struttura molecolare e 
+- [Sistemi Combinati di Elettrocultura](concetti/sistemi_combinati_elettrocul.md) *(in 10 PDF)* — Integra più tecniche di elettrocultura (es. spirali, antenne, acqua magnetizzata
+
+## Biodinamica
+- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per armonizzare le 
+- [Ritmi Cosmici](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
+- [Preparati Speciali Biodinamici](concetti/preparati_speciali_biodinami.md) *(in 10 PDF)* — Utilizza preparati avanzati (es. valeriana, camomilla) per specifiche esigenze d
+- [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
+
+## Irrigazione
+- [Acqua Vitalizzata](concetti/acqua_vitalizzata.md) *(in 10 PDF)* — Vitalizza l'acqua con tecniche biofisiche (es. vortici, cristalli) per aumentarn
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
@@ -22,9 +32,6 @@
 ## Nutrizione
 - [Fertilizzazione Organica](concetti/fertilizzazione_organica.md) *(in 3 PDF)* — Apporto nutrienti tramite ammendanti organici naturali.
 - [Farine di Rocce](concetti/farine_di_rocce.md) — Minerali in polvere per rimineralizzazione lenta del substrato.
-
-## Biodinamica
-- [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
 
 ## Fitosanitario
 - [Controllo Parassiti Naturale](concetti/controllo_parassiti.md) *(in 10 PDF)* — Gestione biologica di infestazioni con metodi naturali.
