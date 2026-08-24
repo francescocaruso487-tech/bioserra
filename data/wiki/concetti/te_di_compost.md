@@ -2,43 +2,41 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-23
+aggiornato: 2026-08-24
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Te di Compost
+# Tè di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo, pensato per essere applicato sia per via fogliare che radicale. Questo metodo si basa sul principio della **biostimolazione del suolo vivente**, dove i batteri, funghi e protozoi presenti nel compost vengono "risvegliati" in un ambiente acquoso ossigenato, arricchito da fonti di carbonio (come la melassa) per favorire la loro proliferazione. L’applicazione del tea di compost introduce nel sistema radicale o sulla superficie fogliare una comunità microbica diversificata, che compete con patogeni, solubilizza nutrienti minerali (come fosforo e potassio) e produce sostanze bioattive (ormoni, enzimi, antibiotici naturali) che stimolano la crescita delle piante.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri, funghi, protozoi e nutrienti prontamente assimilabili dalle piante, sia per via fogliare che radicale. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi attivi nel tè competono con patogeni del suolo, migliorano la struttura del terreno e aumentano la biodisponibilità di nutrienti come azoto, fosforo e potassio. Inoltre, i metaboliti secondari prodotti dai batteri (es. auxine, citochinine) stimolano la crescita radicale e la resistenza delle piante agli stress abiotici, come quelli tipici del clima mediterraneo di Caserta (caldo estivo, siccità).
 
-Il meccanismo d’azione del tea di compost si fonda sulla **teoria della rizosfera attiva**: i microrganismi benefici colonizzano le radici e le foglie, formando una barriera protettiva contro agenti patogeni (ad esempio *Fusarium* o *Pythium*) e migliorando l’assorbimento di acqua e nutrienti. Studi in agricoltura rigenerativa dimostrano che l’applicazione di compost tea può aumentare la resilienza delle piante allo stress idrico e termico, oltre a ridurre la necessità di input chimici. In particolare, per coltivazioni outdoor in **Living Soil** a Caserta (41°N), dove il clima mediterraneo può esporre le piante a sbalzi termici e umidità elevata, il tea di compost agisce come un **immunostimolante naturale**, rafforzando il microbioma del suolo e prevenendo marciumi radicali.
+L'efficacia del tè di compost dipende strettamente dalla **qualità del compost di partenza** (deve essere maturo, privo di patogeni e ricco di materia organica) e dalle condizioni di preparazione. Un tè ben fatto favorisce la **diversità microbica**, essenziale per un Living Soil equilibrato, e riduce la necessità di input chimici. Studi hanno dimostrato che applicazioni regolari possono aumentare la resa fino al 30% in colture outdoor, grazie a una maggiore attività fotosintetica e a una radice più sviluppata.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, il protocollo di preparazione e applicazione del tea di compost deve essere adattato alle condizioni climatiche locali (estati calde e umide, inverni miti) e alle esigenze delle piante di cannabis durante le fasi di **vegetazione** e **fioritura**.
+Per una serra outdoor a **Caserta (41°N)**, il tè di compost va preparato e applicato seguendo queste fasi, ottimizzate per il clima locale e il Living Soil:
 
-### **Materiali necessari**
-- Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturato almeno 6 mesi).
-- Acqua non clorata (meglio se piovana o filtrata).
-- Aeratore per acquario (con pietra porosa).
-- Melassa biologica (1-2 cucchiai per 10L di acqua).
-- Contenitore in plastica o vetro (evitare metalli).
-- Filtro a maglia fine (per applicazione fogliare).
-- pH-metro e EC-metro (opzionale ma consigliato).
+1. **Preparazione del compost**
+   - Usa **compost maturo** (6-12 mesi di decomposizione), preferibilmente derivato da scarti vegetali e letame di cavallo/ovino (evita letame fresco o compost non stabilizzato).
+   - Filtra il compost per rimuovere particelle grossolane (usando una retina a maglia fine o un sacco di tela).
 
-### **Procedura passo-passo**
-1. **Preparazione del compost**:
-   - Utilizza **1 kg di compost maturo** per ogni 10L di acqua. Evita compost fresco o con residui di materiali non decomposti (es. legno non triturato), che possono causare anaerobiosi.
-   - Se il compost è molto secco, immergilo in acqua per 1 ora prima di procedere.
+2. **Infusione aerobica**
+   - **Rapporto**: 1 parte di compost ogni 10 parti di acqua (es. 1 kg di compost in 10 L di acqua).
+   - **Acqua**: Usa acqua **non clorata** (lascia riposare l'acqua del rubinetto 24h in un secchio aperto o usa acqua piovana).
+   - **Aerazione**: Immergi un **aeratore per acquario** (con pietra porosa) per 24h a temperatura ambiente (18-25°C). Evita la fermentazione anaerobica (odore sgradevole = tossico per le piante).
+   - **Alimentazione microbica**: Aggiungi **1-2 cucchiai di melassa** (o zucchero di canna) per litro d'acqua per nutrire i batteri. Opzionale: 1 cucchiaio di **humus di lombrico** per aumentare la biodiversità.
 
-2. **Infusione aerobica**:
-   - Riempi il contenitore con acqua a temperatura ambiente (18-22°C).
-   - Aggiungi il compost in un sacchetto di tela o in una retina (per facilitare la filtrazione successiva).
-   - Immergi un aeratore con pietra porosa e attivalo per **24 ore**, mantenendo l’acqua in movimento costante. L’ossigenazione è cruciale per prevenire la proliferazione di batteri anaerobi (che producono composti tossici come l’acido solfidrico).
+3. **Filtraggio e applicazione**
+   - Filtra il tè con una retina fine per rimuovere residui solidi.
+   - **Applica entro 4 ore** dalla preparazione (i microrganismi muoiono rapidamente senza ossigeno).
+   - **Metodo**:
+     - **Radicale**: Innaffia il suolo alla base delle piante (1-2 L/m² ogni 7-14 giorni).
+     - **Fogliare**: Spruzza al tramonto (per evitare ustioni solari) con un nebulizzatore fine (1 L/10 m²). Evita l'applicazione in caso di pioggia imminente.
 
-3. **Arricchimento nutrizionale**:
-   - Dopo 1
+4. **Frequenza**
+   - **Vegetazione**: Ogni
