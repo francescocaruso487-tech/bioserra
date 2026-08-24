@@ -59,7 +59,7 @@ pag.
 3.2    Circuito monofase ad onda intera con presa centrale . . . . . . . . . . . . . . . . .
  24
 
-3.3    Circuito monofase a ponte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.3    Circuito monofase a ponte . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
  25
 
 7    CONVERTITORI NON ISOLATI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
 
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
@@ -132,7 +132,7 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 | D30         | 28  | 32  | 36  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | D40         | 35  | 40  | 45  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | ST2         | 28  | 32  | 36  | 3,8 | -   | 200 | -   |       |     |       |       |
-| HT32        | 27  | -   | 37  | 3   | 5   | 50  | 2,0 |       |     |
+| HT32        | 27  | -   | 37  | 3   | 5   | 50  | 2,0 |       |     |       |
 | DB3         | 28  | 32  | 36  | 3   | 5   | -   | 1,0 |       |     |       |       |
 
 *+I<sub>A</sub>*
@@ -230,8 +230,8 @@ La Fig. XVIII.1.12 illustra l’andamento delle correnti durante la fase di cond
 [PAG 1830]
 XVIII-12
 ELETTRONICA DI POTENZA
-Fig. XVIII.1.13 Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
-Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura costruttiva, in modo che la somma dei guadagni sia appena superiore all’unità durante la conduzione; ciò consente di bloccare la conduzione del dispositivo polarizzando inversamente il Gate. Si noti che valori più bassi dei guadagni richiedono correnti di pilotaggio più elevate. La transizione da ON a OFF è ottenuta applicando una polarizzazione inversa al terminale di controllo G, che costringe la corrente del transistor PNP a uscire dal Gate invece di entrare nella base del dispositivo NPN (Fig. XVIII.1.14).
+**Fig. XVIII.1.13** Variazione del guadagno α in funzione di I<sub>C</sub> e U<sub>CE</sub>.
+Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura costruttiva, in modo che la somma dei guadagni sia appena superiore all’unità durante la conduzione; ciò consente di bloccare la conduzione del dispositivo polarizzando inversamente il Gate. Si noti che valori più bassi dei guadagni richiedono correnti di pilotaggio più elevate. La transizione da ON a OFF è ottenuta applicando una polarizzazione inversa al terminale di controllo G, che costringe la corrente del transistor PNP a uscire dal Gate invece di entrare nella base del dispositivo NPN (**Fig. XVIII.1.14**).
 Ne consegue che il dispositivo NPN passa nello stato di interdizione, e di conseguenza anche quello PNP.
 
 Fig. XVIII.1.14 Correnti durante la fase di interdizione del GTO.
@@ -267,18 +267,24 @@ XVIII-13
 – valore massimo di dU/dt.
 
 Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor.
+
 **Fig. XVIII.1.15** Caratteristica corrente-tensione di un GTO.
+
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
+
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di [corrente/potenza].
 
 Queste caratteristiche comportano però anche un incremento della resistenza di conduzione del canale *R<sub>DS(on)</sub>* e, quindi, l’impossibilità di controllare elevate correnti con conseguenti elevate dissipazioni di potenza. La resistenza di canale *R<sub>DS(on)</sub>* modifica il suo valore raddoppiando per una variazione di temperatura da 25 a 125 °C, ed è proporzionale alla tensione di breakdown elevata alla 2,5.
+
 Il transistor IGBT si differenzia dal normale MOSFET in quanto il substrato epitassiale di partenza è drogato p invece che n. Si sfrutta il fenomeno indicato come modulazione di conduttività consistente nel fatto che la giunzione p-n che si forma (non presente nei normali MOSFET), inietta lacune nello strato epitassiale diminuendo così la resistenza del dispositivo in conduzione migliorando di conseguenza le sue caratteristiche nel controllo delle correnti.
+
 La **Fig. XVIII.1.18** mostra chiaramente la caduta di tensione diretta ai capi dei MOSFET e degli IGBT evidenziando, nel caso dei MOSFET, una relazione diretta tra la corrente che percorre il dispositivo e la tensione ai suoi capi.
 
 Un confronto diretto tra un MOSFET e un IGBT consente di riportare i seguenti risultati:
 – Diminuzione del coefficiente di temperatura della tensione di saturazione di un IGBT rispetto a un MOSFET avente pari dimensioni di chip.
 
 – A parità di dimensioni del chip, il transistor IGBT presenta, rispetto al MOSFET, una carica elettrica di Gate necessaria per la commutazione minore di circa il 20%.
+
 – Tempi di commutazione maggiori per un IGBT rispetto a quelli di un MOSFET.
 
 Il transistor IGBT viene largamente impiegato nella realizzazione di convertitori di tutti i tipi, molto spesso presente in moduli di potenza che contengono i circuiti di protezione del transistor stesso dalle sovracorrenti.
