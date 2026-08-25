@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-24T03:15:21.396355+00:00",
+  "lastUpdate": "2026-08-25T03:11:42.763100+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -155,34 +155,34 @@
       "it": 79
     },
     "chunk_progresso_doc_con_dato": 20,
-    "chunk_progresso_totale_tradotti": 492,
+    "chunk_progresso_totale_tradotti": 503,
     "chunk_progresso_totale_chunk": 358,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_5",
         "chunk_progresso": {
-          "tradotti": 45,
+          "tradotti": 46,
           "totale": 8
         }
       },
       {
         "id": "pdf_298",
         "chunk_progresso": {
-          "tradotti": 45,
+          "tradotti": 46,
           "totale": 13
         }
       },
       {
         "id": "pdf_299",
         "chunk_progresso": {
-          "tradotti": 36,
+          "tradotti": 37,
           "totale": 6
         }
       },
       {
         "id": "pdf_323",
         "chunk_progresso": {
-          "tradotti": 40,
+          "tradotti": 41,
           "totale": 4
         }
       },
@@ -196,35 +196,35 @@
       {
         "id": "pdf_329",
         "chunk_progresso": {
-          "tradotti": 45,
+          "tradotti": 46,
           "totale": 17
         }
       },
       {
         "id": "pdf_331",
         "chunk_progresso": {
-          "tradotti": 49,
+          "tradotti": 50,
           "totale": 4
         }
       },
       {
         "id": "pdf_335",
         "chunk_progresso": {
-          "tradotti": 22,
+          "tradotti": 23,
           "totale": 21
         }
       },
       {
         "id": "pdf_21",
         "chunk_progresso": {
-          "tradotti": 42,
+          "tradotti": 43,
           "totale": 23
         }
       },
       {
         "id": "pdf_85",
         "chunk_progresso": {
-          "tradotti": 42,
+          "tradotti": 43,
           "totale": 18
         }
       }
@@ -236,12 +236,12 @@
       "it": 79
     },
     "chunk_progresso_doc_con_dato": 20,
-    "chunk_progresso_totale_tradotti": 492,
+    "chunk_progresso_totale_tradotti": 503,
     "chunk_progresso_totale_chunk": 358
   },
   "connessioni": {
     "nodi_totali": 399,
-    "edges_totali": 79880,
+    "edges_totali": 79913,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
@@ -250,11 +250,11 @@
       "media": 0.843
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 84,
-      "sinergia": 217,
-      "potenziamento": 55,
-      "contraddizione": 233,
-      "(nessuno)": 79291
+      "principio_condiviso": 87,
+      "sinergia": 230,
+      "potenziamento": 57,
+      "contraddizione": 250,
+      "(nessuno)": 79289
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.6
