@@ -220,28 +220,7 @@ Luogo delle radici, XV-32
 - lineari, XV-10
 - non stazionari, XV-3
 - numerici, XV-3
-- risposta a regime, XV-14
-- risposta temporale, XV-15
-- risposta totale, XV-14
-- risposta transitoria, XV-14
-- segnale agente, XV-4
-- segnale errore, XV-4
-- sensibilità del sistema, XV-3, 37
-- stabilità, XV-14, 22
-- stazionari, XV-3, 10
-- tipo di sistema, XV-37
-
-Sistemi a tempo discreto, XV-43
-- a logica programmabile (PLC), XV-43
-- algoritmi di controllo, XV-49
-- azione derivativa, XV-69
-Sovraelongazione massima, XV-16
-Sovrapposizione degli effetti
-- di un sistema lineare, XV-10
-
-Spirule, XV-34
-- tracciamento del Luogo delle Radici, XV-34
-
+- risposta a regime,
 Stabilità e criteri di stabilità, XV-22
 - criterio di Hurwitz, XV-23
 - criterio di Routh, XV-23
@@ -381,17 +360,7 @@ Domotica, XVI-8, 11
 **Bit**, XVII-4
 
 **BJT**, XVII-49
-- caratteristiche, XVII-51
-- circuiti digitali, XVII-69
-- connessioni, XVII-50
-- modelli per piccoli segnali, XVII-57
-- NPN, XVII-49
-- parametri α e β, XVII-50
-- PNP, XVII-49
-- polarizzazione, XVII-52
-- principio di funzionamento, XVII-49
-- stabilizzazione, XVII-52
-- struttura, XVII-49
+- caratteristiche,
 - di potenza, XVII-163
 
 **Diagrammi di Bode**, XVII-28
@@ -564,15 +533,14 @@ Domotica, XVI-8, 11
 - tecnologia, XVII-128
 - tipi, XVII-125
 
-Microprocessore:
+**Microprocessore**:
 - 8080, XVII-134
 - assembler, XVII-133
 - bus, XVII-133
 - programmi, XVII-133
 - struttura, XVII-132
 
-Mintermini, XVII-91
-
+**Mintermini**, XVII-91
 Modelli, amplificatori, XVII-25, 27
 
 Modulo, contatori, XVII-121
@@ -754,7 +722,6 @@ Transistor ad effetto di campo (FET), XVII-59
 TRIAC, XVII-173
 - Circuiti di controllo del TRIAC, XVII-174
 - Principio di funzionamento del TRIAC, XVII-173
-
 Trigger di Schmitt con 555, XVII-146
 - Trigger di Schmitt con AO, XVII-80
 
@@ -930,7 +897,6 @@ P.R.M. (Modulazione di Frequenza degli Impulsi), XVIII-46
 P.W.M. (Modulazione di Larghezza d'Impulso), XVIII-36, 45
 
 Push-pull, convertitore, XVIII-37, 44
-
 Raddrizzatori, XVIII-22
 - a una semionda, XVIII-3
 - controllati, XVIII-22
@@ -1254,10 +1220,10 @@ Progettazione elettrica ed elettronica
 - Circuito, di autozero, XX-205
   - Elettro-termico, XX-142, 147
 - Circuiti stampati, XX-110, 120, 135÷137
-  - A due facce, XX-136
-  - Flessibili, XX-140, 141
-  - Materiali per i, XX-140
-  - Metodi per l’assemblaggio dei, XX-128÷130
+- A due facce, XX-136
+- Flessibili, XX-140, 141
+- Materiali per i, XX-140
+- Metodi per l’assemblaggio dei, XX-128÷130
 - Monofaccia, XX-136
 - Processi di fabbricazione dei, XX-133÷140
 - Coefficiente di sicurezza, XX-115
@@ -1325,7 +1291,6 @@ Progettazione elettrica ed elettronica
   - Dissipatore-ambiente, XX-145
   - Giunzione-ambiente, XX-142
   - Giunzione-contenitore, XX-142
-
 - Ricerca dei guasti, XX-118
 - *Ripple*, XX-151, 152, 166
 - Saldatura, XX-130÷134
