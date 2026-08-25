@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-24
+aggiornato: 2026-08-25
 pdf_count: 6
 ---
 
@@ -12,39 +12,30 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il compost. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (lombrichi, artropodi), che scompongono la materia in composti umificati e minerali assimilabili dalle piante. Il meccanismo si basa su tre fasi principali:
-1. **Fase mesofila** (20-40°C): decomposizione iniziale da parte di microrganismi mesofili.
-2. **Fase termofila** (55-65°C): attivazione di batteri termofili che eliminano patogeni e semi infestanti.
-3. **Fase di maturazione** (raffreddamento): umificazione e stabilizzazione del prodotto finale.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macroinvertebrati (lombrichi, collemboli), che scompongono i composti complessi in sostanze assimilabili dalle piante. Il compost maturo agisce come **condizionatore del suolo**, migliorando la struttura, la capacità di ritenzione idrica e la biodiversità microbica, elementi fondamentali per un **Living Soil** outdoor, soprattutto in climi mediterranei come quello di Caserta (41°N), dove la mineralizzazione dei nutrienti è accelerata dal calore estivo.
 
-Il compost di qualità migliora la struttura del suolo (aerazione, capacità di ritenzione idrica), introduce microrganismi benefici (funghi micorrizici, batteri solubilizatori di fosforo) e rilascia nutrienti in forma organica, fondamentale per il **Living Soil** outdoor. In particolare, a Caserta (41°N), il clima mediterraneo favorisce la decomposizione rapida, ma richiede attenzione all’umidità e alla temperatura per evitare perdite di azoto o formazione di muffe.
+Il meccanismo chiave del compostaggio si basa sull’equilibrio tra **materiali azotati (verdi)** e **carboniosi (marroni)**, che forniscono rispettivamente energia e carbonio ai decompositori. Una corretta gestione della temperatura (55–65°C) favorisce la selezione di microrganismi termofili, responsabili della degradazione rapida della lignina e della cellulosa, mentre il rivoltamento periodico (ogni 2–3 giorni) assicura aerazione e omogeneità del processo. Il risultato è un substrato vivo, in grado di sostenere la **fase vegetativa** delle piante (come documentato in [web_zamn_288-fase-vegetativa-cannabis]), fornendo nutrienti a lento rilascio e stimolando lo sviluppo radicale.
 
 ---
 
 ## Come si applica in serra
-Per produrre compost di qualità in serra outdoor a Caserta, segui questi passaggi:
 
 1. **Selezione dei materiali**:
-   - **Verde** (60%): scarti di ortaggi, erba fresca, residui di potatura, letame fresco (es. cavallo o pollo).
-   - **Marroni** (40%): paglia, foglie secche, cartone non stampato, trucioli di legno non trattato.
-   - *Evita*: carne, latticini, piante malate, carta patinata.
+   - **Verde (azoto)**: scarti di cucina (resti di frutta/verdura), erba fresca, letame (es. stallatico maturo), fondi di caffè.
+   - **Marroni (carbonio)**: foglie secche, paglia, cartone non stampato, ramaglie triturate, trucioli di legno non trattato.
+   - *Rapporto ideale*: 2 parti marroni : 1 parte verde (in volume). Evitare materiali oleosi, carne, latticini o piante malate.
 
 2. **Preparazione del cumulo**:
-   - Crea una pila di 1-1.5 m di altezza e larghezza, in zona ombreggiata della serra.
-   - Inizia con uno strato di 10 cm di materiali grossolani (rametti) per favorire l’aerazione alla base.
+   - Scegliere una zona ombreggiata e ben drenata in serra (es. sotto una tettoia o su un letto di paglia).
+   - Disporre i materiali in strati alternati (5–10 cm ciascuno), iniziando con uno strato di marroni per assorbire liquidi in eccesso.
+   - Inumidire leggermente ogni strato (deve essere umido come una spugna strizzata).
 
-3. **Gestione della temperatura e umidità**:
-   - **Temperatura**: Mantieni tra 55-65°C (usa un termometro da compost). Se supera i 70°C, aggiungi materiali marroni e rivolta.
-   - **Umidità**: Deve essere al 50-60% (come una spugna strizzata). Se troppo secco, innaffia; se troppo bagnato, aggiungi materiali secchi.
+3. **Gestione termica e umidità**:
+   - Monitorare la temperatura con un termometro da compost (obiettivo: 55–65°C). Se supera i 70°C, aggiungere marroni per raffreddare.
+   - Mantenere l’umidità al 50–60% (test del pugno: se sgocciola, è troppo bagnato; se si sbriciola, serve acqua).
+   - Rivoltare il cumulo ogni 2–3 giorni con una forca o un compost turner, mescolando bene per ossigenare e uniformare la decomposizione.
 
-4. **Rivoltamento**:
-   - Rivolta il cumulo ogni 2-3 giorni con un forcone, spostando i materiali esterni verso il centro per garantire omogeneità.
-   - Dopo 2-3 settimane, riduci la frequenza a 1 volta/settimana.
-
-5. **Maturazione**:
-   - Dopo 6-8 settimane, il compost dovrebbe essere scuro, profumato di terra e con temperatura stabile (20-30°C).
-   - Setaccia con una rete a maglia fine (5-10 mm) per separare i materiali non decomposti, che possono essere reimmessi nel cumulo.
-
-6. **Applicazione in serra**:
-   - **Ammendamento**: Distribuisci 2-3 cm di compost maturo sulla superficie del suolo prima della semina o trapianto, incorporandolo leggermente.
-   - **Pacciamatura**: Usa compost maturo come pacciame per mantenere l’umidità e proteggere i mic
+4. **Maturazione**:
+   - Dopo 4–6 settimane, la temperatura scende sotto i 40°C: il compost è in fase di raffreddamento.
+   - Lasciare maturare ulteriori 2–4 settimane in un cumulo separato o in sacchi traspiranti, fino a ottenere un materiale scuro, friabile e dall’odore di terra umida.
+   - Setacciare con un setaccio
