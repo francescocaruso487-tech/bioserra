@@ -1,6 +1,6 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-08-24 | 20 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-08-25 | 20 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
@@ -8,19 +8,17 @@
 ## Elettrocultura
 - [Elettrocultura Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica onde elettromagnetiche a bassa frequenza per stimolare la vitalità cellu
 - [Elettrocultura Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti elettriche nel s
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per amplificare i campi elettromag
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per creare campi elettromagnetici 
 - [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Installa un'antenna collegata a terra per captare e trasmettere energie telluric
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua con campi magnetici per migliorare la sua struttura molecolare e 
-- [Sistemi Combinati di Elettrocultura](concetti/sistemi_combinati_elettrocul.md) *(in 10 PDF)* — Integra più tecniche di elettrocultura (es. spirali, antenne, acqua magnetizzata
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Irriga le piante con acqua sottoposta a campi magnetici per migliorare l'assorbi
+- [Irrigazione Elettromagnetica](concetti/irrigazione_elettromagnetica.md) *(in 10 PDF)* — Combina irrigazione con campi elettromagnetici per migliorare la penetrazione e 
+- [Geobiologia in Serra](concetti/geobiologia_serra.md) *(in 10 PDF)* — Ottimizza la posizione e la struttura della serra in base alle linee di forza ge
 
 ## Biodinamica
 - [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per armonizzare le 
-- [Ritmi Cosmici](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
-- [Preparati Speciali Biodinamici](concetti/preparati_speciali_biodinami.md) *(in 10 PDF)* — Utilizza preparati avanzati (es. valeriana, camomilla) per specifiche esigenze d
+- [Ritmi Cosmici Biodinamici](concetti/ritmi_cosmici_biodinamici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
+- [Suolo Attivo Biodinamico](concetti/suolo_attivo_biodinamico.md) *(in 10 PDF)* — Rivitalizza il suolo con compost biodinamico e preparati per stimolare la vita m
 - [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
-
-## Irrigazione
-- [Acqua Vitalizzata](concetti/acqua_vitalizzata.md) *(in 10 PDF)* — Vitalizza l'acqua con tecniche biofisiche (es. vortici, cristalli) per aumentarn
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
