@@ -59,7 +59,7 @@ pag.
 3.2    Circuito monofase ad onda intera con presa centrale . . . . . . . . . . . . . . . . .
  24
 
-3.3    Circuito monofase a ponte . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
+3.3    Circuito monofase a ponte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
  25
 
 7    CONVERTITORI NON ISOLATI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -68,7 +68,7 @@ pag.
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
  37
 
-7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
+7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
 
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
@@ -132,7 +132,7 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 | D30         | 28  | 32  | 36  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | D40         | 35  | 40  | 45  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | ST2         | 28  | 32  | 36  | 3,8 | -   | 200 | -   |       |     |       |       |
-| HT32        | 27  | -   | 37  | 3   | 5   | 50  | 2,0 |       |     |       |
+| HT32        | 27  | -   | 37  | 3   | 5   | 50  | 2,0 |       |     |       |       |
 | DB3         | 28  | 32  | 36  | 3   | 5   | -   | 1,0 |       |     |       |       |
 
 *+I<sub>A</sub>*
@@ -225,7 +225,7 @@ dU/dt
 ∘
 
 Se l’intensità di corrente I<sub>AK</sub> è tale che la somma dei guadagni dei due dispositivi (funzione della corrente I<sub>C</sub> di ciascuno) supera l’unità, il dispositivo continua a condurre anche in assenza dell’impulso di Gate.
-La Fig. XVIII.1.12 illustra l’andamento delle correnti durante la fase di conduzione di un dispositivo. La differenza principale rispetto agli SCR tradizionali risiede nel valore dei guadagni.
+La **Fig. XVIII.1.12** illustra l’andamento delle correnti durante la fase di conduzione di un dispositivo. La differenza principale rispetto agli SCR tradizionali risiede nel valore dei guadagni.
 
 [PAG 1830]
 XVIII-12
