@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-25
+aggiornato: 2026-08-26
 pdf_count: 6
 ---
 
@@ -12,30 +12,31 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante ricco di nutrienti, microrganismi benefici e humus stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macroinvertebrati (lombrichi, collemboli), che scompongono i composti complessi in sostanze assimilabili dalle piante. Il compost maturo agisce come **condizionatore del suolo**, migliorando la struttura, la capacità di ritenzione idrica e la biodiversità microbica, elementi fondamentali per un **Living Soil** outdoor, soprattutto in climi mediterranei come quello di Caserta (41°N), dove la mineralizzazione dei nutrienti è accelerata dal calore estivo.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (come lombrichi e artropodi), che decompongono la sostanza organica in presenza di ossigeno (processo **aerobico**). Il risultato è un substrato umico, poroso e bilanciato, capace di migliorare la struttura del suolo, trattenere acqua e nutrienti, e stimolare la vita microbica essenziale per un **Living Soil** outdoor.
 
-Il meccanismo chiave del compostaggio si basa sull’equilibrio tra **materiali azotati (verdi)** e **carboniosi (marroni)**, che forniscono rispettivamente energia e carbonio ai decompositori. Una corretta gestione della temperatura (55–65°C) favorisce la selezione di microrganismi termofili, responsabili della degradazione rapida della lignina e della cellulosa, mentre il rivoltamento periodico (ogni 2–3 giorni) assicura aerazione e omogeneità del processo. Il risultato è un substrato vivo, in grado di sostenere la **fase vegetativa** delle piante (come documentato in [web_zamn_288-fase-vegetativa-cannabis]), fornendo nutrienti a lento rilascio e stimolando lo sviluppo radicale.
+Il meccanismo chiave del compostaggio si basa sulla **termoregolazione naturale**: durante la fase attiva (55–65°C), i microrganismi termofili degradano rapidamente la materia organica, eliminando patogeni e semi di infestanti. Successivamente, con il raffreddamento (fase mesofila), si sviluppano comunità microbiche più stabili, arricchendo il compost di enzimi, ormoni vegetali (auxine, citochinine) e sostanze umiche che favoriscono l’assorbimento radicale. Per le coltivazioni in **Living Soil** a Caserta (41°N), un compost di qualità è fondamentale per sostenere la **fase vegetativa** delle piante, garantendo un substrato ricco di azoto disponibile e microrganismi simbionti.
 
 ---
 
 ## Come si applica in serra
 
-1. **Selezione dei materiali**:
-   - **Verde (azoto)**: scarti di cucina (resti di frutta/verdura), erba fresca, letame (es. stallatico maturo), fondi di caffè.
-   - **Marroni (carbonio)**: foglie secche, paglia, cartone non stampato, ramaglie triturate, trucioli di legno non trattato.
-   - *Rapporto ideale*: 2 parti marroni : 1 parte verde (in volume). Evitare materiali oleosi, carne, latticini o piante malate.
+1. **Selezione dei materiali**
+   - **Verde (azoto)**: scarti di frutta/verdura, erba fresca, letame (es. cavallo o pollo), fondi di caffè.
+   - **Marroni (carbonio)**: foglie secche, paglia, cartone non stampato, rametti triturati.
+   - **Bilanciamento**: rapporto ideale **C:N = 25:1 a 30:1**. Esempio pratico per 1 m³ di compost:
+     - 60% marroni (es. 30 kg foglie secche)
+     - 30% verdi (es. 15 kg erba fresca)
+     - 10% attivatori (letame maturo o compost pronto).
 
-2. **Preparazione del cumulo**:
-   - Scegliere una zona ombreggiata e ben drenata in serra (es. sotto una tettoia o su un letto di paglia).
-   - Disporre i materiali in strati alternati (5–10 cm ciascuno), iniziando con uno strato di marroni per assorbire liquidi in eccesso.
-   - Inumidire leggermente ogni strato (deve essere umido come una spugna strizzata).
+2. **Struttura del cumulo**
+   - **Dimensioni**: altezza 1–1.5 m, larghezza 1–1.2 m (ottimale per trattenere calore).
+   - **Posizione**: in serra o zona ombreggiata, su terreno nudo (non cemento) per favorire l’accesso di lombrichi e microrganismi del suolo.
+   - **Aerazione**: inserire tubi forati o paletti di legno per ossigenare il centro.
 
-3. **Gestione termica e umidità**:
-   - Monitorare la temperatura con un termometro da compost (obiettivo: 55–65°C). Se supera i 70°C, aggiungere marroni per raffreddare.
-   - Mantenere l’umidità al 50–60% (test del pugno: se sgocciola, è troppo bagnato; se si sbriciola, serve acqua).
-   - Rivoltare il cumulo ogni 2–3 giorni con una forca o un compost turner, mescolando bene per ossigenare e uniformare la decomposizione.
+3. **Gestione termica e umidità**
+   - **Temperatura**: monitorare con sonda termica. Se supera 65°C, rivoltare per evitare morte dei microrganismi. Se scende sotto 55°C, aggiungere materiali verdi (es. erba fresca).
+   - **Umidità**: deve essere al **50–60%** (come una spugna strizzata). Se troppo secco, bagnare; se troppo umido, aggiungere marroni e rivoltare.
+   - **Rivoltamenti**: ogni **2–3 giorni** per 3–4 settimane (fase attiva), poi ogni **7–10 giorni** fino a maturazione (8–12 settimane totali).
 
-4. **Maturazione**:
-   - Dopo 4–6 settimane, la temperatura scende sotto i 40°C: il compost è in fase di raffreddamento.
-   - Lasciare maturare ulteriori 2–4 settimane in un cumulo separato o in sacchi traspiranti, fino a ottenere un materiale scuro, friabile e dall’odore di terra umida.
-   - Setacciare con un setaccio
+4. **Maturazione e utilizzo**
+   - **Test di maturità**: compost pronto non deve riscaldarsi dopo rivoltamento, deve avere odore di terra e aspetto scuro/omogeneo.
