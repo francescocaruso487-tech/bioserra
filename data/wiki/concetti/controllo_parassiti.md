@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-25
+aggiornato: 2026-08-26
 pdf_count: 10
 ---
 
@@ -12,28 +12,35 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai parassiti, favorendo al contempo la salute delle piante e la biodiversità microbica. Il meccanismo d'azione si fonda sulla **prevenzione** attraverso la stimolazione della resistenza naturale delle piante (es. produzione di fitoalessine) e l'adozione di strategie preventive come l'uso di oli essenziali, insetti utili e campi elettromagnetici a bassa frequenza. Funziona perché si basa sulla **regolazione naturale dei predatori** (es. acari *Phytoseiulus persimilis* contro gli acari rossi) e sulla **disruptione dei cicli vitali dei parassiti** tramite interferenze fisiche o biochimiche.
+Il **Controllo Parassiti Naturale** è un approccio fitosanitario basato sulla gestione biologica delle infestazioni, che sfrutta i principi dell'ecologia per mantenere l'equilibrio degli ecosistemi colturali. Questo metodo si fonda sulla prevenzione, l'osservazione costante e l'impiego di organismi utili o sostanze naturali per ridurre la pressione dei patogeni senza ricorrere a chimica di sintesi. Il meccanismo d'azione si basa sulla **resilienza del suolo vivente** (Living Soil), dove la biodiversità microbica e la presenza di insetti predatori (come acari o coccinelle) creano un ambiente sfavorevole allo sviluppo di parassiti. Inoltre, l'uso di repellenti naturali (es. olio di neem) o trappole a feromoni altera il comportamento degli insetti, interrompendo i loro cicli riproduttivi.
 
-Questo approccio è particolarmente efficace in **serre outdoor a Caserta (41°N)**, dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, tripidi e acari, ma offre anche condizioni ideali per l'impiego di insetti utili e tecniche di elettrocultura. La chiave del successo risiede nella **proattività**: monitoraggi costanti, applicazione di repellenti naturali e creazione di habitat favorevoli ai nemici naturali dei parassiti. Inoltre, l'integrazione con pratiche di **suolo vivente** (es. compost attivo, micorrize) rafforza la resilienza delle piante, rendendole meno suscettibili agli attacchi.
+Questa strategia è particolarmente efficace in serra outdoor perché l'ambiente controllato limita la dispersione dei parassiti e consente interventi mirati. La chiave del successo risiede nella **proattività**: ispezioni quotidiane, monitoraggio dei sintomi e applicazione tempestiva di soluzioni naturali. Il metodo si allinea ai principi dell'agricoltura rigenerativa, dove la salute delle piante è un riflesso della salute del suolo e dell'ecosistema circostante.
 
 ---
 
 ## Come si applica in serra
 
-### **Fase di Vegetazione**
-1. **Ispezione quotidiana**: Controlla foglie (soprattutto sotto le nervature) e steli con una lente d'ingrandimento. Segna le piante infestate con un nastro colorato per monitorare la diffusione.
-2. **Prevenzione con olio di neem**:
-   - Diluire **5 ml di olio di neem puro** in 1 litro d'acqua + 1 ml di sapone di potassio (adesivante).
-   - Applicare con uno spruzzatore a pressione **ogni 7 giorni** al tramonto (evita l'evaporazione rapida).
-   - Attenzione: non usare in fioritura (può alterare il sapore dei frutti).
-3. **Insetti utili**:
-   - Introduci **acari predatori *Phytoseiulus persimilis*** (10-20 individui/mq) in caso di infestazione da *Tetranychus urticae* (acaro rosso).
-   - Posiziona **coccinelle *Coccinella septempunctata*** (5-10 esemplari/mq) per afidi, soprattutto su pomodori e peperoni.
-4. **Elettrocultura preventiva**:
-   - Installa una **spirale di rame Lakhovsky** (diametro 30 cm) a 30 cm sopra le piante, collegata a un **palo di terra** (profondità 50 cm).
-   - Accendi il circuito **2 ore al giorno** (mattina presto) per stimolare la produzione di fitoalessine.
+### Protocollo base per serra outdoor a Caserta (41°N)
+1. **Ispezione quotidiana**
+   - Controlla **foglie giovani, steli e fiori** (soprattutto sotto le foglie) per individuare uova, larve o adulti di afidi, acari o tripidi.
+   - Usa una **lente d'ingrandimento** per rilevare segni precoci (es. puntini gialli su foglie di pomodoro per acari).
+   - *Strumenti*: Quaderno di campo per registrare infestazioni e interventi.
 
-### **Fase di Fioritura**
-1. **Ridurre gli interventi chimici**: Sostituisci l'olio di neem con **purine di ortica** (1 kg di ortiche fresche in 10 litri d'acqua, fermentate 48 ore) per repellere afidi e tripidi.
-2. **Trappole cromotropiche**:
-   - Usa **trappole gialle adesive** (1 trappola ogni
+2. **Prevenzione con olio di neem**
+   - **Diluizione**: 5–10 ml di olio di neem puro in 1 L d'acqua + 1 cucchiaino di sapone di Marsiglia (adesivante).
+   - **Applicazione**: Spruzza **ogni 7 giorni** (o dopo pioggia) su tutta la pianta, bagnando bene le foglie. Evita le ore calde (meglio mattina presto).
+   - *Effetto*: Repellente per afidi, cocciniglie e mosche bianche; interferisce con la crescita delle larve.
+
+3. **Insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis* per acari, *Amblyseius andersoni* per tripidi):
+     - Rilascia **2–5 individui/m²** all'inizio della vegetazione o al primo segno di infestazione.
+     - *Condizioni*: Umidità >60%, temperatura 20–28°C (ideale per Caserta).
+   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **piante trappola** (es. calendula) per attirarle.
+
+4. **Trappole alternative**
+   - **Trappole a feromoni** per maschi di *Tuta absoluta* (tignola del pomodoro) o mosca bianca.
+   - **Cartoncini gialli appiccicosi** per tripidi (posizionati a 10 cm dalle piante).
+
+5. **Supporto elettroculturale**
+   - Installa una **spirale di rame Lakhovsky** (diametro 30 cm) intorno alla base delle piante più suscettibili (es. pomodoro, peperone).
+   - Collega a un **circuito a valvole termoion
