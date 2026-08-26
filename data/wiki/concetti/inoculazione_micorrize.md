@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-08-25
+aggiornato: 2026-08-26
 pdf_count: 1
 ---
 
@@ -12,26 +12,34 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo la loro rete iphale nel substrato, aumentando così la superficie di assorbimento idrico e minerale della pianta. In cambio, ricevono carboidrati prodotti tramite fotosintesi, creando un rapporto di interdipendenza che migliora la resilienza delle colture agli stress ambientali (siccità, salinità, patogeni) e riduce la necessità di fertilizzanti chimici.
+Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto) fino al 300%. In cambio, la pianta fornisce ai funghi carboidrati prodotti tramite fotosintesi, essenziali per la loro crescita e riproduzione. Questo meccanismo è cruciale in condizioni di stress idrico o nutrizionale, tipiche delle serre meridionali, dove la siccità estiva può limitare l’efficienza radicale.
 
-Il meccanismo d’azione delle micorrize si basa sulla **rete di Hartig** (nelle ectomicorrize) o sulla penetrazione intracellulare (nelle endomicorrize, come i *Glomus*), che consente un flusso bidirezionale di nutrienti. Studi dimostrano che piante inoculate con micorrize possono assorbire fino al **30% in più di fosforo** e **20% in più di azoto**, elementi critici per la crescita vegetativa e la fioritura. Inoltre, la simbiosi stimola la produzione di **glomalina**, una glicoproteina che migliora la struttura del suolo, favorendo l’aggregazione delle particelle e la ritenzione idrica.
+La simbiosi micorrizica non è universale: alcune piante (come le Brassicacee) non formano micorrize, mentre altre (Cannabis, pomodoro, vite) ne traggono benefici significativi. In un ecosistema **Living Soil**, l’inoculazione mirata accelera la colonizzazione del suolo da parte di funghi benefici (ad esempio *Glomus* spp.), migliorando la struttura del terreno attraverso l’aggregazione delle particelle e la produzione di glomalina, una glicoproteina che stabilizza i aggregati. Questo processo è particolarmente vantaggioso in suoli poveri o compattati, tipici di alcune aree campane, dove la biodiversità microbica è ridotta.
+
+---
 
 ## Come si applica in serra
-Per una serra **outdoor Living Soil** a Caserta (41°N), l’inoculazione delle micorrize deve seguire un protocollo mirato alle condizioni climatiche mediterranee, caratterizzate da estati calde e siccitose e inverni miti. Ecco i passaggi pratici:
+Per una serra **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize va eseguita con attenzione al **trapianto** o durante la fase di **vegetazione precoce**, quando le radici sono in fase di sviluppo attivo. Segui questi passaggi:
 
-1. **Preparazione del substrato**:
-   - Assicurarsi che il **Living Soil** sia già ricco di materia organica (compost maturo, humus di lombrico) e abbia un pH compreso tra **6.0 e 7.0**. Evitare terreni troppo compatti o con eccesso di argilla, che limitano la diffusione delle ife.
+1. **Preparazione dell’inoculo**:
+   - Usa un prodotto commerciale a base di spore di funghi micorrizici arbuscolari (AMF) o rizobatteri simbionti (es. *Trichoderma*).
+   - Dose consigliata: **5–10 g per pianta** (adattare in base alla dimensione della radice).
+   - Sciogli l’inoculo in acqua non clorata (lasciare decantare l’acqua del rubinetto per 24 ore o usare acqua piovana).
 
-2. **Scelta dell’inoculo**:
-   - Utilizzare un inoculo commerciale a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus intraradices* o *Rhizophagus irregularis*, specifico per piante erbacee. Verificare che sia certificato per uso agricolo e privo di contaminanti.
+2. **Applicazione**:
+   - **Al trapianto**: mescola l’inoculo al substrato di riempimento della buca o applicalo direttamente sulle radici umide prima di interrare.
+   - **In vegetazione**: diluisci l’inoculo in acqua e irriga intorno alla zona radicale, evitando il contatto diretto con il fusto.
+   - **Post-applicazione**: mantieni il suolo umido (ma non saturo) per 7–10 giorni per favorire la colonizzazione.
 
-3. **Applicazione al trapianto**:
-   - Al momento del trapianto, mescolare **5-10g di inoculo per pianta** direttamente nel foro di impianto, a contatto con le radici. Per piante in vaso, distribuire l’inoculo sul fondo del contenitore prima di aggiungere il substrato.
-   - In alternativa, sciogliere l’inoculo in acqua (seguendo le dosi indicate dal produttore) e irrigare la base della pianta, assicurandosi che il liquido raggiunga le radici.
+3. **Condizioni ottimali**:
+   - **Temperatura del suolo**: tra 15°C e 30°C (evitare periodi di gelo o caldo eccessivo).
+   - **pH**: 6.0–7.5 (ideale per la maggior parte delle AMF).
+   - **Evitare**: fungicidi chimici (soprattutto triazoli e solfuri) nei **30 giorni precedenti e successivi** all’inoculazione, poiché danneggiano i funghi simbionti.
 
-4. **Condizioni post-applicazione**:
-   - Mantenere il substrato **umido ma non zuppo** per 7-10 giorni dopo l’inoculazione, evitando ristagni idrici che potrebbero soffocare le ife.
-   - **Evitare fungicidi** (anche naturali come il rame) nei **30 giorni successivi**, poiché possono uccidere i funghi micorrizici. Se necessario, utilizzare prodotti a base di **bacillus subtilis** o **trichoderma**, che non danneggiano la simbiosi.
+---
 
-5. **Monitoraggio**:
-   - Osservare la crescita delle radici e la risposta della pianta (maggiore vigore, foglie più verdi) dopo 2-3 settimane. In caso di stress idrico, ridurre la frequenza delle irrigazioni grazie alla maggiore capacità
+## Sinergie con altri elementi
+Le micorrize interagiscono positivamente con diverse tecniche di **elettrocultura** e **suolo vivente**, potenziando i loro effetti:
+
+- **Lakhovsky (Onde Multifrequenza)**:
+  Le onde a bassa frequenza (es. 7.83 Hz) stimolano la crescita delle ife micorriziche, accelerando
