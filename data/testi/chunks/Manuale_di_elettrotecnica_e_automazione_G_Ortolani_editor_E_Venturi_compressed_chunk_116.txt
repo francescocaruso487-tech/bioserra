@@ -387,15 +387,7 @@ Domotica, XVI-8, 11
 
 **Contatori**:
 - asincroni binari avanti, XVII-121
-- asincroni binari avanti-indietro, XVII-121
-- modulo, XVII-121
-- sincroni, XVII-124
-
-**Conversione**:
-- A/D, XVII-183
-- D/A, XVII-180
-
-**Convertitore**:
+- asincroni binari avanti-indietro,
 - A/D ad approssimazioni successive, XVII-188
 - D/A con resistori pesati, XVII-186
 
@@ -769,7 +761,6 @@ Boost, convertitore, XVIII-37, 38
 Buck, convertitore, XVIII-37
 
 Buck-Boost, convertitore, XVIII-39, 41
-
 Choppers, convertitori, XVIII-45
 
 Cicloconverter, XVIII-53
@@ -933,7 +924,6 @@ Snubber, XVIII-10, 18
 Snubberless Triac, XVIII-10
 
 Switch, XVIII-37
-
 Switching, alimentatori, XVIII-49
 
 Tensione, di breakdown, XVIII-4, 5, 14
@@ -1123,8 +1113,8 @@ Materiali, XIX-3
   - Elettriche, XIX-12, 16
   - Fisiche, XIX-7, 8
   - Magnetiche, XIX-16, 18
-  - Meccaniche, XIX-8, 10
-  - Tecnologiche, XIX-10, 11
+- Meccaniche, XIX-8, 10
+- Tecnologiche, XIX-10, 11
 - Protettore termico, XIX-104
 - Prove di fatica, XIX-10
 - Pulsante, XIX-54, 87
@@ -1210,7 +1200,7 @@ Progettazione elettrica ed elettronica
 - Bread-boarding, XX-121
 - Cablaggio delle apparecchiature elettriche, XX-120
 - Calcoli, esecutivi, XX-8, 68, 86
-- Preliminari, XX-7
+  - Preliminari, XX-7
 - Capacità termica, XX-146
 - Capitolato speciale d’appalto, XX-8, 44, 72, 96
 - Categorie di rischio, XX-124÷126
@@ -1220,12 +1210,12 @@ Progettazione elettrica ed elettronica
 - Circuito, di autozero, XX-205
   - Elettro-termico, XX-142, 147
 - Circuiti stampati, XX-110, 120, 135÷137
-- A due facce, XX-136
-- Flessibili, XX-140, 141
-- Materiali per i, XX-140
-- Metodi per l’assemblaggio dei, XX-128÷130
-- Monofaccia, XX-136
-- Processi di fabbricazione dei, XX-133÷140
+  - A due facce, XX-136
+  - Flessibili, XX-140, 141
+  - Materiali per i, XX-140
+  - Metodi per l’assemblaggio dei, XX-128÷130
+  - Monofaccia, XX-136
+  - Processi di fabbricazione dei, XX-133÷140
 - Coefficiente di sicurezza, XX-115
 - Collaudi e verifiche a termine lavori, esami a vista, XX-43
   - Misure e prove strumentali, XX-43
@@ -1234,7 +1224,7 @@ Progettazione elettrica ed elettronica
 - Computo metrico, XX-7, 74, 95
   - Estimativo, XX-7, 74
 - Dissipatori termici, XX-141, 174, 182
-- Dimensionamento dei, XX-142÷144
+  - Dimensionamento dei, XX-142÷144
 - Dissipazione del calore, XX-119
 - Documentazione, del progetto definitivo, XX-7
   - Del progetto esecutivo, XX-7
