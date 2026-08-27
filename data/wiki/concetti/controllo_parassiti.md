@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-26
+aggiornato: 2026-08-27
 pdf_count: 10
 ---
 
@@ -12,35 +12,30 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è un approccio fitosanitario basato sulla gestione biologica delle infestazioni, che sfrutta i principi dell'ecologia per mantenere l'equilibrio degli ecosistemi colturali. Questo metodo si fonda sulla prevenzione, l'osservazione costante e l'impiego di organismi utili o sostanze naturali per ridurre la pressione dei patogeni senza ricorrere a chimica di sintesi. Il meccanismo d'azione si basa sulla **resilienza del suolo vivente** (Living Soil), dove la biodiversità microbica e la presenza di insetti predatori (come acari o coccinelle) creano un ambiente sfavorevole allo sviluppo di parassiti. Inoltre, l'uso di repellenti naturali (es. olio di neem) o trappole a feromoni altera il comportamento degli insetti, interrompendo i loro cicli riproduttivi.
+Il **Controllo Parassiti Naturale** è un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull’equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil**, dove la biodiversità microbica e macrobiologica (funghi, batteri, insetti utili) agisce come primo baluardo contro patogeni e parassiti. Il suolo vivo, ricco di humus stabile (come descritto da Albert Howard in [pdf_7]), crea un ambiente sfavorevole per organismi dannosi, poiché promuove la competizione per risorse e la produzione di metaboliti secondari (es. chitinosi da funghi antagonisti) che inibiscono lo sviluppo di parassiti. Inoltre, l’uso di **insetti utili** (acari predatori, coccinelle, crisope) e **barriere fisiche** (reti, oli essenziali) riduce la necessità di interventi drastici, preservando la salute del suolo e delle piante.
 
-Questa strategia è particolarmente efficace in serra outdoor perché l'ambiente controllato limita la dispersione dei parassiti e consente interventi mirati. La chiave del successo risiede nella **proattività**: ispezioni quotidiane, monitoraggio dei sintomi e applicazione tempestiva di soluzioni naturali. Il metodo si allinea ai principi dell'agricoltura rigenerativa, dove la salute delle piante è un riflesso della salute del suolo e dell'ecosistema circostante.
+Il meccanismo d’azione si fonda su tre pilastri:
+1. **Prevenzione**: Un suolo equilibrato con rapporto C/N ottimale (grazie a compost Indore e urine animali [pdf_7]) favorisce piante vigorose, meno suscettibili agli attacchi.
+2. **Regolazione biologica**: L’introduzione di **predatori naturali** (es. *Phytoseiulus persimilis* contro gli acari) crea un controllo dinamico delle popolazioni dannose.
+3. **Difese chimiche naturali**: L’uso di **olio di neem** (azadiractina) o estratti di ortica/equiseto agisce come repellente e regolatore della crescita degli insetti, senza alterare l’ecosistema.
+
+Questo approccio è particolarmente efficace in serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, tripidi e acari, ma offre anche condizioni ideali per la loro regolazione naturale grazie a temperature miti e umidità controllata.
 
 ---
 
 ## Come si applica in serra
 
-### Protocollo base per serra outdoor a Caserta (41°N)
-1. **Ispezione quotidiana**
-   - Controlla **foglie giovani, steli e fiori** (soprattutto sotto le foglie) per individuare uova, larve o adulti di afidi, acari o tripidi.
-   - Usa una **lente d'ingrandimento** per rilevare segni precoci (es. puntini gialli su foglie di pomodoro per acari).
-   - *Strumenti*: Quaderno di campo per registrare infestazioni e interventi.
+### **Fase di Vegetazione**
+1. **Ispezione quotidiana**:
+   - Controlla **foglie giovani, gemme e steli** (soprattutto sotto le foglie) per rilevare uova, larve o adulti di afidi, tripidi o acari.
+   - Usa una **lente d’ingrandimento** per identificare parassiti precocemente (es. acari *Tetranychus urticae* con macchie gialle sulle foglie).
 
-2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5–10 ml di olio di neem puro in 1 L d'acqua + 1 cucchiaino di sapone di Marsiglia (adesivante).
-   - **Applicazione**: Spruzza **ogni 7 giorni** (o dopo pioggia) su tutta la pianta, bagnando bene le foglie. Evita le ore calde (meglio mattina presto).
-   - *Effetto*: Repellente per afidi, cocciniglie e mosche bianche; interferisce con la crescita delle larve.
+2. **Prevenzione con olio di neem**:
+   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d’acqua.
+   - **Applicazione**: Nebulizza sulle piante **ogni 7 giorni** al tramonto (evita ore calde per non bruciare le foglie). Copri uniformemente, soprattutto le parti inferiori delle foglie.
+   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione acuta.
 
-3. **Insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis* per acari, *Amblyseius andersoni* per tripidi):
-     - Rilascia **2–5 individui/m²** all'inizio della vegetazione o al primo segno di infestazione.
-     - *Condizioni*: Umidità >60%, temperatura 20–28°C (ideale per Caserta).
-   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **piante trappola** (es. calendula) per attirarle.
-
-4. **Trappole alternative**
-   - **Trappole a feromoni** per maschi di *Tuta absoluta* (tignola del pomodoro) o mosca bianca.
-   - **Cartoncini gialli appiccicosi** per tripidi (posizionati a 10 cm dalle piante).
-
-5. **Supporto elettroculturale**
-   - Installa una **spirale di rame Lakhovsky** (diametro 30 cm) intorno alla base delle piante più suscettibili (es. pomodoro, peperone).
-   - Collega a un **circuito a valvole termoion
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di acari rossi. Ripeti ogni 2 settimane fino al controllo.
+   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **5–10 adulti/pianta** in caso di afidi. Puoi allevarle in serra usando piante trappola (es. *Calendula officinalis*).
+   - **Crisope** (*Chrysoperla carnea*): Rilas
