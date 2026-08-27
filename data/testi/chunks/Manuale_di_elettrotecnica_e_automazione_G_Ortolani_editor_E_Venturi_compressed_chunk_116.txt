@@ -223,28 +223,7 @@ Luogo delle radici, XV-32
 - risposta a regime,
 Stabilità e criteri di stabilità, XV-22
 - criterio di Hurwitz, XV-23
-- criterio di Routh, XV-23
-- limite di stabilità, XV-23
-- margine di fase, XV-35
-- margine di guadagno, XV-35
-- metodi numerici, XV-24
-- stabilità relativa, XV-35
-
-Stazionarietà, XV-10
-Subroutine, XV-54
-
-Tecniche Digitali, XV-52
-Tempo di assestamento, XV-15
-Tempo di ciclo, XV-54, 55
-Tempo di ritardo, XV-15
-Tempo di salita, XV-15
-
-Teorema di Cauchy, XV-26
-- di Shannon, XV-45
-
-Trasformata di Fourier, XV-45
-Trasformata di Laplace, XV-17, 18
-- proprietà, XV-18
+- criterio di Routh,
 - teorema del valore iniziale, XV-20
 - teorema del valore finale, XV-20
 
@@ -392,7 +371,6 @@ Domotica, XVI-8, 11
 - D/A con resistori pesati, XVII-186
 
 **Teorema di De Morgan**, XVII-89
-
 **Decodifica**, circuiti, XVII-107
 
 **Demultiplexer**, XVII-110
@@ -570,6 +548,7 @@ Numerazione:
 - ottale, XVII-84
 Numeri binari con segno, XVII-85
 - operazioni aritmetiche su numeri binari, XVII-84, 85
+
 Porte OR, XVII-98
 Oscillatori, XVII-135
 - a cristallo, XVII-138
@@ -928,8 +907,6 @@ Switching, alimentatori, XVIII-49
 
 Tensione, di breakdown, XVIII-4, 5, 14
 - di breakover, XVIII-7, 10
-
-Termico, equilibrio, XVIII-20
 - regime, XVIII-20
 
 Tiristori, XVIII-49
@@ -1118,12 +1095,12 @@ Materiali, XIX-3
 - Protettore termico, XIX-104
 - Prove di fatica, XIX-10
 - Pulsante, XIX-54, 87
-  - Codici colori, XIX-89
+- Codici colori, XIX-89
 - Relè, XIX-69, 85
-  - Magnetotermico, XIX-102
-  - Passo-passo, XIX-70
-  - Statico, XIX-82
-  - Termico, XIX-103
+- Magnetotermico, XIX-102
+- Passo-passo, XIX-70
+- Statico, XIX-82
+- Termico, XIX-103
 - Regolatore di livello, XIX-90
 - Resilienza, XIX-10
 - Resine, XIX-20
