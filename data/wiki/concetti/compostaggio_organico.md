@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-08-26
+aggiornato: 2026-08-27
 pdf_count: 6
 ---
 
@@ -12,31 +12,40 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (come lombrichi e artropodi), che decompongono la sostanza organica in presenza di ossigeno (processo **aerobico**). Il risultato è un substrato umico, poroso e bilanciato, capace di migliorare la struttura del suolo, trattenere acqua e nutrienti, e stimolare la vita microbica essenziale per un **Living Soil** outdoor.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata dei materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (come lombrichi e artropodi), che decompongono la sostanza organica in presenza di ossigeno (processo aerobico). Il risultato è un substrato umificato, con un rapporto C/N (carbonio/azoto) equilibrato, che migliora la struttura del suolo, la capacità di scambio cationico (CSC) e la biodiversità microbica.
 
-Il meccanismo chiave del compostaggio si basa sulla **termoregolazione naturale**: durante la fase attiva (55–65°C), i microrganismi termofili degradano rapidamente la materia organica, eliminando patogeni e semi di infestanti. Successivamente, con il raffreddamento (fase mesofila), si sviluppano comunità microbiche più stabili, arricchendo il compost di enzimi, ormoni vegetali (auxine, citochinine) e sostanze umiche che favoriscono l’assorbimento radicale. Per le coltivazioni in **Living Soil** a Caserta (41°N), un compost di qualità è fondamentale per sostenere la **fase vegetativa** delle piante, garantendo un substrato ricco di azoto disponibile e microrganismi simbionti.
+In un **Living Soil** outdoor, il compost agisce come:
+- **Riserva di nutrienti a lenta cessione**: rilascia azoto, fosforo e potassio in modo graduale, evitando carenze o eccessi tipici dei fertilizzanti sintetici.
+- **Miglioratore fisico**: aumenta la porosità, la ritenzione idrica e la capacità di aggregazione del suolo, contrastando la compattazione.
+- **Attivatore biologico**: introduce microrganismi benefici (es. *Pseudomonas*, *Bacillus*) che competono con patogeni e promuovono la salute radicale.
+- **Tamponatore del pH**: neutralizza acidità o alcalinità eccessive, favorendo l’assorbimento dei nutrienti.
+
+Il compost di qualità si distingue per:
+- **Odore terroso e privo di ammoniaca** (assenza di fermentazione anaerobica).
+- **Colore scuro e struttura simile a terriccio** (assenza di materiali non decomposti).
+- **Temperatura stabile** (indicatore di processo completato).
 
 ---
 
 ## Come si applica in serra
+Per produrre compost di qualità in una **serra outdoor a Caserta (41°N)**, segui queste fasi pratiche, ottimizzate per il clima mediterraneo (estati calde e umide, inverni miti):
 
-1. **Selezione dei materiali**
-   - **Verde (azoto)**: scarti di frutta/verdura, erba fresca, letame (es. cavallo o pollo), fondi di caffè.
-   - **Marroni (carbonio)**: foglie secche, paglia, cartone non stampato, rametti triturati.
-   - **Bilanciamento**: rapporto ideale **C:N = 25:1 a 30:1**. Esempio pratico per 1 m³ di compost:
-     - 60% marroni (es. 30 kg foglie secche)
-     - 30% verdi (es. 15 kg erba fresca)
-     - 10% attivatori (letame maturo o compost pronto).
+### 1. **Selezione dei materiali**
+- **Materiali verdi (ricchi di azoto, C/N < 30)**:
+  - Scarti di ortaggi/foglie fresche (es. lattuga, bietole).
+  - Erba tagliata (evitare erbe infestanti con semi).
+  - Letame fresco (equino, bovino, avicolo) – *attenzione: non superare il 20% del volume totale*.
+  - Fondi di caffè (in piccole quantità, per acidificare leggermente).
+- **Materiali marroni (ricchi di carbonio, C/N > 30)**:
+  - Paglia, fieno, foglie secche.
+  - Cartone non stampato (sminuzzato).
+  - Segatura di legno non trattato (in quantità moderate, per evitare eccesso di lignina).
+  - Gusci di frutta secca (noci, mandorle).
 
-2. **Struttura del cumulo**
-   - **Dimensioni**: altezza 1–1.5 m, larghezza 1–1.2 m (ottimale per trattenere calore).
-   - **Posizione**: in serra o zona ombreggiata, su terreno nudo (non cemento) per favorire l’accesso di lombrichi e microrganismi del suolo.
-   - **Aerazione**: inserire tubi forati o paletti di legno per ossigenare il centro.
+**Bilanciamento C/N**: Per un compost equilibrato, mira a un rapporto **25:1–30:1**. Esempio pratico:
+- 3 parti marroni (es. 3 kg di foglie secche) + 1 parte verde (es. 1 kg di scarti di ortaggi).
 
-3. **Gestione termica e umidità**
-   - **Temperatura**: monitorare con sonda termica. Se supera 65°C, rivoltare per evitare morte dei microrganismi. Se scende sotto 55°C, aggiungere materiali verdi (es. erba fresca).
-   - **Umidità**: deve essere al **50–60%** (come una spugna strizzata). Se troppo secco, bagnare; se troppo umido, aggiungere marroni e rivoltare.
-   - **Rivoltamenti**: ogni **2–3 giorni** per 3–4 settimane (fase attiva), poi ogni **7–10 giorni** fino a maturazione (8–12 settimane totali).
-
-4. **Maturazione e utilizzo**
-   - **Test di maturità**: compost pronto non deve riscaldarsi dopo rivoltamento, deve avere odore di terra e aspetto scuro/omogeneo.
+### 2. **Preparazione del cumulo**
+- **Ubicazione**: Scegli un’area ombreggiata in serra (evita il sole diretto per prevenire essiccazione) e con drenaggio (evita ristagni).
+- **Struttura**: Costruisci un cumulo a forma di cono o piramide (altezza 1–1.5 m, base 1–1.5 m) per ottimizzare aerazione e trattenere umidità.
+- **Strato di base**: Posiziona
