@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-26
+aggiornato: 2026-08-27
 pdf_count: 8
 ---
 
@@ -12,31 +12,27 @@ pdf_count: 8
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, noto come **estrazione microbica**, consente di trasferire nel liquido batteri benefici (come *Pseudomonas*, *Bacillus*), funghi micorrizici, protozoi e sostanze umiche, che agiscono come biofertilizzanti e biostimolanti per le piante. L’aerazione costante durante la preparazione (24 ore) evita la proliferazione di batteri anaerobici dannosi, garantendo un prodotto ricco di ossigeno e microbi aerobi, fondamentali per la salute del suolo e delle piante.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ricco di microrganismi benefici, enzimi, acidi umici e nutrienti solubili, ottenuto dalla fermentazione controllata di compost maturo in acqua. Questo prodotto, applicabile sia per via fogliare che radicale, rappresenta uno dei cardini della gestione del **Living Soil**, poiché stimola la biodiversità microbica del suolo e rafforza la resilienza delle piante contro patogeni e stress ambientali. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi presenti nel tè (batteri, funghi, attinomiceti) colonizzano la rizosfera e la filosfera, competendo con agenti patogeni, solubilizzando nutrienti (es. fosforo, potassio) e producendo sostanze bioattive come auxine, citochinine e antibiotici naturali. Inoltre, il tè di compost migliora la struttura del suolo, aumentando la capacità di ritenzione idrica e la porosità, elementi cruciali per le coltivazioni outdoor in clima mediterraneo come quello di Caserta (41°N), dove estati calde e siccitose possono stressare le piante.
 
-Il meccanismo d’azione si basa sulla **nutrizione indiretta** e sulla **protezione biologica**. I microrganismi del tè colonizzano la rizosfera, competendo con patogeni come *Fusarium* o *Phytophthora*, e migliorano l’assorbimento dei nutrienti attraverso la solubilizzazione di fosforo e micronutrienti. Inoltre, le sostanze umiche e gli acidi fulvici presenti nel compost stimolano la crescita radicale e la resistenza delle piante agli stress abiotici (siccità, salinità). Per i coltivatori di *Cannabis* in **Living Soil** outdoor a Caserta (41°N), il tè di compost rappresenta uno strumento chiave per mantenere un suolo vivo e resiliente, soprattutto durante le fasi di vegetazione e fioritura, quando la domanda nutrizionale è massima.
+La preparazione aerobica (con aeratore) è fondamentale per evitare la proliferazione di batteri anaerobici, che potrebbero produrre composti tossici come l'acido solfidrico o il metano. L'aggiunta di melassa (o altri substrati carboniosi come zucchero di canna) fornisce energia ai microrganismi, accelerando la loro crescita e moltiplicazione. L'applicazione entro 4 ore dalla preparazione garantisce la massima vitalità dei microrganismi, poiché dopo questo lasso di tempo la popolazione microbica inizia a declinare e possono svilupparsi patogeni. Studi hanno dimostrato che il tè di compost può aumentare la resa delle colture fino al 30% e ridurre l'incidenza di malattie fungine come *Botrytis* o *Fusarium*, grazie all'effetto protettivo dei batteri antagonisti (es. *Pseudomonas* spp. o *Bacillus*).
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, segui queste istruzioni pratiche per preparare e applicare il tè di compost:
 
-### **Materiali necessari**
-- Compost maturo (preferibilmente vermicompost o compost da letame maturo, 1–2 anni)
-- Acqua non clorata (lasciare decantare l’acqua del rubinetto per 24h o usare acqua piovana)
-- Aeratore per acquario (con pietra porosa)
-- Melassa biologica (1–2 cucchiai per 10L) o zucchero di canna
-- Contenitore in plastica o vetro (evitare metalli)
-- Filtro a maglia fine (per applicazione fogliare)
-- Pompa a spruzzo o sistema di irrigazione a goccia
+### Preparazione (per 10L di tè)
+1. **Materiali necessari**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturo da almeno 6 mesi).
+   - Acqua non clorata (lasciare decantare l'acqua del rubinetto per 24h o usare acqua piovana).
+   - Aeratore per acquario (con pietra porosa) o pompa ad aria.
+   - Melassa biologica (1-2 cucchiai per 10L) o zucchero di canna.
+   - Filtro a maglia fine (per rimuovere residui solidi).
+   - Tanica in plastica o vetro (evitare metalli).
 
-### **Procedura (24 ore)**
-1. **Preparazione del compost**: Usa 1 parte di compost per 5–10 parti di acqua (es. 1kg di compost in 10L di acqua). Evita compost fresco o con residui di pesticidi.
-2. **Aerazione**: Immergi la pietra porosa dell’aeratore nel compost immerso e mantieni l’ossigenazione costante per 24 ore. La temperatura ideale è tra 18–25°C.
-3. **Nutrizione microbica**: Aggiungi la melassa dopo 12 ore dall’inizio dell’aerazione per alimentare i batteri. Dosaggio: 1–2 cucchiai per 10L.
-4. **Filtraggio**: Dopo 24 ore, filtra il liquido con un tessuto a maglia fine per rimuovere i residui solidi (opzionale per applicazione fogliare).
-5. **Applicazione immediata**: Usa il tè entro 4 ore dalla preparazione per massimizzare l’attività microbica. Evita l’esposizione alla luce solare diretta.
-
-### **Modalità di applicazione**
-- **Radicale**: Irriga il suolo alla base delle piante con un rapporto 1:1 (tè:acqua) ogni 7–14 giorni, soprattutto durante la vegetazione.
-- **Fogliare**: Spruzza il tè filtrato
+2. **Procedura**:
+   - Riempire la tanica con **10L di acqua** e aggiungere **1-2kg di compost** (rapporto 1:5 o 1:10 compost/acqua).
+   - Immergere un sacchetto di tela o una retina per evitare che il compost si disperda.
+   - Aggiungere **1-2 cucchiai di melassa** e mescolare.
+   - Avviare l'**aeratore** per 24h, mantenendo la temperatura tra **18-25°C** (evitare il surriscaldamento).
+   - Dopo 24h, filtrare il liquido con un panno pulito o una retina fine per rimuovere i residui solidi.
+   - **Applicare immediatamente** per via fogliare (con nebulizzatore) o radicale (irrigazione), diluendo se necessario (es. 1:
