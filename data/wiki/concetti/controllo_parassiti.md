@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-27
+aggiornato: 2026-08-28
 pdf_count: 10
 ---
 
@@ -12,30 +12,31 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull’equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil**, dove la biodiversità microbica e macrobiologica (funghi, batteri, insetti utili) agisce come primo baluardo contro patogeni e parassiti. Il suolo vivo, ricco di humus stabile (come descritto da Albert Howard in [pdf_7]), crea un ambiente sfavorevole per organismi dannosi, poiché promuove la competizione per risorse e la produzione di metaboliti secondari (es. chitinosi da funghi antagonisti) che inibiscono lo sviluppo di parassiti. Inoltre, l’uso di **insetti utili** (acari predatori, coccinelle, crisope) e **barriere fisiche** (reti, oli essenziali) riduce la necessità di interventi drastici, preservando la salute del suolo e delle piante.
+Il **Controllo Parassiti Naturale** è un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sull'uso di sostanze chimiche sintetiche. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai parassiti, promuovendo al contempo la salute delle piante. Il meccanismo d'azione si fonda sulla **prevenzione** (mantenimento di un suolo ricco di microrganismi benefici) e sulla **regolazione naturale** (introduzione di predatori naturali o repellenti botanici). Funziona perché un ecosistema equilibrato riduce lo stress delle piante, rendendole meno suscettibili agli attacchi, mentre i metodi naturali (come l'olio di neem o gli insetti utili) agiscono in sinergia con i processi biologici del suolo.
 
-Il meccanismo d’azione si fonda su tre pilastri:
-1. **Prevenzione**: Un suolo equilibrato con rapporto C/N ottimale (grazie a compost Indore e urine animali [pdf_7]) favorisce piante vigorose, meno suscettibili agli attacchi.
-2. **Regolazione biologica**: L’introduzione di **predatori naturali** (es. *Phytoseiulus persimilis* contro gli acari) crea un controllo dinamico delle popolazioni dannose.
-3. **Difese chimiche naturali**: L’uso di **olio di neem** (azadiractina) o estratti di ortica/equiseto agisce come repellente e regolatore della crescita degli insetti, senza alterare l’ecosistema.
-
-Questo approccio è particolarmente efficace in serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, tripidi e acari, ma offre anche condizioni ideali per la loro regolazione naturale grazie a temperature miti e umidità controllata.
+Questa strategia è particolarmente efficace in serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, acari e cocciniglie. L'approccio naturale evita l'accumulo di residui tossici e preserva la biodiversità, cruciale per la resilienza del sistema. Inoltre, l'integrazione con tecniche elettromagnetiche (come le spirali di Lakhovsky) può potenziare la risposta immunitaria delle piante, rendendole più resistenti.
 
 ---
 
 ## Come si applica in serra
 
 ### **Fase di Vegetazione**
-1. **Ispezione quotidiana**:
-   - Controlla **foglie giovani, gemme e steli** (soprattutto sotto le foglie) per rilevare uova, larve o adulti di afidi, tripidi o acari.
-   - Usa una **lente d’ingrandimento** per identificare parassiti precocemente (es. acari *Tetranychus urticae* con macchie gialle sulle foglie).
-
+1. **Ispezione quotidiana**: Controlla foglie (soprattutto sotto il lato inferiore) e steli per segni di infestazione (es. melata, ragnatele, fori). Usa una lente d'ingrandimento per identificare parassiti come *Trialeurodes vaporariorum* (mosca bianca) o *Tetranychus urticae* (ragnetto rosso).
 2. **Prevenzione con olio di neem**:
-   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d’acqua.
-   - **Applicazione**: Nebulizza sulle piante **ogni 7 giorni** al tramonto (evita ore calde per non bruciare le foglie). Copri uniformemente, soprattutto le parti inferiori delle foglie.
-   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione acuta.
-
+   - Diluire **5 ml di olio di neem puro** in 1 litro d'acqua + 1 cucchiaino di sapone di Marsiglia (adesivo).
+   - Applicare con nebulizzatore **ogni 7 giorni** al tramonto, evitando le ore calde.
+   - Coprire uniformemente, soprattutto sulle giovani foglie.
 3. **Introduzione di insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di acari rossi. Ripeti ogni 2 settimane fino al controllo.
-   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **5–10 adulti/pianta** in caso di afidi. Puoi allevarle in serra usando piante trappola (es. *Calendula officinalis*).
-   - **Crisope** (*Chrysoperla carnea*): Rilas
+   - **Acari predatori** (*Phytoseiulus persimilis* per ragnetto rosso, *Amblyseius andersoni* per trips).
+   - **Coccinelle** (*Coccinella septempunctata*) per afidi: rilasciare **5-10 individui/m²** in caso di infestazione.
+   - **Crisopidi** (*Chrysoperla carnea*) per uova di lepidotteri.
+4. **Elettrocultura preventiva**:
+   - Posizionare una **spirale di rame (Lakhovsky)** a 30 cm sopra le piante, collegata a un'antenna di terra in rame interrata a 50 cm di profondità.
+   - Attivare il circuito **2 volte/settimana per 1 ora** al mattino (ore 8-10).
+
+### **Fase di Fioritura**
+1. **Ridurre interventi chimici**: Sostituire l'olio di neem con **sapone potassico** (1%) per evitare residui sui fiori.
+2. **Trappole cromotropiche**:
+   - Usare **trappole gialle o blu** (adesive) per monitorare mosca bianca e trips. Sostituire ogni 2 settimane.
+3. **Potenziamento elettromagnetico**:
+   - Aumentare la frequenza dell'elettrocultura a **3 volte/settimana** (1 ora), regolando l'antenna su
