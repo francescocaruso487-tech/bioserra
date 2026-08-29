@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-28T14:27:32.986711+00:00",
+  "lastUpdate": "2026-08-29T09:15:09.996704+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,58 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "nome": "Effetto della 'Settima Lettura' su piante di pianta in Living Soil: studio comparativo tra irrigazione con acqua strutturata e acqua non strutturata",
-      "ipotesi": "L'irrigazione con acqua strutturata secondo i principi delle 'sette letture' del Corano (variazioni testuali come metafora di differenze di assorbimento e risposta fisiologica) aumenterà la biomassa radicale e la resa in fiori delle piante di pianta (rif. Manuale A: coltivazione di funghi allucinogeni come sistema di controllo delle sostanze psicoattive; Manuale B: sette letture coraniche come sistema di canalizzazione dell'esperienza trascendentale). L'acqua strutturata, analogamente alle letture coraniche, potrebbe indurre una risposta adattativa nelle piante, mimando un 'controllo' delle dinamiche di crescita.",
-      "protocollo": [
-        "Preparare 14 piante di pianta femminizzate (varietà CBD-dominante, stessa genetica) in Living Soil identico (stesso substrato, stesso inoculo micorrizico). Dividere in due gruppi: Gruppo A (7 piante) e Gruppo B (7 piante).",
-        "Per il Gruppo A, preparare acqua strutturata secondo il principio delle 'sette letture': utilizzare un metodo di elettrocultura a bassa frequenza (es. 7 Hz per 7 minuti) per 'imprimere' l'acqua con una sequenza di impulsi variabili (simulando le sette letture). Per il Gruppo B, utilizzare acqua non trattata (controllo).",
-        "Irrigare entrambi i gruppi con la stessa quantità di acqua (water-only) ogni 48 ore, mantenendo condizioni ambientali identiche (umidità, temperatura, luce).",
-        "Dopo 30 giorni, raccogliere dati: peso fresco e secco delle radici, peso fresco e secco dei fiori, numero di nodi, lunghezza delle radici. Confrontare le medie tra i due gruppi."
-      ],
-      "materiali": [
-        "14 piante di pianta femminizzate CBD-dominante",
-        "Living Soil identico (stesso substrato e inoculo micorrizico)",
-        "Sistema di elettrocultura a bassa frequenza (es. generatore di onde sinusoidali 7 Hz)",
-        "Bilancia di precisione",
-        "Righello e calibro per misure morfologiche",
-        "Datalogger per umidità e temperatura"
-      ],
-      "durata_giorni": 30,
-      "misure": [
-        "Peso fresco e secco delle radici (g)",
-        "Peso fresco e secco dei fiori (g)",
-        "Numero di nodi e lunghezza delle radici (cm)",
-        "Confrontare le medie tra Gruppo A e Gruppo B con test t di Student"
-      ],
-      "variabili_controllo": "Genetica delle piante, substrato, inoculo micorrizico, quantità di acqua, frequenza di irrigazione, condizioni ambientali (luce, umidità, temperatura), metodo di strutturazione dell'acqua (solo frequenza e tempo, non intensità).",
-      "categoria": "elettrocultura|living_soil",
-      "difficoltà": "media",
-      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
-      "fonte_b": "IL+CORANO",
-      "originalità": "L'esperimento unisce il concetto di 'controllo' delle sostanze psicoattive (funghi allucinogeni nel Manuale A) con quello di 'canalizzazione' delle esperienze trascendentali (sette letture coraniche nel Manuale B), applicando un metodo di elettrocultura ispirato alle variazioni testuali coraniche per strutturare l'acqua di irrigazione. Nessun manuale singolo suggerisce un approccio del genere, né esiste una letteratura che colleghi direttamente la strutturazione dell'acqua a principi testuali religiosi o a sistemi di controllo delle sostanze.",
-      "id": "esp_conn_2026-06-29_002",
-      "data_proposta": "2026-06-29",
-      "attivo": false,
-      "tipo": "connessione_pairwise"
-    },
-    {
-      "id": "daily_1781640025709_2",
-      "nome": "Tecnica di prunning",
-      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "forbici",
-        "guanti"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
     {
       "id": "daily_1781640025709_1",
       "nome": "Monitoraggio del pH",
@@ -4185,14 +4133,85 @@
       "data_proposta": "2026-08-21",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e acqua distillata sulla qualità delle cime senza trattamento post-raccolta",
+      "ipotesi": "Coltivando pianta in Living Soil (Manuale A) e utilizzando esclusivamente acqua distillata per l'irrigazione e il lavaggio finale delle cime (Manuale B), si otterrà una riduzione significativa delle impurità residue (clorofilla, minerali, sapore erbaceo) senza necessità di curing tradizionale o trattamenti aggressivi post-raccolta. L'ipotesi si basa sul fatto che il terreno biologico minimizza l'accumulo di sostanze indesiderate nelle piante (Manuale A), mentre l'acqua distillata evita contaminazioni residue durante il lavaggio finale (Manuale B), preservando terpeni e qualità organolettica.",
+      "protocollo": [
+        "Preparare due lotti identici di piante di pianta (stessa genetica, stessa fase di crescita) in serra BioSerra Caserta, utilizzando Living Soil certificato (compost, biochar, micorrize) in vasi da 10L con drenaggio ottimale (Manuale A).",
+        "Irrigare entrambe le colture esclusivamente con acqua distillata (Manuale B) per tutto il ciclo, monitorando pH (5.5-6.5) e EC (<0.8 mS/cm).",
+        "A 2 settimane dalla raccolta, dividere ogni lotto in due sottogruppi: uno subirà il lavaggio finale con acqua distillata (24h immersione, cambio acqua ogni 8h) (Manuale B), l'altro verrà essiccato senza trattamento (controllo).",
+        "Dopo l'essiccazione (10 giorni a 18°C e 60% umidità), analizzare le cime con test organolettico (sapore, aroma) e laboratorio per residui di clorofilla, minerali e terpeni (GC-MS). Confrontare i risultati tra i gruppi."
+      ],
+      "materiali": [
+        "Living Soil certificato (compost, biochar, micorrize)",
+        "Acqua distillata (EC <0.1 mS/cm)",
+        "pHmetro e conduttivimetro",
+        "Vasi in terracotta con drenaggio (10L)",
+        "Test di laboratorio per residui (clorofilla, minerali, terpeni)",
+        "Bilancia di precisione (0.01g)"
+      ],
+      "durata_giorni": 45,
+      "misure": [
+        "Residui di clorofilla (spettrofotometria a 663nm)",
+        "Concentrazione di terpeni (GC-MS)",
+        "Sapore e aroma (panel sensoriale con 5 giudici esperti)",
+        "Peso secco delle cime (perdita di massa dovuta al lavaggio)",
+        "EC dell'acqua di lavaggio (per valutare l'estrazione di minerali)"
+      ],
+      "variabili_controllo": "Genetica delle piante, fase di crescita, condizioni ambientali della serra (temperatura, umidità, luce), metodo di essiccazione, dosaggio di acqua distillata per irrigazione e lavaggio.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "Questo esperimento combina due approcci solitamente trattati separatamente: l'uso di Living Soil per prevenire l'accumulo di impurità (Manuale A) e l'acqua distillata per il lavaggio finale (Manuale B). Nessuno dei due manuali suggerisce di integrare queste tecniche in un unico protocollo per eliminare la necessità di curing tradizionale, rendendo l'esperimento originale e applicabile a coltivazioni outdoor in Living Soil.",
+      "id": "esp_conn_2026-08-29_001",
+      "data_proposta": "2026-08-29",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra substrato biologico in vaso e semi femminizzati su resa in CBD/THC in Living Soil",
+      "ipotesi": "L'uso combinato di vasi con terreno biologico (Living Soil) e semi femminizzati (Manuale A + Manuale B) aumenterà la resa in CBD/THC del 20-30% rispetto a controlli con terreno standard e semi regolari. Il terreno biologico favorisce lo sviluppo radicale (Manuale A), mentre i semi femminizzati eliminano sprechi di risorse (Manuale B), massimizzando l'assorbimento di nutrienti e la produzione di cannabinoidi.",
+      "protocollo": [
+        "Preparare 20 vasi identici (10L) con Living Soil (compost maturo, micorrize, vermicompost) e 20 vasi con terreno standard (torba + perlite). Suddividere ciascun gruppo in due sottogruppi: semi femminizzati (varietà ad alto CBD, 15% CBD) e semi regolari (stessa genetica).",
+        "Piantare 5 semi per vaso (distanza 30cm), mantenendo umidità costante con sola acqua (water-only). Posizionare i vasi in serra BioSerra Caserta con esposizione solare identica e temperatura controllata (22-28°C).",
+        "Dopo 2 settimane (fase vegetativa), misurare altezza, numero di foglie e biomassa radicale (pesata secca). Applicare un trattamento di elettrocultura a bassa intensità (5V DC, 1 ora/giorno) solo ai vasi con Living Soil e semi femminizzati, per stimolare l'assorbimento di nutrienti.",
+        "A 60 giorni dalla semina (inizio fioritura), raccogliere i fiori apicali di 3 piante per vaso (selezione casuale). Essiccare e analizzare il contenuto di CBD/THC tramite cromatografia TLC o kit di test rapido. Confrontare i risultati tra i 4 gruppi (Living Soil + femminizzati, Living Soil + regolari, terreno standard + femminizzati, terreno standard + regolari)."
+      ],
+      "materiali": [
+        "20 vasi in terracotta (10L)",
+        "Living Soil pre-preparato (compost, micorrize, vermicompost)",
+        "Terreno standard (torba + perlite 50/50)",
+        "Semi femminizzati e regolari (varietà CBD 15%, stessa genetica)",
+        "Sistema di elettrocultura a bassa tensione (5V DC, elettrodi in grafite)",
+        "Bilancia di precisione, essiccatore, kit di test CBD/THC"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso secco dei fiori (resa per pianta)",
+        "Contenuto di CBD/THC (%) tramite analisi TLC o kit rapido",
+        "Biomassa radicale (pesata secca)",
+        "Altezza e numero di foglie (indice di salute vegetativa)"
+      ],
+      "variabili_controllo": "Genetica delle piante, volume del vaso, esposizione solare, temperatura, umidità, metodo di essiccazione, sistema di elettrocultura (solo per il gruppo target).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina due concetti chiave di manuali diversi (vasi biologici + semi femminizzati) in un protocollo originale che integra elettrocultura e Living Soil, non presente nei manuali singolarmente. La misurazione diretta della resa in CBD/THC in risposta a questa sinergia è un approccio innovativo per la serra BioSerra Caserta.",
+      "id": "esp_conn_2026-08-29_002",
+      "data_proposta": "2026-08-29",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-28",
-    "nuove_proposte": 0,
-    "pdf_analizzati": 106,
-    "connessioni_usate": 614
+    "data": "2026-08-29",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 122,
+    "connessioni_usate": 653
   }
 }
