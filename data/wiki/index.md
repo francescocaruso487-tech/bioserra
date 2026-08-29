@@ -1,23 +1,26 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-08-28 | 19 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-08-29 | 20 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Elettrocultura Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la vitalità cellu
-- [Elettrocultura Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti galvaniche che i
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per concentrare campi elettromagne
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un'antenna metallica al terreno per captare e trasmettere energie tellur
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua con campi magnetici per migliorare la sua struttura molecolare e 
-- [Sistema Integrato di Elettrocultura](concetti/sistema_integrato_elettrocul.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (spirali, antenne, acqua magnetizzata) pe
+- [Elettrocultura secondo Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la vitalità cellu
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Utilizza spirali di rame per generare campi elettromagnetici naturali che influe
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un'antenna metallica al terreno per armonizzare le energie telluriche.
+- [Leghe Ferro-Rame](concetti/lega_fe_cu.md) *(in 1 PDF)* — Utilizza leghe di ferro e rame per creare campi elettromagnetici specifici.
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua con magneti per migliorare la solubilità dei nutrienti e l'assorb
+- [Sistema Integrato di Elettrocultura](concetti/sistema_integrato_elettrocul.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (antenne, spirali, acqua magnetizzata) pe
 
 ## Biodinamica
-- [Preparati Biodinamici](concetti/biodinamica_preparati.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per armonizzare le 
-- [Ritmi Cosmici Biodinamici](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
-- [Preparati Biodinamici Base](concetti/preparati_biodinamici_base.md) *(in 10 PDF)* — Utilizza i preparati fondamentali (cornoletame e cornosilice) per migliorare la 
+- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati biodinamici (es. cornoletame, cornosilice) per attivare la vit
+- [Ritmi Cosmici](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
+- [Suolo Vivo Biodinamico](concetti/suolo_vivo_biodinamico.md) *(in 10 PDF)* — Promuovi la vitalità del suolo con compost biodinamico e preparati per migliorar
 - [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
+
+## Irrigazione
+- [Irrigazione Armonizzata](concetti/irrigazione_armonizzata.md) *(in 4 PDF)* — Combina acqua magnetizzata con ritmi cosmici per un'irrigazione ottimale.
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
