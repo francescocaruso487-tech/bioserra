@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-29T09:15:09.996704+00:00",
+  "lastUpdate": "2026-08-30T08:27:22.996855+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,42 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "id": "daily_1781640025709_1",
-      "nome": "Monitoraggio del pH",
-      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
-      "materiali": [
-        "pHmetro",
-        "soluzione di calibrazione"
-      ],
-      "categoria": "Controllo ambientale",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
-      "id": "exp_001",
-      "nome": "Legnetto con treccia di rame e punta di rame",
-      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
-      "materiali": [
-        "Legnetto naturale",
-        "Treccia di rame",
-        "Punta di rame"
-      ],
-      "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
-      "funzione": "Conduzione e amplificazione energie naturali",
-      "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
-      "applicato_a": "tutte_le_piante",
-      "attivo": false,
-      "data_attivazione": null,
-      "fonte": "Guida personale",
-      "categoria": "elettrocultura",
-      "note": ""
-    },
     {
       "nome": "Rito di Iside del Compost: Trasmutazione Alchemica del Suolo Tramite Rituale Simbolico e Processi Microbici",
       "ipotesi": "Applicando un rituale simbolico ispirato ai 'Riti di Iside' (Manuale B) durante il compostaggio, si accelererà la disponibilità di nutrienti nell'erba (Manuale A) grazie all'aumento dell'attività microbica e all'equilibrio dei fattori del suolo (pH, ossigeno, temperatura). Questo perché il rituale, agendo sulla psiche umana e sulla percezione del processo, potrebbe influenzare indirettamente la gestione attenta del compost (umidità, aerazione, temperatura), portando a una maggiore efficienza nella decomposizione e mineralizzazione della materia organica.",
@@ -4204,14 +4168,78 @@
       "data_proposta": "2026-08-29",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico di Living Soil e acqua distillata sulla qualità delle cime senza trattamenti post-raccolta",
+      "ipotesi": "Coltivando piante in Living Soil (Manuale A) con vasi biologici e applicando un trattamento pre-raccolta con acqua distillata (Manuale B), si riduce significativamente la necessità di lavaggio post-raccolta e si preserva la qualità delle cime (terpeni, clorofilla, impurità) senza perdita di principi attivi. L'acqua distillata evita contaminazioni residue, mentre il terreno biologico limita l'accumulo di sostanze indesiderate, rendendo superfluo il water curing tradizionale.",
+      "protocollo": [
+        "Preparare due lotti identici di piante autofiorenti (es. varietà resistente a stress) in serra outdoor BioSerra Caserta, coltivate in Living Soil con vasi biologici (Manuale A). Mantenere condizioni identiche (irrigazione, esposizione, nutrienti).",
+        "A 7 giorni dalla raccolta, irrigare un lotto (Gruppo A) con acqua distillata per 3 giorni consecutivi (1L/piante/giorno), mentre il lotto di controllo (Gruppo B) riceve acqua di rubinetto filtrata (non distillata).",
+        "Raccogliere entrambe le piante nello stesso momento, evitando qualsiasi trattamento post-raccolta (no water curing, no essiccazione forzata).",
+        "Confrontare le cime essiccate dei due gruppi: misurare peso secco, contenuto di terpeni (GC-MS), clorofilla residua (spettrofotometro), e presenza di metalli pesanti (analisi ICP-MS). Valutare anche il sapore e la consistenza tramite panel sensoriale."
+      ],
+      "materiali": [
+        "Piante autofiorenti resistenti (es. varietà CBD alto da Manuale A)",
+        "Acqua distillata (Gruppo A) e acqua filtrata (Gruppo B), pHmetro, conduttivimetro",
+        "Living Soil certificato, vasi biologici, attrezzatura per analisi chimiche (GC-MS, spettrofotometro)",
+        "Bilancia di precisione, essiccatore, schede di valutazione sensoriale"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso secco delle cime (per valutare perdite di massa)",
+        "Contenuto di terpeni e CBD/CBG (GC-MS) per verificare preservazione dei principi attivi",
+        "Livelli di clorofilla residua (spettrofotometro a 663 nm) per valutare necessità di lavaggio",
+        "Presenza di metalli pesanti (ICP-MS) per verificare contaminazioni",
+        "Valutazione sensoriale (panel di 5 persone) per sapore, aroma e consistenza"
+      ],
+      "variabili_controllo": "Stesso substrato (Living Soil), stessa varietà di pianta, stesso regime di irrigazione pre-trattamento, stessa esposizione solare, stessa tecnica di essiccazione (2 settimane a 20°C e 60% umidità).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "L'esperimento combina due approcci indipendenti (Living Soil e acqua distillata pre-raccolta) per sostituire il water curing post-raccolta, una tecnica non menzionata in nessuno dei due manuali. Inoltre, valuta l'effetto sinergico su qualità e sicurezza delle cime, un aspetto non affrontato separatamente nei due testi.",
+      "id": "esp_conn_2026-08-30_001",
+      "data_proposta": "2026-08-30",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate autofiorenti coltivate in serra outdoor",
+      "ipotesi": "L'applicazione di concimazione organica (Manuale A) in un sistema Living Soil arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV (Manuale B), aumentano la produzione di CBDV e altri cannabinoidi secondari (CBG, CBDV) grazie a un metabolismo radicale più efficiente. Questo effetto è misurabile in termini di concentrazione di CBDV nelle infiorescenze e di biomassa radicale, rispetto a un controllo con concimazione minerale.",
+      "protocollo": [
+        "Preparare due parcelle identiche di Living Soil (50x50 cm, profondità 30 cm) in serra outdoor, con stessa esposizione solare e drenaggio. Una parcella (trattamento) riceve concimazione organica (compost, humus di lombrico, micorrize) ogni 10 giorni; l'altra (controllo) riceve solo acqua (water-only).",
+        "Seminare in entrambe le parcelle semi di pianta femminizzati autofiorenti ad alto contenuto di CBDV (es. varietà 'CBDV Auto' da semi certificati, Manuale B), in numero uguale (10 piante per parcella) e alla stessa profondità. Mantenere condizioni ambientali identiche (temperatura, umidità, irrigazione).",
+        "Dopo 21 giorni (fase di crescita), prelevare campioni di suolo da entrambe le parcelle per analisi microbiologica (conta di micorrize e batteri simbionti) e campioni di radici per valutare la biomassa e la salute radicale (lunghezza, densità).",
+        "A 30 giorni dalla semina, raccogliere le infiorescenze di 5 piante per parcella (campione casuale), essiccarle e sottoporle a test di laboratorio per quantificare CBDV, CBG e CBD (metodo HPLC). Confrontare i risultati tra trattamento e controllo."
+      ],
+      "materiali": [
+        "Semi di pianta femminizzati autofiorenti ad alto contenuto di CBDV (es. 'CBDV Auto' da banco genetico certificato, Manuale B)",
+        "Compost maturo, humus di lombrico, inoculo di micorrize (es. MycoApply), acqua distillata (per Living Soil e controllo water-only, Manuale A)",
+        "Strumenti per analisi del suolo (pHmetro, conducimetro), bilancia di precisione, HPLC per cannabinoidi, metro a nastro, fotocamera per documentazione"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Concentrazione di CBDV, CBG e CBD nelle infiorescenze (mg/g, HPLC), biomassa radicale (g secco), conteggio microrganismi simbionti (micorrize/batteri per grammo di suolo, metodo colturale o qPCR).",
+        "Verifica statistica (test t di Student) per confrontare le medie tra trattamento e controllo. Documentazione fotografica della salute delle piante e del suolo."
+      ],
+      "variabili_controllo": "Genetica delle piante (stesso lotto di semi), condizioni ambientali (serra con controllo temperatura/umidità), protocollo di irrigazione (acqua-only per entrambi), metodo di raccolta e analisi dei campioni.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento non è presente nei manuali originali perché combina in modo mirato: (1) l'uso di semi CBDV (Manuale B) con (2) una concimazione organica Living Soil (Manuale A) per valutare un effetto sinergico specifico (aumento di CBDV) in un contesto outdoor water-only. I manuali trattano separatamente la coltivazione di pianta ad alto CBD e le tecniche di Living Soil, ma non esplorano la loro interazione per ottimizzare cannabinoidi secondari.",
+      "id": "esp_conn_2026-08-30_002",
+      "data_proposta": "2026-08-30",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-08-29",
+    "data": "2026-08-30",
     "nuove_proposte": 2,
-    "pdf_analizzati": 122,
-    "connessioni_usate": 653
+    "pdf_analizzati": 138,
+    "connessioni_usate": 694
   }
 }
