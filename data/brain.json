@@ -1,186 +1,43 @@
 {
-  "lastUpdate": "2026-08-29T10:20:24.000Z",
+  "lastUpdate": "2026-08-30T09:25:00.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
-    "consigli_giorno": [
-      "Applicare elettrocoltura DC a basso voltaggio (3-6V) sulle piante femminizzate in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla) tramite elettrodi in rame/zinco posizionati a 5-10cm dalle radici, utilizzando il 'Tower of Power' per accelerare la maturazione delle cime in vista della raccolta tra 2-7 giorni. [pdf_17, chunk_002]",
-      "Effettuare trattamento biodinamico serale (ore 20-22) con preparato 501 (silice) sulle piante femminizzate in fioritura, nebulizzando a 37% di umidità per favorire la traslocazione dei nutrienti verso le cime. [pdf_13, PAG 2]",
-      "Integrare nel suolo Living Soil 200g di carbone vegetale per metro quadrato vicino alle radici delle autofiorenti in essiccazione per migliorare la conducibilità elettrica e stabilizzare l'attività microbica durante la fase critica di raccolta. [pdf_85, chunk_003]"
-    ],
-    "briefing_mattutino": "Le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) sono in fase di essiccazione avanzata (essiccazione avviata il 24/08) con raccolta urgente (-19gg). Le femminizzate mostrano maturazione disomogenea: Astro Lemonade e Cosmic Cheddar sono pronti per la raccolta (-3gg), mentre Orbital Banana e Royal Gorilla necessitano di 2 giorni per completare la fioritura. L'umidità al 37% e le temperature elevate (31.9°C) creano condizioni ideali per l'elettrocoltura DC, che oggi può essere applicata senza dispersione eccessiva nel suolo. [Scoperta: A 31.9°C e umidità al 37%, l'elettrocoltura con corrente DC potrebbe essere particolarmente efficace oggi]",
-    "consigli_piante": {
-      "autofiorenti": "Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO STASERA (2026-08-29) per evitare perdita di resina e qualità, come indicato dal valore 'raccolta tra -19gg'. Tagliare i rami principali a livello del suolo, eliminare le foglie grandi e appendere le piante in ambiente buio/asciutto a 18-20°C per 7-10 giorni.",
-      "femminizzate": "Raccogliere Astro Lemonade e Cosmic Cheddar ENTRO STASERA (2026-08-29) per evitare perdita di qualità e resina. Per Orbital Banana e Royal Gorilla, applicare elettrocoltura DC (3V) per 4 ore al mattino e trattamento biodinamico serale con 501 per accelerare la maturazione delle cime. Mexican Rush può attendere fino a 7 giorni senza interventi specifici.",
-      "per_pianta": [
-        {
-          "nome": "Epsilon F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Milky Way F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Titan F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Medusa F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Gaia F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Astro Lemonade F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 5-7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Cosmic Cheddar F1",
-          "azione": "Raccogliere immediatamente (entro stasera), essiccare in ambiente controllato a 18-20°C per 5-7 giorni.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Orbital Banana F1",
-          "azione": "Applicare elettrocoltura DC (3V) per 4 ore al mattino, trattamento biodinamico serale con 501, raccogliere tra 2 giorni.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Royal Gorilla",
-          "azione": "Applicare elettrocoltura DC (3V) per 4 ore al mattino, trattamento biodinamico serale con 501, raccogliere tra 2 giorni.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Mexican Rush",
-          "azione": "Monitorare maturazione, raccogliere tra 7 giorni senza interventi specifici.",
-          "priorita": "bassa"
-        }
-      ]
-    },
-    "tecniche_nuove": [
-      {
-        "nome": "Elettrocoltura DC accelerata per fioritura",
-        "descrizione": "Applicare corrente continua a 3V tramite elettrodi in rame/zinco (distanza 5-10cm dalle radici) per 4 ore al mattino (ore 8-12) sulle piante femminizzate in fioritura (Orbital Banana, Royal Gorilla). Utilizzare un generatore 'Tower of Power' con resistenza di 100Ω per evitare surriscaldamento. Monitorare la temperatura del suolo (non superare 25°C).",
-        "fonte": "[pdf_17, chunk_002]",
-        "materiali": [
-          "Generatore 'Tower of Power'",
-          "Elettrodi in rame/zinco (2 per pianta)",
-          "Resistenza 100Ω",
-          "Cavi isolati",
-          "Termometro infrarosso per suolo"
-        ],
-        "difficolta": "media"
-      }
-    ],
-    "scoperte": [
-      "A 31.9°C e umidità al 37%, l'elettrocoltura con corrente DC potrebbe essere particolarmente efficace oggi: il basso tasso di umidità riduce la dispersione della corrente nel suolo, concentrando l'effetto stimolante sulle radici delle piante in fioritura.",
-      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per trattamenti biodinamici serali, poiché l'umidità relativa più alta favorisce l'assorbimento dei preparati a base di silice (501) nelle piante in fioritura."
-    ],
-    "avvisi": [
-      "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO STASERA (2026-08-29) per evitare perdita di resina e qualità.",
-      "URGENTE: Raccogliere Astro Lemonade e Cosmic Cheddar ENTRO STASERA (2026-08-29) per evitare perdita di qualità e resina."
-    ],
+    "consigli_giorno": [],
+    "briefing_mattutino": "Briefing non disponibile (parse fallito)",
+    "consigli_piante": {},
+    "tecniche_nuove": [],
+    "scoperte": [],
+    "avvisi": [],
     "piano_giornata": {
-      "mattina": "07-12: Raccogliere le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) e Astro Lemonade/Cosmic Cheddar. Applicare elettrocoltura DC (3V) per 4 ore su Orbital Banana e Royal Gorilla. Integrare 200g/mq di carbone vegetale vicino alle radici delle autofiorenti raccolte.",
-      "pomeriggio": "12-18: Evitare ore calde (>35°C). Monitorare temperatura serra, applicare trattamenti biodinamici serali (20-22) su Orbital Banana e Royal Gorilla. Verificare umidità del suolo dopo raccolta.",
-      "sera": "18-21: Trattamenti biodinamici con 501 su Orbital Banana e Royal Gorilla. Appendere le piante raccolte in ambiente buio/asciutto a 18-20°C. Registrare dati di umidità e temperatura per ottimizzazione futura."
+      "mattina": "",
+      "pomeriggio": "",
+      "sera": ""
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, agendo su radici e suolo con principi magnetici e elettrici controllati.",
-        "L'applicazione di corrente continua (DC) a basso voltaggio vicino alle radici stimola la crescita e la salute delle piante, migliorando l'assorbimento dei nutrienti.",
-        "Il pre-trattamento elettromagnetico dei semi rivitalizza esemplari deboli e potenzia la germinazione, agendo a livello molecolare.",
-        "L'uso di sistemi elettromagnetici su larga scala (es. 'Tower of Power') può ottimizzare la crescita in ambienti controllati come le serre.",
-        "Le proprietà dell'elettricità nei vegetali sono distinte da quelle tradizionali: i corpi elettrizzati emettono esalazioni idioelettriche che influenzano i processi fisiologici."
-      ],
-      "consiglio_elettro_da_testi": "Applicare corrente continua (DC) a basso voltaggio (1.5-9V) tramite elettrodi in rame/zinco posizionati vicino alle radici delle piante in fioritura, utilizzando un generatore 'Tower of Power' per stimolare l'assorbimento dei nutrienti e accelerare la fioritura. [pdf_17, chunk_002]",
-      "consiglio_suolo_da_testi": "Integrare nel suolo Living Soil materiali conduttivi come carbone vegetale o scorie di ferro per migliorare la conducibilità elettrica naturale, favorendo la formazione di micorrize e l'attività microbica. [pdf_85, chunk_003]",
-      "consiglio_biodinamica_da_testi": "Effettuare trattamenti biodinamici con preparati a base di silice (es. 501) nelle ore serali o notturne, quando l'umidità relativa è più alta (37% oggi), per favorire l'assorbimento e la traslocazione dei nutrienti nelle piante in fioritura. [pdf_13, PAG 2]",
-      "scoperta_del_giorno": "A 31.9°C e umidità al 37%, l'elettrocoltura con corrente DC potrebbe essere particolarmente efficace oggi: il basso tasso di umidità riduce la dispersione della corrente nel suolo, concentrando l'effetto stimolante sulle radici delle piante in fioritura.",
-      "tecnica_da_provare": {
-        "nome": "Elettrocoltura a impulsi DC con elettrodi in rame/zinco",
-        "descrizione": "Posizionare coppie di elettrodi (rame e zinco) a 10-15 cm di profondità nel letto di coltivazione, distanziati di 30 cm tra loro. Collegare gli elettrodi a una batteria da 6V tramite un timer per erogare impulsi di 10 minuti ogni ora durante le ore diurne. Monitorare la risposta delle piante in fioritura e regolare il voltaggio in base alla risposta (iniziare con 3V).",
-        "fonte": "[pdf_17, chunk_002]",
-        "materiali": [
-          "Elettrodi in rame e zinco (diametro 6mm, lunghezza 30cm)",
-          "Batteria da 6V con cavi e connettori",
-          "Timer digitale (es. 24h programmabile)",
-          "Multimetro per misurare la corrente",
-          "Guanti isolanti e pinze"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "critico per autofiorenti e Astro Lemonade/Cosmic Cheddar; monitoraggio per Orbital Banana/Royal Gorilla; stabile per Mexican Rush",
-      "irrigazione": "Nessuna irrigazione oggi sulle piante in essiccazione. Per Orbital Banana e Royal Gorilla, irrigare leggermente al mattino (500ml/mq) solo se suolo asciutto a 5cm di profondità.",
-      "nutrizione": "Water-only per tutte le piante. Evitare fertilizzanti oggi per non interferire con la maturazione delle cime.",
       "piante_critiche": [
         {
           "id": 6,
           "nome": "Orbital Banana F1",
-          "giorni_a_raccolta": 2
+          "giorni_a_raccolta": 1
         },
         {
           "id": 10,
           "nome": "Royal Gorilla",
-          "giorni_a_raccolta": 2
+          "giorni_a_raccolta": 1
         },
         {
           "id": 9,
           "nome": "Mexican Rush",
-          "giorni_a_raccolta": 7
+          "giorni_a_raccolta": 6
         }
       ]
-    },
-    "ambiente": {
-      "luna": {
-        "fase": "Gibbosa Crescente",
-        "emoji": "🌔",
-        "illuminazione_pct": 73,
-        "consiglio": "Effettuare trattamenti biodinamici serali (20-22) con preparato 501 sulle piante femminizzate in fioritura per sfruttare l'umidità relativa più alta (37%) e la fase lunare favorevole alla traslocazione dei nutrienti. [pdf_13, PAG 2]"
-      },
-      "ore_luce": 13.2
-    },
-    "elettro": {
-      "verifica_oggi": [
-        "Verificare il corretto funzionamento del 'Tower of Power' e la resistenza dei cavi per l'elettrocoltura DC.",
-        "Misurare la temperatura del suolo vicino agli elettrodi durante l'applicazione della corrente DC (non superare 25°C)."
-      ],
-      "ottimizzazione": "Oggi è ideale per applicare elettrocoltura DC sulle piante femminizzate in fioritura grazie all'umidità al 37% che riduce la dispersione della corrente. Utilizzare 3V per 4 ore al mattino per stimolare la maturazione senza stressare le piante. [Scoperta: A 31.9°C e umidità al 37%, l'elettrocoltura con corrente DC potrebbe essere particolarmente efficace oggi]"
     }
   },
-  "tecniche_nuove": [
-    {
-      "nome": "Elettrocoltura DC accelerata per fioritura",
-      "descrizione": "Applicare corrente continua a 3V tramite elettrodi in rame/zinco (distanza 5-10cm dalle radici) per 4 ore al mattino (ore 8-12) sulle piante femminizzate in fioritura (Orbital Banana, Royal Gorilla). Utilizzare un generatore 'Tower of Power' con resistenza di 100Ω per evitare surriscaldamento. Monitorare la temperatura del suolo (non superare 25°C).",
-      "fonte": "[pdf_17, chunk_002]",
-      "materiali": [
-        "Generatore 'Tower of Power'",
-        "Elettrodi in rame/zinco (2 per pianta)",
-        "Resistenza 100Ω",
-        "Cavi isolati",
-        "Termometro infrarosso per suolo"
-      ],
-      "difficolta": "media"
-    }
-  ],
-  "avvisi": [
-    "URGENTE: Raccogliere TUTTE le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) ENTRO STASERA (2026-08-29) per evitare perdita di resina e qualità.",
-    "URGENTE: Raccogliere Astro Lemonade e Cosmic Cheddar ENTRO STASERA (2026-08-29) per evitare perdita di qualità e resina."
-  ],
-  "consigli_giorno": [
-    "Applicare elettrocoltura DC a basso voltaggio (3-6V) sulle piante femminizzate in fioritura (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla) tramite elettrodi in rame/zinco posizionati a 5-10cm dalle radici, utilizzando il 'Tower of Power' per accelerare la maturazione delle cime in vista della raccolta tra 2-7 giorni. [pdf_17, chunk_002]",
-    "Effettuare trattamento biodinamico serale (ore 20-22) con preparato 501 (silice) sulle piante femminizzate in fioritura, nebulizzando a 37% di umidità per favorire la traslocazione dei nutrienti verso le cime. [pdf_13, PAG 2]",
-    "Integrare nel suolo Living Soil 200g di carbone vegetale per metro quadrato vicino alle radici delle autofiorenti in essiccazione per migliorare la conducibilità elettrica e stabilizzare l'attività microbica durante la fase critica di raccolta. [pdf_85, chunk_003]"
-  ]
+  "tecniche_nuove": [],
+  "avvisi": [],
+  "consigli_giorno": []
 }
