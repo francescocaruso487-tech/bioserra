@@ -2,48 +2,51 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-29
+aggiornato: 2026-08-30
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Te di Compost
+# Tè di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, estrae batteri, funghi, protozoi e sostanze umiche che migliorano la salute del suolo e delle piante. L’aerazione costante durante la preparazione (24 ore) favorisce lo sviluppo di una comunità microbica diversificata, mentre l’aggiunta di melassa fornisce energia ai microrganismi, accelerandone la crescita. L’applicazione fogliare o radicale del *tea* stimola la rizosfera, potenziando l’assorbimento dei nutrienti e la resistenza delle piante agli stress biotici e abiotici.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma un substrato solido in un liquido ricco di batteri, funghi, protozoi e nutrienti prontamente assimilabili dalle piante. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi attivi nel tè colonizzano la rizosfera e la filosfera, migliorando la disponibilità di nutrienti, la resistenza agli stress abiotici e la salute generale della pianta. Inoltre, la presenza di acidi umici e fulvici favorisce la chelazione dei minerali, rendendoli più accessibili alle radici.
 
-Il meccanismo d’azione si basa sulla **teoria del suolo vivente**: i microrganismi del compost tea competono con patogeni, producono ormoni di crescita (auxine, citochinine) e migliorano la struttura del suolo attraverso la formazione di aggregati. Inoltre, le sostanze umiche aumentano la capacità di scambio cationico (CEC) e la disponibilità di nutrienti. Per le coltivazioni outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il *tea* di compost rappresenta uno strumento chiave per mantenere un ecosistema radicale resiliente.
+In un contesto di **Living Soil** outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il tè di compost agisce come un **booster microbiologico** e nutrizionale. Durante le fasi di vegetazione e fioritura, l'applicazione fogliare o radicale stimola la fotosintesi, riduce la suscettibilità a patogeni (come *Botrytis* o *Oidium*) e promuove una crescita equilibrata. La sua efficacia è massima quando il compost di partenza è ricco di diversità microbica (es. compost da letame maturo, residui vegetali e micorrize).
+
+---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta, segui questi passaggi:
+Per una serra outdoor a Caserta, seguire questi passaggi per preparare e applicare il tè di compost in modo ottimale:
 
-1. **Preparazione del compost**:
-   - Usa compost maturo (6-12 mesi) ricco di microrganismi (evita compost fresco o con residui di pesticidi).
-   - Quantità: 1 kg di compost ogni 10 litri d’acqua (ad esempio, 5 kg per 50 litri).
+1. **Preparazione del compost**
+   - Utilizzare compost maturo (almeno 6 mesi di decomposizione) con pH tra 6.5 e 7.5.
+   - Evitare compost con residui di pesticidi o metalli pesanti.
 
-2. **Estrazione aerobica**:
-   - Riempi un contenitore con acqua non clorata (lasciare riposare l’acqua del rubinetto 24h o usare acqua piovana).
-   - Aggiungi il compost in un sacchetto di tela o una retina (per evitare sedimenti).
-   - Immergi un **aeratore per acquario** (2-3 litri/minuto) per ossigenare la soluzione e prevenire la proliferazione di batteri anaerobici.
+2. **Infusione aerobica**
+   - **Dosaggio**: 1 parte di compost ogni 10 parti di acqua (es. 1 kg di compost in 10 L di acqua).
+   - **Aerazione**: Utilizzare un aeratore per acquario (24-48 ore) per mantenere condizioni aerobiche e prevenire la proliferazione di batteri anaerobici.
+   - **Temperatura**: Mantenere l'acqua tra 15°C e 25°C (evitare il surriscaldamento).
 
-3. **Nutrizione microbica**:
-   - Dopo 12 ore, aggiungi **1-2 cucchiai di melassa** (o zucchero di canna) per 10 litri d’acqua. Mescola delicatamente.
-   - Opzionale: aggiungi **1 cucchiaio di humus di lombrico** per aumentare la biodiversità microbica.
+3. **Nutrizione microbica**
+   - Aggiungere **melassa di canna** (1-2 cucchiai per 10 L) come fonte di carbonio per i batteri.
+   - Opzionale: aggiungere **humus di lombrico** (200 g/10 L) per aumentare la biodiversità microbica.
 
-4. **Filtraggio e applicazione**:
-   - Filtra il *tea* con una retina fine per rimuovere i residui solidi.
-   - Applica **entro 4 ore** dalla preparazione (i microrganismi vivi muoiono rapidamente senza ossigeno).
-   - **Dosi**:
-     - **Radicale**: 5-10 litri ogni 10 m², ogni 2-3 settimane durante vegetazione e fioritura.
-     - **Fogliare**: diluisci 1:1 con acqua e spruzza al mattino presto o al tramonto (evita il sole diretto).
+4. **Filtraggio e applicazione**
+   - Filtrare il tè con una retina fine (es. tessuto per formaggio) per rimuovere particelle solide.
+   - **Applicare entro 4 ore** dalla preparazione per massimizzare l'attività microbica.
+   - **Metodi di applicazione**:
+     - **Radicale**: Irrigare il suolo alla base delle piante (1-2 L/m² ogni 7-14 giorni).
+     - **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (diluizione 1:1 con acqua per evitare bruciature).
 
-5. **Frequenza**:
-   - **Vegetazione**: ogni 15 giorni.
-   - **Fioritura**: ridurre a ogni 3 settimane (evitare eccesso di azoto).
+5. **Frequenza**
+   - **Vegetazione**: 1 applicazione ogni 10-15 giorni.
+   - **Fioritura**: Ridurre a 1 applicazione ogni 20 giorni, evitando eccessi di azoto.
 
+---
 ## Sinergie con altri elementi
-Il *Te di Compost* si combina efficacemente con altre tecniche per potenziare i risultati:
+Il tè di compost si integra perfettamente con altre tecniche di coltivazione avanzata, potenziandone gli effetti:
 
-- **Lakhovsky (Onde di forma)**: Applicare il *tea* dopo una sessione di elettrocultura con onde di forma
+- **Lakhovsky (Onde di forma
