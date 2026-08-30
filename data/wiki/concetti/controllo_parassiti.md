@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-08-29
+aggiornato: 2026-08-30
 pdf_count: 10
 ---
 
@@ -12,30 +12,32 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull'equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil** e dell'**elettrocultura** per creare un ambiente sfavorevole ai patogeni, promuovendo al contempo la salute delle piante attraverso la biodiversità microbica e la resilienza del suolo. Il meccanismo d'azione si fonda su tre pilastri: **prevenzione** (barriere fisiche e chimiche naturali), **regolazione biologica** (predatori naturali e antagonisti microbici) e **stimolazione energetica** (campi elettromagnetici a bassa frequenza che potenziano le difese delle piante).
+Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in agricoltura, basato sull'equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil**, dove la biodiversità del suolo e delle piante crea un ambiente sfavorevole agli organismi dannosi, favorendo invece la proliferazione di insetti utili e microrganismi antagonisti. Il meccanismo d'azione si fonda sulla **prevenzione** (rinforzo delle difese naturali delle piante) e sulla **regolazione** (introduzione di predatori o antagonisti specifici), evitando così la necessità di pesticidi sintetici che alterano l'ecosistema.
 
-Funziona perché un suolo vivo e ben strutturato, ricco di microrganismi benefici (funghi micorrizici, batteri antagonisti come *Bacillus thuringiensis*), riduce la vulnerabilità delle piante agli attacchi. L'olio di neem, ad esempio, agisce come repellente e insetticida sistemico grazie alla sua azione sulla sintesi degli ecdisoni (ormoni degli insetti), mentre gli acari predatori (*Phytoseiulus persimilis*) instaurano un controllo biologico diretto. L'elettrocultura, infine, armonizza le frequenze naturali delle piante, stimolando la produzione di metaboliti secondari difensivi (es. terpeni, alcaloidi).
+Funziona perché si basa su un principio chiave: **la salute del suolo e delle piante è direttamente proporzionale alla loro resilienza**. Un terreno ricco di humus attivo, micorrize e batteri benefici (come *Bacillus thuringiensis* o *Trichoderma*) produce piante con pareti cellulari più resistenti e sistemi immunitari più efficienti. Inoltre, l'uso di **olio di neem** (azadiractina) o **acari predatori** (*Phytoseiulus persimilis*) agisce come deterrente o controllo mirato, senza intaccare la rete trofica del suolo. Questo approccio è particolarmente efficace in serra outdoor, dove l'ambiente controllato permette di monitorare costantemente le dinamiche parassitarie e intervenire tempestivamente.
 
 ---
 
 ## Come si applica in serra
 
-### **Fase di Vegetazione**
-1. **Ispezione quotidiana**: Controlla foglie (soprattutto sotto il lato inferiore) e steli per segni di infestazione (es. ragnatele, puntini gialli, melata). Usa una lente d’ingrandimento per identificare acari o afidi.
-2. **Prevenzione con olio di neem**:
-   - Diluire **5 ml di olio di neem puro** in 1 litro d’acqua + 1 ml di sapone di potassio (adesivante).
-   - Applicare con nebulizzatore **ogni 7 giorni** al tramonto (evita l’esposizione solare diretta).
-   - Coprire uniformemente, soprattutto sui germogli apicali.
-3. **Inoculo di insetti utili**:
-   - Introduci **acari predatori *Phytoseiulus persimilis*** (10-20 individui/m²) in caso di presenza di ragnetto rosso (*Tetranychus urticae*).
-   - Posiziona **coccinelle (*Coccinella septempunctata*)** o **crisopidi** per afidi, distribuendoli in punti strategici (es. vicino a piante infestate).
-4. **Elettrocultura preventiva**:
-   - Installa una **spirale di rame di Lakhovsky** (diametro 30 cm) a 20 cm dal suolo, collegata a un’**antenna di terra in rame** (profondità 50 cm).
-   - Attiva il circuito **2 volte a settimana per 10 minuti** (ore serali) per stimolare la risposta immunitaria delle piante.
+### **Protocollo base per serra outdoor a Caserta (41°N)**
+1. **Ispezione quotidiana**
+   - Controlla **foglie giovani, gemme e steli** (soprattutto sotto le foglie) con una lente d'ingrandimento. Cerca:
+     - Uova di afidi (gialle/trasparenti)
+     - Ragnatele di acari (punti bianchi o gialli sulle foglie)
+     - Larve di lepidotteri (fori nei boccioli)
+   - *Strumento utile*: Trappole cromotropiche gialle/blu per monitorare insetti volanti (da posizionare a 30 cm dalle piante).
 
-### **Fase di Fioritura**
-1. **Ridurre interventi chimici**: Sospendi l’olio di neem (può alterare il profumo dei fiori) e limita l’uso di sapone di potassio.
-2. **Potenziamento con acqua magnetizzata**:
-   - Irriga con acqua **magnetizzata** (trattata con magneti al neodimio) per aumentare l’assorbimento dei nutrienti e la resistenza agli stress.
-3. **Monitoraggio mirato**:
-   - Concentrati su **fiori e gemme** per afidi o tripidi. Us
+2. **Prevenzione con olio di neem**
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 10 ml di alcol etilico) in 1 litro d'acqua.
+   - **Applicazione**: Spruzza sulle foglie **ogni 7 giorni** (al tramonto per evitare ustioni solari), bagnando bene entrambe le pagine fogliari.
+   - *Nota*: Evita di applicare durante la fioritura se usi piante mellifere (es. basilico).
+
+3. **Introduzione di insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis*): 2-5 individui per pianta ogni 2 settimane in caso di infestazione da *Tetranychus urticae* (ragnetto rosso).
+   - **Crisopidi** (*Chrysoperla carnea*): larve da rilasciare in serra (10-20 per 10 m²) per afidi e cocciniglie.
+   - *Consiglio*: Acquista insetti utili da fornitori specializzati (es. **Koppert** o **Biobest**) e rilasciali al crepuscolo.
+
+4. **Barriere fisiche e repellenti naturali**
+   - **Rete anti-insetto** (maglia 0.6 mm) per impedire l'accesso di moscerini (es. *Drosophila*).
+   - **Piante trappola**: Coltiva **calendula** o **tagete** ai bordi della serra per attirare afidi lontano dalle colt
