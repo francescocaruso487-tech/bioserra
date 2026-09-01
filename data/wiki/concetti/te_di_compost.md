@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-08-31
+aggiornato: 2026-09-01
 pdf_count: 8
 ---
 
@@ -12,27 +12,32 @@ pdf_count: 8
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei microrganismi benefici, nutrienti e sostanze umiche presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri aerobici, funghi benefici, protozoi e sostanze nutritive prontamente assimilabili dalle piante. L'aerazione costante durante la preparazione (24-48 ore) evita la proliferazione di batteri anaerobici, che possono produrre composti tossici come l'acido solfidrico o il metano. L'aggiunta di melassa (o altri zuccheri semplici) fornisce energia ai microrganismi, accelerando la loro crescita e moltiplicazione, mentre l'acqua agisce da veicolo per distribuire questi organismi direttamente sulle foglie (applicazione fogliare) o nel suolo (applicazione radicale).
+Il **Tè di Compost** (o *compost tea*) è un infuso aerobico ricco di microrganismi benefici, enzimi, acidi umici e nutrienti solubili, ottenuto dalla lisciviazione controllata di compost maturo in acqua ossigenata. Questo preparato funziona come un **bioattivatore del suolo** e un **stimolante fogliare**, potenziando la biodiversità microbica del *Living Soil* e migliorando l’assorbimento radicale. I microrganismi presenti (batteri, funghi, attinomiceti) competono con patogeni, mineralizzano la materia organica e producono sostanze biostimolanti come auxine e citochinine, fondamentali per la crescita vegetativa e la resilienza delle piante.
 
-Il meccanismo d'azione si basa sulla **teoria del suolo vivente**: i microrganismi del tè di compost competono con patogeni come *Fusarium* o *Phytophthora*, migliorano la struttura del suolo tramite la produzione di glomalina (da parte dei funghi micorrizici), e stimolano la risposta immunitaria delle piante attraverso l'induzione di resistenza sistemica acquisita (SAR). Inoltre, le sostanze umiche e gli acidi fulvici presenti nel tè aumentano la capacità di scambio cationico (CEC) del suolo, migliorando la disponibilità di nutrienti come azoto, fosforo e potassio. Studi in agricoltura rigenerativa dimostrano che applicazioni regolari di tè di compost possono ridurre la necessità di fertilizzanti chimici fino al 30% e aumentare la resilienza delle piante agli stress biotici e abiotici.
+In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce l’attività microbica ma può anche stressare le piante con caldo e umidità, il tè di compost agisce come **equilibratore ecologico**: riduce la necessità di input chimici, migliora la struttura del suolo e aumenta la tolleranza delle piante a stress idrici o termici. La sua applicazione fogliare (come *foliar spray*) o radicale (irrigazione) sfrutta la capacità dei microrganismi di colonizzare le rizosfere e le superfici fogliari, creando un **microbioma protettivo** che ottimizza la fotosintesi e la sintesi di terpeni/flavonoidi nelle piante di cannabis.
+
+---
 
 ## Come si applica in serra
-Per una serra outdoor **Living Soil** a Caserta (41°N), con clima mediterraneo caratterizzato da estati calde e inverni miti, segui queste istruzioni pratiche:
 
-1. **Preparazione del compost**:
-   - Usa un compost **maturo** (6-12 mesi), privo di odori putridi e con rapporto C/N < 20:1. Evita compost con residui di carne o latticini.
-   - Quantità: 1 kg di compost per 10 litri d'acqua (rapporto 1:10).
+### **Preparazione (metodo aerobico)**
+1. **Materiali**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturato almeno 6 mesi).
+   - Acqua non clorata (lasciare decantare l’acqua del rubinetto 24h o usare acqua piovana).
+   - Aeratore per acquario (con pietra porosa) o pompa ad aria.
+   - Melassa biologica (1–2 cucchiai per 10L) come fonte di carbonio per i batteri.
+   - Opzionale: 1 cucchiaio di humus di lombrico o micorrize per potenziare la diversità microbica.
+   - Contenitore in plastica o vetro (evitare metallo).
 
-2. **Infusione aerobica**:
-   - Riempi un secchio con acqua **non clorata** (lascia riposare l'acqua 24h in un contenitore aperto o usa un filtro a carbone attivo).
-   - Aggiungi il compost in un sacchetto di tela o una retina (per evitare sedimenti).
-   - Collega un **aeratore da acquario** (pompa + pietra porosa) per mantenere un livello di ossigeno > 6 ppm. Aerazione continua per 24-48 ore a temperatura ambiente (18-25°C).
+2. **Procedura**:
+   - Riempire un secchio con **10L di acqua** e aggiungere **1–2kg di compost** (in un sacchetto di tela o calza per evitare residui).
+   - Immergere il compost e avviare l’aeratore per **24 ore** a temperatura ambiente (18–25°C). Mantenere l’ossigenazione costante per prevenire la proliferazione di batteri anaerobici (che producono odori sgradevoli e tossine).
+   - Dopo 12 ore, aggiungere la **melassa** per alimentare i microrganismi.
+   - Filtrare il tè con una retina fine (evitare di applicare particelle solide che possano intasare gli ugelli).
 
-3. **Nutrizione microbica**:
-   - Dopo 12 ore dall'inizio dell'aerazione, aggiungi **1-2 cucchiai di melassa** (o 10 ml di zucchero di canna) per litro d'acqua. Opzionalmente, aggiungi 1 cucchiaio di **humus di lombrico** per aumentare la biodiversità microbica.
+3. **Applicazione**:
+   - **Radicale**: Irrigare il suolo alla base delle piante, evitando ristagni. Dose: **1–2L per pianta** ogni 7–14 giorni durante vegetazione e fioritura.
+   - **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (evitare ore calde). Diluire 1:1 con acqua se necessario. Frequenza: **ogni 10–15 giorni**.
+   - **Conservazione**: Usare entro **4 ore** dalla preparazione per massimizzare la vitalità microbica. Non conservare (i microrganismi muoiono rapidamente).
 
-4. **Filtraggio e applicazione**:
-   - Filtra il tè attraverso una retina fine (dimensione maglia 50-100 micron) per rimuovere i residui solidi.
-   - **Applica entro 4 ore** dalla preparazione per massimizzare la vitalità dei microrganismi.
-   - **Dosi**:
-     - **Fogliare**: 1 litro di
+### **Adattamenti per serra outdoor
