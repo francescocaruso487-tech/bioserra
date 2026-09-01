@@ -167,7 +167,7 @@ Scansione del PLC, XIV-87
 , asincrona I/O, XIV-92
 , ciclo di, XIV-87
 , sincrona I, asincrona O, XIV-91
-, tempo di, XIV-87
+, tempo di, XIV-87
 Trasmissione, XIV-17
 , CSMA/CD, XIV-13
 , seriale asincrona, XIV-18
@@ -211,36 +211,7 @@ Luogo delle radici, XV-32
 - coefficiente di sensibilità, XV-37
 - controllante, XV-3
 - controllato, XV-3
-- di asservimento, XV-3
-- di regolazione, XV-2
-- digitali, XV-3, 52
-- errori, XV-37
-- fondamentale di integrali, XV-11
-- indici di qualità, XV-40
-- lineari, XV-10
-- non stazionari, XV-3
-- numerici, XV-3
-- risposta a regime,
-Stabilità e criteri di stabilità, XV-22
-- criterio di Hurwitz, XV-23
-- criterio di Routh,
-- teorema del valore iniziale, XV-20
-- teorema del valore finale, XV-20
-
-Trasformata Zeta, XV-43, 46, 47, 48
-- equazioni alle differenze finite, XV-46
-**PROPRIETÀ**, XV-46
-**TEOREMA DEL VALORE FINALE**, XV-47
-**TEOREMA DEL VALORE INIZIALE**,
-Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
-
----
-
-- apparecchi, XVI-21
-- indirizzamento, XVI-22
-- tecnica trasmissiva, XVI-21
-- topologia, XVI-21
-
+- di asservimento,
 **Sistema Instabus EIB**, XVI-22
 - apparecchi, XVI-22
 - Instabus PL (Power Line), XVI-26
@@ -564,7 +535,6 @@ Ponte di Graetz, XVII-46
 Porte logiche di base, XVII-97
 - simboli delle porte logiche, XVII-99
 - simboli normalizzati delle porte logiche, XVII-100
-
 Porte universali, XVII-99
 
 Pulsazioni di taglio, XVII-29
@@ -747,7 +717,7 @@ Conversione della corrente elettrica, XVIII-22
 - c.a.-c.c., XVIII-22
 - c.c.-c.c., XVIII-45
 
-Conversione diretta, XVIII-53
+Conversione diretta, XVIII-5
 Conversione frequenza-frequenza, XVIII-53
 
 Convertitori, asimmetrici, XVIII-40
@@ -925,13 +895,18 @@ Carico unitario di rottura, XIX-9
 Cassette, tubi attestabili nelle, XIX-48
 Cavi, classificazione, XIX-32
 - colori distintivi delle anime, XIX-32
+
 Cavi a fibre ottiche, generalità, XIX-34
 - tipi di, XIX-36
+
 Centralino, XIX-48
+
 Ciclo di isteresi, XIX-17, 143
+
 Codice colori, dei condensatori, XIX-135, 136
 - degli induttori, XIX-140
 - dei resistori, XIX-112
+
 Coefficiente di bontà, XIX-129
 - conducibilità termica interna, XIX-11
 - dilatazione lineare, XIX-11
@@ -940,6 +915,7 @@ Coefficiente di bontà, XIX-129
 - tensione, XIX-109
 
 Commutatore, XIX-53
+
 Condensatori, XIX-127, 137
 - variabili, XIX-136
 
@@ -1093,15 +1069,15 @@ Materiali, XIX-3
 - Saturazione, XIX-17
 - Segnalazioni, quadro indicatore a cartellini, XIX-65
   - Quadro indicatore luminoso, XIX-65
-  - Ronzatore, XIX-62
-  - Suoneria, XIX-62
+- Ronzatore, XIX-62
+- Suoneria, XIX-62
 - Semiconduttori, XIX-22, 23, 25, 28
 - Serie normalizzate delle resistenze, XIX-112
-- Simboli grafici del, condensatore, XIX-131
+- Simboli grafici del condensatore, XIX-131
   - Induttore, XIX-139
   - Potenziometro, XIX-116
   - Resistore, XIX-111
-- Sostanze, diamagnetiche, XIX-16
+- Sostanze diamagnetiche, XIX-16
   - Paramagnetiche, XIX-16
 - Stabilità, XIX-111
 
@@ -1208,7 +1184,7 @@ Progettazione elettrica ed elettronica
 - PWM, XX-165
 - Quadro, dell’incidenza della manodopera, XX-8
 - Quadro economico, XX-7
-- Quote d’installazione, delle apparecchiature, XX-11
+- Quote d’installazione delle apparecchiature, XX-11
 - Eliminazione barriere architettoniche, XX-11
 - Raddrizzatore, XX-149
   - Tipi di, XX-150, 151
