@@ -229,19 +229,7 @@ Luogo delle radici, XV-32
 - EHS, XVI-18
 - funzionamento, XVI-3
 - funzione filtro, XVI-21
-- EIB, XVI-18, 22
-- funzionamento, XVI-4
-- funzione filtro, XVI-24
-- funzione routing-counter, XVI-24
-- HBS, XVI-20
-- HES, XVI-20, 27
-- indirizzo fisico, XVI-24, 26
-- indirizzo di gruppo, XVI-26
-- LonWorks, XVI-2, 19
-- multivendor, XVI-2
-- proprietari, XVI-2, 27
-- radio frequenza, XVI-3
-- scenario, XVI-35
+- EIB,
 - standardizzati, XVI-2
 - telegramma, XVI-25
 - utenti, XVI-12
@@ -336,7 +324,7 @@ Luogo delle radici, XV-32
 **Teorema di De Morgan**, XVII-89
 **Decodifica**, circuiti, XVII-107
 
-**Demultiplexer**,
+**Demultiplexer**
 - armonica, XVII-162
 - di cross-over, XVII-168
 - di non linearità, XVII-162
@@ -394,7 +382,6 @@ Luogo delle radici, XV-32
 - d'anello, XVII-17
 
 **Impedenza**, bipoli, XVII-9
-
 **JFET**, XVII-59
 
 **MOSFET**:
@@ -519,7 +506,7 @@ Luogo delle radici, XV-32
 - sonde, XVII-211
 - tubo a raggi catodici, XVII-192
 
-PAL, XVII-130
+**PAL**, XVII-130
 
 **Parametri di ammettenza**, XVII-21
 - ibridi g, XVII-23
@@ -527,59 +514,59 @@ PAL, XVII-130
 - di impedenza, XVII-20
 
 **Piastre di raffreddamento**, XVII-163
-PLD, XVII-129
+**PLD**, XVII-129
 
-Poli, XVII-14
+**Poli**, XVII-14
 
-Ponte di Graetz, XVII-46
-Porte logiche di base, XVII-97
+**Ponte di Graetz**, XVII-46
+**Porte logiche di base**, XVII-97
 - simboli delle porte logiche, XVII-99
 - simboli normalizzati delle porte logiche, XVII-100
-Porte universali, XVII-99
+**Porte universali**, XVII-99
 
-Pulsazioni di taglio, XVII-29
+**Pulsazioni di taglio**, XVII-29
 
-Q, fattore di qualità, XVII-19
+**Q**, fattore di qualità, XVII-19
 
-Quadripoli, XVII-12
+**Quadripoli**, XVII-12
 
-Quantizzazione, XVII-183
+**Quantizzazione**, XVII-183
 
-Quanto, XVII-183
+**Quanto**, XVII-183
 
-Raddrizzamento, circuiti di, XVII-44
+**Raddrizzamento**, circuiti di, XVII-44
 
-Raddrizzatori di precisione con AO, XVII-81
+**Raddrizzatori di precisione con AO**, XVII-81
 
-RAM, XVII-125, 129
+**RAM**, XVII-125, 129
 
-Reazione, XVII-17
+**Reazione**, XVII-17
 
-Registri, XVII-118
+**Registri**, XVII-118
 - a scorrimento, XVII-119
 - tipi di registri a scorrimento, XVII-121
-Rendimento di conversione degli amplificatori, XVII-166
+**Rendimento di conversione degli amplificatori**, XVII-166
 
-Resistenza termica, XVII-163
+**Resistenza termica**, XVII-163
 
-Ripple, XVII-46
+**Ripple**, XVII-46
 
-Risoluzione, XVII-184
+**Risoluzione**, XVII-184
 
-Ritardi di propagazione, XVII-73
+**Ritardi di propagazione**, XVII-73
 
-Ritardi di propagazione nei latch, XVII-113
+**Ritardi di propagazione nei latch**, XVII-113
 
-Circuito RLC, XVII-18
-ROM, XVII-125, 128
+**Circuito RLC**, XVII-18
+**ROM**, XVII-125, 128
 
-Rumore di quantizzazione, XVII-184
+**Rumore di quantizzazione**, XVII-184
 
-Sag, XVII-31
+**Sag**, XVII-31
 
-Schemi a blocchi, algebra degli, XVII-15
+**Schemi a blocchi**, algebra degli, XVII-15
 
-Trigger di Schmitt con AO, XVII-80
+**Trigger di Schmitt con AO**, XVII-80
 - Trigger di Schmitt con 555, XVII-146
 
 SCR, XVII-170
@@ -753,7 +740,6 @@ Flyback, convertitore, XVIII-37, 39, 40, 41
 Forward, convertitore, XVIII-37, 40, 41, 42, 43
 
 Frenatura con recupero di energia, XVIII-33
-
 Funzionamento, in modo continuo, XVIII-38, 39, 41, 42
 - in modo discontinuo, XVIII-38, 39, 41
 
@@ -932,9 +918,6 @@ Costante dielettrica, XIX-127
 Curva di magnetizzazione, XIX-17, 143
 
 Densità, XIX-7
-
-Deriva di un campo elettrico, XIX-28
-
 Deviatore, XIX-52
 
 Diamagnetismo, XIX-16
