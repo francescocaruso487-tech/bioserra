@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-09-01
+aggiornato: 2026-09-02
 pdf_count: 6
 ---
 
@@ -12,30 +12,37 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico di decomposizione controllata dei materiali organici, finalizzato alla produzione di un ammendante naturale ricco di nutrienti, microrganismi benefici e sostanza organica stabile. In un sistema **Living Soil** outdoor, come quello tipico di Caserta (41°N), il compost rappresenta la base per costruire un substrato fertile, dotato di struttura, capacità di ritenzione idrica e biodiversità microbica. Il processo si basa sull’azione sinergica di batteri, funghi, attinomiceti e organismi superiori (come lombrichi), che trasformano materiali grezzi (verde/marrone) in humus stabile, rilasciando gradualmente nutrienti assimilabili dalle piante.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo avviene grazie all'azione sinergica di batteri termofili, funghi e macroinvertebrati, che in condizioni ottimali (temperatura 55-65°C, umidità 50-60%, aerazione) degradano la materia in humus stabile. Il compost maturo migliora la struttura del suolo, aumenta la capacità di scambio cationico (CSC), favorisce la biodiversità microbica e fornisce nutrienti a lento rilascio, essenziali per la fase vegetativa delle piante in **Living Soil**.
 
-Il meccanismo chiave del compostaggio è la **termofilia**: durante la fase attiva (55–65°C), i microrganismi termofili degradano rapidamente la materia organica, eliminando patogeni e semi di infestanti. Successivamente, la fase di raffreddamento (maturazione) consente lo sviluppo di funghi e attinomiceti, che stabilizzano i composti umici e migliorano la struttura del suolo. Per le colture in serra outdoor, un compost di qualità garantisce un apporto costante di azoto, fosforo, potassio e micronutrienti, riducendo la necessità di fertilizzanti sintetici e promuovendo la resilienza delle piante durante le fasi di **germinazione** e **vegetazione**.
-
----
+Il meccanismo si basa sulla decomposizione aerobica, dove i microrganismi ossidano la materia organica producendo calore, CO₂ e acqua. La fase termofila (55-65°C) è cruciale per eliminare patogeni e semi di infestanti, mentre la successiva fase di raffreddamento (mesofila) permette lo sviluppo di funghi e attinomiceti, arricchendo ulteriormente il compost di enzimi e sostanze umiche. Per le coltivazioni outdoor a Caserta (41°N), un compost ben strutturato è fondamentale per contrastare la siccità estiva e mantenere la fertilità del suolo durante tutto il ciclo colturale.
 
 ## Come si applica in serra
+1. **Selezione dei materiali**:
+   - **Verde** (azoto): scarti di frutta/verdura, erba fresca, fondi di caffè, letame fresco (es. cavallo o pollo, diluito).
+   - **Marroni** (carbonio): foglie secche, paglia, cartone non stampato, rametti triturati.
+   - *Rapporto ideale*: 2:1 (verde:marroni) per evitare acidificazione o putrefazione.
 
-### 1. **Selezione dei materiali**
-- **Materiali verdi** (ricchi di azoto, umidi): scarti di frutta/verdura, erba fresca, fondi di caffè, letame fresco (es. cavallo o pollo).
-- **Materiali marroni** (ricchi di carbonio, secchi): foglie secche, paglia, cartone non stampato, ramaglie triturate.
-- **Bilancia**: rapporto ideale **2:1** (2 parti marroni per 1 parte verde). Evitare materiali trattati con pesticidi o metalli pesanti.
+2. **Costruzione del cumulo**:
+   - Strato base: 10 cm di marroni per favorire l'aerazione.
+   - Alternare strati di verdi e marroni (max 5 cm ciascuno), bagnando leggermente ogni strato.
+   - Altezza consigliata: 1-1.5 m per mantenere la temperatura.
 
-### 2. **Preparazione del cumulo**
-- **Ubicazione**: scegliere un’area ombreggiata e ben drenata in serra, lontano da fonti di calore dirette.
-- **Struttura**: alternare strati di materiali verdi e marroni (5–10 cm ciascuno), iniziando con uno strato di ramaglie per favorire l’aerazione alla base.
-- **Umidità**: il cumulo deve essere umido come una spugna strizzata (60–70% di umidità). Aggiungere acqua se necessario, evitando ristagni.
+3. **Gestione termica**:
+   - Monitorare la temperatura con sonda (termometro da compost) o termocoppia.
+   - *Obiettivo*: 55-65°C per 3-5 giorni (fase termofila), poi ridurre a 40-50°C.
+   - *Strumenti*: termometro a sonda, copertura con telo traspirante per trattenere umidità.
 
-### 3. **Gestione termica e rivoltamenti**
-- **Temperatura**: monitorare con sonda termometrica. Mantenere tra **55–65°C** per 2–3 settimane (fase termofila).
-- **Rivoltamenti**: ogni **2–3 giorni** con forca o pala, per ossigenare il cumulo e uniformare la decomposizione. Dopo 3–4 settimane, ridurre la frequenza a 1 volta/settimana.
-- **Segnali di maturazione**: temperatura scende sotto i 40°C, cumulo assume odore di terra umida, colore scuro e struttura simile a terriccio.
+4. **Rivoltamenti**:
+   - Rivoltare il cumulo ogni 2-3 giorni con forca o pala per ossigenare e uniformare la decomposizione.
+   - *Segnali di bisogno di rivoltamento*: odore di ammoniaca (eccesso di azoto) o temperatura in calo.
 
-### 4. **Maturazione e utilizzo**
-- **Durata**: 2–6 mesi totali (a seconda delle condizioni climatiche di Caserta, dove l’umidità e il caldo accelerano il processo).
-- **Setacciatura**: setacciare il compost maturo per separare eventuali materiali non decomposti (da reintrodurre nel cumulo).
-- **Applicazione**: miscelare al **20–30%** con substr
+5. **Maturazione**:
+   - Dopo 4-6 settimane, la temperatura scende sotto i 40°C: il compost è pronto quando è scuro, friabile e profuma di terra umida.
+   - *Test pratico*: se non si riscalda più dopo essere stato rivoltato, è maturo.
+
+6. **Applicazione in serra**:
+   - Miscelare 20-30% di compost maturo al substrato di coltivazione (es. 3-5 kg/m²).
+   - Per piante in vaso: aggiungere 10-15% di compost alla miscela di base (terriccio + perlite + fibra di cocco).
+
+## Sinergie con altri elementi
+- **Lakhovsky (OEM)**: Il compost ar
