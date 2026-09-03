@@ -2,7 +2,7 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-09-02
+aggiornato: 2026-09-03
 pdf_count: 3
 ---
 
@@ -12,23 +12,27 @@ pdf_count: 3
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta il cuore della nutrizione nel **Living Soil**, un approccio che mira a ripristinare e mantenere l’equilibrio biologico del suolo attraverso apporti di materia vivente. A differenza dei fertilizzanti sintetici, che forniscono nutrienti in forma minerale pronta all’assorbimento, gli ammendanti organici (come farine di sangue, osso, pesce, compost o humus di lombrico) vengono decomposti da microrganismi e funghi micorrizici, che li trasformano in nutrienti assimilabili dalle piante. Questo processo non solo nutre le colture, ma **rigenera la struttura del suolo**, migliorando la capacità di ritenzione idrica, la porosità e la biodiversità microbica. In una serra outdoor a Caserta (41°N), dove il clima mediterraneo può stressare i suoli con calore e siccità, la fertilizzazione organica agisce come un **sistema tampone**, riducendo la lisciviazione dei nutrienti e promuovendo una crescita lenta ma sostenibile.
+La **fertilizzazione organica** rappresenta un approccio rigenerativo alla nutrizione delle piante, basato sull’utilizzo di ammendanti naturali derivati da processi biologici. A differenza dei fertilizzanti sintetici, questi materiali (come farine di sangue, osso o pesce) si decompongono lentamente nel *Living Soil*, rilasciando nutrienti in modo graduale e stimolando l’attività microbica. Il meccanismo d’azione si fonda sulla **simbiosi tra piante e microrganismi**: batteri e funghi (come i micorrizici) trasformano la materia organica in forme assimilabili (es. azoto nitrico, fosforo solubile), mentre le piante, tramite le radici, scambiano zuccheri con la rete trofica del suolo. Questo processo non solo nutre la coltura, ma **rigenera la struttura del terreno**, migliorando la ritenzione idrica, la porosità e la resilienza agli stress ambientali.
 
-Il meccanismo d’azione si basa sulla **simbiosi tra piante e microbiota**: le radici, attraverso le micorrize, scambiano zuccheri con i funghi, che a loro volta mobilitano fosforo e azoto dai composti organici. Questo ciclo virtuoso, descritto nel *Soil Biology Primer* di Elaine Ingham [pdf_338], aumenta l’efficienza nutrizionale fino al 80% rispetto ai fertilizzanti chimici. Inoltre, la materia organica umifica il suolo, creando un ambiente ideale per organismi benefici come i protozoi e i nematodi predatori, che controllano patogeni e parassiti. In ottica **elettroculturale**, la fertilizzazione organica si integra con le emissioni telluriche (es. spirali di rame di Lakhovsky [pdf_307]), poiché un suolo ricco di carbonio organico è più reattivo alle correnti bioelettriche naturali, amplificando la risposta delle piante.
+In serra outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, la fertilizzazione organica assume un ruolo chiave per **bilanciare la mineralizzazione rapida** tipica dei suoli caldi. L’apporto costante di carbonio organico (es. compost, humus di lombrico) alimenta la biomassa microbica, che a sua volta protegge le radici da patogeni e competitori. Inoltre, la presenza di **sostanza organica stabile** (es. lignina) modula la temperatura del suolo, riducendo gli shock termici. Secondo Elaine Ingham (*The Soil Biology Primer*), un suolo ricco di funghi micorrizici può aumentare l’assorbimento di fosforo e azoto del **30-80%**, dimostrando come la fertilizzazione organica sia un moltiplicatore di efficienza per l’agricoltura rigenerativa.
 
 ---
 
 ## Come si applica in serra
 
-### **Preparazione del suolo (pre-semina)**
-1. **Analisi del suolo**: Effettua un test del suolo (pH, NPK, materia organica) per identificare carenze. A Caserta, i suoli tendono a essere calcarei e poveri di azoto: integrare con **compost maturo** (2–3 kg/m²) e **farina di osso** (100–150 g/m²) per fosforo.
-2. **Ammendamento profondo**: Lavora gli ammendanti a 20–30 cm di profondità con una forca o un motocoltivatore, evitando di disturbare le micorrize esistenti.
+### **Preparazione del terreno**
+1. **Analisi del suolo**: Effettuare un test (es. metodo Haney o analisi chimica) per identificare carenze di NPK e pH. A Caserta, i suoli tendono a essere alcalini (pH >7.5) e poveri di azoto organico.
+2. **Ammendamento di base**:
+   - **Compost maturo** (2-3 kg/m²): Applicare 2 settimane prima della semina, incorporando superficialmente (5-10 cm) per evitare perdite di azoto.
+   - **Humus di lombrico** (1 kg/m²): Aggiungere al trapianto per stimolare la rizosfera.
+   - **Biochar** (0.5 kg/m²): Migliorare la ritenzione idrica e la capacità di scambio cationico.
 
 ### **Fertilizzazione durante la coltivazione**
-- **Fase di vegetazione (germinazione → pre-fioritura)**:
-  - **Farina di sangue** (10–15 g/m² ogni 2 settimane): ricca di azoto organico (12–15%), ideale per lo sviluppo fogliare. Applica in strisce laterali alle file, interrandola leggermente.
-  - **Tè di compost aerato**: nebulizza una soluzione diluita (1:10) ogni 7–10 giorni per stimolare la microbiologia.
-  - **Monitoraggio**: Foglie di colore verde scuro (non gialle) indicano un apporto equilibrato di azoto.
+- **Fase di vegetazione** (1-6 settimane):
+  - **Farine organiche**: Utilizzare **farina di sangue** (10-15 g/m²) ogni 2 settimane per azoto rapido. Alternare con **farina di pesce** (20 g/m²) per fosforo e micronutrienti.
+  - **Tè di compost**: Applicare ogni 10 giorni (diluizione 1:10) per apportare microrganismi benefici.
+  - **Monitoraggio**: Osservare il colore delle foglie (clorosi = carenza di azoto; foglie viola = fosforo).
 
-- **Fase di fioritura (dalla pre-fioritura alla maturazione)**:
-  - **Farina di pesce** (20–30 g/m² ogni 15 giorni): apporta azoto, fosforo e oligoelementi (es. zinco, manganese). Ridurre la dose se le piante mostrano
+- **Fase di fioritura** (dalla 7ª settimana):
+  - Ridurre la farina di sangue (passare a 5 g/m²) e aumentare **farina di osso** (30 g/m²) per potassio e calcio.
+  - Aggiungere **melassa** (10 ml/m²) nei tè di compost per nutrire
