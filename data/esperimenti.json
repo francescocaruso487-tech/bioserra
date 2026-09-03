@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-02T07:13:10.664231+00:00",
+  "lastUpdate": "2026-09-03T07:18:05.452590+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -804,42 +804,6 @@
     }
   ],
   "proposte": [
-    {
-      "nome": "Coltivazione in Living Soil con stimolazione bioelettrica del Corpo di Luce vegetale",
-      "ipotesi": "Se il terreno vivo (Living Soil) è un ecosistema in equilibrio analogo al 'Corpo di Luce' (Body of Light), allora applicare una stimolazione bioelettrica a bassa intensità (simile alla dualità superiore/inferiore) al sistema radicale delle piante aumenterà la loro capacità di assorbire nutrienti e acqua, migliorando la crescita e la resilienza. Questo perché, come descritto nel Manuale A, il Living Soil richiede un ambiente privo di tossine per funzionare ottimamente, mentre il Manuale B sottolinea l'importanza dell'equilibrio interiore (heaven = even = equilibrio) per il Corpo di Luce. La stimolazione bioelettrica potrebbe agire come un 'sé superiore' che guida l'ecosistema verso una maggiore armonia.",
-      "protocollo": [
-        "Prepara due aiuole gemelle in Living Soil (stesso substrato, stesso compost, stessa esposizione solare) nella BioSerra Caserta. Assicurati che il terreno sia vivo con micorrize e batteri benefici (Manuale A).",
-        "Collega un elettrodo di rame (anodo) a una batteria da 9V e un secondo elettrodo (catodo) a un filo di acciaio inox. Interra gli elettrodi a 10 cm di profondità, distanziati di 30 cm, in una delle due aiuole (aiuola sperimentale). L'altra aiuola sarà il controllo (senza stimolazione).",
-        "Pianta semi femminizzati di Pianta ad alto THC (Manuale A) in entrambe le aiuole, con la stessa densità e profondità. Innaffia entrambe solo con acqua (water-only) per evitare interferenze nutrizionali.",
-        "Applica una corrente continua di 1.5V (bassa tensione) tra gli elettrodi per 2 ore al giorno (mattina), simulando una 'guida energetica' al sistema radicale (simile al concetto di dualità superiore/inferiore del Manuale B). Monitora quotidianamente l'umidità del suolo e la crescita delle piante."
-      ],
-      "materiali": [
-        "2 aiuole gemelle in Living Soil",
-        "Semi femminizzati di Pianta ad alto THC",
-        "Batteria da 9V",
-        "Elettrodi in rame e acciaio inox",
-        "Cavi elettrici isolati",
-        "Multimetro per misurare la corrente",
-        "Righello e bilancia per misurare crescita e peso"
-      ],
-      "durata_giorni": 30,
-      "misure": [
-        "Altezza delle piante (misurata settimanalmente con righello)",
-        "Peso fresco delle piante (misurato alla fine dell'esperimento con bilancia)",
-        "Umidità del suolo (misurata quotidianamente con igrometro per assicurare condizioni identiche)",
-        "Presenza di micorrize e batteri benefici (osservazione microscopica del terreno prelevato da entrambe le aiuole)"
-      ],
-      "variabili_controllo": "Stesso substrato, stesso tipo di semi, stessa esposizione solare, stessa quantità di acqua, stessa temperatura ambientale, stessa durata della stimolazione (solo l'applicazione della corrente differisce tra le aiuole).",
-      "categoria": "sinergia",
-      "difficoltà": "media",
-      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
-      "fonte_b": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
-      "originalità": "Questo esperimento non si trova in nessuno dei due manuali singolarmente perché combina il concetto di Living Soil (Manuale A) con la stimolazione bioelettrica ispirata al Corpo di Luce (Manuale B), creando un approccio olistico che integra principi fisici e spirituali in un contesto agronomico misurabile.",
-      "id": "esp_conn_2026-07-06_003",
-      "data_proposta": "2026-07-06",
-      "attivo": false,
-      "tipo": "connessione_pairwise"
-    },
     {
       "nome": "Effetto del Compost Maturo Arricchito con Terpeni sulla Mobilità dei Nutrienti nel Living Soil",
       "ipotesi": "L'aggiunta di compost maturo arricchito con terpeni (da peperoncini secchi) al terreno prima della semina aumenterà la disponibilità di nutrienti mobili (azoto, fosforo, potassio) e l'attività microbica, migliorando la crescita delle piante. Questo perché il compost (Manuale B) arricchisce il suolo di microrganismi e nutrienti, mentre i terpeni stimolano l'attività microbica e la solubilizzazione dei nutrienti (Manuale A).",
@@ -4234,14 +4198,48 @@
       "data_proposta": "2026-09-02",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra vasi biologici e semi femminizzati su resa in CBD/THC in Living Soil outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici (Manuale A: favoriscono sviluppo radicale e salute delle piante) e semi femminizzati (Manuale B: garantiscono piante produttive al 100%) in un sistema Living Soil outdoor aumenterà la resa in CBD/THC del 20-30% rispetto all'uso separato di questi elementi. La sinergia tra radici sane (vasi + terreno biologico) e piante produttive (semi femminizzati) ottimizzerà l'assorbimento dei nutrienti e la fotosintesi, massimizzando la produzione di cannabinoidi.",
+      "protocollo": [
+        "Preparare 20 vasi identici (10L) con Living Soil (compost biologico + micorrize + lombrichi). Metà dei vasi (Gruppo A) utilizzano terriccio standard, l'altra metà (Gruppo B) terriccio arricchito con biochar e zeolite per migliorare la struttura e la ritenzione idrica.",
+        "Seminare 10 semi femminizzati ad alto CBD (Gruppo A) e 10 semi femminizzati ad alto THC (Gruppo B) in ciascun tipo di vaso, per un totale di 40 piante. Mantenere distanza e condizioni identiche (irrigazione con sola acqua, nessun fertilizzante aggiuntivo).",
+        "Dopo 30 giorni, misurare l'altezza, il numero di nodi e la biomassa fogliare per ogni pianta. Prelevare campioni di foglie per analisi HPLC (CBD/THC) su 5 piante per gruppo.",
+        "Confrontare i dati tra Gruppo A (terriccio standard + semi femminizzati) e Gruppo B (terriccio arricchito + semi femminizzati) per valutare l'impatto della combinazione su resa e qualità dei cannabinoidi."
+      ],
+      "materiali": [
+        "20 vasi da 10L in terracotta biologica",
+        "Living Soil (compost, micorrize, lombrichi)",
+        "Biochar e zeolite (per Gruppo B)",
+        "Semi femminizzati CBD/THC (stessa genetica per tutti i gruppi)",
+        "Sistema di irrigazione a goccia (acqua only)",
+        "Bilancia di precisione, metro, HPLC per analisi cannabinoidi"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Altezza, biomassa, numero di nodi (misure quantitative)",
+        "Analisi HPLC per CBD/THC (mg/g) su campioni fogliari",
+        "Confronto statistico tra gruppi (test t di Student)"
+      ],
+      "variabili_controllo": "Genetica dei semi, volume del vaso, tipo di Living Soil (tranne l'arricchimento), quantità d'acqua, esposizione solare, temperatura.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "Questo esperimento non è presente in nessuno dei due manuali singolarmente. Il Manuale A si concentra su vasi/terreno biologico senza approfondire la genetica dei semi, mentre il Manuale B tratta dei semi femminizzati senza considerare l'impatto del substrato. La combinazione specifica di questi due elementi in un contesto Living Soil outdoor è un approccio innovativo per massimizzare la resa cannabinoide.",
+      "id": "esp_conn_2026-09-03_001",
+      "data_proposta": "2026-09-03",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-09-02",
-    "nuove_proposte": 2,
-    "pdf_analizzati": 176,
-    "connessioni_usate": 810
+    "data": "2026-09-03",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 202,
+    "connessioni_usate": 853
   }
 }
