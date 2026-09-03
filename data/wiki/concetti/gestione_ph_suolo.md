@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-09-02
+aggiornato: 2026-09-03
 pdf_count: 10
 ---
 
@@ -12,18 +12,25 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la concentrazione di ioni idrogeno (H⁺) e determina l’acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil**, un pH compreso tra **6.0 e 7.0** è considerato ottimale perché garantisce l’assorbimento equilibrato di macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro, zinco, ecc.). Al di fuori di questo range, alcuni elementi diventano insolubili o tossici: ad esempio, in terreni troppo acidi (pH < 5.5), il manganese e l’alluminio possono raggiungere livelli tossici, mentre in quelli alcalini (pH > 7.5), il fosforo, il ferro e lo zinco precipitano e diventano inaccessibili alle radici. La gestione del pH non è statica ma dinamica: variazioni stagionali, apporti di materia organica, attività microbica e pratiche colturali (come l’irrigazione con acqua dura) possono alterarlo rapidamente. In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce evaporazione e lisciviazione, il monitoraggio costante è cruciale per prevenire squilibri.
+Il pH del suolo rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un intervallo ottimale tra **6.0 e 7.0** (lieve acidità-neutralità) garantisce l'assorbimento equilibrato di macro e microelementi, come azoto (N), fosforo (P), potassio (K), calcio (Ca), magnesio (Mg) e ferro (Fe). Al di fuori di questo range, i nutrienti possono precipitare in forme insolubili (es. fosfati in suoli alcalini) o essere lisciviati (es. azoto in suoli acidi), compromettendo la crescita e la resa delle colture. La gestione del pH è quindi un atto di **equilibrio dinamico**, poiché il valore può variare in base a fattori come l'attività microbica, l'apporto di materia organica, le precipitazioni e l'uso di fertilizzanti.
 
-Il meccanismo di regolazione del pH si basa su reazioni chimiche e biologiche. Ad esempio, l’aggiunta di **calce agricola (CaCO₃)** neutralizza l’acidità liberando ioni calcio (Ca²⁺) e riducendo la concentrazione di H⁺, mentre lo **zolfo elementare (S)** abbassa il pH ossidandosi in solfato (SO₄²⁻) grazie all’azione dei batteri del suolo. Tuttavia, in un **Living Soil**, la correzione deve essere graduale e integrata con la vita microbica: un apporto eccessivo di calce può uccidere i funghi micorrizici, fondamentali per l’assorbimento dei nutrienti, mentre lo zolfo in dosi troppo elevate può acidificare eccessivamente il substrato. L’elettrocultura, come descritto nei PDF di riferimento, può essere un alleato prezioso: le spirali di rame (collegate a terra) generano campi elettromagnetici che stimolano l’attività microbica e favoriscono la mineralizzazione della materia organica, contribuendo indirettamente a stabilizzare il pH.
+Il meccanismo d'azione si basa sulla **chimica colloidale del suolo**: i colloidi organici (humus) e inorganici (argilla) trattengono ioni nutrienti sulla loro superficie, rilasciandoli in soluzione in funzione del pH. Ad esempio, in condizioni acide (pH < 5.5), l'eccesso di ioni H⁺ sposta gli altri cationi (Ca²⁺, Mg²⁺, K⁺) dai siti di scambio, riducendone la disponibilità. Viceversa, in suoli alcalini (pH > 7.5), la precipitazione di fosfati e micronutrienti (es. Fe, Mn, Zn) li rende inaccessibili alle radici. Una gestione proattiva del pH, quindi, non solo ottimizza l'alimentazione delle piante ma **potenzia la salute del suolo vivente**, favorendo la proliferazione di batteri e funghi simbionti (es. micorrize) che migliorano la struttura e la fertilità.
 
 ---
 
 ## Come si applica in serra
 
-1. **Monitoraggio costante**
-   - Utilizzare un **pH-metro digitale** (preferibilmente con sonda a penetrazione per evitare errori da campionamento superficiale) per misurare il pH del suolo **ogni settimana**, soprattutto dopo eventi climatici (piogge intense, ondate di calore) o apporti di fertilizzanti.
-   - Campionare a **10-15 cm di profondità** (zona delle radici attive) e registrare i valori in un diario di coltivazione. In serra outdoor a Caserta, dove l’umidità relativa è spesso elevata, il pH può variare rapidamente a causa della decomposizione della materia organica.
+1. **Misurazione periodica**:
+   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. soluzione di bario solfato) per analizzare il substrato **ogni settimana**, prelevando campioni a 10-15 cm di profondità in 3-4 punti della serra.
+   - Registrare i valori in un **registro colturale** per identificare tendenze (es. acidificazione dopo apporti di torba o solfati).
 
-2. **Correzione dell’acidità (pH < 5.8)**
-   - **Calce agricola (CaCO₃) o dolomite (CaMg(CO₃)₂)**: Apportare **100-200 g/m²** in modo uniforme sulla superficie del letto di coltivazione, seguita da una leggera lavorazione (5-10 cm) per incorporarla. Evitare l’uso di calce viva (CaO), troppo aggressiva per la vita microbica.
-   - **Cenere di legna**: Opzione organica (pH ~10-12), da usare con cautela (max 50 g/m
+2. **Correzione per pH < 5.8**:
+   - **Calce agricola** (CaCO₃ o Ca(OH)₂): distribuire **100-200 g/m²** in modo uniforme, incorporandola superficialmente con una zappetta o un motocoltivatore. Evitare eccessi, che possono innalzare troppo il pH e immobilizzare fosforo e zinco.
+   - **Cenere di legna** (opzione rapida): applicare **50-100 g/m²**, ma limitare l'uso per evitare accumulo di sali.
+
+3. **Correzione per pH > 7.2**:
+   - **Zolfo elementare** (S°): applicare **20-50 g/m²**, incorporandolo nel substrato. La trasformazione in acido solforico (per azione batterica) abbassa il pH gradualmente (effetto in 4-8 settimane).
+   - **Torba acida o aghi di pino**: aggiungere **1-2 kg/m²** come ammendante, mescolando al substrato. Ideale per serre con substrati troppo calcarei.
+
+4. **Monitoraggio post-correzione**:
+   - Ripetere la misurazione dopo **7-1
