@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-09-02
+aggiornato: 2026-09-03
 pdf_count: 1
 ---
 
@@ -12,26 +12,27 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo la loro rete miceliale nel substrato, creando un’estensione dell’apparato radicale fino a 100 volte superiore. Questo processo aumenta l’assorbimento di acqua, fosforo (P), azoto (N) e micronutrienti, migliorando la resilienza delle piante a stress idrici e patogeni. Inoltre, le micorrize stimolano la produzione di ormoni vegetali (es. auxine) e secernono enzimi che mineralizzano la materia organica, rendendo i nutrienti più disponibili per la pianta.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono la rete radicale della pianta, aumentando la capacità di assorbimento di acqua e nutrienti (in particolare fosforo e azoto) fino al 300%. In cambio, la pianta fornisce ai funghi carboidrati prodotti tramite fotosintesi, essenziali per la loro crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o nutrizionale, tipiche delle serre outdoor italiane, dove la variabilità climatica può compromettere l’efficienza radicale.
 
-In un contesto di **serra outdoor a Caserta (41°N)**, dove le condizioni climatiche possono variare da siccità estiva a piogge intense, l’inoculazione con micorrize è cruciale per ottimizzare la crescita delle piante (es. cannabis, ortaggi) in **Living Soil**. La simbiosi micorrizica non solo potenzia la fotosintesi e la fioritura, ma contribuisce anche alla struttura del suolo, promuovendo aggregazione delle particelle e aumento della capacità di scambio cationico (CEC). Studi dimostrano che piante micorrizate possono ridurre l’uso di fertilizzanti del 30-50% senza perdita di produttività, grazie alla maggiore efficienza nell’assorbimento dei nutrienti.
+La simbiosi micorrizica non è universale: alcune piante (come le Brassicaceae) non formano questo tipo di associazione, mentre altre (tra cui la cannabis) ne traggono benefici significativi. Studi dimostrano che le micorrize migliorano la resistenza a patogeni, la tolleranza a metalli pesanti e la struttura del suolo, grazie alla produzione di glomalina, una glicoproteina che aggrega le particelle terrose. In un contesto di **elettrocultura**, l’inoculazione può essere potenziata da campi elettromagnetici a bassa frequenza, che stimolano l’attività dei funghi e la colonizzazione radicale.
 
 ---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** in serra a Caserta, l’inoculazione con micorrize deve seguire un protocollo mirato alle condizioni locali (clima mediterraneo, suoli spesso argillosi o sabbiosi). Ecco le istruzioni passo-passo:
+Per una serra **Living Soil outdoor** a Caserta (41°N), l’inoculazione delle micorrize va eseguita con attenzione alle condizioni ambientali e al ciclo della pianta. Segui questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurarsi che il suolo sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico). Evitare terreni compattati o con pH estremo (<6.0 o >7.5).
-   - **Test del suolo**: Verificare la presenza di funghi micorrizici nativi (es. tramite analisi micorrizica o osservazione di radici sane). Se presenti, ridurre la dose di inoculo del 50%.
+   - Assicurati che il suolo sia ben drenato e ricco di materia organica (compost maturo, humus di lombrico). Evita substrati sterilizzati o con pH estremo (<6 o >7.5), che inibiscono la colonizzazione fungina.
 
 2. **Scelta dell’inoculo**:
-   - Utilizzare un inoculo commerciale **specifico per piante da fiore** (es. *Rhizophagus irregularis*, *Glomus mosseae*), preferibilmente in forma di **spore liofilizzate** o **micelio su substrato organico** (torba, argilla espansa).
-   - Quantità: **5–10 g per pianta** (dose standard per piante adulte; per piantine, ridurre a 2–3 g).
+   - Utilizza un inoculo a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus intraradices* o *Rhizophagus irregularis*, specifico per piante a fiore (es. cannabis). Quantità consigliata: **5-10g per pianta**, da distribuire direttamente sulle radici durante il trapianto.
 
-3. **Applicazione al trapianto**:
-   - **Metodo diretto**: Mescolare l’inoculo al substrato di trapianto (es. 5 g per 10 L di terra) o applicarlo direttamente nel foro di impianto, a contatto con le radici.
-   - **Metodo liquido**: Sciogliere l’inoculo in acqua non clorata (usare acqua magnetizzata o osmosi inversa) e irrigare la zona radicale al momento del trapianto. Evitare di esporre le spore a luce diretta (UV degrada i funghi).
+3. **Tecnica di applicazione**:
+   - **Al trapianto**: Apri una buca leggermente più profonda del pane di terra della piantina. Mescola l’inoculo con un po’ di substrato umido e posizionalo a contatto con le radici, evitando di esporle all’aria. Copri con terra e irriga delicatamente per favorire il contatto.
+   - **Per piante già in crescita**: Se necessario, applica l’inoculo tramite **fertirrigazione** (sciolto in acqua non clorata) o direttamente nel solco di irrigazione, evitando stress idrico nei giorni successivi.
 
-4. **Post-trapianto**:
-   - **Irrigazione**: Mantenere il suolo umido ma non saturo per 7–10 giorni dopo l’inoculazione, per favorire la colonizzazione radicale. Usare acqua a **pH 6.0–
+4. **Post-applicazione**:
+   - Mantieni il suolo umido (ma non saturo) per 7-10 giorni per favorire la colonizzazione. Evita l’uso di **fungicidi chimici** nei 30 giorni successivi, poiché uccidono anche i funghi benefici. Opta per trattamenti naturali (es. propoli, olio di neem) se necessario.
+
+5. **Integrazione con elettrocultura**:
+   - Posiziona un **anodo** (es. barra di rame) a 20-30 cm di profondità vicino alle radici e un **catodo** (es. barra di zinco) a 50 cm di distanza. Applica una tensione continua di **1-3
