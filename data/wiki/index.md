@@ -1,22 +1,16 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-09-03 | 18 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-09-04 | 15 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Elettrocultura secondo Lakhovsky](concetti/elettrocultura_lakhovsky.md) *(in 10 PDF)* — Applica campi elettromagnetici a bassa frequenza per stimolare la vitalità cellu
-- [Elettrocultura con elettrodi Fe-Cu](concetti/elettrocultura_fe_cu.md) *(in 10 PDF)* — Utilizza coppie di metalli (ferro e rame) per generare correnti galvaniche nel s
-- [Spirale in Rame per Elettrocultura](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona spirali di rame intorno alle piante per modulare i campi elettromagnet
-- [Antenna di Terra per Elettrocultura](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un'antenna al terreno per captare e amplificare le frequenze naturali de
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Tratta l'acqua di irrigazione con campi magnetici per migliorare la solubilità d
-- [Sistema Integrato di Elettrocultura](concetti/sistema_integrato_elettrocul.md) *(in 10 PDF)* — Combina più tecniche di elettrocultura (antenne, spirali, Fe-Cu) per un effetto 
-
-## Biodinamica
-- [Preparati Biodinamici](concetti/preparati_biodinamici.md) *(in 10 PDF)* — Applica preparati biodinamici (cornoletame, cornosilice) secondo i ritmi cosmici
-- [Ritmi Cosmici in Agricoltura Biodinamica](concetti/ritmi_cosmici.md) *(in 10 PDF)* — Sincronizza le operazioni agricole con i cicli lunari e planetari per ottimizzar
-- [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Trattamento acqua con magneti per migliorare assorbimento radicale.
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Spirale in rame per armonizzazione campi elettromagnetici nella zona radice.
+- [Circuito di Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Oscillatore multicellulare per stimolazione risonanza cellulare delle piante.
+- [Elettrodi Fe-Cu](concetti/elettrodi_fe_cu.md) *(in 10 PDF)* — Coppia ferro-rame nel suolo per stimolazione bioelettrochimica radicale.
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Connessione a terra per captare energie telluriche e migliorare il campo bioelet
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 10 PDF)* — Mantenimento microbioma del suolo attivo.
@@ -28,6 +22,9 @@
 ## Nutrizione
 - [Fertilizzazione Organica](concetti/fertilizzazione_organica.md) *(in 3 PDF)* — Apporto nutrienti tramite ammendanti organici naturali.
 - [Farine di Rocce](concetti/farine_di_rocce.md) — Minerali in polvere per rimineralizzazione lenta del substrato.
+
+## Biodinamica
+- [Calendario Lunare](concetti/calendario_lunare.md) *(in 9 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
 
 ## Fitosanitario
 - [Controllo Parassiti Naturale](concetti/controllo_parassiti.md) *(in 10 PDF)* — Gestione biologica di infestazioni con metodi naturali.
