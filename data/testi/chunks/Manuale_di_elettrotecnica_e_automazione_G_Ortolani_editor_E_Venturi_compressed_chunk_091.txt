@@ -6,6 +6,7 @@ Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
+Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 **INDICE**
 pag.
 1    GENERALITÀ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -85,6 +86,7 @@ pag.
 
 
 
+
 La **Fig. XVIII.1.5** evidenzia l’andamento della tensione ai capi di un carico costituito da una resistenza alimentata da una tensione alternata sinusoidale controllata da un SCR. Lo spostamento della fase dell’impulso di accensione implica una modifica sulla forma d’onda della tensione applicata al carico e, conseguentemente, sul valor medio della tensione applicata al medesimo. La possibilità di intervenire sullo sfasamento dell’impulso di accensione del dispositivo, rispetto alla fase della tensione di alimentazione, consente di ottenere una regolazione continua della tensione applicata al carico e, quindi, della corrente che lo attraversa.
 
 Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di **Fig. XVIII.1.5** in funzione dell’angolo di sfasamento è espresso da:
@@ -116,6 +118,7 @@ Si riportano nella **Tab. XVIII.1.1**, a titolo di esempio, i valori forniti per
 1.3 DIAC
 
 Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che basa il suo funzionamento sul superamento della tensione di *breakover*. Dal punto di vista funzionale è assimilabile a un SCR privo, però, di terminale di controllo e che consente il passaggio della corrente in entrambi i sensi non appena la tensione ai suoi capi supera la soglia di tensione di *breakover*; in quel momento si ha l’effetto valanga e il dispositivo presenta una caratteristica a resistenza negativa.
+
 
 
 
@@ -177,6 +180,7 @@ Il **TRIAC** è un dispositivo a giunzione di tipo p-n-p-n, la cui struttura e s
 **Fig. XVIII.1.8** Simbolo elettrico e struttura del TRIAC.
 
 Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale MT2 è positivo rispetto a MT1 e un impulso positivo di tensione viene applicato sul terminale di Gate rispetto a MT1 oppure, al contrario, il dispositivo SCR di destra conduce se il potenziale del terminale MT1 è positivo rispetto a MT2.
+
 
 
 
@@ -262,6 +266,7 @@ Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura
 
 
 
+
 Ne consegue che il dispositivo NPN passa nello stato di interdizione, e di conseguenza anche quello PNP.
 
 Fig. XVIII.1.14 Correnti durante la fase di interdizione del GTO.
@@ -318,6 +323,7 @@ Un confronto diretto tra un MOSFET e un IGBT consente di riportare i seguenti ri
 
 
 
+
 – Diminuzione del coefficiente di temperatura della tensione di saturazione di un IGBT rispetto a un MOSFET avente pari dimensioni di chip.
 
 – A parità di dimensioni del chip, il transistor IGBT presenta, rispetto al MOSFET, una carica elettrica di Gate necessaria per la commutazione minore di circa il 20%.
@@ -365,6 +371,7 @@ Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, o
 
 
 
+
 ELETTRONICA DI POTENZA
 XVIII-19
 
@@ -385,6 +392,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
