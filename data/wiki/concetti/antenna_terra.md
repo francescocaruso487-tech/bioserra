@@ -2,7 +2,7 @@
 id: antenna_terra
 label: Antenna di Terra
 categoria: elettrocultura
-aggiornato: 2026-09-09
+aggiornato: 2026-09-10
 pdf_count: 10
 ---
 
