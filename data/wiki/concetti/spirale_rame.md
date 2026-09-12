@@ -2,7 +2,7 @@
 id: spirale_rame
 label: Spirale in Rame
 categoria: elettrocultura
-aggiornato: 2026-09-11
+aggiornato: 2026-09-12
 pdf_count: 10
 ---
 
