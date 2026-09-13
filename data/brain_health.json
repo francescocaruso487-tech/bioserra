@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-12T07:07:48.034251+00:00",
+  "lastUpdate": "2026-09-13T07:26:50.765890+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -155,34 +155,34 @@
       "it": 79
     },
     "chunk_progresso_doc_con_dato": 21,
-    "chunk_progresso_totale_tradotti": 705,
+    "chunk_progresso_totale_tradotti": 717,
     "chunk_progresso_totale_chunk": 391,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_5",
         "chunk_progresso": {
-          "tradotti": 64,
+          "tradotti": 65,
           "totale": 8
         }
       },
       {
         "id": "pdf_298",
         "chunk_progresso": {
-          "tradotti": 64,
+          "tradotti": 65,
           "totale": 13
         }
       },
       {
         "id": "pdf_299",
         "chunk_progresso": {
-          "tradotti": 55,
+          "tradotti": 56,
           "totale": 6
         }
       },
       {
         "id": "pdf_323",
         "chunk_progresso": {
-          "tradotti": 59,
+          "tradotti": 60,
           "totale": 4
         }
       },
@@ -194,9 +194,16 @@
         }
       },
       {
+        "id": "pdf_328",
+        "chunk_progresso": {
+          "tradotti": 13,
+          "totale": 12
+        }
+      },
+      {
         "id": "pdf_329",
         "chunk_progresso": {
-          "tradotti": 64,
+          "tradotti": 65,
           "totale": 17
         }
       },
@@ -210,28 +217,28 @@
       {
         "id": "pdf_335",
         "chunk_progresso": {
-          "tradotti": 41,
+          "tradotti": 42,
           "totale": 21
         }
       },
       {
         "id": "pdf_352",
         "chunk_progresso": {
-          "tradotti": 117,
+          "tradotti": 119,
           "totale": 116
         }
       },
       {
         "id": "pdf_21",
         "chunk_progresso": {
-          "tradotti": 61,
+          "tradotti": 62,
           "totale": 23
         }
       },
       {
         "id": "pdf_85",
         "chunk_progresso": {
-          "tradotti": 61,
+          "tradotti": 62,
           "totale": 18
         }
       }
@@ -243,7 +250,7 @@
       "it": 79
     },
     "chunk_progresso_doc_con_dato": 21,
-    "chunk_progresso_totale_tradotti": 705,
+    "chunk_progresso_totale_tradotti": 717,
     "chunk_progresso_totale_chunk": 391
   },
   "connessioni": {
