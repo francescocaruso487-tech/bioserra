@@ -1,6 +1,6 @@
 ---
 tipo: overview
-aggiornato: 2026-09-15
+aggiornato: 2026-09-16
 ---
 
 # BioSerra — Knowledge Base Overview
