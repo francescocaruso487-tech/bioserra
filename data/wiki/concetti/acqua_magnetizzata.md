@@ -2,7 +2,7 @@
 id: acqua_magnetizzata
 label: Acqua Magnetizzata
 categoria: elettrocultura
-aggiornato: 2026-09-15
+aggiornato: 2026-09-16
 pdf_count: 10
 ---
 
