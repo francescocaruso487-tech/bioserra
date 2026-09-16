@@ -2,7 +2,7 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-09-15
+aggiornato: 2026-09-16
 pdf_count: 3
 ---
 
