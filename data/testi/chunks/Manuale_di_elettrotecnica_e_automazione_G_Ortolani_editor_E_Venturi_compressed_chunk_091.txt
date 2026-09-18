@@ -5,6 +5,7 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
+Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
@@ -87,6 +88,7 @@ pag.
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
 
+
 È indispensabile notare che, una volta innescata la conduzione, anche se il comando di *Gate* viene rimosso, il dispositivo permane nel suo stato di conduzione fino a che la corrente che lo attraversa non scende al di sotto di un determinato valore: questa corrente viene indicata con *I<sub>H</sub>* e prende il nome di corrente di automantenimento (**Fig. XVIII.1.4**). Non appena la corrente scende sotto il valore di automantenimento, il tiristore torna nel suo stato di interdizione, cioè di blocco totale del passaggio della corrente fino al prossimo impulso di *Gate*. Pertanto, l’innesco del dispositivo, cioè il passaggio alla conduzione, avviene tramite l’impulso di comando sul *Gate*, mentre la sua interdizione avviene autonomamente non appena la corrente scende al di sotto di valori compresi fra frazioni di milliampere e qualche centinaio di milliampere, in funzione della corrente che va a controllare e del dispositivo, mentre la durata dell’impulso può limitarsi a qualche decina di microsecondi. È evidente che la possibilità di variare l’istante di innesco del dispositivo consente di ottenere in uscita una tensione raddrizzata il cui valore medio varia da zero a quello di un diodo rettificatore tradizionale, il tutto con l’impiego di potenze di comando estremamente contenute.
 
 
@@ -115,6 +117,7 @@ ELETTRONICA DI POTENZA
 XVIII-7
 
 Nella **Fig. XVIII.1.6** si evidenzia l’andamento della corrente su un carico induttivo dove la tensione in ingresso *u<sub>i</sub>* viene applicata all’istante *t<sub>i</sub>*; si noti che la corrente cessa di scorrere quando la tensione applicata è pari alla forza elettromotrice *u<sub>L</sub>* di autoinduzione presente sull’utilizzatore (una di segno opposto all’altra). Gli angoli α e β dipendono anch’essi dal valore di induttanza del carico. Si ricorda infine che, come per tutti i dispositivi p-n-p-n, è necessario porre particolare attenzione al cosiddetto effetto *dU/dt*: la tensione di innesco di questi dispositivi è infatti legata a tale effetto; una rapida variazione della tensione applicata può portare il dispositivo in conduzione anche senza impulso di comando.
+
 
 **Fig. XVIII.1.6** Raddrizzatore controllato con carico induttivo.
 
@@ -175,6 +178,7 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 | D40         | 35  | 40  | 45  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | ST2         | 28  | 32  | 36  | 3,8 | -   | 200 | -   |       |     |       |       |
 | HT32        | 27  | -   | 37  | 3   | 5   | 50  | 2,0 |       |     |       |       |
+
 
 | DB3         | 28  | 32  | 36  | 3   | 5   | -   | 1,0 |       |     |       |       |
 
@@ -241,6 +245,7 @@ Si noti l’elevato valore del parametro **dv/dt** che consente l’impiego del 
 ### 1.5 Transistor di Potenza
 
 La necessità di effettuare commutazioni ON-OFF a frequenze molto elevate, condizione necessaria per limitare la potenza dissipata nei circuiti dell’elettronica di potenza, richiede dispositivi semiconduttori con valori di **slew rate**, cioè di **dv/dt**, superiori a quelli tipici degli SCR e dei TRIAC.
+
 
 Per questo motivo sono stati sviluppati due ulteriori tipi di interruttori allo stato solido, che presentano anche altre caratteristiche vantaggiose: i **GTO** (*Gate Turn Off*) e gli **IGBT** (*Insulated Gate Bipolar Transistor*).
 
@@ -343,6 +348,7 @@ Normalmente con questi dispositivi si opera con tensioni che possono raggiungere
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
 
 
+
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di [corrente/potenza].
 
 Queste caratteristiche comportano però anche un incremento della resistenza di conduzione del canale *R<sub>DS(on)</sub>* e, quindi, l’impossibilità di controllare elevate correnti con conseguenti elevate dissipazioni di potenza. La resistenza di canale *R<sub>DS(on)</sub>* modifica il suo valore raddoppiando per una variazione di temperatura da 25 a 125 °C, ed è proporzionale alla tensione di breakdown elevata alla 2,5.
@@ -384,6 +390,7 @@ I semiconduttori più comunemente utilizzati sono i transistor bipolari e i MOSF
 
 La Fig. XVIII.1.19 riporta il grafico tensione-frequenza nell’ambito delle aree di possibile impiego dei dispositivi a commutazione; da tale figura si evince come il GTO sia un dispositivo in grado di operare a frequenze di commutazione più elevate, inoltre è in grado di sostenere tensioni e correnti più elevate.
 Il suo più diretto avversario è il MOSFET in quanto è in grado di operare a frequenze decisamente più elevate, avere una maggiore facilità di parallelizzazione, avere un coefficiente di temperatura positivo della resistenza di canale, di non temere sovratensioni. Per contro la resistenza di canale elevata comporta nei MOSFET una elevata tensione di saturazione che li costringe ad operare a tensioni inferiori ai 500 Volt.
+
 
 
 Facilità di parallelizzazione
@@ -434,6 +441,7 @@ Si consideri un motore collegato a un *inverter* tramite una linea elettrica ave
 Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** collegato a un motore che presenta una capacità degli avvolgimenti di **2 nF**, si può immediatamente determinare il picco di corrente al quale sarà sottoposto ad ogni commutazione. Questa corrente scorre negli avvolgimenti del motore provocandogli perdite addizionali che, tra le altre, incrementano la sua temperatura. Inoltre, le possibili irregolarità nella distribuzione della capacità degli avvolgimenti stessi può portare a sovratensioni locali all’interno del motore con la conseguente possibile scarica elettrica tra i conduttori degli avvolgimenti. Risulta quindi evidente la necessità di limitare l’ampiezza del parametro tramite l’impiego di filtri adeguati; a tal riguardo si ricorda che la normativa **VDE 0530, Parte 1**, limita tale valore a **500 V/µs**.
 
 
+
 È necessario, inoltre, ricordare che un altro degli aspetti legati al tipo di funzionamento è la generazione di segnali elettromagnetici con frequenze e armoniche conseguenti che possono raggiungere valori superiori a **100 MHz**. La soluzione a queste problematiche deve essere determinata caso per caso, ma si può affermare che l’uso di filtri passa-basso di tipo **LCR** posti all’uscita di apparecchiature come l’inverter,
 
 **dU/dt =**
@@ -442,6 +450,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
