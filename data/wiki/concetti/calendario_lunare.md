@@ -2,7 +2,7 @@
 id: calendario_lunare
 label: Calendario Lunare
 categoria: biodinamica
-aggiornato: 2026-09-19
+aggiornato: 2026-09-20
 pdf_count: 9
 ---
 
