@@ -8,6 +8,7 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
+Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
@@ -83,6 +84,7 @@ pag.
  37
 
 7.1    Convertitore Buck . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
  37
 
 7.2    Convertitore Boost . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . .
@@ -115,6 +117,7 @@ XVIII.1.5
 U<sub>m</sub> = U<sub>iM</sub> (1 + cos α) / 2π
 
 Naturalmente anche per gli SCR la presenza di un carico ohmico-induttivo comporta delle variazioni sul loro funzionamento alterando quello che sono le forme d'onda delle tensioni risultanti applicate ai carichi. Tipicamente, a causa della forza elettromotrice indotta, la corrente nel carico risulta ritardata in partenza rispetto all’impulso applicato, ma prolungata durante la fase di estinzione. L’annullamento della corrente avviene quando la tensione applicata, peraltro già di valore negativo, equilibra il valore della tensione di autoinduzione del carico: in quell’istante, annullandosi il valore della corrente, il dispositivo passa allo stato di interdizione. È necessario limitare, principalmente tramite diodi di ricircolo, questo inconveniente, perché si potrebbe arrivare alla condizione limite per la quale con carichi fortemente induttivi risulterebbe impossibile effettuare una buona regolazione della tensione in uscita.
+
 
 [PAG 1825]
 ELETTRONICA DI POTENZA
@@ -177,6 +180,7 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 |-------------|---------------------------|-------------------------------------------|------------------------------------|----------------------------|-----------------------|
 | ST-2        | 32 ± 4                    | ± 3                                      | 5                                  | 5                          | 2                     |
 | ST-2        | 28 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
+
 | ST-2        | 32 ± 4                    | ± 3                                      | 5                                  | 5                          | 2                     |
 | ST-2        | 32 ± 4                    | ± 3                                       | 5                                  | 5                          | 2                     |
 |             | Min | Typ | Max | Min | Typ | Max | Min | Typ | Max | Min | Max |
@@ -240,6 +244,7 @@ In alternativa si ricorre a dispositivi in grado di pilotare correnti del valore
 
 Le caratteristiche elettriche principali di questi semiconduttori sono le seguenti:
 – tensione diretta e inversa di breakdown;
+
 – valore massimo della corrente;
 – valore minimo della corrente di mantenimento;
 – valore della tensione e della corrente di trigger (Gate);
@@ -353,6 +358,7 @@ XVIII-13
 
 Normalmente con questi dispositivi si opera con tensioni che possono raggiungere i 2500 V e correnti fino a 1000 A di picco ripetitivo. I tempi di commutazione, legati alla corrente che percorre il dispositivo, alla tensione applicata al Gate, alla resistenza serie del circuito di GATE, ed alla temperatura propria del dispositivo, hanno valori tipici dai 2 ai 5 µs per il passaggio dallo stato di OFF a quello di ON, e valori tipici da 1 a 21 µs per la funzione inversa. La corrente di innesco ha valori che vanno da 100 a 200 mA per costringerli allo stato di conduzione, e valori di tensione di 5 V per portarli allo stato di interdizione. Per questi dispositivi lo *slew rate* ha valori di vari kV/µs. Nella Fig. XVIII.1.15 viene riportata la caratteristica corrente di anodo in funzione della tensione anodo-catodo; tale figura evidenzia il fatto che se la corrente di Gate ha valore inferiore alla corrente di soglia, la caratteristica è quella tipica di un transistor.
 
+
 **Fig. XVIII.1.15** Caratteristica corrente-tensione di un GTO.
 
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
@@ -397,6 +403,7 @@ XVIII-15
 1.6 Semiconduttori nei convertitori a commutazione
 
 I semiconduttori più comunemente utilizzati sono i transistor bipolari e i MOSFET di potenza. Il transistor bipolare viene impiegato nei casi in cui la frequenza di commutazione non supera i 30 kHz; ciò è dovuto principalmente alle perdite di potenza durante la commutazione, poiché le sue perdite nello stato di ON sono estremamente ridotte. Quando la frequenza di commutazione è più elevata, si ricorre al MOSFET di potenza; questo presenta perdite di commutazione estremamente ridotte grazie a tempi di commutazione decisamente piccoli, anche se le perdite di potenza nello stato di ON risultano più elevate (queste ultime dipendono infatti dalla sua resistenza nello stato ON). Il circuito di comando del MOSFET è decisamente più semplice e meno costoso, ma il costo dei transistor MOSFET è più elevato; la scelta di un dispositivo o dell’altro risulterà da un compromesso tra velocità, costi e facilità di impiego.
+
 
 1.7 Criteri di scelta dei dispositivi
 
@@ -449,6 +456,7 @@ XVIII-19
 
 Non è possibile esimersi dal trattare, almeno brevemente, i filtri: la necessità di questi ultimi deriva sia da problemi inerenti la normativa EMC, sia da problemi legati al buon funzionamento delle apparecchiature, siano esse convertitori o utilizzatori.
 L’uso dei semiconduttori a tecnologia più avanzata quali, per esempio, gli IGBT, nell’impiego come convertitori di tensione-frequenza, consente commutazioni estremamente veloci dei semiconduttori con conseguenti perdite di potenza estremamente contenute nel dispositivo stesso, tanto che, oggigiorno, apparecchiature quali gli *inverter* vengono costruiti con dissipatori di calore aventi superficie decisamente contenuta rispetto alle precedenti realizzazioni.
+
 Anche se ciò risulta vantaggioso in termini di rendimento e di compattezza dell’apparecchiatura, è fonte di molti altri problemi: le rapide commutazioni dei semiconduttori comportano valori elevati del parametro **dU/dt**. L’importanza di quanto appena affermato risulta maggiormente chiara tramite l’esempio seguente (Fig. XVIII.1.23).
 Si consideri un motore collegato a un *inverter* tramite una linea elettrica avente lunghezza di qualche metro; l’*inverter* rileva come utilizzatore un dispositivo (il motore) avente una sua propria capacità elettrica e una sua induttanza. I valori di capacità e induttanza
 
@@ -466,6 +474,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
