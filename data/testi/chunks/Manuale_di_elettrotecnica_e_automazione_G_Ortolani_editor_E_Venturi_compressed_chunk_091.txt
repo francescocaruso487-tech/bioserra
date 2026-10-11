@@ -28,6 +28,7 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
+Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
@@ -73,6 +74,7 @@ pag.
  18
 
 1.9    Filtri . . . . . . . . . . . . *f.e.m. indotta nel carico* . . . . . . . . . . . . . . . . . .
+
  19
 
 1.10    Considerazioni termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -152,6 +154,7 @@ La **Fig. XVIII.1.5** evidenzia l’andamento della tensione ai capi di un caric
 Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di **Fig. XVIII.1.5** in funzione dell’angolo di sfasamento è espresso da:
 
 
+
 XVIII.1.5
 
 U<sub>m</sub> = U<sub>iM</sub> (1 + cos α) / 2π
@@ -221,6 +224,7 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
 | TYN 1006    | 1000                                     | 15                               | 1,5                            | 70 |
+
 
 
 
@@ -312,6 +316,7 @@ La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi pa
 **Fig. XVIII.1.9** Caratteristica corrente-tensione di un TRIAC.
 
 Dall’analisi della **Fig. XVIII.1.9** si evidenzia che il TRIAC opera in maniera simile al dispositivo SCR, ma consente alla corrente di scorrere in entrambe le direzioni; pertanto, per analogia, anche questo dispositivo entra in conduzione quando la tensione ai suoi estremi supera il valore della tensione di *breakover*, anche se quest’ultima è in realtà la tensione limite di funzionamento e, pertanto, non viene considerata nelle normali operazioni di funzionamento.
+
 
 
 
@@ -421,6 +426,7 @@ Ne consegue che il dispositivo NPN passa nello stato di interdizione, e di conse
 
 
 
+
 Fig. XVIII.1.14 Correnti durante la fase di interdizione del GTO.
 
 È fondamentale che, in questa fase, la durata dell’impulso negativo applicato al Gate sia sufficiente a garantire lo spegnimento del sistema.
@@ -491,6 +497,7 @@ La **Fig. XVIII.1.18** mostra chiaramente la caduta di tensione diretta ai capi 
 
 
 Un confronto diretto tra un MOSFET e un IGBT consente di riportare i seguenti risultati:
+
 
 
 
@@ -584,6 +591,7 @@ Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, o
 
 
 
+
 ELETTRONICA DI POTENZA
 XVIII-19
 
@@ -626,6 +634,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
