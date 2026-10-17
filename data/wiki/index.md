@@ -1,6 +1,6 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-10-16 | 15 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-10-17 | 15 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
