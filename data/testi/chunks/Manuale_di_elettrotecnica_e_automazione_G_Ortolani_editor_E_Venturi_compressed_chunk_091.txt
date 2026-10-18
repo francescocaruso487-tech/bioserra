@@ -35,6 +35,7 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
+Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
@@ -71,6 +72,7 @@ pag.
  14
 
 1.6    Semiconduttori nei convertitori a commutazione . . . . . . . . . . . . . . . . . . .
+
  15
 
 1.7    Criteri di scelta dei dispositivi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -165,6 +167,7 @@ La **Fig. XVIII.1.5** evidenzia l’andamento della tensione ai capi di un caric
 
 
 
+
 Il valore massimo si otterrà per uno sfasamento nullo, il valore minimo (cioè nullo) per uno sfasamento pari a 180°; la variazione dal minimo al massimo e viceversa viene ottenuta con continuità. Il valore medio della tensione sul carico resistivo del circuito di **Fig. XVIII.1.5** in funzione dell’angolo di sfasamento è espresso da:
 
 
@@ -240,6 +243,7 @@ Il **DIAC** altro non è che un dispositivo a semiconduttore bidirezionale che b
 **Caratteristiche elettriche T = 25 °C**
 
 | Dispositivo | Tensione ripetitiva diretta e inversa [V] | Corrente di trigger al Gate [mA] | Tensione di trigger al Gate [V] | Corrente di picco non ripetitiva [A] |
+
 
 
 |-------------|------------------------------------------|----------------------------------|--------------------------------|--------------------------------------|
@@ -336,6 +340,7 @@ Il dispositivo SCR di sinistra conduce ogniqualvolta il potenziale sul terminale
 
 
 La **Fig. XVIII.1.9** evidenzia la caratteristica corrente-tensione di questi particolari semiconduttori.
+
 
 
 
@@ -454,6 +459,7 @@ Il GTO viene progettato con particolare attenzione al drogaggio e alla struttura
 
 
 
+
 Ne consegue che il dispositivo NPN passa nello stato di interdizione, e di conseguenza anche quello PNP.
 
 
@@ -530,6 +536,7 @@ Queste caratteristiche comportano però anche un incremento della resistenza di 
 Il transistor IGBT si differenzia dal normale MOSFET in quanto il substrato epitassiale di partenza è drogato p invece che n. Si sfrutta il fenomeno indicato come modulazione di conduttività consistente nel fatto che la giunzione p-n che si forma (non presente nei normali MOSFET), inietta lacune nello strato epitassiale diminuendo così la resistenza del dispositivo in conduzione migliorando di conseguenza le sue caratteristiche nel controllo delle correnti.
 
 La **Fig. XVIII.1.18** mostra chiaramente la caduta di tensione diretta ai capi dei MOSFET e degli IGBT evidenziando, nel caso dei MOSFET, una relazione diretta tra la corrente che percorre il dispositivo e la tensione ai suoi capi.
+
 
 
 
@@ -640,6 +647,7 @@ Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, o
 
 
 
+
 ELETTRONICA DI POTENZA
 XVIII-19
 
@@ -682,6 +690,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
