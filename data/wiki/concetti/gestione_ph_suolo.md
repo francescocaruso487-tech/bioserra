@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-10-21
+aggiornato: 2026-10-22
 pdf_count: 10
 ---
 
