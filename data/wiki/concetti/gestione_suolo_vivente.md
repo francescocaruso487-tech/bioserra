@@ -2,7 +2,7 @@
 id: gestione_suolo_vivente
 label: Suolo Vivente
 categoria: suolo
-aggiornato: 2026-10-22
+aggiornato: 2026-10-23
 pdf_count: 10
 ---
 
