@@ -44,6 +44,7 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: EN | Script: traduci_testi.py
+Tradotto in italiano da: EN | Script: traduci_testi.py
 Tradotto in italiano da: ES | Script: traduci_testi.py
 Tradotto in italiano da: ES | Script: traduci_testi.py
 Tradotto in italiano da: ES | Script: traduci_testi.py
@@ -73,6 +74,7 @@ Sensori, XIII-3
 −, analogici con uscita in corrente, XIII-30
 −, analogici con uscita in tensione, XIII-29
 −, autoamplificato ON/OFF in corrente alternata, XIII-28
+
 −, autoamplificato ON/OFF in corrente continua, XIII-28
 
 −, capacitivi, XIII-38
@@ -231,6 +233,7 @@ Linguaggi di programmazione per PLC, XIV-64
 , ladder diagram (LD), XIV-69
 , structured text (ST), XIV-85
 Logica cablata, XIV-5
+
 Logica programmabile, XIV-5
 Operazioni con il PLC, XIV-131
 
@@ -422,6 +425,7 @@ Luogo delle radici, XV-32
 **Amplificatori a BJT**, XVII-54
 - a base comune, XVII-58
 - a collettore comune, XVII-58
+
 - ad emettitore comune, XVII-58
 - amplificazione, XVII-54
 
@@ -634,6 +638,7 @@ Luogo delle radici, XV-32
 **Microprocessore**:
 - 8080, XVII-134
 - assembler, XVII-133
+
 - bus, XVII-133
 - programmi, XVII-133
 - struttura, XVII-132
@@ -857,6 +862,7 @@ Porte three-state, XVII-101
 Timer 555, XVII-143
 - Multivibratore astabile con 555, XVII-146
 - Multivibratore monostabile con 555, XVII-144
+
 Schema a blocchi del timer 555, XVII-143
 
 
@@ -1073,6 +1079,7 @@ Modulazione di conduttività, XVIII-14
 Mosfet, XVIII-14, 15, 35, 49, 50
 
 MosIgbt, XVIII-14
+
 Normativa, EMC, XVIII-19
 - VDE 0530, XVIII-19
 
@@ -1310,6 +1317,7 @@ Interruttore, XIX-52
 - di prossimità (connessioni), XIX-91
 - finecorsa, XIX-91
 
+
 Interruttore automatico magnetotermico, XIX-49, 93
 
 
@@ -1497,6 +1505,7 @@ Progettazione elettrica ed elettronica
 - Bread-boarding, XX-121
 - Cablaggio delle apparecchiature elettriche, XX-120
 - Calcoli, esecutivi, XX-8, 68, 86
+
   - Preliminari, XX-7
 - Capacità termica, XX-146
 
@@ -1650,7 +1659,9 @@ Progettazione elettrica ed elettronica
 - Tensione di *dropout*, XX-161
 - Trasformatore, XX-149
 - Valutazione dei costi, XX-126÷128
+
 - *Wrap*, XX-121
+
 
 
 
