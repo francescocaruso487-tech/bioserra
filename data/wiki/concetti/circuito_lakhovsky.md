@@ -2,7 +2,7 @@
 id: circuito_lakhovsky
 label: Circuito di Lakhovsky
 categoria: elettrocultura
-aggiornato: 2026-10-23
+aggiornato: 2026-10-24
 pdf_count: 10
 ---
 
