@@ -2,7 +2,7 @@
 id: elettrodi_fe_cu
 label: Elettrodi Fe-Cu
 categoria: elettrocultura
-aggiornato: 2026-10-24
+aggiornato: 2026-10-25
 pdf_count: 10
 ---
 
