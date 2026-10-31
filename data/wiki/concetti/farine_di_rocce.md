@@ -2,7 +2,7 @@
 id: farine_di_rocce
 label: Farine di Rocce
 categoria: nutrizione
-aggiornato: 2026-10-30
+aggiornato: 2026-10-31
 pdf_count: 0
 ---
 
