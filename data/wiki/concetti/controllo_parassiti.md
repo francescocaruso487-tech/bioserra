@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-11-02
+aggiornato: 2026-11-03
 pdf_count: 10
 ---
 
