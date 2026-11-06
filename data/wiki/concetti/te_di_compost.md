@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-11-05
+aggiornato: 2026-11-06
 pdf_count: 8
 ---
 
