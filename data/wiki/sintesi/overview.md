@@ -1,6 +1,6 @@
 ---
 tipo: overview
-aggiornato: 2026-11-08
+aggiornato: 2026-11-09
 ---
 
 # BioSerra — Knowledge Base Overview
@@ -9,7 +9,7 @@ aggiornato: 2026-11-08
 Serra Living Soil outdoor a Caserta (41N). Sistema water-only, suolo vivente, biodinamica (Steiner/Thun/Masson), elettrocultura avanzata.
 
 ## Sistema di conoscenza
-342 PDF analizzati, 15 concetti estratti, guide per fase aggiornate settimanalmente.
+343 PDF analizzati, 15 concetti estratti, guide per fase aggiornate settimanalmente.
 
 ## Tecniche elettrocultura attive
 - [[circuito_lakhovsky]] — circuito oscillante a onde multiple
