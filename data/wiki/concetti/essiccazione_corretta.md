@@ -2,7 +2,7 @@
 id: essiccazione_corretta
 label: Essiccazione Corretta
 categoria: raccolta
-aggiornato: 2026-11-08
+aggiornato: 2026-11-09
 pdf_count: 0
 ---
 
