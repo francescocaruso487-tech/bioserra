@@ -69,6 +69,8 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 
 Tradotto in italiano da: EN | Script: traduci_testi.py
 
+Tradotto in italiano da: EN | Script: traduci_testi.py
+
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
@@ -244,6 +246,7 @@ pag.
 
 
 
+
 La **Fig. XVIII.1.5** evidenzia l’andamento della tensione ai capi di un carico costituito da una resistenza alimentata da una tensione alternata sinusoidale controllata da un SCR. Lo spostamento della fase dell’impulso di accensione implica una modifica sulla forma d’onda della tensione applicata al carico e, conseguentemente, sul valor medio della tensione applicata al medesimo. La possibilità di intervenire sullo sfasamento dell’impulso di accensione del dispositivo, rispetto alla fase della tensione di alimentazione, consente di ottenere una regolazione continua della tensione applicata al carico e, quindi, della corrente che lo attraversa.
 
 
@@ -314,6 +317,7 @@ Si riportano nella **Tab. XVIII.1.1**, a titolo di esempio, i valori forniti per
 ---
 
 1.3 DIAC
+
 
 
 
@@ -443,6 +447,7 @@ Corrente di *breakover*
 ### 1.4 TRIAC
 
 Il **TRIAC** è un dispositivo a giunzione di tipo p-n-p-n, la cui struttura e schema simbolico sono rappresentati in **Fig. XVIII.1.8**, che possiede anch’esso tre terminali ma riesce a controllare il flusso della corrente in entrambe le direzioni. Si noti che lo schema simbolico evidenzia il fatto che esso è costituito da due SCR collegati tra loro in antiparallelo aventi un unico terminale di controllo indicato come Gate. Gli altri terminali sono indicati con MT1 ed MT2.
+
 
 
 **Fig. XVIII.1.8** Simbolo elettrico e struttura del TRIAC.
@@ -589,6 +594,7 @@ dU/dt
 Se l’intensità di corrente I<sub>AK</sub> è tale che la somma dei guadagni dei due dispositivi (funzione della corrente I<sub>C</sub> di ciascuno) supera l’unità, il dispositivo continua a condurre anche in assenza dell’impulso di Gate.
 
 
+
 La **Fig. XVIII.1.12** illustra l’andamento delle correnti durante la fase di conduzione di un dispositivo. La differenza principale rispetto agli SCR tradizionali risiede nel valore dei guadagni.
 
 [PAG 1830]
@@ -712,6 +718,7 @@ Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzi
 La possibilità di passare in qualsiasi istante dallo stato di conduzione a quello di interdizione e viceversa con estrema facilità ed alta velocità fa sì che questo componente sia particolarmente adatto ad essere impiegato in dispositivi per il controllo di [corrente/potenza].
 
 Queste caratteristiche comportano però anche un incremento della resistenza di conduzione del canale *R<sub>DS(on)</sub>* e, quindi, l’impossibilità di controllare elevate correnti con conseguenti elevate dissipazioni di potenza. La resistenza di canale *R<sub>DS(on)</sub>* modifica il suo valore raddoppiando per una variazione di temperatura da 25 a 125 °C, ed è proporzionale alla tensione di breakdown elevata alla 2,5.
+
 
 
 
@@ -888,6 +895,7 @@ Uno dei parametri messi in evidenza nei succitati dispositivi è il **dU/dt**, o
 
 
 
+
 ELETTRONICA DI POTENZA
 XVIII-19
 
@@ -930,6 +938,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
