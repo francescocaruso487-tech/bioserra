@@ -77,6 +77,8 @@ Tradotto in italiano da: EN | Script: traduci_testi.py
 
 Tradotto in italiano da: EN | Script: traduci_testi.py
 
+Tradotto in italiano da: EN | Script: traduci_testi.py
+
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
@@ -215,6 +217,7 @@ pag.
 
 
 
+
 **Fig. XVIII.1.4** Caratteristica corrente-tensione di un SCR.
 
 
@@ -307,6 +310,7 @@ ELETTRONICA DI POTENZA
 XVIII-7
 
 Nella **Fig. XVIII.1.6** si evidenzia l’andamento della corrente su un carico induttivo dove la tensione in ingresso *u<sub>i</sub>* viene applicata all’istante *t<sub>i</sub>*; si noti che la corrente cessa di scorrere quando la tensione applicata è pari alla forza elettromotrice *u<sub>L</sub>* di autoinduzione presente sull’utilizzatore (una di segno opposto all’altra). Gli angoli α e β dipendono anch’essi dal valore di induttanza del carico. Si ricorda infine che, come per tutti i dispositivi p-n-p-n, è necessario porre particolare attenzione al cosiddetto effetto *dU/dt*: la tensione di innesco di questi dispositivi è infatti legata a tale effetto; una rapida variazione della tensione applicata può portare il dispositivo in conduzione anche senza impulso di comando.
+
 
 
 
@@ -431,6 +435,7 @@ A titolo di esempio si riportano nella **Tab. XVIII.1.2** le caratteristiche ele
 | D30         | 28  | 32  | 36  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | D40         | 35  | 40  | 45  | 3   | 5   | 100 | 2,0 |       |     |       |       |
 | ST2         | 28  | 32  | 36  | 3,8 | -   | 200 | -   |       |     |       |       |
+
 
 
 
@@ -563,6 +568,7 @@ Si noti l’elevato valore del parametro **dv/dt** che consente l’impiego del 
 ### 1.5 Transistor di Potenza
 
 La necessità di effettuare commutazioni ON-OFF a frequenze molto elevate, condizione necessaria per limitare la potenza dissipata nei circuiti dell’elettronica di potenza, richiede dispositivi semiconduttori con valori di **slew rate**, cioè di **dv/dt**, superiori a quelli tipici degli SCR e dei TRIAC.
+
 
 
 
@@ -730,6 +736,7 @@ Normalmente con questi dispositivi si opera con tensioni che possono raggiungere
 
 
 
+
 Il GTO è un eccellente dispositivo a stato solido in grado di assolvere a funzioni di interruttore con eccellenti caratteristiche di velocità e potenze commutate. La prerogativa di unidirezionalità può, in molti casi, essere trascurata se viene impiegato con opportuni artifici; a tale proposito si veda la **Fig. XVIII.1.16**.
 
 
@@ -833,6 +840,7 @@ I semiconduttori più comunemente utilizzati sono i transistor bipolari e i MOSF
 
 
 1.7 Criteri di scelta dei dispositivi
+
 
 
 
@@ -948,6 +956,7 @@ L’uso dei semiconduttori a tecnologia più avanzata quali, per esempio, gli IG
 
 
 
+
 Anche se ciò risulta vantaggioso in termini di rendimento e di compattezza dell’apparecchiatura, è fonte di molti altri problemi: le rapide commutazioni dei semiconduttori comportano valori elevati del parametro **dU/dt**. L’importanza di quanto appena affermato risulta maggiormente chiara tramite l’esempio seguente (Fig. XVIII.1.23).
 Si consideri un motore collegato a un *inverter* tramite una linea elettrica avente lunghezza di qualche metro; l’*inverter* rileva come utilizzatore un dispositivo (il motore) avente una sua propria capacità elettrica e una sua induttanza. I valori di capacità e induttanza
 
@@ -965,6 +974,7 @@ Se si considera un inverter avente un valore di **dU/dt** pari a **kV/µs** coll
 **dU/dt = 16 A**
 
 **dU/dt**
+
 
 
 
