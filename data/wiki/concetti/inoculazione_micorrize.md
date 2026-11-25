@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-11-24
+aggiornato: 2026-11-25
 pdf_count: 1
 ---
 
