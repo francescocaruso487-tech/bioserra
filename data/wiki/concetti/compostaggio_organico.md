@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-11-26
+aggiornato: 2026-11-27
 pdf_count: 6
 ---
 
